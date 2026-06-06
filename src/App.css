@@ -1,0 +1,27 @@
+/* src/App.css */
+
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+/* RESET + GLOBAL FONT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* BASE */
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
