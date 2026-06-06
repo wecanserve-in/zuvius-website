@@ -146,10 +146,10 @@ useEffect(() => {
       <section className="leader-section">
   {/* LEFT */}
   <div className="leader-text">
-    <h2>
-      Zuvius — A <span className="text-blue">Global Leader</span> In The Fight Against
-      <span className="text-red"> Cancer</span>
-    </h2>
+   <h2>
+  <span style={{ color: "#d32027" }}>Zuvius</span> — A <span className="text-blue">Global Leader</span> In The Fight Against
+  <span className="text-red"> Cancer</span>
+</h2>
 
     <p>
       Zuvius Lifesciences manufactures one of the widest ranges of anti-cancer drugs,
