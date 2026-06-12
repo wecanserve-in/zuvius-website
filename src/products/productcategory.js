@@ -22,20 +22,26 @@ const ProductCategory = () => {
       const matchesCategory =
         product.category?.toLowerCase() === currentCategory;
 
-      const matchesSearch =
-        product.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        product.subtitle?.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchesSearch = [
+  product.name,
+  product.subtitle,
+  
+]
+  .filter(Boolean)
+  .some((field) =>
+    field.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
       return matchesCategory && matchesSearch;
     });
 
     return [...filteredProducts].sort((a, b) => {
-      if (sortOrder === "za") {
-        return b.name.localeCompare(a.name);
-      }
+  if (sortOrder === "za") {
+    return b.subtitle.localeCompare(a.subtitle);
+  }
 
-      return a.name.localeCompare(b.name);
-    });
+  return a.subtitle.localeCompare(b.subtitle);
+});
   }, [currentCategory, sortOrder, searchTerm]);
 
   if (!categoryData) {
@@ -55,40 +61,7 @@ const ProductCategory = () => {
         <p>{categoryData.description}</p>
       </section>
 
-      <section className="category-feature-box">
-        <div className="category-feature-item">
-          <div className="category-feature-icon">🏅</div>
-          <div>
-            <h3>EU-GMP & WHO-GMP</h3>
-            <p>Certified Standards</p>
-          </div>
-        </div>
-
-        <div className="category-feature-item">
-          <div className="category-feature-icon">🔗</div>
-          <div>
-            <h3>{categoryProducts.length}+</h3>
-            <p>Products</p>
-          </div>
-        </div>
-
-        <div className="category-feature-item">
-          <div className="category-feature-icon">🌐</div>
-          <div>
-            <h3>Global Presence</h3>
-            <p>Across 50+ Countries</p>
-          </div>
-        </div>
-
-        <div className="category-feature-item">
-          <div className="category-feature-icon">📍</div>
-          <div>
-            <h3>Trusted by</h3>
-            <p>Doctors & Hospitals</p>
-          </div>
-        </div>
-      </section>
-
+      
       <section className="category-products-area">
         <div className="category-products-topbar">
           <p>

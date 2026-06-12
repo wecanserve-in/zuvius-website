@@ -47,9 +47,9 @@ const leaders = [
 
 const counters = [
   { icon: <FaUsers />, number: "1500+", label: "Team Members" },
-  { icon: <FaGlobe />, number: "35+", label: "Countries" },
+  { icon: <FaGlobe />, number: "51+", label: "Countries" },
   { icon: <FaIndustry />, number: "3", label: "Manufacturing Facilities" },
-  { icon: <FaCapsules />, number: "300+", label: "Products" },
+  { icon: <FaCapsules />, number: "250+", label: "Products" },
 ];
 
 const AboutUs = () => {

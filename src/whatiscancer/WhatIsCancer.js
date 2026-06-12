@@ -534,7 +534,7 @@ function WhatIsCancer() {
             </p>
           </div>
 
-          <span>›</span>
+          <span><a href="/prevention">›</a></span>
 
         </div>
 
@@ -558,7 +558,7 @@ function WhatIsCancer() {
             </p>
           </div>
 
-          <span>›</span>
+          <span><a href="/early-diagnosis">›</a></span>
 
         </div>
 

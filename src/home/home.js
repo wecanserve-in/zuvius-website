@@ -256,25 +256,24 @@ useEffect(() => {
 </section>
 
 <section className="accreditation-section">
-  <div className="accreditation-left">
-    <h2 className="section-title-small">Our Accreditations</h2>
-    {/* <p className="section-description">
-      Committed to maintaining the highest global standards in oncology manufacturing and healthcare excellence.
-    </p> */}
-  </div>
+  <h2 className="accreditation-main-title">
+    Our Accreditations
+  </h2>
 
-  <div className="accreditation-right">
-    <div className="accreditation-grid">
-        <div className="acc-item"><img src="./Accredations/US_FDA.png" alt="Accredation" /></div>
-        <div className="acc-item"><img src="./Accredations/invima.png" alt="Accredation" /></div>
-        <div className="acc-item"><img src="./Accredations/EU-GMP.png" alt="Accredation" /></div>
-        <div className="acc-item"><img src="./Accredations/WHO.png" alt="Accredation" /></div>
-        <div className="acc-item"><img src="./Accredations/Cofepris.png" alt="Accredation" /></div>
-      <div className="acc-item"><img src="./Accredations/Anvisa.png" alt="Accredation" /></div>
+  <div className="accreditation-grid">
+    <div className="acc-item"><img src="./Accredations/US_FDA.png" alt="US FDA" /></div>
+    <div className="acc-item"><img src="./Accredations/Anvisa.png" alt="INVIMA" /></div>
+    <div className="acc-item"><img src="./Accredations/EU-GMP.png" alt="EU GMP" /></div>
+    <div className="acc-item"><img src="./Accredations/WHO.png" alt="WHO GMP" /></div>
+    <div className="acc-item"><img src="./Accredations/Cofepris.png" alt="COFEPRIS" /></div>
+    <div className="acc-item"><img src="./Accredations/pics.png" alt="ANVISA" /></div>
+
+    {/* New accreditation here */}
+    <div className="acc-item">
+      <img src="./Accredations/invima.png" alt="New Accreditation" />
     </div>
   </div>
 </section>
-
 
  <section className="home-reach-section">
       <div className="home-reach-header">
@@ -312,8 +311,9 @@ useEffect(() => {
       <div className="home-reach-stat">
         <div className="home-reach-icon">📍</div>
         <div>
-          <strong>All</strong>
-          <span>States & UTs</span>
+          <strong>28 States</strong>
+<span>8 Union Territories</span>
+<small>Pan-India domestic reach</small>
         </div>
       </div>
 

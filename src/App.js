@@ -21,12 +21,16 @@ import EarlyDiagnosis from "./earlydiagnosis/EarlyDiagnosis";
 import AboutUs from "./about-us/about-us";
 import Prevention from "./prevention/Prevention"; 
 import TypesOfCancer from "./types/TypesOfCancer";
+import CancerDetail from "./cancerdetails";
 import CSR from "./csr/csr";
+import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
 function App() {
   return (
     <Router>
+    <ScrollToTop />
+
       <div className="App">
         <Navbar />
 
@@ -51,6 +55,7 @@ function App() {
             <Route path="/early-diagnosis" element={<EarlyDiagnosis/>}/>
             <Route path="/prevention" element={<Prevention/>}/>
             <Route path="/types-of-cancer" element={<TypesOfCancer/>}/>
+            <Route path="/types-of-cancer/:slug" element={<CancerDetail />} />
             <Route path="/csr" element={<CSR/>}/>
           </Routes>
         </main>

@@ -4,8 +4,8 @@ export const productCategories = [
     name: "OncoAce",
     title: "ONCOACE",
     color: "blue",
-    description:
-      "Zuvius offers a robust portfolio of anti-cancer products including tablets, capsules and injections.",
+    // description:
+    //   "Zuvius offers a robust portfolio of anti-cancer products including tablets, capsules and injections.",
     bannerImage: "/oncoacebanner.png",
     brochureImage: "/oncoace.png",
   },
@@ -14,8 +14,8 @@ export const productCategories = [
     name: "Nutrazeutica",
     title: "NUTRAZEUTICA",
     color: "green",
-    description:
-      "Specialized nutraceuticals and phytochemicals designed to support recommended dietary requirements.",
+    // description:
+    //   "Specialized nutraceuticals and phytochemicals designed to support recommended dietary requirements.",
     bannerImage: "/nutrabanner.png",
     brochureImage: "/nutra.png",
   },
@@ -166,12 +166,11 @@ Similar to other cytotoxic agents, Methotrexate carries a potential risk of tera
   subtitle: "Vinorelbine Injection",
   type: "Injection",
 
-  image: "/products/zyrolbine/zyrolbine10-1.jpeg",
-
+  image: "/products4/zyrolbine-1.png",
   images: [
-    "/products/zyrolbine/zyrolbine10-1.jpeg",
-    "/products/zyrolbine/zyrolbine10-2.jpeg",
-    "/products/zyrolbine/zyrolbine10-3.jpeg",
+    "/products4/zyrolbine-1.png",
+    "/products4/zyrolbine-2.png",
+    "/products4/zyrolbine-3.png",
   ],
 
   strength: "10/50 mg",
@@ -2383,15 +2382,13 @@ It is also used to relieve joint pain and swelling in patients with active rheum
   subtitle: "Chlorambucil Tablets 2/5 mg",
   type: "Tablet",
 
-  image: "/products/zuberi/zuberi2-1.jpeg",
+  image: "/products4/zuberi-1.png",
 
   images: [
-    "/products/zuberi/zuberi2-1.jpeg",
-    "/products/zuberi/zuberi2-2.jpeg",
-    "/products/zuberi/zuberi2-3.jpeg",
-    "/products/zuberi/zuberi5-1.jpeg",
-    "/products/zuberi/zuberi5-2.jpeg",
-    "/products/zuberi/zuberi5-3.jpeg",
+    "/products4/zuberi-1.png",
+    "/products4/zuberi-2.png",
+    "/products4/zuberi-3.png",
+    
   ],
 
   strength: "2 mg / 5 mg",
@@ -10265,15 +10262,15 @@ Be sure to mention any of the following:
   subtitle: "L-Asparaginase Inj 5000 IU / 10000 IU",
   type: "Injection",
 
-  image: "/products/aspraginaz/aspraginaz5000-1.jpeg",
+  image: "/products4/aspra5000-1.png",
 
   images: [
-    "/products/aspraginaz/aspraginaz5000-1.jpeg",
-    "/products/aspraginaz/aspraginaz5000-2.jpeg",
-    "/products/aspraginaz/aspraginaz5000-3.jpeg",
-    "/products/aspraginaz/aspraginaz10000-1.jpeg",
-    "/products/aspraginaz/aspraginaz10000-2.jpeg",
-    "/products/aspraginaz/aspraginaz10000-3.jpeg",
+    "/products4/aspra5000-1.png",
+    "/products4/aspra5000-2.png",
+    "/products4/aspra5000-3.png",
+    "/products4/aspra10000-1.png",
+    "/products4/aspra10000-2.png",
+    "/products4/aspra10000-3.png",
   ],
 
   strength: "5000 IU / 10000 IU",
@@ -10376,12 +10373,12 @@ Monitor serum glucose.
   subtitle: "Bleomycin Sulphate 15 IU",
   type: "Injection",
 
-  image: "/products/bleoz/bleoz15-1.jpeg",
+  image: "/products4/bleoz-1.png",
 
   images: [
-    "/products/bleoz/bleoz15-1.jpeg",
-    "/products/bleoz/bleoz15-2.jpeg",
-    "/products/bleoz/bleoz15-3.jpeg",
+    "/products4/bleoz-1.png",
+    "/products4/bleoz-2.png",
+    "/products4/bleoz-3.png",
   ],
 
   strength: "15 IU",
@@ -10690,15 +10687,13 @@ Tell your doctor or pharmacist if you have any medical history, especially:
   subtitle: "Dacarbazine Inj 200 mg / 500 mg",
   type: "Injection",
 
-  image: "/products/dazine/dazine200-1.jpeg",
+  image: "/products4/dazine-1.png",
 
   images: [
-    "/products/dazine/dazine200-1.jpeg",
-    "/products/dazine/dazine200-2.jpeg",
-    "/products/dazine/dazine200-3.jpeg",
-    "/products/dazine/dazine500-1.jpeg",
-    "/products/dazine/dazine500-2.jpeg",
-    "/products/dazine/dazine500-3.jpeg",
+    "/products4/dazine-1.png",
+    "/products4/dazine-2.png",
+    "/products4/dazine-3.png",
+   
   ],
 
   strength: "200 mg / 500 mg",
@@ -10870,12 +10865,12 @@ Dacarbazine may make your skin sensitive to sunlight.
   subtitle: "Fulvestrant Inj 250 mg",
   type: "Injection",
 
-  image: "/products/fukayna/fukayna250-1.jpeg",
+  image: "/products4/fukayna-1.png",
 
   images: [
-    "/products/fukayna/fukayna250-1.jpeg",
-    "/products/fukayna/fukayna250-2.jpeg",
-    "/products/fukayna/fukayna250-3.jpeg",
+    "/products4/fukayna-1.png",
+    "/products4/fukayna-2.png",
+    "/products4/fukayna-3.png",
   ],
 
   strength: "250 mg",
@@ -11529,12 +11524,12 @@ Breast malignancies in which estrogen and/or progesterone receptors are positive
   subtitle: "Vinblastine Inj 10 mg",
   type: "Injection",
 
-  image: "/products/z-blastin/z-blastin10-1.jpeg",
+  image: "/products4/zblastin-1.png",
 
   images: [
-    "/products/z-blastin/z-blastin10-1.jpeg",
-    "/products/z-blastin/z-blastin10-2.jpeg",
-    "/products/z-blastin/z-blastin10-3.jpeg",
+    "/products4/zblastin-1.png",
+    "/products4/zblastin-2.png",
+    "/products4/zblastin-3.png",
   ],
 
   strength: "10 mg",
@@ -12355,12 +12350,11 @@ Patients with severe renal impairment should be treated with caution when given 
   subtitle: "Fosaprepitant Inj 150 mg",
   type: "Injection",
 
-  image: "/products/zemecon/zemecon150-1.jpeg",
-
+  image: "/products4/zemecon-1.png",
   images: [
-    "/products/zemecon/zemecon150-1.jpeg",
-    "/products/zemecon/zemecon150-2.jpeg",
-    "/products/zemecon/zemecon150-3.jpeg",
+    "/products4/zemecon-1.png",
+    "/products4/zemecon-2.png",
+    "/products4/zemecon-3.png",
   ],
 
   strength: "150 mg",
@@ -13207,12 +13201,12 @@ Treatment should be discontinued when there is clear evidence of tumour progress
   subtitle: "Carfilzomib Inj 60 mg",
   type: "Injection",
 
-  image: "/products/zucarfil/zucarfil60-1.jpeg",
+  image: "/products4/zucarfil-1.png",
 
   images: [
-    "/products/zucarfil/zucarfil60-1.jpeg",
-    "/products/zucarfil/zucarfil60-2.jpeg",
-    "/products/zucarfil/zucarfil60-3.jpeg",
+    "/products4/zucarfil-1.png",
+    "/products4/zucarfil-2.png",
+    "/products4/zucarfil-3.png",
   ],
 
   strength: "60 mg",

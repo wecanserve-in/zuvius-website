@@ -264,8 +264,8 @@
 
 .category-products-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
 }
 
 .category-product-card {
@@ -285,7 +285,7 @@
 }
 
 .category-product-image {
-  height: 320px;
+  height: 220px;
   background: #219b90;
   display: flex;
   align-items: center;
@@ -301,7 +301,7 @@
   object-fit: contain;
   object-position: center;
   display: block;
-  transform: scale(2.2);
+  transform: scale(1.7);
   transition: 0.3s ease;
 }
 

@@ -390,57 +390,91 @@
 
 /* --- ACCREDITATION SECTION --- */
 .accreditation-section {
-  display: flex;
+  width: 100%;
   background-color: #ffffff;
+  padding: 70px 7% 85px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 80px;
-  padding-left: 100px;
-  padding-right: 100px;
+  gap: 42px;
 }
 
-.accreditation-left {
-  flex: 1;
-}
-
-.accreditation-right {
-  flex: 2;
-}
-
-.section-title-small {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 20px;
+.accreditation-main-title {
+  font-size: 42px;
+  font-weight: 900;
+  color: #008a9a;
+  text-align: center;
+  margin: 0;
   line-height: 1.2;
-  color: #1a1a1a;
 }
 
 .accreditation-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  width: 100%;
+  max-width: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 58px 85px;
 }
 
 .acc-item {
-  height: 120px;
+  width: 210px;
+  height: 105px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
-  transition: all 0.3s ease;
 }
 
 .acc-item img {
   max-width: 100%;
   max-height: 90px;
   object-fit: contain;
-  opacity: 0.9;
-  transition: all 0.4s ease;
+  opacity: 0.95;
+  transition: all 0.3s ease;
 }
 
 .acc-item:hover img {
   opacity: 1;
-  transform: scale(1.15);
-  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+  transform: scale(1.08);
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.08));
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .accreditation-grid {
+    gap: 38px 55px;
+  }
+
+  .acc-item {
+    width: 180px;
+    height: 95px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .accreditation-section {
+    padding: 55px 20px 65px;
+    gap: 30px;
+  }
+
+  .accreditation-main-title {
+    font-size: 32px;
+  }
+
+  .accreditation-grid {
+    gap: 28px 34px;
+  }
+
+  .acc-item {
+    width: 135px;
+    height: 85px;
+  }
+
+  .acc-item img {
+    max-height: 70px;
+  }
 }
 
 /* ================= HOME REACH SECTION ================= */
@@ -852,6 +886,7 @@
 .view-more-btn:hover,
 .home-reach-footer button:hover {
   background-color: #008a9a !important;
+  color: #ffffff !important;
 }
 
 .learn-more-btn {
