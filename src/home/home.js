@@ -1,5 +1,13 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import {
+  FaMapMarkedAlt,
+  FaHospital,
+  FaHandshake,
+  FaGlobeAsia,
+  FaGlobe,
+} from "react-icons/fa";
+
 import './home.css';
 
 const Home = () => 
@@ -307,32 +315,38 @@ useEffect(() => {
       distribution network and strategic partnerships.
     </p>
 
-    <div className="home-reach-stats">
-      <div className="home-reach-stat">
-        <div className="home-reach-icon">📍</div>
-        <div>
-          <strong>28 States</strong>
-<span>8 Union Territories</span>
-<small>Pan-India domestic reach</small>
-        </div>
-      </div>
-
-      <div className="home-reach-stat">
-        <div className="home-reach-icon">🏥</div>
-        <div>
-          <strong>15,000+</strong>
-          <span>Hospitals & Clinics</span>
-        </div>
-      </div>
-
-      <div className="home-reach-stat">
-        <div className="home-reach-icon">🤝</div>
-        <div>
-          <strong>100+</strong>
-          <span>Distribution Partners</span>
-        </div>
-      </div>
+   <div className="home-reach-stats">
+  <div className="home-reach-stat">
+    <div className="home-reach-icon">
+      <FaMapMarkedAlt />
     </div>
+    <div>
+      <strong>28 States</strong>
+      <span>8 Union Territories</span>
+      <small>Pan-India domestic reach</small>
+    </div>
+  </div>
+
+  <div className="home-reach-stat">
+    <div className="home-reach-icon">
+      <FaHospital />
+    </div>
+    <div>
+      <strong>15,000+</strong>
+      <span>Hospitals & Clinics</span>
+    </div>
+  </div>
+
+  <div className="home-reach-stat">
+    <div className="home-reach-icon">
+      <FaHandshake />
+    </div>
+    <div>
+      <strong>100+</strong>
+      <span>Distribution Partners</span>
+    </div>
+  </div>
+</div>
   </div>
 
   <div className="home-reach-image home-reach-image-india">
@@ -381,33 +395,40 @@ useEffect(() => {
 
           
   <div className="home-reach-stats">
-    <div className="home-reach-stat">
-      <div className="home-reach-icon">◉</div>
-      <div>
-        <strong>51+</strong>
-        <span>Countries</span>
-        <small>and growing</small>
-      </div>
+  <div className="home-reach-stat">
+    <div className="home-reach-icon">
+      <FaGlobeAsia />
     </div>
-
-    <div className="home-reach-stat">
-      <div className="home-reach-icon">○</div>
-      <div>
-        <strong>6</strong>
-        <span>Continents</span>
-        <small>Global presence</small>
-      </div>
-    </div>
-
-    <div className="home-reach-stat">
-      <div className="home-reach-icon">🤝</div>
-      <div>
-        <strong>50+</strong>
-        <span>Global Partners</span>
-        <small>Building strong alliances</small>
-      </div>
+    <div>
+      <strong>51+</strong>
+      <span>Countries</span>
+      <small>and growing</small>
     </div>
   </div>
+
+  <div className="home-reach-stat">
+    <div className="home-reach-icon">
+      <FaGlobe />
+    </div>
+    <div>
+      <strong>6</strong>
+      <span>Continents</span>
+      <small>Global presence</small>
+    </div>
+  </div>
+
+  <div className="home-reach-stat">
+    <div className="home-reach-icon">
+      <FaHandshake />
+    </div>
+    <div>
+      <strong>50+</strong>
+      <span>Global Partners</span>
+      <small>Building strong alliances</small>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
 

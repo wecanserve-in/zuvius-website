@@ -601,7 +601,7 @@
 
 .home-reach-stat {
   display: grid;
-  grid-template-columns: 56px 1fr;
+  grid-template-columns: 65px 1fr;
   gap: 14px;
   padding: 12px 0;
   border-bottom: 1px solid #dfe7f2;
@@ -613,8 +613,8 @@
 }
 
 .home-reach-icon {
-  width: 46px;
-  height: 46px;
+  width: 66px;
+  height: 66px;
   border-radius: 50%;
   background: #ffffff;
   box-shadow: 0 8px 20px rgba(0, 87, 255, 0.12);
@@ -987,5 +987,48 @@
   .home-reach-title,
   .home-reach-content h3 {
     font-size: 30px !important;
+  }
+}
+
+/* Reach Icons */
+.home-reach-icon {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #008a9a;
+
+  background: #eef8fb;
+  border-radius: 50%; /* Circle */
+
+  transition: all 0.3s ease;
+}
+
+.home-reach-stat:hover .home-reach-icon {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 138, 154, 0.18);
+  color: #008a9a;
+  background: #eef8fb;
+}
+
+.home-reach-icon svg {
+  width: 34px;
+  height: 34px;
+}
+
+@media (max-width: 768px) {
+  .home-reach-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  .home-reach-icon svg {
+    width: 28px;
+    height: 28px;
   }
 }

@@ -17,31 +17,36 @@ const leaders = [
     name: "Mr. Nimish Thakkar",
     role: "Chairman & Managing Director",
     image: "/aboutus/nimish-thakkar.png",
+    linkedin: "https://www.linkedin.com/in/nimishh-thakkar-90a78a14/",
     desc: "An audacious visionary with excellent entrepreneurial wisdom helps in achieving international standards with cost-effective methods.",
   },
   {
     name: "Dr. Ulhas Ganu",
     role: "Technical Director",
     image: "/aboutus/ulhas-ghanu.png",
-    desc: "An ace research scientist, flaunting 27 years of excellency in oncology segment sets the benchmark of innovation and quality for Zuvius."
+    linkedin: "https://www.linkedin.com/in/dr-ulhas-ganu-81a885a/",
+    desc: "Oncology research scientist with 27 years of experience, driving innovation and quality excellence at Zuvius."
   },
   {
     name: "Mr. Shailesh Shetty",
     role: "Director – Finance, Admin, HR & Operations",
     image: "/aboutus/shailesh-shetty.png",
-    desc:"An accomplished professional who brings the balance in balance sheets with over 18 years of distinguished experience in Finance, Administration and HR."
+    linkedin: "https://www.linkedin.com/in/shailesh-shetty-6788006a/",
+    desc: "Finance, Administration and HR leader with 18+ years of experience in building efficient and scalable operations."
   },
   {
     name: "Mrs. Alka Chavan",
     role: "Director – Sales & Marketing",
     image: "/aboutus/alka-chavan.png",
-    desc:"A seasoned Pharmaceutical Professional with 26 years of Marketing expertise brings out the best in Management of business units, P&L, Marketing and Sales."
+    linkedin: "https://www.linkedin.com/in/alka-chavan-ab881914/",
+    desc: "Pharmaceutical marketing professional with 26 years of expertise across management, P&L, sales and marketing."
   },
   {
     name: "Mr. Swapnil Kamble",
     role: "Director – Marketing",
     image: "/aboutus/swapnil-kamble.png",
-    desc:"A dynamic leader with 20 years of abundance experience in marketing who brings in the values and culture of young leadership."
+    linkedin: "https://www.linkedin.com/in/swapnil-kamble-173334b9/",
+    desc: "Marketing leader with 20 years of experience, known for driving growth and fostering a culture of innovation."
   },
 ];
 
@@ -197,49 +202,69 @@ const AboutUs = () => {
       </section>
 
       <section className="leadership-section">
-        <div className="about-container">
-          <div className="section-heading">
-            <h2>Leadership That Inspires</h2>
-            <div className="small-line center"></div>
+  <div className="about-container">
+    <div className="section-heading">
+      <h2>Leadership That Inspires</h2>
+      <div className="small-line center"></div>
+    </div>
+
+    {/* Main Leader */}
+    <div className="main-leader-card">
+      <div className="main-leader-img">
+        <img src={leaders[0].image} alt={leaders[0].name} />
+      </div>
+
+      <div className="main-leader-content">
+        <h3>{leaders[0].name}</h3>
+        <h4>{leaders[0].role}</h4>
+        <p>{leaders[0].desc}</p>
+
+      <a
+  href={leaders[0].linkedin}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="linkedin-btn"
+>
+          <FaLinkedinIn />
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+
+    {/* Other Leaders */}
+    <div className="leader-grid">
+      {leaders.slice(1).map((leader, index) => (
+        <div className="leader-card" key={index}>
+          <div className="leader-image-wrap">
+            <img src={leader.image} alt={leader.name} />
           </div>
 
-          <div className="main-leader-card">
-            <div className="main-leader-img">
-              <img src={leaders[0].image} alt={leaders[0].name} />
-            </div>
+          <div className="leader-card-content">
+            <h3>{leader.name}</h3>
 
-            <div className="main-leader-content">
-              <h3>{leaders[0].name}</h3>
-              <h4>{leaders[0].role}</h4>
-              <p>{leaders[0].desc}</p>
-              <a href="/" className="linkedin-icon">
-                <FaLinkedinIn />
-              </a>
-            </div>
+            <p className="leader-role">
+              {leader.role}
+            </p>
+
+            <p className="leader-desc">
+              {leader.desc}
+            </p>
           </div>
 
-          <div className="leader-grid">
-            {leaders.slice(1).map((leader, index) => (
-              <div className="leader-card" key={index}>
-                <div className="leader-image-wrap">
-                  <img src={leader.image} alt={leader.name} />
-                </div>
-
-                <div className="leader-card-content">
-                  <h3>{leader.name}</h3>
-                  <p className="leader-role">{leader.role}</p>
-                  
-                    <p className="leader-desc">{leader.desc}</p>
-                    
-                  <a href="/" className="linkedin-icon small">
-                    <FaLinkedinIn />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+         <a
+  href={leader.linkedin}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="linkedin-btn"
+>
+            <FaLinkedinIn />
+            <span>LinkedIn</span>
+          </a>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
     </main>
   );
 };

@@ -1,12 +1,11 @@
 import React, { useMemo, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./productcategory.css";
 import { products, productCategories } from "./productdata";
 import PageBanner from "../components/PageBanner";
 
 const ProductCategory = () => {
   const { category } = useParams();
-  const navigate = useNavigate();
 
   const [sortOrder, setSortOrder] = useState("az");
   const [searchTerm, setSearchTerm] = useState("");
@@ -22,26 +21,22 @@ const ProductCategory = () => {
       const matchesCategory =
         product.category?.toLowerCase() === currentCategory;
 
-      const matchesSearch = [
-  product.name,
-  product.subtitle,
-  
-]
-  .filter(Boolean)
-  .some((field) =>
-    field.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+      const matchesSearch = [product.name, product.subtitle]
+        .filter(Boolean)
+        .some((field) =>
+          field.toLowerCase().includes(searchTerm.toLowerCase())
+        );
 
       return matchesCategory && matchesSearch;
     });
 
     return [...filteredProducts].sort((a, b) => {
-  if (sortOrder === "za") {
-    return b.subtitle.localeCompare(a.subtitle);
-  }
+      if (sortOrder === "za") {
+        return b.subtitle.localeCompare(a.subtitle);
+      }
 
-  return a.subtitle.localeCompare(b.subtitle);
-});
+      return a.subtitle.localeCompare(b.subtitle);
+    });
   }, [currentCategory, sortOrder, searchTerm]);
 
   if (!categoryData) {
@@ -53,7 +48,6 @@ const ProductCategory = () => {
       <PageBanner
         image={categoryData.bannerImage}
         title={categoryData.name}
-       
         alt={categoryData.name}
       />
 
@@ -61,7 +55,6 @@ const ProductCategory = () => {
         <p>{categoryData.description}</p>
       </section>
 
-      
       <section className="category-products-area">
         <div className="category-products-topbar">
           <p>
@@ -88,7 +81,9 @@ const ProductCategory = () => {
               <option value="za">Name (Z-A)</option>
             </select>
 
-            <button className="category-view-btn active">▦</button>
+            <button className="category-view-btn active" type="button">
+              ▦
+            </button>
           </div>
         </div>
 
@@ -100,7 +95,8 @@ const ProductCategory = () => {
         ) : (
           <div className="category-products-grid">
             {categoryProducts.map((product) => (
-              <div
+              <Link
+                to={`/products/${product.category}/${product.slug}`}
                 className="category-product-card"
                 key={`${product.category}-${product.slug}`}
               >
@@ -112,15 +108,11 @@ const ProductCategory = () => {
                   <h3>{product.name}</h3>
                   <p>{product.subtitle}</p>
 
-                  <button
-                    onClick={() =>
-                      navigate(`/products/${product.category}/${product.slug}`)
-                    }
-                  >
-                    View Details <span>→</span>
-                  </button>
+                  <div className="product-card-arrow">
+                    <span>→</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         )}
@@ -139,7 +131,7 @@ const ProductCategory = () => {
           </div>
         </div>
 
-        <button>
+        <button type="button">
           Contact Us <span>→</span>
         </button>
       </section>

@@ -219,7 +219,8 @@
   gap: 30px;
 }
 
-.mission-card {
+.mission-card,
+.vision-card {
   min-height: 210px;
   display: grid;
   grid-template-columns: 120px 1fr;
@@ -227,13 +228,15 @@
   gap: 24px;
   padding: 38px 44px;
   border-radius: 18px;
-  background: linear-gradient(135deg, #e9fbff 0%, #f8fdff 100%);
-  box-shadow: 0 12px 35px rgba(0, 80, 120, 0.08);
-  border: 1px solid #d9f4f8;
-}
 
-.vision-card {
-  background: linear-gradient(135deg, #f3f9ff 0%, #eaf5ff 100%);
+  background: linear-gradient(
+    135deg,
+    #f3f9ff 0%,
+    #eaf5ff 100%
+  );
+
+  box-shadow: 0 12px 35px rgba(0, 80, 120, 0.08);
+  border: 1px solid #dcecff;
 }
 
 .mission-icon {
@@ -320,11 +323,14 @@
 .section-heading {
   text-align: center;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .section-heading h2 {
   font-size: 34px;
-  margin: 12px 0 0;
+  margin: 12px auto 0;
+  text-align: center;
+  width: 100%;
 }
 
 .main-leader-card {
@@ -804,7 +810,7 @@
 /* CARD / PERSON TITLES */
 .main-leader-content h3,
 .leader-card h3 {
-  font-size: 22px !important;
+  font-size: 23px !important;
   font-weight: 700 !important;
   color: #061943 !important;
   line-height: 1.35 !important;
@@ -863,4 +869,360 @@
   .mission-card h3 {
     font-size: 30px !important;
   }
+}
+
+
+/* Leadership final alignment fix */
+.leader-card {
+  height: 620px !important;
+  padding: 28px 24px 26px !important;
+
+  display: grid !important;
+  grid-template-rows: 190px 58px 54px 1fr 42px !important;
+  align-items: start !important;
+  justify-items: center !important;
+
+  text-align: center !important;
+}
+
+.leader-card img,
+.leader-image img,
+.leader-img {
+  width: 175px !important;
+  height: 175px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+}
+
+.leader-card h3 {
+  margin: 0 !important;
+  align-self: end !important;
+
+  font-size: 22px !important;
+  line-height: 1.25 !important;
+
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+}
+
+.leader-role {
+  margin: 0 !important;
+  align-self: start !important;
+
+  font-size: 16px !important;
+  line-height: 1.45 !important;
+
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+.leader-desc {
+  margin: 0 !important;
+  max-width: 245px !important;
+
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+  font-weight: 600 !important;
+
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+.linkedin-icon {
+  width: 40px !important;
+  height: 40px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  margin: 0 auto !important;
+
+  background: #008a9a !important;
+  color: #061943 !important;
+  border-radius: 50% !important;
+}
+
+.linkedin-icon svg,
+.linkedin-icon i {
+  color: #061943 !important;
+  fill: #061943 !important;
+  font-size: 16px !important;
+}
+
+.linkedin-icon:hover {
+  background: #006f7d !important;
+  color: #ffffff !important;
+}
+
+.linkedin-icon:hover svg,
+.linkedin-icon:hover i {
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .leader-card {
+    height: auto !important;
+    grid-template-rows: auto !important;
+    gap: 12px !important;
+  }
+
+  .leader-card h3,
+  .leader-role,
+  .leader-desc {
+    min-height: auto !important;
+  }
+}
+
+/* Wider cards */
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.leader-card {
+  width: 100%;
+  max-width: none;
+}
+.leader-role {
+  margin-bottom: 18px !important;
+}
+.leader-desc {
+  max-width: 280px !important;
+  line-height: 1.65 !important;
+}
+.leader-card h3 {
+  max-width: 290px !important;
+  margin-bottom: 10px !important;
+}
+
+.leader-card img,
+.leader-image img,
+.leader-img {
+  width: 185px !important;
+  height: 185px !important;
+}
+
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  height: 42px;
+  padding: 0 18px;
+
+  margin-top: 18px;
+
+  background: #0077b5;
+  color: #ffffff;
+
+  border-radius: 8px;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.linkedin-btn svg {
+  font-size: 16px;
+}
+
+.linkedin-btn:hover {
+  background: #005e91;
+  transform: translateY(-2px);
+}
+
+/* Makes button stay at bottom */
+.leader-card {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.leader-card-content {
+  flex: 1;
+}
+/* LEADERSHIP GRID */
+.leader-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(300px, 1fr)) !important;
+  gap: 28px !important;
+  width: 100% !important;
+  align-items: stretch !important;
+}
+
+/* LEADER CARD */
+.leader-card {
+  min-height: 620px !important;
+  width: 100% !important;
+
+  padding: 28px 26px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+/* IMAGE */
+.leader-image-wrap {
+  width: 190px !important;
+  height: 190px !important;
+  margin: 0 auto 24px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  background: #f5fbff !important;
+}
+
+.leader-image-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+  border-radius: 50% !important;
+}
+
+/* CONTENT */
+.leader-card-content {
+  flex: 1 !important;
+  width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.leader-card h3 {
+  font-size: 23px !important;
+  font-weight: 700 !important;
+  color: #061943 !important;
+  line-height: 1.25 !important;
+
+  margin: 0 0 10px !important;
+  max-width: 300px !important;
+}
+
+.leader-role {
+  color: #008a9a !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+
+  margin: 0 0 22px !important;
+  max-width: 300px !important;
+}
+
+.leader-desc {
+  color: #000000 !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 1.6 !important;
+
+  margin: 0 !important;
+  max-width: 300px !important;
+}
+
+/* LINKEDIN BUTTON */
+.linkedin-btn {
+  width: 128px !important;
+  height: 42px !important;
+
+  margin: 24px auto 0 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+
+  background: #0077b5 !important;
+  color: #ffffff !important;
+
+  border-radius: 7px !important;
+  text-decoration: none !important;
+
+  font-size: 14px !important;
+  font-weight: 600 !important;
+
+  transition: all 0.3s ease !important;
+}
+
+.linkedin-btn svg {
+  font-size: 15px !important;
+  color: #ffffff !important;
+  fill: #ffffff !important;
+}
+
+.linkedin-btn:hover {
+  background: #005e91 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1300px) {
+  .leader-grid {
+    grid-template-columns: repeat(2, minmax(300px, 1fr)) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .leader-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .leader-card {
+    min-height: auto !important;
+    padding: 28px 22px !important;
+  }
+
+  .leader-image-wrap {
+    width: 170px !important;
+    height: 170px !important;
+  }
+
+  .linkedin-btn {
+    margin-top: 22px !important;
+  }
+}
+
+.leader-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 300px) !important;
+  justify-content: center !important;
+  gap: 28px !important;
+}
+.leader-role {
+  color: #008a9a !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 1.45 !important;
+
+  text-align: center !important;
+
+  width: 100% !important;
+  max-width: 280px !important;
+
+  min-height: 72px !important; /* same height for all */
+
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+
+  margin: 0 auto 1px !important;
 }

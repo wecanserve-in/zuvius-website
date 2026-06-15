@@ -85,7 +85,7 @@ const ProductDetail = () => {
           <div className="product-detail-meta">
             <div className="product-detail-meta-card">
               <img
-                src="/products/strength.jpeg"
+                src="/products/strength.png"
                 alt="Strength"
                 className="meta-icon"
               />
@@ -97,7 +97,7 @@ const ProductDetail = () => {
 
             <div className="product-detail-meta-card">
               <img
-                src="/products/pack.jpeg"
+                src="/products/pack.png"
                 alt="Pack Size"
                 className="meta-icon"
               />
@@ -109,7 +109,7 @@ const ProductDetail = () => {
 
             <div className="product-detail-meta-card">
               <img
-                src="/products/drugclass.jpeg"
+                src="/products/drugclass.png"
                 alt="Drug Class"
                 className="meta-icon"
               />
