@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./whatIsCancer.css";
 import PageBanner from "../components/PageBanner";
 
@@ -515,54 +516,33 @@ function WhatIsCancer() {
 
       <div className="journey-grid">
 
-        {/* CARD 1 */}
+  <Link to="/prevention" className="journey-card">
+    <div className="journey-icon">
+      <img src="/whatiscancer/prevention_img.png" alt="" />
+    </div>
 
-        <div className="journey-card">
+    <div>
+      <h3>Prevention</h3>
+      <p>Learn how to reduce your risk of cancer.</p>
+    </div>
 
-          <div className="journey-icon">
-            <img
-              src="/whatiscancer/prevention_img.png"
-              alt=""
-            />
-          </div>
+    <span>›</span>
+  </Link>
 
-          <div>
-            <h3>Prevention</h3>
+  <Link to="/early-diagnosis" className="journey-card">
+    <div className="journey-icon">
+      <img src="/whatiscancer/disgnosis_img.png" alt="" />
+    </div>
 
-            <p>
-              Learn how to reduce your risk of cancer.
-            </p>
-          </div>
+    <div>
+      <h3>Early Diagnosis</h3>
+      <p>Know the signs, symptoms and screening options.</p>
+    </div>
 
-          <span><a href="/prevention">›</a></span>
+    <span>›</span>
+  </Link>
 
-        </div>
-
-        {/* CARD 2 */}
-
-        <div className="journey-card">
-
-          <div className="journey-icon">
-            <img
-              src="/whatiscancer/disgnosis_img.png"
-              alt=""
-            />
-          </div>
-
-          <div>
-            <h3>Early Diagnosis</h3>
-
-            <p>
-              Know the signs, symptoms and screening
-              options.
-            </p>
-          </div>
-
-          <span><a href="/early-diagnosis">›</a></span>
-
-        </div>
-
-      </div>
+</div>
 
     </div>
 
