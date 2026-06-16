@@ -235,18 +235,19 @@
   transform: translateY(-4px);
 }
 
-.type-img { 
-  flex: 0 0 40%; 
-  background: #f7f9fc; 
-  overflow: hidden; 
+.type-img {
+  flex: 0 0 40%;
+  background: #ffffff;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
-.type-img img { 
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
+.type-img img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
 }
-
 .type-text { 
   flex: 1; 
   padding: 30px;
@@ -257,7 +258,7 @@
 
 .type-text h4, 
 .stage-card-small h4 {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.35;
   color: #061943;
@@ -266,7 +267,7 @@
 
 .type-text p, 
 .stage-card-small p {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   line-height: 1.7;
   color: #000000;
