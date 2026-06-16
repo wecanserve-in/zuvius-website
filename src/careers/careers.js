@@ -135,12 +135,33 @@ const Careers = () => {
           <div className="cr-mosaic-cell cr-cell-hero-vertical">
             <img src="./contact/celb-2.png" alt="Team Outdoor Gathering" />
           </div>
-          <div className="cr-mosaic-cell"><img src="./contact/celb-1.png" alt="Corporate Meeting" /></div>
-          <div className="cr-mosaic-cell"><img src="./contact/celb-2.png" alt="Boardroom Session" /></div>
-          <div className="cr-mosaic-cell"><img src="./contact/celb-3.png" alt="Manufacturing Line" /></div>
-          <div className="cr-mosaic-cell"><img src="./contact/celb-4.png" alt="Sports Event" /></div>
-          <div className="cr-mosaic-cell"><img src="./contact/celb-5.png" alt="Office Celebration" /></div>
-          <div className="cr-mosaic-cell"><img src="./contact/celb-1.png" alt="Group Photo" /></div>
+       <div className="cr-mosaic-cell cr-cell-hero-vertical">
+  <img src="./contact/celb-2.png" alt="Team gathering" />
+</div>
+
+<div className="cr-mosaic-cell">
+  <img src="./contact/celb-1.png" alt="Corporate meeting" />
+</div>
+
+<div className="cr-mosaic-cell">
+  <img src="./contact/celb-2.png" alt="Boardroom session" />
+</div>
+
+<div className="cr-mosaic-cell">
+  <img src="./contact/celb-3.png" alt="Manufacturing team" />
+</div>
+
+<div className="cr-mosaic-cell">
+  <img src="./contact/celb-4.png" alt="Sports event" />
+</div>
+
+<div className="cr-mosaic-cell">
+  <img src="./contact/celb-5.png" alt="Office celebration" />
+</div>
+
+<div className="cr-mosaic-cell">
+  <img src="./contact/celb-1.png" alt="Team group" />
+</div>
         </div>
       </section>
 
