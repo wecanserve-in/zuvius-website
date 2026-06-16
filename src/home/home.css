@@ -1,6 +1,7 @@
 .home-container {
   width: 100%;
   background-color: #ffffff;
+    padding-top: 50px;
 }
 
 .home-container section {

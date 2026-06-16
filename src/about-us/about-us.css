@@ -886,7 +886,7 @@
 }
 
 .leader-card img,
-.leader-image img,
+
 .leader-img {
   width: 175px !important;
   height: 175px !important;
@@ -1004,10 +1004,10 @@
 }
 
 .leader-card img,
-.leader-image img,
+
 .leader-img {
-  width: 185px !important;
-  height: 185px !important;
+  width: 180px !important;
+  height: 180px !important;
 }
 
 .linkedin-btn {
