@@ -924,38 +924,14 @@ symptoms: {
 {
   slug: "astrocytoma",
   title: "Astrocytoma",
-  description: "Astrocytoma is a tumor that develops from star-shaped astrocyte cells in the central nervous system. It usually forms in the brain, but it can also develop in the spinal cord.",
+  description: "Astrocytomas are tumors that develop in your central nervous system (CNS) that grow from star-shaped astrocyte cells.",
+   bannerImg: "/cancer-banners/astro.png",
 
-  overview: {
-    intro: "Astrocytoma is a type of glioma that forms when astrocyte cells grow out of control. These tumors may be benign or cancerous, and their behavior depends mainly on the tumor grade, location and how quickly they grow.",
-    cards: [
-      {
-        img: "/overview/astro-cns.png",
-        title: "Central Nervous System Tumor",
-        text: "Astrocytomas develop in the central nervous system, usually in the brain, but they can also form in the spinal cord."
-      },
-      {
-        img: "/overview/astro-cells.png",
-        title: "Astrocyte Cells",
-        text: "These tumors grow from astrocytes, star-shaped glial cells that provide support to nerve cells in the brain."
-      },
-      {
-        img: "/overview/astro-glioma.png",
-        title: "A Type of Glioma",
-        text: "Astrocytoma is the most common glioma, a tumor that forms when glial cells grow out of control."
-      },
-      {
-        img: "/overview/astro-grades.png",
-        title: "Graded, Not Staged",
-        text: "Doctors use grades to describe astrocytomas. They do not use a staging system like they do for many other cancers."
-      },
-      {
-        img: "/overview/astro-benign.png",
-        title: "Benign or Cancerous",
-        text: "Grade I astrocytomas are noncancerous, while Grades II to IV are cancerous and may grow into nearby brain tissue."
-      }
-    ]
-  },
+ overview: {
+  intro: `Astrocytes are glial cells (the type of cells that provide supportive tissue in your brain). Other glial cells include oligodendrocytes and ependymal cells. Astrocytoma is the most common glioma. A glioma is a tumor that forms when glial cells grow out of control.
+
+Healthcare providers use grades to describe different types of astrocytomas. They don’t use a staging system as they do for many other types of cancer.They usually develop in your brain but can develop in your spinal cord as well`
+},
 
   typesStages: {
     stages: [

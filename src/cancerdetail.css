@@ -24,7 +24,7 @@
   align-items: center; 
   padding-left: 7%; 
   height: 340px; 
-  margin-top: 22px;
+  margin-top: 60px;
   background: linear-gradient(105deg, #e6f4ff 57%, #fff 57%); 
 }
 
@@ -258,7 +258,7 @@
 
 .type-text h4, 
 .stage-card-small h4 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.35;
   color: #061943;
@@ -267,7 +267,7 @@
 
 .type-text p, 
 .stage-card-small p {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.7;
   color: #000000;
@@ -569,6 +569,10 @@
 @media (max-width: 900px) {
   .risk-container { 
     flex-direction: column; 
+  }
+
+    .toc-hero {
+    margin-top: 80px;
   }
 
   .diagnosis-clean-grid,
