@@ -44,7 +44,7 @@ const signsData = [
   {
     title: "Change in Bowel or Bladder Habits",
     desc: "Long-term changes in bowel movements, stool appearance, or urination patterns should be discussed with a healthcare professional.",
-    img: "/common_signs/sign-1.png",
+    img: "common_signs/sign-1.png",
   },
   {
     title: "Sores That Do Not Heal",

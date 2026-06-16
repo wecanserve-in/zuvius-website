@@ -477,6 +477,16 @@
   color: #000000;
 }
 
+.journey-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.journey-card * {
+  text-decoration: none;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1100px) {

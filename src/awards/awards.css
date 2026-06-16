@@ -376,24 +376,14 @@
 
 .membership-blue-card {
   min-height: 330px;
-  background: linear-gradient(145deg, #008a9a 0%, #006f7d 100%);
+  background: #219b90;
   border-radius: 10px 10px 40px 10px;
   color: #ffffff;
-  padding: 38px 32px;
+  padding: 42px 36px;
   position: relative;
   overflow: hidden;
 }
 
-.membership-blue-card::after {
-  content: "";
-  position: absolute;
-  right: 28px;
-  top: 42px;
-  width: 90px;
-  height: 70px;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.4) 2px, transparent 2px);
-  background-size: 16px 16px;
-}
 
 .membership-icon {
   width: 78px;
@@ -408,10 +398,12 @@
 }
 
 .membership-blue-card h3 {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.35;
-  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0 0 14px;
+  letter-spacing: 1px;
 }
 
 .white-line {
@@ -423,10 +415,11 @@
 }
 
 .membership-blue-card p {
+  color: #ffffff;
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.9;
+  font-weight: 500;
   margin: 0;
-  font-weight: 600;
 }
 
 .membership-cards {
@@ -535,25 +528,77 @@
     margin-top: 0;
   }
 
-  .accreditation-card {
-    width: calc(100% - 36px);
-    padding: 42px 28px;
-  }
+  /* ACCREDITATION */
 
-  .accreditation-logo-row {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.accreditation-card {
+  max-width: 1480px;
+  margin: 0 auto 78px;
+  padding: 48px 48px 42px;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid #edf3fb;
+  box-shadow: 0 16px 42px rgba(16, 53, 110, 0.045);
+}
 
-  .accreditation-logo-item {
-    border-left: none;
-    border-top: 1px solid #b8c9e3;
-  }
+.accreditation-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 38px;
+  text-align: center;
+}
 
-  .accreditation-logo-item:nth-child(1),
-  .accreditation-logo-item:nth-child(2),
-  .accreditation-logo-item:nth-child(3) {
-    border-top: none;
-  }
+.accreditation-top h3 {
+  color: #008a9a;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.3;
+  margin: 0 0 14px;
+}
+
+.mini-line {
+  width: 48px;
+  height: 3px;
+  border-radius: 20px;
+  background: #008a9a;
+  margin: 0 auto;
+}
+
+.accreditation-logo-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.accreditation-logo-item {
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  border-left: 1px solid #b8c9e3;
+}
+
+.accreditation-logo-item:first-child {
+  border-left: none;
+}
+
+.accreditation-logo-item img {
+  width: 100%;
+  max-width: 85px;
+  height: 65px;
+  object-fit: contain;
+  display: block;
+  transition: 0.3s ease;
+  transform: scale(1.25);
+}
+
+.accreditation-logo-item:hover img {
+  transform: scale(1.45);
+}
 
   .timeline-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -766,4 +811,10 @@
   line-height: 1.7;
   max-width: 500px;
   margin: 0;
+}
+.accreditation-logo-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  align-items: center;
 }

@@ -101,6 +101,11 @@ const Awards = () => {
           <div className="accreditation-logo-item">
             <img src="/Accredations/WHO.png" alt="WHO" />
           </div>
+
+          <div className="accreditation-logo-item">
+  <img src="/Accredations/PICS.png" alt="PIC/S" />
+</div>
+
         </div>
       </section>
 

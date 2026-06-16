@@ -1,8 +1,10 @@
-import React from 'react';
-import './careers.css';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./careers.css";
 import PageBanner from "../components/PageBanner";
 
 const Careers = () => {
+  const navigate = useNavigate();
   return (
     <div className="cr-wrapper-main">
       
@@ -157,9 +159,12 @@ const Careers = () => {
             </div>
           </div>
           <div className="cr-cta-right-actions">
-            <button className="cr-action-btn-blue">
-              APPLY NOW <span className="cr-btn-arrow">→</span>
-            </button>
+            <button
+  className="cr-action-btn-blue"
+  onClick={() => navigate("/contact")}
+>
+  APPLY NOW <span className="cr-btn-arrow">→</span>
+</button>
             <p className="cr-email-anchor-subtext">
               Send your resume to <a href="mailto:careers@zuviuslifesciences.com">careers@zuviuslifesciences.com</a>
             </p>
