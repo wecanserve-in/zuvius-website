@@ -10,8 +10,6 @@ import {
 
 import './home.css';
 
-const Home = () => 
-{
   const phrases = [
     "Delivers value",
     "Benchmarks happiness",
@@ -21,6 +19,10 @@ const Home = () =>
     "Strengthens relationships",
     "Understands responsibilities"
   ];
+
+
+const Home = () => 
+{
 
   const products = [
   { id: 1, name: "Capetaz-500", img: "./home-products/Capetaz-500.jpeg" },
@@ -57,7 +59,6 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-  let start = 0;
   const end = 250;
   const duration = 5500; // ⬅️ slower (3.5 seconds)
   let startTime = null;

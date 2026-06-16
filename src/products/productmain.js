@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./productmain.css";
 import { productCategories, products } from "./productdata";
@@ -7,7 +7,7 @@ import PageBanner from "../components/PageBanner";
 
 const ProductMain = () => {
   const navigate = useNavigate();
-  const [search, setSearch] = useState("");
+
 
   const getFeaturedProducts = (categoryId) => {
   const featuredProducts = {

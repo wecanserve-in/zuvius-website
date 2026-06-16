@@ -115,7 +115,7 @@ const Careers = () => {
             <div className="cr-culture-frame-wrapper-slim">
               <img 
                 src="/Contact/careerimage1.jpg" 
-                alt="Zuvius Corporate Culture Workplace" 
+                alt="Zuvius corporate culture" 
                 className="cr-culture-photo-compact"
               />
             </div>
