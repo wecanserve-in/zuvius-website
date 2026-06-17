@@ -26,7 +26,7 @@
 
 .hero-subtitle {
   font-size: 1.15rem;
-  color: #000000;
+  color: #787777;
   margin-bottom: 10px;
   max-width: 580px;
   line-height: 1.6;
@@ -117,7 +117,7 @@
 
 .stat-card h3 {
   font-size: 2.8rem;
-  color: #000000;
+  color:#787777;
   margin-bottom: 4px;
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -1095,4 +1095,94 @@
 }
 .carousel-track.no-transition {
   transition: none;
+}
+
+/* ========== HERO + STATS IN ONE SCREEN ========== */
+
+.hero-section {
+  min-height: calc(100vh - 250px) !important;
+  padding: 35px 7% 10px !important;
+}
+
+.hero-content h1 {
+  font-size: clamp(4rem, 4.6vw, 5.3rem) !important;
+  margin-bottom: 22px !important;
+}
+
+.hero-stat-text {
+  font-size: clamp(1.45rem, 1.55vw, 1.85rem) !important;
+  margin-bottom: 22px !important;
+}
+
+.hero-image img {
+  max-width: 560px !important;
+}
+
+.learn-more-btn {
+  padding: 14px 46px !important;
+}
+
+.stats-section {
+  padding: 0 7% 30px !important;
+}
+
+.stats-grid {
+  margin-top: 0 !important;
+  gap: 24px !important;
+}
+
+.stat-card {
+  padding: 24px 10px !important;
+}
+
+.stat-card h3 {
+  font-size: 2.5rem !important;
+}
+
+.stat-card p {
+  font-size: 0.82rem !important;
+}
+
+/* Big screen */
+@media (min-width: 1700px) {
+  .hero-section {
+    min-height: calc(100vh - 260px) !important;
+    padding-top: 38px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 5.4rem !important;
+  }
+
+  .hero-image img {
+    max-width: 600px !important;
+  }
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+  .hero-section {
+    min-height: calc(100vh - 240px) !important;
+    padding-top: 30px !important;
+  }
+
+  .hero-content h1 {
+    font-size: 4.4rem !important;
+  }
+
+  .hero-stat-text {
+    font-size: 1.55rem !important;
+  }
+
+  .hero-image img {
+    max-width: 500px !important;
+  }
+
+  .stat-card {
+    padding: 20px 10px !important;
+  }
+
+  .stat-card h3 {
+    font-size: 2.3rem !important;
+  }
 }
