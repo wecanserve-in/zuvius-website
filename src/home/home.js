@@ -1,24 +1,29 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React from "react";
+import { useState, useEffect } from "react";
+
 import {
   FaMapMarkedAlt,
   FaHospital,
   FaHandshake,
   FaGlobeAsia,
   FaGlobe,
+  FaChevronLeft,
+  FaChevronRight,
 } from "react-icons/fa";
 
-import './home.css';
+import "./home.css";
 
-  const phrases = [
-    "Delivers value",
-    "Benchmarks happiness",
-    "Expands horizons",
-    "Reinvents itself",
-    "Unveils innovations",
-    "Strengthens relationships",
-    "Understands responsibilities"
-  ];
+const phrases = [
+  "Delivers value",
+  "Benchmarks happiness",
+  "Expands horizons",
+  "Reinvents itself",
+  "Unveils innovations",
+  "Strengthens relationships",
+  "Understands responsibilities",
+];
+
+
 
 
 const Home = () => 
@@ -36,27 +41,43 @@ const Home = () =>
   const [count, setCount] = useState(0);
 
 const [slideIndex, setSlideIndex] = useState(0);
-const [noTransition, setNoTransition] = useState(false);
+const [isTransitioning, setIsTransitioning] = useState(true);
 
-useEffect(() => {
-  const interval = setInterval(() => {
-    setSlideIndex((prev) => {
-      if (prev === 0) return 1;
+const totalSlides = 2;
+const nextSlide = () => {
+  if (slideIndex >= totalSlides) return;
 
-      // when going back → reset trick
-      setNoTransition(true);
+  setIsTransitioning(true);
+  setSlideIndex((prev) => prev + 1);
+};
+const prevSlide = () => {
+  if (slideIndex === 0) {
+    setIsTransitioning(false);
+    setSlideIndex(totalSlides);
 
-      setTimeout(() => {
-        setSlideIndex(0);
-        setNoTransition(false);
-      }, 50);
+    setTimeout(() => {
+      setIsTransitioning(true);
+      setSlideIndex(totalSlides - 1);
+    }, 50);
+  } else {
+    setIsTransitioning(true);
+    setSlideIndex((prev) => prev - 1);
+  }
+};
 
-      return prev;
-    });
-  }, 6000);
+const handleTransitionEnd = (e) => {
+  if (e.target !== e.currentTarget) return;
 
-  return () => clearInterval(interval);
-}, []);
+  if (slideIndex === totalSlides) {
+    setIsTransitioning(false);
+    setSlideIndex(0);
+
+    setTimeout(() => {
+      setIsTransitioning(true);
+    }, 50);
+  }
+};
+
 
 useEffect(() => {
   const end = 250;
@@ -219,40 +240,65 @@ useEffect(() => {
 </section>
     
 <section className="products-section">
-  <h2 className="section-title left-title">Recent Launches</h2>
+  <h2 className="accreditation-main-title">Recent Launches</h2>
 
   <div className="carousel-container">
-    <div
-      className={`carousel-track ${noTransition ? "no-transition" : ""}`}
-      style={{
-        transform: `translateX(-${slideIndex * 100}%)`
-      }}
-    >
-      {/* SLIDE 1 */}
-      <div className="slide">
-        {products.slice(0, 3).map((product) => (
-          <div className="product-card" key={product.id}>
-            <img src={product.img} alt={product.name} />
-            <div className="product-info">
-              <h4>{product.name}</h4>
-            </div>
-          </div>
-        ))}
-      </div>
 
-      {/* SLIDE 2 */}
-      <div className="slide">
-        {products.slice(3, 6).map((product) => (
-          <div className="product-card" key={product.id}>
-            <img src={product.img} alt={product.name} />
-            <div className="product-info">
-              <h4>{product.name}</h4>
-            </div>
+  <button className="carousel-btn left" onClick={prevSlide}>
+    <FaChevronLeft />
+  </button>
+
+<div
+  className={`carousel-track ${!isTransitioning ? "no-transition" : ""}`}
+  onTransitionEnd={handleTransitionEnd}
+  style={{
+    transform: `translateX(-${slideIndex * 100}%)`,
+  }}
+>
+
+    {/* SLIDE 1 */}
+    <div className="slide">
+      {products.slice(0, 3).map((product) => (
+        <div className="product-card" key={product.id}>
+          <img src={product.img} alt={product.name} />
+          <div className="product-info">
+            <h4>{product.name}</h4>
           </div>
-        ))}
+        </div>
+      ))}
+    </div>
+
+    {/* SLIDE 2 */}
+    <div className="slide">
+      {products.slice(3, 6).map((product) => (
+        <div className="product-card" key={product.id}>
+          <img src={product.img} alt={product.name} />
+          <div className="product-info">
+            <h4>{product.name}</h4>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* SLIDE 1 CLONE */}
+<div className="slide">
+  {products.slice(0, 3).map((product) => (
+    <div className="product-card" key={`clone-${product.id}`}>
+      <img src={product.img} alt={product.name} />
+      <div className="product-info">
+        <h4>{product.name}</h4>
       </div>
     </div>
+  ))}
+</div>
+
   </div>
+
+  <button className="carousel-btn right" onClick={nextSlide}>
+    <FaChevronRight />
+  </button>
+
+</div>
 
   <div className="view-more-container">
     <button

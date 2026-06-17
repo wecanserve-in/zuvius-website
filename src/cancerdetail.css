@@ -71,12 +71,18 @@
 }
 
 .tab-btn:hover {
+  background: rgba(0, 138, 154, 0.08);
   color: #008a9a;
+  
+  
 }
 
-.tab-btn.active { 
-  color: #008a9a; 
-  border-bottom: 3px solid #008a9a; 
+
+.tab-btn.active {
+  background: #008a9a;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 138, 154, 0.25);
+  transform: translateY(-2px);
 }
 
 /* OVERVIEW */
@@ -582,28 +588,35 @@
   }
 
   .tabs-nav-bar {
-    justify-content: flex-start;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    padding: 0 16px;
-    gap: 6px;
-    position: sticky;
-    top: 0;
-    scrollbar-width: none;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 12px 20px;
+}
+
 
   .tabs-nav-bar::-webkit-scrollbar {
     display: none;
   }
 
-  .tab-btn {
-    flex: 0 0 auto;
-    padding: 16px 18px;
-    font-size: 14px;
-    white-space: nowrap;
-  }
-
+.tab-btn {
+  padding: 12px 22px;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 700;
+  color: #061943;
+  cursor: pointer;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
   .overview-grid,
   .diagnosis-grid,
   .symptoms-grid,
