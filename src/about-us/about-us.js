@@ -57,9 +57,100 @@ const counters = [
   { icon: <FaCapsules />, number: "250+", label: "Products" },
 ];
 
-const AboutUs = () => {
-  const [showMore, setShowMore] = useState(false);
+const timelineItems = [
+  {
+    year: "1995",
+    title: "Back to where it all began",
+    short:
+      "A 19-year-old started Nimish Medical Services with a small medical distribution setup in Mumbai.",
+    full:
+      "With a paltry initial capital, a 19-year-old lad started a medical distribution company in 1995 named Nimish Medical Services that catered to generic medicines covering the central suburbs of Mumbai.",
+  },
+  {
+    year: "2003",
+    title: "Growing branch by branch",
+    short:
+      "Nimish Medical Services slowly bloomed into newer healthcare segments.",
+    full:
+      "Slowly and steadily, Nimish Medical Services bloomed. It ventured into newer segments – Immunology, Cardiology, Gynecology, Neurology, Nephrology and finally – Oncology.",
+  },
+  {
+    year: "2004",
+    title: "Monopoly is the game",
+    short:
+      "The firm earned monopoly in distributing high-end medicines of this niche segment.",
+    full:
+      "By 2004, the firm earned monopoly in distributing high-end medicines of this niche segment. By this time, the company added two more jewels, Mrs. Alka Chavan and Mr. Shailesh Shetty.",
+  },
+  {
+    year: "2005",
+    title: "The bigger calling",
+    short:
+      "The team felt a bigger calling and stepped up to build its own pharmaceutical company.",
+    full:
+      "Life was good and business flourishing. But the team felt the quiver of a bigger calling! They stepped up to set a pharmaceutical company of their own and that marked the birth of ‘Zuvius Life Sciences’.",
+  },
+  {
+    year: "2006",
+    title: "To new beginnings",
+    short:
+      "Zuvius started with one product and expanded across Pan India within a year.",
+    full:
+      "Zuvius was built on the foundation of ‘quality care for cancer patients’. We started with a single product and in less than a year, we sprawled across Pan India with a full-fledged team of 28 employees. With great growth came greater responsibilities.",
+  },
+  {
+    year: "2007",
+    title: "Hitting rock bottom",
+    short:
+      "Zuvius faced a huge crisis that led to heavy losses, dead stock and zero inflows.",
+    full:
+      "Zuvius faced a huge crisis that led to crippling loss amounting to crores. A major delay in delivery led to hefty salaries and huge expenses. When stocks arrived, the sales fizzed. The dead stocks lied unsold at various points across the country. With heavy pay outs and zero inflows, Zuvius started to sink.",
+  },
+  {
+    year: "2008",
+    title: "Falling further apart",
+    short:
+      "The team pulled the shutters down, but gathered courage for one last shot.",
+    full:
+      "We still remember the date, 30th March 2008. Our heart sank as we pulled the shutters down, thinking it was the end we never saw coming. But with a dim gleam of hope, the three of us gathered the grit for one last shot! We called back all the dead stocks from different points and sent out post-dated cheques as refund. Our only hope at that point was to recover the money by selling off the stock.",
+  },
+  {
+    year: "2010",
+    title: "Resurrecting from the ashes",
+    short:
+      "Credibility, hard work and integrity helped Zuvius rise again.",
+    full:
+      "Our credibility in the industry helped us in picking the pieces. Nimish handled the sales in West India and Alka took over the East. Sailesh stayed back to uphold the pillar once again. It was a harrowing but fulfilling experience. Nimish and Alka allied with distributors from different zones and soon they had the cash flowing in. At the bottom of the abyss, they found a new beginning. The hard work and integrity displayed by the team earned them respect and trust within the industry circle. Zuvius also tucked another feather in the cap with notable research scientist Dr. Ulhas Ganu becoming a part of the core team. In due time, Zuvius became the most respected brand of oncology medication in India.",
+  },
+  {
+    year: "2015",
+    title: "Growing out and abound",
+    short:
+      "Zuvius built a 70+ anti-cancer drug portfolio and expanded its global presence.",
+    full:
+      "Once, the company strengthened its foothold in the industry there was no looking back. They increased the product range, launched several new molecules for the first time, and continued rigorous research on cancer treatment. By 2015, they had built a portfolio of 70+ anti-cancer drugs. And their dream of building global access to cancer care started to take form. Zuvius registered its products in many countries covering Africa, Latin America, CIS, and South-East Asia. Today, Zuvius is actively invested in research and development of life-saving drugs against cancer. It is making new strides in supportive therapies and nutraceuticals that adds value to the quality of life. And above all, Zuvius is embracing its dream by spanning across borders reaching out to people in need.",
+  },
+  {
+    year: "2020",
+    title: "Covid Times",
+    short:
+      "During Covid, Zuvius continued production and served cancer patients with dedication.",
+    full:
+      "The company was expecting a steep growth in coming years, when the world was hit by Covid. Everything came to stand still. Moving around was difficult, from manufacturing to transportation to delivery. But the passion didn’t die. The call for requirement of medicines from hospitals and doctors could be heard loud and clear. The cancer patients were suffering as many hospitals were turned into covid centers. The patients were in deep stress and were looking for the treatment to be continued. In this challenging time, we ensured that production continues with minimum number of labourers, and we managed to provide supplies. The entire team at Zuvius was dedicated, be it production, sales or back office. They silently fulfilled their duties and served the Cancer patients dedicatedly. The team didn’t give up. We worked together, we cared for each other. Essential members travelled to office, while others worked from home. The sales team were in touch with their clients throughout. Our silent fighters fought the covid times and fought very hard. We demonstrated a great team effort and togetherness. We moved on and sustained. The government indeed help to ensure that medical supplies does not stop.",
+  },
+  {
+    year: "2022",
+    title: "Onward and Upward, No Turning Back",
+    short:
+      "Zuvius crossed 200+ oncology products and expanded exports to 32 countries.",
+    full:
+      "This was the time when the market opened and welcomed with open arms. The requirement for anticancer medicines within and outside the nation grew in length and breadth. Simultaneously, with our continuous improvement we launched more products thereby taking our product basket to over 200 products in oncology domain. With the weapon of widest range of anticancer medicines, and consistent quality products, Zuvius leaped to different parts of the world. Capitalizing on such huge opportunity, we connected ourselves to African, Asian, and LatAm countries. With EU GMP certification, we started our journey in regulated European markets as well. We are now exporting to 32 countries.",
+  },
+];
 
+const AboutUs = () => {
+const [showMore, setShowMore] = useState(false);
+const [openTimeline, setOpenTimeline] = useState(null);
   return (
     <main className="about-page">
       <PageBanner
@@ -260,6 +351,56 @@ const AboutUs = () => {
             <FaLinkedinIn />
             <span>LinkedIn</span>
           </a>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section className="timeline-section">
+  <div className="about-container">
+    <div className="section-heading timeline-heading">
+      <h3>Our Journey</h3>
+      <h2>Milestones That Shaped Zuvius</h2>
+      <p>
+        A journey built on resilience, purpose and a commitment to redefining
+        cancer care.
+      </p>
+      <div className="small-line center"></div>
+    </div>
+
+    <div className="timeline-wrapper">
+      {timelineItems.map((item, index) => (
+        <div className="timeline-item" key={index}>
+          <div className="timeline-year">{item.year}</div>
+
+          <div className="timeline-dot">
+            <FaCapsules />
+          </div>
+
+          <div className="timeline-card">
+            <h3>{item.title}</h3>
+            <p className="timeline-short-text">{item.short}</p>
+
+<div
+  className={`timeline-full-text ${
+    openTimeline === index ? "show" : ""
+  }`}
+>
+  <p>{item.full}</p>
+</div>
+
+<button
+  type="button"
+  className="timeline-read-more-btn"
+  onClick={() =>
+    setOpenTimeline(openTimeline === index ? null : index)
+  }
+>
+  {openTimeline === index ? "Read Less" : "Read More"}
+  <span>{openTimeline === index ? "−" : "+"}</span>
+</button>
+          </div>
         </div>
       ))}
     </div>
