@@ -82,18 +82,18 @@ typesStages: {
 
 riskFactorsData: {
   uncontrollable: [
-    { icon: "/icons/age.svg", title: "Advancing Age", text: "The risk of developing breast cancer increases as you get older. Most cases are diagnosed in individuals over the age of 50." },
-    { icon: "/icons/genetics.svg", title: "Genetic Mutations", text: "Inherited mutations in genes like BRCA1 and BRCA2 significantly increase the risk. These are responsible for about 5-10% of all breast cancer cases." },
-    { icon: "/icons/family.svg", title: "Family History", text: "Having a first-degree relative—mother, sister, or daughter—who has been diagnosed with breast cancer increases your own risk profile." },
-    { icon: "/icons/reproductive.svg", title: "Reproductive History", text: "Starting menstruation before age 12 or entering menopause after 55 exposes breast tissue to hormones for a longer duration." },
-    { icon: "/icons/density.svg", title: "Dense Breast Tissue", text: "Women with dense breast tissue have more glandular and fibrous tissue than fatty tissue, which can also make tumors harder to detect on mammograms." }
+    { icon: "/icons/age.png", title: "Advancing Age", text: "The risk of developing breast cancer increases as you get older. Most cases are diagnosed in individuals over the age of 50." },
+    { icon: "/icons/genetics.png", title: "Genetic Mutations", text: "Inherited mutations in genes like BRCA1 and BRCA2 significantly increase the risk. These are responsible for about 5-10% of all breast cancer cases." },
+    { icon: "/icons/family.png", title: "Family History", text: "Having a first-degree relative—mother, sister, or daughter—who has been diagnosed with breast cancer increases your own risk profile." },
+    { icon: "/icons/reproductive.png", title: "Reproductive History", text: "Starting menstruation before age 12 or entering menopause after 55 exposes breast tissue to hormones for a longer duration." },
+    { icon: "/icons/density.png", title: "Dense Breast Tissue", text: "Women with dense breast tissue have more glandular and fibrous tissue than fatty tissue, which can also make tumors harder to detect on mammograms." }
   ],
   lifestyle: [
-    { icon: "/icons/smoking.svg", title: "Smoking", text: "Tobacco use has been linked to an increased risk of breast cancer, particularly in women who began smoking before their first pregnancy." },
-    { icon: "/icons/alcohol.svg", title: "Alcohol Consumption", text: "Regular alcohol consumption is linked to a dose-dependent increase in risk. Even small amounts can potentially elevate estrogen levels." },
-    { icon: "/icons/weight.svg", title: "Overweight & Obesity", text: "Being overweight, especially after menopause, increases risk as fat tissue produces extra estrogen, which can fuel cancer cell growth." },
-    { icon: "/icons/sedentary.svg", title: "Physical Inactivity", text: "Leading a sedentary lifestyle is associated with a higher risk. Regular exercise helps regulate hormones and improves immune function." },
-    { icon: "/icons/diet.svg", title: "Unhealthy Diet", text: "A diet high in processed meats, saturated fats, and sugars, while low in fruits and vegetables, may contribute to overall systemic inflammation." }
+    { icon: "/icons/smoking.png", title: "Smoking", text: "Tobacco use has been linked to an increased risk of breast cancer, particularly in women who began smoking before their first pregnancy." },
+    { icon: "/icons/alcohol.png", title: "Alcohol Consumption", text: "Regular alcohol consumption is linked to a dose-dependent increase in risk. Even small amounts can potentially elevate estrogen levels." },
+    { icon: "/icons/overweight.png", title: "Overweight & Obesity", text: "Being overweight, especially after menopause, increases risk as fat tissue produces extra estrogen, which can fuel cancer cell growth." },
+    { icon: "/icons/inactive.png", title: "Physical Inactivity", text: "Leading a sedentary lifestyle is associated with a higher risk. Regular exercise helps regulate hormones and improves immune function." },
+    { icon: "/icons/junk.png", title: "Unhealthy Diet", text: "A diet high in processed meats, saturated fats, and sugars, while low in fruits and vegetables, may contribute to overall systemic inflammation." }
   ]
 },
 symptoms: {
@@ -101,32 +101,32 @@ symptoms: {
     {
       title: "New Lump in the Breast",
       text: "A painless lump or thickening in the breast or underarm area is one of the most common signs of breast cancer.",
-      img: "/symptoms/s1.jpg"
+      img: "/symptoms/s1.png"
     },
     {
       title: "Changes in Breast Size or Shape",
       text: "Any unusual change in the appearance, contour, or size of the breast should be evaluated by a healthcare professional.",
-      img: "/symptoms/s2.jpg"
+      img: "/symptoms/s2.png"
     },
     {
       title: "Nipple Discharge",
       text: "Unexpected nipple discharge, especially if bloody or occurring without squeezing, may require medical attention.",
-      img: "/symptoms/s3.jpg"
+      img: "/symptoms/s3.png"
     },
     {
       title: "Skin Changes",
       text: "Dimpling, puckering, redness, scaling, or thickening of the breast skin can sometimes indicate underlying breast cancer.",
-      img: "/symptoms/s4.jpg"
+      img: "/symptoms/s4.png"
     },
     {
       title: "Nipple Changes",
       text: "A nipple turning inward or developing persistent irritation, crusting, or pain should not be ignored.",
-      img: "/symptoms/s5.jpg"
+      img: "/symptoms/s5.png"
     },
     {
       title: "Persistent Breast Pain",
       text: "Although breast pain is often not cancer-related, persistent unexplained discomfort should be assessed by a doctor.",
-      img: "/symptoms/s6.jpg"
+      img: "/symptoms/s6.png"
     }
   ]
 },
@@ -2327,12 +2327,12 @@ symptoms: {
       {
         title: "Spinal Tap",
         text: "A spinal tap may be used when providers suspect the tumor has invaded the tissue layers covering the brain.",
-        img: "/diagnosis/brain-spinal-tap.png"
+        img: "/diagnosis/brain-tap.png"
       },
       {
         title: "Specialized Tests",
         text: "Specialized tests may check blood or cerebrospinal fluid for tumor markers or gene abnormalities linked with certain tumors.",
-        img: "/diagnosis/brain-special-tests.png"
+        img: "/diagnosis/brain-tests.png"
       }
     ]
   },
@@ -2475,22 +2475,22 @@ symptoms: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "MYC Gene Changes",
         text: "Burkitt lymphoma is linked to changes in a gene called MYC, which helps control cell growth."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Gene Translocation",
         text: "A genetic glitch called translocation can make the MYC gene overactive."
       },
       {
-        icon: "/icons/family.svg",
+        icon: "/icons/family.png",
         title: "Epstein-Barr Virus",
         text: "Some people with Epstein-Barr virus also have Burkitt lymphoma, but not everyone with EBV develops it."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Weakened Immune System",
         text: "Immunodeficiency-related Burkitt lymphoma affects people with weakened immune systems, such as people with HIV/AIDS."
       }
@@ -2498,7 +2498,7 @@ symptoms: {
 
     lifestyle: [
       {
-        icon: "",
+        icon: "/icons/none.png",
         title: "No Lifestyle Risk Factors",
         text: "This page does not identify clearly established lifestyle-related risk factors for Burkitt lymphoma."
       }

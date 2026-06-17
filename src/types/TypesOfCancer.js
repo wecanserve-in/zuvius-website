@@ -19,7 +19,7 @@ const cancersData = [
   { name: "Burkitt Lymphoma", desc: "A fast-growing type of non-Hodgkin lymphoma.", img: "/cancer-types/lymphoma.png" },
 
   { name: "Cervical Cancer", desc: "Affects the cells of the cervix.", img: "/cancer-types/cervix.png" },
-  { name: "Cholangiocarcinoma", desc: "Another name for bile duct cancer.", img: "/cancer-types/bile-duct.png" },
+  
   { name: "Chondrosarcoma", desc: "A cancer that begins in cartilage cells.", img: "/cancer-types/bone.png" },
   { name: "Colon Cancer", desc: "Affects the colon or large intestine.", img: "/cancer-types/colon.png" },
 
