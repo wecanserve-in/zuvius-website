@@ -143,8 +143,8 @@ const TypesOfCancer = () => {
 
       {/* HERO */}
 
-      <PageBanner
-  image="/cancer-types/typesbanner1.png"
+     <PageBanner
+  image="/gif2.mp4"
   title={
     <>
       Types of <br />
@@ -153,6 +153,7 @@ const TypesOfCancer = () => {
   }
   description=""
   alt="Types of Cancer"
+  className="types-cancer-banner"
 />
 
       {/* SEARCH + FILTER */}

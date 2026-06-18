@@ -76,12 +76,7 @@ const CSR = () => {
                       </button>
                     )}
 
-                  <button
-                    className="csr-secondary-outline-btn"
-                    onClick={() => openPhotosPopup(item)}
-                  >
-                    View Photos
-                  </button>
+                
                 </div>
               </div>
 
@@ -104,20 +99,29 @@ const CSR = () => {
                 className="csr-five-image-masonry-grid"
                 onClick={() => openPhotosPopup(item)}
               >
-                {item.photos.slice(0, 5).map((img, imgIndex) => (
-                  <div
-                    className={`csr-grid-photo-frame csr-frame-${
-                      imgIndex + 1
-                    }`}
-                    key={imgIndex}
-                  >
-                    <img
-                      src={img}
-                      alt={`${item.title} ${imgIndex + 1}`}
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
+               {item.photos.slice(0, 5).map((img, imgIndex) => (
+  <div
+    className={`csr-grid-photo-frame csr-frame-${imgIndex + 1}`}
+    key={imgIndex}
+    onClick={() => openPhotosPopup(item)}
+  >
+    <img
+      src={img}
+      alt={`${item.title} ${imgIndex + 1}`}
+      loading="lazy"
+    />
+
+    {imgIndex === 4 && (
+      <div className="csr-view-more-overlay">
+  <span>
+    View
+    <br />
+    More
+  </span>
+</div>
+    )}
+  </div>
+))}
               </div>
             </div>
           </div>

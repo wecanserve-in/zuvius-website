@@ -557,3 +557,30 @@
     line-height: 1.65;
   }
 }
+
+.csr-grid-photo-frame {
+  position: relative;
+}
+
+.csr-view-more-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.csr-view-more-overlay span {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.csr-grid-photo-frame:hover .csr-view-more-overlay {
+  background: rgba(0, 0, 0, 0.72);
+}
