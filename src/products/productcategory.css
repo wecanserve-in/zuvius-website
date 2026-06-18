@@ -301,8 +301,165 @@
   object-fit: contain;
   object-position: center;
   display: block;
-  transform: scale(1.7);
+  transform: scale(2.2);
   transition: 0.3s ease;
+}
+
+.category-product-image img.zaxo-img {
+  transform: scale(2.3) !important;
+}
+
+.category-product-image img.afatinz-img {
+  transform: scale(2.2) !important;
+  margin-bottom: 10px;
+}
+
+
+.category-product-image img.zixib-img {
+  transform: scale(2.6) !important;
+  margin-bottom: 20px;
+}
+
+.category-product-image img.auset-img {
+  transform: scale(2.4) !important;
+}
+
+.category-product-image img.bendaz-img {
+  transform: scale(2.4) !important;
+  margin-top: 10px;
+}
+
+.category-product-image img.bicalutaz-img {
+  transform: scale(2.4) !important;
+}
+
+.category-product-image img.bleoz-img {
+  transform: scale(2.6) !important;
+  margin-top: 5px;
+} 
+
+.category-product-image img.cazo-img {
+  transform: scale(2.7) !important;
+} 
+
+.category-product-image img.cytraz-img {
+  transform: scale(1.8) !important;
+}
+
+.category-product-image img.zuviphos-img {
+  transform: scale(2.6) !important;
+}
+
+.category-product-image img.zuberi-img {
+  transform: scale(2.5) !important;
+}
+
+.category-product-image img.dazine-img {
+  transform: scale(2.5) !important;
+  margin-bottom: 10px;
+}
+
+.category-product-image img.zucarfil-img {
+  transform: scale(2.6) !important;
+  margin-bottom: 10px;
+} 
+
+.category-product-image img.dactinoz-img {
+  transform: scale(2) !important;
+}
+
+.category-product-image img.zomacta-img {
+  transform: scale(2.6) !important;
+}
+
+.category-product-image img.zuvitop-img {
+  transform: scale(2) !important;
+}
+
+.category-product-image img.exem-img {
+  transform: scale(2.6) !important;
+}
+
+.category-product-image img.zefinib-img {
+  transform: scale(2.6) !important;
+}
+
+.category-product-image img.zetabin-img {
+  transform: scale(2) !important;
+}
+
+.category-product-image img.aspraginaz-img {
+  transform: scale(2.4) !important;
+  margin-bottom: 20px;
+}
+.category-product-image img.myeloma-img {
+  transform: scale(2.5) !important;
+}
+.category-product-image img.zovorin-img {
+  transform: scale(3) !important;
+}
+
+.category-product-image img.melphalaz-img {
+  transform: scale(2.5) !important;
+}
+
+.category-product-image img.zuvitrex-img {
+  transform: scale(2.8) !important;
+  margin-top: 10px;
+}
+
+.category-product-image img.zupanib-img {
+  transform: scale(2.7) !important;
+  margin-bottom: 20px;
+}
+
+.category-product-image img.zuviplexa-img {
+  transform: scale(2) !important;
+}
+
+.category-product-image img.pomaloz-img {
+  transform: scale(2.3) !important;
+  margin-bottom: 20px;
+}
+
+.category-product-image img.zuvisor-img {
+  transform: scale(2.6) !important;
+}
+
+.category-product-image img.zutinib-img {
+  transform: scale(2.5) !important;
+}
+
+
+.category-product-image img.temoloz-img {
+  transform: scale(2.5) !important;
+}
+
+.category-product-image img.zutam-img {
+  transform: scale(2.5) !important;
+}
+
+.category-product-image img.zyrolbine-img {
+  transform: scale(2.6) !important;
+  margin-bottom: 5px;
+}
+
+.category-product-image img.calci-img {
+  transform: scale(2.1) !important;
+  margin-right: 5px;
+}
+
+.category-product-image img.zurcumin-img {
+  transform: scale(2.7) !important;
+  margin-top: 15px;
+}
+
+.category-product-image img.sst-img {
+margin-top: 25px;
+}
+
+.category-product-image img.zuvipro-d-img {
+margin-top: 20px;
 }
 
 .category-product-content {

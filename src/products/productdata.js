@@ -34,6 +34,7 @@ export const products = [
   subtitle: "Cytarabine Injection 100/500 mg",
 
   type: "Injection",
+  imageClass:"cytraz-img",
 
   image: "/products1/CYTRAZ-1000 1.png",
 
@@ -78,6 +79,7 @@ export const products = [
   name: "Zuvitrex",
   subtitle: "Methotrexate Injection",
   type: "Injection",
+  imageClass:"zuvitrex-img",
 
   image: "/products/zuvitrex50-1.png",
 
@@ -165,6 +167,7 @@ Similar to other cytotoxic agents, Methotrexate carries a potential risk of tera
   name: "Zyrolbine",
   subtitle: "Vinorelbine Injection",
   type: "Injection",
+  imageClass:"zyrolbine-img",
 
   image: "/products4/zyrolbine-1.png",
   images: [
@@ -365,6 +368,7 @@ Animal studies have shown that amifostine may cause fetal harm when administered
   name: "Auset",
   subtitle: "Azacitidine Injection",
   type: "Injection",
+  imageClass:"auset-img",
 
   image: "/products/auset200-1.png",
 
@@ -497,6 +501,7 @@ Pregnancy testing and effective contraception are recommended during treatment w
   name: "Bendaz",
   subtitle: "Bendamustine Injection",
   type: "Injection",
+  imageClass:"bendaz-img",
 
   image: "/products/bendaz100-1.png",
 
@@ -2381,6 +2386,7 @@ It is also used to relieve joint pain and swelling in patients with active rheum
   name: "Zuberi",
   subtitle: "Chlorambucil Tablets 2/5 mg",
   type: "Tablet",
+  imageClass:"zuberi-img",
 
   image: "/products4/zuberi-1.png",
 
@@ -2854,6 +2860,7 @@ It is used in patients whose disease could not be treated with other medications
   name: "Zomacta",
   subtitle: "Eltrombopag Olamine Tablet 25/50 mg",
   type: "Tablet",
+  imageClass:"zomacta-img",
 
   image: "/products1/zomacta25-1.png",
 
@@ -3103,6 +3110,7 @@ Blocking these proteins helps slow down cancer cell growth.
   name: "Pomaloz",
   subtitle: "Pomalidomide Capsule 1/2 mg",
   type: "Capsule",
+  imageClass:"pomaloz-img",
 
   image: "/products1/pomaloz2-1.png",
 
@@ -3253,6 +3261,7 @@ Males:
   name: "Anastroz",
   subtitle: "Anastrozole Tab",
   type: "Tablet",
+  imageClass:"anastroz-img",
 
   image: "/products/anastroz1-1.png",
 
@@ -3348,6 +3357,7 @@ Anastrozole may cause other side effects.
   name: "Bicalutaz",
   subtitle: "Bicalutamide Tab",
   type: "Tablet",
+  imageClass:"bicalutaz-img",
 
   image: "/products/bicalutaz50-1.png",
 
@@ -3471,6 +3481,7 @@ Before having surgery, tell your doctor or dentist about all the products you us
   name: "Capetaz",
   subtitle: "Capecitabine Tab 500 mg",
   type: "Tablet",
+  imageClass:"capetaz-img",
 
   image: "/products/capetaz500-1.png",
 
@@ -4001,6 +4012,7 @@ Patients presenting with acute or worsening eye symptoms such as pain, redness, 
   name: "Exemestaz",
   subtitle: "Exemestane Tab 25 mg",
   type: "Tablet",
+  imageClass:"exem-img",
 
   image: "/products/exemestaz25-1.png",
 
@@ -4285,6 +4297,7 @@ Withhold and resume at a reduced dose upon recovery or permanently discontinue L
   name: "Melphalaz",
   subtitle: "Melphalan Inj 50 mg",
   type: "Injection",
+  imageClass:"melphalaz-img",
 
   image: "/products/melphalaz5-1.png",
 
@@ -4572,6 +4585,7 @@ Women who are pregnant, planning to be or breast-feeding should not handle Merca
   name: "Myeloma",
   subtitle: "Lenalidomide Cap",
   type: "Capsule",
+  imageClass:"myeloma-img",
 
   image: "/products/myeloma5-1.png",
 
@@ -5004,6 +5018,7 @@ The relevance of these findings in humans is not known.
   name: "Temoloz",
   subtitle: "Temozolamide Cap",
   type: "Capsule",
+  imageClass:"temoloz-img",
 
   image: "/products/temoloz100-1.png",
 
@@ -5683,6 +5698,7 @@ No clinical studies were conducted with Zimitib in patients with decreased renal
   name: "Zixib",
   subtitle: "Axitinib Tab",
   type: "Tablet",
+  imageClass:"zixib-img",
 
   image: "/products/zixib1-1.png",
 
@@ -5930,6 +5946,7 @@ For patients who develop moderate-to-severe proteinuria, reduce the dose or temp
   name: "Zupanib",
   subtitle: "Pazopanib Tab",
   type: "Tablet",
+  imageClass:"zupanib-img",
 
   image: "/products/zupanib200-1.png",
 
@@ -6069,6 +6086,7 @@ Regular monitoring of liver function, blood pressure, thyroid function, and card
   name: "Zutam",
   subtitle: "Tamoxifen Tab 20 mg",
   type: "Tablet",
+  imageClass:"zutam-img",
 
   image: "/products/zutam20-1.png",
 
@@ -6192,6 +6210,7 @@ This medicine is not approved for use by anyone younger than 18 years old.
   name: "Zuviphos",
   subtitle: "Cyclophosphamide 50 mg",
   type: "Tablet",
+  imageClass:"zuviphos-img",
 
   image: "/products/zuviphos50-1.png",
 
@@ -6390,6 +6409,7 @@ Advise patients to report promptly any new or worsening respiratory symptoms.
   name: "Zuvisor",
   subtitle: "Sorafenib Tab 200 mg",
   type: "Tablet",
+  imageClass:"zuvisor-img",
 
   image: "/products/zuvisor 1.png",
 
@@ -6632,6 +6652,7 @@ Monitoring of renal function should be considered.
   name: "Zuvitop",
   subtitle: "Etoposide Cap 50 mg",
   type: "Capsule",
+  imageClass:"zuvitop-img",
 
   image: "/products1/ZUVITOP-50 1.png",
 
@@ -6980,6 +7001,7 @@ Oral antibiotics such as tetracycline, chloramphenicol and non-absorbable broad-
   name: "Dactinoz",
   subtitle: "Dactinomycin Inj 0.5 mg",
   type: "Injection",
+  imageClass:"dactinoz-img",
 
   image: "/products1/DACTINOZ-0.5 1.png",
 
@@ -7466,6 +7488,7 @@ This product may contain inactive ingredients, which can cause allergic reaction
   name: "Zetabin",
   subtitle: "Gemcitabine Inj",
   type: "Injection",
+  imageClass:"zetabin-img",
 
   image: "/products1/ZENTABIN-RTU 1.png",
 
@@ -8497,6 +8520,7 @@ Inspect the solution visually for particulate matter and discoloration prior to 
   name: "Glutox T",
   subtitle: "Glutamine",
   type: "Sachet",
+  imageClass:"glutox-img",
 
   image: "/nutra/GlutoxT-1.png",
 
@@ -8583,6 +8607,7 @@ This contains Sucralose, not recommended for children.
   name: "Afatinz",
   subtitle: "Afatinib Tab",
   type: "Tablet",
+  imageClass:"afatinz-img",
 
   image: "/products2/AFATNIZ-30 1.png",
 
@@ -8748,6 +8773,7 @@ Advise females and males of reproductive potential of the potential for reduced 
   name: "Cazonib",
   subtitle: "Cabozantinib Tab",
   type: "Tablet",
+  imageClass:"cazo-img",
 
   image: "/products2/CAZONIB-20 1.png",
 
@@ -9074,6 +9100,7 @@ Be careful when using a regular toothbrush, dental floss, or toothpick.
   name: "Zutinib",
   subtitle: "Sunitinib Cap",
   type: "Capsule",
+  imageClass:"zutinib-img",
 
   image: "/products2/ZUTINIB-12.5 1.png",
 
@@ -9230,6 +9257,7 @@ Advise patients that male and female fertility may be compromised by treatment w
   name: "SST Tabs",
   subtitle: "Saliva Stimulating Tab 200 mg",
   type: "Tablet",
+  imageClass:"sst-img",
 
   image: "/nutra/SST-1.png",
 
@@ -9322,6 +9350,7 @@ To be taken orally.
   name: "Calciboon ZM",
   subtitle: "Calcium Citrate Malate 250 mg",
   type: "Tablet",
+  imageClass:"calci-img",
 
   image: "/nutra/Calciboon-1.png",
 
@@ -9503,6 +9532,7 @@ The American College of Obstetricians and Gynaecologists (ACOG) recommends that 
   name: "Zurcumin",
   subtitle: "Curcumin 500 mg",
   type: "Tablet",
+  imageClass:"zurcumin-img",
 
   image: "/nutra/Zurcumin-1.png",
 
@@ -9818,9 +9848,10 @@ If you are allergic to cow’s milk, avoid using whey protein.
   category: "nutrazeutica",
   categoryName: "Nutrazeutica",
   slug: "zuvipro-d",
-  name: "Zuvipro D (Strawberry/Vanilla)",
-  subtitle: "Protein Supplement for Diabetics 200 gm",
+  name: "Zuvipro D ",
+  subtitle: "(Strawberry/Vanilla)",
   type: "Powder",
+  imageClass:"zuvipro-d-img",
 
   image: "/nutra/Zuviprodstrawberry-1.png",
   images: [
@@ -10261,6 +10292,7 @@ Be sure to mention any of the following:
   name: "Aspraginaz",
   subtitle: "L-Asparaginase Inj 5000 IU / 10000 IU",
   type: "Injection",
+  imageClass:"aspraginaz-img",
 
   image: "/products4/aspra5000-1.png",
 
@@ -10372,6 +10404,7 @@ Monitor serum glucose.
   name: "Bleoz",
   subtitle: "Bleomycin Sulphate 15 IU",
   type: "Injection",
+  imageClass:"bleoz-img",
 
   image: "/products4/bleoz-1.png",
 
@@ -10686,6 +10719,7 @@ Tell your doctor or pharmacist if you have any medical history, especially:
   name: "Dazine",
   subtitle: "Dacarbazine Inj 200 mg / 500 mg",
   type: "Injection",
+  imageClass:"dazine-img",
 
   image: "/products4/dazine-1.png",
 
@@ -11957,6 +11991,7 @@ Local injection of hyaluronidase and the application of moderate heat to the are
   name: "Zaxotein",
   subtitle: "Albumin Bound Paclitaxel 100 mg",
   type: "Injection",
+  imageClass:"zaxo-img",
 
   image: "/products3/zaxotein-1.png",
 
@@ -12174,6 +12209,7 @@ In order to monitor the occurrence of bone marrow suppression, primarily neutrop
   name: "Zefinib",
   subtitle: "Gefitinib Tab 250 mg",
   type: "Tablet",
+  imageClass:"zefinib-img",
 
   image: "/products3/zefinib-1.png",
 
@@ -12949,6 +12985,7 @@ Report any new or worsening symptoms to your doctor, nurse, or pharmacist.
   name: "Zovorin",
   subtitle: "Leucovorin Calcium Inj 50 mg/5 ml",
   type: "Injection",
+  imageClass:"zovorin-img",
 
   image: "/products3/zovorin-1.png",
 
@@ -13200,6 +13237,7 @@ Treatment should be discontinued when there is clear evidence of tumour progress
   name: "Zucarfil",
   subtitle: "Carfilzomib Inj 60 mg",
   type: "Injection",
+  imageClass:"zucarfil-img",
 
   image: "/products4/zucarfil-1.png",
 
@@ -13573,6 +13611,7 @@ Tell your doctor right away if you have:
   name: "Zuviplexa",
   subtitle: "Plerixafor Inj 20 mg",
   type: "Injection",
+  imageClass:"zuviplexa-img",
 
   image: "/products3/zuviplexa-1.png",
 

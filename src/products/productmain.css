@@ -255,6 +255,28 @@
   transition: 0.35s ease;
 }
 
+.products-product-image img.anastroz-img {
+transform: scale(2.5);
+}
+
+.products-product-image img.auset-img {
+transform: scale(2.5);
+}
+
+.products-product-image img.capetaz-img {
+transform: scale(2.5);
+}
+
+.products-product-image img.calci-img {
+transform: scale(2.5);
+}
+
+.products-product-image img.zurcumin-img {
+transform: scale(2.6);
+margin-top: 10px;
+}
+
+
 .products-product-content {
   flex: 1;
   padding: 26px 24px 22px;

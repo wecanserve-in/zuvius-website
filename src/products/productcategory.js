@@ -101,7 +101,7 @@ const ProductCategory = () => {
                 key={`${product.category}-${product.slug}`}
               >
                 <div className="category-product-image">
-                  <img src={product.image} alt={product.name} />
+                  <img src={product.image} alt={product.name} className={product.imageClass || ""} />
                 </div>
 
                 <div className="category-product-content">

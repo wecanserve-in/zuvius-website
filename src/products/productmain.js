@@ -80,7 +80,7 @@ const ProductMain = () => {
             {getFeaturedProducts(category.id).map((product) => (
               <div className="products-product-card" key={product.id}>
                 <div className="products-product-image">
-                  <img src={product.image} alt={product.name} />
+                  <img src={product.image} alt={product.name} className={product.imageClass || ""} />
                 </div>
 
                 <div className="products-product-content">
