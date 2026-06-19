@@ -4,46 +4,40 @@ import "./productmain.css";
 import { productCategories, products } from "./productdata";
 import PageBanner from "../components/PageBanner";
 
-
 const ProductMain = () => {
   const navigate = useNavigate();
 
-
   const getFeaturedProducts = (categoryId) => {
-  const featuredProducts = {
-    oncoace: ["anastroz", "auset", "capetaz"],
-    nutrazeutica: ["glutox-t", "calciboon-zm", "zurcumin"],
+    const featuredProducts = {
+      oncoace: ["anastroz", "auset", "capetaz"],
+      nutrazeutica: ["glutox-t", "calciboon-zm", "zurcumin"],
+    };
+
+    const selectedSlugs = featuredProducts[categoryId] || [];
+
+    return products
+      .filter((product) => product.category === categoryId)
+      .filter((product) => selectedSlugs.includes(product.slug))
+      .sort(
+        (a, b) =>
+          selectedSlugs.indexOf(a.slug) - selectedSlugs.indexOf(b.slug)
+      );
   };
 
-  const selectedSlugs = featuredProducts[categoryId] || [];
-
-  return products
-    .filter((product) => product.category === categoryId)
-    .filter((product) =>
-      selectedSlugs.includes(product.slug)
-    )
-    .sort(
-      (a, b) =>
-        selectedSlugs.indexOf(a.slug) -
-        selectedSlugs.indexOf(b.slug)
-    );
-};
   return (
     <div className="products-main-page">
-      {/* HERO */}
       <PageBanner
-  image="/products/productsbanner.png"
-  title={
-    <>
-      Our <br />
-      Products
-    </>
-  }
-  description=""
-  alt="Our Products"
-/>
+        image="/products/productsbanner.png"
+        title={
+          <>
+            Our <br />
+            Products
+          </>
+        }
+        description=""
+        alt="Our Products"
+      />
 
-      {/* CATEGORY SECTIONS */}
       {productCategories.map((category) => (
         <section
           className={`products-category-section products-category-${category.color}`}
@@ -57,19 +51,11 @@ const ProductMain = () => {
 
               <div className="products-category-text">
                 <h2>{category.title}</h2>
-
                 <p>{category.description}</p>
               </div>
             </div>
 
             <div className="products-category-actions">
-              <button
-                className="products-category-view-btn"
-                onClick={() => navigate(`/products/${category.id}`)}
-              >
-                View all {category.name} products <span>→</span>
-              </button>
-
               <button className="products-category-brochure-btn">
                 Download Brochure <span>→</span>
               </button>
@@ -80,12 +66,15 @@ const ProductMain = () => {
             {getFeaturedProducts(category.id).map((product) => (
               <div className="products-product-card" key={product.id}>
                 <div className="products-product-image">
-                  <img src={product.image} alt={product.name} className={product.imageClass || ""} />
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className={product.imageClass || ""}
+                  />
                 </div>
 
                 <div className="products-product-content">
                   <h3>{product.name}</h3>
-
                   <p>{product.subtitle}</p>
 
                   <div className="products-product-bottom">
@@ -93,9 +82,7 @@ const ProductMain = () => {
 
                     <button
                       onClick={() =>
-                        navigate(
-                          `/products/${product.category}/${product.slug}`
-                        )
+                        navigate(`/products/${product.category}/${product.slug}`)
                       }
                     >
                       →
@@ -104,6 +91,15 @@ const ProductMain = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="products-category-footer">
+            <button
+              className="products-category-view-btn"
+              onClick={() => navigate(`/products/${category.id}`)}
+            >
+              View all {category.name} products <span>→</span>
+            </button>
           </div>
         </section>
       ))}
