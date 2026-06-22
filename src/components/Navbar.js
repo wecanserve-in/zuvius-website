@@ -131,7 +131,7 @@ const Navbar = () => {
 
         <li className="mobile-inquiry-wrap">
 <a
-  href="/zuvius-brochure.pdf"
+  href="/zuvius-brochure.pdf" 
   download
   className="btn-brochure mobile-inquiry"
 >
