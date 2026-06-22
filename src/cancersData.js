@@ -2257,9 +2257,8 @@ symptoms: {
   title: "Cervical Cancer",
 
   description:
-    "The cervix is the lower part of the uterus that connects the uterus to the vagina. It plays an important role in the female reproductive system by allowing menstrual flow to leave the body and providing a passage between the uterus and vagina.",
-
-  bannerImg: "/banners/cervical.png",
+"The cervix is a narrow passage that forms the connection between the uterus and the vagina. It helps regulate the movement of fluids into and out of the uterus and plays a vital role during childbirth by expanding to allow the baby to pass through the birth canal",  
+    bannerImg: "/banners/cervical.png",
 
   overview: {
     intro:
@@ -2696,7 +2695,7 @@ symptoms: {
   title: "Chondrosarcoma",
 
   description:
-    "Cartilage is a strong, flexible connective tissue that cushions joints and helps bones move smoothly against one another. It is found throughout the body, including the joints, rib cage, nose and other structures that require support and flexibility.",
+    "Chondrosarcoma is a rare bone cancer that originates in cartilage cells. Cartilage is a strong, flexible connective tissue that cushions joints, promotes smooth movement, and helps protect bones from daily stress and impact. It also provides support and shape to structures such as the nose, ears, and airways.",
 
   bannerImg: "/cancers/chondro.webp",
 
@@ -2902,7 +2901,7 @@ symptoms: {
   title: "Colon Cancer",
 
   description:
-    "The colon is a part of the large intestine that helps absorb water and nutrients from digested food. It also processes and stores waste before it is eliminated from the body.",
+    "The colon is the longest part of the large intestine and an important component of the digestive system. It plays a key role in digestion by absorbing water, nutrients, and electrolytes from digested food while helping process and move waste through the body for elimination.",
 
   bannerImg: "/cancers/colon-cancer.webp",
 
@@ -3133,7 +3132,7 @@ symptoms: {
   title: "Duodenal Cancer",
 
   description:
-    "The duodenum is the first part of the small intestine and plays an important role in digestion. It receives partially digested food from the stomach and helps break it down further using digestive juices from the pancreas and liver.",
+    "The duodenum is the initial section of the small intestine. Its primary function is to convert partially digested food received from the stomach into nutrients that the body can utilize. Digestive fluids released from the liver, gallbladder, and pancreas enter the duodenum, where they assist in the digestion and absorption process.",
 
   bannerImg: "/cancers/duodenal-cancer.webp",
 
@@ -3280,8 +3279,7 @@ symptoms: {
   title: "Endometrial Cancer",
 
   description:
-    "The endometrium is the inner lining of the uterus that thickens and sheds during the menstrual cycle. It plays an important role in reproduction by providing the environment where a fertilized egg can implant and grow.",
-
+    "The endometrium, also known as the uterine lining, plays an important role in reproduction by providing a place for a fertilized egg to implant. It is also the tissue that is shed during menstruation.",
   bannerImg: "/cancers/endometrial-cancer.webp",
 
   overview: {
@@ -3486,7 +3484,7 @@ symptoms: {
   title: "Esophageal Cancer",
 
   description:
-    "The esophagus is a muscular tube that carries food and liquids from the throat to the stomach. It plays an essential role in the digestive system by moving swallowed food toward the stomach for further digestion.",
+    "The esophagus is a hollow muscular tube that transports food and liquids from the throat to the stomach. Muscles within the esophagus help move what you swallow down toward the stomach.",
 
   bannerImg: "/cancers/esophageal-cancer.webp",
 
@@ -3948,39 +3946,22 @@ symptoms: {
 //eye cancer//
 {
   slug: "eye-cancer",
+
   title: "Eye Cancer",
-  description: "Eye cancer happens when cells in or around the eye grow out of control and form a tumor. Eye cancer may begin in the eye itself or spread to the eye from cancer that started elsewhere in the body.",
+
+  description:
+    "Your eyes are an important sensory organ that provide your brain with information about the world around you. They perform the visual function of detecting images, while the signals they transmit help the brain create the images you perceive.",
+
+  bannerImg: "/cancers/eye-cancer.webp",
 
   overview: {
-    intro: "Eye cancer is uncommon and can affect different parts of the eye. Some eye cancers begin in the eye, while others spread there from another part of the body. Early detection and treatment can help preserve vision and control the disease.",
-    cards: [
-      {
-        img: "/overview/eye-primary.png",
-        title: "Primary Eye Cancer",
-        text: "Primary eye cancer begins in the tissues of the eye."
-      },
-      {
-        img: "/overview/eye-secondary.png",
-        title: "Secondary Eye Cancer",
-        text: "Secondary eye cancer happens when cancer spreads to the eye from another part of the body."
-      },
-      {
-        img: "/overview/eye-rare.png",
-        title: "Rare Cancer",
-        text: "Eye cancer is uncommon compared with many other types of cancer."
-      },
-      {
-        img: "/overview/eye-vision.png",
-        title: "Vision Impact",
-        text: "Eye cancer may affect vision depending on the tumor’s location and size."
-      },
-      {
-        img: "/overview/eye-treatment.png",
-        title: "Many Treatment Options",
-        text: "Treatment may include surgery, radiation therapy, laser treatments and medicines."
-      }
-    ]
+    intro:
+      "Eye cancer develops when abnormal cells grow uncontrollably within the tissues of the eye. Although eye cancer is rare, it can affect different parts of the eye and may begin in structures such as the uvea, retina or other eye tissues. Some cancers start in the eye itself, while others spread to the eye from cancer that began elsewhere in the body.",
+
+    description:
+      "Because eye cancer can develop in different areas of the eye, symptoms and treatment options may vary from person to person. In some cases, the disease may not cause noticeable symptoms in its early stages. Early diagnosis and specialized care are important for preserving vision and managing the condition effectively.",
   },
+
 
   typesStages: {
     stages: [
@@ -4162,38 +4143,20 @@ symptoms: {
 
 {
   slug: "fallopian-tube-cancer",
+
   title: "Fallopian Tube Cancer",
-  description: "Fallopian tube cancer is a rare gynecological cancer that affects the ducts that carry eggs from the ovaries to the uterus. It is often linked with epithelial tissue and may spread quickly before symptoms appear.",
+
+  description:
+    "TThe fallopian tubes are important reproductive structures where an egg and sperm can meet. They also carry a fertilized egg to the uterus. Healthy fallopian tubes are essential for fertility.",
+
+  bannerImg: "/cancers/fallopian-tube-cancer.webp",
 
   overview: {
-    intro: "Fallopian tube cancer forms in the fallopian tubes, the ducts that carry eggs from the ovaries to the uterus. Most cases start in epithelial tissue and behave similarly to ovarian cancer and primary peritoneal cancer. It is often diagnosed after it has spread because early symptoms can be difficult to notice.",
-    cards: [
-      {
-        img: "/overview/fallopian-tubes.png",
-        title: "Fallopian Tubes",
-        text: "Fallopian tubes are ducts that carry eggs from the ovaries to the uterus."
-      },
-      {
-        img: "/overview/fallopian-rare.png",
-        title: "Rare Gynecological Cancer",
-        text: "Fallopian tube cancer is rare and affects the female reproductive system."
-      },
-      {
-        img: "/overview/fallopian-epithelial.png",
-        title: "Epithelial Tissue",
-        text: "Most fallopian tube cancers start in epithelial tissue and act like ovarian cancer and primary peritoneal cancer."
-      },
-      {
-        img: "/overview/fallopian-fast.png",
-        title: "Fast Spreading",
-        text: "Most fallopian tube and ovarian tumors are high-grade serous tumors, which means they can spread fast."
-      },
-      {
-        img: "/overview/fallopian-early.png",
-        title: "Early Treatment",
-        text: "Fallopian tube cancer may be curable if treated early, when surgery can remove all cancer cells."
-      }
-    ]
+    intro:
+      "Fallopian tube cancer is a rare type of gynecologic cancer that begins in the cells lining the fallopian tubes. It develops when abnormal cells grow uncontrollably and form a tumor within the tubes. Because the disease is uncommon, it can be difficult to identify in its early stages.",
+
+    description:
+      "The symptoms of fallopian tube cancer are often similar to those of other gynecologic conditions, which may delay diagnosis. In some cases, the disease may not cause noticeable symptoms until it has progressed. Early evaluation and appropriate treatment are important for managing the condition and improving outcomes.",
   },
 
   typesStages: {
@@ -4440,40 +4403,22 @@ symptoms: {
 
 {
   slug: "gallbladder-cancer",
+
   title: "Gallbladder Cancer",
-  description: "Gallbladder cancer is a rare cancer that develops in the tissues of the gallbladder. It often does not cause symptoms in its early stages and is frequently discovered after it has spread beyond the gallbladder.",
+
+  description:
+    "The gallbladder is a small, pear-shaped organ situated beneath the liver. Its role is to store and release bile, a fluid produced by the liver that helps break down fats from the food you consume.",
+
+  bannerImg: "/cancers/gallbladder-cancer.webp",
 
   overview: {
-    intro: "The gallbladder is a small organ located beneath the liver that stores bile. Gallbladder cancer is uncommon and often difficult to detect early because symptoms may not appear until the disease is advanced. Treatment may include surgery, chemotherapy and radiation therapy." 
-,
-    cards: [
-      {
-        img: "/overview/gallbladder-organ.png",
-        title: "Gallbladder",
-        text: "The gallbladder is a small organ beneath the liver that stores bile used in digestion."
-      },
-      {
-        img: "/overview/gallbladder-rare.png",
-        title: "Rare Cancer",
-        text: "Gallbladder cancer is an uncommon form of cancer."
-      },
-      {
-        img: "/overview/gallbladder-silent.png",
-        title: "Few Early Symptoms",
-        text: "Many people do not notice symptoms until the cancer has grown or spread."
-      },
-      {
-        img: "/overview/gallbladder-spread.png",
-        title: "Often Found Late",
-        text: "Most cases are diagnosed after the cancer has spread beyond the gallbladder."
-      },
-      {
-        img: "/overview/gallbladder-treatment.png",
-        title: "Treatment Options",
-        text: "Treatment may include surgery, chemotherapy and radiation therapy."
-      }
-    ]
+    intro:
+      "Gallbladder cancer develops when abnormal cells in the gallbladder grow uncontrollably and form a tumor. It is a relatively rare cancer and often begins in the inner lining of the gallbladder before potentially spreading into deeper layers of tissue. The disease may develop gradually and can be difficult to detect in its early stages.",
+
+    description:
+      "Many people with gallbladder cancer do not experience noticeable symptoms early in the disease, which means it is often diagnosed after it has progressed. Treatment options and outcomes depend on factors such as the cancer’s stage and whether it has spread beyond the gallbladder. Early diagnosis can help improve treatment opportunities and overall outcomes.",
   },
+
 
   typesStages: {
     stages: [
@@ -4666,310 +4611,25 @@ symptoms: {
   }
 },
 
-//gastric cancer//
-
-{
-  slug: "gastric-cancer",
-  title: "Gastric Cancer",
-  description: "Gastric cancer can refer to cancer that develops in the stomach. Hereditary diffuse gastric cancer is a genetic cancer syndrome that raises the lifetime risk of diffuse gastric cancer and, in women, lobular breast cancer.",
-
-  overview: {
-    intro: "Hereditary diffuse gastric cancer syndrome is passed down through family lines. It is usually linked to a mutated CDH1 gene, which affects how the body controls cell growth. Diffuse gastric cancer spreads through the stomach lining in small clusters instead of forming one solid tumor.",
-    cards: [
-      {
-        img: "/overview/gastric-syndrome.png",
-        title: "Inherited Cancer Syndrome",
-        text: "Hereditary diffuse gastric cancer is a familial cancer syndrome that can be passed from a biological parent to a child."
-      },
-      {
-        img: "/overview/gastric-cdh1.png",
-        title: "CDH1 Gene Mutation",
-        text: "The syndrome is usually linked to a mutation in the CDH1 gene, a tumor suppressor gene that helps keep cancer growth in check."
-      },
-      {
-        img: "/overview/gastric-diffuse.png",
-        title: "Diffuse Growth Pattern",
-        text: "Diffuse gastric cancer spreads in small clusters throughout the stomach lining instead of forming a solid tumor."
-      },
-      {
-        img: "/overview/gastric-lining.png",
-        title: "Stomach Lining Changes",
-        text: "As it grows, diffuse gastric cancer thickens and hardens the stomach lining and can spread into deeper layers."
-      },
-      {
-        img: "/overview/gastric-breast-risk.png",
-        title: "Linked Breast Cancer Risk",
-        text: "Women who inherit this syndrome also have an increased risk of developing lobular breast cancer."
-      },
-      {
-        img: "/overview/gastric-detection.png",
-        title: "Hard to Detect Early",
-        text: "Diffuse gastric cancer may not appear on routine imaging and often does not cause symptoms until advanced stages."
-      }
-    ]
-  },
-
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Detailed staging information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/gastric-diffuse-type.png",
-        title: "Diffuse Gastric Cancer",
-        text: "This type of stomach cancer spreads widely through the stomach lining in small cell clusters and may thicken the stomach wall."
-      },
-      {
-        img: "/overview/gastric-lobular-breast.png",
-        title: "Lobular Breast Cancer",
-        text: "Women with hereditary diffuse gastric cancer syndrome have an increased risk of lobular breast cancer."
-      }
-    ]
-  },
-
-  riskFactorsData: {
-    uncontrollable: [
-      {
-        icon: "/icons/genetics.svg",
-        title: "Inherited Gene Mutation",
-        text: "HDGC happens when a person inherits a mutated tumor-suppressing gene from a biological parent."
-      },
-      {
-        icon: "/icons/density.svg",
-        title: "CDH1 Mutation",
-        text: "The CDH1 gene mutation is currently associated with about 40% of hereditary diffuse gastric cancer cases."
-      },
-      {
-        icon: "/icons/family.svg",
-        title: "Family Pattern",
-        text: "A person may still be diagnosed without a CDH1 mutation if the family shows a strong pattern of diffuse gastric cancer."
-      },
-      {
-        icon: "/icons/reproductive.svg",
-        title: "Autosomal Dominant Inheritance",
-        text: "If one biological parent has the mutation, there is a 50% chance they can pass it to a biological child."
-      }
-    ],
-
-    lifestyle: [
-      {
-        icon: "/icons/smoking.svg",
-        title: "Smoking",
-        text: "Smoking is listed as an environmental risk factor for developing stomach cancer."
-      },
-      {
-        icon: "/icons/alcohol.svg",
-        title: "Heavy Alcohol Use",
-        text: "Heavy alcohol use is listed as an environmental risk factor for stomach cancer."
-      },
-      {
-        icon: "/icons/diet.svg",
-        title: "Red Meat Consumption",
-        text: "Red meat consumption is listed among environmental risk factors for stomach cancer."
-      },
-      {
-        icon: "/icons/infection.svg",
-        title: "H. pylori Infection",
-        text: "H. pylori infection is listed as an environmental risk factor for stomach cancer."
-      }
-    ]
-  },
-
-  symptoms: {
-    items: [
-      {
-        title: "Stomach Pain",
-        text: "Stomach pain may occur, especially in the upper left abdomen.",
-        img: "/symptoms/gastric-pain.png"
-      },
-      {
-        title: "Bloated Stomach",
-        text: "A bloated stomach may be a symptom of diffuse gastric cancer.",
-        img: "/symptoms/gastric-bloating.png"
-      },
-      {
-        title: "Nausea and Vomiting",
-        text: "Nausea and vomiting may occur.",
-        img: "/symptoms/gastric-nausea.png"
-      },
-      {
-        title: "Loss of Appetite",
-        text: "People may experience loss of appetite.",
-        img: "/symptoms/gastric-appetite.png"
-      },
-      {
-        title: "Weight Loss",
-        text: "Unexplained weight loss may develop.",
-        img: "/symptoms/gastric-weight.png"
-      },
-      {
-        title: "Fatigue",
-        text: "Fatigue may occur as the disease progresses.",
-        img: "/symptoms/gastric-fatigue.png"
-      },
-      {
-        title: "Difficulty Swallowing",
-        text: "Difficulty swallowing may be a symptom.",
-        img: "/symptoms/gastric-swallowing.png"
-      },
-      {
-        title: "Blood in Stool",
-        text: "Blood in stool may occur.",
-        img: "/symptoms/gastric-stool-blood.png"
-      },
-      {
-        title: "Vomiting Blood",
-        text: "Some people may vomit blood.",
-        img: "/symptoms/gastric-vomit-blood.png"
-      },
-      {
-        title: "Jaundice",
-        text: "A yellow tint to the eyes and skin may occur.",
-        img: "/symptoms/gastric-jaundice.png"
-      }
-    ]
-  },
-
-  diagnosis: {
-    items: [
-      {
-        title: "Risk Review",
-        text: "A provider may calculate risk based on family history or genetic testing results.",
-        img: "/diagnosis/gastric-risk-review.png"
-      },
-      {
-        title: "Genetic Testing",
-        text: "Genetic testing uses a blood sample to look for mutations linked with known genetic diseases."
-      },
-      {
-        title: "Upper Endoscopy",
-        text: "Upper endoscopy allows a provider to closely examine the stomach lining and collect tissue samples.",
-        img: "/diagnosis/gastric-endoscopy.png"
-      },
-      {
-        title: "Tissue Sampling",
-        text: "Diffuse gastric cancer can be difficult to detect, so providers may take tissue samples during endoscopy.",
-        img: "/diagnosis/gastric-tissue.png"
-      },
-      {
-        title: "Breast MRI",
-        text: "A breast MRI may be recommended to look for lobular breast cancer because it may not always show on a regular mammogram.",
-        img: "/diagnosis/gastric-breast-mri.png"
-      },
-      {
-        title: "Biopsy",
-        text: "A biopsy checks tissue under a microscope to confirm whether cancer is present.",
-        img: "/diagnosis/gastric-biopsy.png"
-      }
-    ]
-  },
-
-  treatment: {
-    options: [
-      {
-        title: "Regular Screening",
-        text: "People with the syndrome but no cancer may need regular cancer screening tests.",
-        img: "/treatment/gastric-screening.png"
-      },
-      {
-        title: "Preventive Surgery",
-        text: "Preventive surgery may be discussed for people with a confirmed CDH1 mutation.",
-        img: "/treatment/gastric-preventive.png"
-      },
-      {
-        title: "Total Gastrectomy",
-        text: "For HDGC, providers often recommend total gastrectomy, which removes the whole stomach.",
-        img: "/treatment/gastric-gastrectomy.png"
-      },
-      {
-        title: "Digestive Reconstruction",
-        text: "During total gastrectomy, the surgeon connects the esophagus directly to the small intestine.",
-        img: "/treatment/gastric-reconstruction.png"
-      },
-      {
-        title: "Radiation Therapy",
-        text: "Radiation therapy may be used as an adjuvant therapy after surgery.",
-        img: "/treatment/gastric-radiation.png"
-      },
-      {
-        title: "Chemotherapy",
-        text: "Chemotherapy may be used as an adjuvant therapy after surgery.",
-        img: "/treatment/gastric-chemo.png"
-      },
-      {
-        title: "Breast Cancer Treatment",
-        text: "If lobular breast cancer develops, treatment usually begins with breast cancer surgery followed by adjuvant therapy.",
-        img: "/treatment/gastric-breast-treatment.png"
-      }
-    ],
-
-    supportiveCare: [
-      {
-        title: "Nutrition Support",
-        text: "After total gastrectomy, nutrition support and supplements may help manage malabsorption and malnutrition."
-      },
-      {
-        title: "Dumping Syndrome Support",
-        text: "Changing eating habits may help symptoms such as nausea, diarrhea and low blood sugar after stomach removal."
-      },
-      {
-        title: "Genetic Counseling",
-        text: "Genetic counseling can help people understand the risk of passing HDGC to biological children."
-      },
-      {
-        title: "Family Planning Support",
-        text: "Selective IVF may be discussed for people who want to reduce the chance of passing on the CDH1 mutation."
-      }
-    ]
-  }
-},
-
 //gastrointestinal stromal tumor (GIST)//
 {
   slug: "gastrointestinal-stromal-tumor",
+
   title: "Gastrointestinal Stromal Tumor",
-  description: "Gastrointestinal stromal tumors, or GISTs, are rare cancerous tumors that develop in the digestive system. They may not cause symptoms, but when symptoms appear, they can include belly pain, blood in stool and vomiting blood.",
+
+  description:
+    " The gastrointestinal tract consists of the organs through which food and liquids pass as they are swallowed, digested, absorbed, and eventually eliminated from the body as feces.",
+
+  bannerImg: "/cancers/gastrointestinal-stromal-tumor.webp",
 
   overview: {
-    intro: "GISTs are rare cancerous tumors in the gastrointestinal tract. They are a type of soft tissue sarcoma and develop in cells called interstitial cells of Cajal, which are found in the walls of digestive organs. These tumors usually form in the stomach or small intestine.",
-    cards: [
-      {
-        img: "/overview/gist-gi-tract.png",
-        title: "Digestive System Tumor",
-        text: "GISTs develop in the gastrointestinal tract, which is part of the digestive system."
-      },
-      {
-        img: "/overview/gist-sarcoma.png",
-        title: "Soft Tissue Sarcoma",
-        text: "GIST is a type of soft tissue sarcoma."
-      },
-      {
-        img: "/overview/gist-cajal.png",
-        title: "Interstitial Cells of Cajal",
-        text: "These tumors develop in cells called interstitial cells of Cajal, found in the walls of GI tract organs."
-      },
-      {
-        img: "/overview/gist-stomach.png",
-        title: "Common Locations",
-        text: "GISTs typically form in the stomach or small intestine."
-      },
-      {
-        img: "/overview/gist-silent.png",
-        title: "May Not Cause Symptoms",
-        text: "Small GISTs may not cause symptoms and may be found during tests or surgery for another reason."
-      },
-      {
-        img: "/overview/gist-recurrence.png",
-        title: "Can Come Back",
-        text: "Treatment can ease symptoms and sometimes cure GIST, but these tumors may come back."
-      }
-    ]
+    intro:
+      "Gastrointestinal stromal tumors (GISTs) are rare tumors that develop in specialized cells located in the walls of the gastrointestinal tract. These tumors are a type of soft tissue sarcoma and most commonly form in the stomach or small intestine. GISTs can vary in size and may develop without causing noticeable symptoms.",
+
+    description:
+      "Some gastrointestinal stromal tumors are discovered during tests or procedures performed for other reasons, while larger tumors may cause symptoms as they grow. Treatment often involves surgery to remove the tumor, and in some cases additional therapies may be recommended. Early diagnosis and appropriate treatment can help improve disease management and outcomes.",
   },
+
 
   typesStages: {
     stages: [
@@ -5394,44 +5054,22 @@ symptoms: {
 
 {
   slug: "hairy-cell-leukemia",
+
   title: "Hairy Cell Leukemia",
-  description: "Hairy cell leukemia is a rare, slow-growing leukemia. It happens when abnormal B lymphocytes multiply and build up in the bone marrow, lymph nodes, liver and spleen.",
+
+  description:
+    "Bone marrow is the soft, spongy tissue found inside certain bones where blood cells are produced. It creates red blood cells, white blood cells and platelets that help the body carry oxygen, fight infections and control bleeding.",
+
+  bannerImg: "/cancers/hairy-cell-leukemia.webp",
 
   overview: {
-    intro: "Hairy cell leukemia is a rare blood cancer that develops when the bone marrow makes too many abnormal B-cells. These cells can collect in the bone marrow, lymph nodes, liver and spleen. The disease grows slowly and may not cause symptoms for many years.",
-    cards: [
-      {
-        img: "/overview/hcl-rare.png",
-        title: "Rare Leukemia",
-        text: "Hairy cell leukemia is a rare type of leukemia that grows slowly."
-      },
-      {
-        img: "/overview/hcl-bcells.png",
-        title: "Abnormal B-Cells",
-        text: "It happens when the bone marrow makes too many abnormal B-cells, a type of white blood cell."
-      },
-      {
-        img: "/overview/hcl-build-up.png",
-        title: "Cell Buildup",
-        text: "These abnormal cells can build up in the bone marrow, lymph nodes, liver and spleen."
-      },
-      {
-        img: "/overview/hcl-hairy-cells.png",
-        title: "Hair-Like Appearance",
-        text: "The name comes from how the cells look under a microscope, with tiny hair-like projections."
-      },
-      {
-        img: "/overview/hcl-slow.png",
-        title: "Slow-Growing Disease",
-        text: "Hairy cell leukemia grows slowly and may not cause symptoms for many years."
-      },
-      {
-        img: "/overview/hcl-remission.png",
-        title: "Long-Term Remission",
-        text: "There is no cure, but treatment can often put the disease into remission for years."
-      }
-    ]
+    intro:
+      "Hairy cell leukemia is a rare type of chronic leukemia that affects B lymphocytes, a type of white blood cell. The disease begins in the bone marrow, where abnormal B cells are produced and gradually build up over time. Under a microscope, these cells appear to have tiny hair-like projections, which is how the condition gets its name.",
+
+    description:
+      "Hairy cell leukemia typically develops slowly and may not cause symptoms in its early stages. As abnormal cells accumulate, they can interfere with the bone marrow’s ability to produce healthy blood cells. Although it is a chronic form of leukemia, many people respond well to treatment, and advances in therapy have significantly improved long-term outcomes.",
   },
+
 
   typesStages: {
     stages: [
@@ -5623,39 +5261,22 @@ symptoms: {
 
 {
   slug: "head-and-neck-cancer",
+
   title: "Head and Neck Cancer",
-  description: "Head and neck cancers are complex cancers because they affect areas involved in speaking, swallowing and other important functions. Cleveland Clinic provides specialized diagnosis and treatment for these cancers.",
+
+  description:
+    "The head and neck region includes several structures that support essential functions such as speaking, breathing, swallowing, hearing, and eating.",
+
+  bannerImg: "/cancers/head-and-neck-cancer.webp",
 
   overview: {
-    intro: "Head and neck cancers can be challenging because of the complex anatomy of this area. Treatment may affect speech and swallowing, so care from specialists who diagnose and treat head and neck cancers is important.",
-    cards: [
-      {
-        img: "/overview/head-neck-complex.png",
-        title: "Complex Anatomy",
-        text: "Head and neck cancers can be challenging because this area includes structures involved in speaking, swallowing and breathing."
-      },
-      {
-        img: "/overview/head-neck-expert-care.png",
-        title: "Specialist Care",
-        text: "Cleveland Clinic’s head and neck cancer specialists diagnose and treat even complex cases."
-      },
-      {
-        img: "/overview/head-neck-team.png",
-        title: "Team-Based Care",
-        text: "Care may involve otolaryngologists, head and neck surgeons, radiation oncologists, medical oncologists, geneticists and pathologists."
-      },
-      {
-        img: "/overview/head-neck-imaging.png",
-        title: "Advanced Diagnosis",
-        text: "Enhanced imaging protocols help specialists find head and neck cancers earlier, when they are more treatable."
-      },
-      {
-        img: "/overview/head-neck-function.png",
-        title: "Speech and Swallowing Support",
-        text: "After treatment, patients may need support to restore or preserve the ability to speak and swallow."
-      }
-    ]
+    intro:
+      "Head and neck cancer is a group of cancers that develop in the tissues and organs of the head and neck region. These cancers can occur in areas such as the mouth, throat, voice box, nasal cavity and salivary glands. Because several different structures are involved, head and neck cancer includes multiple cancer types with varying characteristics.",
+
+    description:
+      "Symptoms, treatment options and outcomes can differ depending on the location and extent of the cancer. Early diagnosis is important because it may improve treatment options and help preserve important functions such as speaking, swallowing and breathing. A multidisciplinary approach is often used to provide comprehensive care and support.",
   },
+
 
   typesStages: {
     stages: [
@@ -5842,43 +5463,19 @@ symptoms: {
 
 {
   slug: "hodgkin-lymphoma",
+
   title: "Hodgkin Lymphoma",
-  description: "Hodgkin lymphoma is a group of blood cancers that start in lymphocytes, which are white blood cells in the lymphatic system. It often begins in lymph nodes in the neck or chest and is considered one of the most curable cancers.",
+
+  description:
+    "Hodgkin lymphoma is a type of blood cancer that begins in lymphocytes, a kind of white blood cell found within the lymphatic system. The lymphatic system is a network of organs, vessels, and tissues that helps defend the body against infections and maintain fluid balance.",
+  bannerImg: "/cancers/hodgkin-lymphoma.webp",
 
   overview: {
-    intro: "Hodgkin lymphoma develops when genes inside B lymphocytes change during a person’s lifetime. These abnormal cells often start in lymph nodes in the neck or chest cavity and may spread through the lymphatic system. Treatment can often eliminate signs and symptoms, but the condition may come back.",
-    cards: [
-      {
-        img: "/overview/hodgkin-blood.png",
-        title: "Blood Cancer",
-        text: "Hodgkin lymphoma is a group of blood cancers that develop in the lymphatic system."
-      },
-      {
-        img: "/overview/hodgkin-lymphocytes.png",
-        title: "Lymphocyte Cancer",
-        text: "This cancer affects lymphocytes, important white blood cells in the immune system."
-      },
-      {
-        img: "/overview/hodgkin-bcells.png",
-        title: "B-Cell Changes",
-        text: "Hodgkin lymphoma forms when genes inside B lymphocytes mutate during a person’s lifetime."
-      },
-      {
-        img: "/overview/hodgkin-nodes.png",
-        title: "Common Starting Sites",
-        text: "It typically starts in lymph nodes in the neck or chest cavity."
-      },
-      {
-        img: "/overview/hodgkin-curable.png",
-        title: "Highly Treatable",
-        text: "Healthcare providers consider Hodgkin lymphoma a treatable and highly curable cancer."
-      },
-      {
-        img: "/overview/hodgkin-recurrence.png",
-        title: "Can Come Back",
-        text: "Treatment often removes signs and symptoms, but Hodgkin lymphoma can sometimes recur."
-      }
-    ]
+    intro:
+      "Hodgkin lymphoma is a type of cancer that begins in the lymphatic system when certain white blood cells called lymphocytes grow abnormally and multiply uncontrollably. The disease typically starts in lymph nodes and can spread to other parts of the lymphatic system if left untreated. A distinguishing feature of Hodgkin lymphoma is the presence of abnormal cells known as Reed-Sternberg cells.",
+
+    description:
+      "Hodgkin lymphoma can affect people of different ages and may develop in various lymph nodes throughout the body. Advances in diagnosis and treatment have made it one of the more treatable forms of cancer, particularly when identified early. Prompt evaluation and appropriate treatment can help improve outcomes and support long-term disease management.",
   },
 
   typesStages: {
@@ -6315,44 +5912,22 @@ symptoms: {
 
 {
   slug: "kaposi-sarcoma",
+
   title: "Kaposi Sarcoma",
-  description: "Kaposi sarcoma is a rare type of soft tissue sarcoma. It causes cancerous lesions on the skin, mucus membranes and sometimes in internal organs, and is more likely in people with HHV-8 and a weakened immune system.",
+
+  description:
+    "Mucous membranes are moist tissues that line areas such as the mouth, nose and digestive tract, helping protect and support these structures. Blood vessels and surrounding soft tissues also play an important role in delivering oxygen and nutrients throughout the body.",
+
+  bannerImg: "/cancers/kaposi-sarcoma.webp",
 
   overview: {
-    intro: "Kaposi sarcoma creates patches of abnormal tissue that may appear on the skin, inside the mouth, nose or anus, or in organs such as the lungs, liver and belly. Healthcare providers can treat Kaposi sarcoma, but it may come back after treatment.",
-    cards: [
-      {
-        img: "/overview/kaposi-soft-tissue.png",
-        title: "Soft Tissue Sarcoma",
-        text: "Kaposi sarcoma is a rare type of soft tissue sarcoma."
-      },
-      {
-        img: "/overview/kaposi-lesions.png",
-        title: "Cancerous Lesions",
-        text: "It causes lesions that may form on the skin or on mucus membranes inside areas such as the mouth, nose and anus."
-      },
-      {
-        img: "/overview/kaposi-organs.png",
-        title: "Internal Organ Involvement",
-        text: "Kaposi sarcoma tumors may also develop in the lining of internal organs such as the liver, belly and lungs."
-      },
-      {
-        img: "/overview/kaposi-hhv8.png",
-        title: "HHV-8 Link",
-        text: "Kaposi sarcoma can develop in people who carry human herpesvirus 8 and have a weakened immune system."
-      },
-      {
-        img: "/overview/kaposi-rare.png",
-        title: "Rare Disease",
-        text: "Kaposi sarcoma is rare, with fewer than 5,000 people living with it in the United States."
-      },
-      {
-        img: "/overview/kaposi-recur.png",
-        title: "Can Come Back",
-        text: "Treatment can help, but Kaposi sarcoma may recur after treatment."
-      }
-    ]
+    intro:
+      "Kaposi sarcoma is a rare type of soft tissue sarcoma that causes abnormal lesions to develop on the skin and mucous membranes. These lesions can appear in areas such as the mouth, nose and anus, and may also develop in the lining of internal organs including the digestive tract, lungs and liver. The disease is associated with human herpesvirus 8 (HHV-8) and is more likely to occur in people with weakened immune systems.",
+
+    description:
+      "Kaposi sarcoma can affect different parts of the body and may vary in how it develops from person to person. Healthcare providers classify the disease into several types based on the population affected and underlying causes. Although it is a rare cancer, treatment options are available, and early evaluation can help guide appropriate disease management and care.",
   },
+
 
   typesStages: {
     stages: [
@@ -6554,39 +6129,22 @@ symptoms: {
 
 {
   slug: "kidney-cancer",
+
   title: "Kidney Cancer",
-  description: "Kidney cancer, also called renal cancer, develops when cancerous cells multiply and form tumors in the kidneys. Symptoms may include blood in urine and pain in the back or side.",
+
+  description:
+    "The kidneys are organs that help filter the blood by removing waste products and regulating fluid balance within the body. Most individuals have two kidneys, located on either side of the spine in the lower back.",
+
+  bannerImg: "/cancers/kidney-cancer.webp",
 
   overview: {
-    intro: "Kidney cancer happens when cancer cells form tumors in the kidneys. The kidneys filter blood, balance fluids and remove waste from the body. The most common form is renal cell carcinoma, and treatment depends on the type and stage of cancer.",
-    cards: [
-      {
-        img: "/overview/kidney-organ.png",
-        title: "Kidneys",
-        text: "The kidneys filter blood, balance fluids in the body and remove waste."
-      },
-      {
-        img: "/overview/kidney-tumor.png",
-        title: "Tumor Formation",
-        text: "Kidney cancer forms when cancer cells multiply and create tumors in the kidneys."
-      },
-      {
-        img: "/overview/kidney-rcc.png",
-        title: "Most Common Type",
-        text: "Renal cell carcinoma is the most common type of kidney cancer."
-      },
-      {
-        img: "/overview/kidney-spread.png",
-        title: "Possible Spread",
-        text: "Kidney cancer may spread to nearby tissue, lymph nodes, adrenal glands, major veins or distant organs."
-      },
-      {
-        img: "/overview/kidney-curable.png",
-        title: "Often Curable Early",
-        text: "Kidney cancer is often curable, especially before it spreads outside the kidney."
-      }
-    ]
+    intro:
+      "Kidney cancer develops when abnormal cells in the kidney grow uncontrollably and form a tumor. It is one of the more common cancers affecting the urinary system and can occur in different forms depending on the type of cells involved. The most common type of kidney cancer begins in the cells that line the small tubes within the kidneys.",
+
+    description:
+      "Many people with kidney cancer may not experience noticeable symptoms in the early stages, and the disease is sometimes discovered during imaging tests performed for unrelated reasons. Treatment options and outcomes depend on factors such as the cancer’s type, size and whether it has spread beyond the kidney. Early detection can help expand treatment options and improve outcomes.",
   },
+
 
   typesStages: {
     stages: [
@@ -6822,39 +6380,22 @@ symptoms: {
 
    {
   slug: "laryngeal-cancer",
+
   title: "Laryngeal Cancer",
-  description: "Laryngeal cancer is cancer of the larynx, or voice box. Symptoms may include voice changes, hoarseness, sore throat or a cough that does not go away.",
+
+  description:
+    " Laryngeal cancer is a type of cancer that affects the larynx, commonly known as the voice box. The larynx is a hollow structure located in the center of the neck above the trachea (windpipe) and esophagus.",
+
+  bannerImg: "/cancers/laryngeal-cancer.webp",
 
   overview: {
-    intro: "Laryngeal cancer affects the larynx, the part of the throat that helps with speaking, breathing and swallowing. It may form in the supraglottis, glottis or subglottis. Treatment may include radiation therapy, chemotherapy, immunotherapy, targeted therapy or surgery.",
-    cards: [
-      {
-        img: "/overview/laryngeal-voicebox.png",
-        title: "Voice Box Cancer",
-        text: "Laryngeal cancer affects the larynx, also called the voice box."
-      },
-      {
-        img: "/overview/laryngeal-function.png",
-        title: "Speaking and Swallowing",
-        text: "The larynx helps you speak, breathe and swallow, and contains the vocal cords."
-      },
-      {
-        img: "/overview/laryngeal-growth.png",
-        title: "Uncontrolled Cell Growth",
-        text: "Cancer happens when malignant cells multiply, invade tissues and damage the body."
-      },
-      {
-        img: "/overview/laryngeal-parts.png",
-        title: "Three Main Areas",
-        text: "Laryngeal cancer may form in the supraglottis, glottis or subglottis."
-      },
-      {
-        img: "/overview/laryngeal-voice-change.png",
-        title: "Voice Changes",
-        text: "Hoarseness or voice changes that do not improve after two weeks should be checked."
-      }
-    ]
+    intro:
+      "Laryngeal cancer develops when abnormal cells grow uncontrollably within the tissues of the larynx. The disease can begin in different parts of the voice box and may affect functions such as speech, breathing and swallowing. Like other cancers, it occurs when cells undergo changes that cause them to grow and multiply abnormally.",
+
+    description:
+      "The symptoms and treatment options for laryngeal cancer often depend on the location and extent of the tumor within the larynx. Because the voice box is involved in several essential functions, early diagnosis can help preserve speech and other important abilities. Timely treatment and specialized care play an important role in managing the condition and improving outcomes.",
   },
+
 
   typesStages: {
     stages: [
@@ -7081,6 +6622,203 @@ symptoms: {
     ]
   }
 },
+
+//lukemia
+
+{
+  slug: "leukemia",
+
+  title: "Leukemia",
+
+  description:
+    "Bone marrow is the soft tissue inside bones where blood cells are produced. It creates white blood cells that help fight infection, red blood cells that carry oxygen and platelets that help control bleeding. Healthy bone marrow continually produces new blood cells to support normal body functions.",
+
+  bannerImg: "/cancers/leukemia.webp",
+
+  overview: {
+    intro:
+      "Leukemia is a type of blood cancer that starts in the bone marrow, where blood cells are made. It develops when abnormal blood cells grow uncontrollably and interfere with the production of healthy blood cells. Leukemia can affect both adults and children and includes several different forms of the disease.",
+
+    description:
+      "Healthcare providers classify leukemia based on how quickly it develops and the type of blood cell involved. Some forms progress rapidly and require immediate treatment, while others develop more slowly over time. Treatment and outlook vary depending on the specific leukemia type and individual circumstances." 
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "-",
+        title: "No Stages",
+        text: "Detailed staging information is not presented on this page."
+      }
+    ],
+
+    types: [
+      {
+        img: "/overview/leukemia-all.png",
+        title: "Acute Lymphocytic Leukemia (ALL)",
+        text: "ALL develops from immature lymphoid cells and is the most common leukemia in children, teenagers and young adults."
+      },
+      {
+        img: "/overview/leukemia-aml.png",
+        title: "Acute Myelogenous Leukemia (AML)",
+        text: "AML develops from myeloid cells and is the most common acute leukemia in adults."
+      },
+      {
+        img: "/overview/leukemia-cll.png",
+        title: "Chronic Lymphocytic Leukemia (CLL)",
+        text: "CLL develops from lymphoid cells and is the most common chronic leukemia in adults."
+      },
+      {
+        img: "/overview/leukemia-cml.png",
+        title: "Chronic Myelogenous Leukemia (CML)",
+        text: "CML develops from myeloid cells and usually progresses more slowly than acute leukemias."
+      },
+      {
+        img: "/overview/leukemia-acute.png",
+        title: "Acute Leukemia",
+        text: "Acute leukemia progresses quickly because abnormal blood cells multiply rapidly."
+      },
+      {
+        img: "/overview/leukemia-chronic.png",
+        title: "Chronic Leukemia",
+        text: "Chronic leukemia develops more slowly and may not cause symptoms for years."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/genetics.png",
+        title: "Genetic Conditions",
+        text: "Certain inherited genetic conditions may increase the risk of developing leukemia."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "Having close relatives with leukemia may increase risk for some leukemia types."
+      },
+      {
+        icon: "/icons/radiation.png",
+        title: "Radiation Exposure",
+        text: "Exposure to high levels of radiation may increase leukemia risk."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking",
+        text: "Smoking is associated with an increased risk of some forms of leukemia."
+      },
+      {
+        icon: "/icons/chemical.png",
+        title: "Chemical Exposure",
+        text: "Long-term exposure to certain chemicals, such as benzene, may increase risk."
+      },
+      {
+        icon: "/icons/medical.png",
+        title: "Previous Cancer Treatment",
+        text: "Some chemotherapy drugs and radiation treatments used for other cancers may increase leukemia risk."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Fatigue",
+        text: "People with leukemia often feel unusually tired or weak.",
+        img: "/symptoms/leukemia-fatigue.png"
+      },
+      {
+        title: "Frequent Infections",
+        text: "Abnormal white blood cells may make it harder for the body to fight infections.",
+        img: "/symptoms/leukemia-infections.png"
+      },
+      {
+        title: "Fever or Chills",
+        text: "Persistent fever or chills may occur.",
+        img: "/symptoms/leukemia-fever.png"
+      },
+      {
+        title: "Easy Bruising or Bleeding",
+        text: "Low platelet levels may cause unusual bruising or bleeding.",
+        img: "/symptoms/leukemia-bruising.png"
+      },
+      {
+        title: "Bone or Joint Pain",
+        text: "Some people experience pain in their bones or joints.",
+        img: "/symptoms/leukemia-bone-pain.png"
+      },
+      {
+        title: "Swollen Lymph Nodes",
+        text: "Lymph nodes may become enlarged, especially in the neck, underarm or groin.",
+        img: "/symptoms/leukemia-lymphnodes.png"
+      },
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "A healthcare provider reviews symptoms and checks for signs such as enlarged lymph nodes, liver or spleen.",
+        img: "/diagnosis/leukemia-exam.png"
+      },
+      {
+        title: "Blood Tests",
+        text: "Blood tests help identify abnormal numbers of white blood cells, red blood cells or platelets.",
+        img: "/diagnosis/leukemia-blood.png"
+      },
+      {
+        title: "Bone Marrow Aspiration",
+        text: "A sample of bone marrow may be collected and examined for abnormal blood cells.",
+        img: "/diagnosis/leukemia-aspiration.png"
+      },
+      {
+        title: "Bone Marrow Biopsy",
+        text: "A biopsy allows specialists to examine bone marrow tissue in detail.",
+        img: "/diagnosis/leukemia-biopsy.png"
+      },
+      {
+        title: "Genetic Testing",
+        text: "Genetic and chromosome testing may help identify specific leukemia types and guide treatment decisions.",
+        img: "/diagnosis/leukemia-genetics.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses medicines to destroy leukemia cells or stop them from multiplying.",
+        img: "/treatment/leukemia-chemo.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapies focus on specific features within leukemia cells.",
+        img: "/treatment/leukemia-targeted.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the immune system recognize and attack cancer cells.",
+        img: "/treatment/leukemia-immunotherapy.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy may be used in certain situations to destroy leukemia cells.",
+        img: "/treatment/leukemia-radiation.png"
+      },
+      {
+        title: "Stem Cell Transplant",
+        text: "Stem cell transplantation may replace damaged bone marrow with healthy blood-forming cells.",
+        img: "/treatment/leukemia-stemcell.png"
+      }
+    ],
+  }
+}
 
 ];
 

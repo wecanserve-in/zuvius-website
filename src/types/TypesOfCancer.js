@@ -33,7 +33,6 @@ const cancersData = [
   { name: "Fallopian Tube Cancer", desc: "Begins in the fallopian tubes.", img: "/cancer-types/fallopian.png" },
 
   { name: "Gallbladder Cancer", desc: "Begins in the gallbladder.", img: "/cancer-types/gallbladder.png" },
-  { name: "Gastric Cancer", desc: "Another name for stomach cancer.", img: "/cancer-types/stomach.png" },
   { name: "Gastrointestinal Stromal Tumor", desc: "A tumor that begins in the digestive tract wall.", img: "/cancer-types/intestine.png" },
   { name: "Germ Cell Tumor", desc: "Begins in reproductive cells.", img: "/cancer-types/germ-cell.png" },
 
@@ -43,7 +42,6 @@ const cancersData = [
 
   { name: "Inflammatory Breast Cancer", desc: "A rare aggressive type of breast cancer.", img: "/cancer-types/breast.png" },
 
-  { name: "Juvenile Myelomonocytic Leukemia", desc: "A rare blood cancer mostly seen in children.", img: "/cancer-types/blood.png" },
 
   { name: "Kaposi Sarcoma", desc: "A cancer that forms in blood and lymph vessel lining.", img: "/cancer-types/skin.png" },
   { name: "Kidney Cancer", desc: "Begins in the kidneys.", img: "/cancer-types/kidney.png" },
@@ -57,7 +55,6 @@ const cancersData = [
   { name: "Male Breast Cancer", desc: "Breast cancer occurring in men.", img: "/cancer-types/breast.png" },
   { name: "Melanoma", desc: "A serious type of skin cancer.", img: "/cancer-types/skin.png" },
   { name: "Mesothelioma", desc: "Cancer affecting the lining of lungs or abdomen.", img: "/cancer-types/lung.png" },
-  { name: "Mouth Cancer", desc: "Occurs in tissues of the mouth.", img: "/cancer-types/oral.png" },
   { name: "Multiple Myeloma", desc: "A cancer of plasma cells in bone marrow.", img: "/cancer-types/blood.png" },
 
   { name: "Nasal Cancer", desc: "Begins in the nasal cavity.", img: "/cancer-types/nose.png" },
@@ -66,7 +63,7 @@ const cancersData = [
   { name: "Non-Hodgkin Lymphoma", desc: "A cancer of white blood cells.", img: "/cancer-types/lymphoma.png" },
 
   { name: "Ocular Melanoma", desc: "Melanoma that begins in the eye.", img: "/cancer-types/eye.png" },
-  { name: "Oral Cancer", desc: "Occurs in the tissues of the mouth.", img: "/cancer-types/oral.png" },
+  { name: "Oral Cancer (Mouth Cancer)", desc: "Occurs in the tissues of the mouth.", img: "/cancer-types/oral.png" },
   { name: "Osteosarcoma", desc: "A bone cancer often found in long bones.", img: "/cancer-types/bone.png" },
   { name: "Ovarian Cancer", desc: "Starts in the ovaries.", img: "/cancer-types/ovary.png" },
 
@@ -85,7 +82,7 @@ const cancersData = [
   { name: "Skin Cancer", desc: "Includes melanoma and non-melanoma skin cancers.", img: "/cancer-types/skin.png" },
   { name: "Small Intestine Cancer", desc: "Begins in the small intestine.", img: "/cancer-types/intestine.png" },
   { name: "Spinal Cancer", desc: "Occurs in or near the spinal cord.", img: "/cancer-types/spine.png" },
-  { name: "Stomach Cancer", desc: "Affects the stomach lining.", img: "/cancer-types/stomach.png" },
+  { name: "Stomach Cancer (Gastric cancer)", desc: "Affects the stomach lining.", img: "/cancer-types/stomach.png" },
 
   { name: "Testicular Cancer", desc: "Occurs in one or both testicles.", img: "/cancer-types/testicular.png" },
   { name: "Throat Cancer", desc: "Affects the throat, voice box or tonsils.", img: "/cancer-types/throat.png" },
