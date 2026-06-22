@@ -56,119 +56,126 @@ const membershipItems = [
   },
 ];
 
+const accreditationItems = [
+  {
+    title: "Anvisa",
+    image: "/Accredations/Anvisa.png",
+  },
+  {
+    title: "Cofepris",
+    image: "/Accredations/Cofepris.png",
+  },
+  {
+    title: "EU GMP",
+    image: "/Accredations/EU-GMP.png",
+  },
+  {
+    title: "Invima",
+    image: "/Accredations/Invima.png",
+  },
+  {
+    title: "US FDA",
+    image: "/Accredations/US_FDA.png",
+  },
+  {
+    title: "WHO",
+    image: "/Accredations/WHO.png",
+  },
+  {
+    title: "PIC/S",
+    image: "/Accredations/PICS.png",
+  },
+];
+
 const Awards = () => {
   return (
     <div className="awards-page">
-<PageBanner
-  image="/awards and certifications/awardsbanner.png"
-  title={
-    <>
-      AWARDS & <br />
-      RECOGNITION
-    </>
-  }
-  description=""
-  alt="Awards Hero"
-/>
+      <PageBanner
+        image="/awards and certifications/awardsbanner.png"
+        title={
+          <>
+            AWARDS & <br />
+            RECOGNITION
+          </>
+        }
+        description=""
+        alt="Awards Hero"
+      />
 
-      <section className="accreditation-card">
-        <div className="accreditation-top">
-          <h3>ACCREDITATION</h3>
-          <div className="mini-line"></div>
-        </div>
-
-        <div className="accreditation-logo-row">
-          <div className="accreditation-logo-item">
-            <img src="/Accredations/Anvisa.png" alt="Anvisa" />
+      <div className="awards-content">
+        <section className="awards-accreditation-card">
+          <div className="awards-section-head">
+            <h3>ACCREDITATION</h3>
+            <div className="awards-small-line"></div>
           </div>
 
-          <div className="accreditation-logo-item">
-            <img src="/Accredations/Cofepris.png" alt="Cofepris" />
-          </div>
-
-          <div className="accreditation-logo-item">
-            <img src="/Accredations/EU-GMP.png" alt="EU GMP" />
-          </div>
-
-          <div className="accreditation-logo-item">
-            <img src="/Accredations/Invima.png" alt="Invima" />
-          </div>
-
-          <div className="accreditation-logo-item">
-            <img src="/Accredations/US_FDA.png" alt="US FDA" />
-          </div>
-
-          <div className="accreditation-logo-item">
-            <img src="/Accredations/WHO.png" alt="WHO" />
-          </div>
-
-          <div className="accreditation-logo-item">
-  <img src="/Accredations/PICS.png" alt="PIC/S" />
-</div>
-
-        </div>
-      </section>
-
-      <section className="awards-certification">
-        <h2>AWARDS & CERTIFICATION</h2>
-        <div className="center-line"></div>
-
-        <p>
-          Zuvius Lifesciences has garnered numerous accolades, certifications,
-          and affiliations, solidifying its standing as a prominent player in the
-          healthcare industry.
-        </p>
-
-        <div className="timeline-wrap">
-          {/* <button className="timeline-arrow left">‹</button> */}
-
-          <div className="timeline-line"></div>
-
-          <div className="timeline-grid">
-            {awardItems.map((award, index) => (
-              <div className="timeline-item" key={index}>
-                <div className="award-image-box">
-                  <img src={award.image} alt={award.title} />
-                </div>
-
-                <div className="timeline-number">
-                  {String(index + 1).padStart(2, "0")}
-                </div>
-
-                <h4>{award.title}</h4>
+          <div className="awards-accreditation-grid">
+            {accreditationItems.map((item, index) => (
+              <div className="awards-accreditation-item" key={index}>
+                <img src={item.image} alt={item.title} />
               </div>
             ))}
           </div>
+        </section>
 
-          {/* <button className="timeline-arrow right">›</button> */}
-        </div>
-      </section>
+        <section className="awards-certification">
+          <div className="awards-section-head">
+            <h2>AWARDS & CERTIFICATION</h2>
+            <div className="awards-small-line"></div>
+          </div>
 
-      <section className="membership-section">
-        <div className="membership-blue-card">
-          
-          <h3>MEMBERSHIP</h3>
-          <div className="white-line"></div>
           <p>
-            Zuvius Lifesciences is a proud member of various prestigious
-            industry associations, fostering collaboration and promoting
-            advancements in healthcare.
+            Zuvius Lifesciences has garnered numerous accolades,
+            certifications, and affiliations, solidifying its standing as a
+            prominent player in the healthcare industry.
           </p>
-        </div>
 
-        <div className="membership-cards">
-          {membershipItems.map((item, index) => (
-            <div className="membership-card" key={index}>
-              <div className="membership-logo">
-                <img src={item.image} alt={item.title} />
-              </div>
-              <h4>{item.title}</h4>
+          <div className="awards-timeline-wrap">
+            <div className="awards-timeline-line"></div>
+
+            <div className="awards-timeline-grid">
+              {awardItems.map((award, index) => (
+                <div className="awards-timeline-item" key={index}>
+                  <div className="awards-image-box">
+                    <img src={award.image} alt={award.title} />
+                  </div>
+
+                  <div className="awards-number">
+                    {String(index + 1).padStart(2, "0")}
+                  </div>
+
+                  <h4>{award.title}</h4>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        </section>
 
-      
+        <section className="awards-membership-section">
+          <div className="awards-membership-info">
+            <h3>MEMBERSHIP</h3>
+            <div className="awards-white-line"></div>
+
+            <p>
+              Zuvius Lifesciences is a proud member of various prestigious
+              industry associations, fostering collaboration and promoting
+              advancements in healthcare.
+            </p>
+          </div>
+
+          <div className="awards-membership-grid">
+            {membershipItems.map((item, index) => (
+              <div className="awards-membership-card" key={index}>
+                <div className="awards-membership-logo">
+                  <img src={item.image} alt={item.title} />
+                </div>
+
+                <h4>{item.title}</h4>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
   );
 };

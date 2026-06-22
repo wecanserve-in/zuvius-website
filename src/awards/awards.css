@@ -3,329 +3,286 @@
   background: #ffffff;
   color: #061943;
   overflow-x: hidden;
-  padding: 0 0 80px;
+  padding-bottom: 0;
   font-family: inherit;
 }
 
+.awards-page,
 .awards-page * {
   box-sizing: border-box;
 }
 
-.awards-page section {
+.awards-page img {
   display: block;
-  padding: 0;
-  background: transparent;
 }
 
-/* ACCREDITATION */
-
-.accreditation-card {
-  width: min(1480px, calc(100% - 48px));
-  margin: 0 auto 78px;
-  padding: 48px 48px 42px;
-  border-radius: 22px;
+.awards-content {
   background: #ffffff;
-  border: 1px solid #edf3fb;
-  box-shadow: 0 16px 42px rgba(16, 53, 110, 0.045);
+  padding: 34px 0 90px;
 }
 
-.accreditation-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 38px;
+/* COMMON HEADINGS */
+
+.awards-section-head {
   text-align: center;
+  margin-bottom: 34px;
 }
 
-.accreditation-top h3 {
+.awards-section-head h2,
+.awards-section-head h3 {
   color: #008a9a;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 900;
-  margin: 0 0 14px;
+  line-height: 1.2;
+  margin: 0 0 18px;
 }
 
-.mini-line {
-  width: 48px;
-  height: 3px;
-  border-radius: 20px;
-  background: #008a9a;
-}
-
-/* ACCREDITATION LOGOS */
-
-.accreditation-logo-row {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 14px;
-  align-items: stretch;
-}
-
-.accreditation-logo-item {
-  min-height: 135px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 18px 14px;
-  border-radius: 16px;
-  background: #ffffff;
-  border: 1px solid #edf3fb;
-  transition: 0.35s ease;
-  position: relative;
-}
-
-.accreditation-logo-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 16px 38px rgba(0, 138, 154, 0.14);
-  background: #f8fdff;
-  border-color: rgba(0, 138, 154, 0.25);
-}
-
-.accreditation-logo-item img {
-  width: 100%;
-  max-width: 95px;
-  height: 72px;
-  object-fit: contain;
-  display: block;
-  transition: 0.35s ease;
-}
-
-.accreditation-logo-item:hover img {
-  transform: scale(1.12);
-}
-
-/* AWARDS SECTION */
-
-.awards-certification {
-  width: min(1480px, calc(100% - 48px));
-  margin: 85px auto 0;
-  text-align: center;
-}
-
-.awards-certification h2 {
-  color: #008a9a;
-  font-size: 30px;
-  font-weight: 900;
-  line-height: 1.3;
-  margin: 0 0 10px;
-}
-
-.center-line {
+.awards-small-line {
   width: 58px;
   height: 3px;
   background: #008a9a;
   border-radius: 20px;
-  margin: 0 auto 22px;
+  margin: 0 auto;
+}
+
+/* ACCREDITATION */
+
+.awards-accreditation-card {
+  width: calc(100% - 48px);
+  margin: 0 auto 64px;
+  padding: 34px 46px 48px;
+  background: #ffffff;
+  border: 1px solid #edf3fb;
+  border-radius: 24px;
+  box-shadow: 0 14px 42px rgba(16, 53, 110, 0.045);
+}
+
+.awards-accreditation-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 18px;
+}
+
+.awards-accreditation-item {
+  min-height: 120px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #edf3fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  transition: 0.3s ease;
+}
+
+.awards-accreditation-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 34px rgba(0, 138, 154, 0.14);
+}
+
+.awards-accreditation-item img {
+  width: 100%;
+  max-width: 100px;
+  height: 70px;
+  object-fit: contain;
+}
+
+/* AWARDS TIMELINE */
+
+.awards-certification {
+  width: calc(100% - 96px);
+  margin: 0 auto;
+  text-align: center;
 }
 
 .awards-certification > p {
-  max-width: 780px;
-  margin: 0 auto 42px;
+  max-width: 920px;
+  margin: 0 auto 52px;
   color: #000000;
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 21px;
+  line-height: 1.55;
   font-weight: 600;
 }
 
-/* TIMELINE */
-
-.timeline-wrap {
+.awards-timeline-wrap {
   position: relative;
-  width: 100%;
-  margin: 0 auto;
-  overflow: visible;
+  padding: 0 28px 28px;
 }
 
-.timeline-grid {
+.awards-timeline-line {
+  position: absolute;
+  left: 58px;
+  right: 58px;
+  top: 204px;
+  height: 3px;
+  background: #9fc5ff;
+  z-index: 1;
+}
+
+.awards-timeline-grid {
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 0;
+  grid-template-columns: repeat(7, 1fr);
   align-items: start;
   position: relative;
   z-index: 2;
 }
 
-.timeline-line {
-  position: absolute;
-  left: calc(100% / 14);
-  right: calc(100% / 14);
-  top: 185px;
-  height: 2px;
-  background: #9fc5ff;
-  z-index: 1;
-}
-
-.timeline-line::before,
-.timeline-line::after {
-  display: none;
-}
-
-.timeline-item {
-  min-width: 0;
+.awards-timeline-item {
   text-align: center;
-  padding: 0 10px;
+  padding: 0 14px;
 }
 
-.award-image-box {
-  height: 150px;
+.awards-image-box {
+  height: 190px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
 }
 
-.award-image-box img {
-  max-width: 125px;
-  max-height: 130px;
+.awards-image-box img {
+  max-width: 150px;
+  max-height: 170px;
   width: auto;
   height: auto;
   object-fit: contain;
-  display: block;
-  transform: none;
 }
 
-.timeline-number {
-  width: 52px;
-  height: 52px;
+.awards-number {
+  width: 62px;
+  height: 62px;
   border-radius: 50%;
   background: #ffffff;
-  border: 3px solid #008a9a;
+  border: 4px solid #008a9a;
   color: #008a9a;
+  font-size: 16px;
   font-weight: 900;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 18px;
+  margin: 0 auto 28px;
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 
-.timeline-item h4 {
-  max-width: 160px;
+.awards-timeline-item h4 {
+  max-width: 190px;
   margin: 0 auto;
   color: #061943;
-  font-size: 17px;
-  line-height: 1.35;
-  font-weight: 800;
-  text-align: center;
+  font-size: 21px;
+  line-height: 1.28;
+  font-weight: 900;
 }
 
 /* MEMBERSHIP */
 
-.membership-section {
-  width: min(1480px, calc(100% - 48px));
-  margin: 90px auto 0;
-  display: grid !important;
-  grid-template-columns: 320px 1fr;
-  gap: 28px;
+.awards-membership-section {
+  width: calc(100% - 48px);
+  margin: 92px auto 0;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 34px;
+  align-items: stretch;
 }
 
-.membership-blue-card {
-  min-height: 330px;
-  background: #219b90;
-  border-radius: 10px 10px 40px 10px;
-  color: #ffffff;
-  padding: 42px 36px;
-  position: relative;
-  overflow: hidden;
+.awards-membership-info {
+  min-height: 410px;
+  background: #078c94;
+  border-radius: 10px 10px 46px 10px;
+  padding: 50px 40px;
+  color: #061943;
 }
 
-.membership-blue-card h3 {
-  color: #ffffff;
-  font-size: 34px;
+.awards-membership-info h3 {
+  color: #061943;
+  font-size: 30px;
   font-weight: 900;
-  line-height: 1.2;
-  margin: 0 0 14px;
-  letter-spacing: 1px;
+  margin: 0 0 18px;
 }
 
-.white-line {
-  width: 45px;
+.awards-white-line {
+  width: 56px;
   height: 3px;
   background: #ffffff;
   border-radius: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 28px;
 }
 
-.membership-blue-card p {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 1.9;
+.awards-membership-info p {
+  color: #000000;
+  font-size: 21px;
+  line-height: 1.7;
   font-weight: 500;
   margin: 0;
 }
 
-.membership-cards {
+.awards-membership-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 24px;
+  gap: 30px;
 }
 
-.membership-card {
-  min-height: 200px;
-  border-radius: 16px;
+.awards-membership-card {
+  min-height: 410px;
   background: #ffffff;
   border: 1px solid #edf3fb;
-  box-shadow: 0 12px 35px rgba(16, 53, 110, 0.05);
-  padding: 20px 15px 22px;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(16, 53, 110, 0.055);
+  padding: 28px 22px;
   text-align: center;
   transition: 0.3s ease;
 }
 
-.membership-card:hover {
+.awards-membership-card:hover {
   transform: translateY(-8px);
 }
 
-.membership-logo {
-  height: 120px;
-  margin-bottom: 28px;
-  border-radius: 12px;
+.awards-membership-logo {
+  height: 190px;
   background: #f8fbff;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14px;
 }
 
-.membership-logo img {
+.awards-membership-logo img {
   max-width: 100%;
-  max-height: 95px;
+  max-height: 165px;
   object-fit: contain;
-  display: block;
 }
 
-.membership-card h4 {
+.awards-membership-card h4 {
   color: #061943;
-  font-size: 18px;
-  line-height: 1.35;
-  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.28;
+  font-weight: 900;
   margin: 0;
 }
 
 /* TABLET */
 
 @media (max-width: 1100px) {
-  .accreditation-logo-row {
+  .awards-accreditation-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .timeline-grid {
+  .awards-timeline-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 45px 24px;
+    gap: 50px 22px;
   }
 
-  .timeline-line {
+  .awards-timeline-line {
     display: none;
   }
 
-  .timeline-item h4 {
-    max-width: 210px;
-  }
-
-  .membership-section {
+  .awards-membership-section {
     grid-template-columns: 1fr;
   }
 
-  .membership-cards {
+  .awards-membership-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -333,77 +290,64 @@
 /* MOBILE */
 
 @media (max-width: 600px) {
-  .awards-page {
-    padding-bottom: 55px;
+  .awards-content {
+    padding: 44px 0 60px;
   }
 
-  .accreditation-card,
+  .awards-accreditation-card,
   .awards-certification,
-  .membership-section {
+  .awards-membership-section {
     width: calc(100% - 28px);
   }
 
-  .accreditation-card {
-    margin-bottom: 55px;
-    padding: 32px 14px;
-    border-radius: 18px;
+  .awards-section-head h2,
+  .awards-section-head h3 {
+    font-size: 26px;
   }
 
-  .accreditation-logo-row {
+  .awards-accreditation-card {
+    padding: 28px 14px;
+    margin-bottom: 50px;
+  }
+
+  .awards-accreditation-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
 
-  .accreditation-logo-item {
-    min-height: 115px;
-    padding: 16px 10px;
-  }
-
-  .accreditation-logo-item img {
-    max-width: 82px;
-    height: 62px;
-  }
-
-  .awards-certification {
-    margin-top: 55px;
-  }
-
-  .awards-certification h2 {
-    font-size: 28px;
+  .awards-accreditation-item {
+    min-height: 110px;
   }
 
   .awards-certification > p {
     font-size: 16px;
-    line-height: 1.65;
-    margin-bottom: 34px;
+    line-height: 1.6;
+    margin-bottom: 36px;
   }
 
-  .timeline-wrap {
-    width: 100%;
+  .awards-timeline-wrap {
     padding: 0;
   }
 
-  .timeline-grid {
-    display: grid;
+  .awards-timeline-grid {
     grid-template-columns: 1fr;
     gap: 0;
   }
 
-  .timeline-item {
-    width: 100%;
+  .awards-timeline-item {
     display: grid;
-    grid-template-columns: 115px 58px 1fr;
+    grid-template-columns: 110px 54px 1fr;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 12px;
     padding: 18px 0;
     text-align: left;
     position: relative;
   }
 
-  .timeline-item::before {
+  .awards-timeline-item::before {
     content: "";
     position: absolute;
-    left: 144px;
+    left: 136px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -411,76 +355,72 @@
     z-index: 1;
   }
 
-  .timeline-item:first-child::before {
+  .awards-timeline-item:first-child::before {
     top: 50%;
   }
 
-  .timeline-item:last-child::before {
+  .awards-timeline-item:last-child::before {
     bottom: 50%;
   }
 
-  .award-image-box {
-    height: 105px;
+  .awards-image-box {
+    height: 100px;
     margin-bottom: 0;
-    justify-content: center;
+    align-items: center;
   }
 
-  .award-image-box img {
-    max-width: 95px;
-    max-height: 95px;
+  .awards-image-box img {
+    max-width: 90px;
+    max-height: 90px;
   }
 
-  .timeline-number {
+  .awards-number {
     width: 48px;
     height: 48px;
-    margin: 0;
     font-size: 14px;
-    z-index: 3;
+    margin: 0;
+    border-width: 3px;
   }
 
-  .timeline-item h4 {
+  .awards-timeline-item h4 {
     max-width: none;
-    margin: 0;
     font-size: 17px;
-    line-height: 1.35;
     text-align: left;
   }
 
-  .timeline-line {
-    display: none;
+  .awards-membership-section {
+    margin-top: 54px;
   }
 
-  .membership-section {
-    margin-top: 60px;
-    gap: 20px;
-  }
-
-  .membership-blue-card {
+  .awards-membership-info {
     min-height: auto;
     padding: 30px 24px;
     border-radius: 16px;
   }
 
-  .membership-blue-card h3 {
-    font-size: 28px;
+  .awards-membership-info h3 {
+    font-size: 26px;
   }
 
-  .membership-blue-card p {
+  .awards-membership-info p {
     font-size: 16px;
   }
 
-  .membership-cards {
+  .awards-membership-grid {
     grid-template-columns: 1fr;
     gap: 18px;
   }
 
-  .membership-card {
+  .awards-membership-card {
     min-height: auto;
     padding: 22px 18px;
   }
 
-  .membership-logo {
-    height: 110px;
-    margin-bottom: 20px;
+  .awards-membership-logo {
+    height: 150px;
+  }
+
+  .awards-membership-card h4 {
+    font-size: 19px;
   }
 }
