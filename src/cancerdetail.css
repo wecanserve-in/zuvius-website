@@ -19,15 +19,37 @@
 }
 
 /* Hero Banner */
-.toc-hero { 
-  display: flex; 
-  align-items: center; 
-  padding-left: 7%; 
-  height: 340px; 
+.toc-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 7%;
+  height: 340px;
   margin-top: 60px;
-  background: linear-gradient(105deg, #e6f4ff 57%, #fff 57%); 
+  background: #e6f4ff; /* same color behind image */
+  overflow: hidden;
 }
 
+.toc-hero-left {
+  width: 45%;
+  flex-shrink: 0;
+}
+
+.toc-hero-right {
+  width: 55%;
+  height: 340px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toc-hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
 .hero-title { 
   font-size: 62px; 
   font-weight: 900; 
@@ -206,7 +228,7 @@
 .symptoms-heading,
 .treatment-heading { 
   text-align: left; 
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 900;
   line-height: 1.3;
   color: #008a9a;
@@ -223,7 +245,6 @@
   line-height: 1.7; 
 }
 
-/* Types */
 .type-card-horizontal {
   display: flex;
   width: 100%;
@@ -235,6 +256,7 @@
   box-shadow: 0 6px 20px rgba(10, 48, 98, 0.06);
   margin-bottom: 20px; 
   transition: transform 0.3s ease;
+
 }
 
 .type-card-horizontal:hover {
@@ -244,19 +266,19 @@
 .type-img {
   flex: 0 0 40%;
   background: #ffffff;
-  padding: 26px;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 .type-img img {
-  width: 80%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
 }
 .type-text { 
   flex: 1; 
-  padding: 30px;
+  padding: 1px;
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
@@ -264,7 +286,7 @@
 
 .type-text h4, 
 .stage-card-small h4 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.35;
   color: #061943;
@@ -273,12 +295,15 @@
 
 .type-text p, 
 .stage-card-small p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.7;
   color: #000000;
   margin: 0;
 }
+
+
+
 
 /* Compact Stages Grid */
 .stages-grid {

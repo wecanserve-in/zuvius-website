@@ -1,262 +1,26 @@
 const cancersData = [
-  {
-    slug: "breast-cancer",
-    title: "Breast Cancer",
-    description: "Breast cancer occurs when cells in the breast grow abnormally and uncontrollably, forming a lump or mass. It is one of the most common cancers among women worldwide, but early detection and treatment can significantly improve outcomes.",
-    
-    overview: {
-      intro: "Breast cancer begins in the cells of the breast, most commonly in the milk ducts or the lobules that supply milk to the nipple. It can occur in women of any age but is most common after age 50. Early detection through regular screenings can help identify breast cancer at an early stage.",
-cards: [
-  { 
-    img: "/overview/card1.png", 
-    title: "What is Breast Cancer?", 
-    text: "It occurs when cells in the breast grow uncontrollably, forming a tumor. It can start in the milk ducts or lobules. Though common in women, men can also be affected. Early identification of these cellular changes is crucial for effective care." 
-  },
-  { 
-    img: "/overview/card2.png", 
-    title: "Where Does it Start?", 
-    text: "Most breast cancers originate in the milk-producing ducts or the lobules. From there, they may remain contained or invade nearby healthy tissue. Knowing the site of origin helps doctors plan the right diagnostic approach." 
-  },
-  { 
-    img: "/overview/card3.png", 
-    title: "How Does it Spread?", 
-    text: "Cancer cells can invade nearby tissues or travel through the lymphatic system. The lymph nodes under the arm are often the first area involved. If it reaches distant organs like the lungs or bones, it is called metastatic cancer." 
-  },
-  { 
-    img: "/overview/card4.png", 
-    title: "Why Early Detection?", 
-    text: "It is the best way to improve survival. When found early, treatments are less aggressive and more successful. Regular screenings like mammograms allow doctors to catch abnormalities before they become symptomatic." 
-  },
-  { 
-    img: "/overview/card5.png", 
-    title: "What Are the Risk Factors?", 
-    text:  "Factors include aging, family history, and genetic mutations like BRCA1/2. Lifestyle choices, such as inactivity, alcohol consumption, and hormone usage, also play a significant role in overall breast health." 
-  },
-  { 
-    img: "/overview/card6.png", 
-    title: "Can It Be Prevented?", 
-    text: "Not all cases are preventable, but you can lower your risk. Maintaining a healthy weight, exercising regularly, and limiting alcohol intake are effective steps. Consistent participation in screenings is the best proactive plan." 
-  }
-]
-    },
-
-typesStages: {
-
-  stages: [
-        { label: "0", title: "Stage 0", text: "Abnormal cells found in the ducts or lobules. Non-invasive." },
-        { label: "I", title: "Stage I", text: "Cancer is small (2 cm or less) and hasn't spread to lymph nodes." },
-        { label: "II", title: "Stage II", text: "Cancer is larger than 2 cm or has spread to nearby lymph nodes." },
-        { label: "III", title: "Stage III", text: "Cancer has spread to more lymph nodes or nearby tissues." },
-        { label: "IV", title: "Stage IV", text: "Cancer has spread to distant parts of the body such as bones, lungs, liver or brain." }
-      ],
-
-  types: [
-    { 
-      img: "/overview/type1.png", 
-      title: "Ductal Carcinoma In Situ (DCIS)", 
-      text: "A non-invasive condition where abnormal cells are confined to the milk ducts. Because it has not spread into surrounding tissue, it is highly treatable when caught early." 
-    },
-    { 
-      img: "/overview/type2.png", 
-      title: "Invasive Ductal Carcinoma (IDC)", 
-      text: "The most common form of breast cancer. It begins in the milk ducts and spreads into the nearby breast tissue, with the potential to reach other parts of the body." 
-    },
-    { 
-      img: "/overview/type3.png", 
-      title: "Invasive Lobular Carcinoma (ILC)", 
-      text: "This cancer originates in the milk-producing glands (lobules). It is distinct because it often spreads to other body areas and may require a specialized diagnostic approach." 
-    },
-    { 
-      img: "/overview/type4.png", 
-      title: "Triple-Negative Breast Cancer", 
-      text: "This type tests negative for estrogen, progesterone, and HER2 receptors. It is known to grow faster than other types and requires a highly focused, personalized treatment plan." 
-    },
-    { 
-      img: "/overview/type5.png", 
-      title: "Inflammatory Breast Cancer", 
-      text: "A rare and aggressive form that blocks lymph vessels in the skin. Instead of a lump, it often causes the breast to appear swollen, red, and warm to the touch." 
-    }
-  ],
-    
-    },
-
-riskFactorsData: {
-  uncontrollable: [
-    { icon: "/icons/age.png", title: "Advancing Age", text: "The risk of developing breast cancer increases as you get older. Most cases are diagnosed in individuals over the age of 50." },
-    { icon: "/icons/genetics.png", title: "Genetic Mutations", text: "Inherited mutations in genes like BRCA1 and BRCA2 significantly increase the risk. These are responsible for about 5-10% of all breast cancer cases." },
-    { icon: "/icons/family.png", title: "Family History", text: "Having a first-degree relative—mother, sister, or daughter—who has been diagnosed with breast cancer increases your own risk profile." },
-    { icon: "/icons/reproductive.png", title: "Reproductive History", text: "Starting menstruation before age 12 or entering menopause after 55 exposes breast tissue to hormones for a longer duration." },
-    { icon: "/icons/density.png", title: "Dense Breast Tissue", text: "Women with dense breast tissue have more glandular and fibrous tissue than fatty tissue, which can also make tumors harder to detect on mammograms." }
-  ],
-  lifestyle: [
-    { icon: "/icons/smoking.png", title: "Smoking", text: "Tobacco use has been linked to an increased risk of breast cancer, particularly in women who began smoking before their first pregnancy." },
-    { icon: "/icons/alcohol.png", title: "Alcohol Consumption", text: "Regular alcohol consumption is linked to a dose-dependent increase in risk. Even small amounts can potentially elevate estrogen levels." },
-    { icon: "/icons/overweight.png", title: "Overweight & Obesity", text: "Being overweight, especially after menopause, increases risk as fat tissue produces extra estrogen, which can fuel cancer cell growth." },
-    { icon: "/icons/inactive.png", title: "Physical Inactivity", text: "Leading a sedentary lifestyle is associated with a higher risk. Regular exercise helps regulate hormones and improves immune function." },
-    { icon: "/icons/junk.png", title: "Unhealthy Diet", text: "A diet high in processed meats, saturated fats, and sugars, while low in fruits and vegetables, may contribute to overall systemic inflammation." }
-  ]
-},
-symptoms: {
-  items: [
-    {
-      title: "New Lump in the Breast",
-      text: "A painless lump or thickening in the breast or underarm area is one of the most common signs of breast cancer.",
-      img: "/symptoms/s1.png"
-    },
-    {
-      title: "Changes in Breast Size or Shape",
-      text: "Any unusual change in the appearance, contour, or size of the breast should be evaluated by a healthcare professional.",
-      img: "/symptoms/s2.png"
-    },
-    {
-      title: "Nipple Discharge",
-      text: "Unexpected nipple discharge, especially if bloody or occurring without squeezing, may require medical attention.",
-      img: "/symptoms/s3.png"
-    },
-    {
-      title: "Skin Changes",
-      text: "Dimpling, puckering, redness, scaling, or thickening of the breast skin can sometimes indicate underlying breast cancer.",
-      img: "/symptoms/s4.png"
-    },
-    {
-      title: "Nipple Changes",
-      text: "A nipple turning inward or developing persistent irritation, crusting, or pain should not be ignored.",
-      img: "/symptoms/s5.png"
-    },
-    {
-      title: "Persistent Breast Pain",
-      text: "Although breast pain is often not cancer-related, persistent unexplained discomfort should be assessed by a doctor.",
-      img: "/symptoms/s6.png"
-    }
-  ]
-},
-    diagnosis: {
-  items: [
-    {
-      title: "Mammogram",
-      text: "An X-ray of the breast that can detect changes or abnormal areas, even before they can be felt.",
-      img: "/diagnosis/d1.png"
-    },
-    {
-      title: "Ultrasound",
-      text: "Uses sound waves to create images of the breast. Often used to evaluate lumps found during a physical exam or mammogram.",
-      img: "/diagnosis/d2.png"
-    },
-    {
-      title: "MRI (Breast MRI)",
-      text: "A detailed imaging test that uses magnets and radio waves. Recommended for high-risk women or when other tests are unclear.",
-      img: "/diagnosis/d3.png"
-    },
-    {
-      title: "Biopsy",
-      text: "A small sample of breast tissue is removed and examined under a microscope to check for cancer cells. This confirms a diagnosis.",
-      img: "/diagnosis/d4.png"
-    },
-    {
-      title: "Clinical Breast Exam",
-      text: "A physical examination of the breasts by a healthcare professional to check for lumps or other changes.",
-      img: "/diagnosis/d5.png"
-    },
-    {
-      title: "Other Tests (if needed)",
-      text: "Tests like PET scan, CT scan, or blood tests may be recommended to understand the extent of cancer in certain cases.",
-      img: "/diagnosis/d6.png"
-    }
-  ]
-    },
-   treatment: {
-  options: [
-    {
-      title: "Surgery",
-      text: "Removal of the tumor or the entire breast, depending on the stage and type of breast cancer.",
-      img: "/treatment/t1.png"
-    },
-    {
-      title: "Radiation Therapy",
-      text: "High-energy rays are used to kill cancer cells and reduce the risk of cancer returning.",
-      img: "/treatment/t2.png"
-    },
-    {
-      title: "Chemotherapy",
-      text: "Medicines that kill fast-growing cancer cells or stop them from growing further.",
-      img: "/treatment/t3.png"
-    },
-    {
-      title: "Hormone Therapy",
-      text: "Blocks hormones that fuel certain types of breast cancer or reduces hormone levels.",
-      img: "/treatment/t4.png"
-    },
-    {
-      title: "Targeted Therapy",
-      text: "Drugs that target specific molecules in cancer cells to stop their growth with fewer side effects.",
-      img: "/treatment/t5.png"
-    },
-    {
-      title: "Immunotherapy",
-      text: "Helps the immune system recognize and attack cancer cells more effectively.",
-      img: "/treatment/t6.png"
-    }
-  ],
-
-  supportiveCare: [
-    {
-      title: "Pain Management",
-      text: "Relief from pain and other symptoms for better quality of life."
-    },
-    {
-      title: "Nutrition Support",
-      text: "Proper nutrition to maintain strength and support recovery."
-    },
-    {
-      title: "Emotional Support",
-      text: "Counseling and support groups for emotional well-being."
-    },
-    {
-      title: "Rehabilitation",
-      text: "Physical therapy and exercises to improve strength and mobility."
-    }
-  ]
-}
-    
-},
+  
 //adrenal//
 {
   slug: "adrenal-cancer",
+
   title: "Adrenal Cancer",
-  description: "Adrenal cancer is a rare neuroendocrine tumor that develops when cells in the adrenal glands change and grow out of control. The adrenal glands sit above the kidneys and make hormones that help keep the body functioning properly.",
+
+  description:
+"The adrenal glands are small hormone-producing glands located above each kidney.They help regulate important body functions including metabolism, blood pressure, stress response and growth.",
+    
+bannerImg: "/banners/adrenal.png",
 
   overview: {
-    intro: "Adrenal cancer can develop in one or both adrenal glands. Some people have symptoms because the tumor presses on nearby organs, while others have symptoms related to extra hormones released by the tumor. Early detection and treatment may improve outcomes.",
-    cards: [
-      {
-        img: "/overview/adrenal-glands.png",
-        title: "Adrenal Glands",
-        text: "You have two adrenal glands, one above each kidney. These glands make hormones that send signals to different organs and support healthy body function."
-      },
-      {
-        img: "/overview/adrenal-rare-net.png",
-        title: "Rare Neuroendocrine Tumor",
-        text: "Adrenal cancer is a rare neuroendocrine tumor that forms when adrenal gland cells mutate and grow out of control."
-      },
-      {
-        img: "/overview/adrenal-one-both.png",
-        title: "One or Both Glands",
-        text: "Adrenal cancer can affect one adrenal gland or, less commonly, both adrenal glands."
-      },
-      {
-        img: "/overview/adrenal-hormones.png",
-        title: "Hormone-Related Symptoms",
-        text: "Some adrenal tumors release extra hormones, which may cause symptoms such as high blood pressure, weight changes or excess hair growth."
-      },
-      {
-        img: "/overview/adrenal-curable.png",
-        title: "Early Treatment Outlook",
-        text: "Adrenal cancer can be difficult to cure, but cure may be possible when it is found early and removed before it spreads."
-      }
-    ]
+    intro:
+      "Adrenal cancer is a rare type of cancer that develops when abnormal cells in the adrenal glands grow uncontrollably and form a tumor. The adrenal glands sit above each kidney and produce hormones that help regulate several essential processes throughout the body. This cancer may affect one or both adrenal glands and can behave differently depending on the type of tumor involved.",
+
+    description:
+      "Because adrenal tumors can sometimes produce excess hormones, people may experience a wide range of symptoms or, in some cases, no symptoms at all. Some adrenal cancers are discovered unexpectedly during imaging tests performed for unrelated medical concerns. While adrenal cancer can be challenging to treat, early detection and appropriate treatment may offer the best chance for successful disease management.",
   },
 
-  typesStages: {
+
+typesStages: {
     stages: [
       {
         label: "I",
@@ -455,39 +219,22 @@ symptoms: {
 //anal//
 {
   slug: "anal-cancer",
+
   title: "Anal Cancer",
-  description: "Anal cancer is an uncommon cancer that develops in the lining of the anal canal or in the skin around the anus. It is usually linked to high-risk HPV infection and is often curable when found and treated early.",
+
+  description:
+  "The anus is the final part of the digestive tract where waste leaves the body. Muscles, nerves and surrounding tissues work together to control bowel movements and help maintain normal digestive function.",
+    bannerImg: "/banners/anal.png",
+
 
   overview: {
-    intro: "Anal cancer develops in the tissues that line the anal canal or in the skin near the anal opening. Symptoms can look similar to common conditions like hemorrhoids, so ongoing rectal bleeding, thinner stools, pain, fullness, itching or a lump should be checked by a healthcare provider.",
-    cards: [
-      {
-        img: "/overview/anal-canal.png",
-        title: "Anal Canal",
-        text: "The anal canal is the lower part of the digestive system. The anus is the opening where stool leaves the body."
-      },
-      {
-        img: "/overview/anal-uncommon.png",
-        title: "Uncommon Cancer",
-        text: "Anal cancer is uncommon, but it is usually curable when healthcare providers detect and treat it early."
-      },
-      {
-        img: "/overview/anal-hpv.png",
-        title: "HPV Link",
-        text: "Most anal cancers are linked to certain high-risk types of human papillomavirus, also called HPV."
-      },
-      {
-        img: "/overview/anal-hemorrhoids.png",
-        title: "Similar to Hemorrhoids",
-        text: "Anal cancer symptoms may resemble hemorrhoids, which is why symptoms that worsen or do not improve should be checked."
-      },
-      {
-        img: "/overview/anal-followup.png",
-        title: "Treatment Monitoring",
-        text: "After treatment, providers monitor patients closely because the tumor may take several months to go away."
-      }
-    ]
+    intro:
+      "Anal cancer is a rare type of cancer that forms in the tissues lining the anal canal or the area surrounding the anus. It is often associated with infection from certain high-risk types of the human papillomavirus (HPV). Like many cancers, it begins when abnormal cells grow uncontrollably and form a tumor.",
+
+    description:
+      "Some people may not notice symptoms in the early stages, while others may experience changes such as rectal bleeding or alterations in bowel movements. Because these symptoms can resemble those of less serious conditions, diagnosis may sometimes be delayed. However, when anal cancer is detected and treated early, it can often be managed successfully.",
   },
+
 
   typesStages: {
     stages: [
@@ -683,39 +430,22 @@ symptoms: {
 
 {
   slug: "appendix-cancer",
+
   title: "Appendix Cancer",
-  description: "Appendix cancer is a rare disease that develops when cells in the appendix change and grow out of control, forming a tumor. Healthcare providers often find appendix tumors during surgery for appendicitis or during imaging for another condition.",
+
+description: 
+    "The appendix is a small pouch attached to the large intestine. It is thought to play a role in supporting the immune system and maintaining healthy gut bacteria.",
+    bannerImg: "/banners/appen.png",
+
 
   overview: {
-    intro: "Appendix cancer, also called appendiceal cancer, starts in the appendix, a small pouch in the lower right side of the abdomen. Smaller tumors are less likely to spread, while larger tumors may need more aggressive treatment.",
-    cards: [
-      {
-        img: "/overview/appendix-rare.png",
-        title: "Rare Cancer",
-        text: "Appendix cancer is extremely rare, affecting only about 1 to 2 people out of every 1 million each year."
-      },
-      {
-        img: "/overview/appendix-location.png",
-        title: "Appendix Location",
-        text: "The appendix is a small tube-like pouch located in the lower right abdomen, near where the large and small intestines meet."
-      },
-      {
-        img: "/overview/appendix-found.png",
-        title: "Often Found Unexpectedly",
-        text: "Appendix tumors are often discovered during surgery for appendicitis or during imaging tests done for an unrelated condition."
-      },
-      {
-        img: "/overview/appendix-size.png",
-        title: "Tumor Size Matters",
-        text: "Smaller tumors are less likely to spread, while larger tumors may spread more quickly and need stronger treatment."
-      },
-      {
-        img: "/overview/appendix-pmp.png",
-        title: "PMP Link",
-        text: "Appendix cancer may occur with pseudomyxoma peritonei, where jelly-like mucin builds up in the abdomen."
-      }
-    ]
+    intro:
+      "Appendix cancer, also known as appendiceal cancer, is a rare type of cancer that begins in the appendix, a small pouch attached to the large intestine. It develops when cells in the appendix change and grow out of control, forming a tumor. There are several types of appendix cancer, which are classified based on the type of cells where the cancer starts.",
+
+    description:
+      "Many people with appendix cancer do not experience symptoms in the early stages. In some cases, tumors are discovered during surgery for appendicitis or through imaging tests performed for unrelated medical conditions. Because the disease is uncommon and often develops without noticeable signs, diagnosis may occur unexpectedly. Treatment and outlook depend on the type of tumor, its size and whether it has spread beyond the appendix.",
   },
+
 
   typesStages: {
     stages: [
@@ -923,15 +653,24 @@ symptoms: {
 
 {
   slug: "astrocytoma",
+
   title: "Astrocytoma",
-  description: "Astrocytomas are tumors that develop in your central nervous system (CNS) that grow from star-shaped astrocyte cells.",
-   bannerImg: "/cancer-banners/astro.png",
 
- overview: {
-  intro: `Astrocytes are glial cells (the type of cells that provide supportive tissue in your brain). Other glial cells include oligodendrocytes and ependymal cells. Astrocytoma is the most common glioma. A glioma is a tumor that forms when glial cells grow out of control.
+  description:
+    "Astrocytes are star-shaped cells found in the brain and spinal cord that provide supportive tissue within the central nervous system. They help support, protect and maintain the environment needed for nerve cells to function properly.",
 
-Healthcare providers use grades to describe different types of astrocytomas. They don’t use a staging system as they do for many other types of cancer.They usually develop in your brain but can develop in your spinal cord as well`
-},
+  bannerImg: "/banners/astro.png",
+
+  overview: {
+    intro:
+      "Astrocytoma is a tumor that develops from astrocytes, a type of glial cell found in the brain and spinal cord. These tumors are among the most common types of gliomas and can occur in different areas of the central nervous system. Astrocytomas vary in their behavior, ranging from slow-growing tumors to more aggressive forms.",
+
+    description:
+      "The condition can affect people of different ages and may cause symptoms depending on the tumor’s size and location. Healthcare providers classify astrocytomas into different grades to help determine treatment options and expected growth patterns. Early diagnosis and appropriate treatment can help manage symptoms and improve quality of life.",
+  },
+
+
+
 
   typesStages: {
     stages: [
@@ -1159,39 +898,21 @@ Healthcare providers use grades to describe different types of astrocytomas. The
 //basal caell//
 {
   slug: "basal-cell-carcinoma",
+
   title: "Basal Cell Carcinoma",
-  description: "Basal cell carcinoma is a type of skin cancer that forms in the basal cells of the skin. It usually appears as a lump, bump or lesion on the outer layer of the skin and often develops on sun-exposed areas.",
+
+  description:
+    "Basal cells are microscopic cells found in the lowest part of the epidermis, the outer layer of the skin. They create new skin cells and help replace older cells that naturally reach the skin’s surface and shed away.",
+     bannerImg: "/banners/bcc.png",
 
   overview: {
-    intro: "Basal cell carcinoma, also called BCC, begins in basal cells found in the lower part of the epidermis, the outer layer of the skin. It may look like a shiny bump, scaly patch or slow-growing lesion, and treatment to remove it usually leads to a positive outlook.",
-    cards: [
-      {
-        img: "/overview/bcc-basal.png",
-        title: "Basal Cells",
-        text: "Basal cells are microscopic cells in the outer layer of the skin. They make new skin cells as older skin cells move to the surface and leave the body."
-      },
-      {
-        img: "/overview/bcc-common.png",
-        title: "Common Skin Cancer",
-        text: "Basal cell carcinoma is the most common type of skin cancer and the most common type of cancer overall."
-      },
-      {
-        img: "/overview/bcc-sun.png",
-        title: "Sun-Exposed Areas",
-        text: "BCC often forms on skin that gets a lot of sun exposure, such as the face, scalp, nose, eyelids, ears, arms and legs."
-      },
-      {
-        img: "/overview/bcc-slow.png",
-        title: "Slow Growth",
-        text: "Basal cell carcinoma usually grows slowly and may appear as a small bump, lesion or flat scaly patch."
-      },
-      {
-        img: "/overview/bcc-outlook.png",
-        title: "Positive Outlook",
-        text: "Treatment to remove basal cell carcinoma from the skin usually leads to a positive outlook."
-      }
-    ]
+    intro:
+      "Basal cell carcinoma (BCC) is a type of skin cancer that begins in the basal cells of the skin. It typically develops in the epidermis and often appears as a small bump, lesion or patch that gradually grows over time. BCC is the most common type of skin cancer and is most often found on areas of the body that receive frequent sun exposure.",
+
+    description:
+      "This cancer usually grows slowly and is often detected as a noticeable change on the skin. While it rarely spreads to other parts of the body, it can continue to grow and damage nearby tissue if left untreated. Early diagnosis and treatment generally lead to very good outcomes and can help prevent further complications.",
   },
+
 
   typesStages: {
     stages: [
@@ -1368,39 +1089,22 @@ Healthcare providers use grades to describe different types of astrocytomas. The
 
 {
   slug: "bile-duct-cancer",
+
   title: "Bile Duct Cancer",
-  description: "Bile duct cancer, also called cholangiocarcinoma, is a rare cancer that forms in the bile ducts. These ducts carry bile from the liver and gallbladder to the small intestine to help digest fats.",
+
+  description:
+    "Bile ducts are thin tubes that carry bile from the liver to the small intestine. Bile helps break down fats during digestion and plays an important role in processing waste from the body.",
+
+  bannerImg: "/banners/bile.png",
 
   overview: {
-    intro: "Cholangiocarcinoma can form in bile ducts inside the liver, just outside the liver, closer to the small intestine or in the gallbladder. It often does not cause symptoms early, so many cases are found after the cancer has become advanced.",
-    cards: [
-      {
-        img: "/overview/bile-ducts.png",
-        title: "Bile Ducts",
-        text: "Bile ducts are tubes that carry bile from the liver and gallbladder to the small intestine, where bile helps digest fats."
-      },
-      {
-        img: "/overview/bile-rare.png",
-        title: "Rare Cancer",
-        text: "Cholangiocarcinoma is a rare cancer that starts in the bile duct system."
-      },
-      {
-        img: "/overview/bile-late.png",
-        title: "Often Found Late",
-        text: "This cancer often has no symptoms in the early stages, so it may already be advanced when diagnosed."
-      },
-      {
-        img: "/overview/bile-blockage.png",
-        title: "Bile Duct Blockage",
-        text: "Symptoms usually begin when the tumor blocks a bile duct."
-      },
-      {
-        img: "/overview/bile-care.png",
-        title: "Treatment Depends on Many Factors",
-        text: "Treatment and outlook depend on the cancer location, spread and other factors your healthcare provider reviews."
-      }
-    ]
+    intro:
+      "Bile duct cancer, also known as cholangiocarcinoma, is a rare cancer that begins in the bile ducts. It often develops without causing noticeable symptoms in its early stages and may grow or spread before it is detected. The disease can occur in different parts of the bile duct system, depending on where the abnormal cells begin to grow.",
+
+    description:
+      "Because bile duct cancer frequently develops quietly, many people are diagnosed only after symptoms appear or the cancer has progressed. Early detection can be challenging, but timely evaluation and treatment are important for managing the disease. Treatment options depend on factors such as the cancer’s location, extent and overall health of the individual.",
   },
+
 
   typesStages: {
     stages: [
@@ -1604,39 +1308,22 @@ Healthcare providers use grades to describe different types of astrocytomas. The
 
 {
   slug: "bladder-cancer",
+
   title: "Bladder Cancer",
-  description: "Bladder cancer is a relatively rare cancer that starts in the lining of the bladder. It can be treated in several ways, including surgery, but it may come back after treatment, so regular follow-up is important.",
+
+  description:
+    "The bladder is a hollow organ in the urinary system that stores urine before it leaves the body. It works with the kidneys, ureters and urethra to help remove waste and maintain normal urinary function.",
+
+  bannerImg: "/banners/bladder.png",
 
   overview: {
-    intro: "Bladder cancer begins when cells in the bladder lining change, multiply and form tumors. It may stay limited to the bladder lining in early stages or grow through the bladder wall and spread to lymph nodes, bones, lungs or liver if left untreated.",
-    cards: [
-      {
-        img: "/overview/bladder-organ.png",
-        title: "Bladder Function",
-        text: "The bladder is a hollow organ that stores urine before it leaves the body."
-      },
-      {
-        img: "/overview/bladder-lining.png",
-        title: "Starts in the Lining",
-        text: "Bladder cancer starts in the tissue lining the inside of the bladder."
-      },
-      {
-        img: "/overview/bladder-urothelium.png",
-        title: "Urothelium",
-        text: "The bladder lining is called the urothelium. These cells stretch when the bladder fills and collapse when it empties."
-      },
-      {
-        img: "/overview/bladder-spread.png",
-        title: "How It Can Spread",
-        text: "If untreated, bladder cancer may grow through the bladder wall and spread to lymph nodes, bones, lungs or liver."
-      },
-      {
-        img: "/overview/bladder-recurrence.png",
-        title: "Recurrence",
-        text: "Bladder cancer may come back after treatment, so follow-up care is an important part of management."
-      }
-    ]
+    intro:
+      "Bladder cancer develops when abnormal cells in the lining of the bladder grow uncontrollably and form a tumor. It is one of the most common cancers affecting the urinary system and most often begins in the cells that line the inside of the bladder.",
+
+    description:
+      "The condition can occur in different forms depending on how deeply the cancer has grown into the bladder wall. Some cases remain limited to the bladder lining, while others may spread into nearby tissues or other parts of the body. Early detection and appropriate treatment can help improve outcomes and reduce the risk of disease progression.",
   },
+
 
   typesStages: {
     stages: [
@@ -1869,39 +1556,22 @@ Healthcare providers use grades to describe different types of astrocytomas. The
 
 {
   slug: "bone-cancer",
+
   title: "Bone Cancer",
-  description: "Bone cancer includes several cancers that develop in the bones. Primary bone cancers begin in the bone itself and are most common in children and young adults.",
+
+  description:
+    "Bones provide the body with structure, protect vital organs and work together with muscles to support movement. They also store important minerals and contain bone marrow, which helps produce blood cells.",
+
+  bannerImg: "/banners/bone.png",
 
   overview: {
-    intro: "Bone cancer happens when cancer cells grow in bone and damage healthy bone tissue. It can start in any bone, but most tumors begin in the thigh bone, shin bone or upper arm. Some cancers from other organs can also spread to the bones.",
-    cards: [
-      {
-        img: "/overview/bone-primary.png",
-        title: "Primary Bone Cancer",
-        text: "Primary bone cancers start in the bone itself. They are also called bone sarcomas."
-      },
-      {
-        img: "/overview/bone-common-sites.png",
-        title: "Common Bone Sites",
-        text: "Bone cancer can affect any bone, but it most often starts in the thigh bone, shin bone or upper arm."
-      },
-      {
-        img: "/overview/bone-metastasis.png",
-        title: "Cancer Spread to Bone",
-        text: "Cancers that begin in organs or other body parts can also spread to the bones. These are called bone metastases."
-      },
-      {
-        img: "/overview/bone-rare.png",
-        title: "Rare Cancer",
-        text: "Bone cancers are rare and make up less than 1% of cancers in the United States."
-      },
-      {
-        img: "/overview/bone-treatment.png",
-        title: "Treatment Outlook",
-        text: "Bone cancers are serious, but treatments may control the disease and in some cases may cure it."
-      }
-    ]
+    intro:
+      "Bone cancer occurs when abnormal cells grow uncontrollably within a bone and form a tumor. While many tumors that affect bones spread from cancers that start elsewhere in the body, primary bone cancer begins directly in the bone itself. Several different types of primary bone cancer can develop depending on the cells involved.",
+
+    description:
+      "Bone cancer can affect people of different ages and may develop in various bones throughout the body. Because there are multiple forms of the disease, treatment approaches and outcomes can vary. Early diagnosis and appropriate treatment play an important role in managing the condition and improving quality of life.",
   },
+
 
   typesStages: {
     stages: [
@@ -2117,44 +1787,22 @@ Healthcare providers use grades to describe different types of astrocytomas. The
 
 {
   slug: "brain-cancer",
+
   title: "Brain Cancer",
-  description: "Brain tumors are abnormal growths or masses of cells in or around the brain. Some are malignant, meaning cancerous, while others are benign, but both can affect brain function if they press on surrounding tissues.",
+
+  description:
+    "The brain is the control center of the body, responsible for processing information, regulating movement and coordinating essential functions. Different areas of the brain work together to support thinking, memory, emotions, sensation and communication.",
+
+  bannerImg: "/banners/brain.png",
 
   overview: {
-    intro: "Brain tumors can affect children and adults. They may grow slowly or quickly, and their impact depends on size, location and type. Tumors that begin in the brain are called primary brain tumors, while tumors that spread to the brain from another body part are called secondary or metastatic brain tumors.",
-    cards: [
-      {
-        img: "/overview/brain-tumor.png",
-        title: "Brain Tumor",
-        text: "A brain tumor is an abnormal mass of cells that forms in or around the brain."
-      },
-      {
-        img: "/overview/brain-cns.png",
-        title: "CNS Tumors",
-        text: "Brain tumors and spinal tumors together are called central nervous system tumors."
-      },
-      {
-        img: "/overview/brain-benign.png",
-        title: "Benign or Malignant",
-        text: "Brain tumors may be benign or malignant. Even benign tumors can cause serious problems if they grow large enough."
-      },
-      {
-        img: "/overview/brain-primary.png",
-        title: "Primary Brain Tumors",
-        text: "Primary brain tumors begin in the brain itself."
-      },
-      {
-        img: "/overview/brain-secondary.png",
-        title: "Secondary Brain Tumors",
-        text: "Secondary brain tumors spread to the brain after starting in another part of the body."
-      },
-      {
-        img: "/overview/brain-pressure.png",
-        title: "Brain Pressure",
-        text: "Brain tumors can affect health by pressing on nerves, blood vessels and nearby brain tissue."
-      }
-    ]
+    intro:
+      "Brain cancer occurs when abnormal cells grow uncontrollably within the brain and form a tumor. These tumors can develop from cells within the brain itself or spread to the brain from cancer that began elsewhere in the body. Brain tumors vary widely in their type, location and rate of growth.",
+
+    description:
+      "Because the brain controls many important functions, symptoms and treatment options often depend on where the tumor is located and how large it becomes. Some tumors grow slowly, while others may be more aggressive. Early diagnosis and specialized treatment can help manage the condition and improve quality of life.",
   },
+
 
   typesStages: {
     stages: [
@@ -2395,39 +2043,22 @@ symptoms: {
 
 {
   slug: "burkitt-lymphoma",
+
   title: "Burkitt Lymphoma",
-  description: "Burkitt lymphoma is a rare, fast-growing cancer of B cells, a type of white blood cell. It is a form of non-Hodgkin lymphoma that most often affects children and young adults.",
+
+  description:
+    "The lymphatic system is a network of vessels, tissues and organs that helps protect the body from infections and disease. It carries lymph fluid throughout the body and plays an important role in supporting the immune system.",
+
+  bannerImg: "/banners/burkitt.png",
 
   overview: {
-    intro: "Burkitt lymphoma can grow very quickly, so treatment usually needs to start fast. It often begins in lymph nodes in the abdomen or pelvis, but it may also spread to areas such as the belly, bone marrow, gastrointestinal tract, jaw, spleen, throat or tonsils.",
-    cards: [
-      {
-        img: "/overview/burkitt-fast.png",
-        title: "Fast-Growing Cancer",
-        text: "Burkitt lymphoma grows quickly and symptoms can appear suddenly and worsen fast."
-      },
-      {
-        img: "/overview/burkitt-bcells.png",
-        title: "B-Cell Cancer",
-        text: "This cancer affects B cells, which are a type of white blood cell."
-      },
-      {
-        img: "/overview/burkitt-nhl.png",
-        title: "Non-Hodgkin Lymphoma",
-        text: "Burkitt lymphoma is a form of non-Hodgkin lymphoma."
-      },
-      {
-        img: "/overview/burkitt-children.png",
-        title: "Common in Children",
-        text: "It most often affects children and young adults, and is less common in adults."
-      },
-      {
-        img: "/overview/burkitt-remission.png",
-        title: "Treatment Response",
-        text: "With quick treatment, many people go into long-term remission."
-      }
-    ]
+    intro:
+      "Burkitt lymphoma is a rare and fast-growing form of non-Hodgkin lymphoma that develops in B lymphocytes, a type of white blood cell. It can affect various parts of the body, including lymph nodes, bone marrow, the digestive system and other organs. Because it grows rapidly, the condition often requires prompt medical attention after diagnosis.",
+
+    description:
+      "Although Burkitt lymphoma is an aggressive cancer, it can respond well to treatment when identified and managed early. Symptoms and disease progression can vary depending on the areas of the body involved. Treatment typically begins soon after diagnosis to help control the disease and improve outcomes.",
   },
+
 
   typesStages: {
     stages: [
@@ -2622,87 +2253,22 @@ symptoms: {
 // cervical cancer//
 {
   slug: "cervical-cancer",
+
   title: "Cervical Cancer",
-  description: "Cervical cancer is cancer that starts in the cells of the cervix. Most cervical cancers are caused by HPV infection, and regular Pap tests and HPV vaccination can help lower the risk.",
+
+  description:
+    "The cervix is the lower part of the uterus that connects the uterus to the vagina. It plays an important role in the female reproductive system by allowing menstrual flow to leave the body and providing a passage between the uterus and vagina.",
+
+  bannerImg: "/banners/cervical.png",
 
   overview: {
-    intro: "Cervical cancer begins on the surface of the cervix when cervical cells change into precancerous cells and may later become cancer. It often does not cause symptoms until it begins to spread, so screening is important for early detection.",
-    cards: [
-      {
-        img: "/overview/cervical-cervix.png",
-        title: "Starts in the Cervix",
-        text: "Cervical cancer begins on the surface of the cervix, where cells may change into precancerous cells before becoming cancer."
-      },
-      {
-        img: "/overview/cervical-hpv.png",
-        title: "HPV Link",
-        text: "HPV infection causes almost all cases of cervical cancer."
-      },
-      {
-        img: "/overview/cervical-screening.png",
-        title: "Screening Matters",
-        text: "Regular cervical cancer screenings, such as Pap tests, can detect cell changes before they become cancer."
-      },
-      {
-        img: "/overview/cervical-vaccine.png",
-        title: "HPV Vaccine",
-        text: "The HPV vaccine can help prevent infection with HPV types that cause most cervical cancers."
-      },
-      {
-        img: "/overview/cervical-early.png",
-        title: "Early Treatment",
-        text: "Cervical cancer is highly treatable when found in the early stages."
-      },
-      {
-        img: "/overview/cervical-age.png",
-        title: "Common Age Group",
-        text: "People between the ages of 35 and 44 are most likely to receive a cervical cancer diagnosis."
-      }
-    ]
+    intro:
+      "Cervical cancer develops in the cells of the cervix when abnormal changes cause cells to grow uncontrollably. Most cervical cancers are linked to long-term infection with certain types of human papillomavirus (HPV), a common virus that can affect the reproductive tract. The disease often develops gradually over time, beginning with precancerous changes in cervical cells.",
+
+    description:
+      "In its early stages, cervical cancer may not cause noticeable symptoms, which is why regular screening plays an important role in detecting abnormal cell changes before cancer develops. When identified early, cervical cancer is often highly treatable. Advances in screening, vaccination and treatment have helped improve prevention and outcomes for many people.",
   },
 
-  typesStages: {
-    stages: [
-      {
-        label: "I",
-        title: "Stage I",
-        text: "Cancer is found only in the cervix and has not spread to deeper parts of cervical tissue."
-      },
-      {
-        label: "II",
-        title: "Stage II",
-        text: "Cancer has spread beyond the cervix and uterus, but not to the pelvic wall or lower vagina."
-      },
-      {
-        label: "III",
-        title: "Stage III",
-        text: "Cancer has spread to the lower vagina and may have spread to the pelvic wall, ureters or nearby lymph nodes."
-      },
-      {
-        label: "IV",
-        title: "Stage IV",
-        text: "Cancer has spread to the bladder, rectum or other body parts such as bones or lungs."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/cervical-squamous.png",
-        title: "Squamous Cell Carcinoma",
-        text: "This is one of the two main types of cervical cancer and accounts for most cervical cancer cases."
-      },
-      {
-        img: "/overview/cervical-adeno.png",
-        title: "Adenocarcinoma",
-        text: "This is the second main type of cervical cancer and makes up a smaller share of cases."
-      },
-      {
-        img: "/overview/cervical-mixed.png",
-        title: "Mixed Type",
-        text: "Some cervical cancers contain features of both squamous cell carcinoma and adenocarcinoma."
-      }
-    ]
-  },
 
   riskFactorsData: {
     uncontrollable: [
@@ -2921,41 +2487,225 @@ symptoms: {
     ]
   }
 },
+
+//breast cancer//
+
+{
+  slug: "breast-cancer",
+
+  title: "Breast Cancer",
+
+  description:
+    "Breasts contain milk-producing glands called lobules and ducts that carry milk to the nipple. Along with fatty and connective tissues, these structures support breastfeeding and play an important role in the reproductive system.",
+
+  bannerImg: "/banners/breast.png",
+
+  overview: {
+    intro:
+      "Breast cancer develops when cells in the breast change and multiply uncontrollably, forming a tumor. It is one of the most common cancers affecting women, although men can also develop the disease. Breast cancer may begin in different parts of the breast, including the milk ducts or milk-producing lobules, and can vary in how it grows and spreads.",
+
+    description:
+      "Healthcare providers classify breast cancer into different types and subtypes to guide treatment decisions. Some breast cancers remain confined to their original location, while others can spread into nearby tissues or other parts of the body. Early detection through screening and timely treatment can help improve outcomes and increase treatment options.",
+  },
+
+
+typesStages: {
+
+  stages: [
+        { label: "0", title: "Stage 0", text: "Abnormal cells found in the ducts or lobules. Non-invasive." },
+        { label: "I", title: "Stage I", text: "Cancer is small (2 cm or less) and hasn't spread to lymph nodes." },
+        { label: "II", title: "Stage II", text: "Cancer is larger than 2 cm or has spread to nearby lymph nodes." },
+        { label: "III", title: "Stage III", text: "Cancer has spread to more lymph nodes or nearby tissues." },
+        { label: "IV", title: "Stage IV", text: "Cancer has spread to distant parts of the body such as bones, lungs, liver or brain." }
+      ],
+
+  types: [
+    { 
+      img: "/overview/type1.png", 
+      title: "Ductal Carcinoma In Situ (DCIS)", 
+      text: "A non-invasive condition where abnormal cells are confined to the milk ducts. Because it has not spread into surrounding tissue, it is highly treatable when caught early." 
+    },
+    { 
+      img: "/overview/type2.png", 
+      title: "Invasive Ductal Carcinoma (IDC)", 
+      text: "The most common form of breast cancer. It begins in the milk ducts and spreads into the nearby breast tissue, with the potential to reach other parts of the body." 
+    },
+    { 
+      img: "/overview/type3.png", 
+      title: "Invasive Lobular Carcinoma (ILC)", 
+      text: "This cancer originates in the milk-producing glands (lobules). It is distinct because it often spreads to other body areas and may require a specialized diagnostic approach." 
+    },
+    { 
+      img: "/overview/type4.png", 
+      title: "Triple-Negative Breast Cancer", 
+      text: "This type tests negative for estrogen, progesterone, and HER2 receptors. It is known to grow faster than other types and requires a highly focused, personalized treatment plan." 
+    },
+    { 
+      img: "/overview/type5.png", 
+      title: "Inflammatory Breast Cancer", 
+      text: "A rare and aggressive form that blocks lymph vessels in the skin. Instead of a lump, it often causes the breast to appear swollen, red, and warm to the touch." 
+    }
+  ],
+    
+    },
+
+riskFactorsData: {
+  uncontrollable: [
+    { icon: "/icons/age.png", title: "Advancing Age", text: "The risk of developing breast cancer increases as you get older. Most cases are diagnosed in individuals over the age of 50." },
+    { icon: "/icons/genetics.png", title: "Genetic Mutations", text: "Inherited mutations in genes like BRCA1 and BRCA2 significantly increase the risk. These are responsible for about 5-10% of all breast cancer cases." },
+    { icon: "/icons/family.png", title: "Family History", text: "Having a first-degree relative—mother, sister, or daughter—who has been diagnosed with breast cancer increases your own risk profile." },
+    { icon: "/icons/reproductive.png", title: "Reproductive History", text: "Starting menstruation before age 12 or entering menopause after 55 exposes breast tissue to hormones for a longer duration." },
+    { icon: "/icons/density.png", title: "Dense Breast Tissue", text: "Women with dense breast tissue have more glandular and fibrous tissue than fatty tissue, which can also make tumors harder to detect on mammograms." }
+  ],
+  lifestyle: [
+    { icon: "/icons/smoking.png", title: "Smoking", text: "Tobacco use has been linked to an increased risk of breast cancer, particularly in women who began smoking before their first pregnancy." },
+    { icon: "/icons/alcohol.png", title: "Alcohol Consumption", text: "Regular alcohol consumption is linked to a dose-dependent increase in risk. Even small amounts can potentially elevate estrogen levels." },
+    { icon: "/icons/overweight.png", title: "Overweight & Obesity", text: "Being overweight, especially after menopause, increases risk as fat tissue produces extra estrogen, which can fuel cancer cell growth." },
+    { icon: "/icons/inactive.png", title: "Physical Inactivity", text: "Leading a sedentary lifestyle is associated with a higher risk. Regular exercise helps regulate hormones and improves immune function." },
+    { icon: "/icons/junk.png", title: "Unhealthy Diet", text: "A diet high in processed meats, saturated fats, and sugars, while low in fruits and vegetables, may contribute to overall systemic inflammation." }
+  ]
+},
+symptoms: {
+  items: [
+    {
+      title: "New Lump in the Breast",
+      text: "A painless lump or thickening in the breast or underarm area is one of the most common signs of breast cancer.",
+      img: "/symptoms/s1.png"
+    },
+    {
+      title: "Changes in Breast Size or Shape",
+      text: "Any unusual change in the appearance, contour, or size of the breast should be evaluated by a healthcare professional.",
+      img: "/symptoms/s2.png"
+    },
+    {
+      title: "Nipple Discharge",
+      text: "Unexpected nipple discharge, especially if bloody or occurring without squeezing, may require medical attention.",
+      img: "/symptoms/s3.png"
+    },
+    {
+      title: "Skin Changes",
+      text: "Dimpling, puckering, redness, scaling, or thickening of the breast skin can sometimes indicate underlying breast cancer.",
+      img: "/symptoms/s4.png"
+    },
+    {
+      title: "Nipple Changes",
+      text: "A nipple turning inward or developing persistent irritation, crusting, or pain should not be ignored.",
+      img: "/symptoms/s5.png"
+    },
+    {
+      title: "Persistent Breast Pain",
+      text: "Although breast pain is often not cancer-related, persistent unexplained discomfort should be assessed by a doctor.",
+      img: "/symptoms/s6.png"
+    }
+  ]
+},
+    diagnosis: {
+  items: [
+    {
+      title: "Mammogram",
+      text: "An X-ray of the breast that can detect changes or abnormal areas, even before they can be felt.",
+      img: "/diagnosis/d1.png"
+    },
+    {
+      title: "Ultrasound",
+      text: "Uses sound waves to create images of the breast. Often used to evaluate lumps found during a physical exam or mammogram.",
+      img: "/diagnosis/d2.png"
+    },
+    {
+      title: "MRI (Breast MRI)",
+      text: "A detailed imaging test that uses magnets and radio waves. Recommended for high-risk women or when other tests are unclear.",
+      img: "/diagnosis/d3.png"
+    },
+    {
+      title: "Biopsy",
+      text: "A small sample of breast tissue is removed and examined under a microscope to check for cancer cells. This confirms a diagnosis.",
+      img: "/diagnosis/d4.png"
+    },
+    {
+      title: "Clinical Breast Exam",
+      text: "A physical examination of the breasts by a healthcare professional to check for lumps or other changes.",
+      img: "/diagnosis/d5.png"
+    },
+    {
+      title: "Other Tests (if needed)",
+      text: "Tests like PET scan, CT scan, or blood tests may be recommended to understand the extent of cancer in certain cases.",
+      img: "/diagnosis/d6.png"
+    }
+  ]
+    },
+   treatment: {
+  options: [
+    {
+      title: "Surgery",
+      text: "Removal of the tumor or the entire breast, depending on the stage and type of breast cancer.",
+      img: "/treatment/t1.png"
+    },
+    {
+      title: "Radiation Therapy",
+      text: "High-energy rays are used to kill cancer cells and reduce the risk of cancer returning.",
+      img: "/treatment/t2.png"
+    },
+    {
+      title: "Chemotherapy",
+      text: "Medicines that kill fast-growing cancer cells or stop them from growing further.",
+      img: "/treatment/t3.png"
+    },
+    {
+      title: "Hormone Therapy",
+      text: "Blocks hormones that fuel certain types of breast cancer or reduces hormone levels.",
+      img: "/treatment/t4.png"
+    },
+    {
+      title: "Targeted Therapy",
+      text: "Drugs that target specific molecules in cancer cells to stop their growth with fewer side effects.",
+      img: "/treatment/t5.png"
+    },
+    {
+      title: "Immunotherapy",
+      text: "Helps the immune system recognize and attack cancer cells more effectively.",
+      img: "/treatment/t6.png"
+    }
+  ],
+
+  supportiveCare: [
+    {
+      title: "Pain Management",
+      text: "Relief from pain and other symptoms for better quality of life."
+    },
+    {
+      title: "Nutrition Support",
+      text: "Proper nutrition to maintain strength and support recovery."
+    },
+    {
+      title: "Emotional Support",
+      text: "Counseling and support groups for emotional well-being."
+    },
+    {
+      title: "Rehabilitation",
+      text: "Physical therapy and exercises to improve strength and mobility."
+    }
+  ]
+}
+},
+
+
 // chondrosarcoma //
 {
   slug: "chondrosarcoma",
+
   title: "Chondrosarcoma",
-  description: "Chondrosarcoma is a rare type of bone cancer that usually develops in cartilage, the connective tissue that protects joints and bones. Symptoms may include bone pain, swelling, a lump and fatigue.",
+
+  description:
+    "Cartilage is a strong, flexible connective tissue that cushions joints and helps bones move smoothly against one another. It is found throughout the body, including the joints, rib cage, nose and other structures that require support and flexibility.",
+
+  bannerImg: "/cancers/chondro.webp",
 
   overview: {
-    intro: "Chondrosarcoma is a rare bone cancer that can appear anywhere cartilage is present. It often forms in areas such as the arms, shoulder blades, breastbone, legs, pelvis or ribs. Treatment commonly involves surgery to remove the tumor.",
-    cards: [
-      {
-        img: "/overview/chondro-cartilage.png",
-        title: "Cartilage Cancer",
-        text: "Chondrosarcoma usually starts in cartilage, the connective tissue that helps protect joints and bones."
-      },
-      {
-        img: "/overview/chondro-rare.png",
-        title: "Rare Bone Cancer",
-        text: "Chondrosarcoma is rare and affects about 1 in 200,000 people in the United States."
-      },
-      {
-        img: "/overview/chondro-sites.png",
-        title: "Common Sites",
-        text: "It may form in the arms, shoulder blades, breastbone, legs, pelvis or ribs."
-      },
-      {
-        img: "/overview/chondro-benign.png",
-        title: "Benign Tumor Link",
-        text: "Chondrosarcoma may also develop when benign bone tumors become cancerous."
-      },
-      {
-        img: "/overview/chondro-surgery.png",
-        title: "Main Treatment",
-        text: "The most common treatment is surgery to remove the cancerous cartilage and bone."
-      }
-    ]
+    intro:
+      "Chondrosarcoma is a rare type of bone cancer that begins in cartilage cells. It is one of the most common forms of primary bone cancer in adults and can develop in areas where cartilage is normally present, such as the pelvis, ribs, shoulders and long bones. The disease includes several subtypes that can vary in how quickly they grow and spread.",
+
+    description:
+      "Many chondrosarcomas grow slowly, while others may behave more aggressively. Because the condition often develops gradually, symptoms may not appear until the tumor becomes larger. Treatment depends on factors such as the tumor’s location, grade and subtype, with surgery being the most common treatment approach. Early evaluation can help guide appropriate treatment and management decisions.",
   },
 
   typesStages: {
@@ -3148,39 +2898,22 @@ symptoms: {
 
 {
   slug: "colon-cancer",
+
   title: "Colon Cancer",
-  description: "Colon cancer, also called colorectal cancer, develops in polyps on the inner lining of the colon or rectum. It may not cause symptoms right away, but screening can help find polyps or cancer early.",
+
+  description:
+    "The colon is a part of the large intestine that helps absorb water and nutrients from digested food. It also processes and stores waste before it is eliminated from the body.",
+
+  bannerImg: "/cancers/colon-cancer.webp",
 
   overview: {
-    intro: "Colon cancer starts in polyps that form on the inner lining of the colon or rectum. These polyps may become cancerous over time and can grow through the colon wall or spread to other parts of the body. Screening tests can detect polyps before they become cancer.",
-    cards: [
-      {
-        img: "/overview/colon-polyps.png",
-        title: "Starts as Polyps",
-        text: "Colon cancer begins in polyps on the inner lining of the colon or rectum."
-      },
-      {
-        img: "/overview/colon-large-intestine.png",
-        title: "Colon or Rectum",
-        text: "Colorectal cancer can affect the colon or rectum, which are parts of the large intestine."
-      },
-      {
-        img: "/overview/colon-slow-growth.png",
-        title: "Slow Development",
-        text: "Colon cancer usually develops slowly. It may take years for a precancerous polyp to become cancer."
-      },
-      {
-        img: "/overview/colon-screening.png",
-        title: "Screening Tests",
-        text: "Screening tests, such as colonoscopy, can detect colon polyps before they become cancerous."
-      },
-      {
-        img: "/overview/colon-early.png",
-        title: "Early Treatment",
-        text: "Finding and removing precancerous or cancerous polyps early may prevent or cure the disease."
-      }
-    ]
+    intro:
+      "Colon cancer develops when abnormal cells in the colon grow uncontrollably and form a tumor. Most colon cancers begin as polyps, which are growths that develop on the inner lining of the colon. While many polyps remain harmless, some can gradually become cancerous over time.",
+
+    description:
+      "Colon cancer is one of the most common cancers and often develops without noticeable symptoms in its early stages. Regular screening can help detect polyps before they become cancerous and identify cancer at an earlier stage. Early diagnosis and treatment can improve outcomes and provide more treatment options.",
   },
+
 
   typesStages: {
     stages: [
@@ -3396,39 +3129,22 @@ symptoms: {
 
 {
   slug: "duodenal-cancer",
+
   title: "Duodenal Cancer",
-  description: "Duodenal cancer is a rare cancer that develops in the duodenum, the first part of the small intestine. It often causes no symptoms in its early stages, but symptoms may develop as the tumor grows and affects digestion.",
+
+  description:
+    "The duodenum is the first part of the small intestine and plays an important role in digestion. It receives partially digested food from the stomach and helps break it down further using digestive juices from the pancreas and liver.",
+
+  bannerImg: "/cancers/duodenal-cancer.webp",
 
   overview: {
-    intro: "The duodenum is the first part of the small intestine. Duodenal cancer begins when abnormal cells grow in this area. Early-stage disease often causes no symptoms, but growing tumors can interfere with digestion and may block food from moving normally through the intestine. :contentReference[oaicite:0]{index=0}",
-    cards: [
-      {
-        img: "/overview/duodenum-location.png",
-        title: "Part of the Small Intestine",
-        text: "The duodenum is the first section of the small intestine and connects directly to the stomach."
-      },
-      {
-        img: "/overview/duodenum-digestion.png",
-        title: "Important for Digestion",
-        text: "The duodenum helps break down food and absorb nutrients with the help of digestive juices."
-      },
-      {
-        img: "/overview/duodenum-rare.png",
-        title: "Rare Cancer",
-        text: "Duodenal cancer is a rare form of small intestine cancer."
-      },
-      {
-        img: "/overview/duodenum-silent.png",
-        title: "Few Early Symptoms",
-        text: "People often do not notice symptoms during the early stages of the disease."
-      },
-      {
-        img: "/overview/duodenum-blockage.png",
-        title: "Can Affect Digestion",
-        text: "As a tumor grows, it may interfere with digestion or block the movement of food through the intestine."
-      }
-    ]
+    intro:
+      "Duodenal cancer is a rare cancer that begins in the duodenum, the first section of the small intestine. It develops when abnormal cells grow uncontrollably within the lining of the duodenum and form a tumor. Because the duodenum is part of the digestive tract, the disease can affect how food moves and is processed in the body.",
+
+    description:
+      "This cancer is uncommon and may not cause noticeable symptoms in its early stages. As the disease progresses, symptoms can develop depending on the tumor’s size and location. Early diagnosis can be challenging, but timely evaluation and treatment are important for managing the disease and improving outcomes.",
   },
+
 
   typesStages: {
     stages: [
@@ -3560,39 +3276,22 @@ symptoms: {
 
 {
   slug: "endometrial-cancer",
+
   title: "Endometrial Cancer",
-  description: "Endometrial cancer is the most common type of uterine cancer. It starts in the endometrium, the inner lining of the uterus, and often causes abnormal vaginal bleeding.",
+
+  description:
+    "The endometrium is the inner lining of the uterus that thickens and sheds during the menstrual cycle. It plays an important role in reproduction by providing the environment where a fertilized egg can implant and grow.",
+
+  bannerImg: "/cancers/endometrial-cancer.webp",
 
   overview: {
-    intro: "Endometrial cancer develops in the lining of the uterus. The uterus is part of the female reproductive system where a fetus can grow during pregnancy. This cancer is often found early because abnormal vaginal bleeding is a common symptom.",
-    cards: [
-      {
-        img: "/overview/endometrial-uterus.png",
-        title: "Uterus",
-        text: "The uterus is part of the female reproductive system and is where a fetus grows during pregnancy."
-      },
-      {
-        img: "/overview/endometrial-lining.png",
-        title: "Endometrium",
-        text: "The endometrium is the inner lining of the uterus. Endometrial cancer starts in this lining."
-      },
-      {
-        img: "/overview/endometrial-common.png",
-        title: "Most Common Uterine Cancer",
-        text: "Endometrial cancer is the most common type of cancer that affects the uterus."
-      },
-      {
-        img: "/overview/endometrial-bleeding.png",
-        title: "Abnormal Bleeding",
-        text: "Abnormal vaginal bleeding is often the first sign of endometrial cancer."
-      },
-      {
-        img: "/overview/endometrial-early.png",
-        title: "Often Found Early",
-        text: "Because abnormal bleeding is common, endometrial cancer is often diagnosed at an early stage."
-      }
-    ]
+    intro:
+      "Endometrial cancer develops in the endometrium, the inner lining of the uterus. It is the most common type of uterine cancer and occurs when cells in the endometrium grow uncontrollably and form a tumor. Healthcare providers often use the terms uterine cancer and endometrial cancer interchangeably because most uterine cancers begin in the endometrium.",
+
+    description:
+      "This cancer most commonly affects people after menopause, although it can occur earlier in some cases. Abnormal vaginal bleeding is often one of the earliest signs, which may help lead to diagnosis before the cancer spreads. When detected early, treatment can be highly effective and may offer a strong chance of successful outcomes.",
   },
+
 
   typesStages: {
     stages: [
@@ -3783,39 +3482,22 @@ symptoms: {
 //esophageal cancer//
 {
   slug: "esophageal-cancer",
+
   title: "Esophageal Cancer",
-  description: "Esophageal cancer starts when cancerous cells in the esophagus multiply and form tumors. It may begin in mucus-making tissue or in cells that line the esophagus.",
+
+  description:
+    "The esophagus is a muscular tube that carries food and liquids from the throat to the stomach. It plays an essential role in the digestive system by moving swallowed food toward the stomach for further digestion.",
+
+  bannerImg: "/cancers/esophageal-cancer.webp",
 
   overview: {
-    intro: "The esophagus is the long muscular tube that moves food from the throat to the stomach. Esophageal cancer may not cause symptoms early, but as a tumor grows, it can make swallowing difficult and may cause weight loss, heartburn or hoarseness that does not go away.",
-    cards: [
-      {
-        img: "/overview/esophageal-esophagus.png",
-        title: "Esophagus",
-        text: "The esophagus is the long muscular tube that carries food from your throat to your stomach."
-      },
-      {
-        img: "/overview/esophageal-tumor.png",
-        title: "Tumor Formation",
-        text: "Esophageal cancer happens when cancerous cells multiply in the esophagus and create tumors."
-      },
-      {
-        img: "/overview/esophageal-early.png",
-        title: "Few Early Symptoms",
-        text: "You may not have symptoms early because the esophagus can stretch as a tumor grows."
-      },
-      {
-        img: "/overview/esophageal-swallowing.png",
-        title: "Swallowing Difficulty",
-        text: "Difficulty swallowing is often the first symptom people notice."
-      },
-      {
-        img: "/overview/esophageal-treatment.png",
-        title: "Treatment Possibility",
-        text: "Surgery and other treatments may cure esophageal cancer when it has not spread from the esophagus."
-      }
-    ]
+    intro:
+      "Esophageal cancer develops when abnormal cells in the lining of the esophagus grow uncontrollably and form a tumor. The disease can occur in different types depending on the cells involved and may develop anywhere along the length of the esophagus. It often begins in the inner lining before potentially growing into deeper layers of tissue.",
+
+    description:
+      "In its early stages, esophageal cancer may not cause noticeable symptoms, which can make early detection difficult. As the cancer grows, it may affect the normal passage of food through the esophagus. Early diagnosis and appropriate treatment are important for managing the disease and improving outcomes.",
   },
+
 
   typesStages: {
     stages: [
@@ -4066,39 +3748,22 @@ symptoms: {
 //ewing sarcoma//
 {
   slug: "ewing-sarcoma",
+
   title: "Ewing Sarcoma",
-  description: "Ewing sarcoma is a group of rare cancerous tumors that develop in bones or soft tissues. It typically affects people ages 10 to 20 and often needs fast treatment because it can grow quickly.",
+
+  description:
+    "Bones provide structure, support movement and help protect vital organs throughout the body. Bone marrow inside certain bones also plays an important role in producing blood cells.",
+
+  bannerImg: "/cancers/ewings-sarcoma.webp",
 
   overview: {
-    intro: "Ewing sarcoma may affect bones or soft tissues such as muscles, tendons and ligaments. It may start in areas like the hip, ribs, shoulder blades, thighbone or shinbone. Treatment commonly begins with chemotherapy followed by surgery to remove the tumor.",
-    cards: [
-      {
-        img: "/overview/ewing-rare.png",
-        title: "Rare Cancer",
-        text: "Ewing sarcoma is a rare cancer that can affect bones or nearby soft tissues."
-      },
-      {
-        img: "/overview/ewing-bone.png",
-        title: "Bone and Soft Tissue",
-        text: "It may develop in bones or soft tissues such as muscles, tendons and ligaments."
-      },
-      {
-        img: "/overview/ewing-age.png",
-        title: "Common Age Group",
-        text: "Ewing sarcoma typically affects people ages 10 to 20, with many people diagnosed around age 15."
-      },
-      {
-        img: "/overview/ewing-sites.png",
-        title: "Common Tumor Sites",
-        text: "Tumors may start in the hip, ribs, shoulder blades, thighbone or shinbone."
-      },
-      {
-        img: "/overview/ewing-treatment.png",
-        title: "Treatment Approach",
-        text: "Treatment often starts with chemotherapy, followed by surgery to remove the tumor."
-      }
-    ]
+    intro:
+      "Ewing sarcoma is a rare cancer that usually develops in bones or the soft tissues surrounding bones. It most often affects children, teenagers and young adults, although it can occur at any age. The disease begins when cells grow uncontrollably and form a tumor, most commonly in the pelvis, legs, ribs or arms.",
+
+    description:
+      "Because Ewing sarcoma is an uncommon cancer, diagnosis often requires specialized testing to confirm the condition. The cancer can grow and spread to other parts of the body if not treated. However, advances in treatment have improved outcomes, and early diagnosis plays an important role in managing the disease effectively.",
   },
+
 
   typesStages: {
     stages: [

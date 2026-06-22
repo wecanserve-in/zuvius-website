@@ -45,13 +45,28 @@ function CancerDetail() {
         ))}
       </div>
 
-      <div className="content-container">
-        {activeTab === "overview" && (
-          <div className="tab-pane">
-            <h2 className="section-heading">Overview</h2>
-            <p className="paragraph-text">{cancer.overview?.intro}</p>
-          </div>
-        )}
+
+
+ 
+  <div className="content-container">
+
+  
+  {activeTab === "overview" && (
+    <div className="overview-layout">
+
+      <div className="overview-content">
+        <h2 className="section-heading">Overview</h2>
+
+        <p className="paragraph-text">
+          {cancer.overview?.intro}
+        </p>
+
+        <p className="paragraph-text">
+          {cancer.overview?.description}
+        </p>
+      </div>
+    </div>
+  )}
 
         {activeTab === "typesStages" && cancer?.typesStages && (
           <div className="tab-pane">
@@ -186,7 +201,7 @@ function CancerDetail() {
           </div>
         )}
 
-        {activeTab === "treatment" && cancer?.treatment && (
+                {activeTab === "treatment" && cancer?.treatment && (
           <div className="tab-pane treatment-pane">
             <h2 className="treatment-heading">Treatments</h2>
 
@@ -206,10 +221,14 @@ function CancerDetail() {
                 </div>
               ))}
             </div>
+
           </div>
         )}
+
       </div>
+
     </div>
+
   );
 }
 
