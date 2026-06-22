@@ -59,31 +59,31 @@ const membershipItems = [
 const accreditationItems = [
   {
     title: "Anvisa",
-    image: "/Accredations/Anvisa.png",
+    image: "./Accredations/Anvisa.png",
   },
   {
     title: "Cofepris",
-    image: "/Accredations/Cofepris.png",
+    image: "./Accredations/Cofepris.png",
   },
   {
     title: "EU GMP",
-    image: "/Accredations/EU-GMP.png",
+    image: "./Accredations/EU-GMP.png",
   },
   {
     title: "Invima",
-    image: "/Accredations/Invima.png",
+    image: "./Accredations/Invima.png",
   },
   {
     title: "US FDA",
-    image: "/Accredations/US_FDA.png",
+    image: "./Accredations/US_FDA.png",
   },
   {
     title: "WHO",
-    image: "/Accredations/WHO.png",
+    image: "./Accredations/WHO.png",
   },
   {
     title: "PIC/S",
-    image: "/Accredations/PICS.png",
+    image: "./Accredations/PICS.png",
   },
 ];
 
