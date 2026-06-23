@@ -702,6 +702,7 @@ description:
         title: "Pilocytic Astrocytoma",
         text: "This is the most common Grade I astrocytoma. It grows slowly, usually does not spread and often develops in the cerebellum."
       },
+      
       {
         img: "/overview/astro-pleomorphic.png",
         title: "Pleomorphic Xanthoastrocytoma",
