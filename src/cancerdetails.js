@@ -40,7 +40,9 @@ function CancerDetail() {
             onClick={() => setActiveTab(tab)}
             className={`tab-btn ${activeTab === tab ? "active" : ""}`}
           >
-            {tab.replace(/([A-Z])/g, " $1").toUpperCase()}
+            {tab === "typesStages"
+  ? "STAGES"
+  : tab.replace(/([A-Z])/g, " $1").toUpperCase()}
           </button>
         ))}
       </div>
@@ -68,38 +70,34 @@ function CancerDetail() {
     </div>
   )}
 
-        {activeTab === "typesStages" && cancer?.typesStages && (
-          <div className="tab-pane">
-            <h3 className="section-heading-left">Stages Information</h3>
+{activeTab === "typesStages" && cancer?.typesStages && (
+  <div className="tab-pane">
+    {cancer.typesStages.stages?.length ? (
+      <>
+        <h3 className="section-heading-left">Stages Information</h3>
 
-            <div className="stages-grid" style={{ marginBottom: "60px" }}>
-              {cancer.typesStages.stages?.map((stage, i) => (
-                <div key={i} className="stage-card-small">
-                  <div className="stage-badge-small">{stage.label}</div>
-                  <h4>{stage.title}</h4>
-                  <p>{stage.text}</p>
-                </div>
-              ))}
-            </div>
+        <div className="stages-grid" style={{ marginBottom: "60px" }}>
+          {cancer.typesStages.stages.map((stage, i) => (
+         <div key={i} className="stage-card-small">
+  <div className="stage-badge-small">{stage.label}</div>
 
-            <h3 className="section-heading-left">Types</h3>
-
-            <div className="types-list">
-              {cancer.typesStages.types?.map((type, i) => (
-                <div key={i} className="type-card-horizontal">
-                  <div className="type-img">
-                    <img src={type.img} alt={type.title} />
-                  </div>
-
-                  <div className="type-text">
-                    <h4>{type.title}</h4>
-                    <p>{type.text}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+  <div className="stage-content">
+    <h4>{stage.title}</h4>
+    <p>{stage.text}</p>
+  </div>
+</div>
+          ))}
+        </div>
+      </>
+    ) : (
+      <div className="stages-note">
+        <p>{cancer.typesStages.stagesNote}</p>
+      </div>
+    )}
+  </div>
+)}
+          
+        
 
         {activeTab === "riskFactors" && cancer?.riskFactorsData && (
           <div className="tab-pane">

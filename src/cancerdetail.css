@@ -286,7 +286,7 @@
 
 .type-text h4, 
 .stage-card-small h4 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.35;
   color: #061943;
@@ -295,46 +295,88 @@
 
 .type-text p, 
 .stage-card-small p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.7;
   color: #000000;
   margin: 0;
 }
 
+.stages-note {
+  background: #f8fbff;
+  border: 1px solid #dce8f5;
+  border-left: 4px solid #008a9a;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 15px;
+}
 
+.stages-note p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+}
 
 
 /* Compact Stages Grid */
 .stages-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 30px;
   margin-top: 25px;
 }
 
 .stage-card-small {
+  width: 100%;
   background: #ffffff;
   border: 1px solid #e7eef5;
   border-radius: 16px;
-  padding: 25px 15px;
-  text-align: center;
+  padding: 28px;
   box-shadow: 0 4px 12px rgba(10, 48, 98, 0.05);
+
+  display: flex;
+  align-items: center; /* changed from flex-start */
+  gap: 24px;
+
+  text-align: left;
 }
 
+.stage-content {
+  flex: 1;
+}
+
+.stage-content h4 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #061943;
+  margin: 0 0 12px;
+}
+
+.stage-content p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.7;
+  color: #000;
+  margin: 0;
+}
 .stage-badge-small {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+
   border-radius: 50%;
   background: #fdf2f4;
-  color: #d93853;
+  color: #a7263b;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-weight: 900;
   font-size: 1.2rem;
-  margin: 0 auto 12px;
-  border: 2px solid #ffe8cc;
+
+  margin: 0;
 }
 
 /* Risk */
@@ -732,5 +774,311 @@
 
   .risk-column {
     padding: 24px;
+  }
+}
+
+/* =========================
+   FINAL RESPONSIVE FIXES
+   ========================= */
+
+@media (max-width: 1024px) {
+  .content-container {
+    width: min(100% - 36px, 960px);
+    padding: 32px 0;
+  }
+
+  .toc-hero {
+    height: auto;
+    min-height: 300px;
+    padding: 45px 5%;
+    margin-top: 70px;
+  }
+
+  .toc-hero-left {
+    width: 48%;
+  }
+
+  .toc-hero-right {
+    width: 52%;
+    height: 300px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .hero-description,
+  .paragraph-text {
+    font-size: 16px;
+  }
+
+  .overview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stages-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .risk-column {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    width: calc(100% - 28px);
+    padding: 26px 0;
+  }
+
+  .tab-pane {
+    padding: 32px 0 18px;
+  }
+
+  .toc-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 38px 20px 0;
+    gap: 24px;
+    margin-top: 70px;
+  }
+
+  .toc-hero-left,
+  .toc-hero-right {
+    width: 100%;
+  }
+
+  .toc-hero-right {
+    height: 240px;
+  }
+
+  .toc-hero-right img {
+    object-fit: contain;
+  }
+
+  .hero-title {
+    font-size: 38px;
+    letter-spacing: -1px;
+    line-height: 1.05;
+  }
+
+  .hero-description {
+    font-size: 15.5px;
+    line-height: 1.65;
+    max-width: 100%;
+  }
+
+  .tabs-nav-bar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 14px;
+    gap: 10px;
+    top: 0;
+  }
+
+  .tabs-nav-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-btn {
+    flex: 0 0 auto;
+    padding: 11px 16px;
+    font-size: 13.5px;
+    border-radius: 999px;
+  }
+
+  .section-heading,
+  .section-heading-left,
+  .symptoms-heading,
+  .treatment-heading {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+
+  .paragraph-text {
+    font-size: 15.5px;
+    line-height: 1.7;
+  }
+
+  .overview-grid,
+  .diagnosis-grid,
+  .symptoms-grid,
+  .treatment-options-grid,
+  .diagnosis-clean-grid,
+  .symptoms-card-grid,
+  .treatment-card-grid,
+  .stages-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .overview-card {
+    height: auto;
+  }
+
+  .card-top {
+    height: 210px;
+  }
+
+  .card-bottom {
+    height: auto;
+    padding: 24px 20px;
+  }
+
+  .card-bottom h3,
+  .risk-row h4,
+  .diagnosis-clean-text h3,
+  .symptoms-card-text h3,
+  .treatment-card-text h3 {
+    font-size: 20px;
+  }
+
+  .card-bottom p,
+  .risk-row p,
+  .diagnosis-clean-text p,
+  .symptoms-card-text p,
+  .treatment-card-text p {
+    font-size: 15.5px;
+    line-height: 1.65;
+  }
+
+  .stage-card-small {
+    padding: 22px 16px;
+  }
+
+  .stage-card-small h4 {
+    font-size: 21px;
+  }
+
+  .stage-card-small p {
+    font-size: 15.5px;
+  }
+
+  .risk-container {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .risk-column {
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  .risk-row {
+    gap: 16px;
+  }
+
+  .risk-icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+
+  .risk-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .diagnosis-clean-card,
+  .symptoms-card,
+  .treatment-card {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .diagnosis-clean-img,
+  .symptoms-card-img,
+  .treatment-card-img {
+    width: 100%;
+    height: 190px;
+  }
+
+  .types-note {
+    padding: 18px;
+  }
+
+  .types-note p {
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-container {
+    width: calc(100% - 22px);
+  }
+
+  .toc-hero {
+    padding: 32px 16px 0;
+    margin-top: 65px;
+  }
+
+  .toc-hero-right {
+    height: 210px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 14.5px;
+  }
+
+  .tab-btn {
+    padding: 10px 14px;
+    font-size: 12.5px;
+  }
+
+  .section-heading,
+  .section-heading-left,
+  .symptoms-heading,
+  .treatment-heading {
+    font-size: 23px;
+  }
+
+  .card-bottom {
+    padding: 22px 18px;
+  }
+
+  .card-bottom h3 {
+    font-size: 19px;
+  }
+
+  .card-bottom p,
+  .paragraph-text,
+  .risk-row p,
+  .diagnosis-clean-text p,
+  .symptoms-card-text p,
+  .treatment-card-text p {
+    font-size: 14.5px;
+  }
+
+  .risk-row {
+    flex-direction: column;
+  }
+
+  .risk-icon-wrapper {
+    width: 54px;
+    height: 54px;
+  }
+
+  .risk-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .diagnosis-clean-img,
+  .symptoms-card-img,
+  .treatment-card-img {
+    height: 170px;
+  }
+
+  .stage-badge-small {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
 }

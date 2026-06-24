@@ -43,24 +43,6 @@ typesStages: {
         text: "Cancer has spread to distant areas of the body, such as the lungs or liver."
       }
     ],
-
-    types: [
-      {
-        img: "/overview/adrenal-acc.png",
-        title: "Adrenocortical Carcinoma",
-        text: "This is the most common type of adrenal cancer. It forms in the adrenal cortex, the outer layer that makes steroid hormones."
-      },
-      {
-        img: "/overview/adrenal-neuroblastoma.png",
-        title: "Neuroblastoma",
-        text: "Neuroblastoma forms in nerve cells. About one-third develop in the adrenal medulla and usually affect infants and children under 10."
-      },
-      {
-        img: "/overview/adrenal-pheochromocytoma.png",
-        title: "Pheochromocytoma",
-        text: "This type starts in the center of the adrenal medulla, usually in cells that produce adrenaline, which helps regulate blood pressure and heart rate."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -193,26 +175,7 @@ typesStages: {
         text: "Some medicines may reduce adrenal hormone production or block the effects of hormones released by the tumor.",
         img: "/treatment/adrenal-meds.png"
       }
-    ],
-
-    supportiveCare: [
-      {
-        title: "Hormone Support",
-        text: "Helps manage symptoms caused by extra hormone production."
-      },
-      {
-        title: "Symptom Relief",
-        text: "Supportive medicines may help ease symptoms but do not shrink or kill cancer cells."
-      },
-      {
-        title: "Follow-up Care",
-        text: "Regular monitoring helps check response to treatment and watch for recurrence."
-      },
-      {
-        title: "Emotional Support",
-        text: "Support resources can help patients and families manage the emotional impact of diagnosis and treatment."
-      }
-    ]
+    ], 
   }
 },
 
@@ -258,15 +221,8 @@ typesStages: {
         title: "Stage IV",
         text: "Cancer has spread to distant organs, such as the liver or lungs."
       }
-    ],
+    ], 
 
-    types: [
-      {
-        img: "/overview/anal-scc.png",
-        title: "Squamous Cell Carcinoma",
-        text: "Most anal cancers are squamous cell carcinomas, which develop from the cells lining the anal canal or nearby skin."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -406,24 +362,6 @@ typesStages: {
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Side Effect Support",
-        text: "Providers can help manage body changes caused by chemotherapy and radiation."
-      },
-      {
-        title: "Colostomy Support",
-        text: "If surgery requires a colostomy, the care team helps patients adjust to the change."
-      },
-      {
-        title: "Follow-up Care",
-        text: "Follow-up visits are important because the tumor may take several months to go away after chemoradiation."
-      },
-      {
-        title: "Emotional Support",
-        text: "Support can help patients discuss symptoms, treatment concerns and recovery."
-      }
-    ]
   }
 },
 //appendix//
@@ -461,38 +399,6 @@ description:
       }
     ],
 
-    types: [
-      {
-        img: "/overview/appendix-adeno.png",
-        title: "Appendiceal Adenocarcinoma",
-        text: "Most appendix cancers are appendiceal adenocarcinomas. These cancers start in glandular tissue that lines organs."
-      },
-      {
-        img: "/overview/appendix-mucinous.png",
-        title: "Mucinous Adenocarcinoma",
-        text: "This type starts in the appendix lining and releases mucin, a component of mucus. Most do not spread beyond the abdomen."
-      },
-      {
-        img: "/overview/appendix-colonic.png",
-        title: "Colonic-Type Adenocarcinoma",
-        text: "This type develops near the bottom of the appendix and behaves a lot like colon cancer."
-      },
-      {
-        img: "/overview/appendix-signet.png",
-        title: "Signet Ring Cell Adenocarcinoma",
-        text: "This rare type can form in the appendix. The cells store large amounts of mucin and look like signet rings under a microscope."
-      },
-      {
-        img: "/overview/appendix-goblet.png",
-        title: "Goblet Cell Adenocarcinoma",
-        text: "This extremely rare type has features of both adenocarcinoma and neuroendocrine tumors."
-      },
-      {
-        img: "/overview/appendix-net.png",
-        title: "Neuroendocrine Tumor",
-        text: "Appendiceal neuroendocrine tumors affect cells that receive nervous system signals and release hormones. Most grow slowly."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -627,25 +533,6 @@ description:
         img: "/treatment/appendix-targeted.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Symptom Management",
-        text: "Your provider may recommend ways to ease discomfort if symptoms change or worsen."
-      },
-      {
-        title: "Side Effect Support",
-        text: "Let your provider know about treatment side effects so they can suggest ways to manage them."
-      },
-      {
-        title: "Palliative Care",
-        text: "Palliative care professionals can help manage symptoms and support comfort during illness."
-      },
-      {
-        title: "Emotional Support",
-        text: "Support resources can help patients manage the uncertainty of a rare cancer diagnosis."
-      }
-    ]
   }
 },
 
@@ -696,39 +583,6 @@ description:
       }
     ],
 
-    types: [
-      {
-        img: "/overview/astro-pilocytic.png",
-        title: "Pilocytic Astrocytoma",
-        text: "This is the most common Grade I astrocytoma. It grows slowly, usually does not spread and often develops in the cerebellum."
-      },
-      
-      {
-        img: "/overview/astro-pleomorphic.png",
-        title: "Pleomorphic Xanthoastrocytoma",
-        text: "This Grade I tumor usually grows slowly, often develops in the temporal lobe and may cause seizures."
-      },
-      {
-        img: "/overview/astro-sega.png",
-        title: "Subependymal Giant Cell Astrocytoma",
-        text: "This Grade I tumor mainly affects children with tuberous sclerosis and grows inside fluid-filled spaces in the brain."
-      },
-      {
-        img: "/overview/astro-grade2.png",
-        title: "Grade II Astrocytoma",
-        text: "This cancerous astrocytoma tends to spread into nearby brain tissue, so surgery alone may not always be enough."
-      },
-      {
-        img: "/overview/astro-grade3.png",
-        title: "Grade III Astrocytoma",
-        text: "This cancerous tumor is more aggressive than Grade II and often develops as progression from a lower-grade tumor."
-      },
-      {
-        img: "/overview/astro-glioblastoma.png",
-        title: "Glioblastoma",
-        text: "Glioblastoma is a Grade IV astrocytoma. It is the most common and most aggressive form of astrocytoma."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -875,24 +729,6 @@ description:
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Specialist Care",
-        text: "Care may involve neurologists, neurosurgeons, radiation oncologists and medical oncologists."
-      },
-      {
-        title: "Symptom Management",
-        text: "Support may help reduce seizures, headaches, swelling or neurological symptoms."
-      },
-      {
-        title: "Follow-up Monitoring",
-        text: "Regular follow-up helps check whether treatment is working or whether the tumor has returned."
-      },
-      {
-        title: "Emotional Support",
-        text: "Supportive care can help patients and families cope with the stress of a brain tumor diagnosis."
-      }
-    ]
   }
 },
 
@@ -915,38 +751,10 @@ description:
   },
 
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Staging information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/bcc-nodular.png",
-        title: "Nodular BCC",
-        text: "This is the most common type of BCC. It may look like a round pimple with visible blood vessels around it."
-      },
-      {
-        img: "/overview/bcc-superficial.png",
-        title: "Superficial Spreading BCC",
-        text: "This type causes small, shallow marks that are slightly lighter than the surrounding skin. They often form on the torso, arms or legs."
-      },
-      {
-        img: "/overview/bcc-sclerosing.png",
-        title: "Sclerosing BCC",
-        text: "Also called morpheaform BCC, this type may look like a scar that slowly expands over time. It is most common on the face."
-      },
-      {
-        img: "/overview/bcc-pigmented.png",
-        title: "Pigmented BCC",
-        text: "This rare type causes hyperpigmentation, where an area of skin becomes darker than the surrounding skin."
-      }
-    ]
-  },
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
@@ -1065,24 +873,6 @@ description:
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Skin Monitoring",
-        text: "Regular skin checks help detect new or returning lesions early."
-      },
-      {
-        title: "Sun Protection",
-        text: "Protecting skin from UV exposure helps lower the chance of future skin cancers."
-      },
-      {
-        title: "Wound Care",
-        text: "Proper care after removal helps the skin heal and reduces infection risk."
-      },
-      {
-        title: "Follow-up Care",
-        text: "Follow-up visits help monitor treatment results and long-term skin health."
-      }
-    ]
   }
 },
 
@@ -1116,29 +906,6 @@ description:
     text: "Staging systems vary depending on the type of cholangiocarcinoma."
   }
     ],
-
-    types: [
-      {
-        img: "/overview/bile-intrahepatic.png",
-        title: "Intrahepatic Cholangiocarcinoma",
-        text: "This type forms in the bile ducts inside the liver."
-      },
-      {
-        img: "/overview/bile-perihilar.png",
-        title: "Perihilar Cholangiocarcinoma",
-        text: "This type starts just outside the liver where smaller bile ducts join to form the common hepatic duct. It is the most common form."
-      },
-      {
-        img: "/overview/bile-distal.png",
-        title: "Distal Cholangiocarcinoma",
-        text: "This type starts outside the liver in the bile ducts closer to the small intestine."
-      },
-      {
-        img: "/overview/bile-gallbladder.png",
-        title: "Gallbladder Cancer",
-        text: "This type starts in the gallbladder, which is also made of bile duct cells."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -1283,25 +1050,6 @@ description:
       img: "/treatment/bile-immuno.png"
     }
   ],
-
-    supportiveCare: [
-      {
-        title: "Palliative Care",
-        text: "Palliative care helps manage physical and emotional challenges during illness."
-      },
-      {
-        title: "Bile Duct Drainage",
-        text: "Drainage procedures may help relieve symptoms caused by blocked bile ducts."
-      },
-      {
-        title: "Symptom Relief",
-        text: "Supportive care may help manage symptoms and treatment side effects."
-      },
-      {
-        title: "Ongoing Monitoring",
-        text: "Your provider will monitor you to ensure you get the treatment you need if cancer returns or progresses."
-      }
-    ]
   }
 },
 
@@ -1360,34 +1108,6 @@ description:
   }
 
     ],
-
-    types: [
-      {
-        img: "/overview/bladder-trans.png",
-        title: "Transitional Cell Carcinoma",
-        text: "This is the most common type of bladder cancer. It starts in transitional cells in the inner lining of the bladder wall."
-      },
-      {
-        img: "/overview/bladder-squ.png",
-        title: "Squamous Cell Carcinoma",
-        text: "This type starts in thin, flat squamous cells and is often linked with long-term bladder inflammation or irritation."
-      },
-      {
-        img: "/overview/bladder-adeno.png",
-        title: "Adenocarcinoma",
-        text: "This rare type starts in gland cells that line organs, including the bladder."
-      },
-      {
-        img: "/overview/bladder-small.png",
-        title: "Small Cell Carcinoma",
-        text: "This extremely rare bladder cancer affects only a small number of people."
-      },
-      {
-        img: "/overview/bladder-sarc.png",
-        title: "Sarcoma",
-        text: "Rarely, soft tissue sarcomas can start in the muscle cells of the bladder."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -1532,24 +1252,6 @@ description:
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Regular Follow-up",
-        text: "Regular checkups are important because bladder cancer often comes back."
-      },
-      {
-        title: "Urinary Diversion Support",
-        text: "Some people need support after surgery that changes how urine leaves the body."
-      },
-      {
-        title: "Diet and Fiber Support",
-        text: "A heart-healthy, fiber-rich diet may support recovery and help with digestive issues after treatment."
-      },
-      {
-        title: "Exercise and Connection",
-        text: "Gentle exercise may help manage stress, and connecting with others may help people cope with recurrence concerns."
-      }
-    ]
   }
 },
 
@@ -1598,43 +1300,6 @@ description:
       }
     ],
 
-    types: [
-      {
-        img: "/overview/bone-oste.png",
-        title: "Osteosarcoma",
-        text: "Osteosarcoma is the most common type of bone cancer. It develops in cells where new bone tissue forms."
-      },
-      {
-        img: "/overview/bone-ew.png",
-        title: "Ewing Sarcoma",
-        text: "Ewing sarcoma can form in bones and nearby soft tissues. It is most common in children and teenagers."
-      },
-      {
-        img: "/overview/bone-cho.png",
-        title: "Chondrosarcoma",
-        text: "Chondrosarcoma starts in cartilage, the connective tissue that helps joints and bones move."
-      },
-      {
-        img: "/overview/bone-chord.png",
-        title: "Chordoma",
-        text: "Chordoma is a rarer type of bone cancer that forms in the spine or base of the skull."
-      },
-      {
-        img: "/overview/bone-fibro.png",
-        title: "Fibrosarcoma",
-        text: "Fibrosarcoma starts in fibrous connective tissue at the end of bones."
-      },
-      {
-        img: "/overview/bone-gia.png",
-        title: "Giant Cell Tumor",
-        text: "Giant cell tumors are usually benign, but in rare cases they may become cancerous."
-      },
-      {
-        img: "/overview/bone-ups.png",
-        title: "Undifferentiated Pleomorphic Sarcoma",
-        text: "This aggressive tumor can start in soft tissue and bone."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -1763,25 +1428,6 @@ description:
         img: "/treatment/bone-chemo.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Rehabilitation",
-        text: "Rehabilitation and physical therapy may help people recover after treatment or adjust to a prosthesis."
-      },
-      {
-        title: "Pain Relief",
-        text: "Pain related to bone cancer often improves after treatment starts."
-      },
-      {
-        title: "Follow-up Care",
-        text: "Follow-up appointments help monitor recovery and detect recurrence early."
-      },
-      {
-        title: "Emotional Support",
-        text: "Support groups may help patients manage the emotional impact of diagnosis and treatment."
-      }
-    ]
   }
 },
 //brain cancer//
@@ -1828,59 +1474,6 @@ description:
     text: "These are the most aggressive brain tumors and tend to grow and spread rapidly within the brain."
   }
 ],
-
-    types: [
-      {
-        img: "/overview/brain-b1.png",
-        title: "Chordomas",
-        text: "These slow-growing tumors usually begin at the base of the skull or the lower part of the spine and are mostly benign."
-      },
-      {
-        img: "/overview/brain-b2.png",
-        title: "Craniopharyngiomas",
-        text: "These tumors usually arise near the pituitary gland and may be difficult to remove because of their location."
-      },
-      {
-        img: "/overview/brain-b3.png",
-        title: "Meningiomas",
-        text: "Meningiomas are the most common type of primary brain tumor and usually develop slowly in the tissues that protect the brain and spinal cord."
-      },
-      {
-        img: "/overview/brain-b4.png",
-        title: "Pituitary Adenomas",
-        text: "These tumors form in the pituitary gland and may release excess pituitary hormones."
-      },
-      {
-        img: "/overview/brain-b5.png",
-        title: "Schwannomas",
-        text: "These common benign brain tumors in adults develop from Schwann cells in cranial nerves or the peripheral nervous system."
-      },
-      {
-        img: "/overview/brain-b6.png",
-        title: "Astrocytoma",
-        text: "Astrocytomas are gliomas that form in star-shaped glial cells called astrocytes and often occur in the cerebrum."
-      },
-      {
-        img: "/overview/brain-b7.png",
-        title: "Ependymomas",
-        text: "These tumors often occur near the ventricles in the brain and develop from ependymal cells."
-      },
-      {
-        img: "/overview/brain-b8.png",
-        title: "Glioblastoma",
-        text: "Glioblastomas form in astrocytes and are the fastest-growing astrocytomas."
-      },
-      {
-        img: "/overview/brain-b9.png",
-        title: "Oligodendroglioma",
-        text: "These uncommon tumors begin in cells that make myelin, the protective layer around nerves in the brain."
-      },
-      {
-        img: "/overview/brain-b10.png",
-        title: "Medulloblastoma",
-        text: "Medulloblastoma is a fast-growing cancerous brain tumor that forms at the base of the skull and is the most common cancerous brain tumor in children."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -2019,25 +1612,6 @@ symptoms: {
       img: "/treatment/brain-watchful.png"
     }
   ],
-
-    supportiveCare: [
-      {
-        title: "Shunts",
-        text: "A shunt may help drain excess cerebrospinal fluid if a tumor increases pressure inside the skull."
-      },
-      {
-        title: "Pressure-Reducing Medicines",
-        text: "Medicines such as mannitol and corticosteroids may help reduce swelling and pressure around the tumor."
-      },
-      {
-        title: "Palliative Care",
-        text: "Palliative care provides symptom relief, comfort and support for people living with serious illness."
-      },
-      {
-        title: "Regular Monitoring",
-        text: "People with brain tumors need ongoing follow-up to monitor symptoms, treatment response and possible recurrence."
-      }
-    ]
   }
 },
 //burkitt lymphoma//
@@ -2085,23 +1659,6 @@ symptoms: {
       }
     ],
 
-    types: [
-      {
-        img: "/overview/burkitt-endemic.png",
-        title: "Endemic Burkitt Lymphoma",
-        text: "This type is most common in parts of Africa and is linked to Epstein-Barr virus."
-      },
-      {
-        img: "/overview/burkitt-sporadic.png",
-        title: "Sporadic Burkitt Lymphoma",
-        text: "This type is common in the United States, especially in children."
-      },
-      {
-        img: "/overview/burkitt-immunodeficiency.png",
-        title: "Immunodeficiency-Related",
-        text: "This type affects people with weakened immune systems, including people with HIV/AIDS."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -2230,25 +1787,6 @@ symptoms: {
         img: "/treatment/burkitt-surgery.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Regular Follow-up",
-        text: "Follow-up appointments may include blood tests and CT scans to monitor health."
-      },
-      {
-        title: "Rest and Recovery",
-        text: "Treatment can be difficult, and rest can help during recovery."
-      },
-      {
-        title: "Nutrition Support",
-        text: "A dietitian can help patients stay strong during treatment."
-      },
-      {
-        title: "Emotional Support",
-        text: "Support from others and child life specialists can help patients and families cope."
-      }
-    ]
   }
 },
 // cervical cancer//
@@ -2267,6 +1805,31 @@ symptoms: {
 
     description:
       "In its early stages, cervical cancer may not cause noticeable symptoms, which is why regular screening plays an important role in detecting abnormal cell changes before cancer develops. When identified early, cervical cancer is often highly treatable. Advances in screening, vaccination and treatment have helped improve prevention and outcomes for many people.",
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "Cancer is found only in the cervix and has not spread to nearby tissues or organs."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "Cancer has spread beyond the cervix and uterus but has not reached the pelvic wall or lower vagina."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to the lower part of the vagina and may involve the pelvic wall, nearby lymph nodes or ureters."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread beyond the pelvis to nearby organs or distant areas of the body."
+      }
+    ],
   },
 
 
@@ -2467,24 +2030,6 @@ symptoms: {
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Side Effect Support",
-        text: "Treatment side effects such as nausea, vomiting, fatigue and sexual dysfunction may need supportive care."
-      },
-      {
-        title: "Fertility Support",
-        text: "Some treatments may affect pregnancy or fertility, so patients should discuss future family plans with their provider."
-      },
-      {
-        title: "Regular Monitoring",
-        text: "After treatment, providers monitor closely to check that cancer does not come back."
-      },
-      {
-        title: "Emotional Support",
-        text: "Support groups, counseling and conversations with loved ones may help during diagnosis and treatment."
-      }
-    ]
   }
 },
 
@@ -2518,34 +2063,6 @@ typesStages: {
         { label: "III", title: "Stage III", text: "Cancer has spread to more lymph nodes or nearby tissues." },
         { label: "IV", title: "Stage IV", text: "Cancer has spread to distant parts of the body such as bones, lungs, liver or brain." }
       ],
-
-  types: [
-    { 
-      img: "/overview/type1.png", 
-      title: "Ductal Carcinoma In Situ (DCIS)", 
-      text: "A non-invasive condition where abnormal cells are confined to the milk ducts. Because it has not spread into surrounding tissue, it is highly treatable when caught early." 
-    },
-    { 
-      img: "/overview/type2.png", 
-      title: "Invasive Ductal Carcinoma (IDC)", 
-      text: "The most common form of breast cancer. It begins in the milk ducts and spreads into the nearby breast tissue, with the potential to reach other parts of the body." 
-    },
-    { 
-      img: "/overview/type3.png", 
-      title: "Invasive Lobular Carcinoma (ILC)", 
-      text: "This cancer originates in the milk-producing glands (lobules). It is distinct because it often spreads to other body areas and may require a specialized diagnostic approach." 
-    },
-    { 
-      img: "/overview/type4.png", 
-      title: "Triple-Negative Breast Cancer", 
-      text: "This type tests negative for estrogen, progesterone, and HER2 receptors. It is known to grow faster than other types and requires a highly focused, personalized treatment plan." 
-    },
-    { 
-      img: "/overview/type5.png", 
-      title: "Inflammatory Breast Cancer", 
-      text: "A rare and aggressive form that blocks lymph vessels in the skin. Instead of a lump, it often causes the breast to appear swollen, red, and warm to the touch." 
-    }
-  ],
     
     },
 
@@ -2666,25 +2183,6 @@ symptoms: {
       img: "/treatment/t6.png"
     }
   ],
-
-  supportiveCare: [
-    {
-      title: "Pain Management",
-      text: "Relief from pain and other symptoms for better quality of life."
-    },
-    {
-      title: "Nutrition Support",
-      text: "Proper nutrition to maintain strength and support recovery."
-    },
-    {
-      title: "Emotional Support",
-      text: "Counseling and support groups for emotional well-being."
-    },
-    {
-      title: "Rehabilitation",
-      text: "Physical therapy and exercises to improve strength and mobility."
-    }
-  ]
 }
 },
 
@@ -2698,7 +2196,7 @@ symptoms: {
   description:
     "Chondrosarcoma is a rare bone cancer that originates in cartilage cells. Cartilage is a strong, flexible connective tissue that cushions joints, promotes smooth movement, and helps protect bones from daily stress and impact. It also provides support and shape to structures such as the nose, ears, and airways.",
 
-  bannerImg: "/cancers/chondro.webp",
+  bannerImg: "/banners/chondro.png",
 
   overview: {
     intro:
@@ -2726,50 +2224,27 @@ symptoms: {
         text: "High-grade tumors are the most likely to grow and spread."
       }
     ],
-
-    types: [
-      {
-        img: "/overview/chondro-conventional.png",
-        title: "Conventional Chondrosarcoma",
-        text: "This is the most common type and accounts for more than 85% of all chondrosarcomas. It grows slowly and is less likely to spread."
-      },
-      {
-        img: "/overview/chondro-dediff.png",
-        title: "Dedifferentiated Chondrosarcoma",
-        text: "This fast-growing type usually develops in the upper arm bone, thigh bone or pelvis and may spread quickly."
-      },
-      {
-        img: "/overview/chondro-clear.png",
-        title: "Clear Cell Chondrosarcoma",
-        text: "This type is usually found near a joint in the arm or leg. It tends to grow slowly and rarely spreads."
-      },
-      {
-        img: "/overview/chondro-mesenchymal.png",
-        title: "Mesenchymal Chondrosarcoma",
-        text: "This type often develops in the spine, ribs or jaw. It may grow quickly, spread more often and return after treatment."
-      }
-    ]
   },
 
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "Li-Fraumeni Syndrome",
         text: "People with Li-Fraumeni syndrome are more likely to develop cancerous tumors, including chondrosarcoma."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Maffucci Syndrome and Ollier’s Disease",
         text: "These disorders can cause benign tumors in cartilage, bone and skin."
       },
       {
-        icon: "/icons/family.svg",
+        icon: "/icons/family.png",
         title: "Hereditary Multiple Osteochondromas",
         text: "This condition causes multiple benign bone tumors that may disrupt bone growth."
       },
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age",
         text: "Chondrosarcoma can happen at any age, but it is more common in people ages 40 to 75. Most people receive a diagnosis around age 51."
       }
@@ -2777,7 +2252,7 @@ symptoms: {
 
     lifestyle: [
       {
-        icon: "",
+        icon: "/icons/none.png",
         title: "No Lifestyle Risk Factors",
         text: "This page does not identify clearly established lifestyle-related risk factors for chondrosarcoma."
       }
@@ -2872,25 +2347,6 @@ symptoms: {
         img: "/treatment/chondro-chemo-radiation.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Rehabilitation",
-        text: "Rehabilitation can help patients adjust after surgery and rebuild strength and mobility."
-      },
-      {
-        title: "Prosthetic Support",
-        text: "Some people may need support while adjusting to a prosthetic limb."
-      },
-      {
-        title: "Mental Health Support",
-        text: "Mental health therapy may help patients cope with body changes and daily life adjustments."
-      },
-      {
-        title: "Follow-up Care",
-        text: "Patients should ask their provider what body changes may signal that cancer has returned."
-      }
-    ]
   }
 },
 
@@ -2915,62 +2371,58 @@ symptoms: {
   },
 
 
-  typesStages: {
-    stages: [
-      {
-        label: "0",
-        title: "Stage 0",
-        text: "This stage refers to abnormal or precancerous cells in colon polyps."
-      },
-      {
-        label: "I",
-        title: "Stage I",
-        text: "There is a cancerous polyp in the colon wall."
-      },
-      {
-        label: "II",
-        title: "Stage II",
-        text: "Cancer has spread through most of the colon wall or into the wall’s outer layer."
-      },
-      {
-        label: "III",
-        title: "Stage III",
-        text: "Cancer has spread to the colon wall, lymph nodes or the outer layer of the colon."
-      },
-      {
-        label: "IV",
-        title: "Stage IV",
-        text: "Cancer has spread to distant areas of the body, such as the liver, lungs or ovaries."
-      }
-    ],
+typesStages: {
+  stages: [
+    {
+      label: "0",
+      title: "Stage 0",
+      text: "This stage refers to abnormal or precancerous cells in colon polyps."
+    },
+    {
+      label: "I",
+      title: "Stage I",
+      text: "There is a cancerous polyp in the colon wall."
+    },
+    {
+      label: "II",
+      title: "Stage II",
+      text: "Cancer has spread through most of the colon wall or into the wall’s outer layer."
+    },
+    {
+      label: "III",
+      title: "Stage III",
+      text: "Cancer has spread to the colon wall, lymph nodes or the outer layer of the colon."
+    },
+    {
+      label: "IV",
+      title: "Stage IV",
+      text: "Cancer has spread to distant areas of the body, such as the liver, lungs or ovaries."
+    }
+  ],
 
-    types: [
-      {
-        title: "No Specific Types Listed",
-        text: "This page does not present a separate types section for colon cancer."
-      }
-    ]
-  },
+  typesNote:
+    "This cancer is primarily evaluated based on its stage, behavior and individual features rather than distinct subtypes."
+},
 
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age 50 or Older",
         text: "Most people with colon cancer are older than 50, although cases in younger people are increasing."
       },
       {
-        icon: "/icons/family.svg",
+        icon: "/icons/family.png",
         title: "Family History",
         text: "Risk may be higher if close biological relatives have had large colon polyps or colorectal cancer."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Many Colon Polyps",
         text: "In general, having more colon polyps increases the chance that one or more may become cancerous."
       },
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "Inherited Conditions",
         text: "Inherited conditions such as Lynch syndrome and familial adenomatous polyposis may lead to colon cancer."
       }
@@ -2978,17 +2430,17 @@ symptoms: {
 
     lifestyle: [
       {
-        icon: "/icons/weight.svg",
+        icon: "/icons/overweight.png",
         title: "Overweight or Obesity",
         text: "Having a BMI higher than 25 may play a role in colon cancer risk."
       },
       {
-        icon: "/icons/smoking.svg",
+        icon: "/icons/smoking.png",
         title: "Smoking",
         text: "Smoking cigarettes may increase the risk of colon cancer."
       },
       {
-        icon: "/icons/alcohol.svg",
+        icon: "/icons/alcohol.png",
         title: "Alcohol Use",
         text: "Regular alcohol use, even light to moderate drinking, may increase risk."
       }
@@ -3103,25 +2555,6 @@ symptoms: {
         img: "/treatment/colon-targeted.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Screening Follow-up",
-        text: "Regular screening can help detect colon polyps or cancer early."
-      },
-      {
-        title: "Nutrition Support",
-        text: "Eating well with lean protein, vegetables and whole grains may support overall health."
-      },
-      {
-        title: "Risk Reduction",
-        text: "Stopping smoking, avoiding alcohol and maintaining a healthy weight may help reduce risk."
-      },
-      {
-        title: "Care Team Support",
-        text: "Your cancer care team can explain recommendations and support you throughout diagnosis and treatment."
-      }
-    ]
   }
 },
 
@@ -3144,25 +2577,11 @@ symptoms: {
     description:
       "This cancer is uncommon and may not cause noticeable symptoms in its early stages. As the disease progresses, symptoms can develop depending on the tumor’s size and location. Early diagnosis can be challenging, but timely evaluation and treatment are important for managing the disease and improving outcomes.",
   },
-
-
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Staging information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/duodenum-adenocarcinoma.png",
-        title: "Adenocarcinoma",
-        text: "Adenocarcinoma is the most common type of duodenal cancer and starts in glandular cells that line the intestine."
-      }
-    ]
-  },
+ 
+   typesStages: {
+   stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
@@ -3251,24 +2670,6 @@ symptoms: {
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Nutrition Support",
-        text: "Nutrition support may help people manage digestive symptoms and maintain strength."
-      },
-      {
-        title: "Symptom Management",
-        text: "Treatment can help manage symptoms related to digestion and bowel function."
-      },
-      {
-        title: "Follow-up Care",
-        text: "Regular follow-up helps monitor recovery and response to treatment."
-      },
-      {
-        title: "Emotional Support",
-        text: "Support resources may help patients and families cope with diagnosis and treatment."
-      }
-    ]
   }
 },
 
@@ -3292,28 +2693,11 @@ symptoms: {
   },
 
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Detailed staging information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/endometrial-type.png",
-        title: "Endometrial Cancer",
-        text: "Endometrial cancer starts in the endometrium, the inner lining of the uterus."
-      },
-      {
-        img: "/overview/endometrial-sarcoma.png",
-        title: "Uterine Sarcoma",
-        text: "Uterine sarcoma is another type of uterine cancer that develops in the muscle wall or connective tissue of the uterus."
-      }
-    ]
-  },
+ 
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
@@ -3456,25 +2840,6 @@ symptoms: {
         img: "/treatment/endometrial-targeted.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Follow-up Care",
-        text: "Regular follow-up helps monitor recovery and check whether cancer has returned."
-      },
-      {
-        title: "Side Effect Support",
-        text: "Your care team can help manage side effects from treatment."
-      },
-      {
-        title: "Fertility Discussion",
-        text: "Some treatments affect the ability to become pregnant, so fertility concerns should be discussed before treatment."
-      },
-      {
-        title: "Emotional Support",
-        text: "Support groups and counseling can help patients cope with diagnosis and treatment."
-      }
-    ]
   }
 },
 
@@ -3498,28 +2863,11 @@ symptoms: {
   },
 
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Detailed Stage I-IV information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/esophageal-adeno.png",
-        title: "Adenocarcinoma",
-        text: "This is the most common type of esophageal cancer in the United States. It develops in tissue that makes mucus and usually affects the lower esophagus."
-      },
-      {
-        img: "/overview/esophageal-squamous.png",
-        title: "Squamous Cell Carcinoma",
-        text: "This type begins in the squamous cells that line the esophagus and usually affects the upper and middle parts."
-      }
-    ]
-  },
+  
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
@@ -3722,25 +3070,6 @@ symptoms: {
         img: "/treatment/esophageal-immuno.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Cancer Rehabilitation",
-        text: "Cancer rehabilitation supports patients before, during and after treatment."
-      },
-      {
-        title: "Palliative Care",
-        text: "Palliative care helps manage symptoms, treatment side effects, comfort and emotional support."
-      },
-      {
-        title: "Cancer Survivorship",
-        text: "Cancer survivorship helps people live as long as possible with the best possible quality of life."
-      },
-      {
-        title: "Regular Follow-up",
-        text: "Follow-up may include physical exams, blood tests, imaging tests and endoscopy after treatment."
-      }
-    ]
   }
 },
 
@@ -3764,33 +3093,11 @@ symptoms: {
   },
 
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Staging information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/ewing-bone-type.png",
-        title: "Ewing Sarcoma of Bone",
-        text: "This is the most common type of Ewing sarcoma."
-      },
-      {
-        img: "/overview/ewing-extraosseous.png",
-        title: "Extraosseous Ewing Tumor",
-        text: "This type affects the soft tissues around bones, including muscles, tendons and ligaments."
-      },
-      {
-        img: "/overview/ewing-ppnet.png",
-        title: "Peripheral Primitive Neuroectodermal Tumor",
-        text: "This type can start in bone or soft tissue."
-      }
-    ]
-  },
+ 
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
@@ -3923,25 +3230,6 @@ symptoms: {
         img: "/treatment/ewing-trial.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Side Effect Support",
-        text: "Contact the care team if treatment side effects are more severe than expected."
-      },
-      {
-        title: "Pain Management",
-        text: "Persistent or worsening pain should be discussed with the cancer care team."
-      },
-      {
-        title: "Late Effects Monitoring",
-        text: "Children may need monitoring for late effects involving growth, organs, learning, fertility and mental health."
-      },
-      {
-        title: "Child Life Support",
-        text: "Child life specialists can support children and families during diagnosis and treatment."
-      }
-    ]
   }
 },
 //eye cancer//
@@ -3964,33 +3252,11 @@ symptoms: {
   },
 
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Detailed staging information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/eye-melanoma.png",
-        title: "Uveal Melanoma",
-        text: "Uveal melanoma is the most common type of eye cancer in adults."
-      },
-      {
-        img: "/overview/eye-retinoblastoma.png",
-        title: "Retinoblastoma",
-        text: "Retinoblastoma is the most common eye cancer in children."
-      },
-      {
-        img: "/overview/eye-lymphoma.png",
-        title: "Intraocular Lymphoma",
-        text: "This rare eye cancer develops in lymphocytes within the eye."
-      }
-    ]
-  },
+  
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
@@ -4118,25 +3384,6 @@ symptoms: {
         img: "/treatment/eye-chemo.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Vision Rehabilitation",
-        text: "Vision rehabilitation may help people adapt to vision changes after treatment."
-      },
-      {
-        title: "Artificial Eye Support",
-        text: "People who have an eye removed may receive a prosthetic eye."
-      },
-      {
-        title: "Regular Monitoring",
-        text: "Follow-up appointments help detect recurrence or treatment-related changes."
-      },
-      {
-        title: "Emotional Support",
-        text: "Support resources may help patients adjust to diagnosis and vision-related changes."
-      }
-    ]
   }
 },
 
@@ -4183,19 +3430,6 @@ symptoms: {
         text: "Cancer has spread to the liver or distant organs such as the lungs or brain."
       }
     ],
-
-    types: [
-      {
-        img: "/overview/fallopian-serous.png",
-        title: "High-Grade Serous Tumor",
-        text: "Most fallopian tube and ovarian tumors are high-grade serous tumors, which can spread quickly."
-      },
-      {
-        img: "/overview/fallopian-sarcoma.png",
-        title: "Sarcoma",
-        text: "Some fallopian tube cancers start in connective tissue and are sarcomas."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -4378,25 +3612,6 @@ symptoms: {
         img: "/treatment/fallopian-palliative.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Regular Follow-up",
-        text: "Regular checkups are important, especially within the first five years, to check for recurrent cancer."
-      },
-      {
-        title: "Lifelong Monitoring",
-        text: "People treated for advanced cancer may need lifelong checkups."
-      },
-      {
-        title: "Side Effect Support",
-        text: "Providers can help manage lasting side effects after treatment."
-      },
-      {
-        title: "Support Resources",
-        text: "Support groups and care resources may help people living with a cancer diagnosis."
-      }
-    ]
   }
 },
 
@@ -4450,13 +3665,6 @@ symptoms: {
   }
 ],
 
-    types: [
-      {
-        img: "/overview/gallbladder-adenocarcinoma.png",
-        title: "Adenocarcinoma",
-        text: "Most gallbladder cancers begin in gland-like cells that line the gallbladder."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -4590,25 +3798,6 @@ symptoms: {
         img: "/treatment/gallbladder-radiation.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Symptom Management",
-        text: "Supportive care can help manage pain, jaundice and digestive symptoms."
-      },
-      {
-        title: "Nutrition Support",
-        text: "Nutritional guidance may help maintain strength during treatment."
-      },
-      {
-        title: "Palliative Care",
-        text: "Palliative care focuses on comfort and quality of life."
-      },
-      {
-        title: "Follow-up Care",
-        text: "Regular follow-up helps monitor treatment response and recurrence."
-      }
-    ]
   }
 },
 
@@ -4632,23 +3821,11 @@ symptoms: {
   },
 
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Detailed staging information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/gist-tumor.png",
-        title: "Gastrointestinal Stromal Tumor",
-        text: "This page describes GIST as a rare cancerous tumor of the digestive system and does not present separate GIST subtypes."
-      }
-    ]
-  },
+ 
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
@@ -4781,25 +3958,6 @@ symptoms: {
         img: "/treatment/gist-small-tumor.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Follow-up Appointments",
-        text: "Follow-up visits every three to six months may help look for signs of a new GIST."
-      },
-      {
-        title: "CT Monitoring",
-        text: "CT scans of the liver and pelvis may be used during follow-up."
-      },
-      {
-        title: "MRI or PET Monitoring",
-        text: "MRI scans or PET scans may also be used to check for recurrence."
-      },
-      {
-        title: "Care Team Support",
-        text: "The healthcare team can answer questions and provide support during treatment and follow-up."
-      }
-    ]
   }
 },
 //germ cell tumor//
@@ -4844,53 +4002,12 @@ symptoms: {
     ]
   },
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Detailed staging information is not presented on this page."
-      }
-    ],
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
-    types: [
-      {
-        img: "/overview/gct-seminoma.png",
-        title: "Seminomas and Non-Seminomas",
-        text: "These germ cell tumors can cause testicular cancer. Seminomas often grow and spread slowly, while non-seminomas grow larger and spread more quickly."
-      },
-      {
-        img: "/overview/gct-choriocarcinoma.png",
-        title: "Choriocarcinoma",
-        text: "Choriocarcinomas are rare cancerous tumors most often found in the uterus and may spread to other body areas."
-      },
-      {
-        img: "/overview/gct-germinoma.png",
-        title: "Germinoma",
-        text: "Germinomas are cancerous tumors that most commonly form in the brain and spinal cord, but may also form in the ovaries or testicles."
-      },
-      {
-        img: "/overview/gct-embryonal.png",
-        title: "Embryonal Cell Carcinoma",
-        text: "Embryonal cell carcinomas are rare cancerous tumors and are often mixed with other tumor types."
-      },
-      {
-        img: "/overview/gct-polyembryoma.png",
-        title: "Polyembryoma",
-        text: "Polyembryomas are fast-growing cancerous tumors often mixed with other germ cell tumor types."
-      },
-      {
-        img: "/overview/gct-teratoma.png",
-        title: "Teratoma",
-        text: "Teratomas contain tissue such as teeth, hair, muscle or bone and may be benign or cancerous."
-      },
-      {
-        img: "/overview/gct-yolk-sac.png",
-        title: "Yolk Sac Tumor",
-        text: "Yolk sac tumors are cancerous tumors made of cells similar to those in a developing embryo."
-      }
-    ]
-  },
+
 
   riskFactorsData: {
     uncontrollable: [
@@ -5030,24 +4147,6 @@ symptoms: {
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Prompt Evaluation",
-        text: "Talk to a provider if you or your child has symptoms of a germ cell tumor."
-      },
-      {
-        title: "Treatment Planning",
-        text: "Treatment depends on age, tumor type, location, spread and response to treatment."
-      },
-      {
-        title: "Follow-up Care",
-        text: "Providers may recommend follow-up based on the tumor type and treatment response."
-      },
-      {
-        title: "Emotional Support",
-        text: "Support can help patients and families manage concerns during diagnosis and treatment."
-      }
-    ]
   }
 },
 
@@ -5072,23 +4171,11 @@ symptoms: {
   },
 
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Detailed staging information is not presented on this page."
-      }
-    ],
 
-    types: [
-      {
-        img: "/overview/hcl-leukemia.png",
-        title: "Hairy Cell Leukemia",
-        text: "This page describes hairy cell leukemia as a rare, slow-growing blood cancer and does not present separate subtypes."
-      }
-    ]
-  },
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
@@ -5236,25 +4323,6 @@ symptoms: {
         img: "/treatment/hcl-splenectomy.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Infection Protection",
-        text: "Hairy cell leukemia can weaken the immune system, so it is important to reduce infection risk."
-      },
-      {
-        title: "Healthy Eating",
-        text: "Fruits, vegetables, lean proteins and whole grains can support the immune system."
-      },
-      {
-        title: "Daily Activity",
-        text: "Regular activity can support overall health, including immune health."
-      },
-      {
-        title: "Sleep and Vaccines",
-        text: "Getting enough sleep and staying up to date on vaccines can help protect against infections."
-      }
-    ]
   }
 },
 
@@ -5279,58 +4347,11 @@ symptoms: {
   },
 
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Detailed stage-by-stage information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/head-neck-hypopharyngeal.png",
-        title: "Hypopharyngeal Cancer",
-        text: "Cleveland Clinic lists hypopharyngeal cancer among the head and neck cancers it treats."
-      },
-      {
-        img: "/overview/head-neck-laryngeal.png",
-        title: "Laryngeal Cancer",
-        text: "Cleveland Clinic lists laryngeal cancer among the head and neck cancers it treats."
-      },
-      {
-        img: "/overview/head-neck-nasopharyngeal.png",
-        title: "Nasopharyngeal Cancer",
-        text: "Cleveland Clinic lists nasopharyngeal cancer among the head and neck cancers it treats."
-      },
-      {
-        img: "/overview/head-neck-oral.png",
-        title: "Oral Cancer",
-        text: "Cleveland Clinic lists oral cancer among the head and neck cancers it treats."
-      },
-      {
-        img: "/overview/head-neck-oropharyngeal.png",
-        title: "Oropharyngeal Cancer",
-        text: "Cleveland Clinic lists oropharyngeal cancer among the head and neck cancers it treats."
-      },
-      {
-        img: "/overview/head-neck-salivary.png",
-        title: "Salivary Gland Cancer",
-        text: "Cleveland Clinic lists salivary gland cancer among the head and neck cancers it treats."
-      },
-      {
-        img: "/overview/head-neck-sinonasal.png",
-        title: "Sinonasal Tumors",
-        text: "Cleveland Clinic lists sinonasal tumors among the head and neck cancers it treats."
-      },
-      {
-        img: "/overview/head-neck-thyroid.png",
-        title: "Thyroid Cancer",
-        text: "Cleveland Clinic also treats thyroid cancer when thyroid nodules in the neck are cancerous."
-      }
-    ]
-  },
+ 
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
@@ -5439,24 +4460,6 @@ symptoms: {
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Palliative and Supportive Care",
-        text: "Supportive care helps address quality-of-life concerns during and after treatment."
-      },
-      {
-        title: "Nutrition Support",
-        text: "Cancer nutritionists may help patients manage nutrition needs during treatment."
-      },
-      {
-        title: "Speech Therapy",
-        text: "Speech therapy may help patients restore or preserve speech and swallowing ability."
-      },
-      {
-        title: "Patient Navigation",
-        text: "A dedicated patient navigator helps guide patients through diagnosis, treatment and support resources."
-      }
-    ]
   }
 },
 
@@ -5502,29 +4505,6 @@ symptoms: {
         text: "Lymphoma is in at least one organ outside the lymph system, such as the liver, lung or bone marrow."
       }
     ],
-
-    types: [
-      {
-        img: "/overview/hodgkin-nodular-sclerosis.png",
-        title: "Nodular Sclerosis Hodgkin Lymphoma",
-        text: "This is the most common classic Hodgkin lymphoma subtype. It often affects young adults and usually affects lymph nodes in the central chest."
-      },
-      {
-        img: "/overview/hodgkin-mixed-cellularity.png",
-        title: "Mixed Cellularity Hodgkin Lymphoma",
-        text: "This classic subtype typically affects people in their 60s and sometimes develops in the abdomen."
-      },
-      {
-        img: "/overview/hodgkin-lymphocyte-rich.png",
-        title: "Lymphocyte-Rich Classic Hodgkin Lymphoma",
-        text: "This subtype affects about 6% of people with Hodgkin lymphoma and is more common in males."
-      },
-      {
-        img: "/overview/hodgkin-lymphocyte-depleted.png",
-        title: "Lymphocyte-Depleted Hodgkin Lymphoma",
-        text: "This subtype affects about 1% of people with Hodgkin lymphoma and is most common in people older than 60 and people with HIV/AIDS."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -5683,25 +4663,6 @@ symptoms: {
         img: "/treatment/hodgkin-transplant.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Rest",
-        text: "Cancer and treatment can cause extreme fatigue, so rest is important when the body needs it."
-      },
-      {
-        title: "Nutritious Meals",
-        text: "Balanced meals can help support the immune system and overall health during care."
-      },
-      {
-        title: "Stress Management",
-        text: "Concerns about recurrence can feel stressful, and talking with a provider may help."
-      },
-      {
-        title: "Exercise",
-        text: "Regular activity can support the immune system, help manage stress and combat fatigue."
-      }
-    ]
   }
 },
 
@@ -5743,23 +4704,11 @@ symptoms: {
     ]
   },
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Detailed staging information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/ibc-type.png",
-        title: "Inflammatory Breast Cancer",
-        text: "This page describes inflammatory breast cancer as a rare, aggressive form of breast cancer and does not present separate subtypes."
-      }
-    ]
-  },
+ 
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
@@ -5887,25 +4836,6 @@ symptoms: {
         img: "/treatment/ibc-hormone.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Prompt Care",
-        text: "Symptoms that appear suddenly or do not improve should be checked quickly."
-      },
-      {
-        title: "Treatment Planning",
-        text: "Care usually involves several treatments used in a planned order."
-      },
-      {
-        title: "Follow-up Care",
-        text: "Follow-up visits help monitor treatment response and recovery."
-      },
-      {
-        title: "Emotional Support",
-        text: "Support services can help patients cope with diagnosis and treatment."
-      }
-    ]
   }
 },
 
@@ -5930,38 +4860,11 @@ symptoms: {
   },
 
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Detailed staging information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/kaposi-epidemic.png",
-        title: "Epidemic KS",
-        text: "This is related to AIDS/HIV and is the most common type of Kaposi sarcoma in the United States."
-      },
-      {
-        img: "/overview/kaposi-classic.png",
-        title: "Classic KS",
-        text: "This type mostly affects males over 60 who are of Mediterranean, Southwest Asian, Eastern European or Ashkenazi Jewish descent."
-      },
-      {
-        img: "/overview/kaposi-endemic.png",
-        title: "Endemic KS",
-        text: "This type affects people living near the African equator and is usually diagnosed at a younger age than classic KS."
-      },
-      {
-        img: "/overview/kaposi-acquired.png",
-        title: "Acquired KS",
-        text: "This type can occur in people who carry HHV-8 and take immunosuppressants after an organ or bone marrow transplant."
-      }
-    ]
-  },
+ 
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
@@ -6104,25 +5007,6 @@ symptoms: {
         img: "/treatment/kaposi-targeted.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Regular Follow-up",
-        text: "Kaposi sarcoma can come back after treatment, so regular follow-ups help monitor for new cancer."
-      },
-      {
-        title: "Immune System Support",
-        text: "Maintaining a healthy immune system is important for people with Kaposi sarcoma."
-      },
-      {
-        title: "Healthy Habits",
-        text: "Nutritious food, enough sleep, stress management, quitting smoking, vaccines and handwashing can support immune health."
-      },
-      {
-        title: "Support Community",
-        text: "A local or online support community may help patients process emotions and make health decisions."
-      }
-    ]
   }
 },
 
@@ -6170,29 +5054,6 @@ symptoms: {
         text: "The tumor is in the adrenal gland or nearby tissue and may have spread to the bones, liver or lungs."
       }
     ],
-
-    types: [
-      {
-        img: "/overview/kidney-rcc-type.png",
-        title: "Renal Cell Carcinoma",
-        text: "This type develops in the cells that line tiny tubes in the kidneys. It accounts for most kidney cancer cases."
-      },
-      {
-        img: "/overview/kidney-transitional.png",
-        title: "Transitional Cell Carcinoma",
-        text: "This type usually begins where the ureter connects to the kidney, but it can also start in the ureter or bladder."
-      },
-      {
-        img: "/overview/kidney-sarcoma.png",
-        title: "Renal Sarcoma",
-        text: "This cancer begins in the connective tissue of the kidneys and is the least common form."
-      },
-      {
-        img: "/overview/kidney-wilms.png",
-        title: "Wilm’s Tumor",
-        text: "This type typically affects children."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -6355,25 +5216,6 @@ symptoms: {
         img: "/treatment/kidney-radiation.png"
       }
     ],
-
-    supportiveCare: [
-      {
-        title: "Cancer Rehabilitation",
-        text: "Cancer rehabilitation may include physical therapy before or after treatment."
-      },
-      {
-        title: "Palliative Care",
-        text: "Palliative care focuses on symptom relief along with social and spiritual support."
-      },
-      {
-        title: "Recovery Support",
-        text: "Recovery time depends on the treatment, and surgery recovery may take several weeks."
-      },
-      {
-        title: "Follow-up Care",
-        text: "Follow-up helps monitor recovery, recurrence risk and next steps after treatment."
-      },
-          ]
   }
 },
 
@@ -6411,24 +5253,6 @@ symptoms: {
         text: "In stages 3 and 4, the tumor is larger and may affect the vocal cords, lymph nodes or other body areas."
       }
     ],
-
-    types: [
-      {
-        img: "/overview/laryngeal-supraglottis.png",
-        title: "Supraglottis",
-        text: "More than one in three laryngeal cancers start in the upper part of the larynx."
-      },
-      {
-        img: "/overview/laryngeal-glottis.png",
-        title: "Glottis",
-        text: "More than half of laryngeal cancers start in the glottis, the middle part where the vocal cords are."
-      },
-      {
-        img: "/overview/laryngeal-subglottis.png",
-        title: "Subglottis",
-        text: "About 5% of laryngeal cancers start in the lower part of the larynx."
-      }
-    ]
   },
 
   riskFactorsData: {
@@ -6603,24 +5427,6 @@ symptoms: {
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Pain and Swallowing Support",
-        text: "After treatment, providers may help treat pain, swallowing problems or mucositis."
-      },
-      {
-        title: "Diet Support",
-        text: "Providers may discuss diet to make sure eating and swallowing are manageable."
-      },
-      {
-        title: "Physical Therapy",
-        text: "Physical therapy may help with scarring in the neck or trouble opening the mouth."
-      },
-      {
-        title: "Speech Therapy",
-        text: "A speech therapist can help after treatment, especially if surgery changes the way a person speaks."
-      }
-    ]
   }
 },
 
@@ -6644,48 +5450,11 @@ symptoms: {
       "Healthcare providers classify leukemia based on how quickly it develops and the type of blood cell involved. Some forms progress rapidly and require immediate treatment, while others develop more slowly over time. Treatment and outlook vary depending on the specific leukemia type and individual circumstances." 
   },
 
-  typesStages: {
-    stages: [
-      {
-        label: "-",
-        title: "No Stages",
-        text: "Detailed staging information is not presented on this page."
-      }
-    ],
-
-    types: [
-      {
-        img: "/overview/leukemia-all.png",
-        title: "Acute Lymphocytic Leukemia (ALL)",
-        text: "ALL develops from immature lymphoid cells and is the most common leukemia in children, teenagers and young adults."
-      },
-      {
-        img: "/overview/leukemia-aml.png",
-        title: "Acute Myelogenous Leukemia (AML)",
-        text: "AML develops from myeloid cells and is the most common acute leukemia in adults."
-      },
-      {
-        img: "/overview/leukemia-cll.png",
-        title: "Chronic Lymphocytic Leukemia (CLL)",
-        text: "CLL develops from lymphoid cells and is the most common chronic leukemia in adults."
-      },
-      {
-        img: "/overview/leukemia-cml.png",
-        title: "Chronic Myelogenous Leukemia (CML)",
-        text: "CML develops from myeloid cells and usually progresses more slowly than acute leukemias."
-      },
-      {
-        img: "/overview/leukemia-acute.png",
-        title: "Acute Leukemia",
-        text: "Acute leukemia progresses quickly because abnormal blood cells multiply rapidly."
-      },
-      {
-        img: "/overview/leukemia-chronic.png",
-        title: "Chronic Leukemia",
-        text: "Chronic leukemia develops more slowly and may not cause symptoms for years."
-      }
-    ]
-  },
+  
+   typesStages: {
+  stagesNote:
+    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
+},
 
   riskFactorsData: {
     uncontrollable: [
