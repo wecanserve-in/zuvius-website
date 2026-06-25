@@ -1836,12 +1836,12 @@ symptoms: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "DES Exposure",
         text: "People whose mothers took DES between 1938 and 1971 may have a higher risk of cervical cancer."
       },
       {
-        icon: "/icons/family.svg",
+        icon: "/icons/family.png",
         title: "Family History",
         text: "Cervical cancer may have a genetic component."
       }
@@ -1849,35 +1849,30 @@ symptoms: {
 
     lifestyle: [
       {
-        icon: "/icons/screening.svg",
+        icon: "/icons/pap.png",
         title: "Screening History",
         text: "People who haven’t had Pap tests at regular intervals are more likely to get cervical cancer."
       },
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "HPV Infection",
         text: "Certain types of HPV cause cervical cancer. Lowering HPV risk can also lower cervical cancer risk."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Sexual History",
         text: "Having sex before age 18 or having many sexual partners may increase the risk of HPV infection."
       },
       {
-        icon: "/icons/smoking.svg",
+        icon: "/icons/smoking.png",
         title: "Smoking",
         text: "Smoking cigarettes increases the risk of cervical cancer."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "HIV Infection",
         text: "People with HIV have a higher-than-average risk of developing cervical cancer."
       },
-      {
-        icon: "/icons/immunity.svg",
-        title: "Weakened Immune System",
-        text: "A weak immune system makes it harder for the body to fight infections."
-      }
     ]
   },
 
@@ -1893,11 +1888,7 @@ symptoms: {
         text: "Bleeding may occur after sex, between menstrual periods or after menopause.",
         img: "/symptoms/cervical-bleeding.png"
       },
-      {
-        title: "Pain During Sex",
-        text: "Pain during sex may occur as a warning sign of cervical cancer.",
-        img: "/symptoms/cervical-pain-sex.png"
-      },
+      
       {
         title: "Painful Urination",
         text: "If cancer spreads to nearby tissues, urination may become difficult or painful and may include blood in urine.",
@@ -1908,20 +1899,16 @@ symptoms: {
         text: "Diarrhea, pain or bleeding from the rectum when pooping may occur if cancer spreads nearby.",
         img: "/symptoms/cervical-bowel.png"
       },
-      {
-        title: "Fatigue and Weight Loss",
-        text: "Fatigue, loss of weight and loss of appetite may occur.",
-        img: "/symptoms/cervical-fatigue.png"
-      },
+    
       {
         title: "Backache or Leg Swelling",
         text: "A dull backache or swelling in the legs may occur when cancer has spread.",
-        img: "/symptoms/cervical-back-leg.png"
+        img: "/symptoms/cervical-swell.png"
       },
       {
         title: "Pelvic or Abdominal Pain",
         text: "Pain in the pelvis or abdomen may occur.",
-        img: "/symptoms/cervical-pelvic.png"
+        img: "/symptoms/cervical-pelvis.png"
       }
     ]
   },
@@ -1941,7 +1928,7 @@ symptoms: {
       {
         title: "Colposcopy",
         text: "Colposcopy uses magnification to help a provider look closely at cervical cells.",
-        img: "/diagnosis/cervical-colposcopy.png"
+        img: "/diagnosis/cervical-col.png"
       },
       {
         title: "Punch Biopsy",
@@ -1951,23 +1938,13 @@ symptoms: {
       {
         title: "Endocervical Curettage",
         text: "This test scrapes the lining of the cervix with a spoon-shaped tool called a curette.",
-        img: "/diagnosis/cervical-curettage.png"
+        img: "/diagnosis/cervical-cure.png"
       },
       {
         title: "LEEP",
         text: "LEEP uses an electrical wire loop to remove abnormal cervical tissue.",
         img: "/diagnosis/cervical-leep.png"
       },
-      {
-        title: "Cone Biopsy",
-        text: "Cone biopsy removes a larger cone-shaped piece of tissue from the cervix.",
-        img: "/diagnosis/cervical-cone.png"
-      },
-      {
-        title: "Spread Tests",
-        text: "If cancer is confirmed, tests such as blood and urine tests, X-rays, CT scans and MRI may check whether it has spread.",
-        img: "/diagnosis/cervical-spread.png"
-      }
     ]
   },
 
@@ -2003,31 +1980,7 @@ symptoms: {
         text: "Cryosurgery freezes and destroys cancer cells.",
         img: "/treatment/cervical-cryo.png"
       },
-      {
-        title: "Hysterectomy",
-        text: "Hysterectomy removes the uterus and cervix.",
-        img: "/treatment/cervical-hysterectomy.png"
-      },
-      {
-        title: "Trachelectomy",
-        text: "Trachelectomy removes the cervix and upper vagina but not the uterus.",
-        img: "/treatment/cervical-trachelectomy.png"
-      },
-      {
-        title: "Pelvic Exenteration",
-        text: "Pelvic exenteration is a larger surgery that may remove the bladder, vagina, rectum and part of the colon depending on spread.",
-        img: "/treatment/cervical-exenteration.png"
-      },
-      {
-        title: "Targeted Therapy",
-        text: "Targeted therapy destroys specific cancer cells by targeting proteins that help them grow and spread.",
-        img: "/treatment/cervical-targeted.png"
-      },
-      {
-        title: "Immunotherapy",
-        text: "Immunotherapy helps the immune system recognize and destroy cancer cells.",
-        img: "/treatment/cervical-immuno.png"
-      }
+    
     ],
 
   }
@@ -2360,7 +2313,7 @@ symptoms: {
   description:
     "The colon is the longest part of the large intestine and an important component of the digestive system. It plays a key role in digestion by absorbing water, nutrients, and electrolytes from digested food while helping process and move waste through the body for elimination.",
 
-  bannerImg: "/cancers/colon-cancer.webp",
+  bannerImg: "/banners/colon.png",
 
   overview: {
     intro:
@@ -2568,7 +2521,7 @@ typesStages: {
   description:
     "The duodenum is the initial section of the small intestine. Its primary function is to convert partially digested food received from the stomach into nutrients that the body can utilize. Digestive fluids released from the liver, gallbladder, and pancreas enter the duodenum, where they assist in the digestion and absorption process.",
 
-  bannerImg: "/cancers/duodenal-cancer.webp",
+  bannerImg: "/banners/duo.png",
 
   overview: {
     intro:
@@ -2682,7 +2635,8 @@ typesStages: {
 
   description:
     "The endometrium, also known as the uterine lining, plays an important role in reproduction by providing a place for a fertilized egg to implant. It is also the tissue that is shed during menstruation.",
-  bannerImg: "/cancers/endometrial-cancer.webp",
+  
+    bannerImg: "/banners/endo.png",
 
   overview: {
     intro:
@@ -2852,7 +2806,7 @@ typesStages: {
   description:
     "The esophagus is a hollow muscular tube that transports food and liquids from the throat to the stomach. Muscles within the esophagus help move what you swallow down toward the stomach.",
 
-  bannerImg: "/cancers/esophageal-cancer.webp",
+  bannerImg: "/banners/esopha.png",
 
   overview: {
     intro:
@@ -3082,7 +3036,7 @@ typesStages: {
   description:
     "Bones provide structure, support movement and help protect vital organs throughout the body. Bone marrow inside certain bones also plays an important role in producing blood cells.",
 
-  bannerImg: "/cancers/ewings-sarcoma.webp",
+  bannerImg: "/banners/ewing.png",
 
   overview: {
     intro:
@@ -3241,7 +3195,7 @@ typesStages: {
   description:
     "Your eyes are an important sensory organ that provide your brain with information about the world around you. They perform the visual function of detecting images, while the signals they transmit help the brain create the images you perceive.",
 
-  bannerImg: "/cancers/eye-cancer.webp",
+  bannerImg: "/banners/eye.png",
 
   overview: {
     intro:
