@@ -2430,13 +2430,8 @@ typesStages: {
       {
         title: "Tiredness or Weakness",
         text: "Feeling tired or weak may happen with colon cancer.",
-        img: "/symptoms/colon-tired.png"
+        img: "/symptoms/colon-week.png"
       },
-      {
-        title: "Unexplained Weight Loss",
-        text: "Losing weight without trying may be a symptom that needs medical attention.",
-        img: "/symptoms/colon-weight.png"
-      }
     ]
   },
 
@@ -2470,7 +2465,7 @@ typesStages: {
       {
         title: "Tissue Testing",
         text: "During colonoscopy, a small tissue sample may be removed and examined under a microscope.",
-        img: "/diagnosis/colon-biopsy.png"
+        img: "/diagnosis/colon-bio.png"
       }
     ]
   },
@@ -2539,17 +2534,17 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "",
+        icon: "/icons/none.png",
         title: "Risk Factors Not Listed",
-        text: "This page does not provide a dedicated section describing specific risk factors for duodenal cancer."
+        text:"no info"
       }
     ],
 
     lifestyle: [
       {
-        icon: "",
+        icon: "/icons/none.png",
         title: "Information Not Available",
-        text: "Lifestyle-related risk factors are not specifically discussed on this page."
+        text: "no info"
       }
     ]
   },
@@ -2656,22 +2651,22 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age",
         text: "Endometrial cancer is more common in people who have gone through menopause."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Early or Late Menstruation History",
         text: "Starting periods before age 12 or going through menopause later may increase risk because of longer estrogen exposure."
       },
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "Lynch Syndrome",
         text: "Lynch syndrome is an inherited condition that increases the risk of several cancers, including endometrial cancer."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Never Being Pregnant",
         text: "People who have never been pregnant may have a higher risk of endometrial cancer."
       }
@@ -2679,17 +2674,17 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/weight.svg",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "Obesity can increase estrogen levels and raise the risk of endometrial cancer."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Hormone Therapy",
         text: "Taking estrogen without progesterone after menopause may increase risk."
       },
       {
-        icon: "/icons/diet.svg",
+        icon: "/icons/healthy.png",
         title: "High-Fat Diet",
         text: "A high-fat diet may increase the risk of endometrial cancer."
       }
@@ -2741,12 +2736,12 @@ typesStages: {
       {
         title: "Endometrial Biopsy",
         text: "A small sample of tissue from the uterine lining may be removed and checked for cancer cells.",
-        img: "/diagnosis/endometrial-biopsy.png"
+        img: "/diagnosis/endo-bio.png"
       },
       {
         title: "Hysteroscopy",
         text: "A thin lighted tube may be used to look inside the uterus.",
-        img: "/diagnosis/endometrial-hysteroscopy.png"
+        img: "/diagnosis/endo-hyst.png"
       },
       {
         title: "Dilation and Curettage",
@@ -2761,22 +2756,17 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery is the most common treatment for endometrial cancer.",
-        img: "/treatment/endometrial-surgery.png"
-      },
-      {
-        title: "Hysterectomy",
-        text: "A hysterectomy removes the uterus and is commonly used to treat endometrial cancer.",
-        img: "/treatment/endometrial-hysterectomy.png"
+        img: "/treatment/endo-sur.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses targeted energy to destroy cancer cells.",
-        img: "/treatment/endometrial-radiation.png"
+        img: "/treatment/endo-radiation.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to kill cancer cells.",
-        img: "/treatment/endometrial-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Hormone Therapy",
@@ -2786,12 +2776,12 @@ typesStages: {
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the immune system recognize and attack cancer cells.",
-        img: "/treatment/endometrial-immuno.png"
+        img: "/treatment/endo-immuno.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy uses medicines that target specific cancer cell features.",
-        img: "/treatment/endometrial-targeted.png"
+        img: "/treatment/endo-tar.png"
       }
     ],
   }
