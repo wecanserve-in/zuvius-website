@@ -2816,47 +2816,28 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age",
         text: "Esophageal cancer typically affects people aged 60 and older."
       },
       {
-        icon: "/icons/reproductive.svg",
-        title: "Sex",
-        text: "Males are more likely to develop esophageal cancer."
-      },
-      {
-        icon: "/icons/density.svg",
-        title: "Race",
-        text: "Race may affect risk for specific types. Black and Asian people are more likely to have squamous cell esophageal cancer, while white people typically have adenocarcinoma."
-      },
-      {
-        icon: "/icons/acid-reflux.svg",
+        icon: "/icons/reflux.png",
         title: "Barrett’s Esophagus and Acid Reflux",
         text: "Barrett’s esophagus and chronic acid reflux may increase risk."
       },
       {
-        icon: "/icons/heartburn.svg",
+        icon: "/icons/heart_burn.png",
         title: "Chronic Heartburn",
         text: "Long-term heartburn may increase the chance of developing esophageal cancer."
       },
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "Inherited Disorders",
         text: "Certain inherited disorders, such as achalasia, may increase risk."
       },
+    
       {
-        icon: "/icons/head-neck.svg",
-        title: "Head and Neck Cancer History",
-        text: "A history of head and neck cancer may increase risk."
-      },
-      {
-        icon: "/icons/hpv.svg",
-        title: "HPV",
-        text: "Human papillomavirus is listed as a medical condition linked with increased risk."
-      },
-      {
-        icon: "/icons/weight.svg",
+        icon: "/icons/overweight.png",
         title: "Overweight or Obesity",
         text: "Being overweight or having obesity may increase the risk of esophageal cancer."
       }
@@ -2864,17 +2845,17 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/alcohol.svg",
+        icon: "/icons/alcohol.png",
         title: "Alcohol Use",
         text: "Long-term or heavy use of alcohol may increase risk."
       },
       {
-        icon: "/icons/smoking.svg",
+        icon: "/icons/smoking.png",
         title: "Tobacco Use",
         text: "Tobacco use, including smokeless tobacco, may increase the risk of esophageal cancer."
       },
       {
-        icon: "/icons/chemical.svg",
+        icon: "/icons/diet.png",
         title: "Chemical Exposure",
         text: "Long-term exposure to substances such as dry-cleaning solvents, mineral spirits, paint and varnishes may increase risk."
       }
@@ -2893,21 +2874,13 @@ typesStages: {
         text: "Heartburn may be a symptom, especially if it is new or getting worse.",
         img: "/symptoms/esophageal-heartburn.png"
       },
-      {
-        title: "Weight Loss",
-        text: "Unintentional weight loss may occur.",
-        img: "/symptoms/esophageal-weight.png"
-      },
+      
       {
         title: "Chest Pain",
         text: "Chest pain may develop as the tumor grows.",
         img: "/symptoms/esophageal-chest.png"
       },
-      {
-        title: "Persistent Cough",
-        text: "A chronic cough that does not go away may be a symptom.",
-        img: "/symptoms/esophageal-cough.png"
-      },
+      
       {
         title: "Hoarseness",
         text: "Hoarseness that does not go away may occur.",
@@ -2921,7 +2894,7 @@ typesStages: {
       {
         title: "Vomiting or Coughing Blood",
         text: "Vomiting blood or coughing up blood may occur.",
-        img: "/symptoms/esophageal-blood.png"
+        img: "/symptoms/eso-vomit.png"
       }
     ]
   },
@@ -2931,7 +2904,7 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider may do a physical exam and ask about symptoms and medical history.",
-        img: "/diagnosis/esophageal-exam.png"
+        img: "/diagnosis/eso-phy.png"
       },
       {
         title: "Barium Swallow",
@@ -2941,7 +2914,7 @@ typesStages: {
       {
         title: "CT Scan",
         text: "A CT scan may look for cancer in the chest and abdomen.",
-        img: "/diagnosis/esophageal-ct.png"
+        img: "/diagnosis/eso-ct.png"
       },
       {
         title: "Upper Endoscopy",
@@ -2951,7 +2924,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "A biopsy removes a small piece of tissue to check for cancer. It may be done during upper endoscopy.",
-        img: "/diagnosis/esophageal-biopsy.png"
+        img: "/diagnosis/eso-bio.png"
       },
       {
         title: "Tumor Grade",
@@ -2993,26 +2966,7 @@ typesStages: {
         text: "PDT uses lasers to activate medication that causes chemical reactions to kill cancer cells.",
         img: "/treatment/esophageal-pdt.png"
       },
-      {
-        title: "Radiation Therapy",
-        text: "Radiation may shrink a tumor before surgery, remove remaining cancer cells after surgery or ease symptoms if cancer has spread.",
-        img: "/treatment/esophageal-radiation.png"
-      },
-      {
-        title: "Chemotherapy",
-        text: "Chemotherapy may be used with radiation before or after surgery, or when cancer has spread.",
-        img: "/treatment/esophageal-chemo.png"
-      },
-      {
-        title: "Targeted Therapy",
-        text: "Targeted therapy may treat cancer cells that carry certain proteins or genes that help them grow.",
-        img: "/treatment/esophageal-targeted.png"
-      },
-      {
-        title: "Immunotherapy",
-        text: "Immunotherapy targets the immune system’s response to cancer cells and may be used before or after surgery or when surgery is not an option.",
-        img: "/treatment/esophageal-immuno.png"
-      }
+      
     ],
   }
 },
@@ -3046,17 +3000,17 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age",
         text: "Anyone can develop Ewing sarcoma, but it most often affects people ages 10 to 20."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/male.png",
         title: "Sex",
         text: "Ewing sarcoma is slightly more common in males than females."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Race",
         text: "The condition is more likely to affect people who are white than people who are Asian American or Black."
       }
@@ -3064,7 +3018,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "",
+        icon: "/icons/none.png",
         title: "No Lifestyle Risk Factors",
         text: "This page does not identify clearly established lifestyle-related risk factors for Ewing sarcoma."
       }
@@ -3076,12 +3030,12 @@ typesStages: {
       {
         title: "Bone Pain",
         text: "Bone pain may come and go and may become worse at night.",
-        img: "/symptoms/ewing-bone-pain.png"
+        img: "/symptoms/ewing-pain.png"
       },
       {
         title: "Swelling Around Bone",
         text: "Swelling may develop in the tissue around bones and may hurt when touched.",
-        img: "/symptoms/ewing-swelling.png"
+        img: "/symptoms/ewing-swell.png"
       },
       {
         title: "Lumps Near Skin",
@@ -3096,12 +3050,12 @@ typesStages: {
       {
         title: "Broken Bones",
         text: "Bones may break without an injury.",
-        img: "/symptoms/ewing-fracture.png"
+        img: "/symptoms/ewing-bone.png"
       },
       {
         title: "Fatigue and Weight Loss",
         text: "Fatigue and unexpected weight loss may occur if Ewing sarcoma spreads.",
-        img: "/symptoms/ewing-fatigue.png"
+        img: "/symptoms/ewing-fati.png"
       }
     ]
   },
@@ -3111,17 +3065,17 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider may do a physical exam, feel for lumps or bumps and ask about symptoms.",
-        img: "/diagnosis/ewing-exam.png"
+        img: "/diagnosis/ewing-phy.png"
       },
       {
         title: "Imaging Tests",
         text: "Imaging tests help providers look closely at bones and soft tissues. Tests may include CT, MRI, PET and bone scans.",
-        img: "/diagnosis/ewing-imaging.png"
+        img: "/diagnosis/ewing-img.png"
       },
       {
         title: "Biopsy",
         text: "A biopsy collects tissue samples for a pathologist to examine under a microscope.",
-        img: "/diagnosis/ewing-biopsy.png"
+        img: "/diagnosis/ewing-bio.png"
       },
       {
         title: "Needle Biopsy",
@@ -3152,11 +3106,6 @@ typesStages: {
         title: "Surgery",
         text: "Surgery may be done after chemotherapy to remove the tumor.",
         img: "/treatment/ewing-surgery.png"
-      },
-      {
-        title: "More Chemotherapy",
-        text: "Additional chemotherapy may be given after surgery.",
-        img: "/treatment/ewing-more-chemo.png"
       },
       {
         title: "Radiation Therapy",
