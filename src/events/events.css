@@ -608,3 +608,32 @@
     font-size: 14px;
   }
 }
+
+.ev-grid-photo-frame {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ev-view-more-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  transition: all 0.3s ease;
+}
+
+.ev-grid-photo-frame:hover .ev-view-more-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}

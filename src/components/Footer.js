@@ -33,13 +33,13 @@ const Footer = () => {
 
           <ul>
             <li><a href="/">Zuvius</a></li>
-            <li><a href="/">Product</a></li>
-            <li><a href="/">What is Cancer</a></li>
-            <li><a href="/">Types of cancer</a></li>
-            <li><a href="/">Partner With Us</a></li>
-            <li><a href="/">Awards & Recognition</a></li>
-            <li><a href="/">Media</a></li>
-            <li><a href="/">Contact Us</a></li>
+            <li><a href="/products">Product</a></li>
+            <li><a href="/whatiscancer">What is Cancer</a></li>
+            <li><a href="/types-of-cancer">Types of cancer</a></li>
+            <li><a href="/contact">Partner With Us</a></li>
+            <li><a href="/awards-recognition">Awards & Recognition</a></li>
+            <li><a href="/newsroom">NewsRoom</a></li>
+            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
 
@@ -58,9 +58,9 @@ const Footer = () => {
           <h3>MEDIA</h3>
 
           <ul>
-            <li><a href="/">Newsroom</a></li>
+            <li><a href="/newsroom">Newsroom</a></li>
             <li><a href="/">Press Release</a></li>
-            <li><a href="/">Events Conference and Participation</a></li>
+            <li><a href="/events">Events Conference and Participation</a></li>
             <li><a href="/">Blogs</a></li>
             <li><a href="/">Testimonials</a></li>
           </ul>
@@ -76,7 +76,7 @@ const Footer = () => {
   </a>
 
   <a
-    href="https://www.linkedin.com/company/https-www.linkedin.com-search-results-all-heroentitykey-urn-3ali-3aorganization-3a3966110&keywords-z/"
+    href="https://www.linkedin.com/company/zuvius-lifesciences/"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="LinkedIn"
@@ -106,9 +106,18 @@ const Footer = () => {
 
       </div>
 
-      <div className="footer-bottom">
-        © 2026 All rights reserved by Zuvius LifeSciences | Design & Developed By <a href="https://www.wecanserve.in/" target="_blank" rel="noopener noreferrer">WeCanServe</a>
-      </div>
+    <div className="footer-bottom">
+  © {new Date().getFullYear()} All rights reserved by Zuvius LifeSciences |
+  Design & Developed By{" "}
+  <a
+    href="https://www.wecanserve.in/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="developer-link"
+  >
+    WeCanServe
+  </a>
+</div>
     </footer>
   );
 };

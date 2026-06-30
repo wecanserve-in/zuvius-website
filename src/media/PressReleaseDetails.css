@@ -1,0 +1,477 @@
+/* ===================================
+   PRESS RELEASE DETAILS PAGE
+=================================== */
+
+.pressdetailpage {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f9fb;
+  padding-bottom: 80px;
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+.pressdetail-hero {
+  max-width: 1400px;
+  margin: 90px auto 70px;
+  padding: 0 5%;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.pressdetail-hero-content {
+  max-width: 650px;
+}
+
+.pressdetail-badge {
+  display: inline-block;
+
+  background: rgba(0, 138, 154, 0.12);
+  color: #008a9a;
+
+  padding: 10px 18px;
+  border-radius: 50px;
+
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  margin-bottom: 28px;
+}
+
+.pressdetail-hero-content h1 {
+  color: #071d49;
+
+  font-size: 3.2rem;
+  line-height: 1.15;
+  font-weight: 800;
+
+  margin-bottom: 25px;
+}
+
+.pressdetail-hero-content p {
+  color: #58657d;
+
+  font-size: 1.05rem;
+  line-height: 1.9;
+
+  margin-bottom: 35px;
+}
+
+/* ===================================
+   HERO META
+=================================== */
+
+.pressdetail-hero-meta {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+
+  margin-bottom: 40px;
+}
+
+.pressdetail-meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.pressdetail-meta-item span {
+  color: #8b95a7;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.pressdetail-meta-item strong {
+  color: #071d49;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ===================================
+   HERO BUTTONS
+=================================== */
+
+.pressdetail-hero-buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.pressdetail-primary-btn,
+.pressdetail-secondary-btn,
+.pressdetailpage-cta-btn,
+.pressdetailpage-back-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 28px;
+  border-radius: 12px;
+
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.pressdetail-primary-btn {
+  background: #008a9a;
+  color: #fff;
+}
+
+.pressdetail-primary-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 138, 154, 0.25);
+}
+
+.pressdetail-secondary-btn {
+  border: 1px solid #d9e3ee;
+  background: #fff;
+  color: #071d49;
+}
+
+.pressdetail-secondary-btn:hover {
+  transform: translateY(-4px);
+  border-color: #008a9a;
+}
+
+/* ===================================
+   HERO IMAGE
+=================================== */
+
+.pressdetail-hero-image {
+  position: relative;
+}
+
+.pressdetail-hero-image img {
+  width: 100%;
+  height: 520px;
+
+  object-fit: cover;
+
+  border-radius: 28px;
+
+  box-shadow: 0 25px 60px rgba(7, 29, 73, 0.12);
+}
+
+/* ===================================
+   CONTENT AREA
+=================================== */
+
+.pressdetailpage-content-section {
+  padding: 0 5%;
+}
+
+.pressdetailpage-content-container {
+  max-width: 1400px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) 360px;
+  gap: 40px;
+}
+
+/* ===================================
+   MAIN CONTENT
+=================================== */
+
+.pressdetailpage-main-content {
+  background: #fff;
+
+  padding: 50px;
+  border-radius: 28px;
+
+  box-shadow: 0 12px 35px rgba(7, 29, 73, 0.05);
+}
+
+.pressdetailpage-main-content h2 {
+  color: #071d49;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.pressdetailpage-main-content p {
+  color: #4d5b75;
+
+  font-size: 1rem;
+  line-height: 2;
+
+  white-space: pre-line;
+}
+
+.pressdetailpage-divider {
+  border: none;
+  height: 1px;
+  background: #e8eef6;
+
+  margin: 45px 0;
+}
+
+/* ===================================
+   HIGHLIGHTS
+=================================== */
+
+.pressdetailpage-highlights {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.pressdetailpage-highlights li {
+  position: relative;
+
+  padding-left: 34px;
+  margin-bottom: 22px;
+
+  color: #4d5b75;
+  line-height: 1.8;
+}
+
+.pressdetailpage-highlights li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: #008a9a;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+/* ===================================
+   SIDEBAR
+=================================== */
+
+.pressdetailpage-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.pressdetailpage-sidebar-card {
+  background: #fff;
+
+  padding: 35px;
+  border-radius: 24px;
+
+  box-shadow: 0 12px 35px rgba(7, 29, 73, 0.05);
+}
+
+.pressdetailpage-sidebar-card h3 {
+  color: #071d49;
+  font-size: 1.5rem;
+  margin-bottom: 28px;
+}
+
+.pressdetailpage-publication-logo {
+  width: 180px;
+  max-width: 100%;
+  object-fit: contain;
+
+  margin-bottom: 25px;
+}
+
+.pressdetailpage-publication-title {
+  color: #071d49;
+  font-size: 1.7rem;
+  margin-bottom: 18px;
+}
+
+.pressdetailpage-sidebar-card p {
+  color: #5a6780;
+  line-height: 1.8;
+}
+
+.pressdetailpage-sidebar-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid #edf2f7;
+}
+
+.pressdetailpage-sidebar-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pressdetailpage-sidebar-item strong {
+  display: block;
+
+  color: #071d49;
+  margin-bottom: 8px;
+}
+
+.pressdetailpage-sidebar-item span {
+  color: #66748b;
+  line-height: 1.8;
+}
+
+/* ===================================
+   CTA
+=================================== */
+
+.pressdetailpage-cta {
+  max-width: 1400px;
+
+  margin: 60px auto 0;
+  padding: 45px 50px;
+
+  border-radius: 28px;
+
+  background: linear-gradient(
+    135deg,
+    #008a9a 0%,
+    #00a7b8 100%
+  );
+
+  color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.pressdetailpage-cta-content {
+  flex: 1;
+}
+
+.pressdetailpage-cta-content h3 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.pressdetailpage-cta-content p {
+  color: rgba(255,255,255,0.9);
+  line-height: 1.8;
+}
+
+.pressdetailpage-cta-btn {
+  background: #fff;
+  color: #008a9a;
+
+  min-width: 240px;
+}
+
+.pressdetailpage-cta-btn:hover {
+  transform: translateY(-4px);
+}
+
+/* ===================================
+   BACK BUTTON
+=================================== */
+
+.pressdetailpage-bottom-btn {
+  max-width: 1400px;
+  margin: 40px auto 0;
+  padding: 0 5%;
+}
+
+.pressdetailpage-back-btn {
+  background: #071d49;
+  color: #fff;
+
+  width: fit-content;
+}
+
+.pressdetailpage-back-btn:hover {
+  transform: translateY(-4px);
+}
+
+/* ===================================
+   NOT FOUND
+=================================== */
+
+.pressdetailpage-notfound {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #071d49;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 1100px) {
+
+  .pressdetail-hero {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .pressdetailpage-content-container {
+    grid-template-columns: 1fr;
+  }
+
+  .pressdetail-hero-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .pressdetail-hero {
+    margin: 30px auto 50px;
+  }
+
+  .pressdetail-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .pressdetail-hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .pressdetail-hero-meta {
+    gap: 25px;
+  }
+
+  .pressdetail-hero-buttons {
+    flex-direction: column;
+  }
+
+  .pressdetail-primary-btn,
+  .pressdetail-secondary-btn {
+    width: 100%;
+  }
+
+  .pressdetail-hero-image img {
+    height: 320px;
+  }
+
+  .pressdetailpage-main-content {
+    padding: 30px;
+  }
+
+  .pressdetailpage-main-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .pressdetailpage-sidebar-card {
+    padding: 28px;
+  }
+
+  .pressdetailpage-cta {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 25px;
+  }
+
+  .pressdetailpage-cta-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .pressdetailpage-cta-btn {
+    width: 100%;
+  }
+}

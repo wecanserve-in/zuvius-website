@@ -26,6 +26,8 @@ import CSR from "./csr/csr";
 import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
+import PressReleaseDetails from "./media/PressReleaseDetails";
+
 function App() {
   return (
     <Router>
@@ -44,6 +46,10 @@ function App() {
 
             <Route path="/newsroom" element={<Newsroom />} />
             <Route path="/press-release" element={<PressRelease />} />
+            <Route
+  path="/press-release/:id"
+  element={<PressReleaseDetails />}
+/>
 
             <Route path="/awards-recognition" element={<Awards />} />
 

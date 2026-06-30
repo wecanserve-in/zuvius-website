@@ -169,9 +169,21 @@ const Events = () => {
                 <div className="ev-grid-photo-frame ev-frame-small-2">
                   <img src={item.images[3]} alt={`${item.title} D`} loading="lazy" />
                 </div>
-                <div className="ev-grid-photo-frame ev-frame-small-3">
-                  <img src={item.images[4]} alt={`${item.title} E`} loading="lazy" />
-                </div>
+              <div className="ev-grid-photo-frame ev-frame-small-3">
+  <img
+    src={item.images[4]}
+    alt={`${item.title} E`}
+    loading="lazy"
+  />
+
+  <div className="ev-view-more-overlay">
+    <span>
+      View
+      <br />
+      More
+    </span>
+  </div>
+</div>
               </div>
             </div>
 
