@@ -3154,22 +3154,22 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Light Eye Color",
         text: "People with blue, green or gray eyes may have a higher risk of uveal melanoma."
       },
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age",
         text: "Some eye cancers are more common in older adults, while retinoblastoma mainly affects children."
       },
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "Inherited Gene Changes",
         text: "Certain inherited genetic conditions may increase the risk of developing eye cancer."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Fair Skin",
         text: "People with fair skin may have a higher risk of some eye cancers."
       }
@@ -3177,7 +3177,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "",
+        icon: "/icons/none.png",
         title: "Current Understanding",
         text: "This page does not identify clearly established lifestyle-related risk factors for eye cancer."
       }
@@ -3244,7 +3244,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "In some situations, a tissue sample may be collected and examined.",
-        img: "/diagnosis/eye-biopsy.png"
+        img: "/diagnosis/eye-biospy.png"
       }
     ]
   },
@@ -3290,7 +3290,7 @@ typesStages: {
   description:
     "TThe fallopian tubes are important reproductive structures where an egg and sperm can meet. They also carry a fertilized egg to the uterus. Healthy fallopian tubes are essential for fertility.",
 
-  bannerImg: "/cancers/fallopian-tube-cancer.webp",
+  bannerImg: "/banners/fallopian-tube.png",
 
   overview: {
     intro:
@@ -3328,42 +3328,37 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age",
         text: "More than half of people with fallopian tube cancer or ovarian cancer are over 63."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Ethnicity",
         text: "People living in North America or those of Northern European or Ashkenazi Jewish descent are more likely to get fallopian tube cancer."
       },
       {
-        icon: "/icons/family.svg",
+        icon: "/icons/family.png",
         title: "Family History",
         text: "Risk is greater if a first-degree biological relative has had breast cancer, ovarian cancer or fallopian tube cancer."
       },
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "BRCA Gene Mutation",
         text: "Changes to the BRCA gene increase the risk of fallopian tube cancer."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Inherited Conditions",
         text: "Inherited conditions such as Lynch syndrome and Peutz-Jeghers syndrome increase fallopian tube cancer risk."
       },
       {
-        icon: "/icons/endometriosis.svg",
-        title: "Endometriosis",
-        text: "Endometriosis is also listed as a risk factor."
-      },
-      {
-        icon: "/icons/pregnancy.svg",
+        icon: "/icons/pregnant.png",
         title: "Pregnancy History",
         text: "Risk may be higher if you’ve never been pregnant or had your first full-term pregnancy after age 35."
       },
       {
-        icon: "/icons/menstrual.svg",
+        icon: "/icons/periods_history.png",
         title: "Menstrual Cycle History",
         text: "Getting your first period before age 12 or going through menopause after age 51 are risk factors."
       }
@@ -3371,7 +3366,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/weight.svg",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "Having a BMI above 30 may increase risk, especially if obesity was present during early adulthood."
       }
@@ -3384,11 +3379,6 @@ typesStages: {
         title: "Pelvic Pain or Mass",
         text: "Pelvic pain or a pelvic mass may occur.",
         img: "/symptoms/fallopian-pelvic.png"
-      },
-      {
-        title: "Abdominal Pain or Bloating",
-        text: "Abdominal pain, swelling or bloating may be a symptom.",
-        img: "/symptoms/fallopian-bloating.png"
       },
       {
         title: "Appetite Changes",
@@ -3456,14 +3446,9 @@ typesStages: {
   treatment: {
     options: [
       {
-        title: "Surgery",
-        text: "Surgery is often the first stage of treatment and may also help diagnose fallopian tube cancer.",
-        img: "/treatment/fallopian-surgery.png"
-      },
-      {
         title: "Hysterectomy",
         text: "Most people have surgery to remove the uterus.",
-        img: "/treatment/fallopian-hysterectomy.png"
+        img: "/treatment/fallopian-removal.png"
       },
       {
         title: "Salpingectomy",
@@ -3477,28 +3462,15 @@ typesStages: {
       },
       {
         title: "Chemotherapy",
-        text: "Chemotherapy may shrink the tumor before surgery or destroy cancer cells that remain after surgery."
+        text: "Chemotherapy may shrink the tumor before surgery or destroy cancer cells that remain after surgery.",
+        img: "/treatment/fallopian-chemo.png"
       },
       {
         title: "HIPEC",
         text: "Heated intraoperative peritoneal chemotherapy may be given during surgery for concentrated treatment in the abdomen.",
         img: "/treatment/fallopian-hipec.png"
       },
-      {
-        title: "Targeted Therapy",
-        text: "Targeted therapy may be recommended if you have a BRCA genetic mutation.",
-        img: "/treatment/fallopian-targeted.png"
-      },
-      {
-        title: "Immunotherapy",
-        text: "Immunotherapy may be considered if cancer cells have a specific genetic mutation such as Lynch syndrome.",
-        img: "/treatment/fallopian-immuno.png"
-      },
-      {
-        title: "Clinical Trials",
-        text: "A provider may recommend a clinical trial to try promising new cancer treatments.",
-        img: "/treatment/fallopian-trial.png"
-      },
+      
       {
         title: "Palliative Care",
         text: "Palliative care can help manage cancer symptoms and treatment side effects.",
@@ -3518,7 +3490,7 @@ typesStages: {
   description:
     "The gallbladder is a small, pear-shaped organ situated beneath the liver. Its role is to store and release bile, a fluid produced by the liver that helps break down fats from the food you consume.",
 
-  bannerImg: "/cancers/gallbladder-cancer.webp",
+  bannerImg: "/banners/gallbladder.png",
 
   overview: {
     intro:
@@ -3563,27 +3535,23 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/gallstones.svg",
+        icon: "/icons/gallstones.png",
         title: "Gallstones",
         text: "Gallstones are the most common risk factor associated with gallbladder cancer."
       },
+      
       {
-        icon: "/icons/inflammation.svg",
-        title: "Gallbladder Inflammation",
-        text: "Long-term inflammation of the gallbladder may increase risk."
-      },
-      {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Older Age",
         text: "Gallbladder cancer is more common in older adults."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Sex",
         text: "Gallbladder cancer occurs more often in women than men."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Gallbladder Polyps",
         text: "Certain gallbladder polyps may increase the risk of cancer."
       }
@@ -3591,7 +3559,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/weight.svg",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "Obesity is associated with an increased risk of gallbladder cancer."
       }
@@ -3613,7 +3581,7 @@ typesStages: {
       {
         title: "Nausea and Vomiting",
         text: "Nausea and vomiting may occur as the disease progresses.",
-        img: "/symptoms/gallbladder-nausea.png"
+        img: "/symptoms/galbladder-vomit.png"
       },
       {
         title: "Jaundice",
@@ -3623,7 +3591,7 @@ typesStages: {
       {
         title: "Fever",
         text: "Some people may develop a fever.",
-        img: "/symptoms/gallbladder-fever.png"
+        img: "/symptoms/gallblader-fever.png"
       },
       {
         title: "Lumps in the Abdomen",
@@ -3653,7 +3621,7 @@ typesStages: {
       {
         title: "CT Scan",
         text: "CT scans may help determine the size and spread of the cancer.",
-        img: "/diagnosis/gallbladder-ct.png"
+        img: "/diagnosis/gllbladder-ct.png"
       },
       {
         title: "MRI",
@@ -3663,7 +3631,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "A tissue sample may be examined to confirm the diagnosis.",
-        img: "/diagnosis/gallbladder-biopsy.png"
+        img: "/diagnosis/galbladder-bio.png"
       }
     ]
   },
@@ -3688,7 +3656,7 @@ typesStages: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be used to destroy cancer cells or help control symptoms.",
-        img: "/treatment/gallbladder-radiation.png"
+        img: "/treatment/galbladder-radiation.png"
       }
     ],
   }
