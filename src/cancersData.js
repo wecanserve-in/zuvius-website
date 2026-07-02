@@ -3671,7 +3671,7 @@ typesStages: {
   description:
     " The gastrointestinal tract consists of the organs through which food and liquids pass as they are swallowed, digested, absorbed, and eventually eliminated from the body as feces.",
 
-  bannerImg: "/cancers/gastrointestinal-stromal-tumor.webp",
+  bannerImg: "/banners/gastro.png",
 
   overview: {
     intro:
@@ -3691,22 +3691,22 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "KIT Gene Change",
         text: "GIST usually happens when the KIT gene changes, causing cells in the GI tract to multiply and form tumors."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Carney-Stratakis Syndrome",
         text: "This rare inherited condition may increase the risk of developing a GIST."
       },
       {
-        icon: "/icons/family.svg",
+        icon: "/icons/family.png",
         title: "Familial GIST Syndrome",
         text: "Rarely, abnormal KIT genes may be passed from parent to child, increasing the chance of developing GISTs."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Neurofibromatosis Type 1",
         text: "Neurofibromatosis type 1 can cause certain cells to multiply and form tumors, and it may increase GIST risk."
       }
@@ -3714,7 +3714,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "",
+        icon: "/icons/none.png ",
         title: "No Lifestyle Risk Factors",
         text: "This page does not identify clearly established lifestyle-related risk factors for GIST."
       }
@@ -3726,37 +3726,32 @@ typesStages: {
       {
         title: "Belly Pain",
         text: "Abdominal or belly pain may occur when a GIST causes symptoms.",
-        img: "/symptoms/gist-belly-pain.png"
+        img: "/symptoms/gist-bellypain.png"
       },
       {
         title: "Blood in Stool",
         text: "Blood in stool may be a symptom of a gastrointestinal stromal tumor.",
-        img: "/symptoms/gist-blood-stool.png"
-      },
-      {
-        title: "Constipation",
-        text: "Constipation may occur in some people with GIST.",
-        img: "/symptoms/gist-constipation.png"
+        img: "/symptoms/gist-blood.png"
       },
       {
         title: "Fatigue",
         text: "Fatigue may develop as part of the symptom pattern.",
-        img: "/symptoms/gist-fatigue.png"
+        img: "/symptoms/gist-fati.png"
       },
       {
         title: "Unintentional Weight Loss",
         text: "Losing weight without trying may be a symptom.",
-        img: "/symptoms/gist-weight-loss.png"
+        img: "/symptoms/gist-weight.png"
       },
       {
         title: "Loss of Appetite",
         text: "Some people may experience reduced appetite.",
-        img: "/symptoms/gist-appetite.png"
+        img: "/symptoms/gist-app.png"
       },
       {
         title: "Vomiting Blood",
         text: "Vomiting blood may occur when a GIST causes bleeding in the digestive tract.",
-        img: "/symptoms/gist-vomit-blood.png"
+        img: "/symptoms/gist-vomit.png"
       }
     ]
   },
@@ -3766,7 +3761,7 @@ typesStages: {
       {
         title: "Symptom Review",
         text: "A healthcare provider may ask about symptoms and how long they have been present.",
-        img: "/diagnosis/gist-symptoms.png"
+        img: "/diagnosis/gist-sym.png"
       },
       {
         title: "Physical Examination",
@@ -3776,7 +3771,7 @@ typesStages: {
       {
         title: "Upper Endoscopy",
         text: "Upper endoscopy may help providers examine the digestive tract.",
-        img: "/diagnosis/gist-endoscopy.png"
+        img: "/diagnosis/gist-endo.png"
       },
       {
         title: "CT Scan",
@@ -3791,7 +3786,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "A biopsy collects tissue samples that a pathologist examines under a microscope.",
-        img: "/diagnosis/gist-biopsy.png"
+        img: "/diagnosis/gist-bio.png"
       }
     ]
   },
@@ -3801,22 +3796,22 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery to remove the tumor is the most common treatment for GIST.",
-        img: "/treatment/gist-surgery.png"
+        img: "/treatment/gist-surgey.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy may be used along with surgery to treat GIST.",
-        img: "/treatment/gist-targeted.png"
+        img: "/treatment/endo-tar.png"
       },
       {
         title: "Pre-Surgery Targeted Therapy",
         text: "Targeted therapy may be given before surgery to shrink a large tumor.",
-        img: "/treatment/gist-pre-targeted.png"
+        img: "/treatment/gist-pre.png"
       },
       {
         title: "Small Tumor Treatment",
         text: "Surgery may be the only treatment needed for small tumors.",
-        img: "/treatment/gist-small-tumor.png"
+        img: "/treatment/gist-sma.png"
       }
     ],
   }
@@ -3826,41 +3821,10 @@ typesStages: {
   slug: "germ-cell-tumor",
   title: "Germ Cell Tumor",
   description: "Germ cell tumors are growths that start from cells that normally develop into eggs or sperm. They may be benign or cancerous and most often affect children, teens and young adults.",
+  bannerImg: "/banners/germcell.png",
 
   overview: {
     intro: "Germ cell tumors usually start in reproductive organs such as the ovaries or testicles. Less commonly, they can form in areas outside the reproductive organs, including the belly, chest, back, tailbone and brain.",
-    cards: [
-      {
-        img: "/overview/gct-germ-cells.png",
-        title: "Germ Cells",
-        text: "Germ cells are reproductive cells that normally grow into eggs or sperm."
-      },
-      {
-        img: "/overview/gct-reproductive.png",
-        title: "Common Starting Sites",
-        text: "Germ cell tumors most often form in the ovaries or testicles."
-      },
-      {
-        img: "/overview/gct-extragonadal.png",
-        title: "Extragonadal Tumors",
-        text: "Sometimes, germ cell tumors form outside the reproductive organs, such as in the belly, chest, back, tailbone or brain."
-      },
-      {
-        img: "/overview/gct-age.png",
-        title: "Common Age Group",
-        text: "Germ cell tumors most commonly affect children, teens and young adults."
-      },
-      {
-        img: "/overview/gct-benign-malignant.png",
-        title: "Benign or Cancerous",
-        text: "A germ cell tumor may be benign, meaning noncancerous, or malignant, meaning cancerous."
-      },
-      {
-        img: "/overview/gct-treatable.png",
-        title: "Treatment Outlook",
-        text: "Most germ cell tumors are treatable, but outlook depends on the tumor type, location, spread and response to treatment."
-      }
-    ]
   },
 
    typesStages: {
@@ -3873,27 +3837,27 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age Group",
         text: "Germ cell tumors are most common in children under 4, teens and young adults."
       },
       {
-        icon: "/icons/family.svg",
+        icon: "/icons/family.png",
         title: "Family History",
         text: "Risk may be higher if someone in your family has had a germ cell tumor."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Undescended Testicles",
         text: "Untreated undescended testicles may increase the chance of developing a germ cell tumor."
       },
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "Turner Syndrome",
         text: "Turner syndrome is listed as a risk factor for germ cell tumors."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Klinefelter Syndrome",
         text: "Klinefelter syndrome is listed as a risk factor for germ cell tumors."
       }
@@ -3901,7 +3865,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "",
+        icon: "/icons/none.png",
         title: "No Lifestyle Risk Factors",
         text: "This page does not identify clearly established lifestyle-related risk factors for germ cell tumors."
       }
@@ -3913,34 +3877,24 @@ typesStages: {
       {
         title: "Pelvic, Belly or Groin Pain",
         text: "Discomfort or pain may occur in the pelvis, belly or groin depending on the tumor location.",
-        img: "/symptoms/gct-pelvic-pain.png"
+        img: "/symptoms/germ-pain.png"
       },
       {
         title: "Swollen Belly",
         text: "A swollen belly may develop when the tumor grows or creates pressure.",
-        img: "/symptoms/gct-swollen-belly.png"
+        img: "/symptoms/germ-belly.png"
       },
       {
         title: "Irregular Vaginal Bleeding",
         text: "Irregular vaginal bleeding may occur with some germ cell tumors.",
-        img: "/symptoms/gct-bleeding.png"
+        img: "/symptoms/germ-bleeding.png"
       },
       {
         title: "Nausea",
         text: "Nausea may occur as one of the possible symptoms.",
-        img: "/symptoms/gct-nausea.png"
+        img: "/symptoms/germ-vomit.png"
       },
-      {
-        title: "Testicle Lump or Shape Change",
-        text: "A solid firm lump in a testicle, with or without pain, or an unusually shaped testicle may be a symptom.",
-        img: "/symptoms/gct-testicle-lump.png"
-      },
-      {
-        title: "Scrotum Pain or Heaviness",
-        text: "Pain or heaviness in the scrotum may occur.",
-        img: "/symptoms/gct-scrotum.png"
-      },
-    
+      
     ]
   },
 
@@ -3949,32 +3903,28 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider may perform a physical exam and ask about symptoms.",
-        img: "/diagnosis/gct-exam.png"
+        img: "/diagnosis/gist-exam.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests may check enzymes, proteins or hormones, including hCG, AFP and LDH.",
-        img: "/diagnosis/gct-blood.png"
+        img: "/diagnosis/gallbladder-blood.png"
       },
       {
         title: "CT, MRI or Ultrasound",
         text: "These imaging tests show pictures inside the body and are often early steps in diagnosis.",
-        img: "/diagnosis/gct-imaging.png"
+        img: "/diagnosis/gist-ct.png"
       },
       {
         title: "PET Scan",
         text: "A PET scan may show whether cancer has spread.",
-        img: "/diagnosis/gct-pet.png"
+        img: "/diagnosis/gist-pet.png"
       },
-      {
-        title: "Bone Scan",
-        text: "A bone scan may show whether a tumor is affecting the bones.",
-        img: "/diagnosis/gct-bone-scan.png"
-      },
+      
       {
         title: "Biopsy",
         text: "During a biopsy, tissue is removed from the tumor and sent to a lab for testing.",
-        img: "/diagnosis/gct-biopsy.png"
+        img: "/diagnosis/gist-bio.png"
       }
     ]
   },
@@ -3984,27 +3934,27 @@ typesStages: {
       {
         title: "Surgery",
         text: "Many germ cell tumors can be cured with surgery to remove the tumor or affected reproductive organ tissue.",
-        img: "/treatment/gct-surgery.png"
+        img: "/treatment/gallbladder-surgery.png"
       },
       {
         title: "Ovarian Surgery",
         text: "A provider may remove the tumor from the affected ovary or remove the ovary and fallopian tube.",
-        img: "/treatment/gct-ovarian-surgery.png"
+        img: "/treatment/germ-ovary.png"
       },
       {
         title: "Testicular Surgery",
         text: "With testicular cancer, the provider removes the testicle that contains the tumor during diagnosis.",
-        img: "/treatment/gct-testicular-surgery.png"
+        img: "/treatment/germ-tests.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells or stop them from dividing.",
-        img: "/treatment/gct-chemo.png"
+        img: "/treatment/fallopian-chemo.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy X-rays to destroy cancer cells, and some germ cell tumors respond best to this treatment.",
-        img: "/treatment/gct-radiation.png"
+        img: "/treatment/galbladder-radiation.png"
       }
     ],
 
@@ -4021,7 +3971,7 @@ typesStages: {
   description:
     "Bone marrow is the soft, spongy tissue found inside certain bones where blood cells are produced. It creates red blood cells, white blood cells and platelets that help the body carry oxygen, fight infections and control bleeding.",
 
-  bannerImg: "/cancers/hairy-cell-leukemia.webp",
+  bannerImg: "/banners/hcl.png",
 
   overview: {
     intro:
@@ -4041,17 +3991,17 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "BRAF Gene Change",
         text: "Research shows that most people with hairy cell leukemia have a change affecting the BRAF gene, which helps control cell growth."
       },
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age",
         text: "This disease often affects people ages 40 to 70, with many people diagnosed around age 58."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Sex",
         text: "Hairy cell leukemia affects males more than females."
       }
@@ -4059,7 +4009,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/chemical.svg",
+        icon: "/icons/diet.png",
         title: "Agent Orange Exposure",
         text: "Researchers think exposure to Agent Orange may cause hairy cell leukemia and other types of leukemia."
       }
@@ -4071,37 +4021,33 @@ typesStages: {
       {
         title: "Fatigue",
         text: "Low red blood cell levels can make you feel tired all the time.",
-        img: "/symptoms/hcl-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       },
       {
         title: "Fever and Frequent Infections",
         text: "Low white blood cell levels may lead to serious infections that cause fevers.",
-        img: "/symptoms/hcl-fever.png"
+        img: "/symptoms/bile-fever.png"
       },
       {
         title: "Lower Left Side Pain",
         text: "Abnormal cells may make the spleen swell, causing pain on the lower left side and a feeling of fullness.",
-        img: "/symptoms/hcl-left-pain.png"
+        img: "/symptoms/hcl-left.png"
       },
       {
         title: "Lower Right Side Pain",
         text: "Cells may build up in the liver, causing swelling and pain on the lower right side.",
-        img: "/symptoms/hcl-right-pain.png"
+        img: "/symptoms/hcl-right.png"
       },
-      {
-        title: "Shortness of Breath",
-        text: "Shortness of breath may happen because of anemia from low red blood cell levels.",
-        img: "/symptoms/hcl-breath.png"
-      },
+      
       {
         title: "Swollen Lymph Nodes",
         text: "Abnormal cells in lymph nodes may cause lumps in the neck, underarms or stomach.",
-        img: "/symptoms/hcl-nodes.png"
+        img: "/symptoms/hcl-swallen.png"
       },
       {
         title: "Bruising or Bleeding Easily",
         text: "Low platelet levels may lead to easy bruising, nosebleeds or bleeding from cuts.",
-        img: "/symptoms/hcl-bleeding.png"
+        img: "/symptoms/hcl-brushes.png"
       }
     ]
   },
@@ -4113,15 +4059,11 @@ typesStages: {
         text: "A healthcare provider may ask when symptoms started, review medical history and ask about frequent infections.",
         img: "/diagnosis/hcl-history.png"
       },
-      {
-        title: "Physical Examination",
-        text: "A provider may check lymph nodes, spleen and liver for signs of swelling.",
-        img: "/diagnosis/hcl-exam.png"
-      },
+      
       {
         title: "CBC With Differential",
         text: "This blood test measures red blood cells, white blood cells and platelets, and identifies different white blood cell types.",
-        img: "/diagnosis/hcl-cbc.png"
+        img: "/diagnosis/hcl-cbd.png"
       },
       {
         title: "Peripheral Blood Smear",
@@ -4136,27 +4078,23 @@ typesStages: {
       {
         title: "CT Scan or Abdominal Ultrasound",
         text: "These imaging tests may evaluate the size of the spleen, liver and lymph nodes.",
-        img: "/diagnosis/hcl-imaging.png"
+        img: "/diagnosis/bile-scan.png"
       },
       {
         title: "Flow Cytometry",
         text: "Flow cytometry identifies physical or chemical changes in cells.",
-        img: "/diagnosis/hcl-flow.png"
+        img: "/diagnosis/hcl-cy.png"
       }
     ]
   },
 
   treatment: {
     options: [
-      {
-        title: "Active Surveillance",
-        text: "If there are no symptoms, treatment may be delayed while the care team monitors health every three to six months.",
-        img: "/treatment/hcl-surveillance.png"
-      },
+      
       {
         title: "Chemotherapy",
         text: "Chemotherapy is the most common treatment and may include medicines such as cladribine or pentostatin.",
-        img: "/treatment/hcl-chemo.png"
+        img: "/treatment/anal-chemo.png"
       },
       {
         title: "Cladribine",
@@ -4171,12 +4109,12 @@ typesStages: {
       {
         title: "Immunotherapy",
         text: "Immunotherapy may include rituximab or recombinant interferon alfa-2b.",
-        img: "/treatment/hcl-immunotherapy.png"
+        img: "/treatment/brain-immuno.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy may include antibody drug conjugates such as rituximab.",
-        img: "/treatment/hcl-targeted.png"
+        img: "/treatment/brain-targeted.png"
       },
       {
         title: "Splenectomy",
