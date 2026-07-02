@@ -13,20 +13,7 @@
    HERO
 =================================== */
 
-.pressdetail-hero {
-  max-width: 1400px;
-  margin: 90px auto 70px;
-  padding: 0 5%;
 
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 70px;
-  align-items: center;
-}
-
-.pressdetail-hero-content {
-  max-width: 650px;
-}
 
 .pressdetail-badge {
   display: inline-block;
@@ -69,10 +56,10 @@
 
 .pressdetail-hero-meta {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   flex-wrap: wrap;
 
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .pressdetail-meta-item {
@@ -143,19 +130,64 @@
    HERO IMAGE
 =================================== */
 
-.pressdetail-hero-image {
+/* ================= HERO ================= */
+
+/* ===================================
+   HERO
+=================================== */
+
+/* ===================================
+   HERO
+=================================== */
+
+.pressdetail-hero {
   position: relative;
+  width: 100%;
+  min-height: 90vh;
+
+  display: flex;
+   align-items: flex-start;
+
+  overflow: hidden;
+  margin-top: 80px;
+  padding: 0 7%;
+}
+
+.pressdetail-hero-content {
+  position: relative;
+  z-index: 5;
+
+  width: 42%;
+  max-width: 620px;
+
+  margin-left: 0%; /* pehle 7% tha */
+  padding: 100px 0;
+  padding-top: 60px;
+}
+.pressdetail-badge,
+.pressdetail-hero-content h1,
+.pressdetail-hero-content p,
+.pressdetail-hero-meta,
+.pressdetail-hero-buttons {
+  position: relative;
+  z-index: 3;
+}
+
+/* FULL WIDTH IMAGE */
+
+.pressdetail-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .pressdetail-hero-image img {
   width: 100%;
-  height: 520px;
+  height: 90%;
 
   object-fit: cover;
 
-  border-radius: 28px;
-
-  box-shadow: 0 25px 60px rgba(7, 29, 73, 0.12);
+  object-position: 80% center;
 }
 
 /* ===================================
@@ -163,7 +195,7 @@
 =================================== */
 
 .pressdetailpage-content-section {
-  padding: 0 5%;
+  padding: 0 0%;
 }
 
 .pressdetailpage-content-container {
@@ -191,14 +223,14 @@
 .pressdetailpage-main-content h2 {
   color: #071d49;
   font-size: 2rem;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 
 .pressdetailpage-main-content p {
   color: #4d5b75;
 
-  font-size: 1rem;
-  line-height: 2;
+  font-size: 1.07rem;
+  line-height: 1.7;
 
   white-space: pre-line;
 }
@@ -208,7 +240,7 @@
   height: 1px;
   background: #e8eef6;
 
-  margin: 45px 0;
+  margin: 25px 0;
 }
 
 /* ===================================
@@ -218,7 +250,7 @@
 .pressdetailpage-highlights {
   list-style: none;
   padding: 0;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .pressdetailpage-highlights li {
@@ -226,9 +258,10 @@
 
   padding-left: 34px;
   margin-bottom: 22px;
-
+    font-size: 1.05rem;
+font-weight: 800;
   color: #4d5b75;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 
 .pressdetailpage-highlights li::before {
@@ -239,7 +272,7 @@
   top: 0;
 
   color: #008a9a;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 800;
 }
 
@@ -250,7 +283,7 @@
 .pressdetailpage-sidebar {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 
 .pressdetailpage-sidebar-card {
@@ -265,7 +298,7 @@
 .pressdetailpage-sidebar-card h3 {
   color: #071d49;
   font-size: 1.5rem;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 
 .pressdetailpage-publication-logo {
@@ -273,7 +306,7 @@
   max-width: 100%;
   object-fit: contain;
 
-  margin-bottom: 25px;
+  margin-bottom: 8px;
 }
 
 .pressdetailpage-publication-title {
@@ -303,13 +336,13 @@
 .pressdetailpage-sidebar-item strong {
   display: block;
 
-  color: #071d49;
-  margin-bottom: 8px;
+  color: #0e3a93;
+  margin-bottom: 0px;
 }
 
 .pressdetailpage-sidebar-item span {
   color: #66748b;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 /* ===================================
@@ -319,15 +352,15 @@
 .pressdetailpage-cta {
   max-width: 1400px;
 
-  margin: 60px auto 0;
-  padding: 45px 50px;
+  margin: 30px auto 0;
+  padding: 30px 50px;
 
   border-radius: 28px;
 
   background: linear-gradient(
     135deg,
-    #008a9a 0%,
-    #00a7b8 100%
+    #219b90 0%,
+    #219b90 100%
   );
 
   color: #fff;
@@ -343,8 +376,9 @@
 }
 
 .pressdetailpage-cta-content h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 12px;
+  color: #edf2f7;
 }
 
 .pressdetailpage-cta-content p {
@@ -370,18 +404,43 @@
 .pressdetailpage-bottom-btn {
   max-width: 1400px;
   margin: 40px auto 0;
-  padding: 0 5%;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: center;
 }
 
 .pressdetailpage-back-btn {
-  background: #071d49;
+  background: #219b90;
   color: #fff;
-
   width: fit-content;
+
+  padding: 14px 32px;
+  border-radius: 12px;
+
+  transition: all 0.3s ease;
 }
 
 .pressdetailpage-back-btn:hover {
   transform: translateY(-4px);
+}
+
+/* Mobile */
+
+
+
+
+
+@media (max-width: 768px) {
+  .pressdetailpage-bottom-btn {
+    padding: 0 16px;
+  }
+
+  .pressdetailpage-back-btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
 }
 
 /* ===================================
@@ -402,76 +461,178 @@
    RESPONSIVE
 =================================== */
 
-@media (max-width: 1100px) {
-
-  .pressdetail-hero {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
+@media (max-width: 1200px) {
 
   .pressdetailpage-content-container {
     grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
   }
 
   .pressdetail-hero-content {
+    width: 55%;
+  }
+}
+
+@media (max-width: 992px) {
+
+  /* HERO */
+
+  .pressdetail-hero {
+    min-height: auto;
+    padding: 100px 30px 60px;
+    margin-top: 40px;
+  }
+
+  .pressdetail-hero-content {
+    width: 100%;
     max-width: 100%;
+    padding: 0;
+  }
+
+  .pressdetail-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .pressdetail-hero-image img {
+    height: 100%;
+    object-position: center;
+    opacity: 0.2;
+  }
+
+  .pressdetail-hero-meta {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .pressdetail-meta-divider {
+    display: none;
+  }
+
+  /* CONTENT */
+
+  .pressdetailpage-main-content {
+    padding: 35px;
+  }
+
+  .pressdetailpage-sidebar-card {
+    padding: 30px;
+  }
+
+  /* CTA */
+
+  .pressdetailpage-cta {
+    flex-direction: column;
+    text-align: center;
+    padding: 35px 30px;
+  }
+
+  .pressdetailpage-cta-btn {
+    width: 100%;
+    max-width: 350px;
   }
 }
 
 @media (max-width: 768px) {
 
+  .pressdetailpage {
+    padding-bottom: 50px;
+  }
+
+  /* HERO */
+
   .pressdetail-hero {
-    margin: 30px auto 50px;
+    padding: 90px 20px 40px;
+  }
+
+  .pressdetail-badge {
+    font-size: 0.75rem;
+    padding: 8px 16px;
+    margin-bottom: 20px;
   }
 
   .pressdetail-hero-content h1 {
     font-size: 2rem;
+    margin-bottom: 20px;
   }
 
   .pressdetail-hero-content p {
     font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
   }
 
   .pressdetail-hero-meta {
-    gap: 25px;
+    gap: 18px;
+    margin-bottom: 25px;
+  }
+
+  .pressdetail-meta-item strong {
+    font-size: 1rem;
   }
 
   .pressdetail-hero-buttons {
-    flex-direction: column;
-  }
-
-  .pressdetail-primary-btn,
-  .pressdetail-secondary-btn {
     width: 100%;
   }
 
-  .pressdetail-hero-image img {
-    height: 320px;
+  .pressdetail-primary-btn {
+    width: 100%;
+  }
+
+  /* MAIN CONTENT */
+
+  .pressdetailpage-content-container {
+    padding: 0 15px;
   }
 
   .pressdetailpage-main-content {
-    padding: 30px;
+    padding: 25px;
+    border-radius: 20px;
   }
 
   .pressdetailpage-main-content h2 {
-    font-size: 1.6rem;
-  }
-
-  .pressdetailpage-sidebar-card {
-    padding: 28px;
-  }
-
-  .pressdetailpage-cta {
-    flex-direction: column;
-    text-align: center;
-    padding: 35px 25px;
-  }
-
-  .pressdetailpage-cta-content h3 {
     font-size: 1.5rem;
   }
 
-  .pressdetailpage-cta-btn {
+  .pressdetailpage-main-content p {
+    font-size: 1rem;
+  }
+
+  /* SIDEBAR */
+
+  .pressdetailpage-sidebar-card {
+    padding: 25px;
+    border-radius: 20px;
+  }
+
+  .pressdetailpage-sidebar-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .pressdetailpage-publication-logo {
+    width: 140px;
+  }
+
+  /* CTA */
+
+  .pressdetailpage-cta {
+    margin: 30px 15px 0;
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .pressdetailpage-cta-content h3 {
+    font-size: 1.3rem;
+  }
+
+  /* BACK BUTTON */
+
+  .pressdetailpage-bottom-btn {
+    padding: 0 15px;
+  }
+
+  .pressdetailpage-back-btn {
     width: 100%;
+    max-width: 320px;
   }
 }

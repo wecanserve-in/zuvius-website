@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { pressItems } from "./mediaData";
 
 import "./PressReleaseDetails.css";
@@ -41,43 +41,37 @@ if (!item) {
     "Discover insights, milestones and achievements from Zuvius Lifesciences."}
 </p>
 
-    <div className="pressdetail-hero-meta">
+<div className="pressdetail-hero-meta">
 
-      <div className="pressdetail-meta-item">
-        <span>Publication</span>
-        <strong>
-{item.publication || "Zuvius Lifesciences"}
-        </strong>
-      </div>
+  <div className="pressdetail-meta-item">
+    <span>Published</span>
+    <strong>{item.date || item.year || "2025"}</strong>
+  </div>
 
-      <div className="pressdetail-meta-item">
-        <span>Published</span>
-<strong>{item.published || "2025"}</strong>
-      </div>
+  <div className="pressdetail-meta-divider"></div>
 
-    </div>
+  <div className="pressdetail-meta-item">
+    <span>Category</span>
+    <strong>{item.category || "Press Release"}</strong>
+  </div>
 
-    <div className="pressdetail-hero-buttons">
+</div>
 
-   {item.link && item.link !== "#" && (
-        <a
-          href={item.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="pressdetail-primary-btn"
-        >
-          Read Original Article
-        </a>
-      )}
+  <div className="pressdetail-hero-buttons">
 
-      <Link
-        to="/press-release"
-        className="pressdetail-secondary-btn"
-      >
-        Back to Press Releases
-      </Link>
+  {item.link && item.link !== "#" && (
+    <a
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="pressdetail-primary-btn"
+    >
+      Read Original Article on {item.publication} ↗
+    </a>
+  )}
 
-    </div>
+</div>
+
 
   </div>
 
@@ -229,12 +223,7 @@ if (!item) {
 
       <div className="pressdetailpage-bottom-btn">
 
-        <Link
-          to="/press-release"
-          className="pressdetailpage-back-btn"
-        >
-          ← Back to Press Releases
-        </Link>
+     
 
       </div>
 
