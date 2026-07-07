@@ -37,7 +37,7 @@ const cancersData = [
   { name: "Germ Cell Tumor", desc: "Begins in reproductive cells.", img: "/cancer-types/germ-cell.png" },
 
   { name: "Hairy Cell Leukemia", desc: "A rare slow-growing blood cancer.", img: "/cancer-types/blood.png" },
-  { name: "Head & Neck Cancer", desc: "Affects areas of the mouth, throat, nose or glands.", img: "/cancer-types/head-neck.png" },
+  
   { name: "Hodgkin Lymphoma", desc: "A cancer of the lymphatic system.", img: "/cancer-types/lymphoma.png" },
 
   { name: "Inflammatory Breast Cancer", desc: "A rare aggressive type of breast cancer.", img: "/cancer-types/breast.png" },

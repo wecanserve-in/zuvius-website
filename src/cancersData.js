@@ -4125,142 +4125,6 @@ typesStages: {
   }
 },
 
-//head and neck cancers//
-
-{
-  slug: "head-and-neck-cancer",
-
-  title: "Head and Neck Cancer",
-
-  description:
-    "The head and neck region includes several structures that support essential functions such as speaking, breathing, swallowing, hearing, and eating.",
-
-  bannerImg: "/cancers/head-and-neck-cancer.webp",
-
-  overview: {
-    intro:
-      "Head and neck cancer is a group of cancers that develop in the tissues and organs of the head and neck region. These cancers can occur in areas such as the mouth, throat, voice box, nasal cavity and salivary glands. Because several different structures are involved, head and neck cancer includes multiple cancer types with varying characteristics.",
-
-    description:
-      "Symptoms, treatment options and outcomes can differ depending on the location and extent of the cancer. Early diagnosis is important because it may improve treatment options and help preserve important functions such as speaking, swallowing and breathing. A multidisciplinary approach is often used to provide comprehensive care and support.",
-  },
-
-
- 
-   typesStages: {
-  stagesNote:
-    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
-},
-
-  riskFactorsData: {
-    uncontrollable: [
-      {
-        icon: "",
-        title: "Information Not Presented",
-        text: "This page does not provide a dedicated section describing specific risk factors for head and neck cancer."
-      }
-    ],
-
-    lifestyle: [
-      {
-        icon: "",
-        title: "Information Not Presented",
-        text: "This page does not identify lifestyle-related risk factors for head and neck cancer."
-      }
-    ]
-  },
-
-  symptoms: {
-    items: [
-      {
-        title: "Information Not Presented",
-        text: "This page does not provide a dedicated symptoms section for head and neck cancer.",
-        img: "/symptoms/head-neck-info.png"
-      }
-    ]
-  },
-
-  diagnosis: {
-    items: [
-      {
-        title: "Thorough Examination",
-        text: "Cleveland Clinic begins diagnosis with a thorough examination and may complete a full cancer work-up quickly.",
-        img: "/diagnosis/head-neck-exam.png"
-      },
-      {
-        title: "Flexible Endoscopy",
-        text: "A thin, flexible tube with a light and camera may be used to view the nose or throat.",
-        img: "/diagnosis/head-neck-endoscopy.png"
-      },
-      {
-        title: "Laryngoscopy",
-        text: "Specialists may examine the throat with laryngoscopy.",
-        img: "/diagnosis/head-neck-laryngoscopy.png"
-      },
-      {
-        title: "Imaging Tests",
-        text: "Imaging tests may include CT scan, MRI, PET scan and ultrasound.",
-        img: "/diagnosis/head-neck-imaging.png"
-      },
-      {
-        title: "Endoscopic Biopsy",
-        text: "Specialists may remove tissue samples during endoscopy.",
-        img: "/diagnosis/head-neck-endoscopic-biopsy.png"
-      },
-      {
-        title: "Incisional Biopsy",
-        text: "An incisional biopsy uses a scalpel to remove a small amount of suspicious tissue.",
-        img: "/diagnosis/head-neck-incisional-biopsy.png"
-      },
-      {
-        title: "Fine Needle Aspiration",
-        text: "Ultrasound-guided fine needle aspiration collects cells and fluid with a needle.",
-        img: "/diagnosis/head-neck-fna.png"
-      }
-    ]
-  },
-
-  treatment: {
-    options: [
-      {
-        title: "Minimally Invasive Surgery",
-        text: "When appropriate, specialists use laser surgery and robotic-assisted surgery to remove cancer with fewer side effects.",
-        img: "/treatment/head-neck-minimally-invasive.png"
-      },
-      {
-        title: "Radiation Therapy",
-        text: "Precise radiation therapies are used to treat head and neck cancer while helping protect nearby tissue.",
-        img: "/treatment/head-neck-radiation.png"
-      },
-      {
-        title: "VMAT",
-        text: "Volumetric modulated arc therapy is a type of IMRT used to target tumors while helping maintain speech and swallowing ability.",
-        img: "/treatment/head-neck-vmat.png"
-      },
-      {
-        title: "Reconstructive Surgery",
-        text: "Microvascular reconstruction may rebuild the jaw, throat or tongue using tissue from another part of the body.",
-        img: "/treatment/head-neck-reconstruction.png"
-      },
-      {
-        title: "Chemotherapy",
-        text: "Chemotherapy is one systemic therapy used for head and neck cancers.",
-        img: "/treatment/head-neck-chemo.png"
-      },
-      {
-        title: "Immunotherapy",
-        text: "Immunotherapy is one of the systemic therapies Cleveland Clinic uses for head and neck cancers.",
-        img: "/treatment/head-neck-immunotherapy.png"
-      },
-      {
-        title: "Targeted Therapy",
-        text: "Targeted therapy is one systemic treatment option used for head and neck tumor cells.",
-        img: "/treatment/head-neck-targeted.png"
-      }
-    ],
-
-  }
-},
 
 //hodgkin-lymphoma//
 
@@ -4271,7 +4135,7 @@ typesStages: {
 
   description:
     "Hodgkin lymphoma is a type of blood cancer that begins in lymphocytes, a kind of white blood cell found within the lymphatic system. The lymphatic system is a network of organs, vessels, and tissues that helps defend the body against infections and maintain fluid balance.",
-  bannerImg: "/cancers/hodgkin-lymphoma.webp",
+  bannerImg: "/banners/hodgkin.png",
 
   overview: {
     intro:
@@ -4309,27 +4173,27 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age",
         text: "Risk is higher in people between 20 and 39 years old and in people older than 65."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Sex",
         text: "Males are more likely to develop Hodgkin lymphoma, except for nodular sclerosis, which is more common in females."
       },
       {
-        icon: "/icons/family.svg",
+        icon: "/icons/family.png",
         title: "Family Medical History",
         text: "Risk is slightly higher if biological siblings or parents have had Hodgkin lymphoma."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Organ Transplant",
         text: "People who have had an organ transplant take medicines that suppress the immune system, which can increase lymphoma risk."
       },
       {
-        icon: "/icons/virus.svg",
+        icon: "/icons/virus.png",
         title: "Certain Viruses",
         text: "HIV, human T-lymphotropic virus type 1 and Epstein-Barr virus may increase the risk of Hodgkin lymphoma."
       }
@@ -4337,7 +4201,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "",
+        icon: "/icons/none.png",
         title: "No Lifestyle Risk Factors",
         text: "This page does not identify clearly established lifestyle-related risk factors for Hodgkin lymphoma."
       }
@@ -4349,48 +4213,31 @@ typesStages: {
       {
         title: "Swollen Lymph Nodes",
         text: "The most common first sign is painless swollen lymph nodes in the neck, underarm or groin.",
-        img: "/symptoms/hodgkin-swollen-nodes.png"
+        img: "/symptoms/hcl-swallen.png"
       },
       {
         title: "Persistent Fatigue",
         text: "Fatigue means feeling much more tired than usual for at least several days.",
-        img: "/symptoms/hodgkin-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       },
       {
         title: "Unexplained Fever",
         text: "A fever that stays high or lasts longer than expected may be a symptom.",
-        img: "/symptoms/hodgkin-fever.png"
+        img: "/symptoms/bile-fever.png"
       },
-      {
-        title: "Drenching Night Sweats",
-        text: "Night sweats may be so intense that they soak sheets and clothes.",
-        img: "/symptoms/hodgkin-night-sweats.png"
-      },
+      
       {
         title: "Unexplained Weight Loss",
         text: "Losing 10% or more of total body weight over six months without trying is considered unexplained weight loss.",
-        img: "/symptoms/hodgkin-weight-loss.png"
+        img: "/symptoms/gist-weight.png"
       },
-      {
-        title: "Itchy Skin",
-        text: "Some people have very itchy skin, including after drinking alcohol or taking a bath.",
-        img: "/symptoms/hodgkin-itching.png"
-      },
+      
       {
         title: "Abdominal Pain or Swelling",
         text: "Belly pain or swelling may occur depending on where lymphoma cells are located.",
-        img: "/symptoms/hodgkin-abdominal.png"
+        img: "/symptoms/adrenal-fullness.png"
       },
-      {
-        title: "Chest Pain",
-        text: "Chest pain may happen when Hodgkin lymphoma affects lung tissue or lymph nodes inside the chest.",
-        img: "/symptoms/hodgkin-chest-pain.png"
-      },
-      {
-        title: "Shortness of Breath",
-        text: "Shortness of breath may happen if lymphoma affects the lungs or causes a large mass in the chest.",
-        img: "/symptoms/hodgkin-breath.png"
-      }
+      
     ]
   },
 
@@ -4399,12 +4246,12 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider may examine swollen lymph nodes and ask about symptoms such as fever or unexplained weight loss.",
-        img: "/diagnosis/hodgkin-exam.png"
+        img: "/diagnosis/adrenal-exam.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests help show overall health and may detect signs of cancer.",
-        img: "/diagnosis/hodgkin-blood.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "CBC",
@@ -4419,12 +4266,12 @@ typesStages: {
       {
         title: "Imaging Tests",
         text: "Imaging may include chest X-ray, CT scan, PET scan, MRI or ultrasound depending on cancer location and pregnancy status.",
-        img: "/diagnosis/hodgkin-imaging.png"
+        img: "/diagnosis/anal-scan.png"
       },
       {
         title: "Lymph Node Biopsy",
         text: "A lymph node biopsy is usually used to diagnose Hodgkin lymphoma and look for Reed-Sternberg cells.",
-        img: "/diagnosis/hodgkin-biopsy.png"
+        img: "/diagnosis/appendix-bio.png"
       }
     ]
   },
@@ -4434,17 +4281,17 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses one or more medicines to kill cancer cells or keep them from multiplying.",
-        img: "/treatment/hodgkin-chemo.png"
+        img: "/treatment/adrenal-chemo.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-powered energy beams to kill cancer cells in affected lymph nodes or areas of spread.",
-        img: "/treatment/hodgkin-radiation.png"
+        img: "/treatment/adrenal-radiation.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy boosts the immune system so it can better identify and destroy cancer cells.",
-        img: "/treatment/hodgkin-immunotherapy.png"
+        img: "/treatment/anal-immuno.png"
       },
       {
         title: "Checkpoint Inhibitors",
@@ -4454,7 +4301,7 @@ typesStages: {
       {
         title: "Targeted Therapy",
         text: "Targeted therapy uses medicines or other substances to attack cancer cells, including antibody-drug conjugates.",
-        img: "/treatment/hodgkin-targeted.png"
+        img: "/treatment/appendix-targeted.png"
       },
       {
         title: "Stem Cell Transplant",
@@ -4668,35 +4515,26 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age",
         text: "Kaposi sarcoma mostly affects people between ages 40 and 70."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/male.png",
         title: "Sex",
         text: "Males are more likely to develop Kaposi sarcoma."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Ethnicity",
         text: "Risk is higher in people of Mediterranean, Southwest Asian, Eastern European or Ashkenazi Jewish descent."
       },
-      {
-        icon: "/icons/location.svg",
-        title: "Location",
-        text: "People living near the equator in Africa have a higher risk for endemic Kaposi sarcoma."
-      },
-      {
-        icon: "/icons/immunity.svg",
-        title: "Immune Deficiency",
-        text: "Kaposi sarcoma is more likely in people with weakened immune systems, including people taking immunosuppressants or living with HIV/AIDS."
-      }
+      
     ],
 
     lifestyle: [
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/none.png",
         title: "Unprotected Sex",
         text: "Having unprotected sex can increase the risk of contracting HHV-8 and HIV, which can increase Kaposi sarcoma risk."
       }
@@ -4713,23 +4551,19 @@ typesStages: {
       {
         title: "Belly Pain or Blood in Stool",
         text: "Lesions in the belly may cause belly pain or blood in stool.",
-        img: "/symptoms/kaposi-belly.png"
+        img: "/symptoms/anal-bleeding.png"
       },
       {
         title: "Digestive Symptoms",
         text: "Lesions in the digestive system may cause constipation, diarrhea or vomiting.",
-        img: "/symptoms/kaposi-digestive.png"
+        img: "/symptoms/duodenal-nausea.png"
       },
       {
         title: "Coughing Blood or Breathing Difficulty",
         text: "Lesions in the lungs may cause coughing up blood or difficulty breathing.",
-        img: "/symptoms/kaposi-lung.png"
+        img: "/symptoms/adrenal-metastatic.png"
       },
-      {
-        title: "Lymphedema",
-        text: "Lymphedema may happen when lesions block a lymph node.",
-        img: "/symptoms/kaposi-lymphedema.png"
-      },
+      
       {
         title: "Mouth Pain",
         text: "Lesions in the mouth may cause pain while eating.",
@@ -4743,12 +4577,12 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider may check the skin for lesions and ask about symptoms and health history.",
-        img: "/diagnosis/kaposi-exam.png"
+        img: "/diagnosis/adrenal-exam.png"
       },
       {
         title: "Biopsy",
         text: "A small tissue sample may be removed and sent to a pathologist for testing.",
-        img: "/diagnosis/kaposi-biopsy.png"
+        img: "/diagnosis/anal-biopsy.png"
       },
       {
         title: "Bronchoscopy",
@@ -4758,12 +4592,12 @@ typesStages: {
       {
         title: "Chest X-ray or CT Scan",
         text: "Chest imaging may be used to look for Kaposi sarcoma lesions in the lungs.",
-        img: "/diagnosis/kaposi-chest-imaging.png"
+        img: "/diagnosis/anal-scan.png"
       },
       {
         title: "Endoscopy",
         text: "Endoscopy may help providers look inside the stomach or intestines for lesions.",
-        img: "/diagnosis/kaposi-endoscopy.png"
+        img: "/diagnosis/bile-endo.png"
       },
       {
         title: "Immunohistochemistry",
@@ -4783,7 +4617,7 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy may be used as part of a personalized treatment plan.",
-        img: "/treatment/kaposi-chemo.png"
+        img: "/treatment/anal-chemo.png"
       },
       {
         title: "Cryotherapy",
@@ -4793,17 +4627,17 @@ typesStages: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be included depending on the type, number and location of lesions.",
-        img: "/treatment/kaposi-radiation.png"
+        img: "/treatment/anal-radiation.png"
       },
       {
         title: "Surgery",
         text: "Surgery may be used in selected cases as part of treatment.",
-        img: "/treatment/kaposi-surgery.png"
+        img: "/treatment/anal-surgery.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy may be used as part of treatment for Kaposi sarcoma.",
-        img: "/treatment/kaposi-targeted.png"
+        img: "/treatment/appendix-targeted.png"
       }
     ],
   }
@@ -4858,40 +4692,36 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age",
         text: "Kidney cancer typically affects people ages 65 to 74."
       },
       {
-        icon: "/icons/density.svg",
+        icon: "/icons/density.png",
         title: "Dialysis Use",
         text: "Long-term dialysis use to support kidney function may increase risk."
       },
       {
-        icon: "/icons/family.svg",
+        icon: "/icons/family.png",
         title: "Family Medical History",
         text: "Having family members with kidney cancer may increase risk."
       },
       {
-        icon: "/icons/genetics.svg",
+        icon: "/icons/genetics.png",
         title: "Inherited Disorders",
         text: "Inherited disorders such as von Hippel-Lindau disease and tuberous sclerosis syndrome can cause tumors that affect the kidneys."
       },
-      {
-        icon: "/icons/pressure.svg",
-        title: "High Blood Pressure",
-        text: "High blood pressure can damage the kidneys and is listed as a risk factor."
-      }
+      
     ],
 
     lifestyle: [
       {
-        icon: "/icons/weight.svg",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "Having obesity, defined as a BMI of 30 or more, may increase risk."
       },
       {
-        icon: "/icons/smoking.svg",
+        icon: "/icons/smoking.png",
         title: "Smoking",
         text: "Smoking increases the risk of renal cell carcinoma."
       }
@@ -4903,37 +4733,33 @@ typesStages: {
       {
         title: "Blood in Urine",
         text: "Blood in urine may be a symptom of kidney cancer.",
-        img: "/symptoms/kidney-blood-urine.png"
+        img: "/symptoms/bladder-blood.png"
       },
       {
         title: "Fatigue",
         text: "Fatigue may occur with kidney cancer.",
-        img: "/symptoms/kidney-fatigue.png"
+        img: "/symptoms/bone-fatigue.png"
       },
       {
         title: "Recurring Fever",
         text: "A fever that comes back may be a symptom.",
-        img: "/symptoms/kidney-fever.png"
+        img: "/symptoms/bone-fever.png"
       },
       {
         title: "Loss of Appetite",
         text: "Loss of appetite may occur.",
-        img: "/symptoms/kidney-appetite.png"
+        img: "/symptoms/duodenal-nausea.png"
       },
-      {
-        title: "Side Lump or Mass",
-        text: "A lump or mass may appear on the side of the body between the ribs and hip.",
-        img: "/symptoms/kidney-lump.png"
-      },
+     
       {
         title: "Side or Back Pain",
         text: "Pain may occur in the sides or the back of the belly.",
-        img: "/symptoms/kidney-pain.png"
+        img: "/symptoms/adrenal-back.png"
       },
       {
         title: "Weight Loss",
         text: "Unexplained weight loss may occur.",
-        img: "/symptoms/kidney-weight-loss.png"
+        img: "/symptoms/gist-weight.png"
       }
     ]
   },
@@ -4943,22 +4769,22 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider may perform a physical exam and ask about symptoms and how long they have been present.",
-        img: "/diagnosis/kidney-exam.png"
+        img: "/diagnosis/adrenal-exam.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests may include CBC and BMP to check blood cell levels, kidney function and chemical changes.",
-        img: "/diagnosis/kidney-blood.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Imaging Tests",
         text: "CT scan, MRI and ultrasound can help detect tumors in the kidneys.",
-        img: "/diagnosis/kidney-imaging.png"
+        img: "/diagnosis/anal-scan.png"
       },
       {
         title: "Biopsy",
         text: "A biopsy needle may collect a small kidney tissue sample so a pathologist can check it for cancer.",
-        img: "/diagnosis/kidney-biopsy.png"
+        img: "/diagnosis/appendix-bio.png"
       },
       {
         title: "Cancer Staging",
@@ -4970,10 +4796,6 @@ typesStages: {
 
   treatment: {
     options: [
-      {
-        title: "Active Surveillance",
-        text: "For smaller tumors or when there are no symptoms, the care team may monitor the kidneys every three to six months."
-      },
       {
         title: "Partial Nephrectomy",
         text: "This surgery removes the part of the kidney that contains the tumor.",
@@ -4989,30 +4811,21 @@ typesStages: {
         text: "This complex surgery may remove the tumor and nearby affected organs or structures when cancer has grown into them.",
         img: "/treatment/kidney-resection.png"
       },
-      {
-        title: "Cryoablation",
-        text: "Cryoablation uses cold gas delivered through a needle to freeze and destroy cancer cells.",
-        img: "/treatment/kidney-cryoablation.png"
-      },
-      {
-        title: "Radiofrequency Ablation",
-        text: "Radiofrequency ablation uses an electric current through a needle placed in the kidney to kill cancer cells.",
-        img: "/treatment/kidney-rfa.png"
-      },
+     
       {
         title: "Immunotherapy",
         text: "Immunotherapy boosts the immune system so the body can recognize and destroy cancer cells more effectively.",
-        img: "/treatment/kidney-immunotherapy.png"
+        img: "/treatment/anal-immuno.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy blocks characteristics that help cancer cells thrive, including growth signals that feed cancer.",
-        img: "/treatment/kidney-targeted.png"
+        img: "/treatment/bladder-tar.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be used when there is only one kidney or when surgery is not an option. It can also help with kidney cancer pain.",
-        img: "/treatment/kidney-radiation.png"
+        img: "/treatment/anal-radiation.png"
       }
     ],
   }
@@ -5057,43 +4870,35 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/age.svg",
+        icon: "/icons/age.png",
         title: "Age",
         text: "Laryngeal cancer happens more often in people age 55 and older."
       },
       {
-        icon: "/icons/reproductive.svg",
+        icon: "/icons/reproductive.png",
         title: "Sex",
         text: "Men are about five times more likely to develop laryngeal cancer."
       },
       {
-        icon: "/icons/family.svg",
+        icon: "/icons/family.png",
         title: "History of Head and Neck Cancer",
         text: "About 1 in 4 people who have had head and neck cancer will get it again."
       },
-      {
-        icon: "/icons/virus.svg",
-        title: "HPV Infection",
-        text: "Some forms of human papillomavirus can cause laryngeal cancer."
-      }
+    
     ],
 
     lifestyle: [
       {
-        icon: "/icons/smoking.svg",
+        icon: "/icons/smoking.png",
         title: "Tobacco Use",
         text: "Smoking or using other tobacco products greatly increases the risk of laryngeal cancer."
       },
       {
-        icon: "/icons/alcohol.svg",
+        icon: "/icons/alcohol.png",
         title: "Alcohol Use",
         text: "Drinking alcohol, especially more than one drink daily, raises risk. Using alcohol and tobacco together increases risk even more."
       },
-      {
-        icon: "/icons/chemical.svg",
-        title: "Workplace Exposure",
-        text: "Exposure to substances such as sulfuric acid mist, wood dust, nickel, asbestos or manufacturing mustard gas may increase risk."
-      }
+      
     ]
   },
 
@@ -5102,42 +4907,34 @@ typesStages: {
       {
         title: "Sore Throat or Cough",
         text: "A sore throat or cough that does not improve may be a symptom.",
-        img: "/symptoms/laryngeal-sore-throat.png"
+        img: "/symptoms/esophageal-hoarseness.png"
       },
-      {
-        title: "Voice Changes",
-        text: "Voice changes, such as hoarseness, that do not improve after two weeks should be checked.",
-        img: "/symptoms/laryngeal-hoarseness.png"
-      },
+      
       {
         title: "Painful Swallowing",
         text: "Pain or other difficulty when swallowing may occur.",
-        img: "/symptoms/laryngeal-swallowing.png"
+        img: "/symptoms/esophageal-swallowing.png"
       },
       {
         title: "Neck or Throat Lump",
         text: "A lump in the neck or throat may be a warning sign.",
-        img: "/symptoms/laryngeal-lump.png"
+        img: "/symptoms/hcl-swallen.png"
       },
       {
         title: "Trouble Making Voice Sounds",
         text: "Difficulty making voice sounds, also called dysphonia, may occur.",
-        img: "/symptoms/laryngeal-dysphonia.png"
+        img: "/symptoms/astro-speech.png"
       },
       {
         title: "Ear Pain",
         text: "Ear pain may occur with laryngeal cancer.",
-        img: "/symptoms/laryngeal-ear-pain.png"
+        img: "/symptoms/ear-pain.png"
       },
-      {
-        title: "Trouble Breathing",
-        text: "Trouble breathing or noisy high-pitched breathing needs urgent medical attention.",
-        img: "/symptoms/laryngeal-breathing.png"
-      },
+      
       {
         title: "Coughing Blood",
         text: "Coughing up blood may occur and should be checked right away.",
-        img: "/symptoms/laryngeal-blood.png"
+        img: "/symptoms/duodenal-vomiting.png"
       }
     ]
   },
@@ -5147,32 +4944,32 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider will ask about symptoms and medical history, then examine the throat and neck.",
-        img: "/diagnosis/laryngeal-exam.png"
+        img: "/diagnosis/gist-exam.png"
       },
       {
         title: "Imaging Scans",
         text: "CT or MRI scans can show the tumor’s size and location, while chest X-ray can check whether cancer has spread to the lungs.",
-        img: "/diagnosis/laryngeal-imaging.png"
+        img: "/diagnosis/astro-ct.png"
       },
       {
         title: "Laryngoscopy",
         text: "During laryngoscopy, a provider uses a thin, lighted tube to examine the larynx.",
-        img: "/diagnosis/laryngeal-laryngoscopy.png"
+        img: "/diagnosis/lynnax-scopy.png"
       },
       {
         title: "PET Scan",
         text: "A PET scan uses a small safe dose of radioactive substance to highlight areas with cancer cells.",
-        img: "/diagnosis/laryngeal-pet.png"
+        img: "/diagnosis/burkitt-pet.png"
       },
       {
         title: "Biopsy",
         text: "A biopsy removes a small piece of abnormal tissue from the larynx so a pathologist can examine it under a microscope.",
-        img: "/diagnosis/laryngeal-biopsy.png"
+        img: "/diagnosis/burkitt-biopsy.png"
       },
       {
         title: "Protein Marker Testing",
         text: "The biopsy sample may be checked for protein markers because some treatments only work on cancer cells with specific markers.",
-        img: "/diagnosis/laryngeal-marker.png"
+        img: "/diagnosis/lynax-biospymarker.png"
       }
     ]
   },
@@ -5182,48 +4979,34 @@ typesStages: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to kill cancer cells while targeting the tumor and limiting damage to nearby healthy tissue.",
-        img: "/treatment/laryngeal-radiation.png"
+        img: "/treatment/adrenal-radiation.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to kill or slow the growth of cancer cells.",
-        img: "/treatment/laryngeal-chemo.png"
+        img: "/treatment/anal-chemo.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy uses the immune system to help fight cancer.",
-        img: "/treatment/laryngeal-immunotherapy.png"
+        img: "/treatment/anal-immuno.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy focuses on cancer cells with specific proteins and helps prevent them from multiplying.",
-        img: "/treatment/laryngeal-targeted.png"
+        img: "/treatment/appendix-targeted.png"
       },
       {
         title: "Surgery",
         text: "For early laryngeal cancer, surgery may remove the tumor while preserving the larynx. Advanced cancer may need laryngectomy.",
-        img: "/treatment/laryngeal-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Cordectomy",
         text: "Cordectomy removes part or all of a vocal cord, usually through the mouth.",
-        img: "/treatment/laryngeal-cordectomy.png"
+        img: "/treatment/Cordectomy.png"
       },
-      {
-        title: "Partial Laryngectomy",
-        text: "Partial laryngectomy removes part of the larynx so the person can keep the ability to talk.",
-        img: "/treatment/laryngeal-partial.png"
-      },
-      {
-        title: "Total Laryngectomy",
-        text: "Total laryngectomy removes the entire larynx through the neck.",
-        img: "/treatment/laryngeal-total.png"
-      },
-      {
-        title: "Laser Surgery",
-        text: "Laser surgery removes a tumor using a laser beam.",
-        img: "/treatment/laryngeal-laser.png"
-      }
+      
     ],
 
   }
@@ -5281,15 +5064,11 @@ typesStages: {
         text: "Smoking is associated with an increased risk of some forms of leukemia."
       },
       {
-        icon: "/icons/chemical.png",
+        icon: "/icons/diet.png",
         title: "Chemical Exposure",
         text: "Long-term exposure to certain chemicals, such as benzene, may increase risk."
       },
-      {
-        icon: "/icons/medical.png",
-        title: "Previous Cancer Treatment",
-        text: "Some chemotherapy drugs and radiation treatments used for other cancers may increase leukemia risk."
-      }
+      
     ]
   },
 
@@ -5298,32 +5077,28 @@ typesStages: {
       {
         title: "Fatigue",
         text: "People with leukemia often feel unusually tired or weak.",
-        img: "/symptoms/leukemia-fatigue.png"
+        img: "/symptoms/bone-fatigue.png"
       },
       {
         title: "Frequent Infections",
         text: "Abnormal white blood cells may make it harder for the body to fight infections.",
-        img: "/symptoms/leukemia-infections.png"
+        img: "/symptoms/lukiemia-bleed.png"
       },
       {
         title: "Fever or Chills",
         text: "Persistent fever or chills may occur.",
-        img: "/symptoms/leukemia-fever.png"
+        img: "/symptoms/bone-fever.png"
       },
-      {
-        title: "Easy Bruising or Bleeding",
-        text: "Low platelet levels may cause unusual bruising or bleeding.",
-        img: "/symptoms/leukemia-bruising.png"
-      },
+      
       {
         title: "Bone or Joint Pain",
         text: "Some people experience pain in their bones or joints.",
-        img: "/symptoms/leukemia-bone-pain.png"
+        img: "/symptoms/adrenal-cramps.png"
       },
       {
         title: "Swollen Lymph Nodes",
         text: "Lymph nodes may become enlarged, especially in the neck, underarm or groin.",
-        img: "/symptoms/leukemia-lymphnodes.png"
+        img: "/symptoms/anal-lump.png"
       },
     ]
   },
@@ -5333,12 +5108,12 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider reviews symptoms and checks for signs such as enlarged lymph nodes, liver or spleen.",
-        img: "/diagnosis/leukemia-exam.png"
+        img: "/diagnosis/brain-exam.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests help identify abnormal numbers of white blood cells, red blood cells or platelets.",
-        img: "/diagnosis/leukemia-blood.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Bone Marrow Aspiration",
@@ -5348,7 +5123,7 @@ typesStages: {
       {
         title: "Bone Marrow Biopsy",
         text: "A biopsy allows specialists to examine bone marrow tissue in detail.",
-        img: "/diagnosis/leukemia-biopsy.png"
+        img: "/diagnosis/bcc-biopsy.png"
       },
       {
         title: "Genetic Testing",
@@ -5363,22 +5138,22 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy leukemia cells or stop them from multiplying.",
-        img: "/treatment/leukemia-chemo.png"
+        img: "/treatment/astro-chemo.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapies focus on specific features within leukemia cells.",
-        img: "/treatment/leukemia-targeted.png"
+        img: "/treatment/appendix-targeted.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the immune system recognize and attack cancer cells.",
-        img: "/treatment/leukemia-immunotherapy.png"
+        img: "/treatment/anal-immuno.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be used in certain situations to destroy leukemia cells.",
-        img: "/treatment/leukemia-radiation.png"
+        img: "/treatment/astro-radiation.png"
       },
       {
         title: "Stem Cell Transplant",
@@ -5387,8 +5162,1071 @@ typesStages: {
       }
     ],
   }
+
+},
+
+//liver cancer
+{
+  slug: "liver-cancer",
+
+  title: "Liver Cancer",
+
+  description:
+    "The liver is the largest internal organ in the body. It performs many vital functions, including filtering blood, processing nutrients, producing bile for digestion and helping remove harmful substances.",
+
+  bannerImg: "/cancers/liver-cancer.webp",
+
+  overview: {
+    intro:
+      "Liver cancer develops when malignant cells form within the tissues of the liver. Primary liver cancer begins in the liver itself, while secondary liver cancer starts elsewhere in the body and spreads to the liver. Primary liver cancer includes several forms, with hepatocellular carcinoma being the most common type. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "The behavior and outlook of liver cancer depend on factors such as the type of cancer, the size of the tumor and how far it has progressed. Healthcare providers use staging to help guide treatment planning, and management may involve different medical or surgical approaches based on each person's condition. :contentReference[oaicite:1]{index=1}",
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "A single tumor is present in the liver and has not spread beyond it."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "There may be a single tumor involving blood vessels or several small tumors within the liver."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "There are multiple tumors or a large tumor, and cancer may involve nearby blood vessels, lymph nodes or surrounding structures."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to distant parts of the body, such as the lungs or bones."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/liver.png",
+        title: "Long-Term Hepatitis B or C Infection",
+        text: "Chronic hepatitis B or hepatitis C infection is the most common risk factor for liver cancer."
+      },
+      {
+        icon: "/icons/liver-disease.png",
+        title: "Cirrhosis",
+        text: "Cirrhosis, or severe scarring of the liver, increases the likelihood of developing liver cancer."
+      },
+      {
+        icon: "/icons/fatty-liver.png",
+        title: "Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD)",
+        text: "People with MASLD have a higher risk of developing liver cancer."
+      },
+      {
+        icon: "/icons/diabetes.png",
+        title: "Type 2 Diabetes",
+        text: "Type 2 diabetes is associated with an increased risk of liver cancer."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/alcohol.png",
+        title: "Heavy Alcohol Use",
+        text: "Long-term heavy alcohol consumption can damage the liver and increase liver cancer risk."
+      },
+      {
+        icon: "/icons/obesity.png",
+        title: "Obesity",
+        text: "Obesity increases the chance of developing liver cancer, particularly when associated with fatty liver disease."
+      },
+      {
+        icon: "/icons/smoking.png",
+        title: "Tobacco Use",
+        text: "Smoking or using tobacco products can increase the risk of liver cancer."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Upper Right Abdominal Pain",
+        text: "Pain or discomfort in the upper right side of the abdomen may occur.",
+        img: "/symptoms/liver-abdominal-pain.png"
+      },
+      {
+        title: "Abdominal Swelling",
+        text: "The abdomen may become swollen because of fluid buildup or an enlarged liver.",
+        img: "/symptoms/liver-abdominal-swelling.png"
+      },
+      {
+        title: "Loss of Appetite",
+        text: "Many people lose interest in eating or feel full quickly.",
+        img: "/symptoms/liver-loss-appetite.png"
+      },
+      {
+        title: "Unexplained Weight Loss",
+        text: "Weight loss without trying may be a warning sign.",
+        img: "/symptoms/liver-weight-loss.png"
+      },
+      {
+        title: "Jaundice",
+        text: "Yellowing of the skin and eyes may develop when the liver is not working properly.",
+        img: "/symptoms/liver-jaundice.png"
+      },
+      {
+        title: "Fatigue",
+        text: "Persistent tiredness or weakness is common.",
+        img: "/symptoms/liver-fatigue.png"
+      },
+      {
+        title: "Nausea and Vomiting",
+        text: "Some people experience nausea, vomiting or digestive discomfort.",
+        img: "/symptoms/liver-nausea.png"
+      },
+      {
+        title: "Itchy Skin",
+        text: "Generalized itching may occur due to liver dysfunction.",
+        img: "/symptoms/liver-itching.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "A healthcare provider reviews symptoms, medical history and performs a physical examination.",
+        img: "/diagnosis/liver-exam.png"
+      },
+      {
+        title: "Blood Tests",
+        text: "Blood tests, including liver function tests, help evaluate liver health and look for signs of cancer.",
+        img: "/diagnosis/liver-blood-test.png"
+      },
+      {
+        title: "CT Scan",
+        text: "CT scans provide detailed images to determine the size and location of liver tumors.",
+        img: "/diagnosis/liver-ct.png"
+      },
+      {
+        title: "MRI Scan",
+        text: "MRI produces detailed images that help evaluate liver tumors.",
+        img: "/diagnosis/liver-mri.png"
+      },
+      {
+        title: "Liver Ultrasound",
+        text: "Ultrasound creates images of the liver and may help detect abnormal areas.",
+        img: "/diagnosis/liver-ultrasound.png"
+      },
+      {
+        title: "Liver Biopsy",
+        text: "A biopsy removes a small tissue sample to confirm whether liver cancer is present.",
+        img: "/diagnosis/liver-biopsy.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses medicines to destroy or slow the growth of cancer cells.",
+        img: "/treatment/liver-chemotherapy.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the body's immune system recognize and attack cancer cells.",
+        img: "/treatment/liver-immunotherapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy attacks specific molecules that help liver cancer cells grow.",
+        img: "/treatment/liver-targeted-therapy.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams to destroy cancer cells.",
+        img: "/treatment/liver-radiation.png"
+      },
+      {
+        title: "Chemoembolization",
+        text: "Chemoembolization delivers chemotherapy directly into the blood vessels feeding the tumor while reducing its blood supply.",
+        img: "/treatment/liver-chemoembolization.png"
+      },
+      {
+        title: "Radioembolization",
+        text: "Radioembolization delivers tiny radioactive particles directly into the liver tumor through its blood supply.",
+        img: "/treatment/liver-radioembolization.png"
+      },
+      {
+        title: "Ablation",
+        text: "Ablation destroys liver tumors using heat, cold or other specialized techniques without removing large amounts of liver tissue.",
+        img: "/treatment/liver-ablation.png"
+      },
+      {
+        title: "Liver Resection",
+        text: "Liver resection removes the part of the liver containing the tumor while preserving healthy tissue whenever possible.",
+        img: "/treatment/liver-resection.png"
+      },
+      {
+        title: "Liver Transplantation",
+        text: "A liver transplant removes the diseased liver and replaces it with a healthy donor liver in selected patients.",
+        img: "/treatment/liver-transplant.png"
+      }
+    ]
+  }
+},
+//lung cancer
+{
+  slug: "lung-cancer",
+
+  title: "Lung Cancer",
+
+  description:
+    "The lungs are a pair of organs that help bring oxygen into the body and remove carbon dioxide. They also play an essential role in breathing and supplying oxygen to every organ and tissue.",
+
+  bannerImg: "/cancers/lung-cancer.webp",
+
+  overview: {
+    intro:
+      "Lung cancer develops when abnormal cells in the tissues of the lungs grow uncontrollably and form tumors. It most commonly begins in the airways (bronchi or bronchioles) or in the tiny air sacs called alveoli. If left untreated, the cancer can spread to nearby tissues and other parts of the body.",
+
+    description:
+      "Many people do not notice symptoms until lung cancer has reached a more advanced stage, making early detection especially important for those at higher risk. The type of lung cancer, its location and how far it has spread help guide treatment decisions and influence overall outcomes.",
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "0",
+        title: "Stage 0",
+        text: "Abnormal cells are found only in the lining of the airways and have not invaded deeper lung tissue."
+      },
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The tumor is small, confined to the lung and has not spread outside the lung."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor is larger or has spread to nearby lymph nodes, tissues or structures, but not to distant organs."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to nearby lymph nodes, tissues or organs within the chest but has not reached distant parts of the body."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to the other lung, the lining around the lungs or heart, or to distant organs."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "LuUsers",
+        title: "Family History",
+        text: "Having a family history of lung cancer may increase the risk of developing the disease."
+      },
+      {
+        icon: "LuRadiation",
+        title: "Previous Chest Radiation",
+        text: "Radiation therapy to the chest for another condition may increase the risk of lung cancer later in life."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "LuCigarette",
+        title: "Smoking",
+        text: "Smoking cigarettes, cigars or pipes is the leading risk factor for lung cancer."
+      },
+      {
+        icon: "LuWind",
+        title: "Secondhand Smoke",
+        text: "Regular exposure to tobacco smoke from other people also increases the risk."
+      },
+      {
+        icon: "LuFactory",
+        title: "Harmful Substance Exposure",
+        text: "Exposure to radon, asbestos, uranium, diesel exhaust, silica, coal products and air toxins can increase the risk of lung cancer."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Persistent Cough",
+        text: "A cough that does not go away or gradually becomes worse.",
+        img: "/symptoms/lung-cough.png"
+      },
+      {
+        title: "Shortness of Breath",
+        text: "Difficulty breathing or feeling breathless during normal activities.",
+        img: "/symptoms/lung-breathlessness.png"
+      },
+      {
+        title: "Chest Pain",
+        text: "Persistent pain or discomfort in the chest.",
+        img: "/symptoms/lung-chest-pain.png"
+      },
+      {
+        title: "Coughing Up Blood",
+        text: "Blood in the sputum should always be evaluated by a healthcare provider.",
+        img: "/symptoms/lung-blood.png"
+      },
+      {
+        title: "Hoarseness",
+        text: "A change in the voice or persistent hoarseness.",
+        img: "/symptoms/lung-hoarseness.png"
+      },
+      {
+        title: "Loss of Appetite",
+        text: "Reduced desire to eat without another clear cause.",
+        img: "/symptoms/lung-appetite.png"
+      },
+      {
+        title: "Unexplained Weight Loss",
+        text: "Weight loss that occurs without changes in diet or exercise.",
+        img: "/symptoms/lung-weight-loss.png"
+      },
+      {
+        title: "Fatigue",
+        text: "Persistent tiredness or lack of energy that does not improve with rest.",
+        img: "/symptoms/lung-fatigue.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "A healthcare provider reviews symptoms, medical history and performs a physical examination.",
+        img: "/diagnosis/lung-exam.png"
+      },
+      {
+        title: "Chest X-ray",
+        text: "A chest X-ray may identify abnormal areas that require further evaluation.",
+        img: "/diagnosis/lung-xray.png"
+      },
+      {
+        title: "CT Scan",
+        text: "CT scans provide detailed images of the lungs and help evaluate suspicious abnormalities.",
+        img: "/diagnosis/lung-ct.png"
+      },
+      {
+        title: "PET/CT Scan",
+        text: "A PET/CT scan helps determine whether cancer has spread to other parts of the body.",
+        img: "/diagnosis/lung-pet.png"
+      },
+      {
+        title: "Bronchoscopy or Biopsy",
+        text: "A tissue sample may be collected through bronchoscopy, a needle biopsy or surgery to confirm the diagnosis.",
+        img: "/diagnosis/lung-biopsy.png"
+      },
+      {
+        title: "Molecular Testing",
+        text: "Cancer cells may be tested for genetic changes that can help guide targeted treatment.",
+        img: "/diagnosis/lung-molecular.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery removes the tumor or part of the lung when the cancer has not spread extensively.",
+        img: "/treatment/lung-surgery.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses medicines to destroy cancer cells or slow their growth.",
+        img: "/treatment/lung-chemo.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams to destroy cancer cells.",
+        img: "/treatment/lung-radiation.png"
+      },
+      {
+        title: "Radiofrequency Ablation",
+        text: "This treatment uses heat generated by radio waves to destroy cancer cells.",
+        img: "/treatment/lung-rfa.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy attacks cancer cells with specific genetic changes that help them grow.",
+        img: "/treatment/lung-targeted.png"
+      },
+      {
+        title: "Angiogenesis Inhibitors",
+        text: "These medicines help stop tumors from forming the blood vessels they need to grow.",
+        img: "/treatment/lung-angiogenesis.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the body's immune system recognize and attack cancer cells.",
+        img: "/treatment/lung-immunotherapy.png"
+      }
+    ],
+
+    supportiveCare: [
+      {
+        title: "Symptom Relief",
+        text: "Some treatments focus on reducing symptoms such as airway blockage or fluid around the lungs."
+      },
+      {
+        title: "Follow-up Care",
+        text: "Regular follow-up visits and imaging help monitor treatment response and detect recurrence."
+      }
+    ]
+  }
+},
+
+//lymphoma
+{
+  slug: "lymphoma",
+
+  title: "Lymphoma",
+
+  description:
+    "The lymphatic system is a network of lymph nodes, vessels and organs that helps your body fight infections and maintain fluid balance. It contains lymphocytes, specialized white blood cells that play an important role in your immune system.",
+
+  bannerImg: "/cancers/lymphoma.webp",
+
+  overview: {
+    intro:
+      "Lymphoma is a group of blood cancers that develops in the lymphatic system. It begins in lymphocytes, a type of white blood cell found in lymph nodes and other lymphatic tissues. The disease is broadly classified into two main types: Hodgkin lymphoma and non-Hodgkin lymphoma, with many different subtypes.",
+
+    description:
+      "Lymphoma can affect lymph nodes and other parts of the lymphatic system, and in some cases may involve organs outside this network. The outlook and treatment approach depend on the specific lymphoma type, its stage and how quickly it grows. Early evaluation and appropriate treatment can often achieve remission, and many forms of lymphoma can be treated successfully.",
+  },
+},
+
+//male breast cancer
+
+{
+  slug: "male-breast-cancer",
+
+  title: "Male Breast Cancer",
+
+  description:
+    "The male breast contains undeveloped milk ducts and breast tissue. Although men have much less breast tissue than women, these tissues can still develop breast cancer.",
+
+  bannerImg: "/cancers/male-breast-cancer.webp",
+
+  overview: {
+    intro:
+      "Male breast cancer is a rare cancer that develops in the breast tissue of men. It most commonly begins in the milk ducts within the breast and, if left untreated, can spread to nearby tissues and other parts of the body. The majority of cases are invasive ductal carcinoma, although other less common types can also occur.",
+
+    description:
+      "Because male breast cancer is uncommon, breast lumps or other changes may sometimes be overlooked, leading to diagnosis at a more advanced stage. The outlook depends on the cancer type, stage and how far it has spread, making early medical evaluation of any suspicious breast changes especially important.",
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "0",
+        title: "Stage 0",
+        text: "Cancer cells are confined to the breast ducts and have not spread into surrounding breast tissue."
+      },
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The tumor is small and has not spread to nearby lymph nodes."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor is larger or may have spread to a few nearby lymph nodes in the armpit."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to several nearby lymph nodes and may involve the chest wall or skin."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to distant parts of the body, commonly the bones, lungs or liver."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "LuCalendar",
+        title: "Older Age",
+        text: "Male breast cancer is diagnosed most often in men in their 60s."
+      },
+      {
+        icon: "LuUsers",
+        title: "Family History",
+        text: "Having a parent, sibling or child with breast or ovarian cancer increases the risk."
+      },
+      {
+        icon: "LuDna",
+        title: "Inherited Gene Mutations",
+        text: "Inherited mutations, especially BRCA2 and BRCA1, can significantly increase the risk of male breast cancer."
+      },
+      {
+        icon: "LuTestTube",
+        title: "Testicular Conditions",
+        text: "Undescended testicles, orchitis, testicular injury or removal of a testicle may increase risk."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "LuRadiation",
+        title: "Previous Chest Radiation",
+        text: "Radiation therapy directed to the chest can increase the chance of developing male breast cancer."
+      },
+      {
+        icon: "LuBeer",
+        title: "Alcohol Use",
+        text: "Alcohol use may increase estrogen levels, which can contribute to breast cancer risk."
+      },
+      {
+        icon: "LuScale",
+        title: "Obesity",
+        text: "Obesity can increase estrogen levels in the body and raise the risk of male breast cancer."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Breast Lump",
+        text: "A firm, painless lump in one breast is often the first sign of male breast cancer.",
+        img: "/symptoms/male-breast-lump.png"
+      },
+      {
+        title: "Underarm Lump",
+        text: "A lump in the armpit may indicate that nearby lymph nodes are affected.",
+        img: "/symptoms/male-breast-underarm.png"
+      },
+      {
+        title: "Skin Changes",
+        text: "The skin on the breast may become dimpled, pitted, red, flaky or scaly.",
+        img: "/symptoms/male-breast-skin.png"
+      },
+      {
+        title: "Nipple Changes",
+        text: "The nipple may turn inward or produce clear or bloody discharge.",
+        img: "/symptoms/male-breast-nipple.png"
+      },
+      {
+        title: "Breast Pain or Tenderness",
+        text: "Pain or tenderness in the breast or underarm may occur.",
+        img: "/symptoms/male-breast-pain.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Breast Examination",
+        text: "A healthcare provider examines the breast for lumps, skin changes and other abnormalities.",
+        img: "/diagnosis/male-breast-exam.png"
+      },
+      {
+        title: "Mammogram",
+        text: "A mammogram helps identify suspicious changes within the breast tissue.",
+        img: "/diagnosis/male-breast-mammogram.png"
+      },
+      {
+        title: "Ultrasound",
+        text: "Ultrasound may be used before or after a mammogram to evaluate the breast lump further.",
+        img: "/diagnosis/male-breast-ultrasound.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A biopsy removes a small sample of breast tissue to confirm whether cancer cells are present.",
+        img: "/diagnosis/male-breast-biopsy.png"
+      },
+      {
+        title: "Hormone & HER2 Testing",
+        text: "Cancer cells may be tested for hormone receptors and HER2 protein to help guide treatment decisions.",
+        img: "/diagnosis/male-breast-marker.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery, most commonly a mastectomy, is the primary treatment for early-stage male breast cancer.",
+        img: "/treatment/male-breast-surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams to destroy remaining cancer cells after surgery or reduce recurrence.",
+        img: "/treatment/male-breast-radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses medicines to destroy cancer cells throughout the body.",
+        img: "/treatment/male-breast-chemo.png"
+      },
+      {
+        title: "Hormone Therapy",
+        text: "Hormone therapy blocks or lowers estrogen levels to slow the growth of hormone receptor-positive cancers.",
+        img: "/treatment/male-breast-hormone.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy interferes with specific proteins or genetic changes that help cancer cells grow.",
+        img: "/treatment/male-breast-targeted.png"
+      }
+    ],
+
+    supportiveCare: [
+      {
+        title: "Regular Follow-up",
+        text: "Ongoing follow-up appointments help monitor recovery, detect recurrence and manage treatment-related side effects."
+      },
+      {
+        title: "Emotional Support",
+        text: "Counseling and support services can help patients cope with the emotional impact of diagnosis and treatment."
+      }
+    ]
+  }
+},
+
+//melanoma
+
+{
+  slug: "melanoma",
+
+  title: "Melanoma",
+
+  description:
+    "The skin is the body's largest organ and acts as a protective barrier against injury, infection and harmful ultraviolet (UV) rays. It contains melanocytes, specialized cells that produce melanin, the pigment responsible for skin color.",
+
+  bannerImg: "/cancers/melanoma.webp",
+
+  overview: {
+    intro:
+      "Melanoma is the most serious type of skin cancer. It develops in melanocytes, the skin cells that produce melanin, and can grow rapidly if left untreated. While some melanomas begin in existing moles, many develop on normal-looking skin and have the potential to spread to other parts of the body.",
+
+    description:
+      "Melanoma can occur anywhere on the body, including areas not regularly exposed to the sun. Because it can spread quickly, recognizing suspicious skin changes and seeking prompt medical evaluation are important. When detected and treated in its earliest stages, melanoma has an excellent chance of being cured.",
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "0",
+        title: "Stage 0",
+        text: "Melanoma is confined to the outermost layer of the skin (epidermis) and has not spread."
+      },
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The melanoma is considered low risk and there is no evidence that it has spread beyond the original site."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The melanoma has features associated with a higher risk of recurrence but has not spread to nearby lymph nodes or distant organs."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to nearby lymph nodes or nearby skin around the original melanoma."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Melanoma has spread to distant lymph nodes, internal organs or other distant parts of the body."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "LuPalette",
+        title: "Fair Skin",
+        text: "People with fair skin, freckles, blonde or red hair and blue eyes have a higher risk of melanoma."
+      },
+      {
+        icon: "LuUsers",
+        title: "Family or Personal History",
+        text: "Having a personal or family history of melanoma increases the likelihood of developing the disease."
+      },
+      {
+        icon: "LuCircle",
+        title: "Many or Atypical Moles",
+        text: "Having numerous moles or unusual-looking moles increases melanoma risk."
+      },
+      {
+        icon: "LuShieldAlert",
+        title: "Weakened Immune System",
+        text: "A weakened immune system may make it more difficult for the body to prevent melanoma from developing."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "LuSun",
+        title: "Excess Sun Exposure",
+        text: "Long-term exposure to ultraviolet (UV) radiation, especially severe sunburns during childhood, increases melanoma risk."
+      },
+      {
+        icon: "LuLampDesk",
+        title: "Tanning Beds",
+        text: "Using tanning beds exposes the skin to UV radiation and significantly increases the risk of melanoma."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Asymmetrical Mole",
+        text: "One half of the mole or skin spot looks different from the other half.",
+        img: "/symptoms/melanoma-asymmetry.png"
+      },
+      {
+        title: "Irregular Border",
+        text: "The edges of the mole are uneven, ragged or poorly defined.",
+        img: "/symptoms/melanoma-border.png"
+      },
+      {
+        title: "Uneven Color",
+        text: "The spot contains multiple shades such as brown, black, gray, red, white or blue.",
+        img: "/symptoms/melanoma-color.png"
+      },
+      {
+        title: "Large Diameter",
+        text: "The spot is larger than about 6 millimeters, although melanomas can sometimes be smaller.",
+        img: "/symptoms/melanoma-diameter.png"
+      },
+      {
+        title: "Changing Appearance",
+        text: "A mole or skin lesion that changes in size, shape or color should be evaluated.",
+        img: "/symptoms/melanoma-evolving.png"
+      },
+      {
+        title: "New or Unusual Skin Spot",
+        text: "A new sore, bump or skin lesion that looks different from others may be a warning sign.",
+        img: "/symptoms/melanoma-new-spot.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Skin Examination",
+        text: "A healthcare provider examines the skin and suspicious moles for signs of melanoma.",
+        img: "/diagnosis/melanoma-exam.png"
+      },
+      {
+        title: "Skin Biopsy",
+        text: "A biopsy removes all or part of the suspicious skin lesion so it can be examined under a microscope.",
+        img: "/diagnosis/melanoma-biopsy.png"
+      },
+      {
+        title: "Sentinel Lymph Node Biopsy",
+        text: "This test helps determine whether melanoma has spread to nearby lymph nodes in certain patients.",
+        img: "/diagnosis/melanoma-sentinel.png"
+      },
+      {
+        title: "CT Scan",
+        text: "CT scans may be used to check whether melanoma has spread to internal organs.",
+        img: "/diagnosis/melanoma-ct.png"
+      },
+      {
+        title: "MRI Scan",
+        text: "MRI may be used to look for melanoma in the brain or spinal cord.",
+        img: "/diagnosis/melanoma-mri.png"
+      },
+      {
+        title: "PET Scan",
+        text: "PET scans help identify melanoma that has spread to lymph nodes or other distant parts of the body.",
+        img: "/diagnosis/melanoma-pet.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery is the main treatment for melanoma and removes the cancer along with a margin of healthy skin.",
+        img: "/treatment/melanoma-surgery.png"
+      },
+      {
+        title: "Lymph Node Surgery",
+        text: "Nearby lymph nodes may be removed if melanoma has spread to them.",
+        img: "/treatment/melanoma-lymph-node.png"
+      },
+      {
+        title: "Metastasectomy",
+        text: "Surgery may be performed to remove melanoma that has spread to certain organs.",
+        img: "/treatment/melanoma-metastasectomy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy uses medicines that attack specific cancer cells while limiting damage to healthy cells.",
+        img: "/treatment/melanoma-targeted.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams to destroy cancer cells or shrink tumors.",
+        img: "/treatment/melanoma-radiation.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy strengthens the body's immune system to recognize and attack melanoma cells.",
+        img: "/treatment/melanoma-immunotherapy.png"
+      }
+    ],
+
+    supportiveCare: [
+      {
+        title: "Regular Skin Examinations",
+        text: "Routine follow-up appointments help detect recurrence or new melanomas at an early stage."
+      },
+      {
+        title: "Sun Protection",
+        text: "Protecting the skin from UV exposure by using sunscreen, wearing protective clothing and avoiding tanning beds helps reduce future risk."
+      }
+    ]
+  }
+},
+
+//mesothelioma
+
+{
+  slug: "mesothelioma",
+
+  title: "Mesothelioma",
+
+  description:
+    "The mesothelium is a thin layer of tissue that surrounds and protects several internal organs, including the lungs, abdomen, heart and testicles. It helps reduce friction and allows these organs to move smoothly during normal body functions.",
+
+  bannerImg: "/cancers/mesothelioma.webp",
+
+  overview: {
+    intro:
+      "Mesothelioma is a rare cancer that develops in the mesothelium, the protective lining around certain internal organs. It most commonly begins in the pleura, the lining around the lungs, but it can also develop in the lining of the abdomen, around the heart or around the testicles. The disease often forms multiple tumors that may spread across the affected lining.",
+
+    description:
+      "Mesothelioma is classified according to where it develops and by the characteristics of its cancer cells. Because it is uncommon and symptoms can resemble those of other conditions, diagnosis may be delayed. Treatment and outlook depend on the type of mesothelioma, its location and how far the cancer has spread. :contentReference[oaicite:0]{index=0}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "Cancer is limited to the lining where it started and has not spread beyond the original area."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "Cancer has spread beyond the original lining but remains close to where it began."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to nearby organs or lymph nodes."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to distant organs or other parts of the body."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "LuUsers",
+        title: "Male Sex",
+        text: "Mesothelioma occurs more often in males than females."
+      },
+      {
+        icon: "LuDna",
+        title: "Inherited Gene Changes",
+        text: "Certain inherited changes, such as BAP1 gene mutations, may increase the risk of mesothelioma."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "LuHardHat",
+        title: "Asbestos Exposure",
+        text: "Exposure to asbestos is the most common cause of mesothelioma. The disease may develop decades after exposure."
+      },
+      {
+        icon: "LuHammer",
+        title: "Occupational Exposure",
+        text: "Jobs in construction, shipbuilding, mining, milling, military service and auto repair may increase asbestos exposure."
+      },
+      {
+        icon: "LuRadiation",
+        title: "Radiation Exposure",
+        text: "Previous radiation treatment or occupational radiation exposure may increase the risk."
+      },
+      {
+        icon: "LuMountain",
+        title: "Erionite Exposure",
+        text: "Exposure to erionite, a naturally occurring mineral similar to asbestos, may increase risk."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Shortness of Breath",
+        text: "Difficulty breathing is one of the most common symptoms of mesothelioma.",
+        img: "/symptoms/mesothelioma-breathlessness.png"
+      },
+      {
+        title: "Persistent Cough",
+        text: "A cough that continues or worsens over time may occur.",
+        img: "/symptoms/mesothelioma-cough.png"
+      },
+      {
+        title: "Chest or Abdominal Pain",
+        text: "Pain depends on where the mesothelioma develops.",
+        img: "/symptoms/mesothelioma-pain.png"
+      },
+      {
+        title: "Fatigue",
+        text: "Persistent tiredness or lack of energy is common.",
+        img: "/symptoms/mesothelioma-fatigue.png"
+      },
+      {
+        title: "Night Sweats",
+        text: "Some people experience excessive sweating during sleep.",
+        img: "/symptoms/mesothelioma-night-sweats.png"
+      },
+      {
+        title: "Unexplained Weight Loss",
+        text: "Weight loss without trying may occur as the disease progresses.",
+        img: "/symptoms/mesothelioma-weight-loss.png"
+      },
+      {
+        title: "Digestive Symptoms",
+        text: "Loss of appetite, nausea, vomiting or diarrhea may occur in abdominal mesothelioma.",
+        img: "/symptoms/mesothelioma-digestive.png"
+      },
+      {
+        title: "Scrotal Swelling or Lump",
+        text: "Mesothelioma involving the lining around the testicles may cause swelling, pain or a lump.",
+        img: "/symptoms/mesothelioma-scrotum.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "A healthcare provider reviews symptoms, medical history and possible asbestos exposure.",
+        img: "/diagnosis/mesothelioma-exam.png"
+      },
+      {
+        title: "Blood Tests",
+        text: "Blood tests may be performed as part of the evaluation.",
+        img: "/diagnosis/mesothelioma-blood.png"
+      },
+      {
+        title: "Imaging Tests",
+        text: "Chest X-rays, CT scans and other imaging tests help identify tumors and affected areas.",
+        img: "/diagnosis/mesothelioma-imaging.png"
+      },
+      {
+        title: "PET Scan",
+        text: "PET scans help determine whether mesothelioma has spread to other parts of the body.",
+        img: "/diagnosis/mesothelioma-pet.png"
+      },
+      {
+        title: "Fluid Analysis",
+        text: "Fluid may be removed from around the lungs or abdomen and examined for cancer cells.",
+        img: "/diagnosis/mesothelioma-fluid.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A biopsy confirms the diagnosis by examining tissue under a microscope.",
+        img: "/diagnosis/mesothelioma-biopsy.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Different surgical procedures may remove tumors or affected tissue depending on the type and location of mesothelioma.",
+        img: "/treatment/mesothelioma-surgery.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses medicines to destroy cancer cells throughout the body.",
+        img: "/treatment/mesothelioma-chemo.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the immune system recognize and attack cancer cells.",
+        img: "/treatment/mesothelioma-immunotherapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapies may be used when cancer cells have specific genetic changes.",
+        img: "/treatment/mesothelioma-targeted.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams to destroy cancer cells or relieve symptoms.",
+        img: "/treatment/mesothelioma-radiation.png"
+      }
+    ],
+
+    supportiveCare: [
+      {
+        title: "Palliative Care",
+        text: "Palliative care helps manage symptoms, improve comfort and reduce treatment-related side effects."
+      },
+      {
+        title: "Fluid Drainage",
+        text: "Procedures may be performed to remove fluid that builds up around the lungs, heart or abdomen."
+      }
+    ]
+  }
 }
 
 ];
+
+
+
+
+
+
 
 export default cancersData;
