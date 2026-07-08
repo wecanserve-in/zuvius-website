@@ -60,7 +60,7 @@ const cancersData = [
   { name: "Nasal Cancer", desc: "Begins in the nasal cavity.", img: "/cancer-types/nose.png" },
   { name: "Nasopharyngeal Cancer", desc: "Affects the upper part of the throat behind the nose.", img: "/cancer-types/throat.png" },
   { name: "Neuroblastoma", desc: "A cancer that develops from immature nerve cells.", img: "/cancer-types/nerve.png" },
-  { name: "Non-Hodgkin Lymphoma", desc: "A cancer of white blood cells.", img: "/cancer-types/lymphoma.png" },
+  
 
   { name: "Ocular Melanoma", desc: "Melanoma that begins in the eye.", img: "/cancer-types/eye.png" },
   { name: "Oral Cancer (Mouth Cancer)", desc: "Occurs in the tissues of the mouth.", img: "/cancer-types/oral.png" },
@@ -105,7 +105,7 @@ const cancersData = [
 
   { name: "Yolk Sac Tumor", desc: "A rare germ cell tumor.", img: "/cancer-types/germ-cell.png" },
 
-  { name: "Zollinger-Ellison Syndrome Associated Tumors", desc: "Tumors linked with excess stomach acid production.", img: "/cancer-types/stomach.png" },
+  { name: "Zollinger-Ellison Syndrome", desc: "Tumors linked with excess stomach acid production.", img: "/cancer-types/stomach.png" },
 ];
 
 const letters = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];

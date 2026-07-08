@@ -5216,13 +5216,9 @@ typesStages: {
         title: "Long-Term Hepatitis B or C Infection",
         text: "Chronic hepatitis B or hepatitis C infection is the most common risk factor for liver cancer."
       },
+      
       {
-        icon: "/icons/liver-disease.png",
-        title: "Cirrhosis",
-        text: "Cirrhosis, or severe scarring of the liver, increases the likelihood of developing liver cancer."
-      },
-      {
-        icon: "/icons/fatty-liver.png",
+        icon: "/icons/fatty_liver.png",
         title: "Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD)",
         text: "People with MASLD have a higher risk of developing liver cancer."
       },
@@ -5240,7 +5236,7 @@ typesStages: {
         text: "Long-term heavy alcohol consumption can damage the liver and increase liver cancer risk."
       },
       {
-        icon: "/icons/obesity.png",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "Obesity increases the chance of developing liver cancer, particularly when associated with fatty liver disease."
       },
@@ -5257,43 +5253,34 @@ typesStages: {
       {
         title: "Upper Right Abdominal Pain",
         text: "Pain or discomfort in the upper right side of the abdomen may occur.",
-        img: "/symptoms/liver-abdominal-pain.png"
+        img: "/symptoms/adrenal-abdominal.png"
       },
       {
         title: "Abdominal Swelling",
         text: "The abdomen may become swollen because of fluid buildup or an enlarged liver.",
-        img: "/symptoms/liver-abdominal-swelling.png"
+        img: "/symptoms/adrenal-fullness.png"
       },
       {
         title: "Loss of Appetite",
         text: "Many people lose interest in eating or feel full quickly.",
-        img: "/symptoms/liver-loss-appetite.png"
+        img: "/symptoms/duodenal-nausea.png"
       },
       {
         title: "Unexplained Weight Loss",
         text: "Weight loss without trying may be a warning sign.",
-        img: "/symptoms/liver-weight-loss.png"
+        img: "/symptoms/chondro-weight.png"
       },
       {
         title: "Jaundice",
         text: "Yellowing of the skin and eyes may develop when the liver is not working properly.",
-        img: "/symptoms/liver-jaundice.png"
+        img: "/symptoms/bile-jaundice.png"
       },
       {
         title: "Fatigue",
         text: "Persistent tiredness or weakness is common.",
-        img: "/symptoms/liver-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       },
-      {
-        title: "Nausea and Vomiting",
-        text: "Some people experience nausea, vomiting or digestive discomfort.",
-        img: "/symptoms/liver-nausea.png"
-      },
-      {
-        title: "Itchy Skin",
-        text: "Generalized itching may occur due to liver dysfunction.",
-        img: "/symptoms/liver-itching.png"
-      }
+      
     ]
   },
 
@@ -5302,32 +5289,28 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider reviews symptoms, medical history and performs a physical examination.",
-        img: "/diagnosis/liver-exam.png"
+        img: "/diagnosis/adrenal-exam.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests, including liver function tests, help evaluate liver health and look for signs of cancer.",
-        img: "/diagnosis/liver-blood-test.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "CT Scan",
         text: "CT scans provide detailed images to determine the size and location of liver tumors.",
-        img: "/diagnosis/liver-ct.png"
+        img: "/diagnosis/anal-scan.png"
       },
       {
         title: "MRI Scan",
         text: "MRI produces detailed images that help evaluate liver tumors.",
-        img: "/diagnosis/liver-mri.png"
+        img: "/diagnosis/astro-mri.png"
       },
-      {
-        title: "Liver Ultrasound",
-        text: "Ultrasound creates images of the liver and may help detect abnormal areas.",
-        img: "/diagnosis/liver-ultrasound.png"
-      },
+      
       {
         title: "Liver Biopsy",
         text: "A biopsy removes a small tissue sample to confirm whether liver cancer is present.",
-        img: "/diagnosis/liver-biopsy.png"
+        img: "/diagnosis/bile-biopsy.png"
       }
     ]
   },
@@ -5337,51 +5320,39 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy or slow the growth of cancer cells.",
-        img: "/treatment/liver-chemotherapy.png"
+        img: "/treatment/adrenal-chemo.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the body's immune system recognize and attack cancer cells.",
-        img: "/treatment/liver-immunotherapy.png"
+        img: "/treatment/anal-immuno.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy attacks specific molecules that help liver cancer cells grow.",
-        img: "/treatment/liver-targeted-therapy.png"
+        img: "/treatment/appendix-targeted.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to destroy cancer cells.",
-        img: "/treatment/liver-radiation.png"
+        img: "/treatment/astro-radiation.png"
       },
       {
         title: "Chemoembolization",
         text: "Chemoembolization delivers chemotherapy directly into the blood vessels feeding the tumor while reducing its blood supply.",
-        img: "/treatment/liver-chemoembolization.png"
+        img: "/treatment/astro-chemo.png"
       },
-      {
-        title: "Radioembolization",
-        text: "Radioembolization delivers tiny radioactive particles directly into the liver tumor through its blood supply.",
-        img: "/treatment/liver-radioembolization.png"
-      },
-      {
-        title: "Ablation",
-        text: "Ablation destroys liver tumors using heat, cold or other specialized techniques without removing large amounts of liver tissue.",
-        img: "/treatment/liver-ablation.png"
-      },
-      {
-        title: "Liver Resection",
-        text: "Liver resection removes the part of the liver containing the tumor while preserving healthy tissue whenever possible.",
-        img: "/treatment/liver-resection.png"
-      },
+      
+      
       {
         title: "Liver Transplantation",
         text: "A liver transplant removes the diseased liver and replaces it with a healthy donor liver in selected patients.",
-        img: "/treatment/liver-transplant.png"
+        img: "/treatment/astro-surgery.png"
       }
     ]
   }
 },
+
 //lung cancer
 {
   slug: "lung-cancer",
@@ -5434,12 +5405,12 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "LuUsers",
+        icon: "/icons/age.png",
         title: "Family History",
         text: "Having a family history of lung cancer may increase the risk of developing the disease."
       },
       {
-        icon: "LuRadiation",
+        icon: "/icons/radiation.png",
         title: "Previous Chest Radiation",
         text: "Radiation therapy to the chest for another condition may increase the risk of lung cancer later in life."
       }
@@ -5447,17 +5418,17 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "LuCigarette",
+        icon: "/icons/smoking.png",
         title: "Smoking",
         text: "Smoking cigarettes, cigars or pipes is the leading risk factor for lung cancer."
       },
       {
-        icon: "LuWind",
+        icon: "/icons/smoking.png",
         title: "Secondhand Smoke",
         text: "Regular exposure to tobacco smoke from other people also increases the risk."
       },
       {
-        icon: "LuFactory",
+        icon: "/icons/diet.png",
         title: "Harmful Substance Exposure",
         text: "Exposure to radon, asbestos, uranium, diesel exhaust, silica, coal products and air toxins can increase the risk of lung cancer."
       }
@@ -5469,42 +5440,34 @@ typesStages: {
       {
         title: "Persistent Cough",
         text: "A cough that does not go away or gradually becomes worse.",
-        img: "/symptoms/lung-cough.png"
+        img: "/symptoms/adrenal-metastatic.png"
       },
-      {
-        title: "Shortness of Breath",
-        text: "Difficulty breathing or feeling breathless during normal activities.",
-        img: "/symptoms/lung-breathlessness.png"
-      },
+     
       {
         title: "Chest Pain",
         text: "Persistent pain or discomfort in the chest.",
-        img: "/symptoms/lung-chest-pain.png"
+        img: "/symptoms/esophageal-heartburn.png"
       },
       {
         title: "Coughing Up Blood",
         text: "Blood in the sputum should always be evaluated by a healthcare provider.",
-        img: "/symptoms/lung-blood.png"
+        img: "/symptoms/gist-blood.png"
       },
-      {
-        title: "Hoarseness",
-        text: "A change in the voice or persistent hoarseness.",
-        img: "/symptoms/lung-hoarseness.png"
-      },
+      
       {
         title: "Loss of Appetite",
         text: "Reduced desire to eat without another clear cause.",
-        img: "/symptoms/lung-appetite.png"
+        img: "/symptoms/duodenal-nausea.png"
       },
       {
         title: "Unexplained Weight Loss",
         text: "Weight loss that occurs without changes in diet or exercise.",
-        img: "/symptoms/lung-weight-loss.png"
+        img: "/symptoms/chondro-weight.png"
       },
       {
         title: "Fatigue",
         text: "Persistent tiredness or lack of energy that does not improve with rest.",
-        img: "/symptoms/lung-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       }
     ]
   },
@@ -5514,32 +5477,32 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider reviews symptoms, medical history and performs a physical examination.",
-        img: "/diagnosis/lung-exam.png"
+        img: "/diagnosis/brain-exam.png"
       },
       {
         title: "Chest X-ray",
         text: "A chest X-ray may identify abnormal areas that require further evaluation.",
-        img: "/diagnosis/lung-xray.png"
+        img: "/diagnosis/bone-xray.png"
       },
       {
         title: "CT Scan",
         text: "CT scans provide detailed images of the lungs and help evaluate suspicious abnormalities.",
-        img: "/diagnosis/lung-ct.png"
+        img: "/diagnosis/eso-ct.png"
       },
       {
         title: "PET/CT Scan",
         text: "A PET/CT scan helps determine whether cancer has spread to other parts of the body.",
-        img: "/diagnosis/lung-pet.png"
+        img: "/diagnosis/burkitt-pet.png"
       },
       {
         title: "Bronchoscopy or Biopsy",
         text: "A tissue sample may be collected through bronchoscopy, a needle biopsy or surgery to confirm the diagnosis.",
-        img: "/diagnosis/lung-biopsy.png"
+        img: "/diagnosis/colon-bio.png"
       },
       {
         title: "Molecular Testing",
         text: "Cancer cells may be tested for genetic changes that can help guide targeted treatment.",
-        img: "/diagnosis/lung-molecular.png"
+        img: "/diagnosis/esophageal-grade.png"
       }
     ]
   },
@@ -5549,50 +5512,37 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery removes the tumor or part of the lung when the cancer has not spread extensively.",
-        img: "/treatment/lung-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells or slow their growth.",
-        img: "/treatment/lung-chemo.png"
+        img: "/treatment/anal-chemo.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to destroy cancer cells.",
-        img: "/treatment/lung-radiation.png"
+        img: "/treatment/anal-radiation.png"
       },
-      {
-        title: "Radiofrequency Ablation",
-        text: "This treatment uses heat generated by radio waves to destroy cancer cells.",
-        img: "/treatment/lung-rfa.png"
-      },
+      
       {
         title: "Targeted Therapy",
         text: "Targeted therapy attacks cancer cells with specific genetic changes that help them grow.",
-        img: "/treatment/lung-targeted.png"
+        img: "/treatment/appendix-targeted.png"
       },
       {
         title: "Angiogenesis Inhibitors",
         text: "These medicines help stop tumors from forming the blood vessels they need to grow.",
-        img: "/treatment/lung-angiogenesis.png"
+        img: "/treatment/burkitt-immuno.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the body's immune system recognize and attack cancer cells.",
-        img: "/treatment/lung-immunotherapy.png"
+        img: "/treatment/brain-immuno.png"
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Symptom Relief",
-        text: "Some treatments focus on reducing symptoms such as airway blockage or fluid around the lungs."
-      },
-      {
-        title: "Follow-up Care",
-        text: "Regular follow-up visits and imaging help monitor treatment response and detect recurrence."
-      }
-    ]
+    
   }
 },
 
@@ -5669,22 +5619,22 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "LuCalendar",
+        icon: "/icons/age.png",
         title: "Older Age",
         text: "Male breast cancer is diagnosed most often in men in their 60s."
       },
       {
-        icon: "LuUsers",
+        icon: "/icons/family-history.png",
         title: "Family History",
         text: "Having a parent, sibling or child with breast or ovarian cancer increases the risk."
       },
       {
-        icon: "LuDna",
+        icon: "/icons/gene-mutations.png",
         title: "Inherited Gene Mutations",
         text: "Inherited mutations, especially BRCA2 and BRCA1, can significantly increase the risk of male breast cancer."
       },
       {
-        icon: "LuTestTube",
+        icon: "/icons/testicular.png",
         title: "Testicular Conditions",
         text: "Undescended testicles, orchitis, testicular injury or removal of a testicle may increase risk."
       }
@@ -5692,17 +5642,17 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "LuRadiation",
+        icon: "/icons/radiation.png",
         title: "Previous Chest Radiation",
         text: "Radiation therapy directed to the chest can increase the chance of developing male breast cancer."
       },
       {
-        icon: "LuBeer",
+        icon: "/icons/alcohol.png",
         title: "Alcohol Use",
         text: "Alcohol use may increase estrogen levels, which can contribute to breast cancer risk."
       },
       {
-        icon: "LuScale",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "Obesity can increase estrogen levels in the body and raise the risk of male breast cancer."
       }
@@ -5798,16 +5748,7 @@ typesStages: {
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Regular Follow-up",
-        text: "Ongoing follow-up appointments help monitor recovery, detect recurrence and manage treatment-related side effects."
-      },
-      {
-        title: "Emotional Support",
-        text: "Counseling and support services can help patients cope with the emotional impact of diagnosis and treatment."
-      }
-    ]
+   
   }
 },
 
@@ -5864,22 +5805,22 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "LuPalette",
+        icon: "/icons/age.png",
         title: "Fair Skin",
         text: "People with fair skin, freckles, blonde or red hair and blue eyes have a higher risk of melanoma."
       },
       {
-        icon: "LuUsers",
+        icon: "/icons/family-history.png",
         title: "Family or Personal History",
         text: "Having a personal or family history of melanoma increases the likelihood of developing the disease."
       },
       {
-        icon: "LuCircle",
+        icon: "/icons/moles.png",
         title: "Many or Atypical Moles",
         text: "Having numerous moles or unusual-looking moles increases melanoma risk."
       },
       {
-        icon: "LuShieldAlert",
+        icon: "/icons/immune-system.png",
         title: "Weakened Immune System",
         text: "A weakened immune system may make it more difficult for the body to prevent melanoma from developing."
       }
@@ -5887,12 +5828,12 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "LuSun",
+        icon: "/icons/sun.png",
         title: "Excess Sun Exposure",
         text: "Long-term exposure to ultraviolet (UV) radiation, especially severe sunburns during childhood, increases melanoma risk."
       },
       {
-        icon: "LuLampDesk",
+        icon: "/icons/tanning-bed.png",
         title: "Tanning Beds",
         text: "Using tanning beds exposes the skin to UV radiation and significantly increases the risk of melanoma."
       }
@@ -6003,17 +5944,7 @@ typesStages: {
       }
     ],
 
-    supportiveCare: [
-      {
-        title: "Regular Skin Examinations",
-        text: "Routine follow-up appointments help detect recurrence or new melanomas at an early stage."
-      },
-      {
-        title: "Sun Protection",
-        text: "Protecting the skin from UV exposure by using sunscreen, wearing protective clothing and avoiding tanning beds helps reduce future risk."
       }
-    ]
-  }
 },
 
 //mesothelioma
@@ -6064,12 +5995,12 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "LuUsers",
+        icon: "/icons/age.png",
         title: "Male Sex",
         text: "Mesothelioma occurs more often in males than females."
       },
       {
-        icon: "LuDna",
+        icon: "/icons/family-history.png",
         title: "Inherited Gene Changes",
         text: "Certain inherited changes, such as BAP1 gene mutations, may increase the risk of mesothelioma."
       }
@@ -6077,22 +6008,22 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "LuHardHat",
+        icon: "/icons/asbestos.svg  ",
         title: "Asbestos Exposure",
         text: "Exposure to asbestos is the most common cause of mesothelioma. The disease may develop decades after exposure."
       },
       {
-        icon: "LuHammer",
+        icon: "/icons/exposure.png",
         title: "Occupational Exposure",
         text: "Jobs in construction, shipbuilding, mining, milling, military service and auto repair may increase asbestos exposure."
       },
       {
-        icon: "LuRadiation",
+        icon: "/icons/radiation.png",
         title: "Radiation Exposure",
         text: "Previous radiation treatment or occupational radiation exposure may increase the risk."
       },
       {
-        icon: "LuMountain",
+        icon: "/icons/erionite.png",
         title: "Erionite Exposure",
         text: "Exposure to erionite, a naturally occurring mineral similar to asbestos, may increase risk."
       }
@@ -6208,25 +6139,5067 @@ typesStages: {
       }
     ],
 
-    supportiveCare: [
+   
+  }
+},
+
+//multiple myeloma
+
+{
+  slug: "multiple-myeloma",
+
+  title: "Multiple Myeloma",
+
+  description:
+    "Bone marrow is the soft, spongy tissue inside your bones that produces blood cells, including plasma cells. Plasma cells are a type of white blood cell that helps your immune system fight infections by making antibodies.",
+
+  bannerImg: "/cancers/multiple-myeloma.webp",
+
+  overview: {
+    intro:
+      "Multiple myeloma is a rare blood cancer that develops in plasma cells within the bone marrow. It occurs when healthy plasma cells become abnormal, multiply uncontrollably and produce abnormal proteins called M proteins. These cancerous cells can crowd out healthy blood-forming cells and damage bones, kidneys and other tissues.",
+
+    description:
+      "Multiple myeloma is considered a chronic cancer that can often be managed but not cured. Healthcare providers use the disease stage, genetic changes and other test results to guide treatment decisions. Although the disease may return over time, modern therapies can slow its progression, relieve symptoms and help many people live longer.",
+  },
+
+  typesStages: {
+    stages: [
       {
-        title: "Palliative Care",
-        text: "Palliative care helps manage symptoms, improve comfort and reduce treatment-related side effects."
+        label: "I",
+        title: "Stage I",
+        text: "The disease is growing slowly and has the lowest tumor burden based on blood test results."
       },
       {
-        title: "Fluid Drainage",
-        text: "Procedures may be performed to remove fluid that builds up around the lungs, heart or abdomen."
+        label: "II",
+        title: "Stage II",
+        text: "The disease has intermediate features and falls between Stage I and Stage III."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "The disease is growing more aggressively and has the highest tumor burden based on staging tests."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/age.png",
+        title: "Older Age",
+        text: "Multiple myeloma is most commonly diagnosed in older adults, with the median age at diagnosis being about 69 years."
+      },
+      {
+        icon: "/icons/gender.png",
+        title: "Male Sex",
+        text: "Multiple myeloma affects males more often than females."
+      },
+      {
+        icon: "/icons/family-history.png",
+        title: "Family History",
+        text: "Having a close family member with multiple myeloma may slightly increase risk, although the condition is not considered hereditary."
+      },
+      {
+        icon: "/icons/race.png",
+        title: "Race",
+        text: "Multiple myeloma occurs about twice as often in Black people as in people of other races."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/exposure.png",
+        title: "Environmental Exposure",
+        text: "Exposure to pesticides, fertilizers or Agent Orange may be associated with an increased risk."
+      },
+      {
+        icon: "/icons/overweight.png",
+        title: "Obesity",
+        text: "Obesity is a known risk factor for developing multiple myeloma."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Bone Pain",
+        text: "Bone pain, especially in the back, chest, pelvis, head or upper legs, is often one of the first symptoms.",
+        img: "/symptoms/myeloma-bone-pain.png"
+      },
+      {
+        title: "Fatigue and Weakness",
+        text: "Low red blood cell counts (anemia) can cause persistent tiredness and weakness.",
+        img: "/symptoms/myeloma-fatigue.png"
+      },
+      {
+        title: "Frequent Infections",
+        text: "Low healthy white blood cell levels can make infections occur more easily.",
+        img: "/symptoms/myeloma-infection.png"
+      },
+      {
+        title: "Numbness or Tingling",
+        text: "Nerve damage may cause numbness or tingling in the arms or legs.",
+        img: "/symptoms/myeloma-tingling.png"
+      },
+      {
+        title: "Unexplained Weight Loss",
+        text: "Weight loss without trying may occur as the disease progresses.",
+        img: "/symptoms/myeloma-weight-loss.png"
+      },
+      {
+        title: "Nausea and Vomiting",
+        text: "Some people experience nausea and vomiting due to complications of the disease.",
+        img: "/symptoms/myeloma-nausea.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Blood Tests",
+        text: "Blood tests check blood cell counts, organ function and abnormal antibodies such as M proteins.",
+        img: "/diagnosis/myeloma-blood.png"
+      },
+      {
+        title: "Urine Tests",
+        text: "Urine tests help detect abnormal proteins that may indicate multiple myeloma.",
+        img: "/diagnosis/myeloma-urine.png"
+      },
+      {
+        title: "Imaging Tests",
+        text: "X-rays, CT scans, MRI scans and PET scans help identify bone damage and myeloma tumors.",
+        img: "/diagnosis/myeloma-imaging.png"
+      },
+      {
+        title: "Bone Marrow Biopsy",
+        text: "A bone marrow biopsy or aspiration confirms the diagnosis by detecting abnormal plasma cells.",
+        img: "/diagnosis/myeloma-biopsy.png"
+      },
+      {
+        title: "Genetic Testing",
+        text: "Genetic testing on biopsy samples helps identify gene changes that influence treatment planning.",
+        img: "/diagnosis/myeloma-genetic.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Stem Cell Transplant",
+        text: "Stem cell transplantation replaces damaged bone marrow cells with healthy stem cells and may slow disease progression.",
+        img: "/treatment/myeloma-transplant.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy destroys abnormal plasma cells and is often used before stem cell transplantation.",
+        img: "/treatment/myeloma-chemo.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy attacks specific weaknesses in myeloma cells to help stop their growth.",
+        img: "/treatment/myeloma-targeted.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the immune system recognize and destroy myeloma cells. CAR T-cell therapy is one example.",
+        img: "/treatment/myeloma-immunotherapy.png"
+      },
+      {
+        title: "Steroid Therapy",
+        text: "High-dose steroids help destroy myeloma cells and reduce inflammation.",
+        img: "/treatment/myeloma-steroids.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy may be used to shrink bone tumors and relieve pain.",
+        img: "/treatment/myeloma-radiation.png"
+      }
+    ],
+
+    
+  }
+},
+
+//nasal cancer
+
+//nasopharyngeal-cancer
+
+{
+  slug: "nasopharyngeal-cancer",
+
+  title: "Nasopharyngeal Cancer",
+
+  description:
+    "The nasopharynx is the upper part of the throat located behind the nose. It allows air to pass from the nose into the throat and plays an important role in normal breathing.",
+
+  bannerImg: "/cancers/nasopharyngeal-cancer.webp",
+
+  overview: {
+    intro:
+      "Nasopharyngeal cancer is a rare type of head and neck cancer that develops in the tissues of the nasopharynx, the area connecting the back of the nose to the back of the mouth. It begins when abnormal cells grow uncontrollably and form tumors that can spread to nearby lymph nodes and other parts of the body.",
+
+    description:
+      "The stage of the cancer helps determine the most appropriate treatment approach. Detecting nasopharyngeal cancer early can improve treatment outcomes before it spreads to distant organs such as the lungs, liver or bones.",
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "0",
+        title: "Stage 0",
+        text: "Cancer is limited to the top layer of cells lining the inside of the nasopharynx."
+      },
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The tumor has grown into nearby areas, such as the nasal cavity or the back of the throat, but has not spread to lymph nodes."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "Cancer has spread to one or more lymph nodes on one side of the neck."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to lymph nodes on both sides of the neck."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to nearby structures such as the skull or to distant organs like the lungs or liver."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/virus.png",
+        title: "Epstein-Barr Virus (EBV)",
+        text: "Infection with Epstein-Barr virus is strongly associated with nasopharyngeal cancer."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "People with a close family member who has had nasopharyngeal cancer have a higher risk."
+      },
+      {
+        icon: "/icons/world.png",
+        title: "Geographic Background",
+        text: "The disease is more common in people from Southeast Asia, southern China and northern Africa."
+      },
+      {
+        icon: "/icons/male.png",
+        title: "Male Sex",
+        text: "Men are about three times more likely than women to develop nasopharyngeal cancer."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Tobacco Use",
+        text: "Smoking or using other tobacco products increases the risk of developing nasopharyngeal cancer."
+      },
+      {
+        icon: "/icons/alcohol.png",
+        title: "Heavy Alcohol Consumption",
+        text: "Frequent and heavy alcohol use is linked with a greater chance of developing this cancer."
+      },
+      {
+        icon: "/icons/diet.png",
+        title: "Salt-Cured Foods",
+        text: "Regularly eating large amounts of salt-cured meat or fish may increase the risk of nasopharyngeal cancer."
+      },
+      {
+        icon: "/icons/smoke.png",
+        title: "Dust and Smoke Exposure",
+        text: "Long-term exposure to high levels of dust and smoke may increase the likelihood of developing this cancer."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Painless Neck Lump",
+        text: "A painless lump at the back or side of the neck caused by enlarged lymph nodes is the most common symptom.",
+        img: "/symptoms/nasopharyngeal-neck-lump.png"
+      },
+      {
+        title: "Hearing Problems",
+        text: "Hearing loss, ringing in the ears or a feeling of fullness in the ears may occur.",
+        img: "/symptoms/nasopharyngeal-hearing.png"
+      },
+      {
+        title: "Persistent Ear Infections",
+        text: "Ear infections that do not improve or continue to return can be a warning sign.",
+        img: "/symptoms/nasopharyngeal-ear-infection.png"
+      },
+      {
+        title: "Nasal Symptoms",
+        text: "A blocked nose or repeated nosebleeds may develop as the tumor grows.",
+        img: "/symptoms/nasopharyngeal-nose.png"
+      },
+      {
+        title: "Facial Pain or Numbness",
+        text: "Pain, numbness or discomfort in the face may occur if nearby nerves are affected.",
+        img: "/symptoms/nasopharyngeal-face.png"
+      },
+      {
+        title: "Difficulty Breathing or Speaking",
+        text: "Advanced disease may cause trouble breathing, speaking or opening the mouth.",
+        img: "/symptoms/nasopharyngeal-breathing.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "A healthcare provider examines the head, neck, nose, throat, facial muscles and lymph nodes while reviewing your medical and family history.",
+        img: "/diagnosis/nasopharyngeal-exam.png"
+      },
+      {
+        title: "Epstein-Barr Virus Blood Test",
+        text: "Blood tests may measure Epstein-Barr virus levels because the infection is commonly linked to this cancer.",
+        img: "/diagnosis/nasopharyngeal-ebv.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A tissue sample is removed from the abnormal area and examined under a microscope to confirm cancer.",
+        img: "/diagnosis/nasopharyngeal-biopsy.png"
+      },
+      {
+        title: "CT or MRI Scan",
+        text: "CT and MRI scans help determine the tumor's size, location and whether nearby structures are involved.",
+        img: "/diagnosis/nasopharyngeal-ct-mri.png"
+      },
+      {
+        title: "PET Scan",
+        text: "A PET scan helps identify whether cancer has spread to lymph nodes or other areas of the body.",
+        img: "/diagnosis/nasopharyngeal-pet.png"
+      },
+      {
+        title: "Hearing Test",
+        text: "A hearing test may be performed to evaluate hearing changes related to the tumor.",
+        img: "/diagnosis/nasopharyngeal-hearing-test.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy is a primary treatment that uses high-energy beams to destroy cancer cells.",
+        img: "/treatment/nasopharyngeal-radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses medicines to destroy cancer cells or slow their growth.",
+        img: "/treatment/nasopharyngeal-chemotherapy.png"
+      },
+      {
+        title: "Chemoradiation",
+        text: "Chemotherapy and radiation therapy may be combined to improve treatment effectiveness.",
+        img: "/treatment/nasopharyngeal-chemoradiation.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy attacks specific features of cancer cells while limiting damage to healthy tissue.",
+        img: "/treatment/nasopharyngeal-targeted.png"
+      },
+      {
+        title: "Surgery",
+        text: "Surgery may be used in selected cases, particularly to remove lymph nodes that do not respond to other treatments.",
+        img: "/treatment/nasopharyngeal-surgery.png"
       }
     ]
   }
-}
+},
+
+//neuroblastoma
+
+{
+  slug: "neuroblastoma",
+
+  title: "Neuroblastoma",
+
+  description:
+    "The sympathetic nervous system is part of the body's nervous system that helps regulate automatic functions such as heart rate, blood pressure and the body's response to stress. It contains immature nerve cells that develop before birth and during early childhood.",
+
+  bannerImg: "/cancers/neuroblastoma.webp",
+
+  overview: {
+    intro:
+      "Neuroblastoma is a childhood cancer that develops in immature nerve cells called neuroblasts within the sympathetic nervous system. It most commonly begins in the adrenal glands above the kidneys but can also develop in nerve tissue in the abdomen, chest or neck.",
+
+    description:
+      "Neuroblastoma mainly affects babies and young children, usually before 5 years of age. The cancer may remain localized or spread to areas such as the bones, bone marrow, liver, skin or lymph nodes, making early diagnosis and appropriate risk-based treatment important.",
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "L1",
+        title: "Stage L1",
+        text: "The tumor is confined to one area of the body and has not spread or involved nearby vital structures."
+      },
+      {
+        label: "L2",
+        title: "Stage L2",
+        text: "The tumor remains in the original body region but has spread to nearby tissues or surrounds important structures such as major blood vessels."
+      },
+      {
+        label: "M",
+        title: "Stage M",
+        text: "Cancer has spread to distant parts of the body, including the bones, bone marrow, liver or lymph nodes."
+      },
+      {
+        label: "MS",
+        title: "Stage MS",
+        text: "This special stage occurs in some children younger than 18 months, where cancer has spread only to the skin, liver or bone marrow and often has a favorable outlook."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/baby.png",
+        title: "Young Age",
+        text: "Neuroblastoma almost always develops in babies and young children, most often before 5 years of age."
+      },
+      {
+        icon: "/icons/gene.png",
+        title: "Inherited Gene Changes",
+        text: "Rare inherited changes in genes such as ALK or PHOX2B can increase the risk of neuroblastoma."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "A small number of neuroblastoma cases occur in families due to inherited genetic mutations."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/info.png",
+        title: "No Known Lifestyle Risk Factors",
+        text: "Cleveland Clinic notes that no specific environmental exposures or lifestyle factors have been shown to increase the risk of neuroblastoma."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Painless Lump",
+        text: "A firm lump in the abdomen, chest or neck is one of the most common signs of neuroblastoma.",
+        img: "/symptoms/neuroblastoma-lump.png"
+      },
+      {
+        title: "Bone Pain",
+        text: "Cancer that has spread to the bones may cause pain, limping or difficulty walking.",
+        img: "/symptoms/neuroblastoma-bone-pain.png"
+      },
+      {
+        title: "Dark Circles Around the Eyes",
+        text: "Bruising or dark circles around the eyes may develop if cancer spreads near the eye sockets.",
+        img: "/symptoms/neuroblastoma-eyes.png"
+      },
+      {
+        title: "Loss of Appetite",
+        text: "Children may lose interest in eating or feel full because of pressure from the tumor.",
+        img: "/symptoms/neuroblastoma-appetite.png"
+      },
+      {
+        title: "Trouble Breathing or Swallowing",
+        text: "Tumors in the chest or neck can press on nearby structures and make breathing or swallowing difficult.",
+        img: "/symptoms/neuroblastoma-breathing.png"
+      },
+      {
+        title: "Persistent Fever or Fatigue",
+        text: "Children may experience fever, tiredness, weakness or irritability as the disease progresses.",
+        img: "/symptoms/neuroblastoma-fatigue.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "The healthcare provider checks for lumps, swelling and signs affecting the nervous system while reviewing symptoms and family history.",
+        img: "/diagnosis/neuroblastoma-exam.png"
+      },
+      {
+        title: "Blood and Urine Tests",
+        text: "Blood tests and urine tests help evaluate organ function and measure substances commonly produced by neuroblastoma tumors.",
+        img: "/diagnosis/neuroblastoma-blood-urine.png"
+      },
+      {
+        title: "Imaging Tests",
+        text: "Ultrasound, CT, MRI or MIBG scans help identify the tumor's location and determine whether it has spread.",
+        img: "/diagnosis/neuroblastoma-imaging.png"
+      },
+      {
+        title: "Tumor Biopsy",
+        text: "A biopsy confirms the diagnosis by allowing specialists to examine tumor tissue under a microscope.",
+        img: "/diagnosis/neuroblastoma-biopsy.png"
+      },
+      {
+        title: "Bone Marrow Aspiration and Biopsy",
+        text: "Bone marrow testing helps determine whether cancer has spread to the bone marrow.",
+        img: "/diagnosis/neuroblastoma-bone-marrow.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses medicines to destroy cancer cells and is commonly used before or after surgery depending on the child's risk group.",
+        img: "/treatment/neuroblastoma-chemotherapy.png"
+      },
+      {
+        title: "Surgery",
+        text: "Surgery removes the primary tumor whenever it can be safely taken out.",
+        img: "/treatment/neuroblastoma-surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams to destroy remaining cancer cells or treat advanced disease.",
+        img: "/treatment/neuroblastoma-radiation.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the child's immune system recognize and attack neuroblastoma cells.",
+        img: "/treatment/neuroblastoma-immunotherapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy uses medicines designed to attack specific features of neuroblastoma cells.",
+        img: "/treatment/neuroblastoma-targeted.png"
+      },
+      {
+        title: "Stem Cell Transplant",
+        text: "Some children with high-risk neuroblastoma may receive high-dose chemotherapy followed by an autologous stem cell transplant.",
+        img: "/treatment/neuroblastoma-stem-cell.png"
+      }
+    ]
+  }
+},
+
+//ocular melanoma
+
+{
+  slug: "ocular-melanoma",
+
+  title: "Ocular Melanoma",
+
+  description:
+    "The eye contains specialized cells called melanocytes that produce melanin, the pigment responsible for eye color. These cells help protect eye tissues and are found in different parts of the eye, including the uvea.",
+
+  bannerImg: "/cancers/ocular-melanoma.webp",
+
+  overview: {
+    intro:
+      "Ocular melanoma is a rare type of eye cancer that develops in melanocytes, the pigment-producing cells found within the eye. Although melanoma is more commonly associated with the skin, it can also form inside the eye, most often in the uvea, which is the eye's middle layer.",
+
+    description:
+      "Ocular melanoma is treatable, and early detection plays an important role in improving treatment outcomes and survival. Depending on the location and extent of the tumor, treatment is planned to control the cancer while preserving as much vision and eye function as possible.",
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The cancer is small and remains confined to the eye."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor is larger but has not spread outside the eye."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has grown into nearby tissues surrounding the eye."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "The cancer has spread to distant parts of the body, most commonly the liver."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/skin.png",
+        title: "Light Skin",
+        text: "People with lighter skin have a higher risk of developing ocular melanoma."
+      },
+      {
+        icon: "/icons/eye.png",
+        title: "Light-Colored Eyes",
+        text: "Blue, green or gray eyes are associated with an increased risk."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History of Melanoma",
+        text: "Having a biological family member with melanoma may increase the likelihood of developing ocular melanoma."
+      },
+      {
+        icon: "/icons/person.png",
+        title: "White Race",
+        text: "Ocular melanoma occurs more frequently in White individuals than in other racial groups."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/info.png",
+        title: "No Confirmed Lifestyle Risk Factors",
+        text: "Cleveland Clinic does not identify any specific lifestyle habits that are proven to increase the risk of ocular melanoma."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Blurred Vision",
+        text: "Vision may become blurry or less clear as the tumor grows.",
+        img: "/symptoms/ocular-blurred-vision.png"
+      },
+      {
+        title: "Blind Spots",
+        text: "Blind spots or missing areas in vision may gradually become larger.",
+        img: "/symptoms/ocular-blind-spot.png"
+      },
+      {
+        title: "Flashes of Light",
+        text: "Some people notice flashes or other visual disturbances.",
+        img: "/symptoms/ocular-flashes.png"
+      },
+      {
+        title: "Eye Pain or Pressure",
+        text: "Pain or an unusual feeling of pressure in or around the eye may occur.",
+        img: "/symptoms/ocular-eye-pain.png"
+      },
+      {
+        title: "Redness or Dark Spots",
+        text: "New or changing dark spots, freckles, redness or irritation may develop in the eye.",
+        img: "/symptoms/ocular-redness.png"
+      },
+      {
+        title: "Vision Changes",
+        text: "Sudden or progressive changes in vision should be evaluated by an eye specialist.",
+        img: "/symptoms/ocular-vision-change.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Comprehensive Eye Examination",
+        text: "An eye specialist examines the inside of the eye and evaluates vision for signs of melanoma.",
+        img: "/diagnosis/ocular-eye-exam.png"
+      },
+      {
+        title: "Slit Lamp Examination",
+        text: "A slit lamp allows the healthcare provider to detect abnormalities inside the eye, including early tumors.",
+        img: "/diagnosis/ocular-slit-lamp.png"
+      },
+      {
+        title: "Eye Imaging Tests",
+        text: "Tests such as ultrasound, fluorescein angiography or optical coherence tomography help evaluate the tumor.",
+        img: "/diagnosis/ocular-imaging.png"
+      },
+      {
+        title: "CT or MRI Scan",
+        text: "CT or MRI scans may be performed to determine whether cancer has spread beyond the eye.",
+        img: "/diagnosis/ocular-ct-mri.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A fine-needle aspiration or biopsy may be used to confirm the diagnosis by examining tumor cells.",
+        img: "/diagnosis/ocular-biopsy.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery removes part or all of the eye when necessary to prevent the cancer from spreading.",
+        img: "/treatment/ocular-surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy destroys cancer cells and helps shrink eye tumors while preserving surrounding tissue whenever possible.",
+        img: "/treatment/ocular-radiation.png"
+      }
+    ]
+  }
+},
+
+//oralcancer
+
+{
+  slug: "oral-cancer",
+
+  title: "Oral Cancer",
+
+  description:
+    "The oral cavity includes the lips, gums, tongue, inner cheeks, floor of the mouth and the front part of the roof of the mouth. These structures work together to help with speaking, chewing, swallowing and the first stages of digestion.",
+
+  bannerImg: "/cancers/oral-cancer.webp",
+
+  overview: {
+    intro:
+      "Oral cancer is a type of head and neck cancer that develops inside the mouth. It begins when abnormal cells grow uncontrollably in the tissues of the oral cavity, including the lips, tongue, gums, inner cheeks, floor of the mouth or the front portion of the roof of the mouth.",
+
+    description:
+      "Oral cancer may initially resemble common mouth problems such as sores or patches that do not heal. If left untreated, it can spread to nearby tissues in the head and neck or other parts of the body, making early detection and timely treatment especially important."
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The tumor measures 2 centimeters or smaller and has not spread to nearby lymph nodes or distant organs."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor is larger than 2 centimeters but not larger than 4 centimeters and remains confined to its original location."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "The tumor is larger than 4 centimeters or has spread to one nearby lymph node."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread extensively into nearby tissues, multiple lymph nodes or distant parts of the body."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "Having a biological family history of oral cancer may increase the risk of developing the disease."
+      },
+      {
+        icon: "/icons/hpv.png",
+        title: "Human Papillomavirus (HPV)",
+        text: "Certain HPV infections are associated with an increased risk of developing oral cancer."
+      },
+      {
+        icon: "/icons/person.png",
+        title: "Age",
+        text: "Oral cancer is most commonly diagnosed in people who are 60 years of age or older."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking or Tobacco Use",
+        text: "Smoking cigarettes, cigars, pipes or using smokeless tobacco products significantly increases the risk of oral cancer."
+      },
+      {
+        icon: "/icons/alcohol.png",
+        title: "Excessive Alcohol Use",
+        text: "Regular heavy alcohol consumption raises the risk, especially when combined with tobacco use."
+      },
+      {
+        icon: "/icons/sun.png",
+        title: "Excessive Sun Exposure",
+        text: "Frequent sun exposure without lip protection can increase the risk of cancer affecting the lips."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Mouth Sores That Don't Heal",
+        text: "Persistent sores or ulcers that bleed easily and do not heal within two weeks should be evaluated.",
+        img: "/symptoms/oral-mouth-sores.png"
+      },
+      {
+        title: "White or Red Patches",
+        text: "White, red or mixed red-and-white patches inside the mouth may be early warning signs.",
+        img: "/symptoms/oral-patches.png"
+      },
+      {
+        title: "Pain or Numbness",
+        text: "Unexplained pain, tenderness or numbness in the mouth, face or neck may occur.",
+        img: "/symptoms/oral-pain.png"
+      },
+      {
+        title: "Difficulty Chewing or Swallowing",
+        text: "Chewing, swallowing or moving the tongue and jaw may become difficult.",
+        img: "/symptoms/oral-swallowing.png"
+      },
+      {
+        title: "Ear Pain",
+        text: "Persistent ear pain without an ear infection may be associated with oral cancer.",
+        img: "/symptoms/oral-ear-pain.png"
+      },
+      {
+        title: "Unexplained Weight Loss",
+        text: "Losing weight without trying can occur as the disease progresses.",
+        img: "/symptoms/oral-weight-loss.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "The healthcare provider examines the mouth, face, head and neck for abnormal areas or enlarged lymph nodes.",
+        img: "/diagnosis/oral-exam.png"
+      },
+      {
+        title: "Brush Biopsy",
+        text: "A small brush or spatula collects surface cells from a suspicious area for laboratory examination.",
+        img: "/diagnosis/oral-brush-biopsy.png"
+      },
+      {
+        title: "Incisional Biopsy",
+        text: "A small tissue sample is removed so it can be examined under a microscope to confirm cancer.",
+        img: "/diagnosis/oral-biopsy.png"
+      },
+      {
+        title: "Laryngoscopy or Pharyngoscopy",
+        text: "Special instruments or a flexible scope allow the healthcare provider to examine areas deeper in the mouth and throat.",
+        img: "/diagnosis/oral-laryngoscopy.png"
+      },
+      {
+        title: "Imaging Tests",
+        text: "Imaging studies may be performed to determine the size of the tumor and whether it has spread.",
+        img: "/diagnosis/oral-imaging.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery removes the tumor and may also involve nearby lymph nodes or reconstructive procedures when necessary.",
+        img: "/treatment/oral-surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams to destroy cancer cells or prevent them from growing.",
+        img: "/treatment/oral-radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses anti-cancer medicines to kill cancer cells and may be combined with other treatments.",
+        img: "/treatment/oral-chemotherapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy uses medicines that specifically attack cancer cells while reducing damage to healthy tissues.",
+        img: "/treatment/oral-targeted.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the body's immune system recognize and destroy cancer cells.",
+        img: "/treatment/oral-immunotherapy.png"
+      }
+    ]
+  }
+},
+
+//osteosarcoma
+
+{
+  slug: "osteosarcoma",
+
+  title: "Osteosarcoma",
+
+  description:
+    "Bones provide structure, protect vital organs and work with muscles to support movement. They also store minerals and contain bone marrow, where new blood cells are produced.",
+
+  bannerImg: "/cancers/osteosarcoma.webp",
+
+  overview: {
+    intro:
+      "Osteosarcoma is a type of bone cancer that develops when abnormal bone-forming cells grow uncontrollably and form malignant tumors. It most commonly begins in the long bones of the arms or legs, especially near the knees, hips or shoulders, and is seen most often in children, teenagers and young adults.",
+
+    description:
+      "Osteosarcoma can grow at different rates depending on its grade, with high-grade tumors being more likely to spread to other parts of the body. Early diagnosis and timely treatment are important because they improve the chances of successful treatment and help preserve normal bone function whenever possible."
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "Low",
+        title: "Low-Grade",
+        text: "Low-grade osteosarcomas grow slowly and are less likely to spread to other parts of the body."
+      },
+      {
+        label: "Mid",
+        title: "Intermediate-Grade",
+        text: "Intermediate-grade tumors have characteristics between low-grade and high-grade osteosarcomas."
+      },
+      {
+        label: "High",
+        title: "High-Grade",
+        text: "High-grade osteosarcomas grow rapidly and have a greater chance of spreading to other areas of the body."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/person.png",
+        title: "Young Age",
+        text: "Osteosarcoma occurs most often in children, teenagers and young adults, especially during periods of rapid bone growth."
+      },
+      {
+        icon: "/icons/growth.png",
+        title: "Rapid Bone Growth",
+        text: "Growth spurts during adolescence are associated with an increased risk of developing osteosarcoma."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited Genetic Conditions",
+        text: "Certain inherited conditions, including Li-Fraumeni syndrome and hereditary retinoblastoma, can increase the risk."
+      },
+      {
+        icon: "/icons/bone.png",
+        title: "Bone Disorders",
+        text: "Some bone conditions, such as Paget's disease of bone, are associated with a higher risk of osteosarcoma."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/radiation.png",
+        title: "Previous Radiation Therapy",
+        text: "Radiation treatment received for another cancer may increase the chance of developing osteosarcoma later in life."
+      },
+      {
+        icon: "/icons/chemotherapy.png",
+        title: "Previous Cancer Treatment",
+        text: "Certain chemotherapy medicines, particularly alkylating agents, may increase the future risk of osteosarcoma."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Bone Pain",
+        text: "Persistent pain or tenderness around a bone is the most common symptom.",
+        img: "/symptoms/osteosarcoma-bone-pain.png"
+      },
+      {
+        title: "Swelling or Lump",
+        text: "A noticeable lump or swelling may develop near the affected bone and may feel warm.",
+        img: "/symptoms/osteosarcoma-swelling.png"
+      },
+      {
+        title: "Limited Joint Movement",
+        text: "Movement of a nearby joint may become difficult or restricted.",
+        img: "/symptoms/osteosarcoma-joint.png"
+      },
+      {
+        title: "Bone Fracture",
+        text: "A weakened bone may break unexpectedly or after a minor injury.",
+        img: "/symptoms/osteosarcoma-fracture.png"
+      },
+      {
+        title: "Skin Changes",
+        text: "The skin over the affected area may appear discolored or swollen.",
+        img: "/symptoms/osteosarcoma-skin.png"
+      },
+      {
+        title: "Unexplained Fever",
+        text: "Some people may experience fever without another obvious cause.",
+        img: "/symptoms/osteosarcoma-fever.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "The healthcare provider reviews symptoms, medical history and examines the affected bone for swelling or lumps.",
+        img: "/diagnosis/osteosarcoma-exam.png"
+      },
+      {
+        title: "Imaging Tests",
+        text: "X-rays, CT scans and MRI scans help determine the tumor's location, size and extent.",
+        img: "/diagnosis/osteosarcoma-imaging.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A tissue sample is removed and examined under a microscope to confirm osteosarcoma.",
+        img: "/diagnosis/osteosarcoma-biopsy.png"
+      },
+      {
+        title: "Blood Tests",
+        text: "Blood tests may be performed as part of the overall evaluation.",
+        img: "/diagnosis/osteosarcoma-blood.png"
+      },
+      {
+        title: "Bone Scan or PET Scan",
+        text: "Additional imaging may be used to determine whether the cancer has spread to other bones or organs.",
+        img: "/diagnosis/osteosarcoma-pet.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy is commonly given before and after surgery to destroy cancer cells throughout the body.",
+        img: "/treatment/osteosarcoma-chemotherapy.png"
+      },
+      {
+        title: "Surgery",
+        text: "Surgery removes the tumor while preserving as much healthy bone and tissue as possible whenever feasible.",
+        img: "/treatment/osteosarcoma-surgery.png"
+      },
+      {
+        title: "Limb Salvage Surgery",
+        text: "This procedure removes the cancer while preserving the affected limb, often using a bone graft or artificial implant.",
+        img: "/treatment/osteosarcoma-limb-salvage.png"
+      },
+      {
+        title: "Amputation",
+        text: "Amputation may be necessary when the tumor cannot be safely removed while preserving the limb.",
+        img: "/treatment/osteosarcoma-amputation.png"
+      },
+      {
+        title: "Rotationplasty",
+        text: "Rotationplasty is a specialized surgical procedure that may be used in selected patients, particularly children.",
+        img: "/treatment/osteosarcoma-rotationplasty.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy may be used when surgery is not possible or when cancer has spread to areas that cannot be removed surgically.",
+        img: "/treatment/osteosarcoma-radiation.png"
+      }
+    ]
+  }
+},
+
+//ovarian cancer
+
+{
+  slug: "ovarian-cancer",
+
+  title: "Ovarian Cancer",
+
+  description:
+    "The ovaries are two small organs in the female reproductive system that produce eggs and hormones such as estrogen and progesterone. These hormones help regulate the menstrual cycle, fertility and many other functions throughout the body.",
+
+  bannerImg: "/cancers/ovarian-cancer.webp",
+
+  overview: {
+    intro:
+      "Ovarian cancer develops when abnormal cells in the ovaries grow uncontrollably and form a tumor. It is often difficult to detect in its early stages because symptoms usually do not appear until the disease has become more advanced. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "As ovarian cancer progresses, it may spread to nearby tissues or distant parts of the body. Early diagnosis and appropriate treatment are important because they improve treatment planning and may lead to better outcomes. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "Cancer is found in one or both ovaries or fallopian tubes and has not spread outside them."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "Cancer has spread to nearby pelvic structures, such as the uterus, bladder, rectum or surrounding tissues."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread beyond the pelvis to nearby lymph nodes or the lining of the abdomen."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to distant organs, such as the lungs, liver or other parts of the body."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/person.png",
+        title: "Age Over 60",
+        text: "The risk of ovarian cancer increases with age and is highest in people over 60."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited Gene Mutations",
+        text: "Inherited BRCA1, BRCA2 and certain other gene mutations increase the likelihood of developing ovarian cancer."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "Having close relatives with ovarian, breast, uterine or colorectal cancer increases the risk."
+      },
+      {
+        icon: "/icons/endometriosis.png",
+        title: "Endometriosis",
+        text: "People with endometriosis have a higher chance of developing ovarian cancer."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/obesity.png",
+        title: "Obesity",
+        text: "Obesity is associated with an increased risk of ovarian cancer."
+      },
+      {
+        icon: "/icons/hormone.png",
+        title: "Hormone Replacement Therapy",
+        text: "Using postmenopausal hormone replacement therapy may increase ovarian cancer risk."
+      },
+      {
+        icon: "/icons/pregnancy.png",
+        title: "Reproductive History",
+        text: "Never being pregnant, having a first pregnancy after age 30 or never breastfeeding may increase the risk."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Abdominal or Pelvic Pain",
+        text: "Persistent pain or discomfort in the abdomen, pelvis or back may occur.",
+        img: "/symptoms/ovarian-pain.png"
+      },
+      {
+        title: "Bloating",
+        text: "Persistent abdominal bloating or swelling is a common symptom.",
+        img: "/symptoms/ovarian-bloating.png"
+      },
+      {
+        title: "Feeling Full Quickly",
+        text: "Feeling full soon after eating or experiencing a reduced appetite may occur.",
+        img: "/symptoms/ovarian-fullness.png"
+      },
+      {
+        title: "Changes in Bowel Habits",
+        text: "Diarrhea or constipation may develop as the disease progresses.",
+        img: "/symptoms/ovarian-bowel.png"
+      },
+      {
+        title: "Frequent Urination",
+        text: "Needing to urinate more often than usual may be a symptom.",
+        img: "/symptoms/ovarian-urination.png"
+      },
+      {
+        title: "Unexplained Weight Loss",
+        text: "Weight loss without trying can occur in some people with ovarian cancer.",
+        img: "/symptoms/ovarian-weight-loss.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Pelvic Examination",
+        text: "A healthcare provider checks for enlarged ovaries, masses or other abnormal findings.",
+        img: "/diagnosis/ovarian-pelvic-exam.png"
+      },
+      {
+        title: "Imaging Tests",
+        text: "Ultrasound, CT, MRI or PET scans help identify tumors and determine whether the cancer has spread.",
+        img: "/diagnosis/ovarian-imaging.png"
+      },
+      {
+        title: "Blood Tests",
+        text: "Blood tests, including CA-125 and genetic testing, may help evaluate ovarian cancer.",
+        img: "/diagnosis/ovarian-blood-test.png"
+      },
+      {
+        title: "Surgical Biopsy",
+        text: "A biopsy performed during surgery confirms the diagnosis and helps determine the cancer stage.",
+        img: "/diagnosis/ovarian-biopsy.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery is usually the first treatment and aims to remove as much of the cancer as possible.",
+        img: "/treatment/ovarian-surgery.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy may be given before or after surgery to destroy remaining cancer cells.",
+        img: "/treatment/ovarian-chemotherapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy focuses on specific characteristics of cancer cells to slow or stop their growth.",
+        img: "/treatment/ovarian-targeted-therapy.png"
+      },
+      {
+        title: "Hormone Therapy",
+        text: "Hormone therapy may be used for ovarian cancers that rely on hormones to grow.",
+        img: "/treatment/ovarian-hormone-therapy.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the immune system recognize and attack certain ovarian cancer cells.",
+        img: "/treatment/ovarian-immunotherapy.png"
+      }
+    ]
+  }
+},
+
+//pancretic cancer
+
+{
+  slug: "pancreatic-cancer",
+
+  title: "Pancreatic Cancer",
+
+  description:
+    "The pancreas is a gland located behind the stomach that helps digest food and regulates blood sugar by producing digestive enzymes and hormones such as insulin. It plays an essential role in digestion and maintaining normal glucose levels.",
+
+  bannerImg: "/cancers/pancreatic-cancer.webp",
+
+  overview: {
+    intro:
+      "Pancreatic cancer develops when abnormal cells in the pancreas grow uncontrollably and form a tumor. It is an aggressive cancer that often develops silently because symptoms usually don't appear until the disease has advanced. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Pancreatic cancer is difficult to detect early and can spread beyond the pancreas before it is diagnosed. Early evaluation and treatment are important because they can improve treatment options, although management often depends on how far the cancer has progressed. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The cancer is confined to the pancreas and can usually be removed with surgery."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor has grown outside the pancreas or spread to nearby lymph nodes but may still be removable."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "The cancer has spread into major nearby blood vessels, making surgery difficult or not possible."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "The cancer has spread to distant organs such as the liver, lungs or abdomen."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/person.png",
+        title: "Age Over 60",
+        text: "Most people diagnosed with pancreatic cancer are older than 60 years."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited Gene Mutations",
+        text: "Inherited gene changes, including BRCA1 and BRCA2 mutations, can increase pancreatic cancer risk."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "Having close biological relatives with pancreatic cancer increases the likelihood of developing the disease."
+      },
+      {
+        icon: "/icons/diabetes.png",
+        title: "Type 2 Diabetes",
+        text: "Type 2 diabetes is associated with a higher risk of pancreatic cancer."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking or Tobacco Use",
+        text: "Smoking cigarettes, cigars or other tobacco products is one of the strongest risk factors for pancreatic cancer."
+      },
+      {
+        icon: "/icons/obesity.png",
+        title: "Obesity",
+        text: "Obesity, particularly excess weight around the waist, increases pancreatic cancer risk."
+      },
+      {
+        icon: "/icons/chemical.png",
+        title: "Chemical Exposure",
+        text: "Long-term exposure to certain pesticides and petroleum-related chemicals may increase risk."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Abdominal or Back Pain",
+        text: "Pain in the upper abdomen, middle back or side is a common symptom.",
+        img: "/symptoms/pancreatic-pain.png"
+      },
+      {
+        title: "Jaundice",
+        text: "Yellowing of the skin and eyes may occur when the tumor blocks the bile duct.",
+        img: "/symptoms/pancreatic-jaundice.png"
+      },
+      {
+        title: "Weight Loss",
+        text: "Unexplained weight loss and loss of appetite are common signs.",
+        img: "/symptoms/pancreatic-weight-loss.png"
+      },
+      {
+        title: "Digestive Problems",
+        text: "Nausea, upset stomach, constipation or diarrhea may develop as the disease progresses.",
+        img: "/symptoms/pancreatic-digestion.png"
+      },
+      {
+        title: "Dark Urine or Pale Stool",
+        text: "Changes in urine or stool color may occur because of blocked bile flow.",
+        img: "/symptoms/pancreatic-urine.png"
+      },
+      {
+        title: "Fatigue",
+        text: "Persistent tiredness or weakness may develop even with adequate rest.",
+        img: "/symptoms/pancreatic-fatigue.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Imaging Tests",
+        text: "CT scans are commonly used to detect pancreatic tumors. MRI, PET scans and endoscopic ultrasound may also be performed.",
+        img: "/diagnosis/pancreatic-imaging.png"
+      },
+      {
+        title: "Blood Tests",
+        text: "Blood tests may measure enzymes and tumor markers such as CA 19-9.",
+        img: "/diagnosis/pancreatic-blood.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A tissue sample is removed with a needle and examined under a microscope to confirm the diagnosis.",
+        img: "/diagnosis/pancreatic-biopsy.png"
+      },
+      {
+        title: "Genetic Testing",
+        text: "Cancer cells may be tested for gene mutations to help guide targeted treatment options.",
+        img: "/diagnosis/pancreatic-genetic.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery offers the best chance for cure when the cancer is confined to the pancreas and can be completely removed.",
+        img: "/treatment/pancreatic-surgery.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses medicines to destroy cancer cells and is commonly used before or after surgery or for advanced disease.",
+        img: "/treatment/pancreatic-chemotherapy.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy X-rays and may be combined with chemotherapy before or after surgery.",
+        img: "/treatment/pancreatic-radiation.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy attacks specific proteins or genetic changes that help pancreatic cancer grow.",
+        img: "/treatment/pancreatic-targeted.png"
+      },
+      {
+        title: "Clinical Trials",
+        text: "Clinical trials may provide access to promising new therapies being studied for pancreatic cancer.",
+        img: "/treatment/pancreatic-clinical-trials.png"
+      }
+    ]
+  }
+},
+
+//penile cancer 
+
+{
+  slug: "penile-cancer",
+
+  title: "Penile Cancer",
+
+  description:
+    "The penis is part of the male reproductive and urinary systems. It allows urine to leave the body, plays an important role in sexual function and contains tissues, blood vessels and skin that work together to support these functions.",
+
+  bannerImg: "/cancers/penile-cancer.webp",
+
+  overview: {
+    intro:
+      "Penile cancer develops when abnormal cells in the penis grow uncontrollably and form a tumor. It most commonly begins on the head of the penis or beneath the foreskin in uncircumcised people, although it can develop anywhere on the penis. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Penile cancer is uncommon, but it is highly treatable when diagnosed early. If the disease spreads beyond the penis to nearby lymph nodes or other parts of the body, treatment becomes more challenging, making prompt evaluation of any unusual penile changes important. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "Cancer is confined to the tissues of the penis and has not spread to nearby lymph nodes or distant organs."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "Cancer has grown deeper into the tissues of the penis but has not spread to distant parts of the body."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to one or more nearby lymph nodes in the groin."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread extensively into nearby structures, multiple lymph nodes or distant organs."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/person.png",
+        title: "Age Over 55",
+        text: "Most penile cancer cases occur in people who are 55 years of age or older."
+      },
+      {
+        icon: "/icons/hpv.png",
+        title: "HPV Infection",
+        text: "Certain high-risk types of human papillomavirus (HPV) increase the likelihood of developing penile cancer."
+      },
+      {
+        icon: "/icons/hiv.png",
+        title: "HIV Infection",
+        text: "People living with HIV have a higher risk of penile cancer."
+      },
+      {
+        icon: "/icons/medical-history.png",
+        title: "Phimosis or Lichen Sclerosus",
+        text: "Conditions affecting the foreskin, including phimosis and lichen sclerosus, are associated with increased risk."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking or Tobacco Use",
+        text: "Smoking cigarettes or using other tobacco products increases the risk of penile cancer."
+      },
+      {
+        icon: "/icons/hygiene.png",
+        title: "Poor Penile Hygiene",
+        text: "Not cleaning beneath the foreskin regularly may contribute to chronic irritation and increase cancer risk."
+      },
+      {
+        icon: "/icons/radiation.png",
+        title: "Previous PUVA Therapy",
+        text: "PUVA treatment for psoriasis has been linked to a higher risk of penile cancer."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Lump or Sore",
+        text: "A painless lump or sore on the penis that may bleed is one of the most common symptoms.",
+        img: "/symptoms/penile-lump.png"
+      },
+      {
+        title: "Skin Changes",
+        text: "The skin may become thicker, change color or develop unusual flat or crusty growths.",
+        img: "/symptoms/penile-skin.png"
+      },
+      {
+        title: "Foul-Smelling Discharge",
+        text: "A foul-smelling fluid beneath the foreskin may occur, particularly in uncircumcised people.",
+        img: "/symptoms/penile-discharge.png"
+      },
+      {
+        title: "Persistent Rash",
+        text: "A rash or irritation on the penis that does not improve should be evaluated.",
+        img: "/symptoms/penile-rash.png"
+      },
+      {
+        title: "Swelling",
+        text: "Swelling or irritation, especially around the head of the penis, may occur.",
+        img: "/symptoms/penile-swelling.png"
+      },
+      {
+        title: "Small Crusty Bumps",
+        text: "Small raised or crusted bumps may develop on the penis.",
+        img: "/symptoms/penile-bumps.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "A healthcare provider examines the penis for abnormal skin changes, lumps or discoloration and reviews symptoms and medical history.",
+        img: "/diagnosis/penile-exam.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A biopsy removes suspicious tissue so it can be examined under a microscope to confirm cancer.",
+        img: "/diagnosis/penile-biopsy.png"
+      },
+      {
+        title: "CT Scan or MRI",
+        text: "CT and MRI scans help determine the size of the tumor and whether it has spread.",
+        img: "/diagnosis/penile-ct-mri.png"
+      },
+      {
+        title: "Ultrasound or PET Scan",
+        text: "Ultrasound and PET scans may be used to evaluate the extent of the cancer.",
+        img: "/diagnosis/penile-pet.png"
+      },
+      {
+        title: "Chest X-ray",
+        text: "A chest X-ray may be performed to check whether the cancer has spread to the lungs.",
+        img: "/diagnosis/penile-xray.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery is the most common treatment and removes the tumor while preserving as much healthy tissue as possible whenever feasible.",
+        img: "/treatment/penile-surgery.png"
+      },
+      {
+        title: "Circumcision",
+        text: "If cancer is limited to the foreskin, circumcision may be enough to remove the disease.",
+        img: "/treatment/penile-circumcision.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams to destroy cancer cells or shrink tumors before surgery.",
+        img: "/treatment/penile-radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy may be given before or after surgery or when cancer has spread beyond the penis.",
+        img: "/treatment/penile-chemotherapy.png"
+      },
+      {
+        title: "Laser Therapy or Cryotherapy",
+        text: "Laser treatment or cryotherapy may be used to destroy small, early-stage tumors while preserving normal tissue.",
+        img: "/treatment/penile-laser.png"
+      },
+      {
+        title: "Penectomy",
+        text: "Partial or total removal of the penis may be necessary for advanced cancers that cannot be treated with organ-preserving surgery.",
+        img: "/treatment/penile-penectomy.png"
+      }
+    ]
+  }
+},
+
+//pituitary 
+
+//prostate cancer
+{
+  slug: "prostate-cancer",
+
+  title: "Prostate Cancer",
+
+  description:
+    "The prostate is a small gland in the male reproductive system that sits below the bladder and in front of the rectum. It produces fluid that mixes with sperm to form semen and helps support fertility.",
+
+  bannerImg: "/cancers/prostate-cancer.webp",
+
+  overview: {
+    intro:
+      "Prostate cancer develops when abnormal cells in the prostate gland grow uncontrollably and form a tumor. Most prostate cancers grow slowly and remain within the prostate for a long time, although some types are more aggressive and can spread quickly to other parts of the body. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Many prostate cancers are found before they spread beyond the prostate, making treatment highly effective in many cases. The choice of treatment depends on how fast the cancer is growing, whether it has spread and a person's overall health. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The cancer is small, confined to the prostate and usually grows slowly."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The cancer remains within the prostate but may be larger or have a higher chance of growing."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread outside the prostate to nearby tissues but has not reached distant organs."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to nearby lymph nodes or distant parts of the body, most commonly the bones."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/person.png",
+        title: "Older Age",
+        text: "The risk of prostate cancer increases with age, especially after 50 years. Most cases occur in people older than 65."
+      },
+      {
+        icon: "/icons/african.png",
+        title: "Black or African Ancestry",
+        text: "People who are Black or of African ancestry have a higher risk of developing prostate cancer, including more aggressive forms."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "Having a close family member with prostate cancer increases the likelihood of developing the disease."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited Gene Mutations",
+        text: "Inherited conditions such as Lynch syndrome and BRCA1 or BRCA2 gene mutations can increase prostate cancer risk."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking",
+        text: "Some studies suggest smoking may increase the risk of developing prostate cancer."
+      },
+      {
+        icon: "/icons/obesity.png",
+        title: "Obesity",
+        text: "Having obesity has been linked to an increased risk in some studies."
+      },
+      {
+        icon: "/icons/prostate.png",
+        title: "Prostatitis",
+        text: "Inflammation of the prostate has been identified as a possible risk factor, although evidence is mixed."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Frequent Urination",
+        text: "A frequent or urgent need to urinate, especially during the night, may occur.",
+        img: "/symptoms/prostate-frequent-urination.png"
+      },
+      {
+        title: "Weak Urine Flow",
+        text: "Urine flow may become weak or start and stop during urination.",
+        img: "/symptoms/prostate-weak-flow.png"
+      },
+      {
+        title: "Pain or Burning While Urinating",
+        text: "Some people experience discomfort or burning during urination.",
+        img: "/symptoms/prostate-pain-urination.png"
+      },
+      {
+        title: "Blood in Urine or Semen",
+        text: "Blood may appear in urine or semen and should be evaluated promptly.",
+        img: "/symptoms/prostate-blood.png"
+      },
+      {
+        title: "Painful Ejaculation or Erectile Dysfunction",
+        text: "Pain during ejaculation or difficulty getting or maintaining an erection may occur.",
+        img: "/symptoms/prostate-ed.png"
+      },
+      {
+        title: "Pain in the Back, Hip or Chest",
+        text: "Pain in the lower back, hips or chest can occur if the cancer has spread.",
+        img: "/symptoms/prostate-bone-pain.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Digital Rectal Examination",
+        text: "A healthcare provider examines the prostate through the rectum to check for hard areas or lumps.",
+        img: "/diagnosis/prostate-dre.png"
+      },
+      {
+        title: "PSA Blood Test",
+        text: "A prostate-specific antigen (PSA) blood test measures PSA levels, which may be elevated in prostate cancer.",
+        img: "/diagnosis/prostate-psa.png"
+      },
+      {
+        title: "MRI or Ultrasound",
+        text: "MRI or transrectal ultrasound helps identify suspicious areas within the prostate.",
+        img: "/diagnosis/prostate-imaging.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A needle biopsy removes tissue from the prostate to confirm the diagnosis and determine how aggressive the cancer is.",
+        img: "/diagnosis/prostate-biopsy.png"
+      },
+      {
+        title: "Genetic Testing",
+        text: "Cancer cells may be tested for genetic changes that can help guide treatment decisions.",
+        img: "/diagnosis/prostate-genetics.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Active Surveillance",
+        text: "Slow-growing prostate cancers may be closely monitored with regular tests before starting treatment.",
+        img: "/treatment/prostate-surveillance.png"
+      },
+      {
+        title: "Surgery",
+        text: "Radical prostatectomy removes the prostate gland and may cure cancer that has not spread beyond it.",
+        img: "/treatment/prostate-surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams or radioactive seeds to destroy prostate cancer cells.",
+        img: "/treatment/prostate-radiation.png"
+      },
+      {
+        title: "Hormone Therapy",
+        text: "Hormone therapy lowers or blocks testosterone, which helps slow the growth of prostate cancer.",
+        img: "/treatment/prostate-hormone.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses medicines to destroy cancer cells, particularly in advanced prostate cancer.",
+        img: "/treatment/prostate-chemotherapy.png"
+      },
+      {
+        title: "Targeted Therapy or Immunotherapy",
+        text: "Some advanced prostate cancers may be treated with targeted therapy or immunotherapy based on their genetic characteristics.",
+        img: "/treatment/prostate-targeted.png"
+      }
+    ]
+  }
+},
+
+//rectal cancer
+ {
+  slug: "rectal-cancer",
+
+  title: "Rectal Cancer",
+
+  description:
+    "The rectum is the last part of the large intestine. It stores stool until it leaves the body during a bowel movement and plays an important role in the digestive system.",
+
+  bannerImg: "/cancers/rectal-cancer.webp",
+
+  overview: {
+    intro:
+      "Rectal cancer develops when abnormal cells grow in the lining of the rectum and form a tumor. Most rectal cancers begin as small growths called polyps, which can gradually become cancer over several years if left untreated. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Screening tests such as colonoscopy can detect and remove precancerous polyps before they develop into cancer. When rectal cancer is diagnosed early, treatment is often more successful and may involve surgery along with other therapies depending on the stage of the disease. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "0",
+        title: "Stage 0",
+        text: "Abnormal cancerous cells are present only on the inner lining of the rectum."
+      },
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The tumor has grown beneath the inner lining and may extend into the rectal wall."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "Cancer has grown through the rectal wall and may extend into nearby tissues."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to nearby lymph nodes and tissues surrounding the rectum."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to distant organs or distant lymph nodes, such as the liver or lungs."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/person.png",
+        title: "Older Age",
+        text: "The risk of rectal cancer increases with age, with the average age at diagnosis being about 63 years."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "Having a close biological relative with rectal cancer nearly doubles the risk."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited Genetic Syndromes",
+        text: "Conditions such as Lynch syndrome, familial adenomatous polyposis (FAP) and related inherited disorders increase risk."
+      },
+      {
+        icon: "/icons/colon.png",
+        title: "Inflammatory Bowel Disease",
+        text: "Long-term inflammatory bowel diseases, including Crohn's disease and ulcerative colitis, increase the chance of developing rectal cancer."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/red-meat.png",
+        title: "High Intake of Processed or Red Meat",
+        text: "Regularly eating large amounts of processed or red meat is associated with a higher risk of rectal cancer."
+      },
+      {
+        icon: "/icons/obesity.png",
+        title: "Obesity",
+        text: "People with obesity have a greater likelihood of developing rectal cancer."
+      },
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking",
+        text: "Smoking tobacco increases the risk of developing rectal cancer and may worsen outcomes."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Rectal Bleeding",
+        text: "Bleeding from the rectum is one of the most common symptoms of rectal cancer.",
+        img: "/symptoms/rectal-bleeding.png"
+      },
+      {
+        title: "Changes in Bowel Habits",
+        text: "Persistent diarrhea, constipation or changes in how and when you pass stool may occur.",
+        img: "/symptoms/rectal-bowel-habits.png"
+      },
+      {
+        title: "Narrow Stools",
+        text: "Stools that become thin or pencil-shaped may be a warning sign.",
+        img: "/symptoms/rectal-thin-stool.png"
+      },
+      {
+        title: "Abdominal Pain",
+        text: "Pain or discomfort in the abdomen may develop as the cancer grows.",
+        img: "/symptoms/rectal-abdominal-pain.png"
+      },
+      {
+        title: "Fatigue",
+        text: "Persistent tiredness or weakness can occur, especially if bleeding causes anemia.",
+        img: "/symptoms/rectal-fatigue.png"
+      },
+      {
+        title: "Unexplained Weight Loss",
+        text: "Losing weight without trying may occur in advanced disease.",
+        img: "/symptoms/rectal-weight-loss.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Digital Rectal Examination",
+        text: "A healthcare provider examines the rectum using a gloved finger to check for abnormal growths.",
+        img: "/diagnosis/rectal-dre.png"
+      },
+      {
+        title: "Colonoscopy",
+        text: "A colonoscopy allows the provider to examine the rectum and colon and collect tissue samples if needed.",
+        img: "/diagnosis/rectal-colonoscopy.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A biopsy confirms the diagnosis by examining tissue under a microscope.",
+        img: "/diagnosis/rectal-biopsy.png"
+      },
+      {
+        title: "Blood Tests",
+        text: "Blood tests, including CBC, liver function tests and CEA tumor marker testing, help evaluate the disease.",
+        img: "/diagnosis/rectal-blood-test.png"
+      },
+      {
+        title: "Imaging Tests",
+        text: "CT scans, MRI and pelvic ultrasound help determine the size of the tumor and whether it has spread.",
+        img: "/diagnosis/rectal-imaging.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery is the primary treatment and removes the cancerous tumor along with surrounding tissue when needed.",
+        img: "/treatment/rectal-surgery.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses medicines to destroy cancer cells and may be given before or after surgery.",
+        img: "/treatment/rectal-chemotherapy.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams to shrink or destroy cancer cells, often together with chemotherapy.",
+        img: "/treatment/rectal-radiation.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy attacks specific features of cancer cells while limiting damage to healthy tissue.",
+        img: "/treatment/rectal-targeted-therapy.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy may be used for certain rectal cancers to help the immune system recognize and destroy cancer cells.",
+        img: "/treatment/rectal-immunotherapy.png"
+      },
+      {
+        title: "Active Surveillance",
+        text: "In selected situations, healthcare providers may closely monitor the cancer with regular follow-up before additional treatment.",
+        img: "/treatment/rectal-surveillance.png"
+      }
+    ]
+  }
+},
+
+//renal cell carcinoma
+
+{
+  slug: "renal-cell-carcinoma",
+
+  title: "Renal Cell Carcinoma",
+
+  description:
+    "The kidneys filter waste products and extra fluid from the blood while maintaining the body's balance of water, minerals and electrolytes. They also produce hormones that help regulate blood pressure and red blood cell production.",
+
+  bannerImg: "/cancers/renal-cell-carcinoma.webp",
+
+  overview: {
+    intro:
+      "Renal cell carcinoma (RCC) is the most common type of kidney cancer. It begins in the tiny filtering tubes inside the kidneys, called tubules, where abnormal cells grow uncontrollably and form a tumor. RCC usually develops in one kidney, although multiple tumors can occur in one or both kidneys. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Many people with renal cell carcinoma have no symptoms during its early stages, and tumors are often discovered during imaging performed for other reasons. Treatment depends on whether the cancer remains confined to the kidney or has spread to other parts of the body, making early detection important whenever possible. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The tumor is smaller than 7 centimeters and remains confined to the kidney."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor is larger than 7 centimeters but has not spread beyond the kidney."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread into nearby structures surrounding the kidney but not to distant organs."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread beyond the kidney to lymph nodes or distant organs such as the lungs, bones, liver or brain."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/person.png",
+        title: "Older Age",
+        text: "Renal cell carcinoma is most commonly diagnosed in adults between 60 and 80 years of age."
+      },
+      {
+        icon: "/icons/male.png",
+        title: "Male Sex",
+        text: "Men are more likely to develop renal cell carcinoma than women."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited Genetic Conditions",
+        text: "Certain inherited disorders and gene changes can increase the risk of developing renal cell carcinoma."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "Having close biological relatives with kidney cancer may increase your likelihood of developing the disease."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking",
+        text: "Smoking tobacco is one of the most important preventable risk factors for renal cell carcinoma."
+      },
+      {
+        icon: "/icons/obesity.png",
+        title: "Obesity",
+        text: "Having obesity increases the risk of developing renal cell carcinoma."
+      },
+      {
+        icon: "/icons/high-blood-pressure.png",
+        title: "High Blood Pressure",
+        text: "High blood pressure has been linked with an increased risk of renal cell carcinoma."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Blood in the Urine",
+        text: "Blood in the urine (hematuria) is one of the most common symptoms of renal cell carcinoma.",
+        img: "/symptoms/rcc-blood-urine.png"
+      },
+      {
+        title: "Pain in the Side",
+        text: "Persistent pain in the side between the ribs and hips may occur.",
+        img: "/symptoms/rcc-flank-pain.png"
+      },
+      {
+        title: "Abdominal or Flank Lump",
+        text: "A firm lump may develop in the abdomen, lower back or side.",
+        img: "/symptoms/rcc-lump.png"
+      },
+      {
+        title: "Fever or Night Sweats",
+        text: "Unexplained fever or night sweats can occur in some people.",
+        img: "/symptoms/rcc-fever.png"
+      },
+      {
+        title: "Weight Loss",
+        text: "Losing weight without trying may be a sign of advanced disease.",
+        img: "/symptoms/rcc-weight-loss.png"
+      },
+      {
+        title: "Fatigue",
+        text: "Persistent tiredness or weakness may develop, sometimes due to anemia.",
+        img: "/symptoms/rcc-fatigue.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Ultrasound",
+        text: "Ultrasound helps determine whether a kidney mass is fluid-filled or solid.",
+        img: "/diagnosis/rcc-ultrasound.png"
+      },
+      {
+        title: "CT Scan",
+        text: "CT scans provide detailed images of the kidneys and help evaluate the size and location of the tumor.",
+        img: "/diagnosis/rcc-ct.png"
+      },
+      {
+        title: "MRI",
+        text: "MRI may be used when CT scans are unsuitable or when additional detail is needed.",
+        img: "/diagnosis/rcc-mri.png"
+      },
+      {
+        title: "Biopsy",
+        text: "Although not always required, a biopsy may be performed in selected cases to confirm the diagnosis or evaluate cancer that has spread.",
+        img: "/diagnosis/rcc-biopsy.png"
+      },
+      {
+        title: "Cancer Staging",
+        text: "Imaging studies help determine whether the cancer is localized or has spread, guiding treatment planning.",
+        img: "/diagnosis/rcc-staging.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Partial Nephrectomy",
+        text: "Partial nephrectomy removes the tumor while preserving as much healthy kidney tissue as possible.",
+        img: "/treatment/rcc-partial-nephrectomy.png"
+      },
+      {
+        title: "Radical Nephrectomy",
+        text: "Radical nephrectomy removes the affected kidney and, when necessary, nearby tissues or lymph nodes.",
+        img: "/treatment/rcc-radical-nephrectomy.png"
+      },
+      {
+        title: "Cryotherapy or Radiofrequency Ablation",
+        text: "These procedures destroy cancer cells using extreme cold or heat when surgery is not suitable.",
+        img: "/treatment/rcc-ablation.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the immune system recognize and attack renal cell carcinoma cells.",
+        img: "/treatment/rcc-immunotherapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy blocks specific pathways that help cancer cells grow and survive.",
+        img: "/treatment/rcc-targeted-therapy.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy may be used to control symptoms or treat cancer that has spread to other areas.",
+        img: "/treatment/rcc-radiation.png"
+      }
+    ]
+  }
+},
+
+//retinoblastoma
+{
+  slug: "retinoblastoma",
+
+  title: "Retinoblastoma",
+
+  description:
+    "The retina is the light-sensitive layer at the back of the eye that detects light and sends visual signals to the brain. It plays a vital role in vision by helping us recognize shapes, colors and movement.",
+
+  bannerImg: "/cancers/retinoblastoma.webp",
+
+  overview: {
+    intro:
+      "Retinoblastoma is a rare eye cancer that begins in the retina, the light-sensing tissue at the back of the eye. It primarily affects young children, most often before the age of 3, and may develop in one eye or both eyes. Early diagnosis greatly improves the chances of successful treatment and preserving vision whenever possible.",
+
+    description:
+      "Retinoblastoma develops when changes in the RB1 gene cause retinal cells to grow uncontrollably and form tumors. The condition may occur sporadically or be inherited, and treatment is planned according to whether one or both eyes are affected and if the cancer has spread beyond the eye.",
+  },
+
+  typesStages: {
+    stages: [],
+
+    stagesNote:
+      "Retinoblastoma is generally classified by the extent of disease within and beyond the eye rather than by conventional cancer stages. Treatment planning depends on tumor location, eye involvement and whether the cancer has spread."
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/child.png",
+        title: "Young Age",
+        text: "Retinoblastoma almost always develops in young children, with most cases diagnosed before 3 years of age."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited RB1 Gene Mutation",
+        text: "Some children inherit a mutation in the RB1 gene, significantly increasing their risk of developing retinoblastoma."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "Children with a biological family history of retinoblastoma have a greater chance of developing the disease."
+      }
+    ],
+
+    lifestyle: []
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "White Pupil (Leukocoria)",
+        text: "A white reflection in the pupil, especially in flash photographs, is the most common early sign of retinoblastoma.",
+        img: "/symptoms/retinoblastoma-white-pupil.png"
+      },
+      {
+        title: "Crossed or Misaligned Eyes",
+        text: "The eyes may not point in the same direction because vision is affected.",
+        img: "/symptoms/retinoblastoma-crossed-eyes.png"
+      },
+      {
+        title: "Bulging or Enlarged Eye",
+        text: "Some children develop bulging or enlargement of the affected eye.",
+        img: "/symptoms/retinoblastoma-bulging-eye.png"
+      },
+      {
+        title: "Eye Swelling or Redness",
+        text: "Inflammation or swelling around the eye can occur as the disease progresses.",
+        img: "/symptoms/retinoblastoma-eye-swelling.png"
+      },
+      {
+        title: "Blood in the Front of the Eye",
+        text: "Blood may collect in the front chamber of the eye in some children.",
+        img: "/symptoms/retinoblastoma-eye-blood.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Dilated Eye Examination",
+        text: "An ophthalmologist examines the inside of the eye after dilating the pupil to identify tumors.",
+        img: "/diagnosis/retinoblastoma-eye-exam.png"
+      },
+      {
+        title: "Ultrasound",
+        text: "Eye ultrasound helps detect tumors and calcium deposits commonly seen with retinoblastoma.",
+        img: "/diagnosis/retinoblastoma-ultrasound.png"
+      },
+      {
+        title: "CT Scan",
+        text: "CT scans may identify calcium deposits and provide additional information about the tumor.",
+        img: "/diagnosis/retinoblastoma-ct.png"
+      },
+      {
+        title: "MRI",
+        text: "MRI helps determine whether the cancer has spread beyond the eye, particularly to the brain.",
+        img: "/diagnosis/retinoblastoma-mri.png"
+      },
+      {
+        title: "Genetic Testing",
+        text: "Testing for RB1 gene mutations helps determine whether the condition is hereditary.",
+        img: "/diagnosis/retinoblastoma-genetic-test.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy destroys cancer cells and may shrink tumors before other treatments.",
+        img: "/treatment/retinoblastoma-chemotherapy.png"
+      },
+      {
+        title: "Laser Therapy",
+        text: "Laser treatment destroys blood vessels that supply the tumor, helping eliminate cancer cells.",
+        img: "/treatment/retinoblastoma-laser.png"
+      },
+      {
+        title: "Cryotherapy",
+        text: "Cryotherapy freezes and destroys small retinoblastoma tumors.",
+        img: "/treatment/retinoblastoma-cryotherapy.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy may be used to precisely target and destroy cancer cells within the eye.",
+        img: "/treatment/retinoblastoma-radiation.png"
+      },
+      {
+        title: "Thermotherapy",
+        text: "Thermotherapy uses controlled heat generated by laser energy to destroy cancer cells.",
+        img: "/treatment/retinoblastoma-thermotherapy.png"
+      },
+      {
+        title: "Enucleation",
+        text: "If vision cannot be preserved or the tumor is extensive, surgical removal of the affected eye may be necessary.",
+        img: "/treatment/retinoblastoma-enucleation.png"
+      }
+    ]
+  }
+},
+ 
+
+//rhabdomyosarcoma
+
+{
+  slug: "rhabdomyosarcoma",
+
+  title: "Rhabdomyosarcoma",
+
+  description:
+    "Skeletal muscles help move the body, maintain posture and support everyday activities such as walking, running, speaking and swallowing. These muscles are attached to bones and are found throughout the body.",
+
+  bannerImg: "/cancers/rhabdomyosarcoma.webp",
+
+  overview: {
+    intro:
+      "Rhabdomyosarcoma is a rare type of soft tissue cancer that develops from cells that normally form skeletal muscle. Although it can occur at any age, it most commonly affects children and teenagers and may develop in many parts of the body, including the head and neck, arms, legs, bladder and abdomen. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "There are several forms of rhabdomyosarcoma that differ in how they behave and where they commonly occur. Treatment depends on the tumor type, its location and whether it has spread, and while many people respond well to treatment, the cancer can sometimes return after remission. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [],
+
+    stagesNote:
+      "Rhabdomyosarcoma is primarily classified by its risk group, tumor location and extent of spread rather than by standard cancer stages."
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/child.png",
+        title: "Young Age",
+        text: "Rhabdomyosarcoma most commonly affects children and teenagers, although adults can also develop the disease."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited Genetic Disorders",
+        text: "Certain inherited genetic conditions can increase the risk of developing rhabdomyosarcoma."
+      },
+      {
+        icon: "/icons/dna.png",
+        title: "Genetic Mutations",
+        text: "Specific gene changes, including fusion genes in some tumor types, are associated with rhabdomyosarcoma."
+      }
+    ],
+
+    lifestyle: []
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Lump or Swelling",
+        text: "A painless or painful lump in an arm, leg or another part of the body may be an early sign.",
+        img: "/symptoms/rhabdomyosarcoma-lump.png"
+      },
+      {
+        title: "Pain",
+        text: "Pain may occur if the growing tumor presses on nearby muscles, nerves or other tissues.",
+        img: "/symptoms/rhabdomyosarcoma-pain.png"
+      },
+      {
+        title: "Eye Bulging or Swelling",
+        text: "Tumors near the eye may cause the eye to bulge or become swollen.",
+        img: "/symptoms/rhabdomyosarcoma-eye.png"
+      },
+      {
+        title: "Nosebleeds or Sinus Problems",
+        text: "Tumors in the nasal cavity may lead to persistent nosebleeds or sinus-related symptoms.",
+        img: "/symptoms/rhabdomyosarcoma-nosebleed.png"
+      },
+      {
+        title: "Blood in Urine or Difficulty Urinating",
+        text: "Tumors involving the bladder or urinary tract may cause urinary symptoms.",
+        img: "/symptoms/rhabdomyosarcoma-urine.png"
+      },
+      {
+        title: "Abdominal Pain or Vomiting",
+        text: "Tumors within the abdomen can cause pain, constipation or vomiting.",
+        img: "/symptoms/rhabdomyosarcoma-abdomen.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "A healthcare provider checks for lumps, swelling and other signs while reviewing symptoms and family history.",
+        img: "/diagnosis/rhabdomyosarcoma-exam.png"
+      },
+      {
+        title: "CT Scan or MRI",
+        text: "Imaging tests help determine the tumor's size, location and relationship to nearby structures.",
+        img: "/diagnosis/rhabdomyosarcoma-mri.png"
+      },
+      {
+        title: "PET Scan or Bone Scan",
+        text: "These scans help determine whether the cancer has spread to other parts of the body.",
+        img: "/diagnosis/rhabdomyosarcoma-pet.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A tissue sample is examined under a microscope to confirm the diagnosis.",
+        img: "/diagnosis/rhabdomyosarcoma-biopsy.png"
+      },
+      {
+        title: "Bone Marrow or Lumbar Puncture",
+        text: "Additional tests may be performed in selected cases to determine whether the cancer has spread.",
+        img: "/diagnosis/rhabdomyosarcoma-bone-marrow.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery aims to remove as much of the tumor as possible while preserving nearby healthy tissue.",
+        img: "/treatment/rhabdomyosarcoma-surgery.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses medicines to destroy cancer cells throughout the body.",
+        img: "/treatment/rhabdomyosarcoma-chemotherapy.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams to destroy remaining cancer cells after surgery or chemotherapy.",
+        img: "/treatment/rhabdomyosarcoma-radiation.png"
+      },
+      {
+        title: "Clinical Trials",
+        text: "Some people may be eligible to receive newer treatments through carefully monitored clinical trials.",
+        img: "/treatment/rhabdomyosarcoma-clinical-trial.png"
+      }
+    ]
+  }
+},
+
+//salivary gland cancer
+
+{
+  slug: "salivary-gland-cancer",
+
+  title: "Salivary Gland Cancer",
+
+  description:
+    "The salivary glands produce saliva, which helps moisten the mouth, begin digestion and support chewing, swallowing and speaking. These glands are located in and around the mouth and throat and play an important role in oral health.",
+
+  bannerImg: "/cancers/salivary-gland-cancer.webp",
+
+  overview: {
+    intro:
+      "Salivary gland cancer is a rare cancer that develops in the glands responsible for producing saliva. It can occur in any of the major or minor salivary glands, although most tumors begin in the parotid glands located near the cheeks. While some salivary gland tumors are benign, malignant tumors require prompt evaluation and treatment. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "The type of salivary gland involved and whether the cancer has spread influence treatment planning and outlook. Early diagnosis is important because cancers that remain confined to the salivary glands are generally easier to treat than those that spread to distant parts of the body. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [],
+
+    stagesNote:
+      "Salivary gland cancer is primarily evaluated according to the size of the tumor, nearby lymph node involvement and whether it has spread, rather than by a simple stage grouping."
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/age.png",
+        title: "Older Age",
+        text: "People aged 55 years or older are more likely to develop salivary gland cancer."
+      },
+      {
+        icon: "/icons/gender.png",
+        title: "Male Sex",
+        text: "Men are more likely than women to develop malignant salivary gland tumors."
+      },
+      {
+        icon: "/icons/radiation.png",
+        title: "Previous Radiation Exposure",
+        text: "Radiation therapy to the head or neck increases the risk of salivary gland cancer."
+      },
+      {
+        icon: "/icons/work.png",
+        title: "Occupational Exposure",
+        text: "Working in industries such as plumbing, rubber manufacturing, asbestos mining or leatherwork may increase risk."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking",
+        text: "Smoking is associated with an increased risk of developing salivary gland cancer."
+      },
+      {
+        icon: "/icons/alcohol.png",
+        title: "Frequent Alcohol Use",
+        text: "Regular heavy alcohol consumption may increase the likelihood of developing salivary gland cancer."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Painless Lump",
+        text: "A painless lump in the mouth, jaw, cheek or neck is the most common symptom.",
+        img: "/symptoms/salivary-lump.png"
+      },
+      {
+        title: "Facial Weakness or Numbness",
+        text: "Weakness or numbness affecting the face, jaw or mouth may occur when nearby nerves are involved.",
+        img: "/symptoms/facial-weakness.png"
+      },
+      {
+        title: "Persistent Pain",
+        text: "Pain in the face, jaw, mouth or neck that doesn't go away can be a warning sign.",
+        img: "/symptoms/facial-pain.png"
+      },
+      {
+        title: "Difficulty Opening the Mouth",
+        text: "Some people experience trouble fully opening their mouth or moving facial muscles.",
+        img: "/symptoms/mouth-opening.png"
+      },
+      {
+        title: "Difficulty Swallowing",
+        text: "Growing tumors may make swallowing uncomfortable or difficult.",
+        img: "/symptoms/swallowing.png"
+      },
+      {
+        title: "Bleeding From the Mouth",
+        text: "Bleeding inside the mouth can occur in some cases of salivary gland cancer.",
+        img: "/symptoms/mouth-bleeding.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "Your healthcare provider examines the salivary glands, checks facial nerve function and reviews your symptoms.",
+        img: "/diagnosis/physical-exam.png"
+      },
+      {
+        title: "CT Scan",
+        text: "CT imaging helps determine the size of the tumor and whether it has spread.",
+        img: "/diagnosis/ct-scan.png"
+      },
+      {
+        title: "MRI",
+        text: "MRI provides detailed images of soft tissues and nearby nerves or muscles.",
+        img: "/diagnosis/mri.png"
+      },
+      {
+        title: "PET Scan",
+        text: "A PET scan may be used to evaluate whether the cancer has spread to lymph nodes or other organs.",
+        img: "/diagnosis/pet-scan.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A fine-needle aspiration or core needle biopsy confirms whether a salivary gland tumor is cancerous.",
+        img: "/diagnosis/biopsy.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery is the primary treatment and aims to remove the tumor, sometimes along with nearby lymph nodes.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy is commonly used after surgery or when surgery isn't possible to destroy remaining cancer cells.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy may be recommended if the cancer has spread beyond the head and neck.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Some advanced salivary gland cancers may be treated with targeted therapies that focus on specific cancer cell changes.",
+        img: "/treatment/targeted-therapy.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy may be considered for selected advanced cases as part of specialized treatment or clinical trials.",
+        img: "/treatment/immunotherapy.png"
+      }
+    ]
+  }
+},
+
+//stomach cancer
+
+{
+  slug: "stomach-cancer",
+
+  title: "Stomach Cancer",
+
+  description:
+    "The stomach is a muscular organ in the digestive system that stores food, begins digestion and helps break down nutrients before they move into the small intestine. It works with digestive acids and enzymes to support normal digestion.",
+
+  bannerImg: "/cancers/stomach-cancer.webp",
+
+  overview: {
+    intro:
+      "Stomach cancer, also called gastric cancer, develops when abnormal cells grow uncontrollably in the stomach. Most stomach cancers begin in the stomach's inner lining and gradually grow deeper into the stomach wall over time. While it is common in many parts of the world, it is less frequently diagnosed in the United States. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "As stomach cancer progresses, it may spread into nearby organs or distant parts of the body if left untreated. Because early-stage disease often causes few or no symptoms, many cases are diagnosed after the cancer has advanced, making early detection an important part of improving treatment outcomes. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "0",
+        title: "Stage 0",
+        text: "Abnormal cancer cells are limited to the inner lining of the stomach and haven't spread deeper into the stomach wall."
+      },
+      {
+        label: "I",
+        title: "Stage I",
+        text: "Cancer has grown into the stomach lining or nearby layers and may have spread to a small number of nearby lymph nodes."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor has grown deeper into the stomach wall and may involve additional nearby lymph nodes."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread extensively through the stomach wall and into many nearby lymph nodes or surrounding tissues."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to distant organs such as the liver, lungs or other parts of the body."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/age.png",
+        title: "Older Age",
+        text: "Most people diagnosed with stomach cancer are 65 years of age or older."
+      },
+      {
+        icon: "/icons/gender.png",
+        title: "Male Sex",
+        text: "Men are more likely than women to develop stomach cancer."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "Having close relatives with stomach cancer increases the likelihood of developing the disease."
+      },
+      {
+        icon: "/icons/bacteria.png",
+        title: "Helicobacter pylori Infection",
+        text: "Long-term infection with Helicobacter pylori (H. pylori) is a major risk factor for stomach cancer."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking or Tobacco Use",
+        text: "Smoking, vaping or chewing tobacco increases the risk of stomach cancer."
+      },
+      {
+        icon: "/icons/alcohol.png",
+        title: "Heavy Alcohol Consumption",
+        text: "Drinking excessive amounts of alcohol may increase the risk of stomach cancer."
+      },
+      {
+        icon: "/icons/diet.png",
+        title: "Diet High in Salty or Smoked Foods",
+        text: "Regularly eating salty, smoked or pickled foods while consuming few fruits and vegetables increases risk."
+      },
+      {
+        icon: "/icons/obesity.png",
+        title: "Obesity",
+        text: "Being overweight or obese is associated with a greater chance of developing stomach cancer."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Unexplained Weight Loss",
+        text: "Losing weight without trying is one of the most common symptoms of stomach cancer.",
+        img: "/symptoms/stomach-weight-loss.png"
+      },
+      {
+        title: "Stomach Pain",
+        text: "Persistent pain or discomfort, especially above the belly button, may occur.",
+        img: "/symptoms/stomach-pain.png"
+      },
+      {
+        title: "Loss of Appetite",
+        text: "Many people notice reduced appetite or feel full after eating only a small amount.",
+        img: "/symptoms/loss-appetite.png"
+      },
+      {
+        title: "Nausea and Vomiting",
+        text: "Persistent nausea or vomiting can occur as the disease progresses.",
+        img: "/symptoms/nausea-vomiting.png"
+      },
+      {
+        title: "Heartburn or Indigestion",
+        text: "Frequent heartburn, indigestion or bloating after meals may develop.",
+        img: "/symptoms/heartburn.png"
+      },
+      {
+        title: "Black Stool or Vomiting Blood",
+        text: "Bleeding from the stomach may cause black stools or blood in vomit.",
+        img: "/symptoms/bleeding.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Upper Endoscopy",
+        text: "An endoscope is used to examine the stomach lining and obtain tissue samples if needed.",
+        img: "/diagnosis/endoscopy.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A biopsy confirms whether abnormal stomach tissue contains cancer cells.",
+        img: "/diagnosis/biopsy.png"
+      },
+      {
+        title: "Endoscopic Ultrasound",
+        text: "This test helps determine how deeply the cancer has grown into the stomach wall.",
+        img: "/diagnosis/endoscopic-ultrasound.png"
+      },
+      {
+        title: "CT Scan or MRI",
+        text: "Imaging tests help identify the tumor and determine whether it has spread.",
+        img: "/diagnosis/ct-mri.png"
+      },
+      {
+        title: "PET Scan",
+        text: "PET scans may be used to detect cancer spread throughout the body.",
+        img: "/diagnosis/pet-scan.png"
+      },
+      {
+        title: "Blood Tests",
+        text: "Blood tests help evaluate overall health and determine whether other organs may be affected.",
+        img: "/diagnosis/blood-test.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Endoscopic Resection",
+        text: "Very early stomach cancers may be removed through an endoscope without traditional surgery.",
+        img: "/treatment/endoscopic-resection.png"
+      },
+      {
+        title: "Gastrectomy",
+        text: "Surgery may remove part or all of the stomach depending on the cancer's extent.",
+        img: "/treatment/gastrectomy.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy helps shrink tumors before surgery or destroy remaining cancer cells afterward.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation uses high-energy beams to destroy cancer cells and may be combined with chemotherapy.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted medicines attack specific features of cancer cells while limiting damage to healthy tissue.",
+        img: "/treatment/targeted-therapy.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the body's immune system recognize and destroy stomach cancer cells in selected cases.",
+        img: "/treatment/immunotherapy.png"
+      }
+    ]
+  }
+},
+
+//testicular cancer
+
+{
+  slug: "testicular-cancer",
+
+  title: "Testicular Cancer",
+
+  description:
+    "The testicles are two male reproductive glands that produce sperm and the hormone testosterone. Located inside the scrotum, they play an essential role in fertility, sexual development and hormone production.",
+
+  bannerImg: "/cancers/testicular-cancer.webp",
+
+  overview: {
+    intro:
+      "Testicular cancer develops when abnormal cells grow uncontrollably in one or both testicles. Although it is uncommon overall, it is the most frequently diagnosed cancer in males between 15 and 44 years of age. Most testicular cancers begin in germ cells, which are responsible for producing sperm. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "The type of tumor and the extent of disease help determine the most appropriate treatment approach. Testicular cancer is highly treatable, and early diagnosis often leads to excellent outcomes with a high likelihood of cure. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "Cancer is limited to the testicle and has not spread beyond it."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "Cancer has spread to lymph nodes located in the back of the abdomen."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread beyond the abdominal lymph nodes to distant organs, most commonly the lungs or liver."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/undescended-testicle.png",
+        title: "Undescended Testicle",
+        text: "People born with an undescended testicle have a higher risk of developing testicular cancer."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "Having a father, brother or son with testicular cancer increases the likelihood of developing the disease."
+      },
+      {
+        icon: "/icons/history.png",
+        title: "Previous Testicular Cancer",
+        text: "People who have had testicular cancer in one testicle are at greater risk of developing it in the other."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited Conditions",
+        text: "Certain inherited conditions, including Klinefelter syndrome, increase the risk of testicular cancer."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/fertility.png",
+        title: "Low Fertility or Infertility",
+        text: "Reduced fertility has been associated with an increased risk of testicular cancer."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Painless Lump",
+        text: "A painless lump or hard mass in a testicle is the most common sign of testicular cancer.",
+        img: "/symptoms/testicular-lump.png"
+      },
+      {
+        title: "Swelling",
+        text: "One testicle may become swollen or enlarged without an obvious cause.",
+        img: "/symptoms/testicular-swelling.png"
+      },
+      {
+        title: "Feeling of Heaviness",
+        text: "A sensation of heaviness or pressure in the scrotum may develop.",
+        img: "/symptoms/scrotal-heaviness.png"
+      },
+      {
+        title: "Pain or Discomfort",
+        text: "Some people experience a dull ache or discomfort in the testicle, groin or lower abdomen.",
+        img: "/symptoms/testicular-pain.png"
+      },
+      {
+        title: "Back or Chest Pain",
+        text: "If the cancer has spread, symptoms may include back pain, chest pain or shortness of breath.",
+        img: "/symptoms/back-pain.png"
+      },
+      {
+        title: "Unexplained Weight Loss",
+        text: "Weight loss without trying may occur in advanced stages of the disease.",
+        img: "/symptoms/weight-loss.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "Your healthcare provider checks the testicles for lumps, swelling and enlarged lymph nodes.",
+        img: "/diagnosis/physical-exam.png"
+      },
+      {
+        title: "Scrotal Ultrasound",
+        text: "Ultrasound helps identify whether a testicular mass is likely to be cancerous.",
+        img: "/diagnosis/ultrasound.png"
+      },
+      {
+        title: "Blood Tumor Marker Tests",
+        text: "Blood tests measure tumor markers such as AFP, beta-hCG and LDH to assist diagnosis and treatment planning.",
+        img: "/diagnosis/blood-test.png"
+      },
+      {
+        title: "CT Scan or MRI",
+        text: "Imaging tests determine whether cancer has spread beyond the testicle.",
+        img: "/diagnosis/ct-mri.png"
+      },
+      {
+        title: "Inguinal Orchiectomy",
+        text: "Removal of the affected testicle allows specialists to confirm the diagnosis by examining the tissue.",
+        img: "/diagnosis/orchiectomy.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Radical Inguinal Orchiectomy",
+        text: "Surgical removal of the affected testicle is the primary treatment for nearly all cases.",
+        img: "/treatment/orchiectomy.png"
+      },
+      {
+        title: "Retroperitoneal Lymph Node Dissection",
+        text: "Surgery to remove abdominal lymph nodes may be recommended for certain nonseminoma tumors.",
+        img: "/treatment/lymph-node-surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy may be used after surgery for selected seminoma tumors.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy destroys cancer cells that have spread beyond the testicle or reduces the risk of recurrence.",
+        img: "/treatment/chemotherapy.png"
+      }
+    ]
+  }
+},
+
+//throat cancer
+
+{
+  slug: "throat-cancer",
+
+  title: "Throat Cancer",
+
+  description:
+    "The throat is a passage that connects the nose and mouth to the airway and digestive tract, helping with breathing, swallowing and speaking. It includes the pharynx and larynx, which work together to support communication and protect the airway.",
+
+  bannerImg: "/cancers/throat-cancer.webp",
+
+  overview: {
+    intro:
+      "Throat cancer is a general term for cancers that develop in the throat (pharynx) or voice box (larynx). These cancers begin when abnormal cells grow uncontrollably in tissues of the throat. In the United States, most throat cancers develop in the oropharynx, which is the middle part of the throat. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Throat cancer often causes few symptoms in its early stages, and early signs may resemble common conditions such as a sore throat or earache. The type, location and extent of the cancer guide treatment decisions, and early diagnosis improves the chances of successful treatment while helping preserve important functions like speaking and swallowing. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The tumor is small and remains confined to its site of origin without spreading to nearby lymph nodes."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor has grown larger but still has not spread to nearby lymph nodes or distant organs."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to nearby lymph nodes or surrounding tissues in the head and neck region."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "The cancer has spread extensively to nearby structures, distant lymph nodes or other organs of the body."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/hpv.png",
+        title: "HPV Infection",
+        text: "Human papillomavirus (HPV) infection is one of the leading causes of many throat cancers."
+      },
+      {
+        icon: "/icons/virus.png",
+        title: "Epstein-Barr Virus Infection",
+        text: "Epstein-Barr virus infection increases the risk of certain throat cancers, especially nasopharyngeal cancer."
+      },
+      {
+        icon: "/icons/toxic.png",
+        title: "Exposure to Harmful Substances",
+        text: "Long-term exposure to substances such as asbestos, wood dust and formaldehyde can increase the risk."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking or Tobacco Use",
+        text: "Smoking and using tobacco products are the strongest risk factors for throat cancer."
+      },
+      {
+        icon: "/icons/alcohol.png",
+        title: "Heavy Alcohol Consumption",
+        text: "Drinking excessive amounts of alcohol increases the risk, particularly when combined with tobacco use."
+      },
+      {
+        icon: "/icons/diet.png",
+        title: "Poor Dietary Habits",
+        text: "A diet low in fruits and vegetables and high in processed meats may contribute to an increased risk."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Persistent Sore Throat",
+        text: "A sore throat that doesn't improve after two weeks may be a sign of throat cancer.",
+        img: "/symptoms/sore-throat.png"
+      },
+      {
+        title: "Hoarseness or Voice Changes",
+        text: "Ongoing hoarseness or changes in the voice are common symptoms, particularly with laryngeal cancer.",
+        img: "/symptoms/hoarseness.png"
+      },
+      {
+        title: "Difficulty Swallowing",
+        text: "Pain or difficulty while swallowing can occur as the tumor grows.",
+        img: "/symptoms/difficulty-swallowing.png"
+      },
+      {
+        title: "Neck Lump",
+        text: "A lump in the neck may indicate enlarged lymph nodes affected by cancer.",
+        img: "/symptoms/neck-lump.png"
+      },
+      {
+        title: "Ear Pain",
+        text: "Persistent ear pain without an ear infection can be associated with throat cancer.",
+        img: "/symptoms/ear-pain.png"
+      },
+      {
+        title: "Persistent Cough or Coughing Blood",
+        text: "Some people develop a long-lasting cough or may cough up blood.",
+        img: "/symptoms/cough.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "A healthcare provider examines the throat and neck for lumps or other signs of cancer.",
+        img: "/diagnosis/physical-exam.png"
+      },
+      {
+        title: "Endoscopy or Laryngoscopy",
+        text: "A thin scope is used to examine the throat and voice box for abnormal tissue.",
+        img: "/diagnosis/endoscopy.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A biopsy removes suspicious tissue to confirm the presence of cancer cells.",
+        img: "/diagnosis/biopsy.png"
+      },
+      {
+        title: "CT Scan or MRI",
+        text: "Imaging helps determine the size of the tumor and whether it has spread.",
+        img: "/diagnosis/ct-mri.png"
+      },
+      {
+        title: "PET Scan",
+        text: "PET scanning helps identify cancer that has spread beyond the throat.",
+        img: "/diagnosis/pet-scan.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery removes the tumor while preserving breathing, speaking and swallowing whenever possible.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy may be used alone for early cancers or combined with other treatments.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy is often combined with radiation therapy or used before or after surgery.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted therapy blocks specific proteins that help cancer cells grow.",
+        img: "/treatment/targeted-therapy.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the immune system recognize and attack certain advanced throat cancers.",
+        img: "/treatment/immunotherapy.png"
+      }
+    ]
+  }
+},
+
+//thymoma
+
+{
+  slug: "thymoma-and-thymic-carcinoma",
+
+  title: "Thymoma & Thymic Carcinoma",
+
+  description:
+    "The thymus is a small gland located behind the breastbone that plays an important role in the development of T lymphocytes (T cells), which help the immune system fight infections. It is most active during childhood and gradually becomes smaller with age.",
+
+  bannerImg: "/cancers/thymoma-and-thymic-carcinoma.webp",
+
+  overview: {
+    intro:
+      "Thymoma and thymic carcinoma are rare cancers that develop from epithelial cells in the thymus gland. Although both are classified as thymic epithelial tumors, thymomas usually grow slowly and remain confined to the thymus, while thymic carcinomas are more aggressive and are more likely to spread to other parts of the body. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Many people do not experience symptoms during the early stages, and these tumors are often discovered during imaging performed for other reasons. Treatment and outlook depend on the specific tumor type and how far the cancer has spread, making early evaluation and accurate staging important for treatment planning. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The tumor is confined to the thymus and has not spread into nearby tissues."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "Cancer has grown into nearby fatty tissue or the lining surrounding the thymus."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "The tumor has spread into nearby organs such as the lungs, major blood vessels or the lining around the heart."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to lymph nodes, the lining of the chest or distant organs."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/age.png",
+        title: "Middle to Older Age",
+        text: "Thymoma and thymic carcinoma occur most commonly in adults between 40 and 75 years of age."
+      },
+      {
+        icon: "/icons/immune.png",
+        title: "Autoimmune Disorders",
+        text: "Several autoimmune conditions, particularly myasthenia gravis, are strongly associated with thymoma."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Unknown Causes",
+        text: "No confirmed inherited genetic or environmental risk factors have been identified."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/research.png",
+        title: "No Proven Lifestyle Risk Factors",
+        text: "Current evidence has not identified smoking, diet or other lifestyle habits as direct causes of thymoma or thymic carcinoma."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Chest Pain or Pressure",
+        text: "A growing tumor may cause discomfort or pressure in the chest.",
+        img: "/symptoms/chest-pain.png"
+      },
+      {
+        title: "Persistent Cough",
+        text: "A cough that does not improve may occur when the tumor affects nearby structures.",
+        img: "/symptoms/cough.png"
+      },
+      {
+        title: "Shortness of Breath",
+        text: "Breathing difficulties can develop if the tumor compresses the lungs or airways.",
+        img: "/symptoms/shortness-breath.png"
+      },
+      {
+        title: "Difficulty Swallowing",
+        text: "Some tumors press on the esophagus, making swallowing uncomfortable.",
+        img: "/symptoms/difficulty-swallowing.png"
+      },
+      {
+        title: "Swelling of the Face or Arms",
+        text: "Compression of large veins in the chest may cause swelling of the face, neck or upper limbs.",
+        img: "/symptoms/swelling-face.png"
+      },
+      {
+        title: "Muscle Weakness",
+        text: "People with thymoma may develop muscle weakness due to associated autoimmune conditions such as myasthenia gravis.",
+        img: "/symptoms/muscle-weakness.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "Your healthcare provider reviews symptoms and performs a physical examination.",
+        img: "/diagnosis/physical-exam.png"
+      },
+      {
+        title: "CT Scan",
+        text: "CT imaging helps identify the tumor's size, location and relationship to nearby structures.",
+        img: "/diagnosis/ct-scan.png"
+      },
+      {
+        title: "PET Scan",
+        text: "PET scans help evaluate whether cancer has spread to other parts of the body.",
+        img: "/diagnosis/pet-scan.png"
+      },
+      {
+        title: "MRI",
+        text: "MRI may be used to evaluate tumor invasion into surrounding tissues.",
+        img: "/diagnosis/mri.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A biopsy confirms the diagnosis by examining tumor cells under a microscope.",
+        img: "/diagnosis/biopsy.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgical removal of the tumor is the primary treatment for many early-stage thymomas and selected thymic carcinomas.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy may be used after surgery or when surgery is not possible.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy is commonly used for advanced disease or tumors that cannot be completely removed.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Clinical Trials",
+        text: "Some people may be eligible for clinical trials evaluating newer treatment approaches.",
+        img: "/treatment/clinical-trials.png"
+      }
+    ]
+  }
+},
+
+//thyroid cancer
+
+{
+  slug: "thyroid-cancer",
+
+  title: "Thyroid Cancer",
+
+  description:
+    "The thyroid is a small butterfly-shaped gland at the base of the neck that produces hormones controlling metabolism, body temperature, heart rate and many essential body functions. These hormones help regulate how the body uses energy and maintains normal organ function.",
+
+  bannerImg: "/cancers/thyroid-cancer.webp",
+
+  overview: {
+    intro:
+      "Thyroid cancer develops when abnormal cells grow within the thyroid gland. Healthcare providers classify thyroid cancer according to the type of thyroid cells where it begins, with several forms differing in how they grow and behave. Most thyroid cancers respond well to treatment and many can be cured.",
+
+    description:
+      "Many people have few or no symptoms in the early stages, and the condition is often discovered during an examination or imaging performed for another reason. The type of thyroid cancer and how far it has spread determine the treatment approach, making early diagnosis important for achieving the best possible outcome."
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The cancer is confined to the thyroid gland or has minimal spread and is considered an early-stage disease."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor has grown larger or spread further, depending on the specific type of thyroid cancer and the person's age."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread into nearby tissues or lymph nodes surrounding the thyroid gland."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "The cancer has spread extensively into nearby structures or distant organs such as the lungs or bones."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/family-history.png",
+        title: "Family History",
+        text: "Having a family history of thyroid cancer increases the likelihood of developing the disease."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited Genetic Syndromes",
+        text: "Certain inherited conditions, including MEN2, Cowden syndrome and familial adenomatous polyposis, increase thyroid cancer risk."
+      },
+      {
+        icon: "/icons/radiation.png",
+        title: "Radiation Exposure",
+        text: "Radiation therapy to the head or neck, especially during childhood, increases the risk of thyroid cancer."
+      },
+      {
+        icon: "/icons/female.png",
+        title: "Age and Sex",
+        text: "Thyroid cancer is more common in women and is diagnosed at different ages in women and men."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/obesity.png",
+        title: "Obesity",
+        text: "Obesity is associated with an increased risk of developing thyroid cancer."
+      },
+      {
+        icon: "/icons/iodine.png",
+        title: "Low Iodine Intake",
+        text: "Not getting enough iodine in the diet may increase the risk of certain thyroid cancers."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Neck Lump",
+        text: "A painless lump or thyroid nodule is often the first noticeable sign.",
+        img: "/symptoms/neck-lump.png"
+      },
+      {
+        title: "Neck Swelling",
+        text: "Swelling in the neck or enlarged lymph nodes may occur.",
+        img: "/symptoms/neck-swelling.png"
+      },
+      {
+        title: "Voice Hoarseness",
+        text: "Persistent hoarseness or changes in the voice may develop.",
+        img: "/symptoms/hoarseness.png"
+      },
+      {
+        title: "Difficulty Swallowing",
+        text: "The growing tumor may make swallowing uncomfortable or difficult.",
+        img: "/symptoms/difficulty-swallowing.png"
+      },
+      {
+        title: "Difficulty Breathing",
+        text: "Some people experience breathing problems if the tumor presses on the airway.",
+        img: "/symptoms/breathing-difficulty.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "A healthcare provider examines the thyroid gland and neck for nodules or enlarged lymph nodes.",
+        img: "/diagnosis/physical-exam.png"
+      },
+      {
+        title: "Blood Tests",
+        text: "Thyroid blood tests help evaluate thyroid hormone function.",
+        img: "/diagnosis/blood-test.png"
+      },
+      {
+        title: "Fine-Needle Biopsy",
+        text: "A fine-needle aspiration biopsy removes thyroid cells to determine whether cancer is present.",
+        img: "/diagnosis/biopsy.png"
+      },
+      {
+        title: "Imaging Tests",
+        text: "Ultrasound, radioactive iodine scans, CT scans or PET scans help evaluate the thyroid and detect cancer spread.",
+        img: "/diagnosis/imaging.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery to remove part or all of the thyroid gland is the most common treatment.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Radioiodine Therapy",
+        text: "Radioactive iodine destroys remaining thyroid tissue or cancer cells after surgery.",
+        img: "/treatment/radioiodine.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "External radiation therapy may be recommended for cancers that cannot absorb radioactive iodine.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Hormone Therapy",
+        text: "Thyroid hormone replacement helps prevent new thyroid tissue growth and supports normal body function.",
+        img: "/treatment/hormone-therapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted medicines attack specific genetic changes found in some advanced thyroid cancers.",
+        img: "/treatment/targeted-therapy.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy may be used for aggressive thyroid cancers that do not respond to other treatments.",
+        img: "/treatment/chemotherapy.png"
+      }
+    ]
+  }
+},
+
+//tongue cancer
+
+{
+  slug: "tongue-cancer",
+
+  title: "Tongue Cancer",
+
+  description:
+    "The tongue is a muscular organ that helps with speaking, chewing, swallowing and tasting food. It also plays an important role in maintaining the airway and supporting normal oral function.",
+
+  bannerImg: "/cancers/tongue-cancer.webp",
+
+  overview: {
+    intro:
+      "Tongue cancer develops when cells in the tongue grow uncontrollably and form a tumor. The most common type is squamous cell carcinoma, which begins in the thin, flat cells covering the surface of the tongue. Cancer can affect the front portion of the tongue (oral tongue) or the base of the tongue near the throat (base of tongue cancer). :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Treatment depends on the tumor's size, location and whether it has spread to nearby tissues or lymph nodes. Early detection plays an important role in improving treatment outcomes and preserving essential functions such as speaking, swallowing and eating. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The tumor is small and confined to the tongue without spreading to nearby lymph nodes."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor is larger but remains limited to the tongue and has not spread to lymph nodes."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to a nearby lymph node or the tumor has grown larger into surrounding tissues."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread extensively into nearby structures, multiple lymph nodes or distant organs."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/hpv.png",
+        title: "HPV Infection",
+        text: "Human papillomavirus (HPV) is a leading cause of cancers that develop at the base of the tongue."
+      },
+      {
+        icon: "/icons/family-history.png",
+        title: "Family History",
+        text: "A biological family history of oral or oropharyngeal cancers may increase the risk."
+      },
+      {
+        icon: "/icons/cancer-history.png",
+        title: "Previous Cancer",
+        text: "People who have had squamous cell carcinoma or other head and neck cancers have a higher risk."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking",
+        text: "Smoking cigarettes, cigars or pipes is one of the strongest risk factors for tongue cancer."
+      },
+      {
+        icon: "/icons/alcohol.png",
+        title: "Heavy Alcohol Consumption",
+        text: "Excessive alcohol use significantly increases the risk, especially when combined with smoking."
+      },
+      {
+        icon: "/icons/tobacco.png",
+        title: "Chewing Tobacco or Betel Nut",
+        text: "Using smokeless tobacco or chewing betel nut increases the likelihood of developing tongue cancer."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Red or White Patches",
+        text: "Persistent red or white patches on the tongue may be an early sign of tongue cancer.",
+        img: "/symptoms/red-white-patches.png"
+      },
+      {
+        title: "Tongue Lump or Ulcer",
+        text: "A lump or sore on the tongue that doesn't heal or bleeds easily should be evaluated.",
+        img: "/symptoms/tongue-ulcer.png"
+      },
+      {
+        title: "Difficulty Swallowing",
+        text: "Pain or difficulty while chewing or swallowing may occur as the tumor grows.",
+        img: "/symptoms/difficulty-swallowing.png"
+      },
+      {
+        title: "Persistent Sore Throat or Hoarseness",
+        text: "Long-lasting throat discomfort or voice changes can occur, particularly with tumors near the base of the tongue.",
+        img: "/symptoms/sore-throat.png"
+      },
+      {
+        title: "Ear or Neck Pain",
+        text: "Pain that spreads to the ear or neck may develop as the disease progresses.",
+        img: "/symptoms/ear-pain.png"
+      },
+      {
+        title: "Jaw Swelling or Loose Teeth",
+        text: "Some people experience jaw swelling or notice loose teeth or dentures that no longer fit properly.",
+        img: "/symptoms/jaw-swelling.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Oral Examination",
+        text: "A healthcare provider examines the tongue and mouth for abnormal tissue or suspicious lesions.",
+        img: "/diagnosis/oral-exam.png"
+      },
+      {
+        title: "Endoscopy",
+        text: "An endoscope allows the provider to examine the mouth, throat and base of the tongue in greater detail.",
+        img: "/diagnosis/endoscopy.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A tissue sample is removed and examined under a microscope to confirm the diagnosis.",
+        img: "/diagnosis/biopsy.png"
+      },
+      {
+        title: "CT, MRI or PET Scan",
+        text: "Imaging tests help determine the size of the tumor and whether it has spread.",
+        img: "/diagnosis/imaging.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery removes part or all of the tumor and may include removal of nearby lymph nodes.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy may be given before or after surgery or used as the main treatment in selected cases.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy is commonly combined with radiation therapy for advanced tongue cancer.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted drugs block specific proteins that help cancer cells grow and spread.",
+        img: "/treatment/targeted-therapy.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the immune system recognize and attack certain advanced tongue cancers.",
+        img: "/treatment/immunotherapy.png"
+      }
+    ]
+  }
+},
+
+//urethral cancer
+
+{
+  slug: "urethral-cancer",
+
+  title: "Urethral Cancer",
+
+  description:
+    "The urethra is the tube that carries urine from the bladder to the outside of the body. In males, it also carries semen during ejaculation. It is an essential part of the urinary system and plays an important role in normal bladder function.",
+
+  bannerImg: "/cancers/urethral-cancer.webp",
+
+  overview: {
+    intro:
+      "Urethral cancer is a rare cancer that develops when abnormal cells grow in the tissues lining the urethra. It can affect both men and women, although it is uncommon. The disease includes several types depending on the cells where the cancer begins, with transitional cell carcinoma being the most common.",
+
+    description:
+      "The exact cause of urethral cancer isn't known, but long-term inflammation, chronic infections and certain medical conditions may increase the risk. Early diagnosis is important because the cancer can spread to nearby tissues and lymph nodes if left untreated." 
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "Cancer is limited to the inner lining of the urethra and has not spread into deeper tissues."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor has grown into deeper tissues surrounding the urethra but has not spread to lymph nodes."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread into nearby tissues, organs or regional lymph nodes."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to distant organs or multiple lymph nodes in other parts of the body."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/age.png",
+        title: "Age Over 60",
+        text: "Urethral cancer is diagnosed more often in people who are 60 years or older."
+      },
+      {
+        icon: "/icons/inflammation.png",
+        title: "Chronic Urethral Inflammation",
+        text: "Long-term inflammation caused by repeated urinary tract infections or sexually transmitted infections increases risk."
+      },
+      {
+        icon: "/icons/hpv.png",
+        title: "Human Papillomavirus (HPV)",
+        text: "Certain HPV infections have been linked to an increased risk of urethral cancer."
+      },
+      {
+        icon: "/icons/bladder.png",
+        title: "History of Bladder Cancer",
+        text: "People with a personal or family history of bladder cancer have a greater risk."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking",
+        text: "Smoking and other tobacco products significantly increase the risk of developing urethral cancer."
+      },
+      {
+        icon: "/icons/catheter.png",
+        title: "Long-Term Catheter Use",
+        text: "Long-term use of Foley catheters may contribute to chronic irritation and increase risk."
+      },
+      {
+        icon: "/icons/uti.png",
+        title: "Repeated Urinary Infections",
+        text: "Frequent urinary tract infections can lead to chronic inflammation associated with urethral cancer."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Blood in Urine",
+        text: "Blood in the urine is one of the most common symptoms of urethral cancer.",
+        img: "/symptoms/blood-urine.png"
+      },
+      {
+        title: "Pain During Urination",
+        text: "Burning or pain while urinating may occur as the tumor grows.",
+        img: "/symptoms/pain-urination.png"
+      },
+      {
+        title: "Weak Urine Stream",
+        text: "The urine stream may become weak, interrupted or difficult to start.",
+        img: "/symptoms/weak-stream.png"
+      },
+      {
+        title: "Frequent Urination",
+        text: "Some people experience an increased urge or need to urinate more often.",
+        img: "/symptoms/frequent-urination.png"
+      },
+      {
+        title: "Lump Near the Urethra",
+        text: "A lump or thickened area near the urethra, penis or perineum may develop.",
+        img: "/symptoms/lump.png"
+      },
+      {
+        title: "Urethral Discharge",
+        text: "Clear, white or off-white discharge from the urethra may occur in some cases.",
+        img: "/symptoms/discharge.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "Your healthcare provider reviews your symptoms and performs a physical examination.",
+        img: "/diagnosis/physical-exam.png"
+      },
+      {
+        title: "Urine Tests",
+        text: "Urinalysis and urine cytology help detect blood, abnormal cells and signs of cancer.",
+        img: "/diagnosis/urine-test.png"
+      },
+      {
+        title: "Cystoscopy",
+        text: "A cystoscope is inserted into the urethra to examine the urethra and bladder directly.",
+        img: "/diagnosis/cystoscopy.png"
+      },
+      {
+        title: "CT Scan",
+        text: "CT imaging helps determine the size of the tumor and whether it has spread.",
+        img: "/diagnosis/ct-scan.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A biopsy confirms the diagnosis by examining tissue samples under a microscope.",
+        img: "/diagnosis/biopsy.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery is the primary treatment and removes the tumor along with nearby affected tissue when necessary.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy uses high-energy beams to destroy cancer cells or shrink tumors.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy uses cancer-fighting medicines to destroy cancer cells and may be combined with other treatments.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Reconstructive Surgery",
+        text: "Some patients may undergo reconstructive surgery to restore urinary function after cancer treatment.",
+        img: "/treatment/reconstructive-surgery.png"
+      }
+    ]
+  }
+},
+
+//uterine cancer
+
+{
+  slug: "uterine-cancer",
+
+  title: "Uterine Cancer",
+
+  description:
+    "The uterus is a hollow, pear-shaped organ in the female reproductive system where a fetus develops during pregnancy. Its inner lining, called the endometrium, changes throughout the menstrual cycle in response to hormones.",
+
+  bannerImg: "/cancers/uterine-cancer.webp",
+
+  overview: {
+    intro:
+      "Uterine cancer is a general term for cancers that develop in the uterus. Most cases are endometrial cancer, which begins in the inner lining of the uterus (endometrium), while a much smaller number are uterine sarcomas that develop in the muscle or connective tissue of the uterus. Endometrial cancer accounts for about 95% of all uterine cancers. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Uterine cancer most often develops after menopause, although it can occur earlier. Abnormal vaginal bleeding is the most common warning sign and often leads to an early diagnosis. Treatment depends on the cancer type, stage and overall health, with surgery being the most common treatment. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "Cancer is confined to the uterus and has not spread beyond it."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "Cancer has spread from the uterus into the cervix but has not reached other areas."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread beyond the uterus into nearby tissues, ovaries, vagina or regional lymph nodes."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to the bladder, bowel or distant organs outside the pelvis."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/age.png",
+        title: "Age Over 50",
+        text: "Most uterine cancers develop after menopause, and the risk increases with age."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Lynch Syndrome",
+        text: "People with Lynch syndrome have a significantly higher risk of developing uterine cancer."
+      },
+      {
+        icon: "/icons/menopause.png",
+        title: "Lifetime Estrogen Exposure",
+        text: "Early menstruation, late menopause or never becoming pregnant increase lifetime exposure to estrogen."
+      },
+      {
+        icon: "/icons/radiation.png",
+        title: "Previous Pelvic Radiation",
+        text: "Radiation therapy to the pelvis for another cancer can increase the risk of uterine cancer."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/obesity.png",
+        title: "Obesity",
+        text: "Excess body fat increases estrogen levels and is one of the strongest risk factors for uterine cancer."
+      },
+      {
+        icon: "/icons/diabetes.png",
+        title: "Diabetes",
+        text: "People with diabetes have a higher likelihood of developing uterine cancer."
+      },
+      {
+        icon: "/icons/hormones.png",
+        title: "Estrogen Therapy Without Progesterone",
+        text: "Using estrogen replacement therapy alone after menopause increases the risk."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Abnormal Vaginal Bleeding",
+        text: "Bleeding between periods or any bleeding after menopause is the most common symptom.",
+        img: "/symptoms/vaginal-bleeding.png"
+      },
+      {
+        title: "Pelvic Pain or Cramping",
+        text: "Persistent pain or cramping in the lower abdomen or pelvis may occur.",
+        img: "/symptoms/pelvic-pain.png"
+      },
+      {
+        title: "Abnormal Vaginal Discharge",
+        text: "Thin white, watery or clear discharge after menopause may be a warning sign.",
+        img: "/symptoms/vaginal-discharge.png"
+      },
+      {
+        title: "Heavy or Prolonged Periods",
+        text: "Menstrual bleeding that is heavier, longer or more frequent than usual should be evaluated.",
+        img: "/symptoms/heavy-periods.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Pelvic Examination",
+        text: "A healthcare provider performs a pelvic examination and reviews symptoms and medical history.",
+        img: "/diagnosis/pelvic-exam.png"
+      },
+      {
+        title: "Endometrial Biopsy",
+        text: "A small sample of the uterine lining is removed and examined to confirm cancer.",
+        img: "/diagnosis/biopsy.png"
+      },
+      {
+        title: "Transvaginal Ultrasound",
+        text: "Ultrasound helps evaluate the thickness of the uterine lining and detect abnormalities.",
+        img: "/diagnosis/ultrasound.png"
+      },
+      {
+        title: "Hysteroscopy or Dilation & Curettage",
+        text: "These procedures allow healthcare providers to examine and collect tissue from inside the uterus.",
+        img: "/diagnosis/hysteroscopy.png"
+      },
+      {
+        title: "CT or MRI Scan",
+        text: "Imaging tests help determine whether the cancer has spread beyond the uterus.",
+        img: "/diagnosis/ct-scan.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "A hysterectomy, often with removal of the ovaries, fallopian tubes and nearby lymph nodes, is the primary treatment.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation uses high-energy beams to destroy remaining cancer cells or reduce recurrence risk.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy may be recommended for advanced or recurrent uterine cancer.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Hormone Therapy",
+        text: "Hormone therapy blocks or changes hormone activity to slow the growth of certain uterine cancers.",
+        img: "/treatment/hormone-therapy.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the immune system recognize and attack cancer cells in selected cases.",
+        img: "/treatment/immunotherapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted medicines attack specific features of cancer cells while limiting damage to healthy tissue.",
+        img: "/treatment/targeted-therapy.png"
+      }
+    ]
+  }
+},
+
+//vaginal cancer
+
+{
+  slug: "vaginal-cancer",
+
+  title: "Vaginal Cancer",
+
+  description:
+    "The vagina is a muscular canal that connects the cervix to the outside of the body. It plays an important role in menstruation, sexual intercourse and childbirth while serving as part of the female reproductive system.",
+
+  bannerImg: "/cancers/vaginal-cancer.webp",
+
+  overview: {
+    intro:
+      "Vaginal cancer is a rare cancer that develops in the lining of the vagina. Primary vaginal cancer begins in the vagina itself, while cancers from nearby organs, such as the cervix or uterus, can spread to the vagina. The most common type is squamous cell carcinoma, which starts in the flat cells lining the vaginal wall. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Vaginal cancer often causes no symptoms in its early stages and may be discovered during a routine pelvic examination or Pap test. When detected early, treatment is generally more successful and may include surgery, radiation therapy or chemotherapy depending on the stage and type of cancer. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "Cancer is limited to the inner lining of the vagina."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "Cancer has spread into tissues beneath the vaginal lining but has not reached the pelvic wall."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to the pelvic wall or nearby lymph nodes."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to nearby organs such as the bladder or rectum, or to distant parts of the body."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/hpv.png",
+        title: "Human Papillomavirus (HPV)",
+        text: "Persistent infection with certain high-risk HPV types increases the likelihood of developing vaginal cancer."
+      },
+      {
+        icon: "/icons/age.png",
+        title: "Older Age",
+        text: "The risk increases with age, and most people are diagnosed after the age of 60."
+      },
+      {
+        icon: "/icons/cervical-cancer.png",
+        title: "History of Cervical Cancer or Dysplasia",
+        text: "Previous cervical cancer or abnormal cervical cell changes increase the risk of vaginal cancer."
+      },
+      {
+        icon: "/icons/des.png",
+        title: "DES Exposure Before Birth",
+        text: "Exposure to diethylstilbestrol (DES) during pregnancy before birth increases the risk of clear cell adenocarcinoma."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking",
+        text: "Smoking approximately doubles the risk of developing vaginal cancer."
+      },
+      {
+        icon: "/icons/vain.png",
+        title: "Vaginal Intraepithelial Neoplasia (VAIN)",
+        text: "Having VAIN increases the chance that abnormal vaginal cells may eventually become cancerous."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Abnormal Vaginal Bleeding",
+        text: "Bleeding after sex or after menopause is one of the most common symptoms.",
+        img: "/symptoms/vaginal-bleeding.png"
+      },
+      {
+        title: "Abnormal Vaginal Discharge",
+        text: "Watery, bloody or foul-smelling vaginal discharge may occur.",
+        img: "/symptoms/vaginal-discharge.png"
+      },
+      {
+        title: "Pain During Sex",
+        text: "Sexual intercourse may become painful as the tumor grows.",
+        img: "/symptoms/pain-intercourse.png"
+      },
+      {
+        title: "Painful or Frequent Urination",
+        text: "Pain while urinating or needing to urinate frequently may develop.",
+        img: "/symptoms/pain-urination.png"
+      },
+      {
+        title: "Pelvic Pain",
+        text: "Persistent pain or discomfort in the pelvic area can occur in more advanced disease.",
+        img: "/symptoms/pelvic-pain.png"
+      },
+      {
+        title: "Vaginal Lump or Mass",
+        text: "A noticeable lump or growth inside the vagina may be present.",
+        img: "/symptoms/vaginal-lump.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Pelvic Examination",
+        text: "A healthcare provider examines the vagina and surrounding organs for abnormalities.",
+        img: "/diagnosis/pelvic-exam.png"
+      },
+      {
+        title: "Pap Test",
+        text: "A Pap test may detect abnormal cells that require further evaluation.",
+        img: "/diagnosis/pap-test.png"
+      },
+      {
+        title: "Colposcopy",
+        text: "A colposcope provides a magnified view of the vagina to identify suspicious areas.",
+        img: "/diagnosis/colposcopy.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A tissue sample is removed and examined under a microscope to confirm the diagnosis.",
+        img: "/diagnosis/biopsy.png"
+      },
+      {
+        title: "CT, MRI or PET Scan",
+        text: "Imaging tests help determine the extent of the cancer and whether it has spread.",
+        img: "/diagnosis/imaging.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy is the most common treatment and may be delivered externally or internally.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy may be combined with radiation or used to treat advanced disease.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Surgery",
+        text: "Surgery may remove the tumor or affected tissues, particularly in early-stage cancers.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Clinical Trials",
+        text: "Some patients may be eligible for clinical trials evaluating newer treatment approaches.",
+        img: "/treatment/clinical-trial.png"
+      }
+    ]
+  }
+},
+
+//vulva cancer
+
+{
+  slug: "vulvar-cancer",
+
+  title: "Vulvar Cancer",
+
+  description:
+    "The vulva is the external part of the female reproductive system, including the labia, clitoris, vaginal opening and surrounding tissues. It protects the internal reproductive organs and plays an important role in urinary, sexual and reproductive health.",
+
+  bannerImg: "/cancers/vulvar-cancer.webp",
+
+  overview: {
+    intro:
+      "Vulvar cancer is a rare cancer that develops in the tissues of the vulva. It usually develops slowly over several years, often beginning as precancerous changes called vulvar intraepithelial neoplasia (VIN). The most common type is squamous cell carcinoma, which starts in the surface cells of the vulva. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Most vulvar cancers occur on the labia majora or labia minora, although they can develop anywhere on the vulva. Early diagnosis and treatment improve outcomes, with surgery being the most common treatment option. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "Cancer is limited to the vulva or perineum and has not spread beyond these areas."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor has spread into nearby structures such as the lower urethra, lower vagina or anus."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer has spread to one or more nearby lymph nodes in the groin."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread into nearby organs such as the bladder or rectum, or to distant parts of the body."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/hpv.png",
+        title: "Human Papillomavirus (HPV)",
+        text: "Persistent infection with high-risk HPV types is one of the leading causes of vulvar cancer."
+      },
+      {
+        icon: "/icons/lichen-sclerosus.png",
+        title: "Lichen Sclerosus",
+        text: "This chronic skin condition affecting the vulva increases the risk of vulvar cancer."
+      },
+      {
+        icon: "/icons/age.png",
+        title: "Older Age",
+        text: "Most people diagnosed with vulvar cancer are over the age of 50."
+      },
+      {
+        icon: "/icons/hiv.png",
+        title: "Weakened Immune System",
+        text: "Conditions such as HIV can reduce the body's ability to fight abnormal cell growth."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/smoking.png",
+        title: "Smoking",
+        text: "Smoking increases the risk of developing vulvar cancer, especially in people with HPV infection."
+      },
+      {
+        icon: "/icons/vin.png",
+        title: "Vulvar Intraepithelial Neoplasia (VIN)",
+        text: "Untreated VIN is a precancerous condition that can develop into vulvar cancer."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Persistent Itching or Burning",
+        text: "Long-lasting itching, burning or irritation of the vulva is a common symptom.",
+        img: "/symptoms/itching.png"
+      },
+      {
+        title: "Skin Color Changes",
+        text: "The skin may become lighter, darker or develop white patches.",
+        img: "/symptoms/skin-changes.png"
+      },
+      {
+        title: "Lump, Wart or Open Sore",
+        text: "A lump, wart-like growth or ulcer that doesn't heal should be evaluated.",
+        img: "/symptoms/lump.png"
+      },
+      {
+        title: "Pain or Tenderness",
+        text: "Pain, tenderness or discomfort may occur, especially during urination or sexual intercourse.",
+        img: "/symptoms/pelvic-pain.png"
+      },
+      {
+        title: "Bleeding",
+        text: "Bleeding unrelated to menstruation may be a warning sign.",
+        img: "/symptoms/vaginal-bleeding.png"
+      },
+      {
+        title: "Persistent Vulvar Pain",
+        text: "Ongoing pain or soreness that doesn't improve should be examined by a healthcare provider.",
+        img: "/symptoms/pain.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Pelvic Examination",
+        text: "A healthcare provider examines the vulva and surrounding tissues for abnormal changes.",
+        img: "/diagnosis/pelvic-exam.png"
+      },
+      {
+        title: "Pap Test and HPV Testing",
+        text: "These tests may identify abnormal cells or HPV infection associated with vulvar cancer.",
+        img: "/diagnosis/pap-test.png"
+      },
+      {
+        title: "Colposcopy",
+        text: "A magnifying instrument helps examine the vulva, vagina and cervix more closely.",
+        img: "/diagnosis/colposcopy.png"
+      },
+      {
+        title: "Biopsy",
+        text: "Removing a small tissue sample is the only way to confirm vulvar cancer.",
+        img: "/diagnosis/biopsy.png"
+      },
+      {
+        title: "CT, MRI or PET Scan",
+        text: "Imaging tests determine whether the cancer has spread to nearby tissues or distant organs.",
+        img: "/diagnosis/imaging.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery is the primary treatment and removes the cancer while preserving as much healthy tissue as possible.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "High-energy radiation destroys cancer cells or reduces the chance of recurrence.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy may be combined with radiation or used for advanced disease.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Laser Surgery",
+        text: "Laser treatment may remove certain precancerous lesions or very early cancers.",
+        img: "/treatment/laser-surgery.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Selected advanced vulvar cancers may be treated with medicines that help the immune system attack cancer cells.",
+        img: "/treatment/immunotherapy.png"
+      }
+    ]
+  }
+},
+
+//waldenstr-m-macroglobulinemia
+
+{
+  slug: "waldenstr-m-macroglobulinemia",
+
+  title: "Waldenström Macroglobulinemia",
+
+  description:
+    "Bone marrow is the soft, spongy tissue inside your bones where blood cells are made. It produces red blood cells, white blood cells and platelets that help carry oxygen, fight infection and control bleeding.",
+
+  bannerImg: "/cancers/waldenstrom-macroglobulinemia.webp",
+
+  overview: {
+    intro:
+      "Waldenström macroglobulinemia (WM), also called lymphoplasmacytic lymphoma, is a rare, slow-growing type of non-Hodgkin lymphoma. It develops when abnormal B lymphocytes grow in the bone marrow and produce excessive amounts of an antibody called immunoglobulin M (IgM).",
+
+    description:
+      "Too much IgM can thicken the blood, making it harder to flow through small blood vessels and causing symptoms such as fatigue, vision changes and bleeding problems. Although there is currently no cure, several treatments can effectively control the disease and relieve symptoms for many years."
+  },
+
+  typesStages: {
+    stagesNote:
+      "Waldenström macroglobulinemia is not classified using traditional cancer stages. Healthcare providers evaluate the disease based on bone marrow involvement, IgM protein levels, symptoms, blood counts and whether organs are affected to guide treatment decisions."
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/age.png",
+        title: "Older Age",
+        text: "Most people diagnosed with Waldenström macroglobulinemia are 65 years or older."
+      },
+      {
+        icon: "/icons/family-history.png",
+        title: "Family History",
+        text: "Having close biological relatives with Waldenström macroglobulinemia or other lymphomas may increase the risk."
+      },
+      {
+        icon: "/icons/mgus.png",
+        title: "MGUS",
+        text: "Monoclonal gammopathy of undetermined significance (MGUS) can develop into Waldenström macroglobulinemia in some people."
+      },
+      {
+        icon: "/icons/hepatitis.png",
+        title: "Certain Medical Conditions",
+        text: "Conditions such as hepatitis C, HIV/AIDS and Sjögren's syndrome have been associated with a higher risk."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/genetics.png",
+        title: "Acquired Gene Mutations",
+        text: "Mutations involving the MYD88 and CXCR4 genes commonly occur during life and contribute to disease development."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Fatigue and Weakness",
+        text: "Anemia caused by abnormal bone marrow function commonly leads to tiredness and weakness.",
+        img: "/symptoms/fatigue.png"
+      },
+      {
+        title: "Night Sweats and Fever",
+        text: "Some people experience unexplained fever, night sweats and weight loss.",
+        img: "/symptoms/night-sweats.png"
+      },
+      {
+        title: "Enlarged Lymph Nodes or Spleen",
+        text: "Swollen lymph nodes or an enlarged liver or spleen may occur.",
+        img: "/symptoms/swollen-lymph-nodes.png"
+      },
+      {
+        title: "Blurred Vision and Headaches",
+        text: "High IgM levels can thicken the blood and cause headaches, dizziness and blurred vision.",
+        img: "/symptoms/blurred-vision.png"
+      },
+      {
+        title: "Bleeding Problems",
+        text: "Frequent nosebleeds or bleeding gums may occur because thickened blood affects circulation.",
+        img: "/symptoms/nosebleed.png"
+      },
+      {
+        title: "Peripheral Neuropathy",
+        text: "Numbness or tingling in the hands and feet can develop due to nerve involvement.",
+        img: "/symptoms/peripheral-neuropathy.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Blood and Urine Tests",
+        text: "These tests check blood cell counts and measure abnormal IgM protein levels.",
+        img: "/diagnosis/blood-test.png"
+      },
+      {
+        title: "Bone Marrow Biopsy",
+        text: "A bone marrow sample is examined to identify abnormal lymphoplasmacytic cells.",
+        img: "/diagnosis/bone-marrow-biopsy.png"
+      },
+      {
+        title: "CT or PET-CT Scan",
+        text: "Imaging helps detect enlarged lymph nodes, spleen or other affected organs.",
+        img: "/diagnosis/ct-scan.png"
+      },
+      {
+        title: "Eye Examination",
+        text: "An eye exam can detect bleeding or changes caused by thickened blood.",
+        img: "/diagnosis/eye-exam.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Watchful Waiting",
+        text: "People without symptoms may not need immediate treatment and are monitored regularly.",
+        img: "/treatment/watchful-waiting.png"
+      },
+      {
+        title: "Plasmapheresis",
+        text: "This procedure removes excess IgM protein from the blood to quickly relieve symptoms caused by thickened blood.",
+        img: "/treatment/plasmapheresis.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Medicines such as rituximab help the immune system destroy abnormal B cells.",
+        img: "/treatment/immunotherapy.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy drugs may be used alone or combined with immunotherapy to control the disease.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted medicines such as BTK inhibitors block proteins that help cancer cells survive and grow.",
+        img: "/treatment/targeted-therapy.png"
+      },
+      {
+        title: "Stem Cell Transplant",
+        text: "Stem cell transplantation may be considered for selected people with relapsed or difficult-to-treat disease.",
+        img: "/treatment/stem-cell-transplant.png"
+      }
+    ]
+  }
+},
+
+//wilms-tumour
+
+{
+  slug: "wilms-tumor",
+
+  title: "Wilms Tumor",
+
+  description:
+    "The kidneys are two bean-shaped organs that filter waste and excess fluid from the blood to produce urine. They also help regulate blood pressure, electrolyte balance and red blood cell production.",
+
+  bannerImg: "/cancers/wilms-tumor.webp",
+
+  overview: {
+    intro:
+      "Wilms tumor, also called nephroblastoma, is a rare kidney cancer that occurs primarily in children. It accounts for nearly 90% of kidney cancers in children and is usually diagnosed before the age of 10, most commonly between ages 3 and 5. :contentReference[oaicite:0]{index=0}",
+
+    description:
+      "Most Wilms tumors develop in only one kidney, although some children may have tumors in both kidneys. With modern treatment, including surgery and chemotherapy, the outlook for most children with Wilms tumor is very good. :contentReference[oaicite:1]{index=1}"
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The tumor is limited to one kidney and is completely removed during surgery."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The tumor has grown beyond the kidney but is still completely removed during surgery."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer remains in the abdomen after surgery or has spread to nearby lymph nodes."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread to distant organs such as the lungs, liver, bones or brain."
+      },
+      {
+        label: "V",
+        title: "Stage V",
+        text: "Tumors are present in both kidneys at the time of diagnosis."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/child.png",
+        title: "Young Age",
+        text: "Most children with Wilms tumor are diagnosed before age 10, especially between 3 and 5 years."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited Genetic Changes",
+        text: "A small number of children inherit genetic mutations associated with Wilms tumor."
+      },
+      {
+        icon: "/icons/congenital.png",
+        title: "Certain Birth Syndromes",
+        text: "Some congenital syndromes and birth defects increase the likelihood of developing Wilms tumor."
+      },
+      {
+        icon: "/icons/family-history.png",
+        title: "Family History",
+        text: "Having a close family member with Wilms tumor slightly increases the risk."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/kidney.png",
+        title: "No Known Lifestyle Risk Factors",
+        text: "There are no proven lifestyle habits that cause Wilms tumor. Most cases develop because of genetic changes that occur early in life."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Abdominal Lump",
+        text: "A firm swelling or lump in the abdomen is the most common sign.",
+        img: "/symptoms/abdominal-lump.png"
+      },
+      {
+        title: "Abdominal Pain",
+        text: "Some children experience pain or discomfort in the abdomen.",
+        img: "/symptoms/abdominal-pain.png"
+      },
+      {
+        title: "Blood in Urine",
+        text: "Blood may appear in the urine due to the kidney tumor.",
+        img: "/symptoms/blood-urine.png"
+      },
+      {
+        title: "Fever",
+        text: "Persistent fever without another obvious cause may occur.",
+        img: "/symptoms/fever.png"
+      },
+      {
+        title: "High Blood Pressure",
+        text: "Wilms tumor may cause hypertension, which can lead to headaches or nosebleeds.",
+        img: "/symptoms/high-blood-pressure.png"
+      },
+      {
+        title: "Loss of Appetite",
+        text: "Some children may lose their appetite or appear unusually tired.",
+        img: "/symptoms/loss-appetite.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "The healthcare provider checks the abdomen for swelling or a mass.",
+        img: "/diagnosis/physical-exam.png"
+      },
+      {
+        title: "Ultrasound",
+        text: "An abdominal ultrasound is usually the first imaging test used to identify a kidney tumor.",
+        img: "/diagnosis/ultrasound.png"
+      },
+      {
+        title: "CT or MRI Scan",
+        text: "These scans determine the size of the tumor and whether it has spread.",
+        img: "/diagnosis/ct-scan.png"
+      },
+      {
+        title: "Blood and Urine Tests",
+        text: "Laboratory tests evaluate kidney function and overall health.",
+        img: "/diagnosis/blood-test.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A biopsy may be performed in selected cases to confirm the diagnosis.",
+        img: "/diagnosis/biopsy.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery removes the tumor and, in many cases, the affected kidney.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy is commonly given before or after surgery to destroy cancer cells.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy may be recommended for advanced-stage or high-risk tumors.",
+        img: "/treatment/radiation.png"
+      },
+      {
+        title: "Clinical Trials",
+        text: "Some children may receive newer treatments through carefully monitored clinical trials.",
+        img: "/treatment/clinical-trial.png"
+      }
+    ]
+  }
+},
+
+//Xeroderma Pigmentosum-related Skin Cancer
+
+
+//yolk sac cancer 
+
+{
+  slug: "yolk-sac-tumor",
+
+  title: "Yolk Sac Tumor",
+
+  description:
+    "The ovaries and testicles produce eggs and sperm for reproduction. They also release hormones that support normal growth, puberty and reproductive health.",
+
+  bannerImg: "/cancers/yolk-sac-tumor.webp",
+
+  overview: {
+    intro:
+      "A yolk sac tumor, also called an endodermal sinus tumor, is a rare and aggressive germ cell cancer that develops from cells that normally become eggs or sperm. It most commonly occurs in the ovaries or testicles, especially in children and young adults.",
+
+    description:
+      "Although these tumors grow and spread quickly, modern treatments such as surgery and chemotherapy are highly effective, particularly when the cancer is diagnosed early. In rare cases, yolk sac tumors can also develop outside the reproductive organs, including the brain, chest or abdomen."
+  },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "The cancer is confined to the ovary or testicle where it first developed."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "The cancer has spread to nearby tissues but remains within the pelvis or nearby structures."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "The cancer has spread to nearby lymph nodes or tissues outside the pelvis or abdomen."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "The cancer has spread to distant organs such as the lungs, liver or other parts of the body."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/child.png",
+        title: "Young Age",
+        text: "Yolk sac tumors most commonly occur in children, adolescents and young adults."
+      },
+      {
+        icon: "/icons/germ-cell.png",
+        title: "Germ Cell Abnormalities",
+        text: "The tumor develops from germ cells that normally form eggs or sperm."
+      },
+      {
+        icon: "/icons/testicle.png",
+        title: "Testicular Germ Cell Tumors",
+        text: "Certain germ cell abnormalities in the testicles may increase the risk."
+      },
+      {
+        icon: "/icons/ovary.png",
+        title: "Ovarian Germ Cell Tumors",
+        text: "Yolk sac tumors are one of the malignant ovarian germ cell tumors seen in young females."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/healthy-lifestyle.png",
+        title: "No Proven Lifestyle Risk Factors",
+        text: "There are currently no known lifestyle or environmental factors proven to cause yolk sac tumors."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Abdominal Swelling or Mass",
+        text: "A growing lump or swelling in the abdomen may be the first noticeable symptom.",
+        img: "/symptoms/abdominal-lump.png"
+      },
+      {
+        title: "Abdominal or Pelvic Pain",
+        text: "Pain or discomfort may occur as the tumor enlarges.",
+        img: "/symptoms/abdominal-pain.png"
+      },
+      {
+        title: "Painless Testicular Lump",
+        text: "A firm, painless lump in a testicle is a common symptom in males.",
+        img: "/symptoms/testicular-lump.png"
+      },
+      {
+        title: "Irregular Menstrual Bleeding",
+        text: "Females with ovarian tumors may experience abnormal menstrual bleeding.",
+        img: "/symptoms/irregular-periods.png"
+      },
+      {
+        title: "Changes in Bowel Habits",
+        text: "Large tumors may press on nearby organs, causing constipation or bowel changes.",
+        img: "/symptoms/bowel-changes.png"
+      },
+      {
+        title: "Back Pain",
+        text: "Tumors may cause persistent lower back or pelvic pain as they grow.",
+        img: "/symptoms/back-pain.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "A healthcare provider checks for lumps, swelling or other abnormal findings.",
+        img: "/diagnosis/physical-exam.png"
+      },
+      {
+        title: "Blood Tests (AFP)",
+        text: "High alpha-fetoprotein (AFP) levels strongly suggest a yolk sac tumor.",
+        img: "/diagnosis/blood-test.png"
+      },
+      {
+        title: "CT Scan or MRI",
+        text: "Imaging helps determine the tumor's size, location and whether it has spread.",
+        img: "/diagnosis/ct-scan.png"
+      },
+      {
+        title: "Ultrasound",
+        text: "Ultrasound is commonly used to evaluate ovarian or testicular masses.",
+        img: "/diagnosis/ultrasound.png"
+      },
+      {
+        title: "Surgical Removal and Biopsy",
+        text: "The tumor is removed and examined under a microscope to confirm the diagnosis.",
+        img: "/diagnosis/biopsy.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Surgery",
+        text: "Surgery removes the tumor and, when necessary, the affected ovary or testicle.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Chemotherapy",
+        text: "Combination chemotherapy, commonly the BEP regimen, is the standard treatment for most patients.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Follow-Up Monitoring",
+        text: "Regular blood tests measuring AFP and imaging scans help detect recurrence early.",
+        img: "/treatment/follow-up.png"
+      },
+      {
+        title: "Supportive Care",
+        text: "Supportive care helps manage treatment side effects and improve quality of life during recovery.",
+        img: "/treatment/supportive-care.png"
+      }
+    ]
+  }
+},
+
+//zollinger-ellison-syndrome
+
+{
+  slug: "zollinger-ellison-syndrome",
+
+  title: "Zollinger-Ellison Syndrome",
+
+  description:
+    "The pancreas and small intestine help digest food by producing enzymes and hormones. They also regulate stomach acid production to support healthy digestion.",
+
+  bannerImg: "/cancers/zollinger-ellison-syndrome.webp",
+
+  overview: {
+    intro:
+      "Zollinger-Ellison syndrome (ZES) is a rare condition in which tumors called gastrinomas develop in the pancreas or the upper part of the small intestine (duodenum). These tumors produce excessive amounts of the hormone gastrin, causing the stomach to make too much acid.",
+
+    description:
+      "Excess stomach acid can lead to severe peptic ulcers, acid reflux and chronic diarrhea. About 60% of gastrinomas are cancerous, but many grow slowly. Treatment focuses on controlling acid production and removing tumors whenever possible." 
+  },
+
+  typesStages: {
+    stagesNote:
+      "Zollinger-Ellison syndrome is not classified using traditional cancer stages. Treatment and prognosis depend on whether gastrinomas are benign or cancerous, their size, location and whether they have spread."
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/genetics.png",
+        title: "Multiple Endocrine Neoplasia Type 1 (MEN1)",
+        text: "Around one in four people with Zollinger-Ellison syndrome have the inherited genetic condition MEN1."
+      },
+      {
+        icon: "/icons/pancreas.png",
+        title: "Gastrin-Producing Tumors",
+        text: "The syndrome develops when gastrinomas form in the pancreas or duodenum."
+      },
+      {
+        icon: "/icons/dna.png",
+        title: "Inherited Gene Changes",
+        text: "Inherited genetic mutations associated with MEN1 significantly increase the risk."
+      },
+      {
+        icon: "/icons/family-history.png",
+        title: "Family History",
+        text: "People with a family history of MEN1 have a greater chance of developing Zollinger-Ellison syndrome."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/healthy-lifestyle.png",
+        title: "No Proven Lifestyle Risk Factors",
+        text: "There are no known lifestyle or environmental factors that directly cause Zollinger-Ellison syndrome."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Persistent Abdominal Pain",
+        text: "Burning or gnawing pain caused by excessive stomach acid and ulcers.",
+        img: "/symptoms/abdominal-pain.png"
+      },
+      {
+        title: "Chronic Diarrhea",
+        text: "Frequent diarrhea is one of the most common symptoms of Zollinger-Ellison syndrome.",
+        img: "/symptoms/diarrhea.png"
+      },
+      {
+        title: "Heartburn and Acid Reflux",
+        text: "Excess stomach acid can cause severe heartburn and gastroesophageal reflux.",
+        img: "/symptoms/heartburn.png"
+      },
+      {
+        title: "Nausea and Vomiting",
+        text: "Some people experience nausea or vomiting due to stomach irritation.",
+        img: "/symptoms/nausea.png"
+      },
+      {
+        title: "Weight Loss",
+        text: "Persistent digestive problems may lead to unintended weight loss.",
+        img: "/symptoms/weight-loss.png"
+      },
+      {
+        title: "Bleeding Ulcers",
+        text: "Ulcers may bleed, causing blood in vomit or stool.",
+        img: "/symptoms/bleeding.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Blood Tests",
+        text: "Blood tests measure gastrin levels, which are typically very high in Zollinger-Ellison syndrome.",
+        img: "/diagnosis/blood-test.png"
+      },
+      {
+        title: "CT Scan or MRI",
+        text: "Imaging scans help locate gastrinomas and determine whether they have spread.",
+        img: "/diagnosis/ct-scan.png"
+      },
+      {
+        title: "Upper Endoscopy",
+        text: "An endoscope allows doctors to examine ulcers and the upper digestive tract.",
+        img: "/diagnosis/endoscopy.png"
+      },
+      {
+        title: "Endoscopic Ultrasound",
+        text: "This test helps identify small tumors in the pancreas or duodenum.",
+        img: "/diagnosis/ultrasound.png"
+      },
+      {
+        title: "Biopsy",
+        text: "A tissue sample confirms whether a gastrinoma is cancerous.",
+        img: "/diagnosis/biopsy.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Proton Pump Inhibitors (PPIs)",
+        text: "PPIs reduce stomach acid production and help control ulcers and other symptoms.",
+        img: "/treatment/medication.png"
+      },
+      {
+        title: "Surgery",
+        text: "Surgery removes gastrinomas whenever they can be safely removed.",
+        img: "/treatment/surgery.png"
+      },
+      {
+        title: "Cancer Therapy",
+        text: "Chemotherapy or other cancer treatments may be recommended if tumors have spread.",
+        img: "/treatment/chemotherapy.png"
+      },
+      {
+        title: "Long-Term Follow-Up",
+        text: "Regular monitoring helps detect tumor recurrence and manage stomach acid levels.",
+        img: "/treatment/follow-up.png"
+      }
+    ]
+  }
+},
 
 ];
-
-
-
-
-
-
 
 export default cancersData;
