@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./awards.css";
 import PageBanner from "../components/PageBanner";
 
