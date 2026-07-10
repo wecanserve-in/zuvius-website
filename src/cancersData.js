@@ -5553,17 +5553,167 @@ typesStages: {
   title: "Lymphoma",
 
   description:
-    "The lymphatic system is a network of lymph nodes, vessels and organs that helps your body fight infections and maintain fluid balance. It contains lymphocytes, specialized white blood cells that play an important role in your immune system.",
+    "The lymphatic system is part of your immune system. It includes lymph nodes, the spleen, bone marrow and lymph vessels that help fight infections and remove waste from the body.",
 
   bannerImg: "/cancers/lymphoma.webp",
 
   overview: {
     intro:
-      "Lymphoma is a group of blood cancers that develops in the lymphatic system. It begins in lymphocytes, a type of white blood cell found in lymph nodes and other lymphatic tissues. The disease is broadly classified into two main types: Hodgkin lymphoma and non-Hodgkin lymphoma, with many different subtypes.",
+      "Lymphoma is a type of blood cancer that begins in lymphocytes, a kind of white blood cell that helps protect your body from infection. It develops when these cells grow and multiply uncontrollably within the lymphatic system.",
 
     description:
-      "Lymphoma can affect lymph nodes and other parts of the lymphatic system, and in some cases may involve organs outside this network. The outlook and treatment approach depend on the specific lymphoma type, its stage and how quickly it grows. Early evaluation and appropriate treatment can often achieve remission, and many forms of lymphoma can be treated successfully.",
+      "The two main types of lymphoma are Hodgkin lymphoma and non-Hodgkin lymphoma. While they share some symptoms, they differ in how they develop and are treated. Advances in chemotherapy, immunotherapy and targeted therapy have significantly improved outcomes for many people with lymphoma."
   },
+
+  typesStages: {
+    stages: [
+      {
+        label: "I",
+        title: "Stage I",
+        text: "Cancer is found in one lymph node region or one lymphatic organ."
+      },
+      {
+        label: "II",
+        title: "Stage II",
+        text: "Cancer affects two or more lymph node regions on the same side of the diaphragm."
+      },
+      {
+        label: "III",
+        title: "Stage III",
+        text: "Cancer is present in lymph node regions on both sides of the diaphragm."
+      },
+      {
+        label: "IV",
+        title: "Stage IV",
+        text: "Cancer has spread beyond the lymphatic system to organs such as the liver, lungs or bone marrow."
+      }
+    ]
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/age.png",
+        title: "Age",
+        text: "The risk of certain types of lymphoma increases with age, although some forms are more common in younger people."
+      },
+      {
+        icon: "/icons/immune.png",
+        title: "Weakened Immune System",
+        text: "People with weakened immune systems have a higher risk of developing lymphoma."
+      },
+      
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "Having a close relative with lymphoma slightly increases the risk."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/overweight.png",
+        title: "Obesity",
+        text: "Obesity may increase the risk of developing certain types of lymphoma."
+      },
+      {
+        icon: "/icons/diet.png",
+        title: "Chemical Exposure",
+        text: "Long-term exposure to certain pesticides, herbicides or industrial chemicals may increase lymphoma risk."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Swollen Lymph Nodes",
+        text: "Painless swelling in the neck, armpits or groin is the most common symptom.",
+        img: "/symptoms/hcl-swallen.png"
+      },
+      {
+        title: "Persistent Fever",
+        text: "Recurring or unexplained fever may occur without an obvious infection.",
+        img: "/symptoms/bile-fever.png"
+      },
+      
+      {
+        title: "Unexplained Weight Loss",
+        text: "Losing weight without trying may indicate lymphoma.",
+        img: "/symptoms/burkitt-weight.png"
+      },
+      {
+        title: "Fatigue",
+        text: "Persistent tiredness that doesn't improve with rest is common.",
+        img: "/symptoms/bone-fatigue.png"
+      },
+      {
+        title: "Itchy Skin",
+        text: "Some people develop persistent itching without a visible rash.",
+        img: "/symptoms/lymphoma-itchyskin.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "The healthcare provider checks for enlarged lymph nodes and other signs of lymphoma.",
+        img: "/diagnosis/brain-exam.png"
+      },
+      {
+        title: "Lymph Node Biopsy",
+        text: "Removing part or all of a lymph node is the most accurate way to diagnose lymphoma.",
+        img: "/diagnosis/lymphoma-lympbiospy.png"
+      },
+      {
+        title: "Blood Tests",
+        text: "Blood tests evaluate overall health and help identify abnormalities related to lymphoma.",
+        img: "/diagnosis/adrenal-blood.png"
+      },
+      {
+        title: "PET-CT or CT Scan",
+        text: "Imaging scans determine the location, size and spread of lymphoma.",
+        img: "/diagnosis/bile-scan.png"
+      },
+      {
+        title: "Bone Marrow Biopsy",
+        text: "A bone marrow biopsy checks whether lymphoma has spread to the bone marrow.",
+        img: "/diagnosis/lymphoma-bonemarrow.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Chemotherapy",
+        text: "Chemotherapy is one of the most common treatments used to destroy lymphoma cells.",
+        img: "/treatment/adrenal-chemo.png"
+      },
+      {
+        title: "Immunotherapy",
+        text: "Immunotherapy helps the body's immune system recognize and attack lymphoma cells.",
+        img: "/treatment/anal-immuno.png"
+      },
+      {
+        title: "Targeted Therapy",
+        text: "Targeted drugs attack specific molecules involved in lymphoma growth while limiting damage to healthy cells.",
+        img: "/treatment/appendix-targeted.png"
+      },
+      {
+        title: "Radiation Therapy",
+        text: "Radiation therapy may be used alone for localized disease or combined with other treatments.",
+        img: "/treatment/ewing-radiation.png"
+      },
+      {
+        title: "Stem Cell Transplant",
+        text: "A stem cell transplant may be recommended for recurrent or aggressive lymphoma after intensive treatment.",
+        img: "/treatment/lymphoma-steamcell.png"
+      }
+    ]
+  }
 },
 
 //male breast cancer
@@ -5624,7 +5774,7 @@ typesStages: {
         text: "Male breast cancer is diagnosed most often in men in their 60s."
       },
       {
-        icon: "/icons/family-history.png",
+        icon: "/icons/family.png",
         title: "Family History",
         text: "Having a parent, sibling or child with breast or ovarian cancer increases the risk."
       },
@@ -5634,7 +5784,7 @@ typesStages: {
         text: "Inherited mutations, especially BRCA2 and BRCA1, can significantly increase the risk of male breast cancer."
       },
       {
-        icon: "/icons/testicular.png",
+        icon: "/icons/male.png",
         title: "Testicular Conditions",
         text: "Undescended testicles, orchitis, testicular injury or removal of a testicle may increase risk."
       }
@@ -5810,17 +5960,17 @@ typesStages: {
         text: "People with fair skin, freckles, blonde or red hair and blue eyes have a higher risk of melanoma."
       },
       {
-        icon: "/icons/family-history.png",
+        icon: "/icons/family.png",
         title: "Family or Personal History",
         text: "Having a personal or family history of melanoma increases the likelihood of developing the disease."
       },
       {
-        icon: "/icons/moles.png",
+        icon: "/icons/mole.png",
         title: "Many or Atypical Moles",
         text: "Having numerous moles or unusual-looking moles increases melanoma risk."
       },
       {
-        icon: "/icons/immune-system.png",
+        icon: "/icons/immune.png",
         title: "Weakened Immune System",
         text: "A weakened immune system may make it more difficult for the body to prevent melanoma from developing."
       }
@@ -5828,12 +5978,12 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/sun.png",
+        icon: "/icons/uv.png",
         title: "Excess Sun Exposure",
         text: "Long-term exposure to ultraviolet (UV) radiation, especially severe sunburns during childhood, increases melanoma risk."
       },
       {
-        icon: "/icons/tanning-bed.png",
+        icon: "/icons/radiation.png",
         title: "Tanning Beds",
         text: "Using tanning beds exposes the skin to UV radiation and significantly increases the risk of melanoma."
       }
@@ -5845,33 +5995,29 @@ typesStages: {
       {
         title: "Asymmetrical Mole",
         text: "One half of the mole or skin spot looks different from the other half.",
-        img: "/symptoms/melanoma-asymmetry.png"
+        img: "/symptoms/as_mole.png"
       },
       {
         title: "Irregular Border",
         text: "The edges of the mole are uneven, ragged or poorly defined.",
-        img: "/symptoms/melanoma-border.png"
+        img: "/symptoms/irregularmole.png"
       },
       {
         title: "Uneven Color",
         text: "The spot contains multiple shades such as brown, black, gray, red, white or blue.",
-        img: "/symptoms/melanoma-color.png"
+        img: "/symptoms/unevencolormole.png"
       },
       {
         title: "Large Diameter",
         text: "The spot is larger than about 6 millimeters, although melanomas can sometimes be smaller.",
-        img: "/symptoms/melanoma-diameter.png"
+        img: "/symptoms/largerdiameter.png"
       },
       {
         title: "Changing Appearance",
         text: "A mole or skin lesion that changes in size, shape or color should be evaluated.",
-        img: "/symptoms/melanoma-evolving.png"
+        img: "/symptoms/molechnages.png"
       },
-      {
-        title: "New or Unusual Skin Spot",
-        text: "A new sore, bump or skin lesion that looks different from others may be a warning sign.",
-        img: "/symptoms/melanoma-new-spot.png"
-      }
+      
     ]
   },
 
@@ -5880,32 +6026,32 @@ typesStages: {
       {
         title: "Skin Examination",
         text: "A healthcare provider examines the skin and suspicious moles for signs of melanoma.",
-        img: "/diagnosis/melanoma-exam.png"
+        img: "/diagnosis/bcc-exam.png"
       },
       {
         title: "Skin Biopsy",
         text: "A biopsy removes all or part of the suspicious skin lesion so it can be examined under a microscope.",
-        img: "/diagnosis/melanoma-biopsy.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "Sentinel Lymph Node Biopsy",
         text: "This test helps determine whether melanoma has spread to nearby lymph nodes in certain patients.",
-        img: "/diagnosis/melanoma-sentinel.png"
+        img: "/treatment/anal-surgery.png"
       },
       {
         title: "CT Scan",
         text: "CT scans may be used to check whether melanoma has spread to internal organs.",
-        img: "/diagnosis/melanoma-ct.png"
+        img: "/diagnosis/astro-ct.png"
       },
       {
         title: "MRI Scan",
         text: "MRI may be used to look for melanoma in the brain or spinal cord.",
-        img: "/diagnosis/melanoma-mri.png"
+        img: "/diagnosis/astro-mri.png"
       },
       {
         title: "PET Scan",
         text: "PET scans help identify melanoma that has spread to lymph nodes or other distant parts of the body.",
-        img: "/diagnosis/melanoma-pet.png"
+        img: "/diagnosis/burkitt-pet.png"
       }
     ]
   },
@@ -5915,32 +6061,28 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery is the main treatment for melanoma and removes the cancer along with a margin of healthy skin.",
-        img: "/treatment/melanoma-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Lymph Node Surgery",
         text: "Nearby lymph nodes may be removed if melanoma has spread to them.",
-        img: "/treatment/melanoma-lymph-node.png"
+        img: "/treatment/bone-surgery.png"
       },
-      {
-        title: "Metastasectomy",
-        text: "Surgery may be performed to remove melanoma that has spread to certain organs.",
-        img: "/treatment/melanoma-metastasectomy.png"
-      },
+      
       {
         title: "Targeted Therapy",
         text: "Targeted therapy uses medicines that attack specific cancer cells while limiting damage to healthy cells.",
-        img: "/treatment/melanoma-targeted.png"
+        img: "/treatment/colon-targeted.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to destroy cancer cells or shrink tumors.",
-        img: "/treatment/melanoma-radiation.png"
+        img: "/treatment/ewing-radiation.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy strengthens the body's immune system to recognize and attack melanoma cells.",
-        img: "/treatment/melanoma-immunotherapy.png"
+        img: "/treatment/brain-immuno.png"
       }
     ],
 
@@ -6000,7 +6142,7 @@ typesStages: {
         text: "Mesothelioma occurs more often in males than females."
       },
       {
-        icon: "/icons/family-history.png",
+        icon: "/icons/genetics.png",
         title: "Inherited Gene Changes",
         text: "Certain inherited changes, such as BAP1 gene mutations, may increase the risk of mesothelioma."
       }
@@ -6008,69 +6150,53 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/asbestos.svg  ",
+        icon: "/icons/inhale.png",
         title: "Asbestos Exposure",
         text: "Exposure to asbestos is the most common cause of mesothelioma. The disease may develop decades after exposure."
       },
-      {
-        icon: "/icons/exposure.png",
-        title: "Occupational Exposure",
-        text: "Jobs in construction, shipbuilding, mining, milling, military service and auto repair may increase asbestos exposure."
-      },
+      
       {
         icon: "/icons/radiation.png",
         title: "Radiation Exposure",
         text: "Previous radiation treatment or occupational radiation exposure may increase the risk."
       },
-      {
-        icon: "/icons/erionite.png",
-        title: "Erionite Exposure",
-        text: "Exposure to erionite, a naturally occurring mineral similar to asbestos, may increase risk."
-      }
+     
     ]
   },
 
   symptoms: {
     items: [
-      {
-        title: "Shortness of Breath",
-        text: "Difficulty breathing is one of the most common symptoms of mesothelioma.",
-        img: "/symptoms/mesothelioma-breathlessness.png"
-      },
+      
       {
         title: "Persistent Cough",
         text: "A cough that continues or worsens over time may occur.",
-        img: "/symptoms/mesothelioma-cough.png"
+        img: "/symptoms/adrenal-metastatic.png"
       },
       {
         title: "Chest or Abdominal Pain",
         text: "Pain depends on where the mesothelioma develops.",
-        img: "/symptoms/mesothelioma-pain.png"
+        img: "/symptoms/esophageal-heartburn.png"
       },
       {
         title: "Fatigue",
         text: "Persistent tiredness or lack of energy is common.",
-        img: "/symptoms/mesothelioma-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       },
-      {
-        title: "Night Sweats",
-        text: "Some people experience excessive sweating during sleep.",
-        img: "/symptoms/mesothelioma-night-sweats.png"
-      },
+      
       {
         title: "Unexplained Weight Loss",
         text: "Weight loss without trying may occur as the disease progresses.",
-        img: "/symptoms/mesothelioma-weight-loss.png"
+        img: "/symptoms/burkitt-weight.png"
       },
       {
         title: "Digestive Symptoms",
         text: "Loss of appetite, nausea, vomiting or diarrhea may occur in abdominal mesothelioma.",
-        img: "/symptoms/mesothelioma-digestive.png"
+        img: "/symptoms/duodenal-nausea.png"
       },
       {
         title: "Scrotal Swelling or Lump",
         text: "Mesothelioma involving the lining around the testicles may cause swelling, pain or a lump.",
-        img: "/symptoms/mesothelioma-scrotum.png"
+        img: "/symptoms/ewing-fati.png"
       }
     ]
   },
@@ -6080,32 +6206,32 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider reviews symptoms, medical history and possible asbestos exposure.",
-        img: "/diagnosis/mesothelioma-exam.png"
+        img: "/diagnosis/brain-exam.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests may be performed as part of the evaluation.",
-        img: "/diagnosis/mesothelioma-blood.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Imaging Tests",
         text: "Chest X-rays, CT scans and other imaging tests help identify tumors and affected areas.",
-        img: "/diagnosis/mesothelioma-imaging.png"
+        img: "/diagnosis/anal-scan.png"
       },
       {
         title: "PET Scan",
         text: "PET scans help determine whether mesothelioma has spread to other parts of the body.",
-        img: "/diagnosis/mesothelioma-pet.png"
+        img: "/diagnosis/burkitt-pet.png"
       },
       {
         title: "Fluid Analysis",
         text: "Fluid may be removed from around the lungs or abdomen and examined for cancer cells.",
-        img: "/diagnosis/mesothelioma-fluid.png"
+        img: "/diagnosis/fluild.png"
       },
       {
         title: "Biopsy",
         text: "A biopsy confirms the diagnosis by examining tissue under a microscope.",
-        img: "/diagnosis/mesothelioma-biopsy.png"
+        img: "/diagnosis/brain-biopsy.png"
       }
     ]
   },
@@ -6115,27 +6241,27 @@ typesStages: {
       {
         title: "Surgery",
         text: "Different surgical procedures may remove tumors or affected tissue depending on the type and location of mesothelioma.",
-        img: "/treatment/mesothelioma-surgery.png"
+        img: "/treatment/anal-surgery.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells throughout the body.",
-        img: "/treatment/mesothelioma-chemo.png"
+        img: "/treatment/appendix-chemo.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the immune system recognize and attack cancer cells.",
-        img: "/treatment/mesothelioma-immunotherapy.png"
+        img: "/treatment/anal-immuno.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapies may be used when cancer cells have specific genetic changes.",
-        img: "/treatment/mesothelioma-targeted.png"
+        img: "/treatment/appendix-targeted.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to destroy cancer cells or relieve symptoms.",
-        img: "/treatment/mesothelioma-radiation.png"
+        img: "/treatment/astro-radiation.png"
       }
     ],
 
@@ -6191,25 +6317,21 @@ typesStages: {
         text: "Multiple myeloma is most commonly diagnosed in older adults, with the median age at diagnosis being about 69 years."
       },
       {
-        icon: "/icons/gender.png",
+        icon: "/icons/male.png",
         title: "Male Sex",
         text: "Multiple myeloma affects males more often than females."
       },
       {
-        icon: "/icons/family-history.png",
+        icon: "/icons/family.png",
         title: "Family History",
         text: "Having a close family member with multiple myeloma may slightly increase risk, although the condition is not considered hereditary."
       },
-      {
-        icon: "/icons/race.png",
-        title: "Race",
-        text: "Multiple myeloma occurs about twice as often in Black people as in people of other races."
-      }
+      
     ],
 
     lifestyle: [
       {
-        icon: "/icons/exposure.png",
+        icon: "/icons/inhale.png",
         title: "Environmental Exposure",
         text: "Exposure to pesticides, fertilizers or Agent Orange may be associated with an increased risk."
       },
@@ -6226,32 +6348,24 @@ typesStages: {
       {
         title: "Bone Pain",
         text: "Bone pain, especially in the back, chest, pelvis, head or upper legs, is often one of the first symptoms.",
-        img: "/symptoms/myeloma-bone-pain.png"
+        img: "/symptoms/bone-movement.png"
       },
       {
         title: "Fatigue and Weakness",
         text: "Low red blood cell counts (anemia) can cause persistent tiredness and weakness.",
-        img: "/symptoms/myeloma-fatigue.png"
+        img: "/symptoms/bone-fatigue.png"
       },
-      {
-        title: "Frequent Infections",
-        text: "Low healthy white blood cell levels can make infections occur more easily.",
-        img: "/symptoms/myeloma-infection.png"
-      },
-      {
-        title: "Numbness or Tingling",
-        text: "Nerve damage may cause numbness or tingling in the arms or legs.",
-        img: "/symptoms/myeloma-tingling.png"
-      },
+      
+      
       {
         title: "Unexplained Weight Loss",
         text: "Weight loss without trying may occur as the disease progresses.",
-        img: "/symptoms/myeloma-weight-loss.png"
+        img: "/symptoms/burkitt-weight.png"
       },
       {
         title: "Nausea and Vomiting",
         text: "Some people experience nausea and vomiting due to complications of the disease.",
-        img: "/symptoms/myeloma-nausea.png"
+        img: "/symptoms/burkitt-nausea.png"
       }
     ]
   },
@@ -6261,28 +6375,24 @@ typesStages: {
       {
         title: "Blood Tests",
         text: "Blood tests check blood cell counts, organ function and abnormal antibodies such as M proteins.",
-        img: "/diagnosis/myeloma-blood.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Urine Tests",
         text: "Urine tests help detect abnormal proteins that may indicate multiple myeloma.",
-        img: "/diagnosis/myeloma-urine.png"
+        img: "/diagnosis/adrenal-urine.png"
       },
       {
         title: "Imaging Tests",
         text: "X-rays, CT scans, MRI scans and PET scans help identify bone damage and myeloma tumors.",
-        img: "/diagnosis/myeloma-imaging.png"
+        img: "/diagnosis/astro-ct.png"
       },
       {
         title: "Bone Marrow Biopsy",
         text: "A bone marrow biopsy or aspiration confirms the diagnosis by detecting abnormal plasma cells.",
-        img: "/diagnosis/myeloma-biopsy.png"
+        img: "/diagnosis/lymphoma-bonemarrow.png"
       },
-      {
-        title: "Genetic Testing",
-        text: "Genetic testing on biopsy samples helps identify gene changes that influence treatment planning.",
-        img: "/diagnosis/myeloma-genetic.png"
-      }
+     
     ]
   },
 
@@ -6291,32 +6401,28 @@ typesStages: {
       {
         title: "Stem Cell Transplant",
         text: "Stem cell transplantation replaces damaged bone marrow cells with healthy stem cells and may slow disease progression.",
-        img: "/treatment/myeloma-transplant.png"
+        img: "/treatment/lymphoma-steamcell.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy destroys abnormal plasma cells and is often used before stem cell transplantation.",
-        img: "/treatment/myeloma-chemo.png"
+        img: "/treatment/cervical-chemo.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy attacks specific weaknesses in myeloma cells to help stop their growth.",
-        img: "/treatment/myeloma-targeted.png"
+        img: "/treatment/brain-targeted.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the immune system recognize and destroy myeloma cells. CAR T-cell therapy is one example.",
-        img: "/treatment/myeloma-immunotherapy.png"
+        img: "/treatment/burkitt-immuno.png"
       },
-      {
-        title: "Steroid Therapy",
-        text: "High-dose steroids help destroy myeloma cells and reduce inflammation.",
-        img: "/treatment/myeloma-steroids.png"
-      },
+      
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be used to shrink bone tumors and relieve pain.",
-        img: "/treatment/myeloma-radiation.png"
+        img: "/treatment/ewing-radiation.png"
       }
     ],
 
@@ -6378,21 +6484,13 @@ typesStages: {
 
   riskFactorsData: {
     uncontrollable: [
-      {
-        icon: "/icons/virus.png",
-        title: "Epstein-Barr Virus (EBV)",
-        text: "Infection with Epstein-Barr virus is strongly associated with nasopharyngeal cancer."
-      },
+      
       {
         icon: "/icons/family.png",
         title: "Family History",
         text: "People with a close family member who has had nasopharyngeal cancer have a higher risk."
       },
-      {
-        icon: "/icons/world.png",
-        title: "Geographic Background",
-        text: "The disease is more common in people from Southeast Asia, southern China and northern Africa."
-      },
+    
       {
         icon: "/icons/male.png",
         title: "Male Sex",
@@ -6417,7 +6515,7 @@ typesStages: {
         text: "Regularly eating large amounts of salt-cured meat or fish may increase the risk of nasopharyngeal cancer."
       },
       {
-        icon: "/icons/smoke.png",
+        icon: "/icons/inhale.png",
         title: "Dust and Smoke Exposure",
         text: "Long-term exposure to high levels of dust and smoke may increase the likelihood of developing this cancer."
       }
@@ -6429,12 +6527,12 @@ typesStages: {
       {
         title: "Painless Neck Lump",
         text: "A painless lump at the back or side of the neck caused by enlarged lymph nodes is the most common symptom.",
-        img: "/symptoms/nasopharyngeal-neck-lump.png"
+        img: "/symptoms/hcl-swallen.png"
       },
       {
         title: "Hearing Problems",
         text: "Hearing loss, ringing in the ears or a feeling of fullness in the ears may occur.",
-        img: "/symptoms/nasopharyngeal-hearing.png"
+        img: "/symptoms/ear-pain.png"
       },
       {
         title: "Persistent Ear Infections",
