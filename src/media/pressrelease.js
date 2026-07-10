@@ -109,7 +109,7 @@ const PressRelease = () => {
                   </span>
 
                   <span className="media-year">
-                    2025
+                    {item.year}
                   </span>
                 </div>
 

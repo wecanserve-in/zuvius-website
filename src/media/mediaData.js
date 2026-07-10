@@ -106,7 +106,7 @@ Representing Zuvius Lifesciences, Nimish Thakkar highlights the company's uncomp
       "Zuvius Lifesciences: Revolutionising Health with Affordable and Unique Oncology Solutions",
 
     image: "/newsroom/press-6.png",
-    heroImage: "/newsroom/ceo-article.jpg",
+    heroImage: "/newsroom/hero-7.png",
 
     excerpt:
       "A feature highlighting Zuvius Lifesciences' journey as a research-driven oncology company.",
@@ -165,7 +165,7 @@ The feature also outlines the company's perspective on the pharmaceutical indust
       "Zuvius Lifesciences Aims to be Among the Top Five Most Trusted Companies Across the Globe",
 
     image: "/newsroom/press-1.png",
-    heroImage: "/newsroom/brandhonchos.jpg",
+    heroImage: "/newsroom/hero-4.png",
 
     excerpt:
       "A Brand Honchos feature highlighting Zuvius Lifesciences' growth journey and future aspirations.",
@@ -343,7 +343,7 @@ Zuvius Lifesciences’ campaign is positioned as part of wider CSR-driven effort
   title: "Blaze of Brilliance",
 
   image: "/newsroom/press-5.png",
-  heroImage: "/newsroom/wecanserve-cover.jpg",
+  heroImage: "/newsroom/hero-6.png",
 
   excerpt:
     "A special We Canserve magazine cover issue exploring innovation, healthcare startups, wellness, and expert perspectives shaping the oncology ecosystem.",
@@ -405,7 +405,7 @@ Overall, the publication positions itself as a knowledge-driven platform for onc
     "Indian Pharmaceutical Giant Zuvius Lifesciences Shows Interest to Invest in Ethiopia",
 
   image: "/newsroom/press-2.png",
-  heroImage: "/newsroom/fbc-ethiopia.jpg",
+  heroImage: "/newsroom/hero-5.png",
 
   excerpt:
     "An FBC report covering Zuvius Lifesciences' discussions with the Ethiopian Investment Commission regarding investment opportunities in Ethiopia's pharmaceutical sector.",
@@ -467,7 +467,7 @@ The report highlights Ethiopia's efforts to attract international pharmaceutical
     "Nimish G. Thakkar: A Self-Made Entrepreneur With Unquenchable Thirst to Learn",
 
   image: "/newsroom/press-4.png",
-  heroImage: "/newsroom/ceo-insights.jpg",
+  heroImage: "/newsroom/hero-8.png",
 
   excerpt:
     "A CEO Insights leadership interview featuring Nimish G. Thakkar's entrepreneurial journey, leadership philosophy, and commitment to innovation and quality.",
