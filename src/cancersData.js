@@ -4495,7 +4495,7 @@ typesStages: {
   description:
     "Mucous membranes are moist tissues that line areas such as the mouth, nose and digestive tract, helping protect and support these structures. Blood vessels and surrounding soft tissues also play an important role in delivering oxygen and nutrients throughout the body.",
 
-  bannerImg: "/cancers/kaposi-sarcoma.webp",
+  bannerImg: "/cancers/kaposi-sarcoma.png",
 
   overview: {
     intro:
@@ -6537,22 +6537,22 @@ typesStages: {
       {
         title: "Persistent Ear Infections",
         text: "Ear infections that do not improve or continue to return can be a warning sign.",
-        img: "/symptoms/nasopharyngeal-ear-infection.png"
+        img: "/symptoms/earinfec.png"
       },
       {
         title: "Nasal Symptoms",
         text: "A blocked nose or repeated nosebleeds may develop as the tumor grows.",
-        img: "/symptoms/nasopharyngeal-nose.png"
+        img: "/symptoms/nasalsymtoms.png"
       },
       {
         title: "Facial Pain or Numbness",
         text: "Pain, numbness or discomfort in the face may occur if nearby nerves are affected.",
-        img: "/symptoms/nasopharyngeal-face.png"
+        img: "/symptoms/facenumbness.png"
       },
       {
         title: "Difficulty Breathing or Speaking",
         text: "Advanced disease may cause trouble breathing, speaking or opening the mouth.",
-        img: "/symptoms/nasopharyngeal-breathing.png"
+        img: "/symptoms/astro-speech.png"
       }
     ]
   },
@@ -6562,32 +6562,32 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider examines the head, neck, nose, throat, facial muscles and lymph nodes while reviewing your medical and family history.",
-        img: "/diagnosis/nasopharyngeal-exam.png"
+        img: "/diagnosis/brain-exam.png"
       },
       {
         title: "Epstein-Barr Virus Blood Test",
         text: "Blood tests may measure Epstein-Barr virus levels because the infection is commonly linked to this cancer.",
-        img: "/diagnosis/nasopharyngeal-ebv.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Biopsy",
         text: "A tissue sample is removed from the abnormal area and examined under a microscope to confirm cancer.",
-        img: "/diagnosis/nasopharyngeal-biopsy.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "CT or MRI Scan",
         text: "CT and MRI scans help determine the tumor's size, location and whether nearby structures are involved.",
-        img: "/diagnosis/nasopharyngeal-ct-mri.png"
+        img: "/diagnosis/bile-scan.png"
       },
       {
         title: "PET Scan",
         text: "A PET scan helps identify whether cancer has spread to lymph nodes or other areas of the body.",
-        img: "/diagnosis/nasopharyngeal-pet.png"
+        img: "/diagnosis/burkitt-pet.png"
       },
       {
         title: "Hearing Test",
         text: "A hearing test may be performed to evaluate hearing changes related to the tumor.",
-        img: "/diagnosis/nasopharyngeal-hearing-test.png"
+        img: "/symptoms/earinfec.png"
       }
     ]
   },
@@ -6597,27 +6597,27 @@ typesStages: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy is a primary treatment that uses high-energy beams to destroy cancer cells.",
-        img: "/treatment/nasopharyngeal-radiation.png"
+        img: "/treatment/anal-radiation.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells or slow their growth.",
-        img: "/treatment/nasopharyngeal-chemotherapy.png"
+        img: "/treatment/astro-chemo.png"
       },
       {
         title: "Chemoradiation",
         text: "Chemotherapy and radiation therapy may be combined to improve treatment effectiveness.",
-        img: "/treatment/nasopharyngeal-chemoradiation.png"
+        img: "/treatment/appendix-chemo.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy attacks specific features of cancer cells while limiting damage to healthy tissue.",
-        img: "/treatment/nasopharyngeal-targeted.png"
+        img: "/treatment/bile-targeted.png"
       },
       {
         title: "Surgery",
         text: "Surgery may be used in selected cases, particularly to remove lymph nodes that do not respond to other treatments.",
-        img: "/treatment/nasopharyngeal-surgery.png"
+        img: "/treatment/anal-surgery.png"
       }
     ]
   }
@@ -6671,12 +6671,12 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/baby.png",
+        icon: "/icons/feet.png",
         title: "Young Age",
         text: "Neuroblastoma almost always develops in babies and young children, most often before 5 years of age."
       },
       {
-        icon: "/icons/gene.png",
+        icon: "/icons/genetics.png",
         title: "Inherited Gene Changes",
         text: "Rare inherited changes in genes such as ALK or PHOX2B can increase the risk of neuroblastoma."
       },
@@ -6689,7 +6689,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/info.png",
+        icon: "/icons/none.png",
         title: "No Known Lifestyle Risk Factors",
         text: "Cleveland Clinic notes that no specific environmental exposures or lifestyle factors have been shown to increase the risk of neuroblastoma."
       }
@@ -6701,32 +6701,28 @@ typesStages: {
       {
         title: "Painless Lump",
         text: "A firm lump in the abdomen, chest or neck is one of the most common signs of neuroblastoma.",
-        img: "/symptoms/neuroblastoma-lump.png"
+        img: "/symptoms/hcl-swallen.png"
       },
       {
         title: "Bone Pain",
         text: "Cancer that has spread to the bones may cause pain, limping or difficulty walking.",
-        img: "/symptoms/neuroblastoma-bone-pain.png"
+        img: "/symptoms/bone-pain.png"
       },
-      {
-        title: "Dark Circles Around the Eyes",
-        text: "Bruising or dark circles around the eyes may develop if cancer spreads near the eye sockets.",
-        img: "/symptoms/neuroblastoma-eyes.png"
-      },
+      
       {
         title: "Loss of Appetite",
         text: "Children may lose interest in eating or feel full because of pressure from the tumor.",
-        img: "/symptoms/neuroblastoma-appetite.png"
+        img: "/symptoms/fallopian-appetite.png"
       },
       {
         title: "Trouble Breathing or Swallowing",
         text: "Tumors in the chest or neck can press on nearby structures and make breathing or swallowing difficult.",
-        img: "/symptoms/neuroblastoma-breathing.png"
+        img: "/symptoms/esophageal-hoarseness.png"
       },
       {
         title: "Persistent Fever or Fatigue",
         text: "Children may experience fever, tiredness, weakness or irritability as the disease progresses.",
-        img: "/symptoms/neuroblastoma-fatigue.png"
+        img: "/symptoms/burkitt-fever.png"
       }
     ]
   },
@@ -6736,27 +6732,27 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "The healthcare provider checks for lumps, swelling and signs affecting the nervous system while reviewing symptoms and family history.",
-        img: "/diagnosis/neuroblastoma-exam.png"
+        img: "/diagnosis/brain-exam.png"
       },
       {
         title: "Blood and Urine Tests",
         text: "Blood tests and urine tests help evaluate organ function and measure substances commonly produced by neuroblastoma tumors.",
-        img: "/diagnosis/neuroblastoma-blood-urine.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Imaging Tests",
         text: "Ultrasound, CT, MRI or MIBG scans help identify the tumor's location and determine whether it has spread.",
-        img: "/diagnosis/neuroblastoma-imaging.png"
+        img: "/diagnosis/adrenal-imaging.png"
       },
       {
         title: "Tumor Biopsy",
         text: "A biopsy confirms the diagnosis by allowing specialists to examine tumor tissue under a microscope.",
-        img: "/diagnosis/neuroblastoma-biopsy.png"
+        img: "/diagnosis/appendix-bio.png"
       },
       {
         title: "Bone Marrow Aspiration and Biopsy",
         text: "Bone marrow testing helps determine whether cancer has spread to the bone marrow.",
-        img: "/diagnosis/neuroblastoma-bone-marrow.png"
+        img: "/diagnosis/lymphoma-bonemarrow.png"
       }
     ]
   },
@@ -6766,32 +6762,32 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells and is commonly used before or after surgery depending on the child's risk group.",
-        img: "/treatment/neuroblastoma-chemotherapy.png"
+        img: "/treatment/adrenal-chemo.png"
       },
       {
         title: "Surgery",
         text: "Surgery removes the primary tumor whenever it can be safely taken out.",
-        img: "/treatment/neuroblastoma-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to destroy remaining cancer cells or treat advanced disease.",
-        img: "/treatment/neuroblastoma-radiation.png"
+        img: "/treatment/adrenal-radiation.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the child's immune system recognize and attack neuroblastoma cells.",
-        img: "/treatment/neuroblastoma-immunotherapy.png"
+        img: "/treatment/bile-immuno.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy uses medicines designed to attack specific features of neuroblastoma cells.",
-        img: "/treatment/neuroblastoma-targeted.png"
+        img: "/treatment/bile-targeted.png"
       },
       {
         title: "Stem Cell Transplant",
         text: "Some children with high-risk neuroblastoma may receive high-dose chemotherapy followed by an autologous stem cell transplant.",
-        img: "/treatment/neuroblastoma-stem-cell.png"
+        img: "/treatment/lymphoma-steamcell.png"
       }
     ]
   }
@@ -6868,44 +6864,40 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/info.png",
+        icon: "/icons/none.png",
         title: "No Confirmed Lifestyle Risk Factors",
-        text: "Cleveland Clinic does not identify any specific lifestyle habits that are proven to increase the risk of ocular melanoma."
+        text: " No any specific lifestyle habits that are proven to increase the risk of ocular melanoma."
       }
     ]
   },
 
   symptoms: {
     items: [
-      {
-        title: "Blurred Vision",
-        text: "Vision may become blurry or less clear as the tumor grows.",
-        img: "/symptoms/ocular-blurred-vision.png"
-      },
+      
       {
         title: "Blind Spots",
         text: "Blind spots or missing areas in vision may gradually become larger.",
-        img: "/symptoms/ocular-blind-spot.png"
+        img: "/symptoms/eye-dark-spot.png"
       },
       {
         title: "Flashes of Light",
         text: "Some people notice flashes or other visual disturbances.",
-        img: "/symptoms/ocular-flashes.png"
+        img: "/symptoms/eye-flashes.png"
       },
       {
         title: "Eye Pain or Pressure",
         text: "Pain or an unusual feeling of pressure in or around the eye may occur.",
-        img: "/symptoms/ocular-eye-pain.png"
+        img: "/symptoms/eye-bulging.png"
       },
       {
         title: "Redness or Dark Spots",
         text: "New or changing dark spots, freckles, redness or irritation may develop in the eye.",
-        img: "/symptoms/ocular-redness.png"
+        img: "/symptoms/eye-vision-change.png"
       },
       {
         title: "Vision Changes",
         text: "Sudden or progressive changes in vision should be evaluated by an eye specialist.",
-        img: "/symptoms/ocular-vision-change.png"
+        img: "/symptoms/eye-blurred.png"
       }
     ]
   },
@@ -6915,27 +6907,27 @@ typesStages: {
       {
         title: "Comprehensive Eye Examination",
         text: "An eye specialist examines the inside of the eye and evaluates vision for signs of melanoma.",
-        img: "/diagnosis/ocular-eye-exam.png"
+        img: "/diagnosis/eye-exam.png"
       },
       {
         title: "Slit Lamp Examination",
         text: "A slit lamp allows the healthcare provider to detect abnormalities inside the eye, including early tumors.",
-        img: "/diagnosis/ocular-slit-lamp.png"
+        img: "/diagnosis/eye-dilated.png"
       },
       {
         title: "Eye Imaging Tests",
         text: "Tests such as ultrasound, fluorescein angiography or optical coherence tomography help evaluate the tumor.",
-        img: "/diagnosis/ocular-imaging.png"
+        img: "/diagnosis/eye-imaging.png"
       },
       {
         title: "CT or MRI Scan",
         text: "CT or MRI scans may be performed to determine whether cancer has spread beyond the eye.",
-        img: "/diagnosis/ocular-ct-mri.png"
+        img: "/diagnosis/eye-ultrasound.png"
       },
       {
         title: "Biopsy",
         text: "A fine-needle aspiration or biopsy may be used to confirm the diagnosis by examining tumor cells.",
-        img: "/diagnosis/ocular-biopsy.png"
+        img: "/diagnosis/eye-biospy.png"
       }
     ]
   },
@@ -6945,12 +6937,12 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery removes part or all of the eye when necessary to prevent the cancer from spreading.",
-        img: "/treatment/ocular-surgery.png"
+        img: "/treatment/astro-surgery.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy destroys cancer cells and helps shrink eye tumors while preserving surrounding tissue whenever possible.",
-        img: "/treatment/ocular-radiation.png"
+        img: "/treatment/astro-radiation.png"
       }
     ]
   }
@@ -6959,7 +6951,7 @@ typesStages: {
 //oralcancer
 
 {
-  slug: "oral-cancer",
+  slug: "oral-cancer-mouth-cancer",
 
   title: "Oral Cancer",
 
@@ -7009,12 +7001,12 @@ typesStages: {
         text: "Having a biological family history of oral cancer may increase the risk of developing the disease."
       },
       {
-        icon: "/icons/hpv.png",
+        icon: "/icons/genetics.png",
         title: "Human Papillomavirus (HPV)",
         text: "Certain HPV infections are associated with an increased risk of developing oral cancer."
       },
       {
-        icon: "/icons/person.png",
+        icon: "/icons/age.png",
         title: "Age",
         text: "Oral cancer is most commonly diagnosed in people who are 60 years of age or older."
       }
@@ -7032,7 +7024,7 @@ typesStages: {
         text: "Regular heavy alcohol consumption raises the risk, especially when combined with tobacco use."
       },
       {
-        icon: "/icons/sun.png",
+        icon: "/icons/uv.png",
         title: "Excessive Sun Exposure",
         text: "Frequent sun exposure without lip protection can increase the risk of cancer affecting the lips."
       }
@@ -7044,32 +7036,32 @@ typesStages: {
       {
         title: "Mouth Sores That Don't Heal",
         text: "Persistent sores or ulcers that bleed easily and do not heal within two weeks should be evaluated.",
-        img: "/symptoms/oral-mouth-sores.png"
+        img: "/symptoms/mouthsores.png"
       },
       {
         title: "White or Red Patches",
         text: "White, red or mixed red-and-white patches inside the mouth may be early warning signs.",
-        img: "/symptoms/oral-patches.png"
+        img: "/symptoms/mouthpatches.png"
       },
       {
         title: "Pain or Numbness",
         text: "Unexplained pain, tenderness or numbness in the mouth, face or neck may occur.",
-        img: "/symptoms/oral-pain.png"
+        img: "/symptoms/facenumbness.png"
       },
       {
         title: "Difficulty Chewing or Swallowing",
         text: "Chewing, swallowing or moving the tongue and jaw may become difficult.",
-        img: "/symptoms/oral-swallowing.png"
+        img: "/symptoms/esophageal-swallowing.png"
       },
       {
         title: "Ear Pain",
         text: "Persistent ear pain without an ear infection may be associated with oral cancer.",
-        img: "/symptoms/oral-ear-pain.png"
+        img: "/symptoms/ear-pain.png"
       },
       {
         title: "Unexplained Weight Loss",
         text: "Losing weight without trying can occur as the disease progresses.",
-        img: "/symptoms/oral-weight-loss.png"
+        img: "/symptoms/chondro-weight.png"
       }
     ]
   },
@@ -7079,27 +7071,27 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "The healthcare provider examines the mouth, face, head and neck for abnormal areas or enlarged lymph nodes.",
-        img: "/diagnosis/oral-exam.png"
+        img: "/diagnosis/brain-exam.png"
       },
       {
         title: "Brush Biopsy",
         text: "A small brush or spatula collects surface cells from a suspicious area for laboratory examination.",
-        img: "/diagnosis/oral-brush-biopsy.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "Incisional Biopsy",
         text: "A small tissue sample is removed so it can be examined under a microscope to confirm cancer.",
-        img: "/diagnosis/oral-biopsy.png"
+        img: "/diagnosis/endo-bio.png"
       },
       {
         title: "Laryngoscopy or Pharyngoscopy",
         text: "Special instruments or a flexible scope allow the healthcare provider to examine areas deeper in the mouth and throat.",
-        img: "/diagnosis/oral-laryngoscopy.png"
+        img: "/diagnosis/lynnax-scopy.png"
       },
       {
         title: "Imaging Tests",
         text: "Imaging studies may be performed to determine the size of the tumor and whether it has spread.",
-        img: "/diagnosis/oral-imaging.png"
+        img: "/diagnosis/duodenal-imaging.png"
       }
     ]
   },
@@ -7109,27 +7101,27 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery removes the tumor and may also involve nearby lymph nodes or reconstructive procedures when necessary.",
-        img: "/treatment/oral-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to destroy cancer cells or prevent them from growing.",
-        img: "/treatment/oral-radiation.png"
+        img: "/treatment/anal-radiation.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses anti-cancer medicines to kill cancer cells and may be combined with other treatments.",
-        img: "/treatment/oral-chemotherapy.png"
+        img: "/treatment/appendix-chemo.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy uses medicines that specifically attack cancer cells while reducing damage to healthy tissues.",
-        img: "/treatment/oral-targeted.png"
+        img: "/treatment/bile-targeted.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the body's immune system recognize and destroy cancer cells.",
-        img: "/treatment/oral-immunotherapy.png"
+        img: "/treatment/anal-immuno.png"
       }
     ]
   }
@@ -7178,15 +7170,11 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/person.png",
+        icon: "/icons/feet.png",
         title: "Young Age",
         text: "Osteosarcoma occurs most often in children, teenagers and young adults, especially during periods of rapid bone growth."
       },
-      {
-        icon: "/icons/growth.png",
-        title: "Rapid Bone Growth",
-        text: "Growth spurts during adolescence are associated with an increased risk of developing osteosarcoma."
-      },
+      
       {
         icon: "/icons/genetics.png",
         title: "Inherited Genetic Conditions",
@@ -7206,7 +7194,7 @@ typesStages: {
         text: "Radiation treatment received for another cancer may increase the chance of developing osteosarcoma later in life."
       },
       {
-        icon: "/icons/chemotherapy.png",
+        icon: "/icons/chemo.png",
         title: "Previous Cancer Treatment",
         text: "Certain chemotherapy medicines, particularly alkylating agents, may increase the future risk of osteosarcoma."
       }
@@ -7218,32 +7206,32 @@ typesStages: {
       {
         title: "Bone Pain",
         text: "Persistent pain or tenderness around a bone is the most common symptom.",
-        img: "/symptoms/osteosarcoma-bone-pain.png"
+        img: "/symptoms/bone-pain.png"
       },
       {
         title: "Swelling or Lump",
         text: "A noticeable lump or swelling may develop near the affected bone and may feel warm.",
-        img: "/symptoms/osteosarcoma-swelling.png"
+        img: "/symptoms/bone-swell.png"
       },
       {
         title: "Limited Joint Movement",
         text: "Movement of a nearby joint may become difficult or restricted.",
-        img: "/symptoms/osteosarcoma-joint.png"
+        img: "/symptoms/bone-movement.png"
       },
       {
         title: "Bone Fracture",
         text: "A weakened bone may break unexpectedly or after a minor injury.",
-        img: "/symptoms/osteosarcoma-fracture.png"
+        img: "/symptoms/chondro-pain.png"
       },
       {
         title: "Skin Changes",
         text: "The skin over the affected area may appear discolored or swollen.",
-        img: "/symptoms/osteosarcoma-skin.png"
+        img: "/symptoms/bcc-color.png"
       },
       {
         title: "Unexplained Fever",
         text: "Some people may experience fever without another obvious cause.",
-        img: "/symptoms/osteosarcoma-fever.png"
+        img: "/symptoms/bone-fever.png"
       }
     ]
   },
@@ -7253,27 +7241,27 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "The healthcare provider reviews symptoms, medical history and examines the affected bone for swelling or lumps.",
-        img: "/diagnosis/osteosarcoma-exam.png"
+        img: "/diagnosis/brain-exam.png"
       },
       {
         title: "Imaging Tests",
         text: "X-rays, CT scans and MRI scans help determine the tumor's location, size and extent.",
-        img: "/diagnosis/osteosarcoma-imaging.png"
+        img: "/diagnosis/appendix-imaging.png"
       },
       {
         title: "Biopsy",
         text: "A tissue sample is removed and examined under a microscope to confirm osteosarcoma.",
-        img: "/diagnosis/osteosarcoma-biopsy.png"
+        img: "/diagnosis/astro-biopsy.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests may be performed as part of the overall evaluation.",
-        img: "/diagnosis/osteosarcoma-blood.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Bone Scan or PET Scan",
         text: "Additional imaging may be used to determine whether the cancer has spread to other bones or organs.",
-        img: "/diagnosis/osteosarcoma-pet.png"
+        img: "/diagnosis/burkitt-pet.png"
       }
     ]
   },
@@ -7283,17 +7271,17 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy is commonly given before and after surgery to destroy cancer cells throughout the body.",
-        img: "/treatment/osteosarcoma-chemotherapy.png"
+        img: "/treatment/astro-chemo.png"
       },
       {
         title: "Surgery",
         text: "Surgery removes the tumor while preserving as much healthy bone and tissue as possible whenever feasible.",
-        img: "/treatment/osteosarcoma-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Limb Salvage Surgery",
         text: "This procedure removes the cancer while preserving the affected limb, often using a bone graft or artificial implant.",
-        img: "/treatment/osteosarcoma-limb-salvage.png"
+        img: "/treatment/bile-surgery.png"
       },
       {
         title: "Amputation",
@@ -7308,7 +7296,7 @@ typesStages: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be used when surgery is not possible or when cancer has spread to areas that cannot be removed surgically.",
-        img: "/treatment/osteosarcoma-radiation.png"
+        img: "/treatment/astro-radiation.png"
       }
     ]
   }
@@ -7324,7 +7312,7 @@ typesStages: {
   description:
     "The ovaries are two small organs in the female reproductive system that produce eggs and hormones such as estrogen and progesterone. These hormones help regulate the menstrual cycle, fertility and many other functions throughout the body.",
 
-  bannerImg: "/cancers/ovarian-cancer.webp",
+  bannerImg: "/cancers/ovarian-cancer.png",
 
   overview: {
     intro:
@@ -7362,7 +7350,7 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/person.png",
+        icon: "/icons/age.png",
         title: "Age Over 60",
         text: "The risk of ovarian cancer increases with age and is highest in people over 60."
       },
@@ -7376,26 +7364,22 @@ typesStages: {
         title: "Family History",
         text: "Having close relatives with ovarian, breast, uterine or colorectal cancer increases the risk."
       },
-      {
-        icon: "/icons/endometriosis.png",
-        title: "Endometriosis",
-        text: "People with endometriosis have a higher chance of developing ovarian cancer."
-      }
+      
     ],
 
     lifestyle: [
       {
-        icon: "/icons/obesity.png",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "Obesity is associated with an increased risk of ovarian cancer."
       },
       {
-        icon: "/icons/hormone.png",
+        icon: "/icons/genetics.png",
         title: "Hormone Replacement Therapy",
         text: "Using postmenopausal hormone replacement therapy may increase ovarian cancer risk."
       },
       {
-        icon: "/icons/pregnancy.png",
+        icon: "/icons/pregnant.png",
         title: "Reproductive History",
         text: "Never being pregnant, having a first pregnancy after age 30 or never breastfeeding may increase the risk."
       }
@@ -7407,32 +7391,32 @@ typesStages: {
       {
         title: "Abdominal or Pelvic Pain",
         text: "Persistent pain or discomfort in the abdomen, pelvis or back may occur.",
-        img: "/symptoms/ovarian-pain.png"
+        img: "/symptoms/adrenal-abdominal.png"
       },
       {
         title: "Bloating",
         text: "Persistent abdominal bloating or swelling is a common symptom.",
-        img: "/symptoms/ovarian-bloating.png"
+        img: "/symptoms/adrenal-fullness.png"
       },
       {
         title: "Feeling Full Quickly",
         text: "Feeling full soon after eating or experiencing a reduced appetite may occur.",
-        img: "/symptoms/ovarian-fullness.png"
+        img: "/symptoms/fallopian-appetite.png"
       },
       {
         title: "Changes in Bowel Habits",
         text: "Diarrhea or constipation may develop as the disease progresses.",
-        img: "/symptoms/ovarian-bowel.png"
+        img: "/symptoms/appendix-bowel.png"
       },
       {
         title: "Frequent Urination",
         text: "Needing to urinate more often than usual may be a symptom.",
-        img: "/symptoms/ovarian-urination.png"
+        img: "/symptoms/bladder-flow.png"
       },
       {
         title: "Unexplained Weight Loss",
         text: "Weight loss without trying can occur in some people with ovarian cancer.",
-        img: "/symptoms/ovarian-weight-loss.png"
+        img: "/symptoms/chondro-weight.png"
       }
     ]
   },
@@ -7442,22 +7426,22 @@ typesStages: {
       {
         title: "Pelvic Examination",
         text: "A healthcare provider checks for enlarged ovaries, masses or other abnormal findings.",
-        img: "/diagnosis/ovarian-pelvic-exam.png"
+        img: "/diagnosis/brain-exam.png"
       },
       {
         title: "Imaging Tests",
         text: "Ultrasound, CT, MRI or PET scans help identify tumors and determine whether the cancer has spread.",
-        img: "/diagnosis/ovarian-imaging.png"
+        img: "/diagnosis/appendix-imaging.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests, including CA-125 and genetic testing, may help evaluate ovarian cancer.",
-        img: "/diagnosis/ovarian-blood-test.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Surgical Biopsy",
         text: "A biopsy performed during surgery confirms the diagnosis and helps determine the cancer stage.",
-        img: "/diagnosis/ovarian-biopsy.png"
+        img: "/diagnosis/astro-biopsy.png"
       }
     ]
   },
@@ -7467,27 +7451,27 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery is usually the first treatment and aims to remove as much of the cancer as possible.",
-        img: "/treatment/ovarian-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy may be given before or after surgery to destroy remaining cancer cells.",
-        img: "/treatment/ovarian-chemotherapy.png"
+        img: "/treatment/adrenal-chemo.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy focuses on specific characteristics of cancer cells to slow or stop their growth.",
-        img: "/treatment/ovarian-targeted-therapy.png"
+        img: "/treatment/bile-targeted.png"
       },
       {
         title: "Hormone Therapy",
         text: "Hormone therapy may be used for ovarian cancers that rely on hormones to grow.",
-        img: "/treatment/ovarian-hormone-therapy.png"
+        img: "/treatment/brain-immuno.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the immune system recognize and attack certain ovarian cancer cells.",
-        img: "/treatment/ovarian-immunotherapy.png"
+        img: "/treatment/bladder-imm.png"
       }
     ]
   }
