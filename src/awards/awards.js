@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./awards.css";
 import PageBanner from "../components/PageBanner";
 
@@ -131,7 +131,7 @@ const Awards = () => {
           </p>
 
           <div className="awards-timeline-wrap">
-            <div className="awards-timeline-line"></div>
+            
 
             <div className="awards-timeline-grid">
               {awardItems.map((award, index) => (

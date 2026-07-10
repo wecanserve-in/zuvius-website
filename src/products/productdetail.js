@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./productdetail.css";
 import { products } from "./productdata";
@@ -14,6 +14,13 @@ const ProductDetail = () => {
   const [mainImage, setMainImage] = useState(
     product?.images?.[0] || product?.image || ""
   );
+
+  useEffect(() => {
+    if (product) {
+      setMainImage(product.images?.[0] || product.image || "");
+      setActiveTab("Description");
+    }
+  }, [product]);
 
   if (!product) {
     return <h2 className="product-detail-not-found">Product not found</h2>;
@@ -37,29 +44,153 @@ const ProductDetail = () => {
   );
 
   const scrollThumbnails = (direction) => {
-    if (thumbnailRef.current) {
-      thumbnailRef.current.scrollBy({
-        left: direction === "left" ? -220 : 220,
-        behavior: "smooth",
-      });
-    }
+    if (!thumbnailRef.current) return;
+
+    thumbnailRef.current.scrollBy({
+      left: direction === "left" ? -220 : 220,
+      behavior: "smooth",
+    });
   };
 
   const getTabContent = () => {
     switch (activeTab) {
       case "Description":
         return product.description || "No information available.";
+
       case "Indication":
         return product.indication || "No information available.";
+
       case "Clinical Efficacy":
         return product.clinicalEfficacy || "No information available.";
+
       case "Safety Information":
         return product.safetyInformation || "No information available.";
+
       case "Dosage & Administration":
         return product.dosage || "As directed by the physician.";
+
       default:
         return "No information available.";
     }
+  };
+
+  /*
+    Converts productdata text into:
+    - headings
+    - paragraphs
+    - bullet lists
+  */
+  const renderFormattedContent = (content) => {
+    if (!content) {
+      return <p>No information available.</p>;
+    }
+
+    const normalizedContent = String(content)
+      .replace(/\r\n/g, "\n")
+      .replace(/\r/g, "\n")
+      .trim();
+
+    const lines = normalizedContent
+      .split("\n")
+      .map((line) => line.trim());
+
+    const elements = [];
+    let paragraphLines = [];
+    let bulletLines = [];
+
+    const flushParagraph = () => {
+      if (paragraphLines.length === 0) return;
+
+      elements.push(
+        <p
+          className="product-content-paragraph"
+          key={`paragraph-${elements.length}`}
+        >
+          {paragraphLines.join(" ")}
+        </p>
+      );
+
+      paragraphLines = [];
+    };
+
+    const flushBullets = () => {
+      if (bulletLines.length === 0) return;
+
+      elements.push(
+        <ul
+          className="product-content-list"
+          key={`list-${elements.length}`}
+        >
+          {bulletLines.map((bullet, index) => (
+            <li key={`${bullet}-${index}`}>{bullet}</li>
+          ))}
+        </ul>
+      );
+
+      bulletLines = [];
+    };
+
+    const isBulletLine = (line) => {
+      return (
+        line.startsWith("•") ||
+        line.startsWith("- ") ||
+        line.startsWith("* ")
+      );
+    };
+
+    const cleanBullet = (line) => {
+      return line.replace(/^[•*-]\s*/, "").trim();
+    };
+
+    const isHeadingLine = (line) => {
+      if (!line.endsWith(":")) return false;
+
+      const wordCount = line
+        .replace(":", "")
+        .trim()
+        .split(/\s+/)
+        .filter(Boolean).length;
+
+      return wordCount <= 8;
+    };
+
+    lines.forEach((line) => {
+      if (!line) {
+        flushParagraph();
+        flushBullets();
+        return;
+      }
+
+      if (isBulletLine(line)) {
+        flushParagraph();
+        bulletLines.push(cleanBullet(line));
+        return;
+      }
+
+      if (isHeadingLine(line)) {
+        flushParagraph();
+        flushBullets();
+
+        elements.push(
+          <h3
+            className="product-content-heading"
+            key={`heading-${elements.length}`}
+          >
+            {line.replace(/:$/, "")}
+          </h3>
+        );
+
+        return;
+      }
+
+      flushBullets();
+      paragraphLines.push(line);
+    });
+
+    flushParagraph();
+    flushBullets();
+
+    return elements;
   };
 
   return (
@@ -73,14 +204,12 @@ const ProductDetail = () => {
 
         <div className="product-detail-info">
           <div className="product-title-wrap">
-  <h1>{product.name}</h1>
+            <h1>{product.name}</h1>
 
-  {product.subtitle && (
-    <p className="product-subtitle">
-      {product.subtitle}
-    </p>
-  )}
-</div>
+            {product.subtitle && (
+              <p className="product-subtitle">{product.subtitle}</p>
+            )}
+          </div>
 
           <div className="product-detail-meta">
             <div className="product-detail-meta-card">
@@ -89,6 +218,7 @@ const ProductDetail = () => {
                 alt="Strength"
                 className="meta-icon"
               />
+
               <div>
                 <p>Strength</p>
                 <h4>{product.strength || "As per label"}</h4>
@@ -101,6 +231,7 @@ const ProductDetail = () => {
                 alt="Pack Size"
                 className="meta-icon"
               />
+
               <div>
                 <p>Pack Size</p>
                 <h4>{product.packSize || "As per pack"}</h4>
@@ -113,6 +244,7 @@ const ProductDetail = () => {
                 alt="Drug Class"
                 className="meta-icon"
               />
+
               <div>
                 <p>Drug Class</p>
                 <h4>{product.drugClass || "Medicine"}</h4>
@@ -126,13 +258,16 @@ const ProductDetail = () => {
             </p>
           )}
 
-          <button className="product-enquire-btn">Enquire Now</button>
+          <button type="button" className="product-enquire-btn">
+            Enquire Now
+          </button>
 
           <div className="product-thumbnail-slider-wrap">
             <button
               type="button"
               className="thumb-slider-arrow"
               onClick={() => scrollThumbnails("left")}
+              aria-label="Previous product image"
             >
               ‹
             </button>
@@ -144,9 +279,10 @@ const ProductDetail = () => {
               {productImages.map((img, index) => (
                 <button
                   type="button"
-                  key={index}
+                  key={`${img}-${index}`}
                   onClick={() => setMainImage(img)}
                   className={mainImage === img ? "active" : ""}
+                  aria-label={`View ${product.name} image ${index + 1}`}
                 >
                   <img src={img} alt={`${product.name} ${index + 1}`} />
                 </button>
@@ -157,6 +293,7 @@ const ProductDetail = () => {
               type="button"
               className="thumb-slider-arrow"
               onClick={() => scrollThumbnails("right")}
+              aria-label="Next product image"
             >
               ›
             </button>
@@ -179,7 +316,9 @@ const ProductDetail = () => {
         </div>
 
         <div className="product-tabs-body">
-          <p>{getTabContent()}</p>
+          <div className="product-tab-formatted-content">
+            {renderFormattedContent(getTabContent())}
+          </div>
         </div>
       </section>
 
@@ -188,10 +327,13 @@ const ProductDetail = () => {
 
         <div className="related-products-grid">
           {relatedProducts.slice(0, 4).map((item) => (
-            <div
+            <button
+              type="button"
               key={item.id}
               className="related-product-card"
-              onClick={() => navigate(`/products/${item.category}/${item.slug}`)}
+              onClick={() =>
+                navigate(`/products/${item.category}/${item.slug}`)
+              }
             >
               <div className="related-product-image">
                 <img src={item.image} alt={item.name} />
@@ -201,7 +343,7 @@ const ProductDetail = () => {
                 <h3>{item.name}</h3>
                 <p>{item.subtitle}</p>
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </section>

@@ -221,7 +221,7 @@ The feature further discusses Zuvius Lifesciences' commitment to quality assuran
       "Zuvius Lifescience and YouWeCan Initiate Nationwide Cancer Awareness Programme",
 
     image: "/newsroom/press-8.png",
-    heroImage: "/newsroom/financial-express.jpg",
+    heroImage: "/newsroom/hero-3.png",
 
     excerpt:
       "A nationwide cancer awareness initiative in collaboration with YouWeCan Foundation.",
@@ -279,7 +279,7 @@ It also includes statements from Yuvraj Singh, who shared his personal experienc
     title: "Honouring All The Graceful Survivors Of Cancer",
 
     image: "/newsroom/press-10.png",
-    heroImage: "/newsroom/csr-journal.jpg",
+    heroImage: "/newsroom/hero-2.png",
 
     excerpt:
       "A CSR Journal feature highlighting the Pink Street Campaign and cancer awareness initiatives.",

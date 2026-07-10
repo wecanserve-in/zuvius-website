@@ -36,9 +36,14 @@ if (!item) {
 
 <h1>{item.title}</h1>
 
- <p>
-  {item.subtitle ||
-    "Discover insights, milestones and achievements from Zuvius Lifesciences."}
+<p>
+  {item.subtitle || (
+    <>
+      Discover insights, milestones and achievements
+      <br />
+      from Zuvius Lifesciences.
+    </>
+  )}
 </p>
 
 <div className="pressdetail-hero-meta">

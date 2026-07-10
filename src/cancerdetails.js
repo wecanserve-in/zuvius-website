@@ -11,6 +11,15 @@ function CancerDetail() {
 
   if (!cancer) return <div>Cancer Type Not Found</div>;
 
+const tabOptions = [
+  { value: "overview", label: "OVERVIEW" },
+  { value: "typesStages", label: "STAGES" },
+  { value: "riskFactors", label: "RISK FACTORS" },
+  { value: "symptoms", label: "SYMPTOMS" },
+  { value: "diagnosis", label: "DIAGNOSIS" },
+  { value: "treatment", label: "TREATMENT" },
+];
+
   return (
     <div className="detail-page-wrapper">
 <div className="toc-hero">
@@ -27,25 +36,39 @@ function CancerDetail() {
 </div>
 
       <div className="tabs-nav-bar">
-        {[
-          "overview",
-          "typesStages",
-          "riskFactors",
-          "symptoms",
-          "diagnosis",
-          "treatment",
-        ].map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={`tab-btn ${activeTab === tab ? "active" : ""}`}
-          >
-            {tab === "typesStages"
-  ? "STAGES"
-  : tab.replace(/([A-Z])/g, " $1").toUpperCase()}
-          </button>
-        ))}
-      </div>
+  {tabOptions.map((tab) => (
+    <button
+      type="button"
+      key={tab.value}
+      onClick={() => setActiveTab(tab.value)}
+      className={`tab-btn ${
+        activeTab === tab.value ? "active" : ""
+      }`}
+    >
+      {tab.label}
+    </button>
+  ))}
+</div>
+
+<div className="mobile-tabs-dropdown">
+  <label htmlFor="cancer-detail-tab">View Information</label>
+
+  <div className="mobile-tabs-select-wrap">
+    <select
+      id="cancer-detail-tab"
+      value={activeTab}
+      onChange={(event) => setActiveTab(event.target.value)}
+    >
+      {tabOptions.map((tab) => (
+        <option key={tab.value} value={tab.value}>
+          {tab.label}
+        </option>
+      ))}
+    </select>
+
+    <span className="mobile-tabs-arrow">⌄</span>
+  </div>
+</div>
 
 
 

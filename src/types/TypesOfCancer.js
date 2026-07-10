@@ -141,7 +141,7 @@ const TypesOfCancer = () => {
       {/* HERO */}
 
      <PageBanner
-  image="/gif3.mp4"
+  image="/gif4.mp4"
   title={
     <>
       Types of <br />

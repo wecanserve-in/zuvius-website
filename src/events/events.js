@@ -134,11 +134,11 @@ const Events = () => {
                 <h3 className="ev-event-card-title">{item.title}</h3>
                 <p className="ev-event-card-description">{item.description}</p>
                 
-                <div className="ev-action-links-row">
+                {/* <div className="ev-action-links-row">
                   <button className="ev-secondary-outline-btn" onClick={() => openPhotosPopup(item)}>
                     View Photos 
                   </button>
-                </div>
+                </div> */}
               </div>
 
               <div className="ev-card-video-panel-right">

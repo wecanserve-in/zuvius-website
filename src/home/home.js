@@ -43,7 +43,40 @@ const Home = () =>
 const [slideIndex, setSlideIndex] = useState(0);
 const [isTransitioning, setIsTransitioning] = useState(true);
 
-const totalSlides = 2;
+const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+
+useEffect(() => {
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 600);
+  };
+
+  window.addEventListener("resize", handleResize);
+
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []);
+
+const productSlides = isMobile
+  ? products.map((product) => [product])
+  : [
+      products.slice(0, 3),
+      products.slice(3, 6),
+    ];
+
+const totalSlides = productSlides.length;
+
+useEffect(() => {
+  setIsTransitioning(false);
+  setSlideIndex(0);
+
+  const timer = setTimeout(() => {
+    setIsTransitioning(true);
+  }, 50);
+
+  return () => clearTimeout(timer);
+}, [isMobile]);
+
 const nextSlide = () => {
   if (slideIndex >= totalSlides) return;
 
@@ -256,35 +289,26 @@ useEffect(() => {
   }}
 >
 
-    {/* SLIDE 1 */}
-    <div className="slide">
-      {products.slice(0, 3).map((product) => (
-        <div className="product-card" key={product.id}>
-          <img src={product.img} alt={product.name} />
-          <div className="product-info">
-            <h4>{product.name}</h4>
-          </div>
-        </div>
-      ))}
-    </div>
+    {productSlides.map((slideProducts, slideNumber) => (
+  <div className="slide" key={`slide-${slideNumber}`}>
+    {slideProducts.map((product) => (
+      <div className="product-card" key={product.id}>
+        <img src={product.img} alt={product.name} />
 
-    {/* SLIDE 2 */}
-    <div className="slide">
-      {products.slice(3, 6).map((product) => (
-        <div className="product-card" key={product.id}>
-          <img src={product.img} alt={product.name} />
-          <div className="product-info">
-            <h4>{product.name}</h4>
-          </div>
+        <div className="product-info">
+          <h4>{product.name}</h4>
         </div>
-      ))}
-    </div>
+      </div>
+    ))}
+  </div>
+))}
 
-    {/* SLIDE 1 CLONE */}
+{/* First slide clone for smooth infinite transition */}
 <div className="slide">
-  {products.slice(0, 3).map((product) => (
+  {productSlides[0].map((product) => (
     <div className="product-card" key={`clone-${product.id}`}>
       <img src={product.img} alt={product.name} />
+
       <div className="product-info">
         <h4>{product.name}</h4>
       </div>

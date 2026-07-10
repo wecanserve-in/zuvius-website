@@ -636,3 +636,304 @@ font-weight: 800;
     max-width: 320px;
   }
 }
+
+
+
+/* ==================================================
+   PRESS RELEASE DETAILS — FINAL LAYOUT FIX
+================================================== */
+
+/* Desktop page spacing */
+.pressdetailpage {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.pressdetailpage-content-section {
+  padding: 0 24px;
+}
+
+.pressdetailpage-content-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pressdetailpage-cta {
+  width: calc(100% - 48px);
+  max-width: 1400px;
+}
+
+
+/* ==================================================
+   MOBILE HERO FIX
+================================================== */
+
+@media (max-width: 768px) {
+  .pressdetailpage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .pressdetail-hero {
+    width: calc(100% - 28px);
+    min-height: 0;
+    margin: 82px auto 34px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    background: #ffffff;
+    border: 1px solid #e5edf3;
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 14px 36px rgba(7, 29, 73, 0.1);
+  }
+
+  .pressdetail-hero-image {
+    position: relative;
+    inset: auto;
+
+    width: 100%;
+    height: 240px;
+    z-index: 1;
+  }
+
+  .pressdetail-hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 1 !important;
+    display: block;
+  }
+
+  .pressdetail-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+    padding: 26px 20px 24px;
+
+    background: #ffffff;
+  }
+
+  .pressdetail-badge {
+    margin-bottom: 16px;
+    padding: 8px 14px;
+
+    font-size: 0.72rem;
+    line-height: 1.2;
+  }
+
+  .pressdetail-hero-content h1 {
+    margin: 0 0 14px;
+
+    font-size: 2rem;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+  }
+
+  .pressdetail-hero-content p {
+    margin: 0 0 22px;
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .pressdetail-hero-content p br {
+    display: none;
+  }
+
+  .pressdetail-hero-meta {
+    width: 100%;
+    margin-bottom: 22px;
+    padding: 16px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+
+    background: #f7fbfc;
+    border: 1px solid #e2ecef;
+    border-radius: 12px;
+  }
+
+  .pressdetail-meta-item {
+    min-width: 0;
+  }
+
+  .pressdetail-meta-item span {
+    margin-bottom: 5px;
+    font-size: 0.76rem;
+  }
+
+  .pressdetail-meta-item strong {
+    font-size: 0.92rem;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .pressdetail-meta-divider {
+    display: none;
+  }
+
+  .pressdetail-hero-buttons {
+    width: 100%;
+  }
+
+  .pressdetail-primary-btn {
+    width: 100%;
+    min-height: 52px;
+    padding: 14px 18px;
+
+    border-radius: 10px;
+
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .pressdetailpage-content-section {
+    padding: 0 14px;
+  }
+
+  .pressdetailpage-content-container {
+    padding: 0 !important;
+  }
+
+  .pressdetailpage-main-content,
+  .pressdetailpage-sidebar-card {
+    border-radius: 18px;
+  }
+
+  .pressdetailpage-cta {
+    width: calc(100% - 28px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media (max-width: 420px) {
+  .pressdetail-hero {
+    width: calc(100% - 20px);
+    margin-top: 76px;
+  }
+
+  .pressdetail-hero-image {
+    height: 210px;
+  }
+
+  .pressdetail-hero-content {
+    padding: 22px 16px 20px;
+  }
+
+  .pressdetail-hero-content h1 {
+    font-size: 1.72rem;
+  }
+
+  .pressdetail-hero-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .pressdetailpage-content-section {
+    padding: 0 10px;
+  }
+
+  .pressdetailpage-cta {
+    width: calc(100% - 20px);
+  }
+}
+
+/* ==================================================
+   FINAL DESKTOP HERO + CONTENT SPACING FIX
+================================================== */
+
+/* Full-width banner on desktop */
+.pressdetailpage {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.pressdetail-hero {
+  width: 100% !important;
+  max-width: none !important;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  padding-left: 7% !important;
+  padding-right: 7% !important;
+}
+
+/* Keep spacing only for article content */
+.pressdetailpage-content-section {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.pressdetailpage-content-container {
+  width: 100% !important;
+  max-width: 1400px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* CTA aligned with article content */
+.pressdetailpage-cta {
+  width: calc(100% - 48px) !important;
+  max-width: 1400px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Mobile card layout remains unchanged */
+@media (max-width: 768px) {
+  .pressdetail-hero {
+    width: calc(100% - 28px) !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .pressdetailpage-content-section {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .pressdetailpage-cta {
+    width: calc(100% - 28px) !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .pressdetail-hero {
+    width: calc(100% - 20px) !important;
+  }
+
+  .pressdetailpage-content-section {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .pressdetailpage-cta {
+    width: calc(100% - 20px) !important;
+  }
+}
