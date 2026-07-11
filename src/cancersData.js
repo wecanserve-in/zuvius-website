@@ -7525,7 +7525,7 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/person.png",
+        icon: "/icons/age.png",
         title: "Age Over 60",
         text: "Most people diagnosed with pancreatic cancer are older than 60 years."
       },
@@ -7553,13 +7553,13 @@ typesStages: {
         text: "Smoking cigarettes, cigars or other tobacco products is one of the strongest risk factors for pancreatic cancer."
       },
       {
-        icon: "/icons/obesity.png",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "Obesity, particularly excess weight around the waist, increases pancreatic cancer risk."
       },
       {
-        icon: "/icons/chemical.png",
-        title: "Chemical Exposure",
+        icon: "/icons/diet.png",
+        title: "Chemical Exposure", 
         text: "Long-term exposure to certain pesticides and petroleum-related chemicals may increase risk."
       }
     ]
@@ -7570,32 +7570,32 @@ typesStages: {
       {
         title: "Abdominal or Back Pain",
         text: "Pain in the upper abdomen, middle back or side is a common symptom.",
-        img: "/symptoms/pancreatic-pain.png"
+        img: "/symptoms/adrenal-metastatic.png"
       },
       {
         title: "Jaundice",
         text: "Yellowing of the skin and eyes may occur when the tumor blocks the bile duct.",
-        img: "/symptoms/pancreatic-jaundice.png"
+        img: "/symptoms/bile-jaundice.png"
       },
       {
         title: "Weight Loss",
         text: "Unexplained weight loss and loss of appetite are common signs.",
-        img: "/symptoms/pancreatic-weight-loss.png"
+        img: "/symptoms/chondro-weight.png"
       },
       {
         title: "Digestive Problems",
         text: "Nausea, upset stomach, constipation or diarrhea may develop as the disease progresses.",
-        img: "/symptoms/pancreatic-digestion.png"
+        img: "/symptoms/duodenal-constipation.png"
       },
       {
         title: "Dark Urine or Pale Stool",
         text: "Changes in urine or stool color may occur because of blocked bile flow.",
-        img: "/symptoms/pancreatic-urine.png"
+        img: "/symptoms/bladder-blood.png"
       },
       {
         title: "Fatigue",
         text: "Persistent tiredness or weakness may develop even with adequate rest.",
-        img: "/symptoms/pancreatic-fatigue.png"
+        img: "/symptoms/chondro-fatigue.png"
       }
     ]
   },
@@ -7605,22 +7605,22 @@ typesStages: {
       {
         title: "Imaging Tests",
         text: "CT scans are commonly used to detect pancreatic tumors. MRI, PET scans and endoscopic ultrasound may also be performed.",
-        img: "/diagnosis/pancreatic-imaging.png"
+        img: "/diagnosis/adrenal-imaging.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests may measure enzymes and tumor markers such as CA 19-9.",
-        img: "/diagnosis/pancreatic-blood.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Biopsy",
         text: "A tissue sample is removed with a needle and examined under a microscope to confirm the diagnosis.",
-        img: "/diagnosis/pancreatic-biopsy.png"
+        img: "/diagnosis/brain-biopsy.png"
       },
       {
         title: "Genetic Testing",
         text: "Cancer cells may be tested for gene mutations to help guide targeted treatment options.",
-        img: "/diagnosis/pancreatic-genetic.png"
+        img: "/diagnosis/brain-tests.png"
       }
     ]
   },
@@ -7630,28 +7630,24 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery offers the best chance for cure when the cancer is confined to the pancreas and can be completely removed.",
-        img: "/treatment/pancreatic-surgery.png"
+        img: "/treatment/anal-surgery.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells and is commonly used before or after surgery or for advanced disease.",
-        img: "/treatment/pancreatic-chemotherapy.png"
+        img: "/treatment/appendix-chemo.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy X-rays and may be combined with chemotherapy before or after surgery.",
-        img: "/treatment/pancreatic-radiation.png"
+        img: "/treatment/anal-radiation.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy attacks specific proteins or genetic changes that help pancreatic cancer grow.",
-        img: "/treatment/pancreatic-targeted.png"
+        img: "/treatment/appendix-targeted.png"
       },
-      {
-        title: "Clinical Trials",
-        text: "Clinical trials may provide access to promising new therapies being studied for pancreatic cancer.",
-        img: "/treatment/pancreatic-clinical-trials.png"
-      }
+      
     ]
   }
 },
@@ -7704,22 +7700,18 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/person.png",
+        icon: "/icons/age.png",
         title: "Age Over 55",
         text: "Most penile cancer cases occur in people who are 55 years of age or older."
       },
       {
-        icon: "/icons/hpv.png",
+        icon: "/icons/genetics.png",
         title: "HPV Infection",
         text: "Certain high-risk types of human papillomavirus (HPV) increase the likelihood of developing penile cancer."
       },
+      
       {
-        icon: "/icons/hiv.png",
-        title: "HIV Infection",
-        text: "People living with HIV have a higher risk of penile cancer."
-      },
-      {
-        icon: "/icons/medical-history.png",
+        icon: "/icons/density.png",
         title: "Phimosis or Lichen Sclerosus",
         text: "Conditions affecting the foreskin, including phimosis and lichen sclerosus, are associated with increased risk."
       }
@@ -7732,7 +7724,7 @@ typesStages: {
         text: "Smoking cigarettes or using other tobacco products increases the risk of penile cancer."
       },
       {
-        icon: "/icons/hygiene.png",
+        icon: "/icons/immune.png",
         title: "Poor Penile Hygiene",
         text: "Not cleaning beneath the foreskin regularly may contribute to chronic irritation and increase cancer risk."
       },
@@ -7749,7 +7741,7 @@ typesStages: {
       {
         title: "Lump or Sore",
         text: "A painless lump or sore on the penis that may bleed is one of the most common symptoms.",
-        img: "/symptoms/penile-lump.png"
+        img: "/symptoms/anal-lump.png"
       },
       {
         title: "Skin Changes",
@@ -7784,27 +7776,27 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider examines the penis for abnormal skin changes, lumps or discoloration and reviews symptoms and medical history.",
-        img: "/diagnosis/penile-exam.png"
+        img: "/diagnosis/brain-exam.png"
       },
       {
         title: "Biopsy",
         text: "A biopsy removes suspicious tissue so it can be examined under a microscope to confirm cancer.",
-        img: "/diagnosis/penile-biopsy.png"
+        img: "/diagnosis/bone-biopsy.png"
       },
       {
         title: "CT Scan or MRI",
         text: "CT and MRI scans help determine the size of the tumor and whether it has spread.",
-        img: "/diagnosis/penile-ct-mri.png"
+        img: "/diagnosis/burkitt-ct.png"
       },
       {
         title: "Ultrasound or PET Scan",
         text: "Ultrasound and PET scans may be used to evaluate the extent of the cancer.",
-        img: "/diagnosis/penile-pet.png"
+        img: "/diagnosis/burkitt-pet.png"
       },
       {
         title: "Chest X-ray",
         text: "A chest X-ray may be performed to check whether the cancer has spread to the lungs.",
-        img: "/diagnosis/penile-xray.png"
+        img: "/diagnosis/bone-xray.png"
       }
     ]
   },
@@ -7814,32 +7806,32 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery is the most common treatment and removes the tumor while preserving as much healthy tissue as possible whenever feasible.",
-        img: "/treatment/penile-surgery.png"
+        img: "/treatment/astro-surgery.png"
       },
       {
         title: "Circumcision",
         text: "If cancer is limited to the foreskin, circumcision may be enough to remove the disease.",
-        img: "/treatment/penile-circumcision.png"
+        img: "/treatment/endo-sur.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to destroy cancer cells or shrink tumors before surgery.",
-        img: "/treatment/penile-radiation.png"
+        img: "/treatment/bile-radiation.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy may be given before or after surgery or when cancer has spread beyond the penis.",
-        img: "/treatment/penile-chemotherapy.png"
+        img: "/treatment/chondro-chemo-radiation.png"
       },
       {
         title: "Laser Therapy or Cryotherapy",
         text: "Laser treatment or cryotherapy may be used to destroy small, early-stage tumors while preserving normal tissue.",
-        img: "/treatment/penile-laser.png"
+        img: "/treatment/cervical-laser.png"
       },
       {
         title: "Penectomy",
         text: "Partial or total removal of the penis may be necessary for advanced cancers that cannot be treated with organ-preserving surgery.",
-        img: "/treatment/penile-penectomy.png"
+        img: "/treatment/gist-surgey.png"
       }
     ]
   }
@@ -7894,15 +7886,11 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/person.png",
+        icon: "/icons/age.png",
         title: "Older Age",
         text: "The risk of prostate cancer increases with age, especially after 50 years. Most cases occur in people older than 65."
       },
-      {
-        icon: "/icons/african.png",
-        title: "Black or African Ancestry",
-        text: "People who are Black or of African ancestry have a higher risk of developing prostate cancer, including more aggressive forms."
-      },
+      
       {
         icon: "/icons/family.png",
         title: "Family History",
@@ -7922,7 +7910,7 @@ typesStages: {
         text: "Some studies suggest smoking may increase the risk of developing prostate cancer."
       },
       {
-        icon: "/icons/obesity.png",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "Having obesity has been linked to an increased risk in some studies."
       },
@@ -7939,32 +7927,32 @@ typesStages: {
       {
         title: "Frequent Urination",
         text: "A frequent or urgent need to urinate, especially during the night, may occur.",
-        img: "/symptoms/prostate-frequent-urination.png"
+        img: "/symptoms/bladder-freq.png"
       },
       {
         title: "Weak Urine Flow",
         text: "Urine flow may become weak or start and stop during urination.",
-        img: "/symptoms/prostate-weak-flow.png"
+        img: "/symptoms/bladder-flow.png"
       },
       {
         title: "Pain or Burning While Urinating",
         text: "Some people experience discomfort or burning during urination.",
-        img: "/symptoms/prostate-pain-urination.png"
+        img: "/symptoms/bladder-pain.png"
       },
       {
         title: "Blood in Urine or Semen",
         text: "Blood may appear in urine or semen and should be evaluated promptly.",
-        img: "/symptoms/prostate-blood.png"
+        img: "/symptoms/bladder-blood.png"
       },
       {
         title: "Painful Ejaculation or Erectile Dysfunction",
         text: "Pain during ejaculation or difficulty getting or maintaining an erection may occur.",
-        img: "/symptoms/prostate-ed.png"
+        img: "/symptoms/bone-fatigue.png"
       },
       {
         title: "Pain in the Back, Hip or Chest",
         text: "Pain in the lower back, hips or chest can occur if the cancer has spread.",
-        img: "/symptoms/prostate-bone-pain.png"
+        img: "/symptoms/adrenal-back.png"
       }
     ]
   },
@@ -7974,27 +7962,27 @@ typesStages: {
       {
         title: "Digital Rectal Examination",
         text: "A healthcare provider examines the prostate through the rectum to check for hard areas or lumps.",
-        img: "/diagnosis/prostate-dre.png"
+        img: "/diagnosis/astro-symptoms.png"
       },
       {
         title: "PSA Blood Test",
         text: "A prostate-specific antigen (PSA) blood test measures PSA levels, which may be elevated in prostate cancer.",
-        img: "/diagnosis/prostate-psa.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "MRI or Ultrasound",
         text: "MRI or transrectal ultrasound helps identify suspicious areas within the prostate.",
-        img: "/diagnosis/prostate-imaging.png"
+        img: "/diagnosis/bladder-mri.png"
       },
       {
         title: "Biopsy",
         text: "A needle biopsy removes tissue from the prostate to confirm the diagnosis and determine how aggressive the cancer is.",
-        img: "/diagnosis/prostate-biopsy.png"
+        img: "/diagnosis/brain-biopsy.png"
       },
       {
         title: "Genetic Testing",
         text: "Cancer cells may be tested for genetic changes that can help guide treatment decisions.",
-        img: "/diagnosis/prostate-genetics.png"
+        img: "/diagnosis/appendix-blood.png"
       }
     ]
   },
@@ -8004,32 +7992,27 @@ typesStages: {
       {
         title: "Active Surveillance",
         text: "Slow-growing prostate cancers may be closely monitored with regular tests before starting treatment.",
-        img: "/treatment/prostate-surveillance.png"
+        img: "/diagnosis/adrenal-history.png"
       },
       {
         title: "Surgery",
         text: "Radical prostatectomy removes the prostate gland and may cure cancer that has not spread beyond it.",
-        img: "/treatment/prostate-surgery.png"
-      },
-      {
-        title: "Radiation Therapy",
-        text: "Radiation therapy uses high-energy beams or radioactive seeds to destroy prostate cancer cells.",
-        img: "/treatment/prostate-radiation.png"
+        img: "/treatment/bile-surgery.png"
       },
       {
         title: "Hormone Therapy",
         text: "Hormone therapy lowers or blocks testosterone, which helps slow the growth of prostate cancer.",
-        img: "/treatment/prostate-hormone.png"
+        img: "/treatment/bile-immuno.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells, particularly in advanced prostate cancer.",
-        img: "/treatment/prostate-chemotherapy.png"
+        img: "/treatment/chondro-chemo-radiation.png"
       },
       {
         title: "Targeted Therapy or Immunotherapy",
         text: "Some advanced prostate cancers may be treated with targeted therapy or immunotherapy based on their genetic characteristics.",
-        img: "/treatment/prostate-targeted.png"
+        img: "/treatment/appendix-targeted.png"
       }
     ]
   }
@@ -8087,7 +8070,7 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/person.png",
+        icon: "/icons/age.png",
         title: "Older Age",
         text: "The risk of rectal cancer increases with age, with the average age at diagnosis being about 63 years."
       },
@@ -8101,21 +8084,13 @@ typesStages: {
         title: "Inherited Genetic Syndromes",
         text: "Conditions such as Lynch syndrome, familial adenomatous polyposis (FAP) and related inherited disorders increase risk."
       },
-      {
-        icon: "/icons/colon.png",
-        title: "Inflammatory Bowel Disease",
-        text: "Long-term inflammatory bowel diseases, including Crohn's disease and ulcerative colitis, increase the chance of developing rectal cancer."
-      }
+    
     ],
 
     lifestyle: [
+      
       {
-        icon: "/icons/red-meat.png",
-        title: "High Intake of Processed or Red Meat",
-        text: "Regularly eating large amounts of processed or red meat is associated with a higher risk of rectal cancer."
-      },
-      {
-        icon: "/icons/obesity.png",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "People with obesity have a greater likelihood of developing rectal cancer."
       },
@@ -8132,32 +8107,32 @@ typesStages: {
       {
         title: "Rectal Bleeding",
         text: "Bleeding from the rectum is one of the most common symptoms of rectal cancer.",
-        img: "/symptoms/rectal-bleeding.png"
+        img: "/symptoms/anal-bleeding.png"
       },
       {
         title: "Changes in Bowel Habits",
         text: "Persistent diarrhea, constipation or changes in how and when you pass stool may occur.",
-        img: "/symptoms/rectal-bowel-habits.png"
+        img: "/symptoms/appendix-bowel.png"
       },
       {
         title: "Narrow Stools",
         text: "Stools that become thin or pencil-shaped may be a warning sign.",
-        img: "/symptoms/rectal-thin-stool.png"
+        img: "/symptoms/anal-pain.png"
       },
       {
         title: "Abdominal Pain",
         text: "Pain or discomfort in the abdomen may develop as the cancer grows.",
-        img: "/symptoms/rectal-abdominal-pain.png"
+        img: "/symptoms/adrenal-metastatic.png"
       },
       {
         title: "Fatigue",
         text: "Persistent tiredness or weakness can occur, especially if bleeding causes anemia.",
-        img: "/symptoms/rectal-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       },
       {
         title: "Unexplained Weight Loss",
         text: "Losing weight without trying may occur in advanced disease.",
-        img: "/symptoms/rectal-weight-loss.png"
+        img: "/symptoms/chondro-weight.png"
       }
     ]
   },
@@ -8167,27 +8142,27 @@ typesStages: {
       {
         title: "Digital Rectal Examination",
         text: "A healthcare provider examines the rectum using a gloved finger to check for abnormal growths.",
-        img: "/diagnosis/rectal-dre.png"
+        img: "/diagnosis/anal-exam.png"
       },
       {
         title: "Colonoscopy",
         text: "A colonoscopy allows the provider to examine the rectum and colon and collect tissue samples if needed.",
-        img: "/diagnosis/rectal-colonoscopy.png"
+        img: "/diagnosis/colon-colonoscopy.png"
       },
       {
         title: "Biopsy",
         text: "A biopsy confirms the diagnosis by examining tissue under a microscope.",
-        img: "/diagnosis/rectal-biopsy.png"
+        img: "/diagnosis/duodenal-biopsy.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests, including CBC, liver function tests and CEA tumor marker testing, help evaluate the disease.",
-        img: "/diagnosis/rectal-blood-test.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Imaging Tests",
         text: "CT scans, MRI and pelvic ultrasound help determine the size of the tumor and whether it has spread.",
-        img: "/diagnosis/rectal-imaging.png"
+        img: "/diagnosis/duodenal-imaging.png"
       }
     ]
   },
@@ -8197,33 +8172,29 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery is the primary treatment and removes the cancerous tumor along with surrounding tissue when needed.",
-        img: "/treatment/rectal-surgery.png"
+        img: "/treatment/anal-surgery.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells and may be given before or after surgery.",
-        img: "/treatment/rectal-chemotherapy.png"
+        img: "/treatment/adrenal-chemo.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to shrink or destroy cancer cells, often together with chemotherapy.",
-        img: "/treatment/rectal-radiation.png"
+        img: "/treatment/anal-radiation.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy attacks specific features of cancer cells while limiting damage to healthy tissue.",
-        img: "/treatment/rectal-targeted-therapy.png"
+        img: "/treatment/appendix-targeted.png"
       },
       {
         title: "Immunotherapy",
         text: "Immunotherapy may be used for certain rectal cancers to help the immune system recognize and destroy cancer cells.",
-        img: "/treatment/rectal-immunotherapy.png"
+        img: "/treatment/anal-immuno.png"
       },
-      {
-        title: "Active Surveillance",
-        text: "In selected situations, healthcare providers may closely monitor the cancer with regular follow-up before additional treatment.",
-        img: "/treatment/rectal-surveillance.png"
-      }
+      
     ]
   }
 },
@@ -8276,7 +8247,7 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/person.png",
+        icon: "/icons/age.png",
         title: "Older Age",
         text: "Renal cell carcinoma is most commonly diagnosed in adults between 60 and 80 years of age."
       },
@@ -8304,15 +8275,11 @@ typesStages: {
         text: "Smoking tobacco is one of the most important preventable risk factors for renal cell carcinoma."
       },
       {
-        icon: "/icons/obesity.png",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "Having obesity increases the risk of developing renal cell carcinoma."
       },
-      {
-        icon: "/icons/high-blood-pressure.png",
-        title: "High Blood Pressure",
-        text: "High blood pressure has been linked with an increased risk of renal cell carcinoma."
-      }
+     
     ]
   },
 
@@ -8321,32 +8288,32 @@ typesStages: {
       {
         title: "Blood in the Urine",
         text: "Blood in the urine (hematuria) is one of the most common symptoms of renal cell carcinoma.",
-        img: "/symptoms/rcc-blood-urine.png"
+        img: "/symptoms/bladder-blood.png"
       },
       {
         title: "Pain in the Side",
         text: "Persistent pain in the side between the ribs and hips may occur.",
-        img: "/symptoms/rcc-flank-pain.png"
+        img: "/symptoms/hcl-left.png"
       },
       {
         title: "Abdominal or Flank Lump",
         text: "A firm lump may develop in the abdomen, lower back or side.",
-        img: "/symptoms/rcc-lump.png"
+        img: "/symptoms/germ-pain.png"
       },
       {
         title: "Fever or Night Sweats",
         text: "Unexplained fever or night sweats can occur in some people.",
-        img: "/symptoms/rcc-fever.png"
+        img: "/symptoms/burkitt-fever.png"
       },
       {
         title: "Weight Loss",
         text: "Losing weight without trying may be a sign of advanced disease.",
-        img: "/symptoms/rcc-weight-loss.png"
+        img: "/symptoms/chondro-weight.png"
       },
       {
         title: "Fatigue",
         text: "Persistent tiredness or weakness may develop, sometimes due to anemia.",
-        img: "/symptoms/rcc-fatigue.png"
+        img: "/symptoms/bone-fatigue.png"
       }
     ]
   },
@@ -8356,27 +8323,27 @@ typesStages: {
       {
         title: "Ultrasound",
         text: "Ultrasound helps determine whether a kidney mass is fluid-filled or solid.",
-        img: "/diagnosis/rcc-ultrasound.png"
+        img: "/diagnosis/endometrial-ultrasound.png"
       },
       {
         title: "CT Scan",
         text: "CT scans provide detailed images of the kidneys and help evaluate the size and location of the tumor.",
-        img: "/diagnosis/rcc-ct.png"
+        img: "/diagnosis/eso-ct.png"
       },
       {
         title: "MRI",
         text: "MRI may be used when CT scans are unsuitable or when additional detail is needed.",
-        img: "/diagnosis/rcc-mri.png"
+        img: "/diagnosis/bladder-mri.png"
       },
       {
         title: "Biopsy",
         text: "Although not always required, a biopsy may be performed in selected cases to confirm the diagnosis or evaluate cancer that has spread.",
-        img: "/diagnosis/rcc-biopsy.png"
+        img: "/diagnosis/brain-biopsy.png"
       },
       {
         title: "Cancer Staging",
         text: "Imaging studies help determine whether the cancer is localized or has spread, guiding treatment planning.",
-        img: "/diagnosis/rcc-staging.png"
+        img: "/diagnosis/adrenal-imaging.png"
       }
     ]
   },
@@ -8388,11 +8355,7 @@ typesStages: {
         text: "Partial nephrectomy removes the tumor while preserving as much healthy kidney tissue as possible.",
         img: "/treatment/rcc-partial-nephrectomy.png"
       },
-      {
-        title: "Radical Nephrectomy",
-        text: "Radical nephrectomy removes the affected kidney and, when necessary, nearby tissues or lymph nodes.",
-        img: "/treatment/rcc-radical-nephrectomy.png"
-      },
+     
       {
         title: "Cryotherapy or Radiofrequency Ablation",
         text: "These procedures destroy cancer cells using extreme cold or heat when surgery is not suitable.",
@@ -8401,17 +8364,17 @@ typesStages: {
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the immune system recognize and attack renal cell carcinoma cells.",
-        img: "/treatment/rcc-immunotherapy.png"
+        img: "/treatment/anal-immuno.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy blocks specific pathways that help cancer cells grow and survive.",
-        img: "/treatment/rcc-targeted-therapy.png"
+        img: "/treatment/appendix-targeted.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be used to control symptoms or treat cancer that has spread to other areas.",
-        img: "/treatment/rcc-radiation.png"
+        img: "/treatment/anal-radiation.png"
       }
     ]
   }
@@ -8446,7 +8409,7 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/child.png",
+        icon: "/icons/feet.png",
         title: "Young Age",
         text: "Retinoblastoma almost always develops in young children, with most cases diagnosed before 3 years of age."
       },
@@ -8462,7 +8425,14 @@ typesStages: {
       }
     ],
 
-    lifestyle: []
+    lifestyle: [
+      {
+        icon: "/icons/none.png",
+        title: "No Lifestyle Risk Factors",
+        text: "This page does not identify clearly established lifestyle-related risk factors for astrocytoma."
+      }
+
+    ]
   },
 
   symptoms: {
@@ -11012,12 +10982,12 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/child.png",
+        icon: "/icons/feet.png",
         title: "Young Age",
         text: "Yolk sac tumors most commonly occur in children, adolescents and young adults."
       },
       {
-        icon: "/icons/germ-cell.png",
+        icon: "/icons/germs.png",
         title: "Germ Cell Abnormalities",
         text: "The tumor develops from germ cells that normally form eggs or sperm."
       },
@@ -11027,7 +10997,7 @@ typesStages: {
         text: "Certain germ cell abnormalities in the testicles may increase the risk."
       },
       {
-        icon: "/icons/ovary.png",
+        icon: "/icons/uterus.png",
         title: "Ovarian Germ Cell Tumors",
         text: "Yolk sac tumors are one of the malignant ovarian germ cell tumors seen in young females."
       }
@@ -11035,7 +11005,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/healthy-lifestyle.png",
+        icon: "/icons/none.png",
         title: "No Proven Lifestyle Risk Factors",
         text: "There are currently no known lifestyle or environmental factors proven to cause yolk sac tumors."
       }
@@ -11052,27 +11022,27 @@ typesStages: {
       {
         title: "Abdominal or Pelvic Pain",
         text: "Pain or discomfort may occur as the tumor enlarges.",
-        img: "/symptoms/abdominal-pain.png"
+        img: "/symptoms/duodenal-pain.png"
       },
       {
         title: "Painless Testicular Lump",
         text: "A firm, painless lump in a testicle is a common symptom in males.",
-        img: "/symptoms/testicular-lump.png"
+        img: "/symptoms/anal-lump.png"
       },
       {
         title: "Irregular Menstrual Bleeding",
         text: "Females with ovarian tumors may experience abnormal menstrual bleeding.",
-        img: "/symptoms/irregular-periods.png"
+        img: "/symptoms/cervical-bleeding.png"
       },
       {
         title: "Changes in Bowel Habits",
         text: "Large tumors may press on nearby organs, causing constipation or bowel changes.",
-        img: "/symptoms/bowel-changes.png"
+        img: "/symptoms/anal-bowel.png"
       },
       {
         title: "Back Pain",
         text: "Tumors may cause persistent lower back or pelvic pain as they grow.",
-        img: "/symptoms/back-pain.png"
+        img: "/symptoms/adrenal-back.png"
       }
     ]
   },
@@ -11082,27 +11052,27 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider checks for lumps, swelling or other abnormal findings.",
-        img: "/diagnosis/physical-exam.png"
+        img: "/diagnosis/bcc-history.png"
       },
       {
         title: "Blood Tests (AFP)",
         text: "High alpha-fetoprotein (AFP) levels strongly suggest a yolk sac tumor.",
-        img: "/diagnosis/blood-test.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "CT Scan or MRI",
         text: "Imaging helps determine the tumor's size, location and whether it has spread.",
-        img: "/diagnosis/ct-scan.png"
+        img: "/diagnosis/eso-ct.png"
       },
       {
         title: "Ultrasound",
         text: "Ultrasound is commonly used to evaluate ovarian or testicular masses.",
-        img: "/diagnosis/ultrasound.png"
+        img: "/diagnosis/endometrial-ultrasound.png"
       },
       {
         title: "Surgical Removal and Biopsy",
         text: "The tumor is removed and examined under a microscope to confirm the diagnosis.",
-        img: "/diagnosis/biopsy.png"
+        img: "/diagnosis/bile-biopsy.png"
       }
     ]
   },
@@ -11112,17 +11082,17 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery removes the tumor and, when necessary, the affected ovary or testicle.",
-        img: "/treatment/surgery.png"
+        img: "/treatment/anal-surgery.png"
       },
       {
         title: "Chemotherapy",
         text: "Combination chemotherapy, commonly the BEP regimen, is the standard treatment for most patients.",
-        img: "/treatment/chemotherapy.png"
+        img: "/treatment/anal-chemo.png"
       },
       {
         title: "Follow-Up Monitoring",
         text: "Regular blood tests measuring AFP and imaging scans help detect recurrence early.",
-        img: "/treatment/follow-up.png"
+        img: "/diagnosis/bcc-history.png"
       },
       {
         title: "Supportive Care",
@@ -11171,12 +11141,12 @@ typesStages: {
         text: "The syndrome develops when gastrinomas form in the pancreas or duodenum."
       },
       {
-        icon: "/icons/dna.png",
+        icon: "/icons/genetics.png",
         title: "Inherited Gene Changes",
         text: "Inherited genetic mutations associated with MEN1 significantly increase the risk."
       },
       {
-        icon: "/icons/family-history.png",
+        icon: "/icons/family.png",
         title: "Family History",
         text: "People with a family history of MEN1 have a greater chance of developing Zollinger-Ellison syndrome."
       }
@@ -11184,7 +11154,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/healthy-lifestyle.png",
+        icon: "/icons/none.png",
         title: "No Proven Lifestyle Risk Factors",
         text: "There are no known lifestyle or environmental factors that directly cause Zollinger-Ellison syndrome."
       }
@@ -11196,32 +11166,32 @@ typesStages: {
       {
         title: "Persistent Abdominal Pain",
         text: "Burning or gnawing pain caused by excessive stomach acid and ulcers.",
-        img: "/symptoms/abdominal-pain.png"
+        img: "/symptoms/adrenal-metastatic.png"
       },
       {
         title: "Chronic Diarrhea",
         text: "Frequent diarrhea is one of the most common symptoms of Zollinger-Ellison syndrome.",
-        img: "/symptoms/diarrhea.png"
+        img: "/symptoms/anal-pain.png"
       },
       {
         title: "Heartburn and Acid Reflux",
         text: "Excess stomach acid can cause severe heartburn and gastroesophageal reflux.",
-        img: "/symptoms/heartburn.png"
+        img: "/symptoms/esophageal-heartburn.png"
       },
       {
         title: "Nausea and Vomiting",
         text: "Some people experience nausea or vomiting due to stomach irritation.",
-        img: "/symptoms/nausea.png"
+        img: "/symptoms/galbladder-vomit.png"
       },
       {
         title: "Weight Loss",
         text: "Persistent digestive problems may lead to unintended weight loss.",
-        img: "/symptoms/weight-loss.png"
+        img: "/symptoms/gist-weight.png"
       },
       {
         title: "Bleeding Ulcers",
         text: "Ulcers may bleed, causing blood in vomit or stool.",
-        img: "/symptoms/bleeding.png"
+        img: "/symptoms/anal-bleeding.png"
       }
     ]
   },
@@ -11231,27 +11201,27 @@ typesStages: {
       {
         title: "Blood Tests",
         text: "Blood tests measure gastrin levels, which are typically very high in Zollinger-Ellison syndrome.",
-        img: "/diagnosis/blood-test.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "CT Scan or MRI",
         text: "Imaging scans help locate gastrinomas and determine whether they have spread.",
-        img: "/diagnosis/ct-scan.png"
+        img: "/diagnosis/anal-scan.png"
       },
       {
         title: "Upper Endoscopy",
         text: "An endoscope allows doctors to examine ulcers and the upper digestive tract.",
-        img: "/diagnosis/endoscopy.png"
+        img: "/diagnosis/bile-endo.png"
       },
       {
         title: "Endoscopic Ultrasound",
         text: "This test helps identify small tumors in the pancreas or duodenum.",
-        img: "/diagnosis/ultrasound.png"
+        img: "/diagnosis/endometrial-ultrasound.png"
       },
       {
         title: "Biopsy",
         text: "A tissue sample confirms whether a gastrinoma is cancerous.",
-        img: "/diagnosis/biopsy.png"
+        img: "/diagnosis/ewing-bio.png"
       }
     ]
   },
@@ -11266,17 +11236,17 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery removes gastrinomas whenever they can be safely removed.",
-        img: "/treatment/surgery.png"
+        img: "/diagnosis/fallopian-surgery.png"
       },
       {
-        title: "Cancer Therapy",
+        title: "Chemotherapy",
         text: "Chemotherapy or other cancer treatments may be recommended if tumors have spread.",
-        img: "/treatment/chemotherapy.png"
+        img: "/treatment/bladder-chemo.png"
       },
       {
         title: "Long-Term Follow-Up",
         text: "Regular monitoring helps detect tumor recurrence and manage stomach acid levels.",
-        img: "/treatment/follow-up.png"
+        img: "/diagnosis/astro-symptoms.png"
       }
     ]
   }
