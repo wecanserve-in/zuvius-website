@@ -51,8 +51,8 @@ const PressRelease = () => {
         image="/newsroom/pressreleasebanner.png"
         title={
           <>
-            Press <br />
-            Release
+            Media <br />
+            Coverage
           </>
         }
         description=""

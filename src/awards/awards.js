@@ -71,7 +71,7 @@ const accreditationItems = [
   },
   {
     title: "Invima",
-    image: "./Accredations/Invima.png",
+    image: "./Accredations/invima.png",
   },
   {
     title: "US FDA",
@@ -83,7 +83,7 @@ const accreditationItems = [
   },
   {
     title: "PIC/S",
-    image: "./Accredations/PICS.png",
+    image: "/Accredations/pics.png",
   },
 ];
 
