@@ -10129,7 +10129,7 @@ typesStages: {
         text: "People with Lynch syndrome have a significantly higher risk of developing uterine cancer."
       },
       {
-        icon: "/icons/menopause.png",
+        icon: "/icons/uterus.png",
         title: "Lifetime Estrogen Exposure",
         text: "Early menstruation, late menopause or never becoming pregnant increase lifetime exposure to estrogen."
       },
@@ -10142,7 +10142,7 @@ typesStages: {
 
     lifestyle: [
       {
-        icon: "/icons/obesity.png",
+        icon: "/icons/overweight.png",
         title: "Obesity",
         text: "Excess body fat increases estrogen levels and is one of the strongest risk factors for uterine cancer."
       },
@@ -10152,7 +10152,7 @@ typesStages: {
         text: "People with diabetes have a higher likelihood of developing uterine cancer."
       },
       {
-        icon: "/icons/hormones.png",
+        icon: "/icons/harmone.png",
         title: "Estrogen Therapy Without Progesterone",
         text: "Using estrogen replacement therapy alone after menopause increases the risk."
       }
@@ -10164,22 +10164,18 @@ typesStages: {
       {
         title: "Abnormal Vaginal Bleeding",
         text: "Bleeding between periods or any bleeding after menopause is the most common symptom.",
-        img: "/symptoms/vaginal-bleeding.png"
+        img: "/symptoms/cervical-bleeding.png"
       },
       {
         title: "Pelvic Pain or Cramping",
         text: "Persistent pain or cramping in the lower abdomen or pelvis may occur.",
-        img: "/symptoms/pelvic-pain.png"
+        img: "/symptoms/cervical-pelvis.png"
       },
-      {
-        title: "Abnormal Vaginal Discharge",
-        text: "Thin white, watery or clear discharge after menopause may be a warning sign.",
-        img: "/symptoms/vaginal-discharge.png"
-      },
+      
       {
         title: "Heavy or Prolonged Periods",
         text: "Menstrual bleeding that is heavier, longer or more frequent than usual should be evaluated.",
-        img: "/symptoms/heavy-periods.png"
+        img: "/symptoms/cervical-discharge.png"
       }
     ]
   },
@@ -10189,27 +10185,27 @@ typesStages: {
       {
         title: "Pelvic Examination",
         text: "A healthcare provider performs a pelvic examination and reviews symptoms and medical history.",
-        img: "/diagnosis/pelvic-exam.png"
+        img: "/diagnosis/bcc-history.png"
       },
       {
         title: "Endometrial Biopsy",
         text: "A small sample of the uterine lining is removed and examined to confirm cancer.",
-        img: "/diagnosis/biopsy.png"
+        img: "/diagnosis/gist-bio.png"
       },
       {
         title: "Transvaginal Ultrasound",
         text: "Ultrasound helps evaluate the thickness of the uterine lining and detect abnormalities.",
-        img: "/diagnosis/ultrasound.png"
+        img: "/diagnosis/gallbladder-ultrasound.png"
       },
       {
         title: "Hysteroscopy or Dilation & Curettage",
         text: "These procedures allow healthcare providers to examine and collect tissue from inside the uterus.",
-        img: "/diagnosis/hysteroscopy.png"
+        img: "/diagnosis/hysteresis.png"
       },
       {
         title: "CT or MRI Scan",
         text: "Imaging tests help determine whether the cancer has spread beyond the uterus.",
-        img: "/diagnosis/ct-scan.png"
+        img: "/diagnosis/eso-ct.png"
       }
     ]
   },
@@ -10219,32 +10215,28 @@ typesStages: {
       {
         title: "Surgery",
         text: "A hysterectomy, often with removal of the ovaries, fallopian tubes and nearby lymph nodes, is the primary treatment.",
-        img: "/treatment/surgery.png"
+        img: "/treatment/endo-sur.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation uses high-energy beams to destroy remaining cancer cells or reduce recurrence risk.",
-        img: "/treatment/radiation.png"
+        img: "/treatment/brain-radiation.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy may be recommended for advanced or recurrent uterine cancer.",
-        img: "/treatment/chemotherapy.png"
+        img: "/treatment/endo-chemo.png"
       },
-      {
-        title: "Hormone Therapy",
-        text: "Hormone therapy blocks or changes hormone activity to slow the growth of certain uterine cancers.",
-        img: "/treatment/hormone-therapy.png"
-      },
+      
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the immune system recognize and attack cancer cells in selected cases.",
-        img: "/treatment/immunotherapy.png"
+        img: "/treatment/burkitt-immuno.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted medicines attack specific features of cancer cells while limiting damage to healthy tissue.",
-        img: "/treatment/targeted-therapy.png"
+        img: "/treatment/brain-targeted.png"
       }
     ]
   }
@@ -10298,7 +10290,7 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/hpv.png",
+        icon: "/icons/germs.png",
         title: "Human Papillomavirus (HPV)",
         text: "Persistent infection with certain high-risk HPV types increases the likelihood of developing vaginal cancer."
       },
@@ -10308,12 +10300,12 @@ typesStages: {
         text: "The risk increases with age, and most people are diagnosed after the age of 60."
       },
       {
-        icon: "/icons/cervical-cancer.png",
+        icon: "/icons/periods_history.png",
         title: "History of Cervical Cancer or Dysplasia",
         text: "Previous cervical cancer or abnormal cervical cell changes increase the risk of vaginal cancer."
       },
       {
-        icon: "/icons/des.png",
+        icon: "/icons/pregnant.png",
         title: "DES Exposure Before Birth",
         text: "Exposure to diethylstilbestrol (DES) during pregnancy before birth increases the risk of clear cell adenocarcinoma."
       }
@@ -10326,7 +10318,7 @@ typesStages: {
         text: "Smoking approximately doubles the risk of developing vaginal cancer."
       },
       {
-        icon: "/icons/vain.png",
+        icon: "/icons/vagina.png",
         title: "Vaginal Intraepithelial Neoplasia (VAIN)",
         text: "Having VAIN increases the chance that abnormal vaginal cells may eventually become cancerous."
       }
@@ -10338,33 +10330,29 @@ typesStages: {
       {
         title: "Abnormal Vaginal Bleeding",
         text: "Bleeding after sex or after menopause is one of the most common symptoms.",
-        img: "/symptoms/vaginal-bleeding.png"
+        img: "/symptoms/cervical-bleeding.png"
       },
       {
         title: "Abnormal Vaginal Discharge",
         text: "Watery, bloody or foul-smelling vaginal discharge may occur.",
-        img: "/symptoms/vaginal-discharge.png"
+        img: "/symptoms/cervical-discharge.png"
       },
       {
         title: "Pain During Sex",
         text: "Sexual intercourse may become painful as the tumor grows.",
-        img: "/symptoms/pain-intercourse.png"
+        img: "/symptoms/cervical-pelvis.png"
       },
       {
         title: "Painful or Frequent Urination",
         text: "Pain while urinating or needing to urinate frequently may develop.",
-        img: "/symptoms/pain-urination.png"
+        img: "/symptoms/cervical-urination.png"
       },
       {
         title: "Pelvic Pain",
         text: "Persistent pain or discomfort in the pelvic area can occur in more advanced disease.",
-        img: "/symptoms/pelvic-pain.png"
+        img: "/symptoms/endometrial-pelvic-pain.png"
       },
-      {
-        title: "Vaginal Lump or Mass",
-        text: "A noticeable lump or growth inside the vagina may be present.",
-        img: "/symptoms/vaginal-lump.png"
-      }
+     
     ]
   },
 
@@ -10373,7 +10361,7 @@ typesStages: {
       {
         title: "Pelvic Examination",
         text: "A healthcare provider examines the vagina and surrounding organs for abnormalities.",
-        img: "/diagnosis/pelvic-exam.png"
+        img: "/diagnosis/brain-exam.png"
       },
       {
         title: "Pap Test",
@@ -10383,17 +10371,17 @@ typesStages: {
       {
         title: "Colposcopy",
         text: "A colposcope provides a magnified view of the vagina to identify suspicious areas.",
-        img: "/diagnosis/colposcopy.png"
+        img: "/diagnosis/colon-colonoscopy.png"
       },
       {
         title: "Biopsy",
         text: "A tissue sample is removed and examined under a microscope to confirm the diagnosis.",
-        img: "/diagnosis/biopsy.png"
+        img: "/diagnosis/chondro-biopsy.png"
       },
       {
         title: "CT, MRI or PET Scan",
         text: "Imaging tests help determine the extent of the cancer and whether it has spread.",
-        img: "/diagnosis/imaging.png"
+        img: "/diagnosis/chondro-imaging.png"
       }
     ]
   },
@@ -10403,23 +10391,19 @@ typesStages: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy is the most common treatment and may be delivered externally or internally.",
-        img: "/treatment/radiation.png"
+        img: "/treatment/ewing-radiation.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy may be combined with radiation or used to treat advanced disease.",
-        img: "/treatment/chemotherapy.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Surgery",
         text: "Surgery may remove the tumor or affected tissues, particularly in early-stage cancers.",
-        img: "/treatment/surgery.png"
+        img: "/treatment/endo-sur.png"
       },
-      {
-        title: "Clinical Trials",
-        text: "Some patients may be eligible for clinical trials evaluating newer treatment approaches.",
-        img: "/treatment/clinical-trial.png"
-      }
+      
     ]
   }
 },
@@ -10472,12 +10456,12 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/hpv.png",
+        icon: "/icons/germs.png",
         title: "Human Papillomavirus (HPV)",
         text: "Persistent infection with high-risk HPV types is one of the leading causes of vulvar cancer."
       },
       {
-        icon: "/icons/lichen-sclerosus.png",
+        icon: "/icons/vagina.png",
         title: "Lichen Sclerosus",
         text: "This chronic skin condition affecting the vulva increases the risk of vulvar cancer."
       },
@@ -10500,7 +10484,7 @@ typesStages: {
         text: "Smoking increases the risk of developing vulvar cancer, especially in people with HPV infection."
       },
       {
-        icon: "/icons/vin.png",
+        icon: "/icons/vagina.png",
         title: "Vulvar Intraepithelial Neoplasia (VIN)",
         text: "Untreated VIN is a precancerous condition that can develop into vulvar cancer."
       }
@@ -10512,32 +10496,32 @@ typesStages: {
       {
         title: "Persistent Itching or Burning",
         text: "Long-lasting itching, burning or irritation of the vulva is a common symptom.",
-        img: "/symptoms/itching.png"
+        img: "/symptoms/vagina-itch.png"
       },
       {
         title: "Skin Color Changes",
         text: "The skin may become lighter, darker or develop white patches.",
-        img: "/symptoms/skin-changes.png"
+        img: "/symptoms/discolored-vagina.png"
       },
       {
         title: "Lump, Wart or Open Sore",
         text: "A lump, wart-like growth or ulcer that doesn't heal should be evaluated.",
-        img: "/symptoms/lump.png"
+        img: "/symptoms/vagina-lump.png"
       },
       {
         title: "Pain or Tenderness",
         text: "Pain, tenderness or discomfort may occur, especially during urination or sexual intercourse.",
-        img: "/symptoms/pelvic-pain.png"
+        img: "/symptoms/cervical-urination.png"
       },
       {
         title: "Bleeding",
         text: "Bleeding unrelated to menstruation may be a warning sign.",
-        img: "/symptoms/vaginal-bleeding.png"
+        img: "/symptoms/cervical-bleeding.png"
       },
       {
         title: "Persistent Vulvar Pain",
         text: "Ongoing pain or soreness that doesn't improve should be examined by a healthcare provider.",
-        img: "/symptoms/pain.png"
+        img: "/symptoms/cervical-pelvis.png"
       }
     ]
   },
@@ -10547,7 +10531,7 @@ typesStages: {
       {
         title: "Pelvic Examination",
         text: "A healthcare provider examines the vulva and surrounding tissues for abnormal changes.",
-        img: "/diagnosis/pelvic-exam.png"
+        img: "/diagnosis/brain-exam.png"
       },
       {
         title: "Pap Test and HPV Testing",
@@ -10557,17 +10541,17 @@ typesStages: {
       {
         title: "Colposcopy",
         text: "A magnifying instrument helps examine the vulva, vagina and cervix more closely.",
-        img: "/diagnosis/colposcopy.png"
+        img: "/diagnosis/colon-colonoscopy.png"
       },
       {
         title: "Biopsy",
         text: "Removing a small tissue sample is the only way to confirm vulvar cancer.",
-        img: "/diagnosis/biopsy.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "CT, MRI or PET Scan",
         text: "Imaging tests determine whether the cancer has spread to nearby tissues or distant organs.",
-        img: "/diagnosis/imaging.png"
+        img: "/diagnosis/chondro-imaging.png"
       }
     ]
   },
@@ -10577,27 +10561,27 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery is the primary treatment and removes the cancer while preserving as much healthy tissue as possible.",
-        img: "/treatment/surgery.png"
+        img: "/treatment/anal-surgery.png"
       },
       {
         title: "Radiation Therapy",
         text: "High-energy radiation destroys cancer cells or reduces the chance of recurrence.",
-        img: "/treatment/radiation.png"
+        img: "/treatment/ewing-radiation.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy may be combined with radiation or used for advanced disease.",
-        img: "/treatment/chemotherapy.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Laser Surgery",
         text: "Laser treatment may remove certain precancerous lesions or very early cancers.",
-        img: "/treatment/laser-surgery.png"
+        img: "/treatment/cervical-laser.png"
       },
       {
         title: "Immunotherapy",
         text: "Selected advanced vulvar cancers may be treated with medicines that help the immune system attack cancer cells.",
-        img: "/treatment/immunotherapy.png"
+        img: "/treatment/brain-immuno.png"
       }
     ]
   }
@@ -10666,32 +10650,28 @@ typesStages: {
       {
         title: "Fatigue and Weakness",
         text: "Anemia caused by abnormal bone marrow function commonly leads to tiredness and weakness.",
-        img: "/symptoms/fatigue.png"
+        img: "/symptoms/gist-fati.png"
       },
       {
         title: "Night Sweats and Fever",
         text: "Some people experience unexplained fever, night sweats and weight loss.",
-        img: "/symptoms/night-sweats.png"
+        img: "/symptoms/ewing-fever.png"
       },
-      {
-        title: "Enlarged Lymph Nodes or Spleen",
-        text: "Swollen lymph nodes or an enlarged liver or spleen may occur.",
-        img: "/symptoms/swollen-lymph-nodes.png"
-      },
+      
       {
         title: "Blurred Vision and Headaches",
         text: "High IgM levels can thicken the blood and cause headaches, dizziness and blurred vision.",
-        img: "/symptoms/blurred-vision.png"
+        img: "/symptoms/eye-blurred.png"
       },
       {
         title: "Bleeding Problems",
         text: "Frequent nosebleeds or bleeding gums may occur because thickened blood affects circulation.",
-        img: "/symptoms/nosebleed.png"
+        img: "/symptoms/gist-blood.png"
       },
       {
         title: "Peripheral Neuropathy",
         text: "Numbness or tingling in the hands and feet can develop due to nerve involvement.",
-        img: "/symptoms/peripheral-neuropathy.png"
+        img: "/symptoms/astro-movement.png"
       }
     ]
   },
@@ -10701,17 +10681,17 @@ typesStages: {
       {
         title: "Blood and Urine Tests",
         text: "These tests check blood cell counts and measure abnormal IgM protein levels.",
-        img: "/diagnosis/blood-test.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Bone Marrow Biopsy",
         text: "A bone marrow sample is examined to identify abnormal lymphoplasmacytic cells.",
-        img: "/diagnosis/bone-marrow-biopsy.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "CT or PET-CT Scan",
         text: "Imaging helps detect enlarged lymph nodes, spleen or other affected organs.",
-        img: "/diagnosis/ct-scan.png"
+        img: "/diagnosis/eso-ct.png"
       },
       {
         title: "Eye Examination",
@@ -10723,35 +10703,31 @@ typesStages: {
 
   treatment: {
     options: [
-      {
-        title: "Watchful Waiting",
-        text: "People without symptoms may not need immediate treatment and are monitored regularly.",
-        img: "/treatment/watchful-waiting.png"
-      },
+      
       {
         title: "Plasmapheresis",
         text: "This procedure removes excess IgM protein from the blood to quickly relieve symptoms caused by thickened blood.",
-        img: "/treatment/plasmapheresis.png"
+        img: "/treatment/lymphoma-steamcell.png"
       },
       {
         title: "Immunotherapy",
         text: "Medicines such as rituximab help the immune system destroy abnormal B cells.",
-        img: "/treatment/immunotherapy.png"
+        img: "/treatment/burkitt-immuno.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy drugs may be used alone or combined with immunotherapy to control the disease.",
-        img: "/treatment/chemotherapy.png"
+        img: "/treatment/burkitt-chemo.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted medicines such as BTK inhibitors block proteins that help cancer cells survive and grow.",
-        img: "/treatment/targeted-therapy.png"
+        img: "/treatment/brain-targeted.png"
       },
       {
         title: "Stem Cell Transplant",
         text: "Stem cell transplantation may be considered for selected people with relapsed or difficult-to-treat disease.",
-        img: "/treatment/stem-cell-transplant.png"
+        img: "/treatment/leukemia-stemcell.png"
       }
     ]
   }
@@ -10810,7 +10786,7 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/child.png",
+        icon: "/icons/feet.png",
         title: "Young Age",
         text: "Most children with Wilms tumor are diagnosed before age 10, especially between 3 and 5 years."
       },
@@ -10820,12 +10796,12 @@ typesStages: {
         text: "A small number of children inherit genetic mutations associated with Wilms tumor."
       },
       {
-        icon: "/icons/congenital.png",
+        icon: "/icons/pregnant.png",
         title: "Certain Birth Syndromes",
         text: "Some congenital syndromes and birth defects increase the likelihood of developing Wilms tumor."
       },
       {
-        icon: "/icons/family-history.png",
+        icon: "/icons/family.png",
         title: "Family History",
         text: "Having a close family member with Wilms tumor slightly increases the risk."
       }
@@ -10850,27 +10826,23 @@ typesStages: {
       {
         title: "Abdominal Pain",
         text: "Some children experience pain or discomfort in the abdomen.",
-        img: "/symptoms/abdominal-pain.png"
+        img: "/symptoms/adrenal-metastatic.png"
       },
       {
         title: "Blood in Urine",
         text: "Blood may appear in the urine due to the kidney tumor.",
-        img: "/symptoms/blood-urine.png"
+        img: "/symptoms/bladder-blood.png"
       },
       {
         title: "Fever",
         text: "Persistent fever without another obvious cause may occur.",
-        img: "/symptoms/fever.png"
+        img: "/symptoms/bone-fever.png"
       },
-      {
-        title: "High Blood Pressure",
-        text: "Wilms tumor may cause hypertension, which can lead to headaches or nosebleeds.",
-        img: "/symptoms/high-blood-pressure.png"
-      },
+      
       {
         title: "Loss of Appetite",
         text: "Some children may lose their appetite or appear unusually tired.",
-        img: "/symptoms/loss-appetite.png"
+        img: "/symptoms/fallopian-appetite.png"
       }
     ]
   },
@@ -10880,27 +10852,27 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "The healthcare provider checks the abdomen for swelling or a mass.",
-        img: "/diagnosis/physical-exam.png"
+        img: "/diagnosis/adrenal-history.png"
       },
       {
         title: "Ultrasound",
         text: "An abdominal ultrasound is usually the first imaging test used to identify a kidney tumor.",
-        img: "/diagnosis/ultrasound.png"
+        img: "/diagnosis/endometrial-ultrasound.png"
       },
       {
         title: "CT or MRI Scan",
         text: "These scans determine the size of the tumor and whether it has spread.",
-        img: "/diagnosis/ct-scan.png"
+        img: "/diagnosis/eso-ct.png"
       },
       {
         title: "Blood and Urine Tests",
         text: "Laboratory tests evaluate kidney function and overall health.",
-        img: "/diagnosis/blood-test.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Biopsy",
         text: "A biopsy may be performed in selected cases to confirm the diagnosis.",
-        img: "/diagnosis/biopsy.png"
+        img: "/diagnosis/eso-bio.png"
       }
     ]
   },
@@ -10910,29 +10882,165 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery removes the tumor and, in many cases, the affected kidney.",
-        img: "/treatment/surgery.png"
+        img: "/treatment/anal-surgery.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy is commonly given before or after surgery to destroy cancer cells.",
-        img: "/treatment/chemotherapy.png"
+        img: "/treatment/anal-chemo.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be recommended for advanced-stage or high-risk tumors.",
-        img: "/treatment/radiation.png"
+        img: "/treatment/adrenal-radiation.png"
       },
-      {
-        title: "Clinical Trials",
-        text: "Some children may receive newer treatments through carefully monitored clinical trials.",
-        img: "/treatment/clinical-trial.png"
-      }
+     
     ]
   }
 },
 
 //Xeroderma Pigmentosum-related Skin Cancer
+{
+  slug: "xeroderma-pigmentosum-related-skin-cancer",
 
+  title: "Xeroderma Pigmentosum (XP)",
+
+  description:
+    "Your skin is your body's largest organ. It protects you from infections, injury and harmful ultraviolet (UV) rays while helping regulate body temperature and sensation.",
+
+  bannerImg: "/cancers/xeroderma-pigmentosum.webp",
+
+  overview: {
+    intro:
+      "Xeroderma pigmentosum (XP) is a rare inherited genetic disorder in which the body cannot properly repair DNA damaged by ultraviolet (UV) radiation. Even a few minutes of sun exposure can cause severe skin damage and greatly increase the risk of developing skin cancer.",
+
+    description:
+      "XP affects the skin, eyes and sometimes the nervous system. People with XP require lifelong protection from UV light, frequent skin examinations and prompt treatment of precancerous or cancerous skin lesions. Although there is no cure, careful management can reduce complications and improve quality of life."
+  },
+
+  typesStages: {
+    stagesNote:
+      "Xeroderma pigmentosum (XP) is not a cancer and is not classified into stages. Instead, healthcare providers monitor people with XP throughout life for the development of precancerous lesions and skin cancers, which are treated according to their individual stage and type."
+  },
+
+  riskFactorsData: {
+    uncontrollable: [
+      {
+        icon: "/icons/genetics.png",
+        title: "Inherited Gene Mutations",
+        text: "XP is caused by inherited mutations in genes responsible for repairing DNA damaged by ultraviolet radiation."
+      },
+      {
+        icon: "/icons/family.png",
+        title: "Family History",
+        text: "A child develops XP only after inheriting altered copies of the gene from both parents."
+      },
+      {
+        icon: "/icons/feet.png",
+        title: "Early Childhood Onset",
+        text: "Symptoms usually begin during infancy or early childhood after the first exposures to sunlight."
+      },
+      {
+        icon: "/icons/genetics.png",
+        title: "Defective DNA Repair",
+        text: "The body's inability to repair UV-induced DNA damage causes skin cells to accumulate mutations that may lead to cancer."
+      }
+    ],
+
+    lifestyle: [
+      {
+        icon: "/icons/uv.png",
+        title: "Ultraviolet (UV) Exposure",
+        text: "Sunlight and other UV sources greatly increase skin damage and the risk of skin cancer in people with XP."
+      }
+    ]
+  },
+
+  symptoms: {
+    items: [
+      {
+        title: "Severe Sun Sensitivity",
+        text: "Even brief exposure to sunlight may cause blistering sunburns and lasting skin damage.",
+        img: "/symptoms/skin-burn.png"
+      },
+      {
+        title: "Early Freckling",
+        text: "Freckles often appear before the age of 2 on sun-exposed areas of the body.",
+        img: "/symptoms/early-frekles.png"
+      },
+      {
+        title: "Dry or Discolored Skin",
+        text: "The skin may become dry, thin or develop areas of darker and lighter pigmentation.",
+        img: "/symptoms/discolored-skin.png"
+      },
+      {
+        title: "Eye Problems",
+        text: "Light sensitivity, eye irritation, vision changes and other eye conditions are common.",
+        img: "/symptoms/eye-floaters.png"
+      },
+      {
+        title: "Skin Cancer",
+        text: "People with XP have an extremely high risk of developing skin cancers at a young age.",
+        img: "/symptoms/penile-skin.png"
+      },
+      {
+        title: "Neurological Symptoms",
+        text: "Some people develop hearing loss, balance problems or progressive nervous system changes.",
+        img: "/symptoms/brain-balance.png"
+      }
+    ]
+  },
+
+  diagnosis: {
+    items: [
+      {
+        title: "Physical Examination",
+        text: "A healthcare provider evaluates the skin, eyes and history of unusual sun sensitivity.",
+        img: "/diagnosis/anal-history.png"
+      },
+      {
+        title: "Genetic Testing",
+        text: "Blood tests identify the inherited gene mutations responsible for XP.",
+        img: "/diagnosis/adrenal-blood.png"
+      },
+      {
+        title: "Skin Examination",
+        text: "Regular skin checks help identify precancerous changes and skin cancers early.",
+        img: "/diagnosis/bcc-exam.png"
+      },
+      {
+        title: "Eye Examination",
+        text: "Eye specialists assess UV-related damage affecting vision and eye health.",
+        img: "/diagnosis/eye-exam.png"
+      }
+    ]
+  },
+
+  treatment: {
+    options: [
+      {
+        title: "Strict UV Protection",
+        text: "Avoiding sunlight, wearing UV-protective clothing and using sunscreen are essential lifelong measures.",
+        img: "/treatment/skin-protection.png"
+      },
+      {
+        title: "Regular Skin Screening",
+        text: "Frequent dermatology visits help detect and treat skin cancers as early as possible.",
+        img: "/treatment/bcc-radiation.png"
+      },
+      {
+        title: "Surgical Removal",
+        text: "Precancerous lesions and skin cancers are removed promptly when they develop.",
+        img: "/treatment/brain-surgery.png"
+      },
+      {
+        title: "Supportive Care",
+        text: "Eye care, hearing support, vitamin D supplementation and ongoing monitoring help manage long-term complications.",
+        img: "/treatment/supportive-care.png"
+      }
+    ]
+  }
+},
 
 //yolk sac cancer 
 

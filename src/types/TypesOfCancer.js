@@ -96,7 +96,7 @@ const cancersData = [
   { name: "Uterine Cancer", desc: "Begins in the uterus.", img: "/cancer-types/uterus.png" },
 
   { name: "Vaginal Cancer", desc: "Begins in the vaginal tissues.", img: "/cancer-types/vaginal.png" },
-  { name: "Vulvar Cancer", desc: "Begins in the outer female genital area.", img: "/cancer-types/vulvar.png" },
+  { name: "Vulvar Cancer", desc: "Begins in the outer female genital area.", img: "/cancer-types/vulva.png" },
 
   { name: "Waldenström Macroglobulinemia", desc: "A rare type of blood cancer.", img: "/cancer-types/blood.png" },
   { name: "Wilms Tumor", desc: "A kidney cancer mostly seen in children.", img: "/cancer-types/kidney.png" },
