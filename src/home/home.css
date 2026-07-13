@@ -533,14 +533,13 @@
 .home-reach-tag {
   display: block;
   margin-bottom: 12px;
-  font-size: 0.78rem;
+  font-size: 30px;
   font-weight: 900;
-  letter-spacing: 0.45em;
 }
 
 .home-reach-title,
 .home-reach-content h3 {
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 900;
   color: #008a9a;
   line-height: 1.3;
@@ -1564,5 +1563,903 @@
   .view-more-btn {
     padding: 11px 32px !important;
     font-size: 0.82rem !important;
+  }
+}
+
+
+
+/* ==================================================
+   LEADERSHIP INFOGRAPHIC — FINAL SCOPED CSS
+   This affects only the leadership section
+================================================== */
+
+.leader-section {
+  width: 100%;
+  padding: 75px 7% 70px !important;
+
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.5fr) minmax(340px, 0.7fr) !important;
+
+  align-items: center !important;
+  gap: 55px !important;
+}
+
+.leader-text {
+  width: 100%;
+  max-width: 900px !important;
+}
+
+.leader-text h2 {
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  margin: 0 0 20px;
+  color: #787777;
+}
+
+.leader-text p {
+  margin: 0;
+
+  color: #363636;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.leader-infographic-card {
+  width: 100%;
+  max-width: 470px;
+  height: auto;
+  min-height: 0;
+
+  justify-self: end;
+  align-self: center;
+
+  padding: 22px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  background: linear-gradient(180deg, #ffffff 0%, #f8fcff 100%);
+  border: 1px solid #dfeaf8;
+  border-radius: 24px;
+
+  box-shadow: 0 16px 42px rgba(16, 53, 110, 0.08);
+}
+
+.leader-sku-box {
+  width: 100%;
+  padding: 18px 16px;
+
+  box-sizing: border-box;
+  text-align: center;
+
+  color: #ffffff;
+  background: linear-gradient(135deg, #008a9a 0%, #0ea8ba 100%);
+  border-radius: 18px;
+}
+
+.leader-sku-number {
+  display: block;
+
+  margin: 0 0 4px;
+
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.leader-sku-label {
+  display: block;
+
+  margin: 0 0 3px;
+
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.leader-sku-box small {
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+/* Product formats */
+
+.leader-product-grid {
+  position: relative;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+
+  box-sizing: border-box;
+}
+
+/* Middle vertical line */
+
+.leader-product-grid::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 50%;
+
+  width: 1px;
+
+  background: #d9e4ec;
+
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+/* Middle horizontal line */
+
+.leader-product-grid::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+
+  height: 1px;
+
+  background: #d9e4ec;
+
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.leader-product-type-card {
+  width: 100%;
+  min-width: 0;
+  min-height: 72px;
+
+  padding: 16px 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  transition: none;
+}
+
+.leader-product-type-card:hover {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  transform: none;
+}
+
+.leader-product-type-card img {
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.leader-product-type-card h4 {
+  min-width: 0;
+  margin: 0;
+
+  color: #061943;
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+/* Hide the old leadership content only */
+
+.leader-bottom,
+.leader-counter,
+.leader-products,
+.leader-image-container,
+.leader-image {
+  display: none !important;
+}
+
+
+/* ==================================================
+   ACCREDITATIONS WITH QUALITY IMAGE
+   This affects only the accreditation section
+================================================== */
+
+.accreditation-section {
+  width: 100%;
+  padding: 70px 7% 80px !important;
+
+  display: block !important;
+
+  background: #ffffff;
+}
+
+.accreditation-layout {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.65fr);
+  align-items: center;
+  gap: 42px;
+}
+
+.accreditation-left {
+  min-width: 0;
+}
+
+.accreditation-section .accreditation-main-title {
+  margin: 0 0 10px;
+
+  color: #008a9a;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.accreditation-subtitle {
+  max-width: 760px;
+  margin: 0 0 28px;
+
+  color: #363636;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.accreditation-section .accreditation-grid {
+  width: 100%;
+  max-width: 760px;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  justify-items: start;
+  align-items: center;
+  gap: 26px 28px;
+}
+
+.accreditation-section .acc-item {
+  width: 100%;
+  max-width: 170px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.accreditation-section .acc-item img {
+  max-width: 100%;
+  max-height: 72px;
+
+  object-fit: contain;
+}
+
+.accreditation-right {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.accreditation-q-card {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 20px 18px 12px;
+
+  text-align: center;
+  background: #ffffff;
+}
+
+.accreditation-q-card img {
+  display: block;
+
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+
+  object-fit: contain;
+}
+
+.accreditation-typewriter {
+  margin-top: 10px;
+
+  color: #363636;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.accreditation-typewriter .fixed-text {
+  font-weight: 700;
+}
+
+.accreditation-typewriter .changing-text {
+  color: #363636;
+  font-weight: 300;
+}
+
+
+/* ==================================================
+   LEADERSHIP + ACCREDITATION RESPONSIVE ONLY
+================================================== */
+
+@media (max-width: 1100px) {
+  .leader-section {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+    text-align: center;
+  }
+
+  .leader-text {
+    max-width: 100% !important;
+  }
+
+  .leader-infographic-card {
+    width: 100%;
+    max-width: 520px;
+
+    justify-self: center;
+  }
+
+  .accreditation-layout {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .accreditation-section .accreditation-main-title,
+  .accreditation-subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .accreditation-section .accreditation-grid {
+    max-width: 100%;
+    justify-items: center;
+  }
+
+  .accreditation-section .acc-item {
+    max-width: none;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .leader-section {
+    padding: 55px 5% !important;
+  }
+
+  .leader-text h2 {
+    font-size: 2.35rem;
+  }
+
+  .accreditation-section {
+    padding: 55px 5% 60px !important;
+  }
+
+  .accreditation-section .accreditation-grid {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 20px;
+  }
+
+  .accreditation-q-card img {
+    max-width: 300px;
+  }
+
+  .accreditation-typewriter {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .leader-section {
+    padding: 48px 18px !important;
+    gap: 24px !important;
+  }
+
+  .leader-text h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .leader-text p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .leader-infographic-card {
+    padding: 18px 14px;
+    gap: 16px;
+    border-radius: 18px;
+  }
+
+  .leader-sku-box {
+    padding: 18px 14px;
+  }
+
+  .leader-sku-number {
+    font-size: 2.7rem;
+  }
+
+  .leader-product-type-card {
+    min-height: 68px;
+    padding: 14px 5px;
+    gap: 6px;
+  }
+
+  .leader-product-type-card img {
+    width: 31px;
+    height: 31px;
+  }
+
+  .leader-product-type-card h4 {
+    font-size: 0.78rem;
+  }
+
+  .leader-product-grid::before {
+    top: 8px;
+    bottom: 8px;
+  }
+
+  .leader-product-grid::after {
+    left: 6px;
+    right: 6px;
+  }
+
+  .accreditation-section {
+    padding: 48px 18px 55px !important;
+  }
+
+  .accreditation-section .accreditation-main-title {
+    font-size: 26px;
+  }
+
+  .accreditation-subtitle {
+    margin-bottom: 22px;
+    font-size: 15px;
+  }
+
+  .accreditation-section .accreditation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 16px;
+  }
+
+  .accreditation-section .acc-item {
+    height: 76px;
+  }
+
+  .accreditation-section .acc-item img {
+    max-height: 60px;
+  }
+
+  .accreditation-q-card {
+    padding: 10px 0 0;
+  }
+
+  .accreditation-q-card img {
+    max-width: 260px;
+  }
+
+  .accreditation-typewriter {
+    margin-top: 12px;
+    font-size: 1rem;
+  }
+}
+
+
+/* ==================================================
+   ACCREDITATION GRID — 4 ITEMS FIRST ROW, 3 SECOND
+================================================== */
+
+.accreditation-section .accreditation-grid {
+  width: 100% !important;
+  max-width: 850px !important;
+  margin: 0 !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(110px, 1fr)) !important;
+
+  align-items: center !important;
+  justify-items: center !important;
+
+  gap: 30px 22px !important;
+}
+
+.accreditation-section .acc-item {
+  width: 100% !important;
+  max-width: 150px !important;
+  height: 90px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Second row positioning */
+.accreditation-section .acc-item:nth-child(5) {
+  grid-column: 1 / 2 !important;
+}
+
+.accreditation-section .acc-item:nth-child(6) {
+  grid-column: 2 / 3 !important;
+}
+
+.accreditation-section .acc-item:nth-child(7) {
+  grid-column: 3 / 4 !important;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .accreditation-section .accreditation-grid {
+    max-width: 850px !important;
+    margin: 0 auto !important;
+
+    grid-template-columns: repeat(4, minmax(100px, 1fr)) !important;
+  }
+
+  .accreditation-section .acc-item {
+    max-width: 150px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .accreditation-section .accreditation-grid {
+    grid-template-columns: repeat(2, minmax(120px, 1fr)) !important;
+    gap: 20px !important;
+  }
+
+  .accreditation-section .acc-item:nth-child(5),
+  .accreditation-section .acc-item:nth-child(6),
+  .accreditation-section .acc-item:nth-child(7) {
+    grid-column: auto !important;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 420px) {
+  .accreditation-section .accreditation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px 12px !important;
+  }
+
+  .accreditation-section .acc-item {
+    max-width: 125px !important;
+    height: 72px !important;
+  }
+
+  .accreditation-section .acc-item img {
+    max-height: 56px !important;
+  }
+}
+
+/* ==================================================
+   ACCREDITATION SECOND ROW — PERFECTLY CENTERED
+================================================== */
+
+@media (min-width: 769px) {
+  .accreditation-section .acc-item:nth-child(5) {
+    grid-column: 1 / 2 !important;
+    justify-self: end !important;
+  }
+
+  .accreditation-section .acc-item:nth-child(6) {
+    grid-column: 2 / 4 !important;
+    justify-self: center !important;
+  }
+
+  .accreditation-section .acc-item:nth-child(7) {
+    grid-column: 4 / 5 !important;
+    justify-self: start !important;
+  }
+}
+
+/* ==================================================
+   RECENT LAUNCHES — PRODUCT CATEGORY CARD DESIGN
+================================================== */
+
+.products-section .carousel-container {
+  width: 100% !important;
+  max-width: 1300px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  padding-bottom: 30px !important;
+}
+
+.products-section .carousel-track {
+  width: 100% !important;
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.products-section .slide {
+  flex: 0 0 100% !important;
+  min-width: 100% !important;
+  width: 100% !important;
+
+  padding: 12px 95px !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  gap: 24px !important;
+}
+
+/* Same card class and appearance as Product Category */
+
+.products-section .home-category-product-card {
+  flex: 0 0 calc((100% - 48px) / 3) !important;
+  width: calc((100% - 48px) / 3) !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 410px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  color: inherit !important;
+  text-decoration: none !important;
+
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+.products-section .home-category-product-card:visited,
+.products-section .home-category-product-card:hover,
+.products-section .home-category-product-card:focus {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.products-section
+  .home-category-product-card
+  .category-product-image {
+  width: 100% !important;
+  height: 260px !important;
+  min-height: 260px !important;
+
+  padding: 18px !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  overflow: hidden !important;
+}
+
+.products-section
+  .home-category-product-card
+  .category-product-image
+  img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.products-section
+  .home-category-product-card
+  .category-product-content {
+  position: relative !important;
+
+  width: 100% !important;
+  min-height: 145px !important;
+  flex: 1 !important;
+
+  padding: 22px 70px 22px 22px !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+
+  text-align: left !important;
+}
+
+.products-section
+  .home-category-product-card
+  .category-product-content
+  h3 {
+  margin: 0 0 8px !important;
+
+  font-size: 1rem !important;
+  font-weight: 900 !important;
+  line-height: 1.35 !important;
+  text-align: left !important;
+}
+
+.products-section
+  .home-category-product-card
+  .category-product-content
+  p {
+  margin: 0 !important;
+
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.55 !important;
+  text-align: left !important;
+
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+.products-section
+  .home-category-product-card
+  .product-card-arrow {
+  position: absolute !important;
+  right: 20px !important;
+  bottom: 20px !important;
+}
+
+/* Missing product cards */
+
+.products-section .home-product-placeholder {
+  cursor: default !important;
+}
+
+.products-section .home-product-placeholder:hover {
+  transform: none !important;
+}
+
+.home-empty-product-image {
+  width: 100% !important;
+  height: 100% !important;
+
+  background: transparent !important;
+}
+
+/* Carousel arrows */
+
+.products-section .carousel-btn {
+  z-index: 20 !important;
+}
+
+.products-section .carousel-btn.left {
+  left: 18px !important;
+}
+
+.products-section .carousel-btn.right {
+  right: 18px !important;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) and (min-width: 601px) {
+  .products-section .slide {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+    gap: 18px !important;
+  }
+
+  .products-section .home-category-product-card {
+    flex-basis: calc((100% - 36px) / 3) !important;
+    width: calc((100% - 36px) / 3) !important;
+    min-height: 360px !important;
+  }
+
+  .products-section
+    .home-category-product-card
+    .category-product-image {
+    height: 210px !important;
+    min-height: 210px !important;
+  }
+
+  .products-section
+    .home-category-product-card
+    .category-product-content {
+    padding: 18px 55px 18px 16px !important;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .products-section .carousel-container {
+    width: 100% !important;
+    max-width: 340px !important;
+
+    margin: 0 auto !important;
+    padding: 0 42px 18px !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .products-section .slide {
+    width: 100% !important;
+    min-width: 100% !important;
+
+    padding: 8px 0 !important;
+    gap: 0 !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+  }
+
+  .products-section .home-category-product-card {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 365px !important;
+  }
+
+  .products-section
+    .home-category-product-card
+    .category-product-image {
+    height: 215px !important;
+    min-height: 215px !important;
+    padding: 14px !important;
+  }
+
+  .products-section
+    .home-category-product-card
+    .category-product-content {
+    min-height: 135px !important;
+    padding: 19px 58px 18px 18px !important;
+  }
+
+  .products-section
+    .home-category-product-card
+    .category-product-content
+    h3 {
+    font-size: 1rem !important;
+  }
+
+  .products-section
+    .home-category-product-card
+    .category-product-content
+    p {
+    font-size: 13px !important;
+  }
+
+  .products-section
+    .home-category-product-card
+    .product-card-arrow {
+    right: 16px !important;
+    bottom: 16px !important;
+  }
+
+  .products-section .carousel-btn.left {
+    left: 0 !important;
+  }
+
+  .products-section .carousel-btn.right {
+    right: 0 !important;
   }
 }

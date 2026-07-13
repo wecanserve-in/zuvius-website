@@ -35,84 +35,44 @@
 
 .awards-section-head h2,
 .awards-section-head h3 {
+  margin: 0 0 18px;
+
   color: #008a9a;
   font-size: 34px;
   font-weight: 900;
   line-height: 1.2;
-  margin: 0 0 18px;
 }
 
 .awards-small-line {
   width: 58px;
   height: 3px;
   margin: 0 auto;
+
   background: #008a9a;
   border-radius: 20px;
 }
 
-/* ==================================================
-   ACCREDITATION
-================================================== */
+.awards-section-description {
+  width: min(920px, 100%);
+  margin: 0 auto 52px;
 
-.awards-accreditation-card {
-  width: calc(100% - 48px);
-  max-width: 1500px;
-  margin: 0 auto 64px;
-  padding: 34px 46px 48px;
-  background: #ffffff;
-  border: 1px solid #edf3fb;
-  border-radius: 24px;
-  box-shadow: 0 14px 42px rgba(16, 53, 110, 0.05);
-}
-
-.awards-accreditation-grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.awards-accreditation-item {
-  width: 100%;
-  min-width: 0;
-  min-height: 120px;
-  padding: 18px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: #ffffff;
-  border: 1px solid #edf3fb;
-  border-radius: 16px;
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-}
-
-.awards-accreditation-item:hover {
-  transform: translateY(-7px);
-  border-color: rgba(0, 138, 154, 0.28);
-  box-shadow: 0 14px 34px rgba(0, 138, 154, 0.13);
-}
-
-.awards-accreditation-item img {
-  width: 100%;
-  max-width: 105px;
-  height: 72px;
-  object-fit: contain;
+  color: #000000;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.55;
+  text-align: center;
 }
 
 /* ==================================================
    AWARDS AND CERTIFICATION
+   ORIGINAL DESIGN — NUMBERS REMOVED
 ================================================== */
 
 .awards-certification {
   width: calc(100% - 96px);
   max-width: 1500px;
   margin: 0 auto;
+
   text-align: center;
 }
 
@@ -126,15 +86,12 @@
   line-height: 1.55;
 }
 
-/* Timeline wrapper */
-
 .awards-timeline-wrap {
   position: relative;
+
   width: 100%;
   padding: 0 20px 28px;
 }
-
-/* Hide old connecting line */
 
 .awards-timeline-line {
   display: none !important;
@@ -142,6 +99,7 @@
 
 .awards-timeline-grid {
   width: 100%;
+
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
   align-items: start;
@@ -151,7 +109,25 @@
 .awards-timeline-item {
   min-width: 0;
   padding: 0 8px;
+
   text-align: center;
+  cursor: pointer;
+
+  border-radius: 14px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.awards-timeline-item:hover {
+  transform: translateY(-6px);
+}
+
+.awards-timeline-item:focus-visible {
+  outline: 3px solid rgba(0, 138, 154, 0.28);
+  outline-offset: 6px;
 }
 
 .awards-image-box {
@@ -169,33 +145,20 @@
   height: auto;
   max-width: 150px;
   max-height: 170px;
+
   object-fit: contain;
+
+  transition: transform 0.3s ease;
 }
 
-.awards-number {
-  width: 62px;
-  height: 62px;
-  margin: 12px auto 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: #ffffff;
-  border: 4px solid #008a9a;
-  border-radius: 50%;
-
-  color: #008a9a;
-  font-size: 16px;
-  font-weight: 900;
-
-  box-shadow: 0 8px 20px rgba(0, 138, 154, 0.08);
+.awards-timeline-item:hover .awards-image-box img {
+  transform: scale(1.05);
 }
 
 .awards-timeline-item h4 {
   width: 100%;
   max-width: 190px;
-  margin: 0 auto;
+  margin: 18px auto 0;
 
   color: #061943;
   font-size: 20px;
@@ -206,66 +169,23 @@
 }
 
 /* ==================================================
-   MEMBERSHIP SECTION
+   MEMBERSHIP
+   NORMAL HEADING + FIVE CERTIFICATE CARDS
 ================================================== */
 
 .awards-membership-section {
   width: calc(100% - 48px);
   max-width: 1500px;
   margin: 92px auto 0;
-
-  display: grid;
-  grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
-  gap: 28px;
-  align-items: stretch;
 }
 
-/* Left information panel */
-
-.awards-membership-info {
-  width: 100%;
-  min-height: 390px;
-  padding: 42px 34px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  background: linear-gradient(145deg, #008a9a 0%, #087f8c 100%);
-  border-radius: 20px;
-
-  color: #ffffff;
-  box-shadow: 0 18px 42px rgba(0, 138, 154, 0.18);
+.awards-membership-section .awards-section-head {
+  margin-bottom: 22px;
 }
 
-.awards-membership-info h3 {
-  margin: 0 0 16px;
-
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 900;
-  line-height: 1.2;
+.awards-membership-section .awards-section-description {
+  margin-bottom: 44px;
 }
-
-.awards-white-line {
-  width: 56px;
-  height: 3px;
-  margin: 0 0 24px;
-
-  background: #ffffff;
-  border-radius: 20px;
-}
-
-.awards-membership-info p {
-  margin: 0;
-
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 1.75;
-}
-
-/* Membership cards grid */
 
 .awards-membership-grid {
   width: 100%;
@@ -275,8 +195,6 @@
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 18px;
 }
-
-/* Membership card */
 
 .awards-membership-card {
   width: 100%;
@@ -292,7 +210,12 @@
   border: 1px solid #e3edf6;
   border-radius: 18px;
 
+  color: inherit;
+  font-family: inherit;
   text-align: center;
+
+  cursor: zoom-in;
+
   box-shadow: 0 12px 32px rgba(6, 25, 67, 0.07);
 
   transition:
@@ -303,8 +226,15 @@
 
 .awards-membership-card:hover {
   transform: translateY(-7px);
+
   border-color: rgba(0, 138, 154, 0.32);
+
   box-shadow: 0 20px 42px rgba(0, 138, 154, 0.14);
+}
+
+.awards-membership-card:focus-visible {
+  outline: 3px solid rgba(0, 138, 154, 0.28);
+  outline-offset: 5px;
 }
 
 .awards-membership-logo {
@@ -319,6 +249,7 @@
 
   background: #f7fbfd;
   border-radius: 14px;
+
   overflow: hidden;
 }
 
@@ -327,7 +258,16 @@
   height: 100%;
   max-width: 150px;
   max-height: 165px;
+
   object-fit: contain;
+
+  transition: transform 0.3s ease;
+}
+
+.awards-membership-card:hover
+  .awards-membership-logo
+  img {
+  transform: scale(1.05);
 }
 
 .awards-membership-card h4 {
@@ -344,265 +284,113 @@
   word-break: normal;
 }
 
-/* ==================================================
-   LARGE TABLET
-================================================== */
+.certificate-view-text {
+  margin-top: auto;
+  padding-top: 16px;
 
-@media (max-width: 1250px) {
-  .awards-accreditation-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .awards-timeline-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 45px 24px;
-  }
-
-  .awards-membership-section {
-    grid-template-columns: 320px minmax(0, 1fr);
-  }
-
-  .awards-membership-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .awards-membership-card {
-    min-height: 340px;
-  }
+  color: #008a9a;
+  font-size: 13px;
+  font-weight: 800;
 }
 
 /* ==================================================
-   TABLET
+   ACCREDITATION — LAST SECTION
 ================================================== */
 
-@media (max-width: 900px) {
-  .awards-content {
-    padding-top: 42px;
-  }
+.awards-accreditation-card {
+  width: calc(100% - 48px);
+  max-width: 1500px;
+  margin: 92px auto 0;
+  padding: 34px 46px 48px;
 
-  .awards-certification {
-    width: calc(100% - 48px);
-  }
+  background: #ffffff;
+  border: 1px solid #edf3fb;
+  border-radius: 24px;
 
-  .awards-timeline-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+  box-shadow: 0 14px 42px rgba(16, 53, 110, 0.05);
+}
 
-  .awards-membership-section {
-    grid-template-columns: 1fr;
-  }
+.awards-accreditation-card
+  .awards-section-description {
+  margin-bottom: 40px;
+}
 
-  .awards-membership-info {
-    min-height: auto;
-    padding: 34px 30px;
-  }
+.awards-accreditation-grid {
+  width: 100%;
 
-  .awards-membership-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.awards-accreditation-item {
+  width: 100%;
+  min-width: 0;
+  min-height: 150px;
+  padding: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  background: #ffffff;
+  border: 1px solid #edf3fb;
+  border-radius: 16px;
+
+  color: inherit;
+  font-family: inherit;
+
+  cursor: zoom-in;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.awards-accreditation-item:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(0, 138, 154, 0.28);
+
+  box-shadow: 0 14px 34px rgba(0, 138, 154, 0.13);
+}
+
+.awards-accreditation-item:focus-visible {
+  outline: 3px solid rgba(0, 138, 154, 0.28);
+  outline-offset: 5px;
+}
+
+.awards-accreditation-item img {
+  width: 100%;
+  max-width: 105px;
+  height: 72px;
+
+  object-fit: contain;
+
+  transition: transform 0.3s ease;
+}
+
+.awards-accreditation-item:hover img {
+  transform: scale(1.06);
+}
+
+.awards-accreditation-item span {
+  color: #061943;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: center;
 }
 
 /* ==================================================
-   MOBILE
-================================================== */
-
-@media (max-width: 600px) {
-  .awards-content {
-    padding: 40px 0 60px;
-  }
-
-  .awards-accreditation-card,
-  .awards-certification,
-  .awards-membership-section {
-    width: calc(100% - 28px);
-  }
-
-  .awards-section-head {
-    margin-bottom: 28px;
-  }
-
-  .awards-section-head h2,
-  .awards-section-head h3 {
-    font-size: 26px;
-    line-height: 1.25;
-  }
-
-  /* Accreditation mobile */
-
-  .awards-accreditation-card {
-    padding: 28px 14px;
-    margin-bottom: 50px;
-    border-radius: 18px;
-  }
-
-  .awards-accreditation-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-  }
-
-  .awards-accreditation-item {
-    min-height: 110px;
-    padding: 14px;
-    border-radius: 14px;
-  }
-
-  .awards-accreditation-item img {
-    max-width: 90px;
-    height: 65px;
-  }
-
-  /* Awards mobile */
-
-  .awards-certification > p {
-    margin-bottom: 34px;
-    font-size: 16px;
-    line-height: 1.65;
-  }
-
-  .awards-timeline-wrap {
-    padding: 0;
-  }
-
-  .awards-timeline-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .awards-timeline-item {
-    position: relative;
-
-    display: grid;
-    grid-template-columns: 105px 50px minmax(0, 1fr);
-    align-items: center;
-    column-gap: 12px;
-
-    padding: 18px 0;
-    text-align: left;
-  }
-
-  .awards-image-box {
-    width: 105px;
-    height: 100px;
-    margin: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .awards-image-box img {
-    max-width: 88px;
-    max-height: 90px;
-  }
-
-  .awards-number {
-    width: 48px;
-    height: 48px;
-    margin: 0;
-
-    border-width: 3px;
-    font-size: 14px;
-  }
-
-  .awards-timeline-item h4 {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-
-    font-size: 16px;
-    line-height: 1.35;
-    text-align: left;
-  }
-
-  /* Membership mobile */
-
-  .awards-membership-section {
-    margin-top: 54px;
-    gap: 20px;
-  }
-
-  .awards-membership-info {
-    min-height: auto;
-    padding: 30px 24px;
-    border-radius: 16px;
-  }
-
-  .awards-membership-info h3 {
-    font-size: 25px;
-  }
-
-  .awards-membership-info p {
-    font-size: 15px;
-    line-height: 1.7;
-  }
-
-  .awards-membership-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .awards-membership-card {
-    min-height: auto;
-    padding: 18px 18px 22px;
-    border-radius: 16px;
-  }
-
-  .awards-membership-logo {
-    height: 180px;
-    margin-bottom: 18px;
-  }
-
-  .awards-membership-logo img {
-    max-width: 160px;
-    max-height: 145px;
-  }
-
-  .awards-membership-card h4 {
-    font-size: 18px;
-  }
-}
-
-/* ==================================================
-   VERY SMALL MOBILE
-================================================== */
-
-@media (max-width: 380px) {
-  .awards-accreditation-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .awards-timeline-item {
-    grid-template-columns: 82px 44px minmax(0, 1fr);
-    column-gap: 9px;
-  }
-
-  .awards-image-box {
-    width: 82px;
-  }
-
-  .awards-image-box img {
-    max-width: 72px;
-    max-height: 78px;
-  }
-
-  .awards-number {
-    width: 42px;
-    height: 42px;
-    font-size: 12px;
-  }
-
-  .awards-timeline-item h4 {
-    font-size: 14px;
-  }
-}
-
-/* ==================================================
-   AWARDS IMAGE ZOOM MODAL
+   CLICKABLE IMAGE EFFECT
 ================================================== */
 
 .awards-clickable-image {
-  cursor: zoom-in;
+  cursor: pointer;
 }
 
 .awards-clickable-image img {
@@ -610,8 +398,12 @@
 }
 
 .awards-clickable-image:hover img {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
+
+/* ==================================================
+   MODAL OVERLAY
+================================================== */
 
 .awards-image-modal {
   position: fixed;
@@ -641,6 +433,8 @@
   flex-direction: column;
   align-items: center;
 
+  overflow-y: auto;
+
   background: #ffffff;
   border-radius: 20px;
 
@@ -649,32 +443,15 @@
   animation: awardsModalZoom 0.3s ease;
 }
 
-.awards-image-modal-content img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 72vh;
-
-  object-fit: contain;
-}
-
-.awards-image-modal-content h3 {
-  margin: 20px 0 0;
-
-  color: #061943;
-  font-size: 20px;
-  font-weight: 800;
-  text-align: center;
-}
-
 .awards-modal-close {
   position: absolute;
   top: 12px;
   right: 14px;
-  z-index: 2;
+  z-index: 5;
 
   width: 42px;
   height: 42px;
+  padding: 0;
 
   display: flex;
   align-items: center;
@@ -688,6 +465,7 @@
 
   font-size: 30px;
   line-height: 1;
+
   cursor: pointer;
 
   box-shadow: 0 8px 18px rgba(0, 138, 154, 0.25);
@@ -696,6 +474,138 @@
 .awards-modal-close:hover {
   background: #006f7d;
 }
+
+/* ==================================================
+   AWARD DETAILS POPUP
+================================================== */
+
+.awards-detail-modal {
+  width: min(1000px, 95vw);
+  padding: 32px;
+}
+
+.award-popup-layout {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: minmax(340px, 1fr) minmax(280px, 0.8fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.award-popup-image {
+  width: 100%;
+  min-height: 470px;
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f7fbfd;
+  border-radius: 18px;
+}
+
+.award-popup-image img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 65vh;
+
+  object-fit: contain;
+}
+
+.award-popup-info {
+  padding: 30px 25px 30px 0;
+}
+
+.award-popup-label {
+  display: inline-block;
+  margin-bottom: 14px;
+
+  color: #008a9a;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.award-popup-info h3 {
+  margin: 0;
+
+  color: #061943;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.award-popup-line {
+  width: 55px;
+  height: 3px;
+  margin: 20px 0;
+
+  background: #008a9a;
+  border-radius: 20px;
+}
+
+.award-popup-info p {
+  margin: 0;
+
+  color: #263660;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* ==================================================
+   CERTIFICATE AND ACCREDITATION ZOOM POPUP
+================================================== */
+
+.awards-zoom-modal {
+  width: min(900px, 95vw);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zoom-popup-image {
+  width: 100%;
+  min-height: 500px;
+  padding: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f7fbfd;
+  border-radius: 18px;
+}
+
+.zoom-popup-image img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 70vh;
+
+  object-fit: contain;
+}
+
+.awards-zoom-modal h3,
+.awards-image-modal-content > h3 {
+  margin: 22px 0 0;
+
+  color: #061943;
+  font-size: 21px;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* ==================================================
+   MODAL ANIMATIONS
+================================================== */
 
 @keyframes awardsModalFade {
   from {
@@ -719,7 +629,211 @@
   }
 }
 
+/* ==================================================
+   LARGE TABLET
+================================================== */
+
+@media (max-width: 1250px) {
+  .awards-timeline-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 45px 24px;
+  }
+
+  .awards-membership-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .awards-membership-card {
+    min-height: 340px;
+  }
+
+  .awards-accreditation-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 900px) {
+  .awards-content {
+    padding-top: 42px;
+  }
+
+  .awards-certification {
+    width: calc(100% - 48px);
+  }
+
+  .awards-timeline-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .awards-membership-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .award-popup-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .award-popup-image {
+    min-height: 360px;
+  }
+
+  .award-popup-info {
+    padding: 0 10px 20px;
+  }
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
 @media (max-width: 600px) {
+  .awards-content {
+    padding: 40px 0 60px;
+  }
+
+  .awards-certification,
+  .awards-membership-section,
+  .awards-accreditation-card {
+    width: calc(100% - 28px);
+  }
+
+  .awards-section-head {
+    margin-bottom: 28px;
+  }
+
+  .awards-section-head h2,
+  .awards-section-head h3 {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+
+  .awards-section-description,
+  .awards-certification > p {
+    margin-bottom: 34px;
+
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  /* Awards mobile */
+
+  .awards-timeline-wrap {
+    padding: 0;
+  }
+
+  .awards-timeline-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .awards-timeline-item {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 105px minmax(0, 1fr);
+    align-items: center;
+    column-gap: 18px;
+
+    padding: 18px 0;
+
+    text-align: left;
+  }
+
+  .awards-image-box {
+    width: 105px;
+    height: 100px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .awards-image-box img {
+    max-width: 88px;
+    max-height: 90px;
+  }
+
+  .awards-timeline-item h4 {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.35;
+    text-align: left;
+  }
+
+  /* Membership mobile */
+
+  .awards-membership-section {
+    margin-top: 60px;
+  }
+
+  .awards-membership-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .awards-membership-card {
+    min-height: auto;
+    padding: 18px 18px 22px;
+
+    border-radius: 16px;
+  }
+
+  .awards-membership-logo {
+    height: 180px;
+    margin-bottom: 18px;
+  }
+
+  .awards-membership-logo img {
+    max-width: 160px;
+    max-height: 145px;
+  }
+
+  .awards-membership-card h4 {
+    font-size: 18px;
+  }
+
+  /* Accreditation mobile */
+
+  .awards-accreditation-card {
+    margin-top: 60px;
+    padding: 28px 14px;
+
+    border-radius: 18px;
+  }
+
+  .awards-accreditation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .awards-accreditation-item {
+    min-height: 125px;
+    padding: 14px 10px;
+
+    border-radius: 14px;
+  }
+
+  .awards-accreditation-item img {
+    max-width: 90px;
+    height: 65px;
+  }
+
+  .awards-accreditation-item span {
+    font-size: 13px;
+  }
+
+  /* Modal mobile */
+
   .awards-image-modal {
     padding: 16px;
   }
@@ -728,11 +842,31 @@
     width: 100%;
     max-height: 88vh;
     padding: 50px 16px 20px;
+
     border-radius: 16px;
   }
 
-  .awards-image-modal-content img {
-    max-height: 65vh;
+  .award-popup-image,
+  .zoom-popup-image {
+    min-height: 280px;
+    padding: 18px;
+  }
+
+  .award-popup-image img,
+  .zoom-popup-image img {
+    max-height: 55vh;
+  }
+
+  .award-popup-info {
+    padding: 0 4px 12px;
+  }
+
+  .award-popup-info h3 {
+    font-size: 24px;
+  }
+
+  .award-popup-info p {
+    font-size: 15px;
   }
 
   .awards-image-modal-content h3 {
@@ -742,8 +876,38 @@
   .awards-modal-close {
     top: 10px;
     right: 10px;
+
     width: 38px;
     height: 38px;
+
     font-size: 26px;
+  }
+}
+
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
+
+@media (max-width: 380px) {
+  .awards-timeline-item {
+    grid-template-columns: 82px minmax(0, 1fr);
+    column-gap: 10px;
+  }
+
+  .awards-image-box {
+    width: 82px;
+  }
+
+  .awards-image-box img {
+    max-width: 72px;
+    max-height: 78px;
+  }
+
+  .awards-timeline-item h4 {
+    font-size: 14px;
+  }
+
+  .awards-accreditation-grid {
+    grid-template-columns: 1fr;
   }
 }

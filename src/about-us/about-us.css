@@ -264,53 +264,6 @@
   margin: 0;
 }
 
-/* COUNTERS */
-.counter-section {
-  padding: 20px 0 56px;
-}
-
-.counter-box {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-radius: 18px;
-  background: #ffffff;
-  border: 1px solid #e7edf5;
-  box-shadow: 0 12px 34px rgba(0, 30, 80, 0.07);
-  padding: 34px 20px;
-}
-
-.counter-item {
-  text-align: center;
-  border-right: 1px solid #d9e1ec;
-}
-
-.counter-item:last-child {
-  border-right: 0;
-}
-
-.counter-icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 14px;
-  border-radius: 50%;
-  background: #eef8ff;
-  color: #219b90;
-  display: grid;
-  place-items: center;
-  font-size: 27px;
-}
-
-.counter-item h3 {
-  font-size: 34px;
-  margin: 0;
-  color: #219b90;
-}
-
-.counter-item p {
-  margin: 8px 0 0;
-  font-size: 14px;
-  color: #263660;
-}
 
 /* LEADERSHIP */
 .leadership-section {
@@ -533,15 +486,7 @@
     margin: 14px auto;
   }
 
-  .counter-box {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px 0;
-  }
-
-  .counter-item:nth-child(2) {
-    border-right: 0;
-  }
-
+  
   .leader-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -584,19 +529,7 @@
     padding: 30px 22px;
   }
 
-  .counter-box {
-    grid-template-columns: 1fr;
-  }
-
-  .counter-item {
-    border-right: 0;
-    border-bottom: 1px solid #d9e1ec;
-    padding-bottom: 24px;
-  }
-
-  .counter-item:last-child {
-    border-bottom: 0;
-  }
+  
 
   .leader-grid {
     grid-template-columns: 1fr;
@@ -790,7 +723,6 @@
 .video-text p,
 .about-full-content p,
 .mission-card p,
-.counter-item p,
 .main-leader-content p {
   font-size: 18px !important;
   font-weight: 600 !important;
@@ -1666,5 +1598,106 @@
 
   .linkedin-btn {
     margin: 20px auto 0 !important;
+  }
+}
+
+/* =========================================
+   MISSION AND VISION ICONS — FINAL
+========================================= */
+
+.mission-icon {
+  width: 96px !important;
+  height: 96px !important;
+  min-width: 96px !important;
+  min-height: 96px !important;
+
+  padding: 0 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background: #ffffff !important;
+  border: 2px solid rgba(0, 138, 154, 0.16) !important;
+  border-radius: 50% !important;
+
+  color: #008a9a !important;
+
+  box-shadow: 0 10px 26px rgba(0, 138, 154, 0.12) !important;
+
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* Colored Flaticon mission image */
+
+.mission-target-icon img {
+  width: 64px !important;
+  height: 64px !important;
+  max-width: 64px !important;
+  max-height: 64px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: block !important;
+
+  object-fit: contain !important;
+
+  filter: none !important;
+
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+
+  transition: transform 0.3s ease !important;
+}
+
+/* Vision React icon */
+
+.vision-eye-icon svg {
+  width: 44px !important;
+  height: 44px !important;
+
+  display: block !important;
+
+  color: #008a9a !important;
+  fill: #008a9a !important;
+
+  transition: transform 0.3s ease !important;
+}
+
+/* Hover effects */
+
+.mission-card:hover .mission-target-icon img {
+  transform: scale(1.08) rotate(-2deg) !important;
+}
+
+.vision-card:hover .vision-eye-icon svg {
+  transform: scale(1.1) !important;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .mission-icon {
+    width: 84px !important;
+    height: 84px !important;
+    min-width: 84px !important;
+    min-height: 84px !important;
+
+    margin: 0 auto !important;
+  }
+
+  .mission-target-icon img {
+    width: 56px !important;
+    height: 56px !important;
+    max-width: 56px !important;
+    max-height: 56px !important;
+  }
+
+  .vision-eye-icon svg {
+    width: 39px !important;
+    height: 39px !important;
   }
 }

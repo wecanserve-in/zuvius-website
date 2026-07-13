@@ -133,40 +133,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* --- SECTION 5: FAQ --- */}
-      <section className="cr-bottom-faq-full-width-block">
-        <div className="cr-faq-full-wrapper">
-          <h3 className="cr-faq-section-heading">Frequently Asked Questions</h3>
-
-          <div className="cr-faq-node">
-            <details>
-              <summary>How can I submit a product enquiry? <span className="cr-accordion-arrow">▼</span></summary>
-              <p>You can fill out the form above or email our team directly at info@zuviuslifesciences.in with your requirements.</p>
-            </details>
-          </div>
-
-          <div className="cr-faq-node">
-            <details>
-              <summary>How do I report an adverse event? <span className="cr-accordion-arrow">▼</span></summary>
-              <p>Please contact our drug safety and customer care division immediately at +91 865 700 0206 or email info@zuviuslifesciences.in.</p>
-            </details>
-          </div>
-
-          <div className="cr-faq-node">
-            <details>
-              <summary>I want to partner with Zuvius. How can I reach out? <span className="cr-accordion-arrow">▼</span></summary>
-              <p>Please submit a comprehensive overview of your proposal using our contact form with the subject 'Partnership Inquiry'.</p>
-            </details>
-          </div>
-
-          <div className="cr-faq-node">
-            <details>
-              <summary>How can I get product-related information? <span className="cr-accordion-arrow">▼</span></summary>
-              <p>Detailed portfolios are available upon request through our verified regulatory and medical information portals.</p>
-            </details>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 };

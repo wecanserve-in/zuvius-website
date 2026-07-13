@@ -12,63 +12,126 @@ const Navbar = () => {
       name: "Zuvius",
       path: "/",
       dropdown: [
-        { name: "About Us", path: "/aboutus" },
-        { name: "CSR", path: "/csr" },
-        { name: "Events", path: "/events" },
-        { name: "Awards", path: "/awards-recognition" },
+        {
+          name: "About Us",
+          path: "/aboutus",
+        },
+        {
+          name: "CSR",
+          path: "/csr",
+        },
+        {
+          name: "Events",
+          path: "/events",
+        },
+        {
+          name: "Awards",
+          path: "/awards-recognition",
+        },
       ],
     },
-    { name: "Products", path: "/products" },
     {
-      name: "What is Cancer",
-      path: "/whatiscancer",
+      name: "Products",
+      path: "/products",
+    },
+    {
+      name: "Cancer",
       dropdown: [
-        { name: "Prevention", path: "/prevention" },
-        { name: "Early Diagnosis", path: "/early-diagnosis" },
+        {
+          name: "What is Cancer",
+          path: "/whatiscancer",
+        },
+        {
+          name: "Prevention",
+          path: "/prevention",
+        },
+        {
+          name: "Early Diagnosis",
+          path: "/early-diagnosis",
+        },
+        {
+          name: "Types of Cancer",
+          path: "/types-of-cancer",
+        },
       ],
     },
-    { name: "Types of Cancer", path: "/types-of-cancer" },
-    { name: "Career", path: "/careers" },
+    {
+      name: "Career",
+      path: "/careers",
+    },
     {
       name: "Media",
       dropdown: [
-        { name: "Newsroom", path: "/newsroom" },
-        { name: "Press Release", path: "/press-release" },
+        {
+          name: "Newsroom",
+          path: "/newsroom",
+        },
+        {
+          name: "Press Release",
+          path: "/press-release",
+        },
       ],
     },
-    { name: "Contact", path: "/contact" },
+    {
+      name: "Contact",
+      path: "/contact",
+    },
   ];
 
   const closeMobileMenu = () => {
     setMobileOpen(false);
     setMobileDropdown(null);
+    setActiveDropdown(null);
+  };
+
+  const toggleMobileDropdown = (event, index) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    setMobileDropdown((currentDropdown) =>
+      currentDropdown === index ? null : index
+    );
   };
 
   return (
     <nav className="navbar">
       <div className="nav-logo">
         <Link to="/" onClick={closeMobileMenu}>
-          <img src="/zuvius-logo.jpeg" alt="Zuvius Logo" className="logo-img" />
+          <img
+            src="/zuvius-logo.jpeg"
+            alt="Zuvius Logo"
+            className="logo-img"
+          />
         </Link>
       </div>
 
       <button
+        type="button"
         className={`hamburger-btn ${mobileOpen ? "active" : ""}`}
-        onClick={() => setMobileOpen(!mobileOpen)}
+        onClick={() => setMobileOpen((currentValue) => !currentValue)}
         aria-label="Toggle navigation menu"
+        aria-expanded={mobileOpen}
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <span />
+        <span />
+        <span />
       </button>
 
       <ul className={`nav-links ${mobileOpen ? "mobile-open" : ""}`}>
         {navData.map((item, index) => (
           <li
-            key={index}
+            key={`${item.name}-${index}`}
             className={item.dropdown ? "nav-item-dropdown" : ""}
-            onMouseEnter={() => item.dropdown && setActiveDropdown(index)}
-            onMouseLeave={() => item.dropdown && setActiveDropdown(null)}
+            onMouseEnter={() => {
+              if (item.dropdown) {
+                setActiveDropdown(index);
+              }
+            }}
+            onMouseLeave={() => {
+              if (item.dropdown) {
+                setActiveDropdown(null);
+              }
+            }}
           >
             {item.dropdown ? (
               <>
@@ -82,20 +145,26 @@ const Navbar = () => {
                       {item.name}
                     </Link>
                   ) : (
-                    <span className="nav-link-dropdown nav-link-nonclick">
+                    <button
+                      type="button"
+                      className="nav-link-dropdown nav-link-nonclick"
+                      onClick={(event) =>
+                        toggleMobileDropdown(event, index)
+                      }
+                      aria-expanded={mobileDropdown === index}
+                    >
                       {item.name}
-                    </span>
+                    </button>
                   )}
 
                   <button
+                    type="button"
                     className="dropdown-arrow"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setMobileDropdown(
-                        mobileDropdown === index ? null : index
-                      );
-                    }}
+                    onClick={(event) =>
+                      toggleMobileDropdown(event, index)
+                    }
                     aria-label={`Toggle ${item.name} dropdown`}
+                    aria-expanded={mobileDropdown === index}
                   >
                     ▾
                   </button>
@@ -104,16 +173,18 @@ const Navbar = () => {
                 <div
                   className={`dropdown-menu ${
                     activeDropdown === index ? "desktop-visible" : ""
-                  } ${mobileDropdown === index ? "mobile-visible" : ""}`}
+                  } ${
+                    mobileDropdown === index ? "mobile-visible" : ""
+                  }`}
                 >
-                  {item.dropdown.map((sub) => (
-                    <Link
-                      key={sub.path}
-                      to={sub.path}
+                  {item.dropdown.map((subItem) => (
+                    <NavLink
+                      key={subItem.path}
+                      to={subItem.path}
                       onClick={closeMobileMenu}
                     >
-                      {sub.name}
-                    </Link>
+                      {subItem.name}
+                    </NavLink>
                   ))}
                 </div>
               </>
@@ -130,24 +201,26 @@ const Navbar = () => {
         ))}
 
         <li className="mobile-inquiry-wrap">
-<a
-  href="/zuvius-brochure.pdf" 
-  download
-  className="btn-brochure mobile-inquiry"
->
-  Download Brochure
-</a>        </li>
+          <a
+            href="/zuvius-brochure.pdf"
+            download
+            className="btn-brochure mobile-inquiry"
+            onClick={closeMobileMenu}
+          >
+            Download Brochure
+          </a>
+        </li>
       </ul>
 
       <div className="nav-action">
-  <a
-    href="/zuvius-brochure.pdf"
-    download
-    className="btn-brochure"
-  >
-    Download Brochure
-  </a>
-</div>
+        <a
+          href="/zuvius-brochure.pdf"
+          download
+          className="btn-brochure"
+        >
+          Download Brochure
+        </a>
+      </div>
     </nav>
   );
 };
