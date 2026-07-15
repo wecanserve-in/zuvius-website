@@ -185,7 +185,7 @@ The article highlights affordable cancer therapies, CSR initiatives and future a
 The feature further discusses Zuvius Lifesciences' commitment to quality assurance, its corporate social responsibility initiatives supporting cancer patients, and its aspirations to improve early diagnosis, prevention, and aftercare for cancer. It concludes by describing the company's long-term objective of becoming one of the world's most trusted names in the oncology and super-specialty pharmaceutical sector.
 `,
     publication: "Brand Honchos",
-    publicationLogo: "/newsroom/brandhonchos-logo.png",
+    publicationLogo: "/newsroom/brand-honchos.png",
 
     publicationDescription:
       "Brand Honchos is a business and marketing publication featuring organizations, brands and entrepreneurs across industries.",
@@ -432,7 +432,7 @@ The report highlights Ethiopia's efforts to attract international pharmaceutical
   `,
 
   publication: "Fana Broadcasting Corporation (FBC)",
-  publicationLogo: "/newsroom/fbc-logo.png",
+  publicationLogo: "/newsroom/fana.png",
 
   publicationDescription:
     "Fana Broadcasting Corporation (FBC) is one of Ethiopia's leading media organizations, providing coverage of national and international news across business, investment, healthcare, government, and current affairs.",
@@ -496,7 +496,7 @@ Overall, the interview presents Nimish G. Thakkar's journey as an example of ent
   `,
 
   publication: "CEO Insights",
-  publicationLogo: "/newsroom/ceo-insights-logo.png",
+  publicationLogo: "/newsroom/ceoinsights.png",
 
   publicationDescription:
     "CEO Insights is an Indian business publication featuring interviews and profiles of business leaders, entrepreneurs, and executives across industries, covering leadership, innovation, business strategies, and corporate success stories.",
@@ -524,5 +524,66 @@ Overall, the interview presents Nimish G. Thakkar's journey as an example of ent
 
   link:
     "https://www.ceoinsightsindia.com/leader/nimish-gthakkar-a-self-made-entrepreneur-with-unquenchable-thirst-to-learn-cid-416.html"
+},
+{
+  id: 9,
+
+  title:
+    "From Vision to Global Impact : Transforming Cancer Care",
+
+  image: "/newsroom/press-5.png",
+  heroImage: "/newsroom/hero-9.png",
+
+  excerpt:
+    "A Business Talkz feature highlighting Nimish G. Thakkar’s entrepreneurial journey and Zuvius Lifesciences’ vision for innovation-led oncology care.",
+
+  subheading:
+    "The Indian Achievers Edition 630 features Nimish G. Thakkar, Chairman & Managing Director of Zuvius Lifesciences, and his journey in building a research-driven oncology company.",
+
+  summary: `
+This Business Talkz feature traces Nimish G. Thakkar’s journey from pharmaceutical distribution to building Zuvius Lifesciences into a research-focused oncology company.
+
+The article highlights his leadership, commitment to quality, innovation, global growth, and vision for improving access to cancer care.
+  `,
+
+  about: `
+The feature presents Nimish G. Thakkar’s entrepreneurial journey and the growth of Zuvius Lifesciences as an oncology-focused pharmaceutical company.
+
+It highlights the company’s emphasis on research, quality standards, global expansion, early diagnosis, supportive care, and accessible cancer treatment.
+
+The article also reflects his leadership philosophy of perseverance, continuous learning, ethical business practices, and innovation.
+  `,
+
+  publication: "Business Talkz",
+
+  publicationLogo:
+    "/newsroom/btalks.jpeg",
+
+  publicationDescription:
+    "Business Talkz features entrepreneurs, business leaders, companies, and achievers through interviews, profiles, and cover stories.",
+
+  date: "July 9, 2026",
+  year: "2026",
+
+  category: "Cover Story",
+
+  topics: [
+    "Entrepreneurship",
+    "Leadership",
+    "Oncology",
+    "Healthcare Innovation",
+    "Global Expansion"
+  ],
+
+  highlights: [
+    "Traces Nimish G. Thakkar’s journey from pharmaceutical distribution to founding Zuvius Lifesciences.",
+    "Highlights the company’s focus on oncology, research, innovation, and quality.",
+    "Discusses Zuvius Lifesciences’ growing global presence.",
+    "Explores the importance of accessible cancer treatment and early diagnosis.",
+    "Shares leadership lessons based on perseverance and continuous learning."
+  ],
+
+  link:
+    "https://www.businesstalkz.com/2026/07/the-indian-achievers-edition-630.html"
 },
 ];
