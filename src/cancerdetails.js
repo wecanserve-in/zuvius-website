@@ -13,7 +13,7 @@ function CancerDetail() {
 
 const tabOptions = [
   { value: "overview", label: "OVERVIEW" },
-  { value: "typesStages", label: "STAGES" },
+  // { value: "typesStages", label: "STAGES" },
   { value: "riskFactors", label: "RISK FACTORS" },
   { value: "symptoms", label: "SYMPTOMS" },
   { value: "diagnosis", label: "DIAGNOSIS" },
