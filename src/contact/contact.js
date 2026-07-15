@@ -12,7 +12,10 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const handleSubmit = (e) => {
@@ -34,89 +37,198 @@ const Contact = () => {
         alt="Contact Zuvius Lifesciences"
       />
 
-      {/* --- SECTION 2: GET IN TOUCH --- */}
+      {/* FIRST SECTION: SEND US A MESSAGE */}
+
+      <section className="cr-form-split-block">
+        <div className="cr-desktop-inner">
+          <div className="cr-form-left-panel">
+            <h2 className="cr-section-main-title">
+              Send Us a Message
+            </h2>
+
+            <p className="cr-form-instruction">
+              Fill the form below and our team will get back to you.
+            </p>
+
+            <form
+              onSubmit={handleSubmit}
+              className="cr-interactive-message-form"
+            >
+              <div className="cr-form-input-row">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name *"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email *"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
+              <div className="cr-form-input-row">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
+
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                />
+              </div>
+
+              <textarea
+                name="message"
+                placeholder="Your Message *"
+                rows="4"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              />
+
+              <button
+                type="submit"
+                className="cr-action-btn-blue"
+              >
+                SEND MESSAGE
+                <span className="cr-btn-arrow">→</span>
+              </button>
+            </form>
+
+            <p className="cr-form-privacy-note">
+              🛡️ Your information is safe with us. We respect your
+              privacy.
+            </p>
+          </div>
+
+          <div className="cr-form-right-panel">
+            <div className="cr-form-image-frame-wrapper">
+              <img
+                src="/contact/contactimage1.png"
+                alt="Zuvius Office Reception Desk"
+                className="cr-form-photo-compact"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECOND SECTION: GET IN TOUCH */}
+
       <section className="cr-get-in-touch-block">
         <div className="cr-center-heading-zone">
-          <p className="cr-badge-text cr-center-txt">GET IN TOUCH</p>
-          <h2 className="cr-section-main-title">We would love to hear from you.</h2>
+          <p className="cr-badge-text cr-center-txt">
+            GET IN TOUCH
+          </p>
+
+          <h2 className="cr-section-main-title">
+            We would love to hear from you.
+          </h2>
         </div>
 
         <div className="cr-cards-four-grid">
-          <a href="tel:+918657000206" className="cr-contact-info-card cr-clickable-card-wrapper">
-            <div className="cr-card-icon-sphere"><span className="cr-vector-glyph">📞</span></div>
+          <a
+            href="tel:+918657000206"
+            className="cr-contact-info-card cr-clickable-card-wrapper"
+          >
+            <div className="cr-card-icon-sphere">
+              <span className="cr-vector-glyph">📞</span>
+            </div>
+
             <h3>Phone</h3>
-            <p className="cr-highlight-text">+91 865 700 0206</p>
-            <p className="cr-sub-text">(Monday to Friday<br />10:00 AM – 06:00 PM)</p>
+
+            <p className="cr-highlight-text">
+              +91 865 700 0206
+            </p>
+
+            <p className="cr-sub-text">
+              Monday to Friday
+              <br />
+              10:00 AM – 06:00 PM
+            </p>
           </a>
 
-          <a href="mailto:info@zuviuslifesciences.in" className="cr-contact-info-card cr-clickable-card-wrapper">
-            <div className="cr-card-icon-sphere"><span className="cr-vector-glyph">✉️</span></div>
+          <a
+            href="mailto:info@zuviuslifesciences.in"
+            className="cr-contact-info-card cr-clickable-card-wrapper"
+          >
+            <div className="cr-card-icon-sphere">
+              <span className="cr-vector-glyph">✉️</span>
+            </div>
+
             <h3>Email</h3>
-            <p className="cr-highlight-text">info@zuviuslifesciences.in</p>
-          </a>
 
-          <a href="https://zuviuslifesciences.in/" target="_blank" rel="noreferrer" className="cr-contact-info-card cr-clickable-card-wrapper">
-            <div className="cr-card-icon-sphere"><span className="cr-vector-glyph">🌐</span></div>
-            <h3>Website</h3>
-            <p className="cr-highlight-text">zuviuslifesciences.in</p>
+            <p className="cr-highlight-text">
+              info@zuviuslifesciences.in
+            </p>
           </a>
 
           <div className="cr-contact-info-card">
-            <div className="cr-card-icon-sphere"><span className="cr-vector-glyph">📢</span></div>
+            <div className="cr-card-icon-sphere">
+              <span className="cr-vector-glyph">📢</span>
+            </div>
+
             <h3>Social Media</h3>
 
             <div className="cr-social-links-flex">
-              <a href="https://www.linkedin.com/company/https-www.linkedin.com-search-results-all-heroentitykey-urn-3ali-3aorganization-3a3966110&keywords-z?originalSubdomain=in" target="_blank" rel="noreferrer" className="cr-social-icon-btn" title="LinkedIn">in</a>
-              <a href="https://www.facebook.com/ZuviusIndia/" target="_blank" rel="noreferrer" className="cr-social-icon-btn" title="Facebook">f</a>
-              <a href="https://www.instagram.com/zuviuslifesciences/" target="_blank" rel="noreferrer" className="cr-social-icon-btn cr-insta-gradient-btn" title="Instagram">
-                <span className="cr-insta-glyph-lens"></span>
+              <a
+                href="https://www.linkedin.com/company/https-www.linkedin.com-search-results-all-heroentitykey-urn-3ali-3aorganization-3a3966110&keywords-z?originalSubdomain=in"
+                target="_blank"
+                rel="noreferrer"
+                className="cr-social-icon-btn"
+                title="LinkedIn"
+              >
+                in
+              </a>
+
+              <a
+                href="https://www.facebook.com/ZuviusIndia/"
+                target="_blank"
+                rel="noreferrer"
+                className="cr-social-icon-btn"
+                title="Facebook"
+              >
+                f
+              </a>
+
+              <a
+                href="https://www.instagram.com/zuviuslifesciences/"
+                target="_blank"
+                rel="noreferrer"
+                className="cr-social-icon-btn cr-insta-gradient-btn"
+                title="Instagram"
+              >
+                <span className="cr-insta-glyph-lens" />
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* --- SECTION 3: SEND US A MESSAGE --- */}
-      <section className="cr-form-split-block">
-        <div className="cr-desktop-inner">
-          <div className="cr-form-left-panel">
-            <h2 className="cr-section-main-title">Send Us a Message</h2>
-            <p className="cr-form-instruction">Fill the form below and our team will get back to you.</p>
+      {/* MAP */}
 
-            <form onSubmit={handleSubmit} className="cr-interactive-message-form">
-              <div className="cr-form-input-row">
-                <input type="text" name="name" placeholder="Your Name *" value={formData.name} onChange={handleChange} required />
-                <input type="email" name="email" placeholder="Your Email *" value={formData.email} onChange={handleChange} required />
-              </div>
-
-              <div className="cr-form-input-row">
-                <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} />
-                <input type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} />
-              </div>
-
-              <textarea name="message" placeholder="Your Message *" rows="4" value={formData.message} onChange={handleChange} required></textarea>
-
-              <button type="submit" className="cr-action-btn-blue">
-                SEND MESSAGE <span className="cr-btn-arrow">→</span>
-              </button>
-            </form>
-
-            <p className="cr-form-privacy-note">🛡️ Your information is safe with us. We respect your privacy.</p>
-          </div>
-
-          <div className="cr-form-right-panel">
-            <div className="cr-form-image-frame-wrapper">
-              <img src="/contact/contactimage1.png" alt="Zuvius Office Reception Desk" className="cr-form-photo-compact" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* --- SECTION 4: MAP --- */}
       <section className="cr-locations-map-block">
         <div className="cr-center-heading-zone">
-          <p className="cr-badge-text cr-center-txt">OUR LOCATION</p>
-          <div className="cr-center-accent-line"></div>
+          <p className="cr-badge-text cr-center-txt">
+            OUR LOCATION
+          </p>
+
+          <div className="cr-center-accent-line" />
         </div>
 
         <div className="cr-map-container-frame">
@@ -125,15 +237,13 @@ const Contact = () => {
             width="100%"
             height="100%"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Zuvius India Location Map"
-          ></iframe>
+          />
         </div>
       </section>
-
-      
     </div>
   );
 };

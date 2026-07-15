@@ -16,6 +16,7 @@ import Awards from "./awards/awards";
 import Careers from "./careers/careers";
 import Contact from "./contact/contact";
 import Events from "./events/events";
+import EventDetail from "./events/EventDetail";
 import WhatIsCancer from "./whatiscancer/WhatIsCancer";
 import EarlyDiagnosis from "./earlydiagnosis/EarlyDiagnosis";
 import AboutUs from "./about-us/about-us";
@@ -23,6 +24,7 @@ import Prevention from "./prevention/Prevention";
 import TypesOfCancer from "./types/TypesOfCancer";
 import CancerDetail from "./cancerdetails";
 import CSR from "./csr/csr";
+import CSRDetail from "./csr/CSRDetail";
 import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
@@ -56,6 +58,7 @@ function App() {
             <Route path="/contact" element={<Contact />} /> 
             <Route path="/careers" element={<Careers />} />
             <Route path="/events" element={<Events />}/>
+            <Route path="/events/:slug" element={<EventDetail />}/>
             <Route path="/whatiscancer" element={<WhatIsCancer />}/>
             <Route path="/aboutus" element={<AboutUs />}/>
             <Route path="/early-diagnosis" element={<EarlyDiagnosis/>}/>
@@ -63,6 +66,7 @@ function App() {
             <Route path="/types-of-cancer" element={<TypesOfCancer/>}/>
             <Route path="/types-of-cancer/:slug" element={<CancerDetail />} />
             <Route path="/csr" element={<CSR/>}/>
+            <Route path="/csr/:slug" element={<CSRDetail />} />
           </Routes>
         </main>
 
