@@ -40,7 +40,7 @@ const cancersData = [
   
   { name: "Hodgkin Lymphoma", desc: "A cancer of the lymphatic system.", img: "/cancer-types/lymphoma.png" },
 
-  { name: "Inflammatory Breast Cancer", desc: "A rare aggressive type of breast cancer.", img: "/cancer-types/breast.png" },
+
 
 
   { name: "Kaposi Sarcoma", desc: "A cancer that forms in blood and lymph vessel lining.", img: "/cancer-types/skin.png" },
@@ -101,11 +101,11 @@ const cancersData = [
   { name: "Waldenström Macroglobulinemia", desc: "A rare type of blood cancer.", img: "/cancer-types/blood.png" },
   { name: "Wilms Tumor", desc: "A kidney cancer mostly seen in children.", img: "/cancer-types/kidney.png" },
 
-  { name: "Xeroderma Pigmentosum-related Skin Cancer", desc: "Skin cancer linked to extreme UV sensitivity.", img: "/cancer-types/skin.png" },
+ 
 
   { name: "Yolk Sac Tumor", desc: "A rare germ cell tumor.", img: "/cancer-types/germ-cell.png" },
 
-  { name: "Zollinger-Ellison Syndrome", desc: "Tumors linked with excess stomach acid production.", img: "/cancer-types/stomach.png" },
+ 
 ];
 
 const letters = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];

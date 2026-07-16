@@ -1796,7 +1796,7 @@ symptoms: {
   title: "Cervical Cancer",
 
   description:
-"The cervix is a narrow passage that forms the connection between the uterus and the vagina. It helps regulate the movement of fluids into and out of the uterus and plays a vital role during childbirth by expanding to allow the baby to pass through the birth canal",  
+"The cervix is a narrow passage that forms the connection between the uterus and the vagina. It helps regulate the movement of fluids into and out of the uterus and plays a vital role during childbirth by expanding to allow the baby to pass through the birth canal.",  
     bannerImg: "/banners/cervical.png",
 
   overview: {
@@ -2629,7 +2629,7 @@ typesStages: {
   title: "Endometrial Cancer",
 
   description:
-    "The endometrium, also known as the uterine lining, plays an important role in reproduction by providing a place for a fertilized egg to implant. It is also the tissue that is shed during menstruation.",
+    "The endometrium, also known as the uterine lining, plays an important role in reproduction by providing a place for a fertilized egg to implant. It is also the tissue that is shed during menstruation.  ",
   
     bannerImg: "/banners/endo.png",
 
@@ -2794,8 +2794,7 @@ typesStages: {
   title: "Esophageal Cancer",
 
   description:
-    "The esophagus is a hollow muscular tube that transports food and liquids from the throat to the stomach. Muscles within the esophagus help move what you swallow down toward the stomach.",
-
+    "The esophagus is a hollow muscular tube that transports food and liquids from the throat to the stomach. Muscles within the esophagus help move what you swallow down toward the stomach. ",
   bannerImg: "/banners/esopha.png",
 
   overview: {
@@ -2978,7 +2977,7 @@ typesStages: {
   title: "Ewing Sarcoma",
 
   description:
-    "Bones provide structure, support movement and help protect vital organs throughout the body. Bone marrow inside certain bones also plays an important role in producing blood cells.",
+    "Ewing sarcoma is a rare group of cancerous tumors that develop in the bones or surrounding soft tissues. Bones are hard, living tissues that provide structure, support, and protection to the body’s organs while also helping with movement. Soft tissues include muscles and connective tissues that support and connect different parts of the body.",
 
   bannerImg: "/banners/ewing.png",
 
@@ -3288,7 +3287,7 @@ typesStages: {
   title: "Fallopian Tube Cancer",
 
   description:
-    "TThe fallopian tubes are important reproductive structures where an egg and sperm can meet. They also carry a fertilized egg to the uterus. Healthy fallopian tubes are essential for fertility.",
+    "The fallopian tubes serve as a vital pathway where an egg and sperm can meet. They also provide the route through which a fertilized egg travels to the uterus. ",
 
   bannerImg: "/banners/fallopian-tube.png",
 
@@ -3669,7 +3668,7 @@ typesStages: {
   title: "Gastrointestinal Stromal Tumor",
 
   description:
-    " The gastrointestinal tract consists of the organs through which food and liquids pass as they are swallowed, digested, absorbed, and eventually eliminated from the body as feces.",
+    "The gastrointestinal tract consists of the organs through which food and liquids pass as they are swallowed, digested, absorbed, and eventually eliminated from the body as feces. It includes the mouth, pharynx (throat), esophagus, stomach, small intestine, large intestine, rectum, and anus.",
 
   bannerImg: "/banners/gastro.png",
 
@@ -3820,7 +3819,7 @@ typesStages: {
 {
   slug: "germ-cell-tumor",
   title: "Germ Cell Tumor",
-  description: "Germ cell tumors are growths that start from cells that normally develop into eggs or sperm. They may be benign or cancerous and most often affect children, teens and young adults.",
+  description: "Germ cells are specialized reproductive cells that normally develop into sperm in males and eggs in females. They are primarily found in the testes and ovaries and play an essential role in human reproduction by giving rise to the cells needed for fertilization.",
   bannerImg: "/banners/germcell.png",
 
   overview: {
@@ -3969,7 +3968,7 @@ typesStages: {
   title: "Hairy Cell Leukemia",
 
   description:
-    "Bone marrow is the soft, spongy tissue found inside certain bones where blood cells are produced. It creates red blood cells, white blood cells and platelets that help the body carry oxygen, fight infections and control bleeding.",
+    "Hairy cell leukemia develops from abnormal B lymphocytes (B cells), a type of white blood cell in the immune system. B cells help protect the body by producing antibodies that fight infections.",
 
   bannerImg: "/banners/hcl.png",
 
@@ -4312,178 +4311,7 @@ typesStages: {
   }
 },
 
-//inflammatory breast cancer//
 
-{
-  slug: "inflammatory-breast-cancer",
-  title: "Inflammatory Breast Cancer",
-  description: "Inflammatory breast cancer is a rare, fast-growing breast cancer that causes breast inflammation and skin changes. It spreads quickly and needs treatment right away.",
-
-  overview: {
-    intro: "Inflammatory breast cancer happens when cancer cells block lymph vessels in the breast skin. This causes swelling, redness and skin changes that may look like an infection. It is aggressive and can spread quickly.",
-    cards: [
-      {
-        img: "/overview/ibc-rare.png",
-        title: "Rare Breast Cancer",
-        text: "Inflammatory breast cancer is a rare type of breast cancer."
-      },
-      {
-        img: "/overview/ibc-fast.png",
-        title: "Fast-Growing",
-        text: "This cancer grows and spreads quickly, so immediate treatment is important."
-      },
-      {
-        img: "/overview/ibc-lymph.png",
-        title: "Blocked Lymph Vessels",
-        text: "Cancer cells block lymph vessels in the breast skin, causing swelling and inflammation."
-      },
-      {
-        img: "/overview/ibc-no-lump.png",
-        title: "Often No Lump",
-        text: "Unlike many breast cancers, inflammatory breast cancer may not cause a noticeable breast lump."
-      },
-      {
-        img: "/overview/ibc-infection-like.png",
-        title: "May Look Like Infection",
-        text: "Symptoms can look like mastitis or another breast infection, which can make diagnosis harder."
-      }
-    ]
-  },
-
- 
-   typesStages: {
-  stagesNote:
-    "This cancer is not commonly categorized into numbered stages. Healthcare providers evaluate it using factors such as disease characteristics, extent of involvement and individual findings."
-},
-
-  riskFactorsData: {
-    uncontrollable: [
-      {
-        icon: "/icons/reproductive.svg",
-        title: "Sex",
-        text: "Inflammatory breast cancer can affect anyone, but it is more common in women and people assigned female at birth."
-      },
-      {
-        icon: "/icons/age.svg",
-        title: "Age",
-        text: "People diagnosed with inflammatory breast cancer are often younger than people diagnosed with other breast cancers."
-      },
-      {
-        icon: "/icons/density.svg",
-        title: "Race",
-        text: "Black women are more likely to develop inflammatory breast cancer than white women."
-      }
-    ],
-
-    lifestyle: [
-      {
-        icon: "/icons/weight.svg",
-        title: "Obesity",
-        text: "Obesity may increase the risk of inflammatory breast cancer."
-      }
-    ]
-  },
-
-  symptoms: {
-    items: [
-      {
-        title: "Breast Swelling",
-        text: "The breast may become swollen or enlarged.",
-        img: "/symptoms/ibc-swelling.png"
-      },
-      {
-        title: "Red or Purple Skin",
-        text: "The breast skin may look red, pink or purple.",
-        img: "/symptoms/ibc-redness.png"
-      },
-      {
-        title: "Warm Breast",
-        text: "The breast may feel warm to the touch.",
-        img: "/symptoms/ibc-warmth.png"
-      },
-      {
-        title: "Dimpled Skin",
-        text: "The breast skin may look thick, ridged or dimpled like an orange peel.",
-        img: "/symptoms/ibc-dimpled.png"
-      },
-      {
-        title: "Breast Tenderness or Pain",
-        text: "The breast may feel painful, tender or heavy.",
-        img: "/symptoms/ibc-pain.png"
-      },
-      {
-        title: "Inverted Nipple",
-        text: "The nipple may flatten or turn inward.",
-        img: "/symptoms/ibc-nipple.png"
-      },
-      {
-        title: "Swollen Lymph Nodes",
-        text: "Lymph nodes near the collarbone or under the arm may become swollen.",
-        img: "/symptoms/ibc-nodes.png"
-      }
-    ]
-  },
-
-  diagnosis: {
-    items: [
-      {
-        title: "Physical Examination",
-        text: "A healthcare provider may examine the breast and ask about symptoms.",
-        img: "/diagnosis/ibc-exam.png"
-      },
-      {
-        title: "Mammogram",
-        text: "A mammogram may be used to look for breast changes.",
-        img: "/diagnosis/ibc-mammogram.png"
-      },
-      {
-        title: "Breast Ultrasound",
-        text: "Ultrasound may help providers evaluate breast tissue and nearby lymph nodes.",
-        img: "/diagnosis/ibc-ultrasound.png"
-      },
-      {
-        title: "Breast MRI",
-        text: "MRI may help show the extent of disease in the breast.",
-        img: "/diagnosis/ibc-mri.png"
-      },
-      {
-        title: "Biopsy",
-        text: "A biopsy removes tissue so it can be checked for cancer cells.",
-        img: "/diagnosis/ibc-biopsy.png"
-      }
-    ]
-  },
-
-  treatment: {
-    options: [
-      {
-        title: "Chemotherapy",
-        text: "Treatment usually begins with chemotherapy to shrink the cancer before surgery.",
-        img: "/treatment/ibc-chemo.png"
-      },
-      {
-        title: "Surgery",
-        text: "Surgery may remove the affected breast after chemotherapy.",
-        img: "/treatment/ibc-surgery.png"
-      },
-      {
-        title: "Radiation Therapy",
-        text: "Radiation therapy is often given after surgery to destroy remaining cancer cells.",
-        img: "/treatment/ibc-radiation.png"
-      },
-      {
-        title: "Targeted Therapy",
-        text: "Targeted therapy may be used when cancer cells have certain features, such as HER2 proteins.",
-        img: "/treatment/ibc-targeted.png"
-      },
-      {
-        title: "Hormone Therapy",
-        text: "Hormone therapy may be used if the cancer has hormone receptors.",
-        img: "/treatment/ibc-hormone.png"
-      }
-    ],
-  }
-},
 
 //KAPOSI SARCOMA//
 
@@ -4493,7 +4321,7 @@ typesStages: {
   title: "Kaposi Sarcoma",
 
   description:
-    "Mucous membranes are moist tissues that line areas such as the mouth, nose and digestive tract, helping protect and support these structures. Blood vessels and surrounding soft tissues also play an important role in delivering oxygen and nutrients throughout the body.",
+    "Kaposi sarcoma (KS) is a type of cancer that begins in the cells lining the blood vessels or lymph vessels. Blood vessels carry blood throughout the body, delivering oxygen to vital organs and tissues, removing waste products, and helping regulate blood pressure. ",
 
   bannerImg: "/cancers/kaposi-sarcoma.png",
 
@@ -4651,7 +4479,7 @@ typesStages: {
   title: "Kidney Cancer",
 
   description:
-    "The kidneys are organs that help filter the blood by removing waste products and regulating fluid balance within the body. Most individuals have two kidneys, located on either side of the spine in the lower back.",
+    "The kidneys are organs that help filter the blood by removing waste products and regulating fluid balance within the body. Most individuals have two kidneys, located on either side of the spine in the lower back. Common conditions that can affect the kidneys include kidney disease, kidney infections, and kidney cysts.",
 
   bannerImg: "/cancers/kidney-cancer.webp",
 
@@ -4839,7 +4667,7 @@ typesStages: {
   title: "Laryngeal Cancer",
 
   description:
-    " Laryngeal cancer is a type of cancer that affects the larynx, commonly known as the voice box. The larynx is a hollow structure located in the center of the neck above the trachea (windpipe) and esophagus.",
+    "Laryngeal cancer is a type of cancer that affects the larynx, commonly known as the voice box. The larynx is a hollow structure located in the center of the neck above the trachea (windpipe) and esophagus. It enables the production of sound and allows air to travel from the throat into the trachea and onward to the lungs.",
 
   bannerImg: "/cancers/laryngeal-cancer.webp",
 
@@ -5020,7 +4848,7 @@ typesStages: {
   title: "Leukemia",
 
   description:
-    "Bone marrow is the soft tissue inside bones where blood cells are produced. It creates white blood cells that help fight infection, red blood cells that carry oxygen and platelets that help control bleeding. Healthy bone marrow continually produces new blood cells to support normal body functions.",
+    "Leukemia begins when a cell in the bone marrow develops changes in its DNA and can no longer grow or function normally. Bone marrow is the soft tissue inside bones that produces blood cells and platelets, making billions of new blood cells every day.",
 
   bannerImg: "/cancers/leukemia.webp",
 
@@ -5172,7 +5000,7 @@ typesStages: {
   title: "Liver Cancer",
 
   description:
-    "The liver is the largest internal organ in the body. It performs many vital functions, including filtering blood, processing nutrients, producing bile for digestion and helping remove harmful substances.",
+    "The liver carries out more than 500 essential functions, including filtering blood, processing nutrients, and helping the body fight infections. It also produces bile and important proteins required for various bodily processes. The liver is vital for survival, and in cases of liver failure, a liver transplant may be necessary",
 
   bannerImg: "/cancers/liver-cancer.webp",
 
@@ -5360,7 +5188,7 @@ typesStages: {
   title: "Lung Cancer",
 
   description:
-    "The lungs are a pair of organs that help bring oxygen into the body and remove carbon dioxide. They also play an essential role in breathing and supplying oxygen to every organ and tissue.",
+    "The lungs are two vital organs of the respiratory system that enable the exchange of gases within the body. They provide oxygen to the bloodstream and remove carbon dioxide through the breathing process.",
 
   bannerImg: "/cancers/lung-cancer.webp",
 
@@ -5553,7 +5381,7 @@ typesStages: {
   title: "Lymphoma",
 
   description:
-    "The lymphatic system is part of your immune system. It includes lymph nodes, the spleen, bone marrow and lymph vessels that help fight infections and remove waste from the body.",
+    "Lymphoma is a group of blood cancers that develops in the lymphatic system. The lymphatic system is a network of organs, vessels, and tissues that helps protect the body from infection, maintain healthy fluid balance, and produce lymphocytes, a type of white blood cell that helps defend the body against harmful invaders.",
 
   bannerImg: "/cancers/lymphoma.webp",
 
@@ -5910,7 +5738,7 @@ typesStages: {
   title: "Melanoma",
 
   description:
-    "The skin is the body's largest organ and acts as a protective barrier against injury, infection and harmful ultraviolet (UV) rays. It contains melanocytes, specialized cells that produce melanin, the pigment responsible for skin color.",
+    "Melanoma is an invasive form of skin cancer with a high risk of death. The skin is the body's largest organ, serving as a protective barrier against germs while helping regulate body temperature and allowing the sense of touch. It is composed of three main layers: the epidermis, dermis, and hypodermis",
 
   bannerImg: "/cancers/melanoma.webp",
 
@@ -6097,7 +5925,7 @@ typesStages: {
   title: "Mesothelioma",
 
   description:
-    "The mesothelium is a thin layer of tissue that surrounds and protects several internal organs, including the lungs, abdomen, heart and testicles. It helps reduce friction and allows these organs to move smoothly during normal body functions.",
+    "Mesothelioma is a rare cancer that begins in the mesothelium, a tissue that forms the protective lining around certain organs. It most commonly affects the lining around the lungs but can also develop in the lining around the abdomen, heart, or testicles. ",
 
   bannerImg: "/cancers/mesothelioma.webp",
 
@@ -6277,7 +6105,7 @@ typesStages: {
   title: "Multiple Myeloma",
 
   description:
-    "Bone marrow is the soft, spongy tissue inside your bones that produces blood cells, including plasma cells. Plasma cells are a type of white blood cell that helps your immune system fight infections by making antibodies.",
+    "Multiple myeloma is a rare blood cancer that affects plasma cells, a type of white blood cell. Plasma cells produce antibodies to help fight infection, but in multiple myeloma they build up in the bone marrow, the tissue inside bones that makes blood cells.",
 
   bannerImg: "/cancers/multiple-myeloma.webp",
 
@@ -6440,7 +6268,7 @@ typesStages: {
   title: "Nasopharyngeal Cancer",
 
   description:
-    "The nasopharynx is the upper part of the throat located behind the nose. It allows air to pass from the nose into the throat and plays an important role in normal breathing.",
+    "Nasopharyngeal cancer is a rare cancer that begins in the nasopharynx, the upper part of the throat that connects the nose to the respiratory system.",
 
   bannerImg: "/cancers/nasopharyngeal-cancer.webp",
 
@@ -6631,7 +6459,7 @@ typesStages: {
   title: "Neuroblastoma",
 
   description:
-    "The sympathetic nervous system is part of the body's nervous system that helps regulate automatic functions such as heart rate, blood pressure and the body's response to stress. It contains immature nerve cells that develop before birth and during early childhood.",
+    "Neuroblastoma is a type of cancer that grows in immature nerve cells called neuroblasts. It affects neuroblasts in the sympathetic nervous system and most commonly begins in the adrenal glands, although it can also start in nerve cells in the abdomen, chest, or neck. ",
 
   bannerImg: "/cancers/neuroblastoma.webp",
 
@@ -6801,7 +6629,7 @@ typesStages: {
   title: "Ocular Melanoma",
 
   description:
-    "The eye contains specialized cells called melanocytes that produce melanin, the pigment responsible for eye color. These cells help protect eye tissues and are found in different parts of the eye, including the uvea.",
+    "Ocular melanoma is a type of eye cancer that develops on or inside the eye. The eyes are sensory organs that capture visible light and convert it into signals the brain uses to create vision, allowing you to see the world around you.",
 
   bannerImg: "/cancers/ocular-melanoma.webp",
 
@@ -7135,7 +6963,7 @@ typesStages: {
   title: "Osteosarcoma",
 
   description:
-    "Bones provide structure, protect vital organs and work with muscles to support movement. They also store minerals and contain bone marrow, where new blood cells are produced.",
+    "Osteosarcoma is a type of bone cancer that begins in the cells that form bones, most often affecting the long bones. Bones provide the body's structural support, help with movement, protect internal organs, and contain bone marrow, where blood cells are made. ",
 
   bannerImg: "/cancers/osteosarcoma.webp",
 
@@ -7310,7 +7138,7 @@ typesStages: {
   title: "Ovarian Cancer",
 
   description:
-    "The ovaries are two small organs in the female reproductive system that produce eggs and hormones such as estrogen and progesterone. These hormones help regulate the menstrual cycle, fertility and many other functions throughout the body.",
+    "The ovaries are small, oval-shaped glands located on either side of the uterus. They produce and store eggs while also releasing hormones that regulate the menstrual cycle and support pregnancy. During each menstrual cycle, an ovary releases an egg through ovulation until menopause occurs.",
 
   bannerImg: "/cancers/ovarian-cancer.png",
 
@@ -7485,7 +7313,7 @@ typesStages: {
   title: "Pancreatic Cancer",
 
   description:
-    "The pancreas is a gland located behind the stomach that helps digest food and regulates blood sugar by producing digestive enzymes and hormones such as insulin. It plays an essential role in digestion and maintaining normal glucose levels.",
+    "The pancreas is a large gland located in the back of the abdomen and functions as part of both the digestive and endocrine systems. It produces enzymes that aid digestion and hormones that help regulate blood sugar levels. The pancreas also contributes to supporting the function of organs such as the heart, liver, and kidneys.",
 
   bannerImg: "/cancers/pancreatic-cancer.webp",
 
@@ -7660,7 +7488,7 @@ typesStages: {
   title: "Penile Cancer",
 
   description:
-    "The penis is part of the male reproductive and urinary systems. It allows urine to leave the body, plays an important role in sexual function and contains tissues, blood vessels and skin that work together to support these functions.",
+    "Penile cancer develops when cells in the penis grow and multiply uncontrollably. The penis is an external organ of the male reproductive and urinary systems that allows urine and semen to leave the body and plays a role in reproduction.",
 
   bannerImg: "/cancers/penile-cancer.webp",
 
@@ -7846,13 +7674,13 @@ typesStages: {
   title: "Prostate Cancer",
 
   description:
-    "The prostate is a small gland in the male reproductive system that sits below the bladder and in front of the rectum. It produces fluid that mixes with sperm to form semen and helps support fertility.",
+    "The prostate is a small, firm gland that forms part of the male reproductive system and surrounds a portion of the urethra. It produces fluid that contributes to semen, the substance that carries sperm during ejaculation. The prostate also releases components that help support sperm cells and assist in the movement of semen through the urethra.",
 
   bannerImg: "/cancers/prostate-cancer.webp",
 
   overview: {
     intro:
-      "Prostate cancer develops when abnormal cells in the prostate gland grow uncontrollably and form a tumor. Most prostate cancers grow slowly and remain within the prostate for a long time, although some types are more aggressive and can spread quickly to other parts of the body. :contentReference[oaicite:0]{index=0}",
+      "Prostate cancer develops when abnormal cells in the prostate gland grow uncontrollably and form a tumor. Most prostate cancers grow slowly and remain within the prostate for a long time, although some types are more aggressive and can spread quickly to other parts of the body.",
 
     description:
       "Many prostate cancers are found before they spread beyond the prostate, making treatment highly effective in many cases. The choice of treatment depends on how fast the cancer is growing, whether it has spread and a person's overall health. :contentReference[oaicite:1]{index=1}"
@@ -8025,7 +7853,7 @@ typesStages: {
   title: "Rectal Cancer",
 
   description:
-    "The rectum is the last part of the large intestine. It stores stool until it leaves the body during a bowel movement and plays an important role in the digestive system.",
+    "The rectum is the final section of the large intestine, located between the colon and the anal canal. Its main role is to collect and store waste before it leaves the body. As waste enters the rectum, it is held temporarily while remaining water and electrolytes are absorbed, and nerves signal when it is time for a bowel movement.",
 
   bannerImg: "/cancers/rectal-cancer.webp",
 
@@ -8207,7 +8035,7 @@ typesStages: {
   title: "Renal Cell Carcinoma",
 
   description:
-    "The kidneys filter waste products and extra fluid from the blood while maintaining the body's balance of water, minerals and electrolytes. They also produce hormones that help regulate blood pressure and red blood cell production.",
+    "Renal cell carcinoma (RCC) is the most common form of kidney cancer. The kidneys are organs that filter the blood, remove waste products, and help regulate the body's fluid balance. Most people have two kidneys, positioned on either side of the spine in the lower back.",
 
   bannerImg: "/cancers/renal-cell-carcinoma.webp",
 
@@ -8387,7 +8215,7 @@ typesStages: {
   title: "Retinoblastoma",
 
   description:
-    "The retina is the light-sensitive layer at the back of the eye that detects light and sends visual signals to the brain. It plays a vital role in vision by helping us recognize shapes, colors and movement.",
+    "Retinoblastoma is a rare form of eye cancer that primarily affects children and develops in the retina. The retina is a light-sensitive layer at the back of the eye that receives light and converts it into signals, which are then transmitted to the brain to produce vision.",
 
   bannerImg: "/cancers/retinoblastoma.webp",
 
@@ -8450,7 +8278,7 @@ typesStages: {
       {
         title: "Bulging or Enlarged Eye",
         text: "Some children develop bulging or enlargement of the affected eye.",
-        img: "/symptoms/retinoblastoma-bulging-eye.png"
+        img: "/symptoms/retinoblastoma-bulging-eye..png"
       },
       {
         title: "Eye Swelling or Redness",
@@ -8470,27 +8298,27 @@ typesStages: {
       {
         title: "Dilated Eye Examination",
         text: "An ophthalmologist examines the inside of the eye after dilating the pupil to identify tumors.",
-        img: "/diagnosis/retinoblastoma-eye-exam.png"
+        img: "/diagnosis/eye-exam.png"
       },
       {
         title: "Ultrasound",
         text: "Eye ultrasound helps detect tumors and calcium deposits commonly seen with retinoblastoma.",
-        img: "/diagnosis/retinoblastoma-ultrasound.png"
+        img: "/diagnosis/eye-ultrasound.png"
       },
       {
         title: "CT Scan",
         text: "CT scans may identify calcium deposits and provide additional information about the tumor.",
-        img: "/diagnosis/retinoblastoma-ct.png"
+        img: "/diagnosis/eye-dilated.png"
       },
       {
         title: "MRI",
         text: "MRI helps determine whether the cancer has spread beyond the eye, particularly to the brain.",
-        img: "/diagnosis/retinoblastoma-mri.png"
+        img: "/diagnosis/eye-imaging.png"
       },
       {
         title: "Genetic Testing",
         text: "Testing for RB1 gene mutations helps determine whether the condition is hereditary.",
-        img: "/diagnosis/retinoblastoma-genetic-test.png"
+        img: "/diagnosis/adrenal-blood.png"
       }
     ]
   },
@@ -8500,32 +8328,32 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy destroys cancer cells and may shrink tumors before other treatments.",
-        img: "/treatment/retinoblastoma-chemotherapy.png"
+        img: "/treatment/eye-chemo.png"
       },
       {
         title: "Laser Therapy",
         text: "Laser treatment destroys blood vessels that supply the tumor, helping eliminate cancer cells.",
-        img: "/treatment/retinoblastoma-laser.png"
+        img: "/treatment/eye-laser.png"
       },
       {
         title: "Cryotherapy",
         text: "Cryotherapy freezes and destroys small retinoblastoma tumors.",
-        img: "/treatment/retinoblastoma-cryotherapy.png"
+        img: "/treatment/eye-cryotherapy.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be used to precisely target and destroy cancer cells within the eye.",
-        img: "/treatment/retinoblastoma-radiation.png"
+        img: "/treatment/eye-radiation.png"
       },
       {
         title: "Thermotherapy",
         text: "Thermotherapy uses controlled heat generated by laser energy to destroy cancer cells.",
-        img: "/treatment/retinoblastoma-thermotherapy.png"
+        img: "/treatment/eye-thermotherapy.png"
       },
       {
         title: "Enucleation",
         text: "If vision cannot be preserved or the tumor is extensive, surgical removal of the affected eye may be necessary.",
-        img: "/treatment/retinoblastoma-enucleation.png"
+        img: "/treatment/eye-enucleation.png"
       }
     ]
   }
@@ -8540,7 +8368,7 @@ typesStages: {
   title: "Rhabdomyosarcoma",
 
   description:
-    "Skeletal muscles help move the body, maintain posture and support everyday activities such as walking, running, speaking and swallowing. These muscles are attached to bones and are found throughout the body.",
+    "Rhabdomyosarcoma can develop in different parts of the body and most commonly occurs in areas associated with skeletal muscles. Skeletal muscles make up about 30% to 40% of the body's total mass and are attached to bones, enabling voluntary movement and supporting a wide range of everyday functions.",
 
   bannerImg: "/cancers/rhabdomyosarcoma.webp",
 
@@ -8588,15 +8416,11 @@ typesStages: {
         text: "A painless or painful lump in an arm, leg or another part of the body may be an early sign.",
         img: "/symptoms/rhabdomyosarcoma-lump.png"
       },
-      {
-        title: "Pain",
-        text: "Pain may occur if the growing tumor presses on nearby muscles, nerves or other tissues.",
-        img: "/symptoms/rhabdomyosarcoma-pain.png"
-      },
+     
       {
         title: "Eye Bulging or Swelling",
         text: "Tumors near the eye may cause the eye to bulge or become swollen.",
-        img: "/symptoms/rhabdomyosarcoma-eye.png"
+        img: "/symptoms/retinoblastoma-eye-swelling.png"
       },
       {
         title: "Nosebleeds or Sinus Problems",
@@ -8606,12 +8430,12 @@ typesStages: {
       {
         title: "Blood in Urine or Difficulty Urinating",
         text: "Tumors involving the bladder or urinary tract may cause urinary symptoms.",
-        img: "/symptoms/rhabdomyosarcoma-urine.png"
+        img: "/symptoms/bladder-blood.png"
       },
       {
         title: "Abdominal Pain or Vomiting",
         text: "Tumors within the abdomen can cause pain, constipation or vomiting.",
-        img: "/symptoms/rhabdomyosarcoma-abdomen.png"
+        img: "/symptoms/adrenal-metastatic.png"
       }
     ]
   },
@@ -8621,28 +8445,24 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider checks for lumps, swelling and other signs while reviewing symptoms and family history.",
-        img: "/diagnosis/rhabdomyosarcoma-exam.png"
+        img: "/diagnosis/bcc-history.png"
       },
       {
         title: "CT Scan or MRI",
         text: "Imaging tests help determine the tumor's size, location and relationship to nearby structures.",
-        img: "/diagnosis/rhabdomyosarcoma-mri.png"
+        img: "/diagnosis/gist-ct.png"
       },
       {
         title: "PET Scan or Bone Scan",
         text: "These scans help determine whether the cancer has spread to other parts of the body.",
-        img: "/diagnosis/rhabdomyosarcoma-pet.png"
+        img: "/diagnosis/gist-pet.png"
       },
       {
         title: "Biopsy",
         text: "A tissue sample is examined under a microscope to confirm the diagnosis.",
-        img: "/diagnosis/rhabdomyosarcoma-biopsy.png"
+        img: "/diagnosis/gist-bio.png"
       },
-      {
-        title: "Bone Marrow or Lumbar Puncture",
-        text: "Additional tests may be performed in selected cases to determine whether the cancer has spread.",
-        img: "/diagnosis/rhabdomyosarcoma-bone-marrow.png"
-      }
+     
     ]
   },
 
@@ -8656,18 +8476,14 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells throughout the body.",
-        img: "/treatment/endo-chemopng"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to destroy remaining cancer cells after surgery or chemotherapy.",
         img: "/treatment/brain-radiation.png"
       },
-      {
-        title: "Clinical Trials",
-        text: "Some people may be eligible to receive newer treatments through carefully monitored clinical trials.",
-        img: "/treatment/rhabdomyosarcoma-clinical-trial.png"
-      }
+      
     ]
   }
 },
@@ -8680,7 +8496,7 @@ typesStages: {
   title: "Salivary Gland Cancer",
 
   description:
-    "The salivary glands produce saliva, which helps moisten the mouth, begin digestion and support chewing, swallowing and speaking. These glands are located in and around the mouth and throat and play an important role in oral health.",
+    "The salivary glands produce saliva, which helps keep the mouth lubricated, supports swallowing and digestion, and protects the teeth from bacteria.",
 
   bannerImg: "/cancers/salivary-gland-cancer.webp",
 
@@ -9041,7 +8857,7 @@ typesStages: {
   title: "Sarcoma",
 
   description:
-    "Bones and connective tissues provide structure, support movement and protect vital organs. They include muscles, fat, tendons, cartilage, ligaments, blood vessels and nerves throughout your body.",
+    "Sarcoma is a rare type of malignant (cancerous) tumor that develops in the bones or connective tissues, including fat, muscles, blood vessels, nerves, and the tissues surrounding bones and joints. Connective tissues provide support and structure, helping different parts of the body work together.",
 
   bannerImg: "/cancers/sarcoma.webp",
 
@@ -9205,7 +9021,7 @@ typesStages: {
   title: "Skin Cancer",
 
   description:
-    "Your skin is your body's largest organ. It protects you from injury, infection and harmful ultraviolet (UV) rays while helping regulate body temperature and sensation.",
+    "The skin is the body's largest organ and is composed of water, proteins, fats, and minerals. It serves as a protective barrier against germs, helps regulate body temperature, and allows the body to sense touch, heat, and cold.",
 
   bannerImg: "/cancers/skin-cancer.webp",
 
@@ -9370,7 +9186,7 @@ typesStages: {
   title: "Small Intestine Cancer",
 
   description:
-    "The small intestine is part of your digestive system. It connects your stomach to your large intestine and absorbs most of the nutrients and water from the food you eat.",
+    "The small intestine, also known as the small bowel, is a vital part of the digestive system that connects the stomach to the large intestine. It breaks down food, absorbs nutrients and water, and moves digested food through the digestive tract.",
 
   bannerImg: "/cancers/small-intestine-cancer.webp",
 
@@ -9546,7 +9362,7 @@ typesStages: {
   title: "Testicular Cancer",
 
   description:
-    "The testicles are two male reproductive glands that produce sperm and the hormone testosterone. Located inside the scrotum, they play an essential role in fertility, sexual development and hormone production.",
+    "The testicles, also known as testes, are part of the male reproductive system and are located within the scrotum. They produce sperm and the hormone testosterone, which plays an important role in puberty by contributing to muscle development, body and facial hair growth, a deeper voice, and increased height.",
 
   bannerImg: "/cancers/testicular-cancer.webp",
 
@@ -9698,7 +9514,7 @@ typesStages: {
   title: "Throat Cancer",
 
   description:
-    "The throat is a passage that connects the nose and mouth to the airway and digestive tract, helping with breathing, swallowing and speaking. It includes the pharynx and larynx, which work together to support communication and protect the airway.",
+    "The pharynx, commonly known as the throat, is a muscular tube located in the neck that forms part of both the respiratory and digestive systems. It helps direct air to the lungs and carries food and liquids to the esophagus while helping keep them out of the airway.",
 
   bannerImg: "/cancers/throat-cancer.webp",
 
@@ -9861,7 +9677,7 @@ typesStages: {
   title: "Thymoma & Thymic Carcinoma",
 
   description:
-    "The thymus is a small gland located behind the breastbone that plays an important role in the development of T lymphocytes (T cells), which help the immune system fight infections. It is most active during childhood and gradually becomes smaller with age.",
+    "Thymomas and thymic carcinomas are rare cancers that develop in the thymus gland. The thymus is a small gland that is part of the lymphatic and endocrine systems, where it helps produce and mature T-cells, a type of white blood cell that plays an important role in fighting disease and infection. ",
 
   bannerImg: "/cancers/thymoma-and-thymic-carcinoma.webp",
 
@@ -10021,7 +9837,7 @@ typesStages: {
   title: "Thyroid Cancer",
 
   description:
-    "The thyroid is a small butterfly-shaped gland at the base of the neck that produces hormones controlling metabolism, body temperature, heart rate and many essential body functions. These hormones help regulate how the body uses energy and maintains normal organ function.",
+    "The thyroid is an important endocrine gland that produces and releases hormones responsible for regulating metabolism, or how the body uses energy. These hormones also influence functions such as heart rate, breathing, digestion, body temperature, brain development, mental activity, skin and bone maintenance, and fertility.",
 
   bannerImg: "/cancers/thyroid-cancer.webp",
 
@@ -10178,7 +9994,7 @@ typesStages: {
   title: "Tonsil Cancer",
 
   description:
-    "Your tonsils are part of your immune system. Located at the back of your throat, they help trap germs and protect your body from infections entering through your mouth and nose.",
+    "The tonsils are two small, round masses located at the back of the throat. They are part of the immune system and help protect the body by trapping and filtering germs that enter through the nose or mouth. They contain white blood cells that help fight infection.",
 
   bannerImg: "/cancers/tonsil-cancer.webp",
 
@@ -10343,7 +10159,7 @@ typesStages: {
   title: "Tongue Cancer",
 
   description:
-    "The tongue is a muscular organ that helps with speaking, chewing, swallowing and tasting food. It also plays an important role in maintaining the airway and supporting normal oral function.",
+    "The tongue is a muscular organ located in the mouth that plays an important role in chewing, swallowing, speaking, and breathing. It helps move food during digestion, supports clear speech by forming different sounds, and helps keep the airway open.",
 
   bannerImg: "/cancers/tongue-cancer.webp",
 
@@ -10505,7 +10321,7 @@ typesStages: {
   title: "Urethral Cancer",
 
   description:
-    "The urethra is the tube that carries urine from the bladder to the outside of the body. In males, it also carries semen during ejaculation. It is an essential part of the urinary system and plays an important role in normal bladder function.",
+    "The urethra is a tube in the urinary system that carries urine from the urinary bladder to the outside of the body. It is part of the system that removes waste from the blood in the form of urine. In males, it also carries semen, while in females it only carries urine.",
 
   bannerImg: "/cancers/urethral-cancer.webp",
 
@@ -10684,7 +10500,7 @@ typesStages: {
   title: "Uterine Cancer",
 
   description:
-    "The uterus is a hollow, pear-shaped organ in the female reproductive system where a fetus develops during pregnancy. Its inner lining, called the endometrium, changes throughout the menstrual cycle in response to hormones.",
+    "Your uterus is a hollow, muscular, pear-shaped organ in the female reproductive system located between the bladder and rectum. It plays a key role in menstruation, fertility, and pregnancy by supporting implantation and the growth of a fetus. The uterine lining, called the endometrium, is shed during menstruation.",
 
   bannerImg: "/cancers/uterine-cancer.webp",
 
@@ -10855,7 +10671,7 @@ typesStages: {
   title: "Vaginal Cancer",
 
   description:
-    "The vagina is a muscular canal that connects the cervix to the outside of the body. It plays an important role in menstruation, sexual intercourse and childbirth while serving as part of the female reproductive system.",
+    "The vagina is a muscular, stretchy tube that is part of the female reproductive system and connects internal and external reproductive anatomy. It plays an important role in menstruation, sexual activity, conception, and childbirth. It also acts as a passage through which menstrual blood leaves the body and supports reproductive processes.",
 
   bannerImg: "/cancers/vaginal-cancer.webp",
 
@@ -11021,7 +10837,7 @@ typesStages: {
   title: "Vulvar Cancer",
 
   description:
-    "The vulva is the external part of the female reproductive system, including the labia, clitoris, vaginal opening and surrounding tissues. It protects the internal reproductive organs and plays an important role in urinary, sexual and reproductive health.",
+    "The vulva includes the external parts of the female reproductive system such as the inner and outer labia, clitoris, vaginal opening, and urethral opening. It plays an important role in reproductive health and is involved in urination, menstruation, conception, and childbirth.",
 
   bannerImg: "/cancers/vulvar-cancer.webp",
 
@@ -11200,7 +11016,7 @@ typesStages: {
   title: "Waldenström Macroglobulinemia",
 
   description:
-    "Bone marrow is the soft, spongy tissue inside your bones where blood cells are made. It produces red blood cells, white blood cells and platelets that help carry oxygen, fight infection and control bleeding.",
+    "Waldenström macroglobulinemia happens when B cells (immune cells) in the bone marrow, where blood cells are made, turn into cancer cells. Bone marrow is the soft, fatty tissue inside bone cavities that produces red blood cells, white blood cells, and platelets.",
 
   bannerImg: "/cancers/waldenstrom-macroglobulinemia.webp",
 
@@ -11346,7 +11162,7 @@ typesStages: {
   title: "Wilms Tumor",
 
   description:
-    "The kidneys are two bean-shaped organs that filter waste and excess fluid from the blood to produce urine. They also help regulate blood pressure, electrolyte balance and red blood cell production.",
+    "Wilms tumor is a type of cancer that mainly affects children and develops in the kidneys. It usually forms in one kidney, though in some cases it can affect both. The kidneys are two organs in the urinary system that filter blood to remove waste and produce urine.",
 
   bannerImg: "/cancers/wilms-tumor.webp",
 
@@ -11504,148 +11320,7 @@ typesStages: {
   }
 },
 
-//Xeroderma Pigmentosum-related Skin Cancer
-{
-  slug: "xeroderma-pigmentosum-related-skin-cancer",
 
-  title: "Xeroderma Pigmentosum (XP)",
-
-  description:
-    "Your skin is your body's largest organ. It protects you from infections, injury and harmful ultraviolet (UV) rays while helping regulate body temperature and sensation.",
-
-  bannerImg: "/cancers/xeroderma-pigmentosum.webp",
-
-  overview: {
-    intro:
-      "Xeroderma pigmentosum (XP) is a rare inherited genetic disorder in which the body cannot properly repair DNA damaged by ultraviolet (UV) radiation. Even a few minutes of sun exposure can cause severe skin damage and greatly increase the risk of developing skin cancer.",
-
-    description:
-      "XP affects the skin, eyes and sometimes the nervous system. People with XP require lifelong protection from UV light, frequent skin examinations and prompt treatment of precancerous or cancerous skin lesions. Although there is no cure, careful management can reduce complications and improve quality of life."
-  },
-
-  typesStages: {
-    stagesNote:
-      "Xeroderma pigmentosum (XP) is not a cancer and is not classified into stages. Instead, healthcare providers monitor people with XP throughout life for the development of precancerous lesions and skin cancers, which are treated according to their individual stage and type."
-  },
-
-  riskFactorsData: {
-    uncontrollable: [
-      {
-        icon: "/icons/genetics.png",
-        title: "Inherited Gene Mutations",
-        text: "XP is caused by inherited mutations in genes responsible for repairing DNA damaged by ultraviolet radiation."
-      },
-      {
-        icon: "/icons/family.png",
-        title: "Family History",
-        text: "A child develops XP only after inheriting altered copies of the gene from both parents."
-      },
-      {
-        icon: "/icons/feet.png",
-        title: "Early Childhood Onset",
-        text: "Symptoms usually begin during infancy or early childhood after the first exposures to sunlight."
-      },
-      {
-        icon: "/icons/genetics.png",
-        title: "Defective DNA Repair",
-        text: "The body's inability to repair UV-induced DNA damage causes skin cells to accumulate mutations that may lead to cancer."
-      }
-    ],
-
-    lifestyle: [
-      {
-        icon: "/icons/uv.png",
-        title: "Ultraviolet (UV) Exposure",
-        text: "Sunlight and other UV sources greatly increase skin damage and the risk of skin cancer in people with XP."
-      }
-    ]
-  },
-
-  symptoms: {
-    items: [
-      {
-        title: "Severe Sun Sensitivity",
-        text: "Even brief exposure to sunlight may cause blistering sunburns and lasting skin damage.",
-        img: "/symptoms/skin-burn.png"
-      },
-      {
-        title: "Early Freckling",
-        text: "Freckles often appear before the age of 2 on sun-exposed areas of the body.",
-        img: "/symptoms/early-frekles.png"
-      },
-      {
-        title: "Dry or Discolored Skin",
-        text: "The skin may become dry, thin or develop areas of darker and lighter pigmentation.",
-        img: "/symptoms/discolored-skin.png"
-      },
-      {
-        title: "Eye Problems",
-        text: "Light sensitivity, eye irritation, vision changes and other eye conditions are common.",
-        img: "/symptoms/eye-floaters.png"
-      },
-      {
-        title: "Skin Cancer",
-        text: "People with XP have an extremely high risk of developing skin cancers at a young age.",
-        img: "/symptoms/penile-skin.png"
-      },
-      {
-        title: "Neurological Symptoms",
-        text: "Some people develop hearing loss, balance problems or progressive nervous system changes.",
-        img: "/symptoms/brain-balance.png"
-      }
-    ]
-  },
-
-  diagnosis: {
-    items: [
-      {
-        title: "Physical Examination",
-        text: "A healthcare provider evaluates the skin, eyes and history of unusual sun sensitivity.",
-        img: "/diagnosis/anal-history.png"
-      },
-      {
-        title: "Genetic Testing",
-        text: "Blood tests identify the inherited gene mutations responsible for XP.",
-        img: "/diagnosis/adrenal-blood.png"
-      },
-      {
-        title: "Skin Examination",
-        text: "Regular skin checks help identify precancerous changes and skin cancers early.",
-        img: "/diagnosis/bcc-exam.png"
-      },
-      {
-        title: "Eye Examination",
-        text: "Eye specialists assess UV-related damage affecting vision and eye health.",
-        img: "/diagnosis/eye-exam.png"
-      }
-    ]
-  },
-
-  treatment: {
-    options: [
-      {
-        title: "Strict UV Protection",
-        text: "Avoiding sunlight, wearing UV-protective clothing and using sunscreen are essential lifelong measures.",
-        img: "/treatment/skin-protection.png"
-      },
-      {
-        title: "Regular Skin Screening",
-        text: "Frequent dermatology visits help detect and treat skin cancers as early as possible.",
-        img: "/treatment/bcc-radiation.png"
-      },
-      {
-        title: "Surgical Removal",
-        text: "Precancerous lesions and skin cancers are removed promptly when they develop.",
-        img: "/treatment/brain-surgery.png"
-      },
-      {
-        title: "Supportive Care",
-        text: "Eye care, hearing support, vitamin D supplementation and ongoing monitoring help manage long-term complications.",
-        img: "/treatment/supportive-care.png"
-      }
-    ]
-  }
-},
 
 //yolk sac cancer 
 
@@ -11655,7 +11330,7 @@ typesStages: {
   title: "Yolk Sac Tumor",
 
   description:
-    "The ovaries and testicles produce eggs and sperm for reproduction. They also release hormones that support normal growth, puberty and reproductive health.",
+    "The yolk sac is a structure that develops in the uterus during early pregnancy. It provides nourishment to the embryo and helps circulate gases between the mother and embryo. It also produces early cells that develop into important structures like blood cells, the umbilical cord, and other organs.",
 
   bannerImg: "/cancers/yolk-sac-tumor.webp",
 
@@ -11816,154 +11491,7 @@ typesStages: {
   }
 },
 
-//zollinger-ellison-syndrome
 
-{
-  slug: "zollinger-ellison-syndrome",
-
-  title: "Zollinger-Ellison Syndrome",
-
-  description:
-    "The pancreas and small intestine help digest food by producing enzymes and hormones. They also regulate stomach acid production to support healthy digestion.",
-
-  bannerImg: "/cancers/zollinger-ellison-syndrome.webp",
-
-  overview: {
-    intro:
-      "Zollinger-Ellison syndrome (ZES) is a rare condition in which tumors called gastrinomas develop in the pancreas or the upper part of the small intestine (duodenum). These tumors produce excessive amounts of the hormone gastrin, causing the stomach to make too much acid.",
-
-    description:
-      "Excess stomach acid can lead to severe peptic ulcers, acid reflux and chronic diarrhea. About 60% of gastrinomas are cancerous, but many grow slowly. Treatment focuses on controlling acid production and removing tumors whenever possible." 
-  },
-
-  typesStages: {
-    stagesNote:
-      "Zollinger-Ellison syndrome is not classified using traditional cancer stages. Treatment and prognosis depend on whether gastrinomas are benign or cancerous, their size, location and whether they have spread."
-  },
-
-  riskFactorsData: {
-    uncontrollable: [
-      {
-        icon: "/icons/genetics.png",
-        title: "Multiple Endocrine Neoplasia Type 1 (MEN1)",
-        text: "Around one in four people with Zollinger-Ellison syndrome have the inherited genetic condition MEN1."
-      },
-      {
-        icon: "/icons/pancreas.png",
-        title: "Gastrin-Producing Tumors",
-        text: "The syndrome develops when gastrinomas form in the pancreas or duodenum."
-      },
-      {
-        icon: "/icons/genetics.png",
-        title: "Inherited Gene Changes",
-        text: "Inherited genetic mutations associated with MEN1 significantly increase the risk."
-      },
-      {
-        icon: "/icons/family.png",
-        title: "Family History",
-        text: "People with a family history of MEN1 have a greater chance of developing Zollinger-Ellison syndrome."
-      }
-    ],
-
-    lifestyle: [
-      {
-        icon: "/icons/none.png",
-        title: "No Proven Lifestyle Risk Factors",
-        text: "There are no known lifestyle or environmental factors that directly cause Zollinger-Ellison syndrome."
-      }
-    ]
-  },
-
-  symptoms: {
-    items: [
-      {
-        title: "Persistent Abdominal Pain",
-        text: "Burning or gnawing pain caused by excessive stomach acid and ulcers.",
-        img: "/symptoms/adrenal-metastatic.png"
-      },
-      {
-        title: "Chronic Diarrhea",
-        text: "Frequent diarrhea is one of the most common symptoms of Zollinger-Ellison syndrome.",
-        img: "/symptoms/anal-pain.png"
-      },
-      {
-        title: "Heartburn and Acid Reflux",
-        text: "Excess stomach acid can cause severe heartburn and gastroesophageal reflux.",
-        img: "/symptoms/esophageal-heartburn.png"
-      },
-      {
-        title: "Nausea and Vomiting",
-        text: "Some people experience nausea or vomiting due to stomach irritation.",
-        img: "/symptoms/galbladder-vomit.png"
-      },
-      {
-        title: "Weight Loss",
-        text: "Persistent digestive problems may lead to unintended weight loss.",
-        img: "/symptoms/gist-weight.png"
-      },
-      {
-        title: "Bleeding Ulcers",
-        text: "Ulcers may bleed, causing blood in vomit or stool.",
-        img: "/symptoms/anal-bleeding.png"
-      }
-    ]
-  },
-
-  diagnosis: {
-    items: [
-      {
-        title: "Blood Tests",
-        text: "Blood tests measure gastrin levels, which are typically very high in Zollinger-Ellison syndrome.",
-        img: "/diagnosis/adrenal-blood.png"
-      },
-      {
-        title: "CT Scan or MRI",
-        text: "Imaging scans help locate gastrinomas and determine whether they have spread.",
-        img: "/diagnosis/anal-scan.png"
-      },
-      {
-        title: "Upper Endoscopy",
-        text: "An endoscope allows doctors to examine ulcers and the upper digestive tract.",
-        img: "/diagnosis/bile-endo.png"
-      },
-      {
-        title: "Endoscopic Ultrasound",
-        text: "This test helps identify small tumors in the pancreas or duodenum.",
-        img: "/diagnosis/endometrial-ultrasound.png"
-      },
-      {
-        title: "Biopsy",
-        text: "A tissue sample confirms whether a gastrinoma is cancerous.",
-        img: "/diagnosis/ewing-bio.png"
-      }
-    ]
-  },
-
-  treatment: {
-    options: [
-      {
-        title: "Proton Pump Inhibitors (PPIs)",
-        text: "PPIs reduce stomach acid production and help control ulcers and other symptoms.",
-        img: "/treatment/medication.png"
-      },
-      {
-        title: "Surgery",
-        text: "Surgery removes gastrinomas whenever they can be safely removed.",
-        img: "/diagnosis/fallopian-surgery.png"
-      },
-      {
-        title: "Chemotherapy",
-        text: "Chemotherapy or other cancer treatments may be recommended if tumors have spread.",
-        img: "/treatment/bladder-chemo.png"
-      },
-      {
-        title: "Long-Term Follow-Up",
-        text: "Regular monitoring helps detect tumor recurrence and manage stomach acid levels.",
-        img: "/diagnosis/astro-symptoms.png"
-      }
-    ]
-  }
-},
 
 ];
 
