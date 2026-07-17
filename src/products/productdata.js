@@ -36,12 +36,12 @@ export const products = [
   type: "Injection",
   imageClass:"cytraz-img",
 
-  image: "/products1/CYTRAZ-1000 1.png",
+  image: "/new_product_page/cytraz-group.png",
 
   images: [
-    "/products1/CYTRAZ-1000 1.png",
-    "/products1/CYTRAZ-1000 2.png",
-    "/products1/CYTRAZ-1000 3.png",
+    "/new_product_page/cytraz-group.png",
+    "/new_product_page/Cytraz-100.png",
+    "/new_product_page/Cytraz-500.png",
    
   ],
 
@@ -81,15 +81,15 @@ export const products = [
   type: "Injection",
   imageClass:"zuvitrex-img",
 
-  image: "/products/zuvitrex50-1.png",
+  image: "/new_product_page/zuvitrex-group.png",
 
   images: [
-    "/products/zuvitrex50-1.png",
-    "/products/zuvitrex50-2.png",
-    "/products/zuvitrex50-3.png",
-    "/products/zuvitrex500-1.png",
-    "/products/zuvitrex500-2.png",
-    "/products/zuvitrex500-3.png",
+    "/new_product_page/zuvitrex-group.png",
+    "/new_product_page/Zuvitrex-2.5.png",
+    "/new_product_page/Zuvitrex-5.png",
+    "/new_product_page/Zuvitrex-7.5.png",
+    "/new_product_page/Zuvitrex-50.png",
+    "/new_product_page/Zuvitrex-500.png",
   ],
 
   strength: "50/500/1000 mg",
@@ -169,11 +169,9 @@ Similar to other cytotoxic agents, Methotrexate carries a potential risk of tera
   type: "Injection",
   imageClass:"zyrolbine-img",
 
-  image: "/products4/zyrolbine-1.png",
+  image: "/new_product_page/Zyrolbine-50.png",
   images: [
-    "/products4/zyrolbine-1.png",
-    "/products4/zyrolbine-2.png",
-    "/products4/zyrolbine-3.png",
+    "/new_product_page/Zyrolbine-50.png",
   ],
 
   strength: "10/50 mg",
@@ -370,15 +368,13 @@ Animal studies have shown that amifostine may cause fetal harm when administered
   type: "Injection",
   imageClass:"auset-img",
 
-  image: "/products/auset200-1.png",
+  image: "/new_product_page/auset-group.png",
 
   images: [
-    "/products/auset200-1.png",
-    "/products/auset200-2.png",
-    "/products/auset200-3.png",
-    "/products/auset300-1.png",
-    "/products/auset300-2.png",
-    "/products/auset300-3.png"
+    "/new_product_page/auset-group.png",
+    "/new_product_page/Auset-100.png",
+    "/new_product_page/Auset-200.png",
+    "/new_product_page/Auset-300.png",
   ],
 
   strength: "100 mg",
@@ -503,12 +499,10 @@ Pregnancy testing and effective contraception are recommended during treatment w
   type: "Injection",
   imageClass:"bendaz-img",
 
-  image: "/products/bendaz100-1.png",
+  image: "/new_product_page/Bendaz-100.png",
 
   images: [
-    "/products/bendaz100-1.png",
-    "/products/bendaz100-2.png",
-    "/products/bendaz100-3.png",
+    "/new_product_page/Bendaz-100.png",
   ],
 
   strength: "100 mg",
@@ -1284,15 +1278,12 @@ Contraception is recommended during treatment and for a period after discontinua
   subtitle: "Doxorubicin Inj 10 mg / 50 mg",
   type: "Injection",
 
-  image: "/products/zuvidox10-1.png",
+  image: "/new_product_page/zuvidox-group.png",
 
   images: [
-    "/products/zuvidox10-1.png",
-    "/products/zuvidox10-2.png",
-    "/products/zuvidox10-3.png",
-    "/products/zuvidox50-1.png",
-    "/products/zuvidox50-2.png",
-    "/products/zuvidox50-3.png",
+    "/new_product_page/zuvidox-group.png",
+    "/new_product_page/Zuvidox-10.png",
+    "/new_product_page/Zuvidox-50.png",
   ],
 
   strength: "10 mg / 50 mg",
@@ -1603,12 +1594,11 @@ Pregnancy testing and effective contraception are recommended during treatment t
   subtitle: "Fludarabine Phosphate Injection",
   type: "Injection",
 
-  image: "/products/yakira/yakira50-1.jpeg",
+  image: "/new_product_page/Yakira-50.png",
 
   images: [
-    "/products/yakira/yakira50-1.jpeg",
-    "/products/yakira/yakira50-2.jpeg",
-    "/products/yakira/yakira50-3.jpeg",
+    "/new_product_page/Yakira-10.png",
+    "/new_product_page/Yakira-50.png",
   ],
 
   strength: "50 mg",
@@ -1859,18 +1849,12 @@ Effective contraception is recommended during treatment.
 //   subtitle: "Leuprolide Acetate",
 //   type: "Injection",
 
-//   image: "/products/zoplide/zoplide375-1.jpeg",
+//   image: "/new_product_page/zoplide-goup.png",
 
 //   images: [
-//     "/products/zoplide/zoplide375-1.jpeg",
-//     "/products/zoplide/zoplide375-2.jpeg",
-//     "/products/zoplide/zoplide375-3.jpeg",
-//     "/products/zoplide/zoplide1125-1.jpeg",
-//     "/products/zoplide/zoplide1125-2.jpeg",
-//     "/products/zoplide/zoplide1125-3.jpeg",
-//     "/products/zoplide/zoplide2250-1.jpeg",
-//     "/products/zoplide/zoplide2250-2.jpeg",
-//     "/products/zoplide/zoplide2250-3.jpeg",
+//     "/new_product_page/zoplide-goup.png",
+//     "/new_product_page/Zoplide-11.25.png",
+//     "/new_product_page/Zoplide-22.50.png",
 //   ],
 
 //   strength: "3.75/11.25/22.50 mg",
@@ -2149,12 +2133,10 @@ Pregnancy testing and effective contraception are recommended during treatment.
   subtitle: "Topotecan Hydrochloride Injection",
   type: "Injection",
 
-  image: "/products/zopecan/zopecan4-1.jpeg",
+  image: "/new_product_page/Zopecan-2.5.png",
 
   images: [
-    "/products/zopecan/zopecan4-1.jpeg",
-    "/products/zopecan/zopecan4-2.jpeg",
-    "/products/zopecan/zopecan4-3.jpeg",
+    "/new_product_page/Zopecan-2.5.png",
   ],
 
   strength: "4 mg",
@@ -2255,12 +2237,10 @@ Clinical studies have demonstrated effectiveness in platinum-sensitive small cel
   subtitle: "Azathioprine Tablet 50/100 mg",
   type: "Tablet",
 
-  image: "/products/azath50-1.png",
+  image: "/new_product_page/Azath-50.png",
 
   images: [
-    "/products/azath50-1.png",
-    "/products/azath50-2.png",
-    "/products/azath50-3.png",
+    "/new_product_page/Azath-50.png",
   ],
 
   strength: "50/100 mg",
@@ -2388,12 +2368,12 @@ It is also used to relieve joint pain and swelling in patients with active rheum
   type: "Tablet",
   imageClass:"zuberi-img",
 
-  image: "/products4/zuberi-1.png",
+  image: "/new_product_page/Zuberi-group.png",
 
   images: [
-    "/products4/zuberi-1.png",
-    "/products4/zuberi-2.png",
-    "/products4/zuberi-3.png",
+    "/new_product_page/Zuberi-group.png",
+    "/new_product_page/Zuberi-2.png",
+    "/new_product_page/Zuberi-5.png",
     
   ],
 
@@ -2731,12 +2711,12 @@ Diarrhoea was the most common adverse reaction resulting in discontinuation of t
   subtitle: "Nilotinib Capsules 150/200 mg",
   type: "Capsule",
 
-  image: "/products/nilotaz200-1.png",
+  image: "/new_product_page/nilotaz-goup.png",
 
   images: [
-    "/products/nilotaz200-1.png",
-    "/products/nilotaz200-3.png",
-    "/products/nilotaz200-2.png",
+    "/new_product_page/nilotaz-goup.png",
+    "/new_product_page/Nilotaz-150.png",
+    "/new_product_page/Nilotaz-200.png",
    
   ],
 
@@ -2862,15 +2842,12 @@ It is used in patients whose disease could not be treated with other medications
   type: "Tablet",
   imageClass:"zomacta-img",
 
-  image: "/products1/zomacta25-1.png",
+  image: "/new_product_page/zomacta-group.png",
 
   images: [
-    "/products1/zomacta25-1.png",
-    "/products1/zomacta25-2.png",
-    "/products1/zomacta25-3.png",
-    "/products1/Zomacta50-1.png",
-    "/products1/zomacta50-2.png",
-    "/products1/zomacta50-3.png",
+    "/new_product_page/zomacta-group.png",
+    "/new_product_page/Zomacta-25.png",
+    "/new_product_page/Zomacta-50.png",
   ],
 
   strength: "25/50 mg",
@@ -2990,16 +2967,12 @@ Eltrombopag is also used in adults to treat severe aplastic anemia after other t
   subtitle: "Palbociclib Capsule 75/100/125 mg",
   type: "Capsule",
 
-  image: "/products/zalcocib100-1.png",
+  image: "/new_product_page/zalcocib-group.png",
 
   images: [
-    "/products/zalcocib100-1.png",
-    "/products/zalcocib100-2.png",
-    "/products/zalcocib100-3.png",
-    "/products/zalcocib125-1.png",
-    "/products/zalcocib125-2.png",
-    "/products/zalcocib125-3.png",
-    
+    "/new_product_page/zalcocib-group.png",
+    "/new_product_page/Zalcocib-75.png",
+    "/new_product_page/Zalcocib-125.png",
   ],
 
   strength: "75/100/125 mg",
@@ -3112,12 +3085,12 @@ Blocking these proteins helps slow down cancer cell growth.
   type: "Capsule",
   imageClass:"pomaloz-img",
 
-  image: "/products1/pomaloz2-1.png",
+  image: "/new_product_page/pomaloz-group.png",
 
   images: [
-    "/products1/pomaloz2-1.png",
-    "/products1/pomaloz2-2.png",
-    "/products1/pomaloz2-3.png",
+    "/new_product_page/pomaloz-group.png",
+    "/new_product_page/Pomaloz-1.png",
+    "/new_product_page/Pomaloz-2.png",
 
   ],
 
@@ -3263,12 +3236,10 @@ Males:
   type: "Tablet",
   imageClass:"anastroz-img",
 
-  image: "/products/anastroz1-1.png",
+  image: "/new_product_page/Anastroz-1.png",
 
   images: [
-    "/products/anastroz1-1.png",
-    "/products/anastroz1-2.png",
-    
+    "/new_product_page/Anastroz-1.png",
   ],
 
   strength: "1 mg",
@@ -3359,13 +3330,10 @@ Anastrozole may cause other side effects.
   type: "Tablet",
   imageClass:"bicalutaz-img",
 
-  image: "/products/bicalutaz50-1.png",
+  image: "/new_product_page/Bicalutaz-50.png",
 
   images: [
-    "/products/bicalutaz50-1.png",
-    "/products/bicalutaz50-2.png",
-    "/products/bicalutaz50-3.png",
-    
+    "/new_product_page/Bicalutaz-50.png",
   ],
 
   strength: "50 mg / 150 mg",
@@ -3483,12 +3451,10 @@ Before having surgery, tell your doctor or dentist about all the products you us
   type: "Tablet",
   imageClass:"capetaz-img",
 
-  image: "/products/capetaz500-1.png",
+  image: "/new_product_page/Capetaz-500.png",
 
   images: [
-    "/products/capetaz500-1.png",
-    "/products/capetaz500-2.png",
-    
+    "/new_product_page/Capetaz-500.png",
   ],
 
   strength: "500 mg",
@@ -3735,11 +3701,11 @@ Since current safety and efficacy data are based upon administration of Capecita
   subtitle: "Enzalutamide Cap 40 mg",
   type: "Capsule",
 
-  image: "/products/enzumide40-1.png",
+  image: "/new_product_page/enzumide-group.png",
 
   images: [
-    "/products/enzumide40-1.png",
-    "/products/enzumide40-2.png",
+    "/new_product_page/enzumide-group.png",
+    "/new_product_page/Enzumide-40.png",
    
   ],
 
@@ -3889,15 +3855,10 @@ Consult your pharmacist or physician.
   subtitle: "Erlotinib Tab",
   type: "Tablet",
 
-  image: "/products/erlonon100-1.png",
+  image: "/new_product_page/Erlonon-150.png",
 
   images: [
-    "/products/erlonon100-1.png",
-    "/products/erlonon100-2.png",
-    "/products/erlonon100-3.png",
-    "/products/erlonon150-1.png",
-    "/products/erlonon150-2.png",
-    
+    "/new_product_page/Erlonon-150.png",
   ],
 
   strength: "100 mg / 150 mg",
@@ -4014,12 +3975,10 @@ Patients presenting with acute or worsening eye symptoms such as pain, redness, 
   type: "Tablet",
   imageClass:"exem-img",
 
-  image: "/products/exemestaz25-1.png",
+  image: "/new_product_page/Exemestaz-25.png",
 
   images: [
-    "/products/exemestaz25-1.png",
-    "/products/exemestaz25-2.png",
-    "/products/exemestaz25-3.png",
+    "/new_product_page/Exemestaz-25.png",
   ],
 
   strength: "25 mg",
@@ -4155,15 +4114,12 @@ Should not be coadministered with systemic estrogen-containing agents, as these 
   subtitle: "Lenvatinib Cap",
   type: "Capsule",
 
-  image: "/products/lenvitib4-1.png",
+  image: "/new_product_page/lenvitib-group.png",
 
   images: [
-    "/products/lenvitib4-1.png",
-    "/products/lenvitib4-2.png",
-    "/products/lenvitib4-3.png",
-    "/products/lenvitin10-1.png",
-    "/products/lenvitin10-2.png",
-    "/products/lenvitin10-3.png",
+    "/new_product_page/lenvitib-group.png",
+    "/new_product_page/Lenvitib-4.png",
+    "/new_product_page/Lenvitib-10.png",
   ],
 
   strength: "4 mg / 10 mg",
@@ -4299,12 +4255,10 @@ Withhold and resume at a reduced dose upon recovery or permanently discontinue L
   type: "Injection",
   imageClass:"melphalaz-img",
 
-  image: "/products/melphalaz5-1.png",
+  image: "/new_product_page/Melphalaz-50.png",
 
   images: [
-    "/products/melphalaz5-1.png",
-    "/products/melphalaz5-2.png",
-    "/products/melphalaz5-3.png",
+    "/new_product_page/Melphalaz-50.png",
   ],
 
   strength: "50 mg",
@@ -4502,12 +4456,10 @@ When nalidixic acid and IV melphalan are given simultaneously, the incidence of 
   subtitle: "Mercaptopurine Tab 50 mg",
   type: "Tablet",
 
-  image: "/products/mercaptaz50-1.png",
+  image: "/new_product_page/Mercaptaz-50.png",
 
   images: [
-    "/products/mercaptaz50-1.png",
-    "/products/mercaptaz50-2.png",
-    "/products/mercaptaz50-3.png",
+    "/new_product_page/Mercaptaz-50.png",
   ],
 
   strength: "50 mg",
@@ -4587,18 +4539,13 @@ Women who are pregnant, planning to be or breast-feeding should not handle Merca
   type: "Capsule",
   imageClass:"myeloma-img",
 
-  image: "/products/myeloma5-1.png",
+  image: "/new_product_page/myeloma-group.png",
 
   images: [
-    "/products/myeloma5-1.png",
-    "/products/myeloma5-2.png",
-    "/products/myeloma5-3.png",
-    "/products/myeloma10-1.png",
-    "/products/myeloma10-2.png",
-    "/products/myeloma10-3.png",
-    "/products/myeloma25-1.png",
-    "/products/myeloma25-2.png",
-    "/products/myeloma25-3.png",
+    "/new_product_page/myeloma-group.png",
+    "/new_product_page/Myeloma-5.png",
+    "/new_product_page/Myeloma-10.png",
+    "/new_product_page/Myeloma-25.png",
   ],
 
   strength: "5 mg / 10 mg / 25 mg",
@@ -4807,16 +4754,12 @@ This medicine may increase your risk of having blood clots.
   subtitle: "Dasatinib Tab",
   type: "Tablet",
 
-  image: "/products/pptinib50-1.png",
+  image: "/new_product_page/pptinib-group.png",
 
   images: [
-    "/products/pptinib50-1.png",
-    "/products/pptinib50-2.png",
-    "/products/pptinib50-3.png",
-    "/products/pptinib70-1.png",
-    "/products/pptinib70-2.png",
-    "/products/pptinib70-3.png",
-  
+    "/new_product_page/pptinib-group.png",
+    "/new_product_page/Pptinib-50.png",
+    "/new_product_page/Pptinib-70.png",
   ],
 
   strength: "20 mg / 50 mg / 70 mg",
@@ -5020,12 +4963,12 @@ The relevance of these findings in humans is not known.
   type: "Capsule",
   imageClass:"temoloz-img",
 
-  image: "/products/temoloz100-1.png",
+  image: "/new_product_page/temoloz-group.png",
 
   images: [
-    "/products/temoloz100-1.png",
-    "/products/temoloz100-2.png",
-    "/products/temoloz100-3.png",
+    "/new_product_page/temoloz-group.png",
+    "/new_product_page/Temoloz-20.png",
+    "/new_product_page/Temoloz-100.png",
    
   ],
 
@@ -5227,14 +5170,12 @@ Men being treated with TMZ should be advised not to father a child for at least 
   subtitle: "Abiraterone Acetate Tab",
   type: "Tablet",
 
-  image: "/products/zabiteron250-1.png",
+  image: "/new_product_page/zabiteron-group.png",
 
   images: [
-    "/products/zabiteron250-1.png",
-    "/products/zabiteron250-2.png",
-    "/products/zabiteron250-3.png",
-    "/products/zabiteron500-1.png",
-    "/products/zabiteron500-2.png"
+    "/new_product_page/zabiteron-group.png",
+    "/new_product_page/Zabiteron-250.png",
+    "/new_product_page/Zabiteron-500.png",
   ],
 
   strength: "250 mg",
@@ -5443,14 +5384,11 @@ Other reported clinical experience has not identified differences in responses b
   subtitle: "Imatinib Cap 100 mg",
   type: "Capsule",
 
-  image: "/products/zimitib100-1.png",
+  image: "/new_product_page/Zimitib-100.png",
 
   images: [
-    "/products/zimitib100-1.png",
-    "/products/zimitib100-2.png",
-    "/products/zimitib100-3.png",
-    "/products/zimitib400-1.png",
-    "/products/zimitib400-2.png",
+    "/new_product_page/Zimitib-100.png",
+    "/new_product_page/Zimitib-400.png",
   ],
 
   strength: "100 mg",
@@ -5700,15 +5638,12 @@ No clinical studies were conducted with Zimitib in patients with decreased renal
   type: "Tablet",
   imageClass:"zixib-img",
 
-  image: "/products/zixib1-1.png",
+  image: "/new_product_page/zixib-group.png",
 
   images: [
-    "/products/zixib1-1.png",
-    "/products/zixib1-2.png",
-    "/products/zixib5-1.png",
-    "/products/zixib5-2.png",
-    "/products/zixib5-3.png",
-   
+    "/new_product_page/zixib-group.png",
+    "/new_product_page/Zixib-1.png",
+    "/new_product_page/Zixib-5.png",
   ],
 
   strength: "1 mg / 5 mg",
@@ -5948,13 +5883,11 @@ For patients who develop moderate-to-severe proteinuria, reduce the dose or temp
   type: "Tablet",
   imageClass:"zupanib-img",
 
-  image: "/products/zupanib200-1.png",
+  image: "/new_product_page/zupanib-group.png",
 
   images: [
-    "/products/zupanib200-1.png",
-    "/products/zupanib200-2.png",
-    "/products/zupanib200-3.png",
-    
+    "/new_product_page/zupanib-group.png",
+    "/new_product_page/Zupanib-200.png",
   ],
 
   strength: "200 mg / 400 mg",
@@ -6088,12 +6021,10 @@ Regular monitoring of liver function, blood pressure, thyroid function, and card
   type: "Tablet",
   imageClass:"zutam-img",
 
-  image: "/products/zutam20-1.png",
+  image: "/new_product_page/Zutam-20.png",
 
   images: [
-    "/products/zutam20-1.png",
-    "/products/zutam20-2.png",
-    "/products/zutam20-3.png",
+    "/new_product_page/Zutam-20.png",
   ],
 
   strength: "20 mg",
@@ -6411,12 +6342,10 @@ Advise patients to report promptly any new or worsening respiratory symptoms.
   type: "Tablet",
   imageClass:"zuvisor-img",
 
-  image: "/products/zuvisor 1.png",
+  image: "/new_product_page/Zuvisor-200.png",
 
   images: [
-    "/products/zuvisor 1.png",
-    "/products/zuvisor 2.png",
-    "/products/zuvisor 3.png",
+    "/new_product_page/Zuvisor-200.png",
   ],
 
   strength: "200 mg",
@@ -6654,12 +6583,11 @@ Monitoring of renal function should be considered.
   type: "Capsule",
   imageClass:"zuvitop-img",
 
-  image: "/products1/ZUVITOP-50 1.png",
+  image: "/new_product_page/Zuvitop-50.png",
 
   images: [
-    "/products1/ZUVITOP-50 1.png",
-    "/products1/ZUVITOP-50 2.png",
-    "/products1/ZUVITOP-50 3.png",
+    "/new_product_page/Zuvitop-50.png",
+    "/new_product_page/Zuvitop-100.png",
   ],
 
   strength: "50 mg",
@@ -6795,16 +6723,12 @@ Irreversible testicular atrophy was present in rats treated with etoposide intra
   subtitle: "Methotrexate Tab",
   type: "Tablet",
 
-  image: "/products/zuvitrex2.5-1.png",
+  image: "/new_product_page/Zuvitrex-2.5.png",
 
   images: [
-    "/products/zuvitrex2.5-1.png",
-    "/products/zuvitrex2.5-2.png",
-    "/products/zuvitrex2.5-3.png",
-    "/products/zuvitrex7.5-1.png",
-    "/products/zuvitrex7.5-2.png",
-    "/products/zuvitrex7.5-3.png",
-    
+    "/new_product_page/Zuvitrex-2.5.png",
+    "/new_product_page/Zuvitrex-5.png",
+    "/new_product_page/Zuvitrex-7.5.png",
   ],
 
   strength: "2.5 mg / 5 mg / 7.5 mg / 10 mg",
@@ -7003,12 +6927,10 @@ Oral antibiotics such as tetracycline, chloramphenicol and non-absorbable broad-
   type: "Injection",
   imageClass:"dactinoz-img",
 
-  image: "/products1/DACTINOZ-0.5 1.png",
+  image: "/new_product_page/Dactinoz-0.5.png",
 
   images: [
-    "/products1/DACTINOZ-0.5 1.png",
-    "/products1/DACTINOZ-0.5 2.png",
-    "/products1/DACTINOZ-0.5 3.png",
+    "/new_product_page/Dactinoz-0.5.png",
   ],
 
   strength: "0.5 mg",
@@ -7274,12 +7196,12 @@ If Dactinomycin accidentally seeps out of the vein into which it is injected, it
   subtitle: "Paclitaxel Inj",
   type: "Injection",
 
-  image: "/products1/ZAXOL-30 1.png",
+  image: "/new_product_page/zaxol-group.png",
 
   images: [
-    "/products1/ZAXOL-30 1.png",
-    "/products1/ZAAXOL-30 2.png",
-    "/products1/ZAXOL-30 3.png",
+    "/new_product_page/zaxol-group.png",
+    "/new_product_page/Zaxol-30.png",
+    "/new_product_page/Zaxol-100.png",
     
   ],
 
@@ -7418,12 +7340,10 @@ Paclitaxel should be given with caution to those patients who are on Ketoconazol
   subtitle: "Daunorubicin Inj 20 mg",
   type: "Injection",
 
-  image: "/products1/ZEDAUNOR-20 1.png",
+  image: "/new_product_page/Zedaunor-20.png",
 
   images: [
-    "/products1/ZEDAUNOR-20 1.png",
-    "/products1/ZEDAUNOR-20 2.png",
-    "/products1/ZEDAUNOR-20 3.png",
+    "/new_product_page/Zedaunor-20.png",
   ],
 
   strength: "20 mg",
@@ -7490,12 +7410,12 @@ This product may contain inactive ingredients, which can cause allergic reaction
   type: "Injection",
   imageClass:"zetabin-img",
 
-  image: "/products1/ZENTABIN-RTU 1.png",
+  image: "/new_product_page/zetabin-rtu-group.png",
 
   images: [
-    "/products1/ZENTABIN-RTU 1.png",
-    "/products1/ZENTABIN-RTU 2.png",
-    "/products1/ZENTABIN-RTU 3.png",
+    "/new_product_page/zetabin-rtu-group.png",
+    "/new_product_page/Zetabin-RTU-1.png",
+    "/new_product_page/Zetabin-RTU-200.png",
     
   ],
 
@@ -7723,16 +7643,13 @@ In case of severe toxicity, discontinue therapy immediately and institute suppor
   subtitle: "Epirubicin Inj",
   type: "Injection",
 
-  image: "/products1/ZEPIRUBIN-10 1.png",
+  image: "/new_product_page/zepirubin-group.png",
 
   images: [
-    "/products1/ZEPIRUBIN-10 1.png",
-    "/products1/ZEPIRUBIN-10 2.png",
-    "/products1/ZEPIRUBIN -10 3.png",
-    "/products1/ZEPIRUBIN-50 1.png",
-    "/products1/ZEPIRUBIN-50 2.png",
-    "/products1/ZEPIRUBIN-50 3.png",
-   
+    "/new_product_page/zepirubin-group.png",
+    "/new_product_page/Zepirubin-10.png",
+    "/new_product_page/Zepirubin-50.png",
+    "/new_product_page/Zepirubin-100.png",
   ],
 
   strength: "10 mg / 50 mg / 100 mg",
@@ -7941,12 +7858,12 @@ This medicine may turn your urine red for 1 or 2 days after your treatment.
   subtitle: "Irinotecan Inj",
   type: "Injection",
 
-  image: "/products1/ZINOTECAN 1.png",
+  image: "/new_product_page/zinotecan-group.png",
 
   images: [
-    "/products1/ZINOTECAN 1.png",
-    "/products1/ZINOTECAN 2.png",
-    "/products1/ZINOTECAN 3.png",
+    "/new_product_page/zinotecan-group.png",
+    "/new_product_page/Zinotecan-40.png",
+    "/new_product_page/Zinotecan-100.png",
 
   ],
 
@@ -8186,12 +8103,10 @@ Testing can detect:
   subtitle: "Zoledronic Acid",
   type: "Injection",
 
-  image: "/products1/ZOLDRIC-4 1.png",
+  image: "/new_product_page/Zoldric-4.png",
 
   images: [
-    "/products1/ZOLDRIC-4 1.png",
-    "/products1/ZOLDRIC-4 2.png",
-    "/products1/ZOLDRIC-4 3.png",
+    "/new_product_page/Zoldric-4.png",
   ],
 
   strength: "4 mg",
@@ -8356,12 +8271,12 @@ If this drug is used during pregnancy, or if the patient becomes pregnant while 
   subtitle: "Oxaliplatin Inj",
   type: "Injection",
 
-  image: "/products1/ZOLON-50 1.png",
+  image: "/new_product_page/zolon-group.png",
 
   images: [
-    "/products1/ZOLON-50 1.png",
-    "/products1/ZOLON-50 2.png",
-    "/products1/ZOLON-50 3.png",
+    "/new_product_page/zolon-group.png",
+    "/new_product_page/Zolon-50.png",
+    "/new_product_page/Zolon-100.png",
     
   ],
 
@@ -8609,13 +8524,14 @@ This contains Sucralose, not recommended for children.
   type: "Tablet",
   imageClass:"afatinz-img",
 
-  image: "/new_product_page/Afatinz-20.png",
+  image: "/new_product_page/afatinz-group.png",
 
   images: [
+    "/new_product_page/afatinz-group.png",
     "/new_product_page/Afatinz-20.png",
     "/new_product_page/Afatinz-30.png",
     "/new_product_page/Afatinz-40.png",
-    "/new_product_page/afatinz-group.png",
+    
    
   ],
 
@@ -8773,16 +8689,13 @@ Advise females and males of reproductive potential of the potential for reduced 
   type: "Tablet",
   imageClass:"cazo-img",
 
-  image: "/products2/CAZONIB-20 1.png",
+  image: "/new_product_page/cazonib-group.png",
 
   images: [
-    "/products2/CAZONIB-20 1.png",
-    "/products2/CAZONIB-20 2.png",
-    "/products2/CAZONIB-20 3.png",
-    "/products2/CAZONIB-40 1.png",
-    "/products2/CAZONIB-40 2.png",
-    "/products2/CAZONIB-40 3.png",
-   
+    "/new_product_page/cazonib-group.png",
+    "/new_product_page/Cazonib-20.png",
+    "/new_product_page/Cazonib-40.png",
+    "/new_product_page/Cazonib-60.png",
   ],
 
   strength: "20 mg / 40 mg / 60 mg",
@@ -8895,15 +8808,12 @@ Withhold Cabozantinib until improvement to Grade 1, then resume Cabozantinib at 
   subtitle: "Carboplatin Inj",
   type: "Injection",
 
-  image: "/products2/ZUCARB-150 1.png",
+  image: "/new_product_page/zucarb-group.png",
 
   images: [
-    "/products2/ZUCARB-150 1.png",
-    "/products2/ZUCARB-150 2.png",
-    "/products2/ZUCARB-150 3.png",
-    "/products2/ZUCARB-450 1.png",
-    "/products2/ZUCARB-450 2.png",
-    "/products2/ZUCARB-450 3.png",
+    "/new_product_page/zucarb-group.png",
+    "/new_product_page/Zucarb-150.png",
+    "/new_product_page/Zucarb-450.png",
   ],
 
   strength: "150 mg / 450 mg",
@@ -9100,16 +9010,13 @@ Be careful when using a regular toothbrush, dental floss, or toothpick.
   type: "Capsule",
   imageClass:"zutinib-img",
 
-  image: "/products2/ZUTINIB-12.5 1.png",
+  image: "/new_product_page/zutinib-group.png",
 
   images: [
-    "/products2/ZUTINIB-12.5 1.png",
-    "/products2/ZUTINIB-12.5 2.png",
-    "/products2/ZUTINIB-12.5 3.png",
-    "/products2/ZUTINIB-50 1.png",
-    "/products2/ZUTINIB-50 2.png",
-    "/products2/ZUTINIB-50 3.png",
-   
+    "/new_product_page/zutinib-group.png",
+    "/new_product_page/Zutinib-12.5.png",
+    "/new_product_page/Zutinib-25.png",
+    "/new_product_page/Zutinib-50.png",
   ],
 
   strength: "12.5 mg / 25 mg / 50 mg",
@@ -9929,15 +9836,12 @@ Apart from sugar, many protein powders contain other ingredients that may not be
   subtitle: "Pemetrexed Inj 100 mg / 500 mg",
   type: "Injection",
 
-  image: "/products3/antifol-1.png",
+  image: "/new_product_page/antifol-group.png",
 
   images: [
-    "/products3/antifol-1.png",
-    "/products3/antifol-2.png",
-    "/products3/antifol-3.png",
-    "/products3/antifol100-1.png",
-    "/products3/antifol100-2.png",
-    "/products3/antifol100-3.png",
+    "/new_product_page/antifol-group.png",
+    "/new_product_page/Antifol-100.png",
+    "/new_product_page/Antifol-500.png",
   ],
 
   strength: "100 mg / 500 mg",
@@ -10168,11 +10072,10 @@ There was no effect of elevated AST, ALT, or total bilirubin on the pharmacokine
   subtitle: "Aprepitant Combi Pack Cap 125/80 mg",
   type: "Capsule",
 
-  image: "/products3/aprepet-z-1.png",
+  image: "/new_product_page/AprepetZ-125_80.png",
 
   images: [
-    "/products3/aprepet-z-1.png",
-    "/products3/aprepet-z-2.png",
+    "/new_product_page/AprepetZ-125_80.png",
   ],
 
   strength: "125/80 mg",
@@ -10292,15 +10195,12 @@ Be sure to mention any of the following:
   type: "Injection",
   imageClass:"aspraginaz-img",
 
-  image: "/products4/aspra5000-1.png",
+  image: "/new_product_page/aspraginaz-group.png",
 
   images: [
-    "/products4/aspra5000-1.png",
-    "/products4/aspra5000-2.png",
-    "/products4/aspra5000-3.png",
-    "/products4/aspra10000-1.png",
-    "/products4/aspra10000-2.png",
-    "/products4/aspra10000-3.png",
+    "/new_product_page/aspraginaz-group.png",
+    "/new_product_page/Aspraginaz-5000.png",
+    "/new_product_page/Aspraginaz-10000.png",
   ],
 
   strength: "5000 IU / 10000 IU",
@@ -10404,12 +10304,10 @@ Monitor serum glucose.
   type: "Injection",
   imageClass:"bleoz-img",
 
-  image: "/products4/bleoz-1.png",
+  image: "/new_product_page/Bleoz-15.png",
 
   images: [
-    "/products4/bleoz-1.png",
-    "/products4/bleoz-2.png",
-    "/products4/bleoz-3.png",
+    "/new_product_page/Bleoz-15.png",
   ],
 
   strength: "15 IU",
@@ -10719,12 +10617,12 @@ Tell your doctor or pharmacist if you have any medical history, especially:
   type: "Injection",
   imageClass:"dazine-img",
 
-  image: "/products4/dazine-1.png",
+  image: "/new_product_page/dazine-group.png",
 
   images: [
-    "/products4/dazine-1.png",
-    "/products4/dazine-2.png",
-    "/products4/dazine-3.png",
+    "/new_product_page/dazine-group.png",
+    "/new_product_page/Dazine-200.png",
+    "/new_product_page/Dazine-500.png",
    
   ],
 
@@ -10897,12 +10795,10 @@ Dacarbazine may make your skin sensitive to sunlight.
   subtitle: "Fulvestrant Inj 250 mg",
   type: "Injection",
 
-  image: "/products4/fukayna-1.png",
+  image: "/new_product_page/Fukayna-250.png",
 
   images: [
-    "/products4/fukayna-1.png",
-    "/products4/fukayna-2.png",
-    "/products4/fukayna-3.png",
+    "/new_product_page/Fukayna-250.png",
   ],
 
   strength: "250 mg",
@@ -10974,12 +10870,10 @@ Advise women not to breastfeed during treatment with Fukayna and for one year af
   subtitle: "Granisetron Hydrochloride Inj 3 mg",
   type: "Injection",
 
-  image: "/products3/graniz-1.png",
+  image: "/new_product_page/Graniz-3.png",
 
   images: [
-    "/products3/graniz-1.png",
-    "/products3/graniz-2.png",
-    "/products3/graniz-3.png",
+    "/new_product_page/Graniz-3.png",
   ],
 
   strength: "3 mg",
@@ -11163,12 +11057,10 @@ Breastfeeding should, therefore, be discontinued during therapy.
   subtitle: "Peg L-Asparaginase Inj 3750 IU",
   type: "Injection",
 
-  image: "/products/peg-aspraginaz/peg-aspraginaz3750-1.jpeg",
+  image: "/new_product_page/PEG-Aspraginaz-3750.png",
 
   images: [
-    "/products/peg-aspraginaz/peg-aspraginaz3750-1.jpeg",
-    "/products/peg-aspraginaz/peg-aspraginaz3750-2.jpeg",
-    "/products/peg-aspraginaz/peg-aspraginaz3750-3.jpeg",
+    "/new_product_page/PEG-Aspraginaz-3750.png",
   ],
 
   strength: "3750 IU",
@@ -11415,12 +11307,10 @@ Pegfilgrastim dose adjustment in patients with renal dysfunction is not necessar
   subtitle: "Megestrol Acetate Tab 160 mg",
   type: "Tablet",
 
-  image: "/products3/ridoxia-1.png",
+  image: "/new_product_page/Ridoxia-160.png",
 
   images: [
-    "/products3/ridoxia-1.png",
-    "/products3/ridoxia-2.png",
-    "/products3/ridoxia-3.png",
+    "/new_product_page/Ridoxia-160.png",
   ],
 
   strength: "160 mg",
@@ -11556,12 +11446,10 @@ Breast malignancies in which estrogen and/or progesterone receptors are positive
   subtitle: "Vinblastine Inj 10 mg",
   type: "Injection",
 
-  image: "/products4/zblastin-1.png",
+  image: "/new_product_page/Z-Blastin-10.png",
 
   images: [
-    "/products4/zblastin-1.png",
-    "/products4/zblastin-2.png",
-    "/products4/zblastin-3.png",
+    "/new_product_page/Z-Blastin-10.png",
   ],
 
   strength: "10 mg",
@@ -11813,12 +11701,10 @@ Because many drugs are excreted in human milk and because of the potential for s
   subtitle: "Vincristine Inj 1 mg",
   type: "Injection",
 
-  image: "/products/z-cristin/z-cristin1-1.jpeg",
+  image: "/new_product_page/Z-Cristin-1.png",
 
   images: [
-    "/products/z-cristin/z-cristin1-1.jpeg",
-    "/products/z-cristin/z-cristin1-2.jpeg",
-    "/products/z-cristin/z-cristin1-3.jpeg",
+    "/new_product_page/Z-Cristin-1.png",
   ],
 
   strength: "1 mg",
@@ -12209,12 +12095,10 @@ In order to monitor the occurrence of bone marrow suppression, primarily neutrop
   type: "Tablet",
   imageClass:"zefinib-img",
 
-  image: "/products3/zefinib-1.png",
+  image: "/new_product_page/Zefinib-250.png",
 
   images: [
-    "/products3/zefinib-1.png",
-    "/products3/zefinib-2.png",
-    "/products3/zefinib-3.png",
+    "/new_product_page/Zefinib-250.png",
   ],
 
   strength: "250 mg",
@@ -12384,11 +12268,9 @@ Patients with severe renal impairment should be treated with caution when given 
   subtitle: "Fosaprepitant Inj 150 mg",
   type: "Injection",
 
-  image: "/products4/zemecon-1.png",
+  image: "/new_product_page/Zemecon-150.png",
   images: [
-    "/products4/zemecon-1.png",
-    "/products4/zemecon-2.png",
-    "/products4/zemecon-3.png",
+    "/new_product_page/Zemecon-150.png",
   ],
 
   strength: "150 mg",
@@ -12610,15 +12492,12 @@ after receiving this medicine.
   subtitle: "Mitomycin Inj 2 mg / 10 mg",
   type: "Injection",
 
-  image: "/products3/zitomycin2-1.png",
+  image: "/new_product_page/zitomycin-group.png",
 
   images: [
-    "/products3/zitomycin2-1.png",
-    "/products3/zitomycin2-2.png",
-    "/products3/zitomycin2-3.png",
-    "/products3/zitomycin10-1.png",
-    "/products3/zitomycin10-2.png",
-    "/products3/zitomycin10-3.png",
+    "/new_product_page/zitomycin-group.png",
+    "/new_product_page/Zitomycin-2.png",
+    "/new_product_page/Zitomycin-10.png",
   ],
 
   strength: "2 mg / 10 mg",
@@ -12772,15 +12651,12 @@ Safety and effectiveness in pediatric patients have not been established.
   subtitle: "Leuprolide Acetate Inj 3.75 mg / 11.25 mg / 22.50 mg",
   type: "Injection",
 
-  image: "/products3/zoplide1125-1.png",
+  image: "/new_product_page/zoplide-goup.png",
 
   images: [
-   
-    "/products3/zoplide1125-1.png",
-    "/products3/zoplide1125-2.png",
-    "/products3/zoplide225-1.png",
-    "/products3/zoplide225-2.png",
-   
+    "/new_product_page/zoplide-goup.png",
+    "/new_product_page/Zoplide-11.25.png",
+    "/new_product_page/Zoplide-22.50.png",
   ],
 
   strength: "3.75 mg / 11.25 mg / 22.50 mg",
@@ -12985,12 +12861,11 @@ Report any new or worsening symptoms to your doctor, nurse, or pharmacist.
   type: "Injection",
   imageClass:"zovorin-img",
 
-  image: "/products3/zovorin-1.png",
+  image: "/new_product_page/Zovorin-15.png",
 
   images: [
-    "/products3/zovorin-1.png",
-    "/products3/zovorin-2.png",
-    "/products3/zovorin-3.png",
+    "/new_product_page/Zovorin-15.png",
+    "/new_product_page/Zovorin-50.png",
   ],
 
   strength: "50 mg/5 ml",
@@ -13237,12 +13112,10 @@ Treatment should be discontinued when there is clear evidence of tumour progress
   type: "Injection",
   imageClass:"zucarfil-img",
 
-  image: "/products4/zucarfil-1.png",
+  image: "/new_product_page/Zucarfil-60.png",
 
   images: [
-    "/products4/zucarfil-1.png",
-    "/products4/zucarfil-2.png",
-    "/products4/zucarfil-3.png",
+    "/new_product_page/Zucarfil-60.png",
   ],
 
   strength: "60 mg",
@@ -13444,13 +13317,10 @@ This medicine may cause infusion-related reactions, which can be life-threatenin
   subtitle: "Cisplatin Inj 10 mg / 50 mg",
   type: "Injection",
 
-  image: "/products3/zuviplat-1.png",
+  image: "/new_product_page/Zuviplat-50.png",
 
   images: [
-    "/products3/zuviplat-1.png",
-    "/products3/zuviplat-2.png",
-    "/products3/zuviplat-3.png",
-   
+    "/new_product_page/Zuviplat-50.png",
   ],
 
   strength: "10 mg / 50 mg",
@@ -13611,12 +13481,10 @@ Tell your doctor right away if you have:
   type: "Injection",
   imageClass:"zuviplexa-img",
 
-  image: "/products3/zuviplexa-1.png",
+  image: "/new_product_page/Zuviplexa-24.png",
 
   images: [
-    "/products3/zuviplexa-1.png",
-    "/products3/zuviplexa-2.png",
-    "/products3/zuviplexa-3.png",
+    "/new_product_page/Zuviplexa-24.png",
   ],
 
   strength: "20 mg",
