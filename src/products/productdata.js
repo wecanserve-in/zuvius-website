@@ -8609,15 +8609,13 @@ This contains Sucralose, not recommended for children.
   type: "Tablet",
   imageClass:"afatinz-img",
 
-  image: "/products2/AFATNIZ-30 1.png",
+  image: "/new_product_page/Afatinz-20.png",
 
   images: [
-    "/products2/AFATNIZ-30 1.png",
-    "/products2/AFATNIZ-30 2.png",
-    "/products2/AFATNIZ-30 3.png",
-    "/products2/AFATNIZ-40 1.png",
-    "/products2/AFATNIZ-40 2.png",
-    "/products2/AFATNIZ-40 3.png",
+    "/new_product_page/Afatinz-20.png",
+    "/new_product_page/Afatinz-30.png",
+    "/new_product_page/Afatinz-40.png",
+    "/new_product_page/afatinz-group.png",
    
   ],
 
