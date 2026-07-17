@@ -34,7 +34,7 @@ export const journeyData = [
       "It was encouraging to see the youngsters open up during the interactive session. We attempted to dispel prevalent misconceptions and falsehoods about breast cancer. We also worked with the students to produce wall art and graffiti with messages about cancer awareness and living a healthy lifestyle. This helped the students spread the message to the general public.",
 
     video: "/videos/pinkstreet.mp4",
-    poster: "/gallery/pinkstreet/pinkstreetzuviuslifesciences1.webp",
+    poster: "/gallery/pinkstreet/pinkstreetzuviuslifesciences2.webp",
 
     photos: Array.from(
       { length: 14 },

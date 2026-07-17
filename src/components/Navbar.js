@@ -67,7 +67,7 @@ const Navbar = () => {
           path: "/newsroom",
         },
         {
-          name: "Press Release",
+          name: "Media Coverage",
           path: "/press-release",
         },
       ],

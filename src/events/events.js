@@ -98,13 +98,13 @@ const Events = () => {
                 className="events-initiative-card"
                 key={item.id}
               >
-                <img
-                  src={item.cardImage || item.images[0]}
-                  alt={item.title}
-                  className="events-initiative-card-image"
-                />
-
-                <div className="events-initiative-card-overlay" />
+                <div className="events-initiative-card-image-wrapper">
+                  <img
+                    src={item.cardImage || item.images[0]}
+                    alt={item.title}
+                    className="events-initiative-card-image"
+                  />
+                </div>
 
                 <div className="events-initiative-card-content">
                   <span className="events-card-category">
@@ -113,10 +113,9 @@ const Events = () => {
 
                   <h3>{item.title}</h3>
 
-                  <p>{item.cardSubtitle}</p>
-
                   <span className="events-initiative-card-button">
-                    Explore Event <strong>→</strong>
+                    Explore Event
+                    <strong>→</strong>
                   </span>
                 </div>
               </Link>
