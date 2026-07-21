@@ -76,22 +76,7 @@ const PressRelease = () => {
         </div>
       </section>
 
-      {/* FILTERS */}
-      <section className="media-filters-section">
-        <div className="media-filters">
-          {categories.map((category) => (
-            <button
-              key={category}
-              className={
-                activeFilter === category ? "active" : ""
-              }
-              onClick={() => setActiveFilter(category)}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-      </section>
+      
 
       {/* GRID */}
       <section className="media-grid-section">

@@ -379,7 +379,7 @@
 .product-card img {
   width: 100%;
   height: 260px;
-  object-fit: cover;
+   \object-fit: cover; 
   border-radius: 14px;
   margin-bottom: 18px;
 }
@@ -2462,4 +2462,1213 @@
   .products-section .carousel-btn.right {
     right: 0 !important;
   }
+}
+
+/* ==================================================
+   REQUESTED HOMEPAGE UPDATES
+   Matched to the current Home.jsx class names
+   Existing fonts, font sizes and main layout are preserved
+================================================== */
+
+/* ==================================================
+   HERO AUTO SLIDER
+================================================== */
+
+.hero-slider-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-slider-track {
+  width: 100%;
+  display: flex;
+  transition: transform 0.65s ease;
+  will-change: transform;
+}
+
+.hero-slide {
+  flex: 0 0 100%;
+  min-width: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slide-image {
+  width: 100% !important;
+  max-width: clamp(420px, 32vw, 540px) !important;
+  height: auto !important;
+  max-height: 390px !important;
+
+  margin: 0 auto;
+
+  object-fit: contain !important;
+  object-position: center;
+  transform: none !important;
+}
+
+.hero-slider-dots {
+  width: 100%;
+  margin-top: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hero-dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #c8d0da;
+
+  cursor: pointer;
+
+  transition:
+    width 0.3s ease,
+    border-radius 0.3s ease,
+    background 0.3s ease;
+}
+
+.hero-dot.active {
+  width: 24px;
+  border-radius: 20px;
+  background: #008a9a;
+}
+
+/* ==================================================
+   LEADERSHIP PRODUCT FORMATS
+================================================== */
+
+.leader-product-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+/*
+  Existing divider lines were created for four items.
+  Hide them so the fifth centered PFS row remains clean.
+*/
+
+.leader-product-grid::before,
+.leader-product-grid::after {
+  display: none !important;
+}
+
+.leader-product-type-card {
+  border-bottom: 1px solid #d9e4ec !important;
+}
+
+.leader-product-type-card:nth-child(odd):not(
+    .leader-product-type-card-full
+  ) {
+  border-right: 1px solid #d9e4ec !important;
+}
+
+.leader-product-type-card-full {
+  grid-column: 1 / -1 !important;
+
+  width: 64% !important;
+  margin: 0 auto !important;
+
+  justify-self: center !important;
+  justify-content: center !important;
+
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+/* ==================================================
+   RECENT LAUNCHES
+   Uses current recent-launches-* classes
+================================================== */
+
+.products-section {
+  background-color: #219b90 !important;
+}
+
+.products-section .section-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.products-section .section-title-light {
+  color: #ffffff !important;
+}
+
+.recent-launches-slider {
+  position: relative;
+
+  width: 100%;
+  max-width: 1300px;
+
+  margin: 0 auto;
+}
+
+.recent-launches-slide {
+  width: 100%;
+  overflow: hidden;
+}
+
+.recent-launches-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 24px;
+
+  padding: 12px 95px;
+}
+
+.home-recent-product-card {
+  min-width: 0;
+  min-height: 410px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #ffffff;
+  color: inherit;
+  text-decoration: none;
+
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.home-recent-product-card:hover {
+  color: inherit;
+  text-decoration: none;
+
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.13);
+}
+
+.home-recent-product-image {
+  width: 100%;
+  height: 260px;
+  min-height: 260px;
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+.home-recent-product-image img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  object-fit: contain;
+}
+
+.home-recent-product-content {
+  position: relative;
+
+  width: 100%;
+  min-height: 145px;
+  flex: 1;
+
+  padding: 22px 70px 22px 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  text-align: left;
+}
+
+.home-recent-product-content h3 {
+  margin: 0 0 8px;
+
+  color: #061943;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.home-recent-product-content p {
+  margin: 0;
+
+  color: #363636;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.55;
+  text-align: left;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+.home-recent-product-arrow {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef8fb;
+  color: #008a9a;
+}
+
+.home-recent-product-arrow span {
+  line-height: 1;
+}
+
+.recent-launches-slider .carousel-btn {
+  z-index: 20;
+}
+
+.recent-launches-slider .carousel-btn.left {
+  left: 18px !important;
+}
+
+.recent-launches-slider .carousel-btn.right {
+  right: 18px !important;
+}
+
+.recent-launches-dots {
+  width: 100%;
+  margin-top: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.recent-dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.5);
+
+  cursor: pointer;
+
+  transition:
+    width 0.3s ease,
+    border-radius 0.3s ease,
+    background 0.3s ease;
+}
+
+.recent-dot.active {
+  width: 24px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.products-section .view-more-btn {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.products-section .view-more-btn:hover {
+  background-color: #ffffff !important;
+  color: #219b90 !important;
+}
+
+/* ==================================================
+   CULTURE OF QUALITY
+================================================== */
+
+.accreditation-q-card .quality-image {
+  margin-bottom: 28px !important;
+}
+
+.accreditation-typewriter {
+  margin-top: 0 !important;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.accreditation-typewriter .fixed-text {
+  display: block;
+}
+
+.changing-text-row {
+  min-height: 1.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================================================
+   GLOBAL REACH HORIZONTAL LAYOUT
+================================================== */
+
+.home-reach-global-card {
+  width: 100%;
+  max-width: 1480px;
+  min-height: 0;
+
+  padding: 34px;
+
+  background: #ffffff;
+  border: 1px solid #dfeaf8;
+  border-radius: 22px;
+
+  box-shadow: 0 16px 42px rgba(16, 53, 110, 0.05);
+}
+
+.home-reach-global-top {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto 20px;
+
+  text-align: center;
+}
+
+.home-reach-global-top .home-reach-label {
+  text-align: center;
+}
+
+.home-reach-global-top .home-reach-label::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-reach-global-top h3 {
+  margin: 0 0 14px;
+
+  color: #008a9a;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.home-reach-global-top p {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  color: #363636;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.home-reach-global-map {
+  width: 100%;
+  height: 520px;
+
+  margin: 0 auto 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-reach-global-map .home-reach-video {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.home-reach-global-stats {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.home-reach-global-stat-card {
+  min-width: 0;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border: 1px solid #dfe7f2;
+  border-radius: 16px;
+
+  background: #ffffff;
+}
+
+.home-reach-global-stat-card .home-reach-icon {
+  margin-bottom: 14px;
+}
+
+.home-reach-global-stat-card strong,
+.home-reach-global-stat-card span,
+.home-reach-global-stat-card small {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.home-reach-global-stat-card strong {
+  color: #008a9a;
+  font-size: 1.42rem;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.home-reach-global-stat-card span {
+  margin-top: 3px;
+
+  color: #061943;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.home-reach-global-stat-card small {
+  margin-top: 3px;
+
+  color: #687386;
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* ==================================================
+   RESPONSIVE — REQUESTED SECTIONS ONLY
+================================================== */
+
+@media (max-width: 1024px) {
+  .hero-slide-image {
+    max-width: 420px !important;
+    max-height: 330px !important;
+  }
+
+  .recent-launches-grid {
+    padding-left: 70px;
+    padding-right: 70px;
+    gap: 18px;
+  }
+
+  .home-reach-global-map {
+    height: 400px;
+  }
+
+  .home-reach-global-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .recent-launches-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-slider-wrapper {
+    width: 100%;
+    margin: 0 auto 22px;
+  }
+
+  .hero-slide-image {
+    width: 100% !important;
+    max-width: 210px !important;
+    max-height: 210px !important;
+  }
+
+  .leader-product-type-card-full {
+    width: 100% !important;
+  }
+
+  .accreditation-q-card .quality-image {
+    margin-bottom: 22px !important;
+  }
+
+  .recent-launches-slider {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .recent-launches-grid {
+    padding: 8px 42px;
+    gap: 0;
+  }
+
+  .home-recent-product-card {
+    min-height: 365px;
+  }
+
+  .home-recent-product-image {
+    height: 215px;
+    min-height: 215px;
+    padding: 14px;
+  }
+
+  .home-recent-product-content {
+    min-height: 135px;
+    padding: 19px 58px 18px 18px;
+  }
+
+  .home-recent-product-content h3 {
+    font-size: 1rem;
+  }
+
+  .home-recent-product-content p {
+    font-size: 13px;
+  }
+
+  .home-recent-product-arrow {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .recent-launches-slider .carousel-btn.left {
+    left: 0 !important;
+  }
+
+  .recent-launches-slider .carousel-btn.right {
+    right: 0 !important;
+  }
+
+  .home-reach-global-card {
+    padding: 18px;
+  }
+
+  .home-reach-global-top p {
+    font-size: 15px;
+  }
+
+  .home-reach-global-map {
+    height: auto;
+    min-height: 260px;
+  }
+
+  .home-reach-global-stat-card {
+    padding: 16px;
+  }
+
+  .home-reach-global-stat-card strong {
+    font-size: 1.22rem;
+  }
+
+  .home-reach-global-stat-card span {
+    font-size: 0.94rem;
+  }
+
+  .home-reach-global-stat-card small {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* ==================================================
+   FINAL OVERRIDES
+   Recent Launches + Injectable Titles
+================================================== */
+
+/* Keep the complete Recent Launches section white */
+
+.products-section {
+  background-color: #ffffff !important;
+}
+
+/* Restore the original section heading color */
+
+.products-section .section-title-light {
+  color: #008a9a !important;
+}
+
+/* Green background only inside the product image area */
+
+.products-section .home-recent-product-image {
+  background-color: #219b90 !important;
+}
+
+/* Restore View More button colors */
+
+.products-section .view-more-btn {
+  color: #008a9a !important;
+  border-color: #008a9a !important;
+}
+
+.products-section .view-more-btn:hover {
+  background-color: #008a9a !important;
+  color: #ffffff !important;
+}
+
+/* Recent Launches dots on white background */
+
+.products-section .recent-dot {
+  background: rgba(0, 138, 154, 0.3) !important;
+}
+
+.products-section .recent-dot.active {
+  background: #008a9a !important;
+}
+
+/* Injectable title in two lines */
+
+.leader-injectable-title {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  gap: 2px !important;
+
+  white-space: normal !important;
+  text-align: left !important;
+}
+
+.leader-injectable-title span {
+  display: block !important;
+  width: 100%;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .leader-injectable-title {
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
+
+
+/* ==================================================
+   FIX INJECTABLE LABELS INSIDE SKU CARD
+================================================== */
+
+.leader-product-type-card {
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
+.leader-product-type-card h4 {
+  min-width: 0 !important;
+  max-width: 100% !important;
+
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+
+  text-align: left !important;
+}
+
+/* Injectable
+   Liquid */
+
+.leader-product-type-card:nth-child(3) h4,
+.leader-product-type-card:nth-child(4) h4 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+
+  line-height: 1.25 !important;
+}
+
+/* Force break after Injectable */
+
+.leader-product-type-card:nth-child(3) h4 {
+  font-size: 0 !important;
+}
+
+.leader-product-type-card:nth-child(3) h4::before {
+  content: "Injectable";
+  display: block;
+
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.leader-product-type-card:nth-child(3) h4::after {
+  content: "Liquid";
+  display: block;
+
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+/* Injectable
+   Lyophilized */
+
+.leader-product-type-card:nth-child(4) h4 {
+  font-size: 0 !important;
+}
+
+.leader-product-type-card:nth-child(4) h4::before {
+  content: "Injectable";
+  display: block;
+
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.leader-product-type-card:nth-child(4) h4::after {
+  content: "Lyophilized";
+  display: block;
+
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+/* Give both injectable cards enough internal space */
+
+.leader-product-type-card:nth-child(3),
+.leader-product-type-card:nth-child(4) {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  gap: 7px !important;
+}
+
+.leader-product-type-card:nth-child(3) img,
+.leader-product-type-card:nth-child(4) img {
+  width: 31px !important;
+  height: 31px !important;
+}
+
+/* PFS centered and contained */
+
+.leader-product-type-card-full {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.leader-product-type-card-full h4 {
+  white-space: normal !important;
+  text-align: center !important;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .leader-product-type-card:nth-child(3) h4::before,
+  .leader-product-type-card:nth-child(3) h4::after,
+  .leader-product-type-card:nth-child(4) h4::before,
+  .leader-product-type-card:nth-child(4) h4::after {
+    font-size: 0.78rem;
+  }
+
+  .leader-product-type-card:nth-child(3),
+  .leader-product-type-card:nth-child(4) {
+    gap: 5px !important;
+  }
+
+  .leader-product-type-card:nth-child(3) img,
+  .leader-product-type-card:nth-child(4) img {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+/* Make the 250+ SKU infographic box slightly wider */
+
+.leader-section {
+  grid-template-columns:
+    minmax(0, 1.42fr)
+    minmax(390px, 0.78fr) !important;
+}
+
+.leader-infographic-card {
+  max-width: 520px !important;
+}
+
+/* Keep tablet/mobile unchanged */
+
+@media (max-width: 1100px) {
+  .leader-section {
+    grid-template-columns: 1fr !important;
+  }
+
+  .leader-infographic-card {
+    max-width: 520px !important;
+  }
+}
+
+/* Make Domestic Reach and Global Reach same size as OUR REACH */
+
+.home-reach-label,
+.home-reach-global-top .home-reach-label {
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.3 !important;
+  text-align: center !important;
+  margin-bottom: 12px !important;
+}
+
+/* Center the underline below both headings */
+
+.home-reach-label::after,
+.home-reach-global-top .home-reach-label::after {
+  width: 58px !important;
+  height: 3px !important;
+  margin: 12px auto 0 !important;
+}
+
+/* Keep domestic content aligned normally */
+
+.home-reach-card .home-reach-content > .home-reach-label {
+  display: block !important;
+  text-align: left !important;
+}
+
+.home-reach-card
+  .home-reach-content
+  > .home-reach-label::after {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .home-reach-label,
+  .home-reach-global-top .home-reach-label {
+    font-size: 26px !important;
+  }
+}
+
+/* ==================================================
+   GLOBAL REACH STATS — SMALL HORIZONTAL CARDS
+================================================== */
+
+.home-reach-global-stats {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+
+.home-reach-global-stat-card {
+  min-height: 110px !important;
+  padding: 16px 18px !important;
+
+  display: grid !important;
+  grid-template-columns: 58px minmax(0, 1fr) !important;
+  align-items: center !important;
+  column-gap: 14px !important;
+
+  text-align: left !important;
+}
+
+.home-reach-global-stat-card .home-reach-icon {
+  width: 54px !important;
+  height: 54px !important;
+  min-width: 54px !important;
+
+  margin: 0 !important;
+  grid-row: 1 / 4 !important;
+}
+
+.home-reach-global-stat-card .home-reach-icon svg {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.home-reach-global-stat-card strong,
+.home-reach-global-stat-card span,
+.home-reach-global-stat-card small {
+  width: auto !important;
+  text-align: left !important;
+}
+
+.home-reach-global-stat-card strong {
+  font-size: 1.3rem !important;
+}
+
+.home-reach-global-stat-card span {
+  margin-top: 2px !important;
+}
+
+.home-reach-global-stat-card small {
+  margin-top: 2px !important;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .home-reach-global-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .home-reach-global-stat-card {
+    grid-template-columns: 50px minmax(0, 1fr) !important;
+    padding: 14px !important;
+    column-gap: 10px !important;
+  }
+
+  .home-reach-global-stat-card .home-reach-icon {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .home-reach-global-stats {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .home-reach-global-stat-card {
+    min-height: 92px !important;
+    grid-template-columns: 52px minmax(0, 1fr) !important;
+    padding: 14px 16px !important;
+  }
+
+  .home-reach-global-stat-card .home-reach-icon {
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
+  }
+}
+
+/* ==================================================
+   GLOBAL REACH STATS — NO CARDS, ONLY DIVIDER LINES
+================================================== */
+
+.home-reach-global-stats {
+  width: 100% !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 0 !important;
+}
+
+.home-reach-global-stat-card {
+  min-height: 96px !important;
+  padding: 12px 26px !important;
+
+  display: grid !important;
+  grid-template-columns: 56px minmax(0, 1fr) !important;
+  align-items: center !important;
+  column-gap: 14px !important;
+
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+
+  text-align: left !important;
+}
+
+/* Vertical divider between stats */
+
+.home-reach-global-stat-card:not(:last-child) {
+  border-right: 1px solid #dfe7f2 !important;
+}
+
+.home-reach-global-stat-card .home-reach-icon {
+  width: 52px !important;
+  height: 52px !important;
+  min-width: 52px !important;
+
+  margin: 0 !important;
+
+  grid-row: 1 / 4 !important;
+}
+
+.home-reach-global-stat-card .home-reach-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.home-reach-global-stat-card strong,
+.home-reach-global-stat-card span,
+.home-reach-global-stat-card small {
+  width: auto !important;
+  margin: 0 !important;
+
+  text-align: left !important;
+}
+
+.home-reach-global-stat-card strong {
+  font-size: 1.3rem !important;
+}
+
+.home-reach-global-stat-card span {
+  margin-top: 2px !important;
+}
+
+.home-reach-global-stat-card small {
+  margin-top: 2px !important;
+}
+
+/* Mobile: horizontal divider lines */
+
+@media (max-width: 700px) {
+  .home-reach-global-stats {
+    grid-template-columns: 1fr !important;
+  }
+
+  .home-reach-global-stat-card {
+    min-height: 88px !important;
+    padding: 14px 8px !important;
+
+    grid-template-columns: 52px minmax(0, 1fr) !important;
+  }
+
+  .home-reach-global-stat-card:not(:last-child) {
+    border-right: none !important;
+    border-bottom: 1px solid #dfe7f2 !important;
+  }
+
+  .home-reach-global-stat-card .home-reach-icon {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+  }
+}
+
+/* Make Recent Launches product images bigger */
+
+.home-recent-product-image {
+  height: 300px !important;
+  min-height: 300px !important;
+  padding: 10px !important;
+}
+
+.home-recent-product-image img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  transform: scale(1.5);
+  object-fit: contain !important;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .home-recent-product-image {
+    height: 245px !important;
+    min-height: 245px !important;
+    padding: 8px !important;
+  }
+}
+
+.recent-image-zydrox-cap {
+  transform: scale(2);
+}
+
+/* Zydrox image size */
+.home-recent-product-image .recent-image-zydrox-cap {
+  transform: scale(2) !important;
+}
+
+/* Acalataz image size */
+.home-recent-product-image .recent-image-acalataz {
+  transform: scale(2) !important;
+}
+
+/* GLOBAL MAP — SMALLER, CENTERED */
+
+.home-reach-global-card {
+  width: 96% !important;
+  max-width: 1250px !important;
+  min-height: auto !important;
+  padding: 24px !important;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+}
+
+.home-reach-global-top {
+  margin-bottom: 12px !important;
+}
+
+.home-reach-global-map {
+  width: 96% !important;
+  height: 420px !important;
+  margin: 0 auto 18px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-reach-global-map .home-reach-video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+.home-reach-global-stats {
+  margin-top: 10px !important;
+}
+
+.home-reach-global-map {
+  width: 100% !important;
+  height: 430px !important;
+  overflow: hidden !important;
+  margin: 0 auto 15px !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-reach-global-map .home-reach-video {
+  width: 150% !important;
+  height: 100% !important;
+  max-width: none !important;
+
+  object-fit: contain !important;
+  transform: none !important;
+}
+
+.home-reach-global-map {
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 auto 16px !important;
+  overflow: hidden !important;
+}
+
+.home-reach-global-map .home-reach-video {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  transform: none !important;
 }

@@ -9,13 +9,9 @@ const Navbar = () => {
 
   const navData = [
     {
-      name: "Zuvius",
-      path: "/",
+      name: "About Us",
+      path: "/aboutus",
       dropdown: [
-        {
-          name: "About Us",
-          path: "/aboutus",
-        },
         {
           name: "CSR",
           path: "/csr",
@@ -36,11 +32,8 @@ const Navbar = () => {
     },
     {
       name: "Cancer",
+      path: "/whatiscancer",
       dropdown: [
-        {
-          name: "What is Cancer",
-          path: "/whatiscancer",
-        },
         {
           name: "Prevention",
           path: "/prevention",
@@ -60,12 +53,9 @@ const Navbar = () => {
       path: "/careers",
     },
     {
-      name: "Media",
+      name: "Newsroom",
+      path: "/newsroom",
       dropdown: [
-        {
-          name: "Newsroom",
-          path: "/newsroom",
-        },
         {
           name: "Media Coverage",
           path: "/press-release",
@@ -93,13 +83,19 @@ const Navbar = () => {
     );
   };
 
+  const toggleMobileMenu = () => {
+    setMobileOpen((currentValue) => !currentValue);
+    setMobileDropdown(null);
+    setActiveDropdown(null);
+  };
+
   return (
     <nav className="navbar">
       <div className="nav-logo">
         <Link to="/" onClick={closeMobileMenu}>
           <img
             src="/zuvius-logo.jpeg"
-            alt="Zuvius Logo"
+            alt="Zuvius Lifesciences"
             className="logo-img"
           />
         </Link>
@@ -108,7 +104,7 @@ const Navbar = () => {
       <button
         type="button"
         className={`hamburger-btn ${mobileOpen ? "active" : ""}`}
-        onClick={() => setMobileOpen((currentValue) => !currentValue)}
+        onClick={toggleMobileMenu}
         aria-label="Toggle navigation menu"
         aria-expanded={mobileOpen}
       >
@@ -136,26 +132,13 @@ const Navbar = () => {
             {item.dropdown ? (
               <>
                 <div className="dropdown-container">
-                  {item.path ? (
-                    <Link
-                      to={item.path}
-                      className="nav-link-dropdown"
-                      onClick={closeMobileMenu}
-                    >
-                      {item.name}
-                    </Link>
-                  ) : (
-                    <button
-                      type="button"
-                      className="nav-link-dropdown nav-link-nonclick"
-                      onClick={(event) =>
-                        toggleMobileDropdown(event, index)
-                      }
-                      aria-expanded={mobileDropdown === index}
-                    >
-                      {item.name}
-                    </button>
-                  )}
+                  <NavLink
+                    to={item.path}
+                    className="nav-link-dropdown"
+                    onClick={closeMobileMenu}
+                  >
+                    {item.name}
+                  </NavLink>
 
                   <button
                     type="button"

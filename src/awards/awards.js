@@ -58,22 +58,26 @@ const membershipItems = [
   {
     title: "Bombay Chamber of Commerce & Industry",
     image: "/membership/bombay chamber logo.png",
+    info:
+      "Zuvius Lifesciences is associated with the Bombay Chamber of Commerce & Industry, supporting responsible business practices, collaboration, industry development and sustainable organisational growth.",
   },
   {
     title: "Certificate of Membership",
     image: "/membership/cert of membership.png",
+    info:
+      "This certificate represents Zuvius Lifesciences’ membership in a recognised industry organisation and reflects its commitment to professional standards, collaboration and continuous development.",
   },
   {
     title: "IDMA Certificate",
     image: "/membership/idma cert.png",
+    info:
+      "Membership with the Indian Drug Manufacturers’ Association reflects Zuvius Lifesciences’ association with the pharmaceutical industry and its commitment to quality, compliance and responsible manufacturing practices.",
   },
   {
     title: "Pharmexcil Certificate",
     image: "/membership/pharmixcil cert.png",
-  },
-  {
-    title: "Udyog Aadhaar Certificate",
-    image: "/membership/udyog adhar cert.png",
+    info:
+      "The Pharmexcil membership reflects Zuvius Lifesciences’ participation in India’s pharmaceutical export community and its commitment to delivering quality healthcare products across international markets.",
   },
 ];
 
@@ -112,9 +116,9 @@ const Awards = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [modalType, setModalType] = useState(null);
 
-  const openAwardModal = (award) => {
-    setSelectedItem(award);
-    setModalType("award");
+  const openDetailModal = (item, type) => {
+    setSelectedItem(item);
+    setModalType(type);
   };
 
   const openImageModal = (item) => {
@@ -151,62 +155,79 @@ const Awards = () => {
     }
   };
 
+  const handleCardKeyDown = (event, callback) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      callback();
+    }
+  };
+
+  const isDetailModal =
+    modalType === "award" || modalType === "membership";
+
   return (
     <div className="awards-page">
       <PageBanner
         image="/awards and certifications/awardsbanner.png"
         title={
           <>
-            AWARDS & <br />
+            AWARDS &amp; <br />
             RECOGNITION
           </>
         }
         description=""
-        alt="Awards Hero"
+        alt="Awards and recognition"
       />
 
-      <div className="awards-content">
-        {/* AWARDS FIRST */}
+      <main className="awards-content">
+        {/* Awards and certification */}
 
         <section className="awards-certification">
-  <div className="awards-section-head">
-    <h2>AWARDS & CERTIFICATION</h2>
-    <div className="awards-small-line"></div>
-  </div>
-
-  <p>
-    Zuvius Lifesciences has garnered numerous accolades,
-    certifications, and affiliations, solidifying its standing as a
-    prominent player in the healthcare industry.
-  </p>
-
-  <div className="awards-timeline-wrap">
-    <div className="awards-timeline-grid">
-      {awardItems.map((award) => (
-        <div
-          className="awards-timeline-item awards-clickable-image"
-          key={award.title}
-          onClick={() => openAwardModal(award)}
-          role="button"
-          tabIndex={0}
-          onKeyDown={(event) => {
-            if (event.key === "Enter" || event.key === " ") {
-              openAwardModal(award);
-            }
-          }}
-        >
-          <div className="awards-image-box">
-            <img src={award.image} alt={award.title} />
+          <div className="awards-section-head">
+            <h2>AWARDS &amp; CERTIFICATION</h2>
+            <div className="awards-small-line" />
           </div>
 
-          <h4>{award.title}</h4>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+          <p>
+            Zuvius Lifesciences has garnered numerous accolades,
+            certifications and affiliations, solidifying its standing
+            as a prominent player in the healthcare industry.
+          </p>
 
-        {/* MEMBERSHIP SECOND */}
+          <div className="awards-timeline-wrap">
+            <div className="awards-timeline-grid">
+              {awardItems.map((award) => (
+                <div
+                  className="awards-timeline-item awards-clickable-image"
+                  key={award.title}
+                  onClick={() =>
+                    openDetailModal(award, "award")
+                  }
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`View details for ${award.title}`}
+                  onKeyDown={(event) =>
+                    handleCardKeyDown(event, () =>
+                      openDetailModal(award, "award")
+                    )
+                  }
+                >
+                  <div className="awards-image-box">
+                    <img
+                      src={award.image}
+                      alt={award.title}
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h4>{award.title}</h4>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Membership */}
 
         <section className="awards-membership-section">
           <div className="awards-section-head">
@@ -226,24 +247,30 @@ const Awards = () => {
                 type="button"
                 className="awards-membership-card"
                 key={item.title}
-                onClick={() => openImageModal(item)}
-                aria-label={`View ${item.title}`}
+                onClick={() =>
+                  openDetailModal(item, "membership")
+                }
+                aria-label={`View details for ${item.title}`}
               >
                 <div className="awards-membership-logo">
-                  <img src={item.image} alt={item.title} />
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    loading="lazy"
+                  />
                 </div>
 
                 <h4>{item.title}</h4>
 
                 <span className="certificate-view-text">
-                  Click to zoom
+                  View details
                 </span>
               </button>
             ))}
           </div>
         </section>
 
-        {/* ACCREDITATION LAST */}
+        {/* Accreditation */}
 
         <section className="awards-accreditation-card">
           <div className="awards-section-head">
@@ -266,16 +293,20 @@ const Awards = () => {
                 onClick={() => openImageModal(item)}
                 aria-label={`View ${item.title} accreditation`}
               >
-                <img src={item.image} alt={item.title} />
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                />
 
                 <span>{item.title}</span>
               </button>
             ))}
           </div>
         </section>
-      </div>
+      </main>
 
-      {/* POPUP MODAL */}
+      {/* Popup modal */}
 
       {selectedItem && (
         <div
@@ -285,7 +316,7 @@ const Awards = () => {
         >
           <div
             className={`awards-image-modal-content ${
-              modalType === "award"
+              isDetailModal
                 ? "awards-detail-modal"
                 : "awards-zoom-modal"
             }`}
@@ -302,7 +333,7 @@ const Awards = () => {
               ×
             </button>
 
-            {modalType === "award" ? (
+            {isDetailModal ? (
               <div className="award-popup-layout">
                 <div className="award-popup-image">
                   <img
@@ -313,7 +344,9 @@ const Awards = () => {
 
                 <div className="award-popup-info">
                   <span className="award-popup-label">
-                    Award & Recognition
+                    {modalType === "membership"
+                      ? "Membership"
+                      : "Award & Recognition"}
                   </span>
 
                   <h3 id="awards-modal-title">

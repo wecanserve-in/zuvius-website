@@ -1,177 +1,294 @@
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer,
+.footer * {
+  box-sizing: border-box;
+}
+
 .footer {
+  position: relative;
+
   width: 100%;
+  overflow: hidden;
+
   background: #219b90;
-  color: #fff;
+  color: #ffffff;
+
   font-family: "Poppins", sans-serif;
 }
 
+/*
+  White curved cutout behind the logo.
+  This creates the curved top-left section.
+*/
+
+.footer::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 330px;
+  height: 120px;
+
+  background: #ffffff;
+  border-bottom-right-radius: 150px;
+
+  z-index: 0;
+}
+
+/* ==================================================
+   FOOTER CONTENT
+================================================== */
+
 .footer-content {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
   max-width: 1250px;
+
   margin: 0 auto;
-  padding: 60px 40px 45px;
+  padding: 55px 40px 45px;
+
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
-  gap: 50px;
+  grid-template-columns: 1.45fr 1fr 0.8fr 1.3fr;
   align-items: flex-start;
+  gap: 50px;
+}
+
+/* ==================================================
+   LOGO AND ADDRESS
+================================================== */
+
+.address-col {
+  position: relative;
 }
 
 .footer-logo {
-  margin-bottom: 24px;
+  width: 220px;
+  min-height: 80px;
+
+  margin: -34px 0 52px -8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .footer-logo img {
-  width: 180px;
+  width: 185px;
+  max-width: 100%;
   height: auto;
+
   display: block;
+
+  object-fit: contain;
+}
+
+.footer-address {
+  max-width: 285px;
 }
 
 .address-col p {
-  margin: 0 0 8px;
+  margin: 0 0 5px;
+
+  color: rgba(255, 255, 255, 0.92);
+
   font-size: 15px;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  line-height: 1.7;
 }
+
+/* ==================================================
+   HEADINGS
+================================================== */
 
 .footer-col h3 {
+  margin: 0 0 22px;
+
+  color: #ffffff;
+
   font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #fff;
 }
 
+/* ==================================================
+   LINKS
+================================================== */
+
 .footer-col ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .footer-col li {
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .footer-col a {
-  text-decoration: none;
+  display: inline-block;
+
   color: rgba(255, 255, 255, 0.88);
+
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
-  transition: all 0.25s ease;
-  display: inline-block;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
-.footer-col a:hover {
+.footer-col ul a:hover {
   color: #ffffff;
   transform: translateX(4px);
 }
+
+/* ==================================================
+   MEDIA
+================================================== */
 
 .media-col {
   display: flex;
   flex-direction: column;
 }
 
+/* ==================================================
+   SOCIAL ICONS
+================================================== */
+
 .social-icons {
-  display: flex;
-  gap: 12px;
   margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .social-icons a {
-  width: 40px;
-  height: 40px;
-  background: #ffffff;
-  color: #1f8fd6;
-  border-radius: 6px;
+  width: 42px;
+  height: 42px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
+
+  border-radius: 50%;
+
+  color: #ffffff;
   font-size: 18px;
-  transition: all 0.3s ease;
+
+  box-shadow: 0 6px 15px rgba(6, 25, 67, 0.14);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
 }
 
 .social-icons a:hover {
-  background: #0f6faa;
-  color: #fff;
-  transform: translateY(-3px);
+  color: #ffffff;
+  transform: translateY(-4px) scale(1.04);
+
+  filter: brightness(1.06);
+
+  box-shadow: 0 10px 22px rgba(6, 25, 67, 0.22);
 }
+
+/* Facebook real brand colour */
+
+.social-icons .social-facebook {
+  background: #1877f2;
+}
+
+/* LinkedIn real brand colour */
+
+.social-icons .social-linkedin {
+  background: #0a66c2;
+}
+
+/* Instagram brand gradient */
+
+.social-icons .social-instagram {
+  background:
+    radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
+}
+
+/* YouTube real brand colour */
+
+.social-icons .social-youtube {
+  background: #ff0000;
+}
+
+/* ==================================================
+   FOOTER BOTTOM
+================================================== */
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  text-align: center;
+  position: relative;
+  z-index: 1;
+
   padding: 18px 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+
+  color: rgba(255, 255, 255, 0.84);
+
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  line-height: 1.6;
+
+  text-align: center;
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
-  .footer-content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
-
-  .footer-logo img {
-    width: 160px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    padding: 45px 24px 35px;
-    gap: 35px;
-    text-align: center;
-  }
-
-  .footer-logo img {
-    width: 150px;
-    margin: 0 auto;
-  }
-
-  .footer-col h3 {
-    font-size: 17px;
-    margin-bottom: 16px;
-  }
-
-  .footer-col a,
-  .address-col p {
-    font-size: 14px;
-  }
-
-  .social-icons {
-    margin-top: 18px;
-    justify-content: center;
-  }
-
-  .social-icons a {
-    width: 38px;
-    height: 38px;
-  }
-
-  .media-col {
-    align-items: center;
-  }
-}
+/* ==================================================
+   DEVELOPER LINK
+================================================== */
 
 .developer-link {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 700;
   position: relative;
-  transition: all 0.3s ease;
+
+  color: #ffffff;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    opacity 0.3s ease,
+    color 0.3s ease;
 }
 
 .developer-link::after {
   content: "";
+
   position: absolute;
   left: 0;
   bottom: -3px;
+
   width: 0;
   height: 2px;
+
   background: #ffffff;
+
   transition: width 0.3s ease;
 }
 
@@ -182,4 +299,316 @@
 
 .developer-link:hover::after {
   width: 100%;
+}
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1024px) {
+  .footer::before {
+    width: 290px;
+    height: 145px;
+
+    border-bottom-right-radius: 130px;
+  }
+
+  .footer-content {
+    padding: 55px 35px 42px;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 45px 55px;
+  }
+
+  .footer-logo {
+    margin-top: -32px;
+    margin-bottom: 48px;
+  }
+
+  .footer-logo img {
+    width: 165px;
+  }
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+  .footer::before {
+    width: 250px;
+    height: 100px;
+
+    border-bottom-right-radius: 115px;
+  }
+
+  .footer-content {
+    padding: 38px 24px 35px;
+
+    grid-template-columns: 1fr;
+    gap: 36px;
+
+    text-align: center;
+  }
+
+  .address-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    width: 180px;
+    min-height: 65px;
+
+    margin: -22px auto 50px;
+
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    width: 150px;
+  }
+
+  .footer-address {
+    max-width: 310px;
+  }
+
+  .footer-col h3 {
+    margin-bottom: 16px;
+
+    font-size: 17px;
+  }
+
+  .footer-col a,
+  .address-col p {
+    font-size: 14px;
+  }
+
+  .media-col {
+    align-items: center;
+  }
+
+  .social-icons {
+    margin-top: 18px;
+
+    justify-content: center;
+  }
+
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+
+    font-size: 17px;
+  }
+
+  .footer-bottom {
+    padding: 16px 18px;
+
+    font-size: 13px;
+  }
+}
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 420px) {
+  .footer::before {
+    width: 215px;
+    height: 115px;
+
+    border-bottom-right-radius: 105px;
+  }
+
+  .footer-content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .footer-logo {
+    width: 160px;
+    margin-top: -18px;
+    margin-bottom: 47px;
+  }
+
+  .footer-logo img {
+    width: 140px;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-icons a {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* Mobile logo alignment inside left curve */
+
+@media (max-width: 768px) {
+  .footer-content {
+    text-align: center;
+  }
+
+  .address-col {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-logo {
+    width: 180px;
+    min-height: 65px;
+
+    margin: -22px 0 50px 0;
+
+    justify-content: flex-start;
+  }
+
+  .footer-logo img {
+    width: 150px;
+    margin: 0;
+  }
+
+  .footer-address {
+    width: 100%;
+    max-width: 310px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-logo {
+    width: 160px;
+    margin: -18px 0 47px 0;
+  }
+
+  .footer-logo img {
+    width: 140px;
+  }
+}
+
+/* Center curve and logo on mobile */
+
+@media (max-width: 768px) {
+  .footer::before {
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 250px;
+    height: 100px;
+
+    border-bottom-left-radius: 115px;
+    border-bottom-right-radius: 115px;
+  }
+
+  .address-col {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 180px;
+    min-height: 65px;
+
+    margin: -22px auto 50px;
+
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .footer-address {
+    width: 100%;
+    max-width: 310px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer::before {
+    width: 215px;
+    height: 115px;
+
+    border-bottom-left-radius: 105px;
+    border-bottom-right-radius: 105px;
+  }
+
+  .footer-logo {
+    width: 160px;
+    margin: -18px auto 47px;
+  }
+
+  .footer-logo img {
+    width: 140px;
+  }
+}
+
+
+/* Made in India badge — top right */
+
+.footer {
+  position: relative;
+}
+
+.made-in-india-badge {
+  position: absolute;
+  top: 28px;
+  right: 38px;
+  z-index: 3;
+
+  width: 80px;
+  height: 80px;
+
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #ffffff;
+  border-radius: 50%;
+
+  box-shadow: 0 10px 25px rgba(6, 25, 67, 0.16);
+}
+
+.made-in-india-badge img {
+  width: 82%;
+  height: 82%;
+  transform: scale(1.8);
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .made-in-india-badge {
+    top: 24px;
+    right: 28px;
+
+    width: 105px;
+    height: 105px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .made-in-india-badge {
+    top: 20px;
+    right: 18px;
+
+    width: 88px;
+    height: 88px;
+  }
 }

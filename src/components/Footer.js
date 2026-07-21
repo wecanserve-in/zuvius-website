@@ -8,119 +8,207 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-// change path
-
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-content">
+      {/* Made in India badge */}
+      <div className="made-in-india-badge">
+        <img
+          src="/made-in-india.png"
+          alt="Made in India"
+        />
+      </div>
 
-        {/* Address */}
+      <div className="footer-content">
+        {/* Logo and address */}
         <div className="footer-col address-col">
           <div className="footer-logo">
-            <img src= "/zuvius-logo.jpeg" alt="Logo" />
+            <img
+              src="/zuvius-logo.jpeg"
+              alt="Zuvius Lifesciences"
+            />
           </div>
 
-          <p>B/108-113,</p>
-          <p>Kanara Business Centre,</p>
-          <p>Ghatkopar East,</p>
-          <p>Mumbai 400075</p>
+          <div className="footer-address">
+            <p>
+              B/106-113, Link Rd, near Everest Gardens,
+            </p>
+            <p>
+              Sawali Society, Laxmi Nagar,
+            </p>
+            <p>
+              Ghatkopar East, Mumbai,
+            </p>
+            <p>
+              Maharashtra 400075
+            </p>
+          </div>
         </div>
 
-        {/* Useful Links */}
+        {/* Useful links */}
         <div className="footer-col">
-          <h3>USEFUL LINKS</h3>
+          <h3>Useful Links</h3>
 
           <ul>
-            <li><a href="/">Zuvius</a></li>
-            <li><a href="/products">Product</a></li>
-            <li><a href="/whatiscancer">What is Cancer</a></li>
-            <li><a href="/types-of-cancer">Types of cancer</a></li>
-            <li><a href="/contact">Partner With Us</a></li>
-            <li><a href="/awards-recognition">Awards & Recognition</a></li>
-            <li><a href="/newsroom">NewsRoom</a></li>
-            <li><a href="/contact">Contact Us</a></li>
+            <li>
+              <a href="/about-us">About Us</a>
+            </li>
+
+            <li>
+              <a href="/products">Products</a>
+            </li>
+
+            <li>
+              <a href="/whatiscancer">
+                What is Cancer
+              </a>
+            </li>
+
+            <li>
+              <a href="/types-of-cancer">
+                Types of Cancer
+              </a>
+            </li>
+
+            <li>
+              <a href="/contact">
+                Partner With Us
+              </a>
+            </li>
+
+            <li>
+              <a href="/awards-recognition">
+                Awards &amp; Recognition
+              </a>
+            </li>
+
+            <li>
+              <a href="/newsroom">
+                Newsroom
+              </a>
+            </li>
+
+            <li>
+              <a href="/contact">
+                Contact Us
+              </a>
+            </li>
           </ul>
         </div>
 
-        {/* Category */}
+        {/* Products */}
         <div className="footer-col">
-          <h3>PRODUCTS</h3>
+          <h3>Products</h3>
 
           <ul>
-            <li><a href="/">Oncoace</a></li>
-            <li><a href="/">Nutrazeutica</a></li>
+            <li>
+              <a href="/products">
+                OncoAce
+              </a>
+            </li>
+
+            <li>
+              <a href="/products">
+                Nutrazeutica
+              </a>
+            </li>
           </ul>
         </div>
 
         {/* Media */}
         <div className="footer-col media-col">
-          <h3>MEDIA</h3>
+          <h3>Media</h3>
 
           <ul>
-            <li><a href="/newsroom">Newsroom</a></li>
-            <li><a href="/">Press Release</a></li>
-            <li><a href="/events">Events Conference and Participation</a></li>
-            <li><a href="/">Blogs</a></li>
-            <li><a href="/">Testimonials</a></li>
+            <li>
+              <a href="/newsroom">
+                Newsroom
+              </a>
+            </li>
+
+            <li>
+              <a href="/press-release">
+                Press Release
+              </a>
+            </li>
+
+            <li>
+              <a href="/events">
+                Events, Conferences &amp; Participation
+              </a>
+            </li>
+
+            <li>
+              <a href="/blogs">
+                Blogs
+              </a>
+            </li>
+
+            <li>
+              <a href="/testimonials">
+                Testimonials
+              </a>
+            </li>
           </ul>
 
           <div className="social-icons">
-  <a
-    href="https://www.facebook.com/ZuviusIndia/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Facebook"
-  >
-    <FaFacebookF />
-  </a>
+            <a
+              href="https://www.facebook.com/ZuviusIndia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="social-facebook"
+            >
+              <FaFacebookF />
+            </a>
 
-  <a
-    href="https://www.linkedin.com/company/zuvius-lifesciences/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn"
-  >
-    <FaLinkedinIn />
-  </a>
+            <a
+              href="https://www.linkedin.com/company/zuvius-lifesciences/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="social-linkedin"
+            >
+              <FaLinkedinIn />
+            </a>
 
-  <a
-    href="https://www.instagram.com/zuviuslifesciences/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Instagram"
-  >
-    <FaInstagram />
-  </a>
+            <a
+              href="https://www.instagram.com/zuviuslifesciences/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="social-instagram"
+            >
+              <FaInstagram />
+            </a>
 
-  <a
-    href="https://www.youtube.com/@zuviuslifesciences"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="YouTube"
-  >
-    <FaYoutube />
-  </a>
-</div>
+            <a
+              href="https://www.youtube.com/@zuviuslifesciences"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="social-youtube"
+            >
+              <FaYoutube />
+            </a>
+          </div>
         </div>
-
       </div>
 
-    <div className="footer-bottom">
-  © {new Date().getFullYear()} All rights reserved by Zuvius LifeSciences |
-  Design & Developed By{" "}
-  <a
-    href="https://www.wecanserve.in/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="developer-link"
-  >
-    WeCanServe
-  </a>
-</div>
+      <div className="footer-bottom">
+        © {new Date().getFullYear()} All rights reserved by
+        Zuvius LifeSciences | Design &amp; Developed By{" "}
+        <a
+          href="https://www.wecanserve.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="developer-link"
+        >
+          WeCanServe
+        </a>
+      </div>
     </footer>
   );
 };
 
 export default Footer;
-

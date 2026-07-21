@@ -157,8 +157,8 @@ const AboutUs = () => {
         image="/aboutus/aboutsusbanner.png"
         title={
           <>
-            Redefining <br />
-            Life Together.
+            Redefining Health <br />
+            Rediscovering Life
           </>
         }
         description=""

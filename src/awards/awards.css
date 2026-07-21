@@ -1,9 +1,12 @@
 .awards-page {
   width: 100%;
+  padding-bottom: 0;
+
+  overflow-x: hidden;
+
   background: #ffffff;
   color: #061943;
-  overflow-x: hidden;
-  padding-bottom: 0;
+
   font-family: inherit;
 }
 
@@ -19,8 +22,9 @@
 
 .awards-content {
   width: 100%;
-  background: #ffffff;
   padding: 34px 0 90px;
+
+  background: #ffffff;
 }
 
 /* ==================================================
@@ -29,8 +33,9 @@
 
 .awards-section-head {
   width: 100%;
-  text-align: center;
   margin-bottom: 34px;
+
+  text-align: center;
 }
 
 .awards-section-head h2,
@@ -38,6 +43,7 @@
   margin: 0 0 18px;
 
   color: #008a9a;
+
   font-size: 34px;
   font-weight: 900;
   line-height: 1.2;
@@ -57,6 +63,7 @@
   margin: 0 auto 52px;
 
   color: #000000;
+
   font-size: 21px;
   font-weight: 600;
   line-height: 1.55;
@@ -65,7 +72,6 @@
 
 /* ==================================================
    AWARDS AND CERTIFICATION
-   ORIGINAL DESIGN — NUMBERS REMOVED
 ================================================== */
 
 .awards-certification {
@@ -81,6 +87,7 @@
   margin: 0 auto 52px;
 
   color: #000000;
+
   font-size: 21px;
   font-weight: 600;
   line-height: 1.55;
@@ -110,10 +117,10 @@
   min-width: 0;
   padding: 0 8px;
 
+  border-radius: 14px;
+
   text-align: center;
   cursor: pointer;
-
-  border-radius: 14px;
 
   transition:
     transform 0.3s ease,
@@ -161,6 +168,7 @@
   margin: 18px auto 0;
 
   color: #061943;
+
   font-size: 20px;
   font-weight: 900;
   line-height: 1.3;
@@ -170,7 +178,6 @@
 
 /* ==================================================
    MEMBERSHIP
-   NORMAL HEADING + FIVE CERTIFICATE CARDS
 ================================================== */
 
 .awards-membership-section {
@@ -192,15 +199,15 @@
   min-width: 0;
 
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
 }
 
 .awards-membership-card {
   width: 100%;
   min-width: 0;
-  min-height: 390px;
-  padding: 20px 16px 24px;
+  min-height: 430px;
+  padding: 18px 16px 24px;
 
   display: flex;
   flex-direction: column;
@@ -214,7 +221,7 @@
   font-family: inherit;
   text-align: center;
 
-  cursor: zoom-in;
+  cursor: pointer;
 
   box-shadow: 0 12px 32px rgba(6, 25, 67, 0.07);
 
@@ -239,25 +246,25 @@
 
 .awards-membership-logo {
   width: 100%;
-  height: 200px;
+  height: 275px;
   margin-bottom: 22px;
-  padding: 18px;
+  padding: 8px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: #f7fbfd;
-  border-radius: 14px;
-
   overflow: hidden;
+
+  background: #ffffff;
+  border-radius: 14px;
 }
 
 .awards-membership-logo img {
   width: 100%;
   height: 100%;
-  max-width: 150px;
-  max-height: 165px;
+  max-width: 260px;
+  max-height: 255px;
 
   object-fit: contain;
 
@@ -267,7 +274,7 @@
 .awards-membership-card:hover
   .awards-membership-logo
   img {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .awards-membership-card h4 {
@@ -276,12 +283,12 @@
   padding: 0 4px;
 
   color: #061943;
+
   font-size: 18px;
   font-weight: 800;
   line-height: 1.4;
 
   overflow-wrap: break-word;
-  word-break: normal;
 }
 
 .certificate-view-text {
@@ -289,12 +296,13 @@
   padding-top: 16px;
 
   color: #008a9a;
+
   font-size: 13px;
   font-weight: 800;
 }
 
 /* ==================================================
-   ACCREDITATION — LAST SECTION
+   ACCREDITATION
 ================================================== */
 
 .awards-accreditation-card {
@@ -379,6 +387,7 @@
 
 .awards-accreditation-item span {
   color: #061943;
+
   font-size: 14px;
   font-weight: 800;
   line-height: 1.3;
@@ -476,7 +485,7 @@
 }
 
 /* ==================================================
-   AWARD DETAILS POPUP
+   AWARD AND MEMBERSHIP DETAILS POPUP
 ================================================== */
 
 .awards-detail-modal {
@@ -488,7 +497,9 @@
   width: 100%;
 
   display: grid;
-  grid-template-columns: minmax(340px, 1fr) minmax(280px, 0.8fr);
+  grid-template-columns:
+    minmax(340px, 1fr)
+    minmax(280px, 0.8fr);
   gap: 40px;
   align-items: center;
 }
@@ -524,6 +535,7 @@
   margin-bottom: 14px;
 
   color: #008a9a;
+
   font-size: 13px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -534,6 +546,7 @@
   margin: 0;
 
   color: #061943;
+
   font-size: 30px;
   font-weight: 900;
   line-height: 1.25;
@@ -553,6 +566,7 @@
   margin: 0;
 
   color: #263660;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.8;
@@ -560,7 +574,7 @@
 }
 
 /* ==================================================
-   CERTIFICATE AND ACCREDITATION ZOOM POPUP
+   ACCREDITATION ZOOM POPUP
 ================================================== */
 
 .awards-zoom-modal {
@@ -598,6 +612,7 @@
   margin: 22px 0 0;
 
   color: #061943;
+
   font-size: 21px;
   font-weight: 900;
   text-align: center;
@@ -640,11 +655,11 @@
   }
 
   .awards-membership-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .awards-membership-card {
-    min-height: 340px;
+    min-height: 400px;
   }
 
   .awards-accreditation-grid {
@@ -727,7 +742,6 @@
   }
 
   .awards-timeline-grid {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 0;
   }
@@ -750,9 +764,7 @@
     height: 100px;
     margin: 0;
 
-    display: flex;
     align-items: center;
-    justify-content: center;
   }
 
   .awards-image-box img {
@@ -778,24 +790,25 @@
 
   .awards-membership-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 18px;
   }
 
   .awards-membership-card {
     min-height: auto;
-    padding: 18px 18px 22px;
+    padding: 16px 16px 22px;
 
     border-radius: 16px;
   }
 
   .awards-membership-logo {
-    height: 180px;
+    height: 280px;
     margin-bottom: 18px;
+    padding: 8px;
   }
 
   .awards-membership-logo img {
-    max-width: 160px;
-    max-height: 145px;
+    max-width: 260px;
+    max-height: 260px;
   }
 
   .awards-membership-card h4 {
@@ -905,6 +918,14 @@
 
   .awards-timeline-item h4 {
     font-size: 14px;
+  }
+
+  .awards-membership-logo {
+    height: 240px;
+  }
+
+  .awards-membership-logo img {
+    max-height: 220px;
   }
 
   .awards-accreditation-grid {

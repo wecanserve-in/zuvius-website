@@ -9,9 +9,6 @@ import {
   FaChevronRight,
 } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-
-import { products as allProducts } from "../products/productdata";
-import "../products/productcategory.css";
 import "./home.css";
 
 const phrases = [
@@ -24,20 +21,93 @@ const phrases = [
   "Understands responsibilities",
 ];
 
-const recentLaunchNames = [
-  "Zydrox Cap",
-  "Zaxotien",
-  "Zoplide",
-  "Acalataz",
-  "Zomacta",
-  "Zoserlin",
-  "Zuvistatin",
-  "Acantha",
-  "Zuvisome",
+const heroSlides = [
+  {
+    id: 1,
+    image: "/doctor-hero.png",
+    alt: "Doctor hero visual",
+  },
+  {
+    id: 2,
+    image: "/manufacturer-slide.png",
+    alt: "Manufacturer of widest range of anticancer drugs",
+  },
 ];
 
-const normalizeProductName = (value = "") =>
-  value.toLowerCase().replace(/[^a-z0-9]/g, "");
+const recentLaunchProducts = [
+  {
+    id: 1,
+    name: "Zydrox Cap",
+    genericName: "Hydroxyurea Capsule",
+    image: "/new_product_page/Zydrox-500.png",
+    imageClass: "recent-image-zydrox-cap",
+    route: "/products/zydrox-cap",
+  },
+  {
+    id: 2,
+    name: "Zaxotein",
+    genericName: "Paclitaxel Inj",
+    image: "/new_product_page/Zaxotien-100.png",
+    imageClass: "recent-image-zaxotein",
+    route: "/products/zaxotein",
+  },
+  {
+    id: 3,
+    name: "Zoplide",
+    genericName: "Leuprolide Acetate Inj",
+    image: "/new_product_page/zoplide-goup.png",
+    imageClass: "recent-image-zoplide",
+    route: "/products/zoplide",
+  },
+  {
+    id: 4,
+    name: "Acalataz",
+    genericName: "Add generic name",
+    image: "/new_product_page/Acalataz-100.png",
+    imageClass: "recent-image-acalataz",
+    route: "/products/acalataz",
+  },
+  {
+    id: 5,
+    name: "Zomacta",
+    genericName: "Eltrombopag Olamine Tablet",
+    image: "/new_product_page/zomacta-group.png",
+    imageClass: "recent-image-zomacta",
+    route: "/products/zomacta",
+  },
+  {
+    id: 6,
+    name: "Zoserlin",
+    genericName: "Add generic name",
+    image: "/products/zoserlin.png",
+    imageClass: "recent-image-zoserlin",
+    route: "/products/zoserlin",
+  },
+  {
+    id: 7,
+    name: "Zuvistatin",
+    genericName: "Add generic name",
+    image: "/new_product_page/zuvistatin-group.png",
+    imageClass: "recent-image-zuvistatin",
+    route: "/products/zuvistatin",
+  },
+  {
+    id: 8,
+    name: "Acantha",
+    genericName: "Add generic name",
+    image: "/new_product_page/acantha-group.png",
+    imageClass: "recent-image-acantha",
+    route: "/products/acantha",
+  },
+  {
+    id: 9,
+    name: "Zuvisome",
+    genericName: "Add generic name",
+    image: "/new_product_page/Zuvisome-50.png",
+    imageClass: "recent-image-zuvisome",
+    route: "/products/zuvisome",
+  },
+];
 
 const createProductSlides = (items, itemsPerSlide) => {
   const slides = [];
@@ -53,155 +123,78 @@ const Home = () => {
   const navigate = useNavigate();
 
   const [count, setCount] = useState(0);
-
-  const [slideIndex, setSlideIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(true);
   const [isMobile, setIsMobile] = useState(
-    () => window.innerWidth <= 600
+    typeof window !== "undefined" ? window.innerWidth <= 767 : false
   );
 
-  const [index, setIndex] = useState(0);
-  const [subIndex, setSubIndex] = useState(0);
-  const [reverse, setReverse] = useState(false);
+  const [heroSlideIndex, setHeroSlideIndex] = useState(0);
+  const [recentSlideIndex, setRecentSlideIndex] = useState(0);
 
-  /*
-   * Find the selected Recent Launch products in productdata.js.
-   * When a product is not present, an empty named card is created.
-   */
-  const recentLaunchProducts = useMemo(() => {
-    return recentLaunchNames.map((requestedName, requestedIndex) => {
-      const normalizedRequestedName =
-        normalizeProductName(requestedName);
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [typedText, setTypedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
 
-      const matchedProduct = allProducts.find((product) => {
-        const normalizedProductName =
-          normalizeProductName(product.name);
-
-        const normalizedProductSlug =
-          normalizeProductName(product.slug);
-
-        return (
-          normalizedProductName === normalizedRequestedName ||
-          normalizedProductSlug === normalizedRequestedName
-        );
-      });
-
-      if (matchedProduct) {
-        return {
-          ...matchedProduct,
-          displayName: requestedName,
-          isPlaceholder: false,
-        };
-      }
-
-      return {
-        id: `recent-placeholder-${requestedIndex}`,
-        name: requestedName,
-        displayName: requestedName,
-        subtitle: "",
-        image: "",
-        imageClass: "",
-        category: "",
-        slug: "",
-        isPlaceholder: true,
-      };
-    });
-  }, []);
-
-  /*
-   * Desktop: 3 products per slide.
-   * Mobile: 1 product per slide.
-   */
-  const productSlides = useMemo(() => {
+  const recentSlides = useMemo(() => {
     return createProductSlides(
       recentLaunchProducts,
       isMobile ? 1 : 3
     );
-  }, [recentLaunchProducts, isMobile]);
-
-  const totalSlides = productSlides.length;
+  }, [isMobile]);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 600);
+      setIsMobile(window.innerWidth <= 767);
     };
 
     window.addEventListener("resize", handleResize);
-
-    return () => {
+    return () =>
       window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   useEffect(() => {
-    setIsTransitioning(false);
-    setSlideIndex(0);
-
-    const resetTimer = setTimeout(() => {
-      setIsTransitioning(true);
-    }, 50);
-
-    return () => clearTimeout(resetTimer);
+    setRecentSlideIndex(0);
   }, [isMobile]);
 
-  const nextSlide = () => {
-    if (slideIndex >= totalSlides) return;
+  useEffect(() => {
+    const heroInterval = setInterval(() => {
+      setHeroSlideIndex(
+        (previousIndex) =>
+          (previousIndex + 1) % heroSlides.length
+      );
+    }, 3500);
 
-    setIsTransitioning(true);
-    setSlideIndex((previousIndex) => previousIndex + 1);
-  };
+    return () => clearInterval(heroInterval);
+  }, []);
 
-  const prevSlide = () => {
-    if (slideIndex === 0) {
-      setIsTransitioning(false);
-      setSlideIndex(totalSlides);
+  useEffect(() => {
+    if (recentSlides.length <= 1) return;
 
-      setTimeout(() => {
-        setIsTransitioning(true);
-        setSlideIndex(totalSlides - 1);
-      }, 50);
+    const recentInterval = setInterval(() => {
+      setRecentSlideIndex(
+        (previousIndex) =>
+          (previousIndex + 1) % recentSlides.length
+      );
+    }, 4000);
 
-      return;
-    }
+    return () => clearInterval(recentInterval);
+  }, [recentSlides.length]);
 
-    setIsTransitioning(true);
-    setSlideIndex((previousIndex) => previousIndex - 1);
-  };
-
-  const handleTransitionEnd = (event) => {
-    if (event.target !== event.currentTarget) return;
-
-    if (slideIndex === totalSlides) {
-      setIsTransitioning(false);
-      setSlideIndex(0);
-
-      setTimeout(() => {
-        setIsTransitioning(true);
-      }, 50);
-    }
-  };
-
-  /*
-   * SKU counter.
-   */
   useEffect(() => {
     const finalCount = 250;
-    const duration = 5500;
+    const duration = 2500;
 
     let startTime = null;
     let animationFrameId;
 
     const animateCounter = (timestamp) => {
-      if (!startTime) {
-        startTime = timestamp;
-      }
+      if (!startTime) startTime = timestamp;
 
       const progress = timestamp - startTime;
       const progressRatio = Math.min(progress / duration, 1);
-      const easeOut = 1 - Math.pow(1 - progressRatio, 3);
+      const eased = 1 - Math.pow(1 - progressRatio, 3);
 
       const currentCount = Math.min(
-        Math.floor(easeOut * finalCount),
+        Math.floor(eased * finalCount),
         finalCount
       );
 
@@ -216,106 +209,82 @@ const Home = () => {
     animationFrameId =
       requestAnimationFrame(animateCounter);
 
-    return () => {
+    return () =>
       cancelAnimationFrame(animationFrameId);
-    };
   }, []);
 
-  /*
-   * Quality typewriter.
-   */
   useEffect(() => {
-    if (
-      subIndex === phrases[index].length &&
-      !reverse
+    const currentPhrase = phrases[phraseIndex];
+    let timer;
+
+    if (!isDeleting && typedText.length < currentPhrase.length) {
+      timer = setTimeout(() => {
+        setTypedText(
+          currentPhrase.slice(0, typedText.length + 1)
+        );
+      }, 60);
+    } else if (
+      !isDeleting &&
+      typedText.length === currentPhrase.length
     ) {
-      const pauseTimer = setTimeout(() => {
-        setReverse(true);
-      }, 500);
-
-      return () => clearTimeout(pauseTimer);
-    }
-
-    if (subIndex === 0 && reverse) {
-      setReverse(false);
-
-      setIndex(
+      timer = setTimeout(() => {
+        setIsDeleting(true);
+      }, 1200);
+    } else if (isDeleting && typedText.length > 0) {
+      timer = setTimeout(() => {
+        setTypedText(
+          currentPhrase.slice(0, typedText.length - 1)
+        );
+      }, 28);
+    } else if (isDeleting && typedText.length === 0) {
+      setIsDeleting(false);
+      setPhraseIndex(
         (previousIndex) =>
           (previousIndex + 1) % phrases.length
       );
-
-      return undefined;
     }
 
-    const typingTimer = setTimeout(() => {
-      setSubIndex(
-        (previousIndex) =>
-          previousIndex + (reverse ? -1 : 1)
-      );
-    }, reverse ? 30 : 55);
+    return () => clearTimeout(timer);
+  }, [typedText, isDeleting, phraseIndex]);
 
-    return () => clearTimeout(typingTimer);
-  }, [subIndex, index, reverse]);
+  const goToPreviousRecentSlide = () => {
+    setRecentSlideIndex((previousIndex) =>
+      previousIndex === 0
+        ? recentSlides.length - 1
+        : previousIndex - 1
+    );
+  };
 
-  const renderRecentProductCard = (
-    product,
-    uniqueKey,
-    isClone = false
-  ) => {
-    if (product.isPlaceholder) {
-      return (
-        <div
-          className="category-product-card home-category-product-card home-product-placeholder"
-          key={uniqueKey}
-        >
-          <div className="category-product-image">
-            <div className="home-empty-product-image" />
-          </div>
+  const goToNextRecentSlide = () => {
+    setRecentSlideIndex(
+      (previousIndex) =>
+        (previousIndex + 1) % recentSlides.length
+    );
+  };
 
-          <div className="category-product-content">
-            <h3>{product.displayName}</h3>
-
-            <p>Product details coming soon.</p>
-
-            <div className="product-card-arrow">
-              <span>→</span>
-            </div>
-          </div>
-        </div>
-      );
-    }
-
-    const cardContent = (
-      <>
-        <div className="category-product-image">
+  const renderRecentProductCard = (product, uniqueKey) => {
+    return (
+      <Link
+        to={product.route}
+        className="home-recent-product-card"
+        key={uniqueKey}
+      >
+        <div className="home-recent-product-image">
           <img
             src={product.image}
-            alt={isClone ? "" : product.name}
-            className={product.imageClass || ""}
+            alt={product.name}
+            className={`home-recent-image ${product.imageClass}`}
           />
         </div>
 
-        <div className="category-product-content">
-          <h3>{product.displayName || product.name}</h3>
+        <div className="home-recent-product-content">
+          <h3>{product.name}</h3>
+          <p>{product.genericName}</p>
 
-          <p>{product.subtitle}</p>
-
-          <div className="product-card-arrow">
+          <div className="home-recent-product-arrow">
             <span>→</span>
           </div>
         </div>
-      </>
-    );
-
-    return (
-      <Link
-        to={`/products/${product.category}/${product.slug}`}
-        className="category-product-card home-category-product-card"
-        key={uniqueKey}
-        tabIndex={isClone ? -1 : 0}
-        aria-hidden={isClone ? "true" : undefined}
-      >
-        {cardContent}
       </Link>
     );
   };
@@ -331,8 +300,6 @@ const Home = () => {
             of the world’s biggest battles.
           </h1>
 
-          <br />
-
           <p className="hero-stat-text">
             <span className="text-blue">1 in 6</span>{" "}
             deaths globally is caused by{" "}
@@ -342,13 +309,43 @@ const Home = () => {
           <button
             type="button"
             className="learn-more-btn"
+            onClick={() => navigate("/whatiscancer")}
           >
             Learn More
           </button>
         </div>
 
-        <div className="hero-image">
-          <img src="./doctor-hero.png" alt="Doctor" />
+        <div className="hero-slider-wrapper">
+          <div
+            className="hero-slider-track"
+            style={{
+              transform: `translateX(-${heroSlideIndex * 100}%)`,
+            }}
+          >
+            {heroSlides.map((slide) => (
+              <div className="hero-slide" key={slide.id}>
+                <img
+                  src={slide.image}
+                  alt={slide.alt}
+                  className="hero-slide-image"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="hero-slider-dots">
+            {heroSlides.map((slide, index) => (
+              <button
+                key={slide.id}
+                type="button"
+                className={`hero-dot ${
+                  heroSlideIndex === index ? "active" : ""
+                }`}
+                onClick={() => setHeroSlideIndex(index)}
+                aria-label={`Go to hero slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -360,7 +357,6 @@ const Home = () => {
             <h3>
               <span>18+</span> Million
             </h3>
-
             <p>Cancer Cases Annually</p>
           </div>
 
@@ -368,7 +364,6 @@ const Home = () => {
             <h3>
               <span>70%</span> Cases
             </h3>
-
             <p>Detected Late</p>
           </div>
 
@@ -376,46 +371,36 @@ const Home = () => {
             <h3>
               <span>9.6</span> Million
             </h3>
-
             <p>Annual Deaths</p>
           </div>
         </div>
       </section>
 
-      {/* LEADER */}
+      {/* GLOBAL LEADER / SKU */}
 
       <section className="leader-section">
         <div className="leader-text">
           <h2>
-            <span style={{ color: "#d32027" }}>
-              Zuvius
-            </span>{" "}
-            — A{" "}
-            <span className="text-blue">
-              Global Leader
-            </span>{" "}
-            In The Fight Against{" "}
+            <span className="text-red">Zuvius</span> — A{" "}
+            <span className="text-blue">Global Leader</span> In
+            The Fight Against{" "}
             <span className="text-red">Cancer</span>
           </h2>
 
           <p>
-            Zuvius Lifesciences manufactures one of
-            the widest ranges of anti-cancer drugs,
-            committed to addressing the growing
-            global burden of cancer while redefining
-            the quality of life for patients.
+            Zuvius Lifesciences manufactures one of the
+            widest ranges of anti-cancer drugs, committed
+            to addressing the growing global burden of
+            cancer while redefining the quality of life for
+            patients.
           </p>
         </div>
 
         <div className="leader-infographic-card">
           <div className="leader-sku-box">
-            <span className="leader-sku-number">
-              {count}+
-            </span>
-
-            <span className="leader-sku-label">
-              SKUs
-            </span>
+            <span className="leader-sku-number">{count}+</span>
+            <span className="leader-sku-label">SKUs</span>
+           
           </div>
 
           <div className="leader-product-grid">
@@ -432,17 +417,22 @@ const Home = () => {
             <div className="leader-product-type-card">
               <img
                 src="/injectable-1.png"
-                alt="Injectable"
+                alt="Injectable Liquid"
               />
-              <h4>Injectable</h4>
+              <h4>Injectable Liquid</h4>
             </div>
 
             <div className="leader-product-type-card">
               <img
                 src="/injectable-2.png"
-                alt="Lyophilized"
+                alt="Injectable Lyophilized"
               />
-              <h4>Lyophilized</h4>
+              <h4>Injectable Lyophilized</h4>
+            </div>
+
+            <div className="leader-product-type-card leader-product-type-card-full">
+              <img src="/injectable-1.png" alt="PFS" />
+              <h4>PFS (Pre-filled Syringes)</h4>
             </div>
           </div>
         </div>
@@ -451,73 +441,57 @@ const Home = () => {
       {/* RECENT LAUNCHES */}
 
       <section className="products-section">
-        <h2 className="accreditation-main-title">
-          Recent Launches
-        </h2>
+        <div className="section-heading">
+          <h2 className="section-title section-title-light">
+            Recent Launches
+          </h2>
+        </div>
 
-        <div className="carousel-container">
+        <div className="recent-launches-slider">
           <button
             type="button"
             className="carousel-btn left"
-            onClick={prevSlide}
+            onClick={goToPreviousRecentSlide}
             aria-label="Previous products"
           >
             <FaChevronLeft />
           </button>
 
-          <div
-            className={`carousel-track ${
-              !isTransitioning
-                ? "no-transition"
-                : ""
-            }`}
-            onTransitionEnd={handleTransitionEnd}
-            style={{
-              transform: `translateX(-${
-                slideIndex * 100
-              }%)`,
-            }}
-          >
-            {productSlides.map(
-              (slideProducts, slideNumber) => (
-                <div
-                  className="slide"
-                  key={`slide-${slideNumber}`}
-                >
-                  {slideProducts.map((product) =>
-                    renderRecentProductCard(
-                      product,
-                      `slide-${slideNumber}-${product.id}`
-                    )
-                  )}
-                </div>
-              )
-            )}
-
-            {productSlides.length > 0 && (
-              <div
-                className="slide"
-                aria-hidden="true"
-              >
-                {productSlides[0].map((product) =>
-                  renderRecentProductCard(
-                    product,
-                    `clone-${product.id}`,
-                    true
-                  )
-                )}
-              </div>
-            )}
+          <div className="recent-launches-slide">
+            <div className="recent-launches-grid">
+              {recentSlides[recentSlideIndex]?.map((product) =>
+                renderRecentProductCard(
+                  product,
+                  `${recentSlideIndex}-${product.id}`
+                )
+              )}
+            </div>
           </div>
 
           <button
             type="button"
             className="carousel-btn right"
-            onClick={nextSlide}
+            onClick={goToNextRecentSlide}
             aria-label="Next products"
           >
             <FaChevronRight />
           </button>
+        </div>
+
+        <div className="recent-launches-dots">
+          {recentSlides.map((_, index) => (
+            <button
+              key={`recent-dot-${index}`}
+              type="button"
+              className={`recent-dot ${
+                recentSlideIndex === index ? "active" : ""
+              }`}
+              onClick={() => setRecentSlideIndex(index)}
+              aria-label={`Go to recent launches slide ${
+                index + 1
+              }`}
+            />
+          ))}
         </div>
 
         <div className="view-more-container">
@@ -536,7 +510,7 @@ const Home = () => {
       <section className="accreditation-section">
         <div className="accreditation-layout">
           <div className="accreditation-left">
-            <h2 className="accreditation-main-title">
+            <h2 className="section-title">
               Our Accreditations
             </h2>
 
@@ -549,49 +523,43 @@ const Home = () => {
             <div className="accreditation-grid">
               <div className="acc-item">
                 <img
-                  src="./Accredations/US_FDA.png"
+                  src="/Accredations/US_FDA.png"
                   alt="US FDA"
                 />
               </div>
 
               <div className="acc-item">
                 <img
-                  src="./Accredations/Anvisa.png"
+                  src="/Accredations/Anvisa.png"
                   alt="ANVISA"
                 />
               </div>
 
               <div className="acc-item">
                 <img
-                  src="./Accredations/EU-GMP.png"
+                  src="/Accredations/EU-GMP.png"
                   alt="EU GMP"
                 />
               </div>
 
               <div className="acc-item">
-                <img
-                  src="./Accredations/WHO.png"
-                  alt="WHO GMP"
-                />
+                <img src="/Accredations/WHO.png" alt="WHO" />
               </div>
 
               <div className="acc-item">
                 <img
-                  src="./Accredations/Cofepris.png"
+                  src="/Accredations/Cofepris.png"
                   alt="COFEPRIS"
                 />
               </div>
 
               <div className="acc-item">
-                <img
-                  src="./Accredations/pics.png"
-                  alt="PIC/S"
-                />
+                <img src="/Accredations/pics.png" alt="PIC/S" />
               </div>
 
               <div className="acc-item">
                 <img
-                  src="./Accredations/invima.png"
+                  src="/Accredations/invima.png"
                   alt="INVIMA"
                 />
               </div>
@@ -601,23 +569,20 @@ const Home = () => {
           <div className="accreditation-right">
             <div className="accreditation-q-card">
               <img
-                src="./Quality.png"
+                src="/Quality.png"
                 alt="Culture of Quality"
+                className="quality-image"
               />
 
-              <div className="typewriter-box accreditation-typewriter">
-                <span className="fixed-text">
-                  Quality that{" "}
-                </span>
+              <div className="accreditation-typewriter">
+                <div className="fixed-text">Quality that</div>
 
-                <span className="changing-text">
-                  {phrases[index].substring(
-                    0,
-                    subIndex
-                  )}
-
+                <div className="changing-text-row">
+                  <span className="changing-text">
+                    {typedText}
+                  </span>
                   <span className="cursor">|</span>
-                </span>
+                </div>
               </div>
             </div>
           </div>
@@ -628,9 +593,7 @@ const Home = () => {
 
       <section className="home-reach-section">
         <div className="home-reach-header">
-          <span className="home-reach-tag">
-            OUR REACH
-          </span>
+          <span className="home-reach-tag">OUR REACH</span>
 
           <p className="home-reach-subtitle">
             Delivering trusted oncology solutions
@@ -640,22 +603,20 @@ const Home = () => {
           </p>
         </div>
 
+        {/* INDIA SECTION */}
+
         <div className="home-reach-card">
           <div className="home-reach-content">
             <span className="home-reach-label">
               DOMESTIC REACH
             </span>
 
-            <h3>
-              Strong Presence.
-              <br />
-              Widespread Impact.
-            </h3>
+            
 
             <p>
-              Delivering oncology solutions across
-              India through a robust distribution
-              network and strategic partnerships.
+              Delivering oncology solutions across India
+              through a robust distribution network and
+              strategic partnerships.
             </p>
 
             <div className="home-reach-stats">
@@ -667,9 +628,7 @@ const Home = () => {
                 <div>
                   <strong>28 States</strong>
                   <span>8 Union Territories</span>
-                  <small>
-                    Pan-India domestic reach
-                  </small>
+                  <small>Pan-India domestic reach</small>
                 </div>
               </div>
 
@@ -680,9 +639,7 @@ const Home = () => {
 
                 <div>
                   <strong>15,000+</strong>
-                  <span>
-                    Hospitals &amp; Clinics
-                  </span>
+                  <span>Hospitals &amp; Clinics</span>
                 </div>
               </div>
 
@@ -693,9 +650,7 @@ const Home = () => {
 
                 <div>
                   <strong>100+</strong>
-                  <span>
-                    Distribution Partners
-                  </span>
+                  <span>Distribution Partners</span>
                 </div>
               </div>
             </div>
@@ -710,15 +665,28 @@ const Home = () => {
               playsInline
             >
               <source
-                src="/IndianMapElementUIfroZVS1.mp4"
+                src="/IndianMapElementUIfroZVS2.mp4"
                 type="video/mp4"
               />
             </video>
           </div>
         </div>
 
-        <div className="home-reach-card home-reach-card-reverse">
-          <div className="home-reach-image home-reach-image-global">
+        {/* WORLD SECTION */}
+
+        <div className="home-reach-global-card">
+          <div className="home-reach-global-top">
+            <span className="home-reach-label">GLOBAL REACH</span>
+
+
+            <p>
+              Our oncology products are trusted in over
+              51+ countries across 6 continents,
+              improving patient lives globally.
+            </p>
+          </div>
+
+          <div className="home-reach-global-map">
             <video
               className="home-reach-video"
               autoPlay
@@ -727,67 +695,41 @@ const Home = () => {
               playsInline
             >
               <source
-                src="/WorldMapElementUIforZVS1.mp4"
+                src="/WorldMapElementUIforZVS2.mp4"
                 type="video/mp4"
               />
             </video>
           </div>
 
-          <div className="home-reach-content">
-            <span className="home-reach-label">
-              GLOBAL REACH
-            </span>
-
-            <h3>
-              Global Footprint.
-              <br />
-              Trusted Worldwide.
-            </h3>
-
-            <p>
-              Our oncology products are trusted in
-              over 51+ countries across 6 continents,
-              improving patient lives globally.
-            </p>
-
-            <div className="home-reach-stats">
-              <div className="home-reach-stat">
-                <div className="home-reach-icon">
-                  <FaGlobeAsia />
-                </div>
-
-                <div>
-                  <strong>51+</strong>
-                  <span>Countries</span>
-                  <small>and growing</small>
-                </div>
+          <div className="home-reach-global-stats">
+            <div className="home-reach-global-stat-card">
+              <div className="home-reach-icon">
+                <FaGlobeAsia />
               </div>
 
-              <div className="home-reach-stat">
-                <div className="home-reach-icon">
-                  <FaGlobe />
-                </div>
+              <strong>51+</strong>
+              <span>Countries</span>
+              <small>and growing</small>
+            </div>
 
-                <div>
-                  <strong>6</strong>
-                  <span>Continents</span>
-                  <small>Global presence</small>
-                </div>
+            <div className="home-reach-global-stat-card">
+              <div className="home-reach-icon">
+                <FaGlobe />
               </div>
 
-              <div className="home-reach-stat">
-                <div className="home-reach-icon">
-                  <FaHandshake />
-                </div>
+              <strong>6</strong>
+              <span>Continents</span>
+              <small>Global presence</small>
+            </div>
 
-                <div>
-                  <strong>50+</strong>
-                  <span>Global Partners</span>
-                  <small>
-                    Building strong alliances
-                  </small>
-                </div>
+            <div className="home-reach-global-stat-card">
+              <div className="home-reach-icon">
+                <FaHandshake />
               </div>
+
+              <strong>50+</strong>
+              <span>Global Partners</span>
+              <small>Building strong alliances</small>
             </div>
           </div>
         </div>
@@ -798,8 +740,8 @@ const Home = () => {
 
             <p>
               We are committed to making high-quality
-              oncology treatments accessible to
-              patients worldwide.
+              oncology treatments accessible to patients
+              worldwide.
             </p>
           </div>
 
@@ -807,7 +749,7 @@ const Home = () => {
             type="button"
             onClick={() => navigate("/contact")}
           >
-            Reach Us at
+            Reach Us
           </button>
         </div>
       </section>
