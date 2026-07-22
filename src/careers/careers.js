@@ -1,10 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./careers.css";
 import PageBanner from "../components/PageBanner";
 
 const Careers = () => {
-  const navigate = useNavigate();
   return (
     <div className="cr-wrapper-main">
       
