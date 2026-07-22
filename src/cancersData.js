@@ -4323,7 +4323,7 @@ typesStages: {
   description:
     "Kaposi sarcoma (KS) is a type of cancer that begins in the cells lining the blood vessels or lymph vessels. Blood vessels carry blood throughout the body, delivering oxygen to vital organs and tissues, removing waste products, and helping regulate blood pressure. ",
 
-  bannerImg: "/cancers/kaposi-sarcoma.png",
+  bannerImg: "/banners/kaposi-sarcoma.png",
 
   overview: {
     intro:
@@ -4481,7 +4481,7 @@ typesStages: {
   description:
     "The kidneys are organs that help filter the blood by removing waste products and regulating fluid balance within the body. Most individuals have two kidneys, located on either side of the spine in the lower back. Common conditions that can affect the kidneys include kidney disease, kidney infections, and kidney cysts.",
 
-  bannerImg: "/cancers/kidney-cancer.webp",
+  bannerImg: "/banners/kidney-cancer.png",
 
   overview: {
     intro:
@@ -4669,7 +4669,7 @@ typesStages: {
   description:
     "Laryngeal cancer is a type of cancer that affects the larynx, commonly known as the voice box. The larynx is a hollow structure located in the center of the neck above the trachea (windpipe) and esophagus. It enables the production of sound and allows air to travel from the throat into the trachea and onward to the lungs.",
 
-  bannerImg: "/cancers/laryngeal-cancer.webp",
+  bannerImg: "/banners/laryngeal-cancer.png",
 
   overview: {
     intro:
@@ -4850,7 +4850,7 @@ typesStages: {
   description:
     "Leukemia begins when a cell in the bone marrow develops changes in its DNA and can no longer grow or function normally. Bone marrow is the soft tissue inside bones that produces blood cells and platelets, making billions of new blood cells every day.",
 
-  bannerImg: "/cancers/leukemia.webp",
+  bannerImg: "/banners/leukemia.png",
 
   overview: {
     intro:
@@ -5002,7 +5002,7 @@ typesStages: {
   description:
     "The liver carries out more than 500 essential functions, including filtering blood, processing nutrients, and helping the body fight infections. It also produces bile and important proteins required for various bodily processes. The liver is vital for survival, and in cases of liver failure, a liver transplant may be necessary",
 
-  bannerImg: "/cancers/liver-cancer.webp",
+  bannerImg: "/banners/liver-cancer.png",
 
   overview: {
     intro:
@@ -5190,7 +5190,7 @@ typesStages: {
   description:
     "The lungs are two vital organs of the respiratory system that enable the exchange of gases within the body. They provide oxygen to the bloodstream and remove carbon dioxide through the breathing process.",
 
-  bannerImg: "/cancers/lung-cancer.webp",
+  bannerImg: "/banners/lung-cancer.png",
 
   overview: {
     intro:
@@ -5383,7 +5383,7 @@ typesStages: {
   description:
     "Lymphoma is a group of blood cancers that develops in the lymphatic system. The lymphatic system is a network of organs, vessels, and tissues that helps protect the body from infection, maintain healthy fluid balance, and produce lymphocytes, a type of white blood cell that helps defend the body against harmful invaders.",
 
-  bannerImg: "/cancers/lymphoma.webp",
+  bannerImg: "/banners/lymphoma.png",
 
   overview: {
     intro:
@@ -5554,7 +5554,7 @@ typesStages: {
   description:
     "The male breast contains undeveloped milk ducts and breast tissue. Although men have much less breast tissue than women, these tissues can still develop breast cancer.",
 
-  bannerImg: "/cancers/male-breast-cancer.webp",
+  bannerImg: "/cancers/male-breast-cancer.png",
 
   overview: {
     intro:
@@ -5740,7 +5740,7 @@ typesStages: {
   description:
     "Melanoma is an invasive form of skin cancer with a high risk of death. The skin is the body's largest organ, serving as a protective barrier against germs while helping regulate body temperature and allowing the sense of touch. It is composed of three main layers: the epidermis, dermis, and hypodermis",
 
-  bannerImg: "/cancers/melanoma.webp",
+  bannerImg: "/banners/melanoma.png",
 
   overview: {
     intro:
@@ -5927,7 +5927,7 @@ typesStages: {
   description:
     "Mesothelioma is a rare cancer that begins in the mesothelium, a tissue that forms the protective lining around certain organs. It most commonly affects the lining around the lungs but can also develop in the lining around the abdomen, heart, or testicles. ",
 
-  bannerImg: "/cancers/mesothelioma.webp",
+  bannerImg: "/banners/mesothelioma.png",
 
   overview: {
     intro:
@@ -6107,7 +6107,7 @@ typesStages: {
   description:
     "Multiple myeloma is a rare blood cancer that affects plasma cells, a type of white blood cell. Plasma cells produce antibodies to help fight infection, but in multiple myeloma they build up in the bone marrow, the tissue inside bones that makes blood cells.",
 
-  bannerImg: "/cancers/multiple-myeloma.webp",
+  bannerImg: "/banners/multiple-myeloma.png",
 
   overview: {
     intro:
@@ -6270,7 +6270,7 @@ typesStages: {
   description:
     "Nasopharyngeal cancer is a rare cancer that begins in the nasopharynx, the upper part of the throat that connects the nose to the respiratory system.",
 
-  bannerImg: "/cancers/nasopharyngeal-cancer.webp",
+  bannerImg: "/banners/nasopharyngeal-cancer.png",
 
   overview: {
     intro:
@@ -6461,7 +6461,7 @@ typesStages: {
   description:
     "Neuroblastoma is a type of cancer that grows in immature nerve cells called neuroblasts. It affects neuroblasts in the sympathetic nervous system and most commonly begins in the adrenal glands, although it can also start in nerve cells in the abdomen, chest, or neck. ",
 
-  bannerImg: "/cancers/neuroblastoma.webp",
+  bannerImg: "/banners/neuroblastoma.png",
 
   overview: {
     intro:
@@ -6631,7 +6631,7 @@ typesStages: {
   description:
     "Ocular melanoma is a type of eye cancer that develops on or inside the eye. The eyes are sensory organs that capture visible light and convert it into signals the brain uses to create vision, allowing you to see the world around you.",
 
-  bannerImg: "/cancers/ocular-melanoma.webp",
+  bannerImg: "/banners/ocular-melanoma.png",
 
   overview: {
     intro:
@@ -6786,7 +6786,7 @@ typesStages: {
   description:
     "The oral cavity includes the lips, gums, tongue, inner cheeks, floor of the mouth and the front part of the roof of the mouth. These structures work together to help with speaking, chewing, swallowing and the first stages of digestion.",
 
-  bannerImg: "/cancers/oral-cancer.webp",
+  bannerImg: "/banners/oral-cancer.png",
 
   overview: {
     intro:
@@ -6965,7 +6965,7 @@ typesStages: {
   description:
     "Osteosarcoma is a type of bone cancer that begins in the cells that form bones, most often affecting the long bones. Bones provide the body's structural support, help with movement, protect internal organs, and contain bone marrow, where blood cells are made. ",
 
-  bannerImg: "/cancers/osteosarcoma.webp",
+  bannerImg: "/banners/osteosarcoma.png",
 
   overview: {
     intro:
@@ -7140,7 +7140,7 @@ typesStages: {
   description:
     "The ovaries are small, oval-shaped glands located on either side of the uterus. They produce and store eggs while also releasing hormones that regulate the menstrual cycle and support pregnancy. During each menstrual cycle, an ovary releases an egg through ovulation until menopause occurs.",
 
-  bannerImg: "/cancers/ovarian-cancer.png",
+  bannerImg: "/banners/ovarian-cancer.png",
 
   overview: {
     intro:
@@ -7315,7 +7315,7 @@ typesStages: {
   description:
     "The pancreas is a large gland located in the back of the abdomen and functions as part of both the digestive and endocrine systems. It produces enzymes that aid digestion and hormones that help regulate blood sugar levels. The pancreas also contributes to supporting the function of organs such as the heart, liver, and kidneys.",
 
-  bannerImg: "/cancers/pancreatic-cancer.webp",
+  bannerImg: "/banners/pancreatic-cancer.png",
 
   overview: {
     intro:
@@ -7490,7 +7490,7 @@ typesStages: {
   description:
     "Penile cancer develops when cells in the penis grow and multiply uncontrollably. The penis is an external organ of the male reproductive and urinary systems that allows urine and semen to leave the body and plays a role in reproduction.",
 
-  bannerImg: "/cancers/penile-cancer.webp",
+  bannerImg: "/banners/penile-cancer.png",
 
   overview: {
     intro:
@@ -7676,7 +7676,7 @@ typesStages: {
   description:
     "The prostate is a small, firm gland that forms part of the male reproductive system and surrounds a portion of the urethra. It produces fluid that contributes to semen, the substance that carries sperm during ejaculation. The prostate also releases components that help support sperm cells and assist in the movement of semen through the urethra.",
 
-  bannerImg: "/cancers/prostate-cancer.webp",
+  bannerImg: "/banners/prostate-cancer.png",
 
   overview: {
     intro:
@@ -7855,7 +7855,7 @@ typesStages: {
   description:
     "The rectum is the final section of the large intestine, located between the colon and the anal canal. Its main role is to collect and store waste before it leaves the body. As waste enters the rectum, it is held temporarily while remaining water and electrolytes are absorbed, and nerves signal when it is time for a bowel movement.",
 
-  bannerImg: "/cancers/rectal-cancer.webp",
+  bannerImg: "/banners/rectal-cancer.png",
 
   overview: {
     intro:
@@ -8037,7 +8037,7 @@ typesStages: {
   description:
     "Renal cell carcinoma (RCC) is the most common form of kidney cancer. The kidneys are organs that filter the blood, remove waste products, and help regulate the body's fluid balance. Most people have two kidneys, positioned on either side of the spine in the lower back.",
 
-  bannerImg: "/cancers/renal-cell-carcinoma.webp",
+  bannerImg: "/banners/renal-cell-carcinoma.png",
 
   overview: {
     intro:
@@ -8217,7 +8217,7 @@ typesStages: {
   description:
     "Retinoblastoma is a rare form of eye cancer that primarily affects children and develops in the retina. The retina is a light-sensitive layer at the back of the eye that receives light and converts it into signals, which are then transmitted to the brain to produce vision.",
 
-  bannerImg: "/cancers/retinoblastoma.webp",
+  bannerImg: "/banners/retinoblastoma.png",
 
   overview: {
     intro:
@@ -8370,7 +8370,7 @@ typesStages: {
   description:
     "Rhabdomyosarcoma can develop in different parts of the body and most commonly occurs in areas associated with skeletal muscles. Skeletal muscles make up about 30% to 40% of the body's total mass and are attached to bones, enabling voluntary movement and supporting a wide range of everyday functions.",
 
-  bannerImg: "/cancers/rhabdomyosarcoma.webp",
+  bannerImg: "/banners/rhabdomyosarcoma.png",
 
   overview: {
     intro:
@@ -8498,7 +8498,7 @@ typesStages: {
   description:
     "The salivary glands produce saliva, which helps keep the mouth lubricated, supports swallowing and digestion, and protects the teeth from bacteria.",
 
-  bannerImg: "/cancers/salivary-gland-cancer.webp",
+  bannerImg: "/banners/salivary-gland-cancer.png",
 
   overview: {
     intro:
@@ -8655,7 +8655,7 @@ typesStages: {
   description:
     "The stomach is a muscular organ in the digestive system that stores food, begins digestion and helps break down nutrients before they move into the small intestine. It works with digestive acids and enzymes to support normal digestion.",
 
-  bannerImg: "/cancers/stomach-cancer.webp",
+  bannerImg: "/banners/stomach-cancer.png",
 
   overview: {
     intro:
@@ -8859,7 +8859,7 @@ typesStages: {
   description:
     "Sarcoma is a rare type of malignant (cancerous) tumor that develops in the bones or connective tissues, including fat, muscles, blood vessels, nerves, and the tissues surrounding bones and joints. Connective tissues provide support and structure, helping different parts of the body work together.",
 
-  bannerImg: "/cancers/sarcoma.webp",
+  bannerImg: "/banners/sarcoma.png",
 
   overview: {
     intro:
@@ -9023,7 +9023,7 @@ typesStages: {
   description:
     "The skin is the body's largest organ and is composed of water, proteins, fats, and minerals. It serves as a protective barrier against germs, helps regulate body temperature, and allows the body to sense touch, heat, and cold.",
 
-  bannerImg: "/cancers/skin-cancer.webp",
+  bannerImg: "/banners/skin-cancer.png",
 
   overview: {
     intro:
@@ -9188,7 +9188,7 @@ typesStages: {
   description:
     "The small intestine, also known as the small bowel, is a vital part of the digestive system that connects the stomach to the large intestine. It breaks down food, absorbs nutrients and water, and moves digested food through the digestive tract.",
 
-  bannerImg: "/cancers/small-intestine-cancer.webp",
+  bannerImg: "/banners/small-intestine-cancer.png",
 
   overview: {
     intro:
@@ -9364,7 +9364,7 @@ typesStages: {
   description:
     "The testicles, also known as testes, are part of the male reproductive system and are located within the scrotum. They produce sperm and the hormone testosterone, which plays an important role in puberty by contributing to muscle development, body and facial hair growth, a deeper voice, and increased height.",
 
-  bannerImg: "/cancers/testicular-cancer.webp",
+  bannerImg: "/banners/testicular-cancer.png",
 
   overview: {
     intro:
@@ -9516,7 +9516,7 @@ typesStages: {
   description:
     "The pharynx, commonly known as the throat, is a muscular tube located in the neck that forms part of both the respiratory and digestive systems. It helps direct air to the lungs and carries food and liquids to the esophagus while helping keep them out of the airway.",
 
-  bannerImg: "/cancers/throat-cancer.webp",
+  bannerImg: "/banners/throat-cancer.png",
 
   overview: {
     intro:
@@ -9679,7 +9679,7 @@ typesStages: {
   description:
     "Thymomas and thymic carcinomas are rare cancers that develop in the thymus gland. The thymus is a small gland that is part of the lymphatic and endocrine systems, where it helps produce and mature T-cells, a type of white blood cell that plays an important role in fighting disease and infection. ",
 
-  bannerImg: "/cancers/thymoma-and-thymic-carcinoma.webp",
+  bannerImg: "/banners/thymoma-thymic-carcinoma.png",
 
   overview: {
     intro:
@@ -9839,7 +9839,7 @@ typesStages: {
   description:
     "The thyroid is an important endocrine gland that produces and releases hormones responsible for regulating metabolism, or how the body uses energy. These hormones also influence functions such as heart rate, breathing, digestion, body temperature, brain development, mental activity, skin and bone maintenance, and fertility.",
 
-  bannerImg: "/cancers/thyroid-cancer.webp",
+  bannerImg: "/banners/thyroid-cancer.png",
 
   overview: {
     intro:
@@ -9996,7 +9996,7 @@ typesStages: {
   description:
     "The tonsils are two small, round masses located at the back of the throat. They are part of the immune system and help protect the body by trapping and filtering germs that enter through the nose or mouth. They contain white blood cells that help fight infection.",
 
-  bannerImg: "/cancers/tonsil-cancer.webp",
+  bannerImg: "/banners/tonsil-cancer.png",
 
   overview: {
     intro:
@@ -10161,7 +10161,7 @@ typesStages: {
   description:
     "The tongue is a muscular organ located in the mouth that plays an important role in chewing, swallowing, speaking, and breathing. It helps move food during digestion, supports clear speech by forming different sounds, and helps keep the airway open.",
 
-  bannerImg: "/cancers/tongue-cancer.webp",
+  bannerImg: "/banners/tongue-cancer.png",
 
   overview: {
     intro:
@@ -10323,7 +10323,7 @@ typesStages: {
   description:
     "The urethra is a tube in the urinary system that carries urine from the urinary bladder to the outside of the body. It is part of the system that removes waste from the blood in the form of urine. In males, it also carries semen, while in females it only carries urine.",
 
-  bannerImg: "/cancers/urethral-cancer.webp",
+  bannerImg: "/banners/urethral-cancer.png",
 
   overview: {
     intro:
@@ -10502,7 +10502,7 @@ typesStages: {
   description:
     "Your uterus is a hollow, muscular, pear-shaped organ in the female reproductive system located between the bladder and rectum. It plays a key role in menstruation, fertility, and pregnancy by supporting implantation and the growth of a fetus. The uterine lining, called the endometrium, is shed during menstruation.",
 
-  bannerImg: "/cancers/uterine-cancer.webp",
+  bannerImg: "/banners/uterine-cancer.png",
 
   overview: {
     intro:
@@ -10673,7 +10673,7 @@ typesStages: {
   description:
     "The vagina is a muscular, stretchy tube that is part of the female reproductive system and connects internal and external reproductive anatomy. It plays an important role in menstruation, sexual activity, conception, and childbirth. It also acts as a passage through which menstrual blood leaves the body and supports reproductive processes.",
 
-  bannerImg: "/cancers/vaginal-cancer.webp",
+  bannerImg: "/banners/vaginal-cancer.png",
 
   overview: {
     intro:
@@ -10839,7 +10839,7 @@ typesStages: {
   description:
     "The vulva includes the external parts of the female reproductive system such as the inner and outer labia, clitoris, vaginal opening, and urethral opening. It plays an important role in reproductive health and is involved in urination, menstruation, conception, and childbirth.",
 
-  bannerImg: "/cancers/vulvar-cancer.webp",
+  bannerImg: "/banners/vulvar-cancer.png",
 
   overview: {
     intro:
@@ -11018,7 +11018,7 @@ typesStages: {
   description:
     "Waldenström macroglobulinemia happens when B cells (immune cells) in the bone marrow, where blood cells are made, turn into cancer cells. Bone marrow is the soft, fatty tissue inside bone cavities that produces red blood cells, white blood cells, and platelets.",
 
-  bannerImg: "/cancers/waldenstrom-macroglobulinemia.webp",
+  bannerImg: "/banners/waldenstrom-macroglobulinemia.png",
 
   overview: {
     intro:
@@ -11164,7 +11164,7 @@ typesStages: {
   description:
     "Wilms tumor is a type of cancer that mainly affects children and develops in the kidneys. It usually forms in one kidney, though in some cases it can affect both. The kidneys are two organs in the urinary system that filter blood to remove waste and produce urine.",
 
-  bannerImg: "/cancers/wilms-tumor.webp",
+  bannerImg: "/banners/wilms-tumor.png",
 
   overview: {
     intro:
@@ -11332,7 +11332,7 @@ typesStages: {
   description:
     "The yolk sac is a structure that develops in the uterus during early pregnancy. It provides nourishment to the embryo and helps circulate gases between the mother and embryo. It also produces early cells that develop into important structures like blood cells, the umbilical cord, and other organs.",
 
-  bannerImg: "/cancers/yolk-sac-tumor.webp",
+  bannerImg: "/banners/yolk-sac-tumor.png",
 
   overview: {
     intro:
