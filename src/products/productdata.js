@@ -56,6 +56,7 @@ export const products = [
     "Cytarabine Injection is an antineoplastic agent provided as a sterile solution for intravenous, intrathecal, or subcutaneous administration. Cytarabine is a crystalline powder that is white to off-white, odorless, highly soluble in water, and slightly soluble in alcohol and chloroform.",
 
   indication:
+
     "Cytarabine Injection in combination with other approved anti-cancer drugs is indicated for remission induction in acute non-lymphocytic leukemia in adults and pediatric patients. It is also useful in the treatment of acute lymphocytic leukemia and the blast phase of chronic myelocytic leukemia. Intrathecal administration is indicated in the prophylaxis and treatment of meningeal leukemia.",
 
   clinicalEfficacy:
@@ -67,10 +68,7 @@ export const products = [
   dosage:
     "In induction therapy of acute non-lymphocytic leukemia, the usual dose in combination with other anti-cancer drugs is 100 mg/m²/day by continuous intravenous infusion (Days 1–7) or 100 mg/m² intravenously every 12 hours (Days 1–7).",
 
-  storage:
-    "Store as directed on product label.",
-
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 },
 {
   id: 2,
@@ -114,8 +112,7 @@ The recommended dosage of Methotrexate Injection varies from 1000 mg/m² to 8000
 The recommended dosage of Methotrexate Injection is typically 12 grams/m² (maximum: 20 grams per dose) as an intravenous infusion over 4 hours followed by leucovorin rescue in accordance with high-dose therapy protocols.
 `,
 
-  coldStorage: "No",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Methotrexate is a folate derivative that inhibits several enzymes responsible for nucleotide synthesis. This inhibition leads to suppression of inflammation as well as prevention of cell division.
 
@@ -189,8 +186,7 @@ The dose and frequency may be adjusted based on the patient's response and toler
 Vinorelbine should be stored under cold conditions, and the specific protocol provided by an oncologist or healthcare professional must be followed to ensure safe and effective use.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Vinorelbine injection is an antineoplastic agent that belongs to the class of antimetabolites.
 
@@ -395,8 +391,7 @@ Continue treatment as long as the patient continues to benefit.
 Monitor patients for hematologic response and for renal toxicity; delay or reduce dosage as appropriate.
 `,
 
-  coldStorage: "No",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Azacitidine is a pyrimidine nucleoside analogue used to treat certain subtypes of myelodysplastic syndrome.
 
@@ -517,8 +512,7 @@ For NHL:
 120 mg/m² infused intravenously over 60 minutes on Days 1 and 2 of a 21-day cycle, up to 8 cycles.
 `,
 
-  coldStorage: "No",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Bendamustine is a nitrogen mustard drug indicated for use in the treatment of chronic lymphocytic leukemia (CLL) and indolent B-cell non-Hodgkin lymphoma (NHL) that has progressed during or within six months of treatment with rituximab or a rituximab-containing regimen.
 
@@ -625,7 +619,7 @@ Pregnancy testing and effective contraception are recommended during and for at 
 // • Recommended adult dose: 0.8 mg per kg of ideal body weight or actual body weight, whichever is lower, administered intravenously via a central venous catheter as a two-hour infusion every six hours for four consecutive days for a total of 16 doses.
 // `,
 
-//   coldStorage: "No",
+//   storage: "Store at 25°C to 30°C.",
 
 //   description: `
 // Busulfan is a methanesulfonate ester that is butane-1,4-diol in which the hydrogens of the hydroxy groups are replaced by methanesulfonyl groups.
@@ -729,7 +723,7 @@ Pregnancy testing and effective contraception are recommended during and for at 
 // • Ensure an adequate number of neutrophils are present before administering repeat courses.
 // `,
 
-//   coldStorage: "No",
+//   storage: "Store at 25°C to 30°C.",
 
 //   description: `
 // Carmustine, a nitrosourea used in treating certain neoplastic diseases, is chemically 1,3-bis (2-chloroethyl)-1-nitrosourea.
@@ -1078,7 +1072,7 @@ Pregnancy testing and effective contraception are recommended during and for at 
 // • Antiemetic prophylaxis, oral or intravenous, is recommended as needed.
 // `,
 
-//   coldStorage: "No",
+//   storage: "Store at 25°C to 30°C.",
 
 //   description: `
 // Cabazitaxel is a tetracyclic diterpenoid that is 10-deacetylbaccatin III having O-methyl groups attached at positions 7 and 10 as well as an O-(2R,3S)-3-[(tert-butoxycarbonyl)amino]-2-hydroxy-3-phenylpropanoyl group attached at position 13.
@@ -1316,8 +1310,7 @@ The reconstituted solution is stable for:
 It should be protected from exposure to sunlight, and any unused solution should be discarded.
 `,
 
-  coldStorage: "No",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Doxorubicin is a cytotoxic anthracycline antibiotic isolated from cultures of Streptomyces peucetius var. Caesisus.
 
@@ -1504,8 +1497,7 @@ This medicine may increase risk of new cancers, such as:
 • Do not mix with other drugs or administer with dextrose-containing solutions.
 `,
 
-  coldStorage: "No",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Eribulin is a microtubule inhibitor indicated for the treatment of patients with metastatic breast cancer who have previously received at least two chemotherapeutic regimens for the treatment of metastatic disease.
 
@@ -1612,8 +1604,7 @@ Pregnancy testing and effective contraception are recommended during treatment t
 • Do not mix with other drugs or administer with dextrose-containing solutions.
 `,
 
-  coldStorage: "No",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Fludarabine is a chemotherapy drug used in the treatment of chronic lymphocytic leukemia.
 
@@ -1752,8 +1743,7 @@ Effective contraception should be used during treatment and for a recommended pe
 • IDAMYCIN PFS should not be administered if bilirubin level exceeds 5 mg%.
 `,
 
-  coldStorage: "No",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 An orally administered anthracycline antineoplastic.
 
@@ -1874,7 +1864,7 @@ Effective contraception is recommended during treatment.
 // • The pH may have been adjusted with sodium hydroxide and/or acetic acid.
 // `,
 
-//   coldStorage: "No",
+//   storage: "Store at 25°C to 30°C.",
 
 //   description: `
 // Leuprolide acetate is a synthetic nonapeptide analog of naturally occurring gonadotropin releasing hormone (GnRH or LH-RH).
@@ -2024,7 +2014,7 @@ Effective contraception is recommended during treatment.
 // • Women of childbearing potential should undergo pregnancy testing before each dose regardless of contraceptive use.
 // `,
 
-//   coldStorage: "No",
+//   storage: "Store at 25°C to 30°C.",
 
 //   description: `
 // Mitoxantrone injection is used alone or together with other medicines to treat advanced prostate cancer and acute nonlymphocytic leukemia (ANLL).
@@ -2165,8 +2155,7 @@ Effective contraception is recommended during treatment.
 • Store diluted injection at 20°C to 25°C for no more than 24 hours.
 `,
 
-  coldStorage: "No",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Topotecan is a semi-synthetic derivative of camptothecin and a topoisomerase inhibitor.
 
@@ -2275,8 +2264,7 @@ Use in Renal Dysfunction:
 • Patients with renal dysfunction may require lower doses due to delayed clearance.
 `,
 
-  coldStorage: "No",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Azathioprine is an immunosuppressive antimetabolite available in tablet form for oral administration.
 
@@ -2404,8 +2392,7 @@ Intermittent schedules begin with an initial single dose of 0.4 mg/kg.
 Subsequent doses are modified to produce mild hematologic toxicity.
 `,
 
-  coldStorage: "No",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Chlorambucil is a bifunctional alkylating agent of the nitrogen mustard type.
 
@@ -2514,7 +2501,7 @@ Teratogenicity:
 //   - Dose should not exceed 2.5 mg daily
 // `,
 
-//   coldStorage: "No",
+//   storage: "Store at 25°C to 30°C.",
 
 //   description: `
 // Everolimus is a macrolide immunosuppressant.
@@ -2626,7 +2613,7 @@ Teratogenicity:
 //   - Use and dose must be determined by the physician.
 // `,
 
-//   coldStorage: "No",
+//   storage: "Store at 25°C to 30°C.",
 
 //   description: `
 // Lapatinib is a small molecule and a member of the 4-anilinoquinazoline class of kinase inhibitors.
@@ -2746,8 +2733,7 @@ Dosage in Adult Patients with Resistant or Intolerant Ph+ CML-CP and CML-AP:
 • Recommended dosage is 400 mg orally twice daily.
 `,
 
-  coldStorage: "No",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Nilotinib drug substance is supplied in the form of monohydrochloride monohydrate.
 
@@ -2883,7 +2869,7 @@ Platelet counts generally:
 • Decrease within 1 to 2 weeks after discontinuation
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Eltrombopag tablets contain eltrombopag olamine, a small molecule thrombopoietin (TPO) receptor agonist for oral administration.
@@ -2999,7 +2985,7 @@ For pre/perimenopausal women:
 • Combination therapy with palbociclib plus aromatase inhibitor should always be combined with an LHRH agonist.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Palbociclib capsules for oral administration contain:
@@ -3136,7 +3122,7 @@ Blocking these proteins helps slow down cancer cell growth.
   - platelet count is at least 50,000 per mcL
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Pomalidomide is a thalidomide analog.
@@ -3267,7 +3253,7 @@ USE IN THE ELDERLY
 No dosage adjustment is necessary.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Anastrozole tablets for oral administration contain 1 mg of anastrozole, a non-steroidal aromatase inhibitor. It is chemically described as 1,3-Benzenediacetonitrile, a, a, a’, a’-tetramethyl-5-(1H-1,2,4-triazol-1-ylmethyl). Its molecular formula is C17H19N5.
@@ -3363,7 +3349,7 @@ No dosage adjustment is necessary for patients with mild to moderate hepatic imp
 In patients with severe liver impairment (n=4), although there was a 76% increase in the half-life (5.9 and 10.4 days for normal and impaired patients, respectively) of the active enantiomer of bicalutamide, no dosage adjustment is necessary.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Bicalutamide tablets contain 50 mg of bicalutamide, a non-steroidal androgen receptor inhibitor with no other known endocrine activity.
@@ -3544,7 +3530,7 @@ The elderly may be pharmacodynamically more sensitive to the toxic effects of 5-
 Insufficient data are available to provide a dosage recommendation.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 CAPETAZ 500 tablets containing Capecitabine 500 mg are peach colored capsule shaped film coated tablets.
@@ -3756,7 +3742,7 @@ Important Administration Instructions
 Patients receiving Enzumide should also receive a gonadotropin-releasing hormone (GnRH) analogue concurrently or should have had bilateral orchiectomy.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Enzalutamide is an androgen receptor inhibitor.
@@ -3892,7 +3878,7 @@ Take Erlonon on an empty stomach, i.e., at least one hour before or two hours af
 Treatment should continue until disease progression or unacceptable toxicity occurs.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Erlotinib is an inhibitor of the epidermal growth factor receptor (EGFR) tyrosine kinase that is used in the treatment of non-small cell lung cancer, pancreatic cancer and several other types of cancer.
@@ -4006,7 +3992,7 @@ Concomitant use of strong CYP 3A4 inducers decreases exemestane exposure.
 For patients receiving AROMASIN with a strong CYP 3A4 inducer such as rifampicin or phenytoin, the recommended dose of AROMASIN is 50 mg once daily after a meal.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Tablets for oral administration contain 25 mg of exemestane, an irreversible, steroidal aromatase inactivator.
@@ -4160,7 +4146,7 @@ The recommended dosage of Lenvatinib is 18 mg in combination with 5 mg everolimu
 Refer to the everolimus prescribing information for recommended everolimus dosing information.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 A kinase inhibitor is the mesylate salt of lenvatinib.
@@ -4337,8 +4323,7 @@ DO NOT REFRIGERATE THE RECONSTITUTED PRODUCT.
 Discard unused portion.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Melphalan, also known as L-phenylalanine mustard, phenylalanine mustard, L-PAM, or L-sarcolysin, is a phenylalanine derivative of nitrogen mustard.
 
@@ -4477,7 +4462,7 @@ When nalidixic acid and IV melphalan are given simultaneously, the incidence of 
 For adults and children the usual dose is 2.5 mg/kg bodyweight per day, or 50 to 75 mg/m² body surface area per day, but the dose and duration of administration depend on the nature and dosage of other cytotoxic agents given in conjunction with 6-mercaptopurine.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 It is a medication used for cancer and autoimmune diseases.
@@ -4615,7 +4600,7 @@ Modifications For Non-Hematologic Adverse Reactions
 For non-haematologic Grade 3/4 toxicities judged to be related to Lenalidomide, hold treatment and restart at the physician’s discretion at the next lower dose level when toxicity has resolved to Grade 2 or below.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 A thalidomide analogue is an immunomodulatory agent with antiangiogenic and antineoplastic properties.
@@ -4798,7 +4783,7 @@ Swallow tablets whole.
 The exposure in patients receiving a crushed tablet is lower than in those swallowing an intact tablet.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 PPTINIB (dasatinib) is a kinase inhibitor.
@@ -5088,7 +5073,7 @@ The medication should be kept away from children and pets.
 The TEMOLOZ capsules should be swallowed whole and NEVER CHEWED.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Temozolomide capsules for oral administration contain Temozolomide, an imidazotetrazine derivative.
@@ -5246,7 +5231,7 @@ Monitoring Parameters
 • Monitor Prostate-specific antigen (PSA).
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Abiraterone acetate, the active ingredient, is the acetyl ester of abiraterone.
@@ -5469,7 +5454,7 @@ If a severe non-hematologic adverse reaction develops (such as severe hepatotoxi
 Thereafter, treatment can be resumed as appropriate depending on the initial severity of the event.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Imatinib is a small molecule kinase inhibitor.
@@ -5689,7 +5674,7 @@ If the patient vomits or misses a dose, an additional dose should not be taken.
 Advise the patient to take the next prescribed dose at the usual time.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Axitinib is a kinase inhibitor.
@@ -5920,7 +5905,7 @@ Do not crush tablets due to the potential for increased rate of absorption, whic
 If a dose is missed, it should not be taken if it is <12 hours until the next dose.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Zupanib Tab (pazopanib) is a tyrosine kinase inhibitor (TKI).
@@ -6095,7 +6080,7 @@ Other Uses
 To stimulate ovulation, 5-40 mg of Tamoxifen has been administered twice daily for 4 days.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Tamoxifen, a nonsteroidal antiestrogen, is a triphenylethylene derivative with both estrogen antagonist on breast tissue and in the CNS and as an estrogen agonist on endometrium, bone and lipids.
@@ -6229,7 +6214,7 @@ CrCl less than 10 mL/minute, give 75% of normal dose.
 CrCl greater than 10 mL/minute, give full dose.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Zuviphos (cyclophosphamide) is a synthetic antineoplastic drug chemically related to the nitrogen mustards.
@@ -6449,7 +6434,7 @@ If the patient intends to have a high-fat meal, sorafenib tablets should be take
 The tablets should be swallowed with a glass of water.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 ZUVISOR is Sorafenib tablets for oral use.
@@ -6634,7 +6619,7 @@ Etoposide capsules must be stored under refrigeration 2° – 8° C (36° – 46
 The capsules are stable for 24 months under such refrigeration conditions.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Etoposide (also commonly known as VP-16) is a semisynthetic derivative of podophyllotoxin used in the treatment of certain neoplastic diseases.
@@ -6847,7 +6832,7 @@ Route Of Administration:
 For intramuscular, intravenous and intrathecal use.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Methotrexate (formerly amethopterin) is an antimetabolite used in the treatment of certain neoplastic diseases, severe psoriasis, and adult rheumatoid arthritis.
@@ -6971,7 +6956,7 @@ Because chemotherapeutic regimens are constantly changing, dosing and administra
 The suggested regimens are based upon a review of current literature concerning therapy with Dactinomycin and are on a per-cycle basis.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Dactinomycin is one of the actinomycins, a group of antibiotics produced by various species of Streptomyces.
@@ -7095,7 +7080,7 @@ If Dactinomycin accidentally seeps out of the vein into which it is injected, it
 // For patients receiving AROMASIN with a strong CYP 3A4 inducer such as rifampicin or phenytoin, the recommended dose of AROMASIN is 50 mg once daily after a meal.
 // `,
 
-//   coldStorage: "No",
+//   storage: "Store at 25°C to 30°C.",
 
 //   description: `
 // Tablets for oral administration contain 25 mg of exemestane, an irreversible, steroidal aromatase inactivator.
@@ -7272,7 +7257,7 @@ ZAXOL solution should be prepared and stored in:
 Non-PVC containing administration sets, such as those which are polyethylene-lined, should be used.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Paclitaxel is a natural product with antitumor activity.
@@ -7375,7 +7360,7 @@ It is recommended that the dosage of Cerubidine (daunorubicin) be reduced in ins
 For example, using serum bilirubin and serum creatinine as indicators of liver and kidney function.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Daunorubicin is also used with other chemotherapy drugs to treat a certain type of acute lymphocytic leukemia (ALL; a type of cancer of the white blood cells).
@@ -7562,7 +7547,7 @@ General Advice
 • Do not administer if particulate matter or discoloration is found.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Gemcitabine is a nucleoside metabolic inhibitor and antineoplastic agent belonging to the pyrimidine analogue class.
@@ -7739,7 +7724,7 @@ Venous sclerosis may result from injection into small vessels or repeated inject
 Besides the above regimens, several other protocols have been discussed in different published articles.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Epirubicin is an anthracycline cytotoxic agent and forms a complex with DNA by intercalation of its planar rings between nucleotide base pairs, with consequent inhibition of nucleic acid (DNA & RNA) and protein synthesis.
@@ -7929,7 +7914,7 @@ Colorectal Cancer Single-Agent Regimen 2
 • ZINOTECAN 350 mg/m² intravenous infusion over 90 minutes on Day 1 every 3 weeks.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 A light yellow-coloured solution, free from visible particles.
@@ -8154,8 +8139,7 @@ In the trials and in postmarketing experience, renal deterioration, progression 
 There have been instances of this occurring after the initial Zoledronic dose.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Zoledronic acid is a bisphosphonic acid which is an inhibitor of osteoclastic bone resorption.
 
@@ -8371,7 +8355,7 @@ Assess the patients for:
 before each oxaliplatin cycle.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Oxaliplatin, a cell cycle-phase-nonspecific antineoplastic drug, belongs to a new class of platinum agent that contains a platinum atom complexed with oxalate and diaminocyclohexane (DACH).
@@ -8474,7 +8458,7 @@ Add 100 ml of water.
 Stir well until the powder is evenly dispersed in the water and drink immediately.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Glutox-T is off white coloured powder.
@@ -8573,7 +8557,7 @@ Increase AFATINIB daily dose by 10 mg as tolerated for patients who require chro
 Resume the previous dose 2 to 3 days after discontinuation of the P-gp inducer.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Afatinib tablets contain afatinib, a tyrosine kinase inhibitor which is a 4-anilinoquinazoline.
@@ -8732,7 +8716,7 @@ Do not take a missed dose within 12 hours of the next dose.
 Modify the Cabozantinib dose for patients taking drugs known to strongly induce or inhibit CYP3A4 and for patients with moderate hepatic impairment.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Cabozantinib Tab is the (S)-malate salt of cabozantinib, a kinase inhibitor.
@@ -8961,7 +8945,7 @@ Since no antibacterial preservative is contained in the formulation, it is recom
 Parenteral drug products should be inspected visually for particulate matter and discolouration prior to administration.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Carboplatin injection is supplied as a sterile, aqueous solution available in 50mg/5ml, 150mg/15ml, 450mg/45ml or 600mg/60ml multi-dose vials containing 10mg/ml of carboplatin for administration by intravenous infusion.
@@ -9060,8 +9044,7 @@ The recommended dose of Zutinib for pancreatic neuroendocrine tumors (pNET) is 3
 Zutinib may be taken with or without food.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store at 25°C to 30°C.",
   description: `
 Zutinib, an oral multi-kinase inhibitor, is the malate salt of sunitinib.
 
@@ -9341,7 +9324,7 @@ Calcium 800-1200 mg daily with or without a calorie-restricted diet has been use
 In some cases, calcium is taken in combination with 400 IU of vitamin D.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 CALCIBOON ZM tablets is a fortified calcium supplement containing calcium citrate malate with Vitamin D3 (veg source), Zinc, and Magnesium.
@@ -9472,7 +9455,7 @@ The American College of Obstetricians and Gynaecologists (ACOG) recommends that 
 One tablet twice a day or as directed by the dietitian.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 ZURCUMIN is a combination of Curcumin, Moringa, Lycopene and Piperine, available as tablets for oral use.
@@ -9975,7 +9958,7 @@ Estimated creatinine clearance for males × 0.85
 Caution should be exercised when administering Pemetrexed concurrently with NSAIDs to patients whose creatinine clearance is < 80 mL/min.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Pemetrexed is a folate metabolic inhibitor belonging to the class of antifolate antineoplastic agents.
@@ -10111,7 +10094,7 @@ The recommended dose of aprepitant is:
 • 80 mg once daily in the morning on Days 2 and 3.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Aprepitant is a substance P/neurokinin 1 (NK1) receptor antagonist, chemically described as:
@@ -10234,7 +10217,7 @@ Parenteral drug products should be inspected visually for particulate matter, cl
 If any of these are present, discard the solution.
 `,
 
-  coldStorage: "Yes",
+  Storage: "Store refrigerated at 2°C to 8°C.",
 
   description: `
 Aspraginaz (asparaginase) contains the enzyme L-asparagine amidohydrolase, type EC-2, derived from Escherichia coli.
@@ -10470,8 +10453,7 @@ The intrapleural injection of topical anesthetics or systemic narcotic analgesia
 Parenteral drug products should be inspected visually for particulate matter and discoloration prior to administration, whenever solution and container permit.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Bleomycin for Injection USP is a mixture of cytotoxic glycopeptide antibiotics isolated from a strain of Streptomyces verticillus and is freely soluble in water.
 
@@ -10729,8 +10711,7 @@ or
 • At normal room conditions for up to 8 hours.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Dacarbazine is an anticancer agent.
 
@@ -10831,8 +10812,7 @@ A dose of 250 mg is recommended for patients with moderate hepatic impairment (C
 The recommended dose of Fukayna is 250 mg to be administered intramuscularly into the buttocks (gluteal area) slowly (1-2 minutes per injection) as two 5 mL injections, one in each buttock, on Days 1, 15, 29, and once monthly thereafter.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Fukayna (fulvestrant) injection for intramuscular administration is an estrogen receptor antagonist.
 
@@ -10990,7 +10970,7 @@ It must not be used after 24 hours.
 If to be stored after preparation, Granisetron infusions must be prepared under aseptic conditions.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Graniz Injection is a prescription medicine used to treat the symptoms of nausea and vomiting caused by chemotherapy, radiation or postoperative conditions.
@@ -11098,8 +11078,7 @@ If a volume greater than 2 mL is to be administered, two injection sites should 
 Discard unused portion.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 PEG – Aspraginaz (asparaginase) contains the enzyme L-asparagine amidohydrolase, type EC-2, derived from Escherichia coli.
 
@@ -11213,8 +11192,7 @@ No dosing adjustment is necessary for renal dysfunction.
 Pegfilgrastim should be visually inspected for discolouration and particulate matter, and if found, should not be administered.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Pegfilgrastim is a covalent conjugate of recombinant methionyl human GCSF (filgrastim) and monomethoxypolyethylene glycol.
 
@@ -11351,7 +11329,7 @@ Endometrial Carcinoma
 At least 2 months of continuous treatment is considered an adequate period for determining the efficacy of megestrol acetate.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Megestrol acetate is a synthetic, antineoplastic and progestational drug.
@@ -11515,8 +11493,7 @@ A reduction of 50% in the dose of vinblastine sulphate is recommended for patien
 Since metabolism and excretion are primarily hepatic, no modification is recommended for patients with impaired renal function.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Vinblastine Sulphate for Injection USP is vincaleukoblastine sulphate (1:1) (salt).
 
@@ -11824,8 +11801,7 @@ Procedures for proper handling and disposal of anticancer drugs should be consid
 There is no general agreement that all of the procedures recommended in the guidelines are necessary or appropriate.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Vincristine Sulfate Injection, USP is the salt of an alkaloid obtained from a common flowering herb, the periwinkle plant (Vinca rosea Linn.).
 
@@ -11995,7 +11971,7 @@ Avoid generation of foam.
 If foaming or clumping occurs, stand solution for at least 15 minutes until foam subsides.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Paclitaxel protein-bound particles for Injectable suspension is an albumin-bound form of Paclitaxel with a mean particle size of approximately 130 nanometers.
@@ -12149,7 +12125,7 @@ Immediately drink the liquid or administer through a naso-gastric tube.
 Rinse the container with 4 to 8 ounces of water and immediately drink or administer through the naso-gastric tube.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Gefitinib is a kinase inhibitor.
@@ -12378,8 +12354,7 @@ The reconstituted final drug solution is stable for 24 hours at ambient room tem
 Parenteral drug products should be inspected visually for particulate matter and discoloration before administration whenever solution and container permit.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Fosaprepitant dimeglumine for Injection is a sterile, lyophilized prodrug of aprepitant, a substance P/neurokinin-1 (NK1) receptor antagonist.
 
@@ -12549,7 +12524,7 @@ Because of cumulative myelosuppression, patients should be fully re-evaluated af
 Doses greater than 20 mg/m² have not been shown to be more effective and are more toxic than lower doses.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Mitomycin is an antibiotic isolated from the broth of Streptomyces verticillus Yingtanensis which has been shown to have antimetabolic activity.
@@ -12705,7 +12680,7 @@ Each 0.2 mL contains:
 The pH may have been adjusted with sodium hydroxide and/or acetic acid.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Leuprolide acetate is a synthetic nonapeptide analog of naturally occurring gonadotropin-releasing hormone (GnRH or LH-RH).
@@ -13029,7 +13004,7 @@ Additionally, loss of folate in urine becomes roughly logarithmic as the amount 
 Because of the calcium content of the leucovorin solution, no more than 160 mg of leucovorin should be injected intravenously per minute.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Leucovorin is one of several active, chemically reduced derivatives of folic acid.
@@ -13185,8 +13160,7 @@ Together with Carfilzomib, patients may also be given:
 • Dexamethasone alone
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Carfilzomib is an antineoplastic agent (cancer medicine).
 
@@ -13371,7 +13345,7 @@ In clinical use of ZUVIPLAT injection, take the following measures for reducing 
 • During the administration of ZUVIPLAT injection, exercise care so as to maintain the urinary output and administer diuretics such as mannitol and furosemide.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 ZUVIPLAT is an anticancer drug of an entirely new category for antitumor activity and low toxicity from among a variety platinum compounds developed according to the discovery by Barnett Rosenberg in the U.S.A that platinum compound inhibits the mitosis of Escherichia coli.
@@ -13525,7 +13499,7 @@ The recommended dose of Zuviplexa by subcutaneous injection is based on body wei
 Single-use vial containing 1.2 mL of a 20 mg/mL solution.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Plerixafor is a haematopoietic stem cell mobiliser with a chemical name of:
@@ -13658,7 +13632,7 @@ Monitoring:
 • Monitor complete blood counts regularly.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Hydroxyurea is an antimetabolite available for oral use as capsules containing 500 mg of hydroxyurea.
@@ -13741,7 +13715,7 @@ Treatment should continue until tumor progression becomes evident.
 Zuvitroz should be taken only as prescribed by the treating healthcare professional.
 `,
 
-  coldStorage: "No",
+  storage: "Store at 25°C to 30°C.",
 
   description: `
 Zuvitroz tablets contain 2.5 mg of letrozole, a non-steroidal aromatase inhibitor that reduces estrogen synthesis.
@@ -13847,8 +13821,7 @@ Administer intravenously as a 1-hour infusion.
 Avoid contact of undiluted concentrate with plasticized PVC equipment.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Docetaxel is an antineoplastic agent belonging to the taxane family.
 
@@ -13946,8 +13919,7 @@ Deltoid injections should be avoided because they may cause significant discomfo
 Zuvistatin must not be administered intravenously or subcutaneously.
 `,
 
-  coldStorage: "Yes",
-
+storage: "Store refrigerated at 2°C to 8°C.",
   description: `
 Octreotide is the acetate salt of a cyclic octapeptide.
 
@@ -14009,4 +13981,4804 @@ Administration:
 Zuvistatin must be administered intramuscularly in the gluteal region and must never be administered intravenously or subcutaneously.
 `,
 },
+{
+  id: 95,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "zuvitere-rtu",
+  name: "Zuvitere RTU",
+  subtitle: "Docetaxel RTU Injection",
+  type: "Injection",
+  imageClass: "zuvitere-rtu-img",
+
+  image: "/new_product_page/zuvitere-rtu-group.png",
+
+  images: [
+    "/new_product_page/zuvitere-rtu-group.png",
+    "/new_product_page/Zuvitere-RTU-20.png",
+    "/new_product_page/Zuvitere-RTU-80.png",
+    "/new_product_page/Zuvitere-RTU-120.png",
+  ],
+
+  strength: "20 mg / 80 mg / 120 mg",
+  packSize: "1 Vial",
+  drugClass: "Taxane",
+
+  dosage: `
+Premedication Regimen:
+
+All patients should be premedicated with oral corticosteroids such as dexamethasone 16 mg per day, for example 8 mg twice daily, for 3 days starting 1 day before Docetaxel administration.
+
+This helps reduce the incidence and severity of fluid retention and hypersensitivity reactions.
+
+For hormone-refractory metastatic prostate cancer, the recommended premedication regimen is oral dexamethasone 8 mg given at 12 hours, 3 hours and 1 hour before the Docetaxel infusion.
+
+Breast Cancer:
+
+• For locally advanced or metastatic breast cancer after failure of prior chemotherapy, the recommended dose is 60 mg/m² to 100 mg/m² administered intravenously over 1 hour every 3 weeks.
+
+• For adjuvant treatment of operable node-positive breast cancer, the recommended dose is 75 mg/m² administered over 1 hour after doxorubicin 50 mg/m² and cyclophosphamide 500 mg/m² every 3 weeks for 6 courses.
+
+• Prophylactic G-CSF may be used to reduce the risk of hematological toxicity.
+
+Non-Small Cell Lung Cancer:
+
+• After failure of prior platinum-based chemotherapy, the recommended dose is 75 mg/m² administered intravenously over 1 hour every 3 weeks.
+
+• For chemotherapy-naive patients, the recommended dose is 75 mg/m² administered intravenously over 1 hour, immediately followed by cisplatin 75 mg/m² over 30 to 60 minutes every 3 weeks.
+
+Prostate Cancer:
+
+• For hormone-refractory metastatic prostate cancer, the recommended dose is 75 mg/m² every 3 weeks as a 1-hour intravenous infusion.
+
+• Prednisone 5 mg orally twice daily is administered continuously.
+
+Gastric Adenocarcinoma:
+
+• The recommended dose is 75 mg/m² as a 1-hour intravenous infusion, followed by cisplatin 75 mg/m² over 1 to 3 hours on Day 1.
+
+• This is followed by fluorouracil 750 mg/m² per day as a 24-hour continuous intravenous infusion for 5 days.
+
+• Treatment is repeated every 3 weeks.
+
+• Patients should receive antiemetic premedication and appropriate hydration for cisplatin administration.
+
+Head and Neck Cancer – Induction Chemotherapy Followed by Radiotherapy:
+
+• Docetaxel 75 mg/m² is administered as a 1-hour intravenous infusion.
+
+• This is followed by cisplatin 75 mg/m² intravenously over 1 hour on Day 1.
+
+• Fluorouracil 750 mg/m² per day is administered as a continuous intravenous infusion for 5 days.
+
+• The regimen is repeated every 3 weeks for 4 cycles, followed by radiotherapy.
+
+Head and Neck Cancer – Induction Chemotherapy Followed by Chemoradiotherapy:
+
+• Docetaxel 75 mg/m² is administered as a 1-hour intravenous infusion on Day 1.
+
+• This is followed by cisplatin 100 mg/m² administered over 30 minutes to 3 hours.
+
+• Fluorouracil 1000 mg/m² per day is administered as a continuous infusion from Day 1 to Day 4.
+
+• The regimen is repeated every 3 weeks for 3 cycles, followed by chemoradiotherapy.
+
+Preparation and Administration:
+
+• Zuvitere RTU contains Docetaxel 20 mg/mL and requires no prior dilution with a separate diluent.
+
+• Using a calibrated syringe and a 21-gauge needle, withdraw the required amount and inject it into a 250 mL infusion bag or bottle containing either 0.9% Sodium Chloride solution or 5% Dextrose solution.
+
+• If a dose greater than 200 mg is required, use a larger infusion volume so that the final concentration does not exceed 0.74 mg/mL.
+
+• Mix the infusion thoroughly by gentle manual rotation.
+
+• Inspect the solution visually for particulate matter, precipitation or discoloration before administration.
+
+• Administer the final diluted solution intravenously over 1 hour.
+
+• The prepared infusion solution should be used within 4 hours, including the 1-hour administration time.
+`,
+
+  storage: "Store at 25°C to 30°C.",
+
+  description: `
+Docetaxel is an antineoplastic agent belonging to the taxoid family.
+
+It is prepared by semisynthesis using a precursor extracted from the renewable needle biomass of yew plants.
+
+Zuvitere RTU is a sterile solution for intravenous infusion containing Docetaxel at a concentration of 20 mg/mL.
+
+It is a colorless to pale yellow, slightly viscous liquid that is free from visible particulate matter.
+
+Each mL contains 20 mg of anhydrous Docetaxel along with Polysorbate 80 and diluent.
+
+Zuvitere RTU is available in single-dose vials containing:
+
+• 20 mg in 1 mL
+
+• 80 mg in 4 mL
+
+• 120 mg in 6 mL
+
+Zuvitere RTU requires no prior dilution with a separate diluent and is ready to be added directly to the infusion solution.
+`,
+
+  indication: `
+Docetaxel is indicated for the treatment of patients with locally advanced or metastatic breast cancer after failure of prior chemotherapy.
+
+Docetaxel in combination with doxorubicin and cyclophosphamide is indicated for the adjuvant treatment of patients with operable node-positive breast cancer.
+
+Docetaxel as a single agent is indicated for the treatment of patients with locally advanced or metastatic non-small cell lung cancer after failure of prior platinum-based chemotherapy.
+
+Docetaxel in combination with cisplatin is indicated for the treatment of patients with unresectable, locally advanced or metastatic non-small cell lung cancer who have not previously received chemotherapy for this condition.
+
+Docetaxel in combination with prednisone is indicated for the treatment of patients with androgen-independent or hormone-refractory metastatic prostate cancer.
+
+Docetaxel in combination with cisplatin and fluorouracil is indicated for the treatment of patients with advanced gastric adenocarcinoma, including adenocarcinoma of the gastroesophageal junction, who have not received prior chemotherapy for advanced disease.
+
+Docetaxel in combination with cisplatin and fluorouracil is also indicated for the induction treatment of patients with locally advanced squamous cell carcinoma of the head and neck.
+`,
+
+  clinicalEfficacy: `
+Docetaxel is a CYP3A4 substrate.
+
+The metabolism and systemic exposure of Docetaxel may be altered by medicines that induce, inhibit or are metabolized by cytochrome P450 3A4.
+
+The exposure of Docetaxel increased approximately 2.2-fold when it was coadministered with ketoconazole, a potent CYP3A4 inhibitor.
+
+Protease inhibitors, particularly ritonavir, may also increase the exposure of Docetaxel.
+
+Concomitant use of Docetaxel with medicines that strongly inhibit CYP3A4 should generally be avoided.
+
+When the systemic administration of a potent CYP3A4 inhibitor cannot be avoided, patients should be closely monitored for toxicity and a reduction in the Docetaxel dose may be considered.
+`,
+
+  safetyInformation: `
+Contraindications:
+
+• Docetaxel is contraindicated in patients with a history of severe hypersensitivity reactions to Docetaxel or other medicines formulated with Polysorbate 80.
+
+• Severe reactions, including anaphylaxis, have occurred.
+
+• Docetaxel should not be administered to patients with neutrophil counts below 1,500 cells/mm³.
+
+Toxic Deaths:
+
+Treatment-related deaths have occurred in patients receiving Docetaxel, particularly in patients with abnormal baseline liver function.
+
+Sepsis accounted for a significant proportion of treatment-related deaths.
+
+Hepatic Impairment:
+
+Patients with combined abnormalities of transaminases and alkaline phosphatase should not be treated with Docetaxel.
+
+Docetaxel should not be administered to patients with bilirubin above the upper limit of normal or AST and/or ALT greater than 1.5 times the upper limit of normal together with alkaline phosphatase greater than 2.5 times the upper limit of normal.
+
+Hematologic Effects:
+
+• Frequent peripheral blood cell counts should be performed.
+
+• Patients should not receive subsequent treatment cycles until neutrophils recover to more than 1,500 cells/mm³ and platelets recover to more than 100,000 cells/mm³.
+
+• A 25% dose reduction is recommended following severe neutropenia lasting 7 days or longer, febrile neutropenia or Grade 4 infection.
+
+• Patients receiving combination treatment should be closely monitored for febrile neutropenia and neutropenic infection.
+
+Hypersensitivity Reactions:
+
+Patients should be closely observed for hypersensitivity reactions, especially during the first and second infusions.
+
+Severe reactions may include generalized rash, erythema, hypotension, bronchospasm and, rarely, fatal anaphylaxis.
+
+Severe hypersensitivity reactions require immediate discontinuation of the infusion and appropriate emergency treatment.
+
+Patients who experience severe hypersensitivity reactions should not be rechallenged with Docetaxel.
+
+Fluid Retention:
+
+Severe fluid retention has been reported following Docetaxel therapy.
+
+Patients should receive oral corticosteroid premedication before each administration.
+
+Patients with pre-existing effusions should be closely monitored for worsening fluid accumulation.
+
+Peripheral edema may be managed with salt restriction and oral diuretics.
+
+Acute Myeloid Leukemia:
+
+Treatment-related acute myeloid leukemia or myelodysplasia has occurred in patients receiving anthracyclines and/or cyclophosphamide, including Docetaxel-containing breast cancer treatment regimens.
+
+Cutaneous Reactions:
+
+Localized redness and swelling of the extremities followed by skin peeling may occur.
+
+Dose adjustment should be considered in cases of severe skin toxicity.
+
+Neurologic Reactions:
+
+Severe neurosensory symptoms including paresthesia, dysesthesia and pain have been reported.
+
+Dose adjustment may be required, and treatment should be discontinued if severe symptoms persist.
+
+Asthenia:
+
+Severe fatigue and weakness may occur and may persist for several days or weeks.
+
+Common Adverse Reactions:
+
+• Infection
+
+• Neutropenia
+
+• Anemia
+
+• Febrile neutropenia
+
+• Hypersensitivity reactions
+
+• Thrombocytopenia
+
+• Neuropathy
+
+• Taste disturbance
+
+• Shortness of breath
+
+• Constipation
+
+• Loss of appetite
+
+• Nail disorders
+
+• Fluid retention
+
+• Fatigue
+
+• Pain
+
+• Nausea
+
+• Diarrhea
+
+• Vomiting
+
+• Mucositis
+
+• Hair loss
+
+• Skin reactions
+
+• Muscle pain
+
+Overdosage:
+
+There is no known antidote for Docetaxel overdosage.
+
+Patients should be monitored in a specialized medical unit where vital functions can be closely observed.
+
+Potential complications include bone marrow suppression, peripheral neurotoxicity and mucositis.
+
+Therapeutic G-CSF and other appropriate supportive measures should be administered as clinically required.
+`,
+
+  specialPrecautions: `
+Administration Precautions:
+
+Docetaxel is a cytotoxic anticancer medicine and appropriate precautions should be followed while handling and preparing the solution.
+
+The use of protective gloves is recommended.
+
+If Docetaxel solution comes into contact with the skin, immediately wash the affected area thoroughly with soap and water.
+
+If the solution comes into contact with mucous membranes, immediately rinse the area thoroughly with water.
+
+Contact with plasticized PVC equipment or devices should be avoided.
+
+To minimize exposure to DEHP, the final infusion solution should be stored in glass, polypropylene or polyolefin containers and administered through polyethylene-lined administration sets.
+
+Pregnancy:
+
+Docetaxel can cause fetal harm when administered during pregnancy.
+
+Women of reproductive potential should avoid becoming pregnant during treatment and should use effective contraception.
+
+A patient who becomes pregnant while receiving Docetaxel should be informed about the potential risk to the fetus.
+
+Breastfeeding:
+
+It is not known whether Docetaxel is secreted in human milk.
+
+Because of the potential for serious adverse reactions in nursing infants, either breastfeeding or Docetaxel treatment should be discontinued after considering the importance of treatment to the mother.
+
+Pediatric Use:
+
+The safety and efficacy of Docetaxel as monotherapy or combination therapy have not been established in pediatric patients.
+
+Geriatric Use:
+
+Dose selection for elderly patients should be cautious because of the greater likelihood of decreased hepatic, renal or cardiac function and the presence of other diseases or medicines.
+
+Hepatic Impairment:
+
+Docetaxel should not be administered to patients with significant abnormalities in bilirubin, AST, ALT or alkaline phosphatase.
+`,
+},
+{
+  id: 96,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "acalataz",
+  name: "Acalataz",
+  subtitle: "Acalabrutinib Capsules",
+  type: "Capsule",
+  imageClass: "acalataz-img",
+
+  image: "/new_product_page/Acalataz-100.png",
+
+  images: [
+    "/new_product_page/Acalataz-100.png",
+  ],
+
+  strength: "100 mg",
+  packSize: "1 X 30",
+  drugClass: "Bruton's Tyrosine Kinase (BTK) Inhibitor",
+
+  dosage: `
+Acalataz should only be prescribed by a doctor experienced in the use of medicines for cancer.
+
+Always take Acalataz exactly as instructed by your doctor.
+
+Dosage:
+
+• The usual dose is one capsule containing 100 mg twice daily.
+
+• Take the two doses approximately 12 hours apart.
+
+Administration:
+
+• Swallow the capsule whole with water at approximately the same time every day.
+
+• Do not chew, dissolve or open the capsule, as this may change how quickly the medicine is absorbed into the body.
+
+• Acalataz may be taken with food or between meals.
+
+Missed Dose:
+
+• If less than 3 hours have passed since the usual dosing time, take the missed dose immediately.
+
+• Take the next dose at the regularly scheduled time.
+
+• If more than 3 hours have passed since the usual dosing time, skip the missed dose.
+
+• Take the next dose at the regularly scheduled time.
+
+• Do not take a double dose to make up for a forgotten dose.
+`,
+
+storage: "Store at 25°C to 30°C.",
+  description: `
+Acalataz is a medicine used in the treatment of cancer. It contains the active substance acalabrutinib.
+
+Acalataz belongs to a group of medicines called Bruton tyrosine kinase inhibitors, also known as BTK inhibitors.
+
+It works by blocking BTK, a protein in the body that helps certain cancer cells grow and survive.
+
+By blocking BTK, Acalataz helps kill cancer cells and reduce their number, which can slow the progression of the disease.
+`,
+
+  indication: `
+Acalataz is indicated for the treatment of adults with chronic lymphocytic leukaemia.
+
+Chronic lymphocytic leukaemia, also known as CLL, is a cancer of white blood cells called B-lymphocytes or B-cells.
+
+These cells form part of the body's immune system.
+`,
+
+  clinicalEfficacy: `
+Acalataz belongs to the class of Bruton tyrosine kinase inhibitors.
+
+It works by blocking BTK, a protein involved in the growth and survival of cancer cells.
+
+Blocking BTK helps kill cancer cells and reduce the number of abnormal cells in the body.
+
+This action can help slow the progression of the disease.
+
+Acalataz is used in adult patients with chronic lymphocytic leukaemia.
+`,
+
+  safetyInformation: `
+Do Not Take Acalataz If:
+
+• You are allergic to acalabrutinib or any of the other ingredients of this medicine.
+
+• If you are unsure, speak to your doctor, pharmacist or nurse before taking Acalataz.
+
+Serious Side Effects:
+
+Stop taking Acalataz and contact a doctor or visit the nearest emergency department immediately if you experience signs of serious bleeding or infection.
+
+Bleeding:
+
+Possible symptoms include:
+
+• Black stools or stools containing blood
+
+• Pink or brown urine
+
+• Nosebleeds
+
+• Unusual bruising
+
+• Unexpected bleeding
+
+• Vomiting blood
+
+• Coughing up blood
+
+• Dizziness
+
+• Weakness
+
+• Confusion
+
+Infections:
+
+Possible symptoms include:
+
+• Fever
+
+• Chills
+
+• Weakness
+
+• Confusion
+
+• Cough
+
+• Shortness of breath
+
+Common Serious Side Effects:
+
+• Fast heart rate
+
+• Missed heartbeats
+
+• Weak or uneven pulse
+
+• Dizziness
+
+• Feeling faint
+
+• Chest discomfort
+
+• Shortness of breath
+
+Uncommon Serious Side Effects:
+
+• Fever
+
+• Chills
+
+• Nausea
+
+• Vomiting
+
+• Confusion
+
+• Shortness of breath
+
+• Seizures
+
+• Irregular heartbeat
+`,
+
+  specialPrecautions: `
+Talk to your doctor, pharmacist or nurse before taking Acalataz if you:
+
+• Have ever experienced unusual bruising or bleeding.
+
+• Are taking medicines that may increase the risk of bleeding.
+
+• Have an infection.
+
+• Have recently undergone an operation or are scheduled for one.
+
+Your doctor may temporarily stop Acalataz before and after a medical, surgical or dental procedure.
+
+Hepatitis B:
+
+Tell your doctor if you have ever had hepatitis B.
+
+Acalataz may cause hepatitis B infection to become active again, and your doctor may monitor you for signs of reactivation.
+
+Heart Rhythm:
+
+Tell your doctor if you have or have previously had an irregular heartbeat.
+
+Skin Cancer Risk:
+
+Speak to your doctor if you develop a new skin lesion or notice any change in the appearance of an existing area of skin.
+
+Patients taking Acalataz may have an increased risk of developing skin cancer.
+
+Use appropriate sun protection and undergo regular skin examinations.
+
+Children and Adolescents:
+
+Do not give Acalataz to children or adolescents below 18 years of age.
+
+The medicine has not been adequately studied in this age group.
+`,
+},
+{
+  id: 97,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "zuvisome",
+  name: "Zuvisome",
+  subtitle: "Liposomal Amphotericin B Injection",
+  type: "Injection",
+  imageClass: "zuvisome-img",
+
+  image: "/new_product_page/Zuvisome-50.png",
+
+  images: [
+    "/new_product_page/Zuvisome-50.png",
+  ],
+
+  strength: "50 mg",
+  packSize: "1 Vial",
+  drugClass: "Polyene Antifungal",
+
+  dosage: `
+Different amphotericin products are not equivalent and should not be used interchangeably.
+
+Administration of a test dose is advisable before beginning a new course of treatment.
+
+Administration:
+
+• Amphotericin B should be administered by intravenous infusion over 30 to 60 minutes.
+
+• For doses greater than 5 mg/kg/day, intravenous infusion over a 2-hour period is recommended.
+
+Instructions for Reconstitution and Dilution:
+
+• Reconstitute using Sterile Water for Injection only.
+
+• Dilute only with Dextrose solution 5%, 10% or 20% for infusion.
+
+• Do not use saline solution.
+
+• Do not mix with other medicinal products or electrolytes.
+
+• Strict aseptic technique must be observed during preparation and administration.
+`,
+
+  storage: "Store at 25°C to 30°C.",
+
+  description: `
+Zuvisome is a sterile powder for dispersion for intravenous infusion.
+
+It is supplied as a yellow lyophilised cake or powder.
+
+Amphotericin B is a macrocyclic polyene antifungal antibiotic produced by Streptomyces nodosus.
+
+It may act as either a fungistatic or fungicidal agent depending on the concentration achieved in body fluids and the susceptibility of the fungal organism.
+
+Amphotericin B acts primarily by binding to sterols in fungal cell membranes.
+
+This binding changes membrane permeability and allows leakage of small intracellular molecules, resulting in fungal cell damage.
+
+Mammalian cell membranes also contain sterols, and the damage caused by Amphotericin B to human cells and fungal cells may involve similar mechanisms.
+
+The lipophilic portion of Amphotericin B allows the molecule to become incorporated into the lipid bilayer of liposomes.
+
+Liposomes are closed spherical vesicles formed from amphiphilic substances such as phospholipids.
+
+When exposed to aqueous solutions, phospholipids arrange themselves into membrane bilayers.
+`,
+
+  indication: `
+Liposomal Amphotericin B Injection 50 mg is indicated in adults and children aged from 1 month to 18 years for:
+
+• Treatment of severe systemic and/or deep fungal infections.
+
+• Treatment of visceral leishmaniasis in immunocompetent adults and children.
+
+• Empirical treatment of presumed fungal infections in febrile neutropenic patients when fever has failed to respond to broad-spectrum antibiotics and investigations have not identified a bacterial or viral cause.
+
+Infections successfully treated with Liposomal Amphotericin B include:
+
+• Disseminated candidiasis
+
+• Aspergillosis
+
+• Mucormycosis
+
+• Chronic mycetoma
+
+• Cryptococcal meningitis
+
+• Visceral leishmaniasis
+
+Liposomal Amphotericin B should not be used to treat common clinically inapparent forms of fungal disease that are identified only through positive skin or serological tests.
+`,
+
+  clinicalEfficacy: `
+The efficacy of Amphotericin B has been established in several clinical trials for the treatment of systemic fungal infections.
+
+It has also been evaluated as empirical therapy for fever of unknown origin in neutropenic patients and for the treatment of visceral leishmaniasis.
+
+Comparative randomized studies of liposomal Amphotericin B and conventional Amphotericin B in confirmed Aspergillus and Candida infections demonstrated equivalent efficacy.
+
+In adult and paediatric febrile neutropenic patients with presumed fungal infection, a randomized double-blind clinical trial demonstrated that Amphotericin B administered at 3 mg/kg/day was as effective as conventional Amphotericin B.
+
+Visceral Leishmaniasis:
+
+The efficacy of Amphotericin B in visceral leishmaniasis has been demonstrated in large populations of both immunocompetent and immunocompromised patients.
+
+Invasive Filamentous Fungal Infections:
+
+The efficacy of Amphotericin B was demonstrated in a prospective, randomized, multicentre study as first-line treatment in immunocompromised, mainly neutropenic adults and children older than 30 days with proven or probable invasive filamentous fungal infections.
+
+Invasive Candidiasis:
+
+Amphotericin B administered at 3 mg/kg/day was shown to be as effective as micafungin as first-line treatment for candidaemia and invasive candidiasis in a randomized, double-blind, multinational non-inferiority study involving adults and children.
+
+Invasive Mucormycosis:
+
+Patients receiving liposomal Amphotericin B as first-line treatment for zygomycosis demonstrated favourable survival outcomes in cases collected prospectively by the European Confederation of Medical Mycology.
+`,
+
+  safetyInformation: `
+Contraindications:
+
+• Hypersensitivity to Amphotericin B or any component of the formulation.
+
+• Treatment may still be considered when the condition is life-threatening and, in the physician's opinion, can only be treated with Liposomal Amphotericin B.
+
+Anaphylaxis and Anaphylactoid Reactions:
+
+Anaphylaxis and anaphylactoid reactions have been reported during Amphotericin B infusion.
+
+Infusion-Related Reactions:
+
+Other severe infusion-related reactions may occur during the administration of amphotericin-containing products.
+
+Renal Toxicity:
+
+Liposomal Amphotericin B is substantially less nephrotoxic than conventional Amphotericin B.
+
+However, renal adverse reactions may still occur and renal function should be monitored.
+
+Pulmonary Toxicity:
+
+Acute pulmonary toxicity has been reported in patients receiving Amphotericin B during or shortly after leukocyte transfusions.
+
+Diabetic Patients:
+
+Each vial contains approximately 900 mg of sucrose.
+
+Very Common Adverse Reactions:
+
+• Hypokalaemia
+
+• Nausea
+
+• Vomiting
+
+• Rigors
+
+• Pyrexia
+
+Common Adverse Reactions:
+
+• Hyponatraemia
+
+• Hypocalcaemia
+
+• Hypomagnesaemia
+
+• Hyperglycaemia
+
+• Headache
+
+• Tachycardia
+
+• Hypotension
+
+• Vasodilatation
+
+• Flushing
+
+• Dyspnoea
+
+• Diarrhoea
+
+• Abdominal pain
+
+• Abnormal liver function tests
+
+• Hyperbilirubinaemia
+
+• Increased alkaline phosphatase
+
+• Rash
+
+• Back pain
+
+• Increased serum creatinine
+
+• Increased blood urea
+
+• Chest pain
+
+Uncommon Adverse Reactions:
+
+• Thrombocytopenia
+
+• Anaphylactoid reaction
+
+• Convulsions
+
+• Bronchospasm
+
+Adverse Reactions With Unknown Frequency:
+
+• Anaemia
+
+• Anaphylactic reactions
+
+• Hypersensitivity
+
+• Cardiac arrest
+
+• Arrhythmia
+
+• Angioneurotic oedema
+
+• Rhabdomyolysis
+
+• Musculoskeletal pain
+
+• Renal failure
+
+• Renal insufficiency
+
+Overdosage:
+
+The toxicity of Amphotericin B following acute overdose has not been clearly defined.
+
+If overdose occurs, administration should be stopped immediately.
+
+The patient's clinical condition, renal and hepatic function, serum electrolytes and haematological status should be closely monitored.
+
+Haemodialysis and peritoneal dialysis do not appear to significantly affect the elimination of Amphotericin B.
+`,
+
+  specialPrecautions: `
+Pregnancy:
+
+The safety of Amphotericin B during pregnancy has not been established.
+
+It should only be used during pregnancy when the expected benefits outweigh the potential risks.
+
+Breastfeeding:
+
+It is not known whether Amphotericin B is excreted in human breast milk.
+
+The potential risks and benefits should be considered before use during breastfeeding.
+
+Fertility:
+
+Animal studies do not indicate direct or indirect harmful effects on reproductive toxicity.
+
+Incompatibilities:
+
+• Liposomal Amphotericin B Injection is incompatible with saline solutions.
+
+• Do not mix with other medicinal products or electrolytes.
+
+• Reconstitute only with Sterile Water for Injection.
+
+• Dilute only with Dextrose solution 5%, 10% or 20%.
+
+Storage:
+
+Store below 25°C.
+`,
+},
+{
+  id: 98,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "acantha",
+  name: "Acantha",
+  subtitle: "Olaparib Tablets",
+  type: "Tablet",
+  imageClass: "acantha-img",
+
+  image: "/new_product_page/Acantha-group.png",
+
+  images: [
+    "/new_product_page/Acantha-group.png",
+    "/new_product_page/Acantha-100.png",
+    "/new_product_page/Acantha-150.png",
+  ],
+
+  strength: "100 mg / 150 mg",
+  packSize: "1 X 30",
+  drugClass: "Poly (ADP-ribose) Polymerase (PARP) Inhibitor",
+
+  dosage: `
+Recommended Dose:
+
+• The recommended dose of Olaparib Tablets is 300 mg, taken as two 150 mg tablets, orally twice daily.
+
+• The total daily dose is 600 mg.
+
+• The medicine may be taken with or without food.
+
+• The 100 mg tablet is available for dose reduction.
+
+• Continue treatment until disease progression or unacceptable toxicity.
+
+Administration:
+
+• Swallow the tablets whole.
+
+• Do not chew, crush, dissolve or divide the tablets.
+
+Missed Dose:
+
+• If a dose is missed, take the next dose at the regularly scheduled time.
+
+• Do not take an extra dose to make up for the missed dose.
+
+Dose Adjustments for Adverse Reactions:
+
+Treatment interruption or dose reduction may be considered to manage adverse reactions.
+
+• First dose reduction: 250 mg twice daily, taken as one 150 mg tablet and one 100 mg tablet, for a total daily dose of 500 mg.
+
+• Further dose reduction: 200 mg twice daily, taken as two 100 mg tablets, for a total daily dose of 400 mg.
+
+Dose Modifications with CYP3A Inhibitors:
+
+Avoid concomitant use of strong or moderate CYP3A inhibitors whenever possible.
+
+• If a strong CYP3A inhibitor must be administered, reduce the dose to 100 mg twice daily, for a total daily dose of 200 mg.
+
+• If a moderate CYP3A inhibitor must be administered, reduce the dose to 150 mg twice daily, for a total daily dose of 300 mg.
+
+Dose Modifications in Renal Impairment:
+
+• Mild renal impairment with creatinine clearance of 51–80 mL/min does not require dose adjustment.
+
+• In moderate renal impairment with creatinine clearance of 31–50 mL/min, reduce the dose to 200 mg twice daily, for a total daily dose of 400 mg.
+
+• The pharmacokinetics of Olaparib have not been evaluated in patients with severe renal impairment or end-stage renal disease.
+`,
+
+  storage: "Store at 25°C to 30°C.",
+
+  description: `
+Acantha contains Olaparib and is supplied as film-coated tablets for oral administration.
+
+Composition:
+
+Acantha 100:
+
+• Each film-coated tablet contains Olaparib 100 mg.
+
+• Excipients are added in sufficient quantity.
+
+• Colours include Yellow Oxide of Iron and Titanium Dioxide IP.
+
+Acantha 150:
+
+• Each film-coated tablet contains Olaparib 150 mg.
+
+• Excipients are added in sufficient quantity.
+
+• Colours include Black Oxide of Iron, Yellow Oxide of Iron and Titanium Dioxide IP.
+
+Dosage Form:
+
+Film-coated tablets for oral use only.
+
+Mechanism of Action:
+
+Olaparib is an inhibitor of poly (ADP-ribose) polymerase enzymes, including PARP1, PARP2 and PARP3.
+
+PARP enzymes are involved in normal cellular functions such as DNA transcription and DNA repair.
+
+Olaparib inhibits the growth of selected tumour cell lines and reduces tumour growth in experimental models, both as monotherapy and after platinum-based chemotherapy.
+
+Increased cytotoxic and antitumour activity has been observed in tumour cells with deficiencies in BRCA and non-BRCA proteins involved in homologous recombination repair of DNA damage.
+
+Olaparib-induced cytotoxicity may involve inhibition of PARP enzymatic activity and increased formation of PARP-DNA complexes, resulting in DNA damage and cancer cell death.
+`,
+
+  indication: `
+Ovarian Cancer:
+
+Acantha is indicated for the maintenance treatment of adult patients with recurrent epithelial ovarian, fallopian tube or primary peritoneal cancer who are in complete or partial response to platinum-based chemotherapy.
+
+Breast Cancer:
+
+Acantha is indicated for patients with deleterious or suspected deleterious germline BRCA-mutated, HER2-negative metastatic breast cancer who have previously received chemotherapy in the neoadjuvant, adjuvant or metastatic setting.
+
+Patients with hormone receptor-positive breast cancer should have received prior endocrine therapy or should be considered unsuitable for endocrine treatment.
+`,
+
+  clinicalEfficacy: `
+Maintenance Treatment of Recurrent Ovarian Cancer – SOLO-2 Study:
+
+The safety and efficacy of Olaparib Tablets for maintenance treatment of platinum-sensitive germline BRCA-mutated ovarian cancer were evaluated in the placebo-controlled, double-blind SOLO-2 study involving 294 patients.
+
+Treatment Groups:
+
+• Olaparib 300 mg twice daily: 195 patients
+
+• Placebo: 99 patients
+
+Median Treatment Duration:
+
+• Olaparib: 19.4 months
+
+• Placebo: 5.6 months
+
+Dose Interruptions Due to Adverse Reactions:
+
+• Olaparib-treated patients: 45%
+
+• Placebo-treated patients: 18%
+
+Dose Reductions Due to Adverse Reactions:
+
+• Olaparib-treated patients: 27%
+
+• Placebo-treated patients: 3%
+
+Discontinuation Due to Adverse Reactions:
+
+• Olaparib-treated patients: 11%
+
+• Placebo-treated patients: 2%
+
+Treatment of Germline BRCA-Mutated HER2-Negative Metastatic Breast Cancer – OlympiAD Study:
+
+The safety and efficacy of Olaparib monotherapy were evaluated in the randomized, open-label OlympiAD study involving 296 patients.
+
+Treatment Groups:
+
+• Olaparib 300 mg twice daily: 205 patients
+
+• Chemotherapy: 91 patients
+
+Median Treatment Duration:
+
+• Olaparib: 8.2 months
+
+• Chemotherapy: 3.4 months
+
+Dose Interruptions Due to Adverse Reactions:
+
+• Olaparib-treated patients: 35%
+
+• Chemotherapy-treated patients: 28%
+
+Dose Reductions Due to Adverse Reactions:
+
+• Olaparib-treated patients: 25%
+
+• Chemotherapy-treated patients: 31%
+
+Discontinuation Due to Adverse Reactions:
+
+• Olaparib-treated patients: 5%
+
+• Chemotherapy-treated patients: 8%
+`,
+
+  safetyInformation: `
+Contraindications:
+
+• Hypersensitivity to Olaparib or any of the excipients used in the formulation.
+
+Most Frequent Adverse Reactions Leading to Dose Interruption or Reduction:
+
+• Anaemia
+
+• Neutropenia
+
+• Fatigue or asthenia
+
+Additional Adverse Reactions:
+
+• Neutropenia
+
+• Rash
+
+• Cough
+
+• Dyspepsia
+
+• Leukopenia
+
+• Hypomagnesaemia
+
+• Dizziness
+
+• Thrombocytopenia
+
+• Increased serum creatinine
+
+• Lymphopenia
+
+• Oedema
+
+Overdosage:
+
+There is no specific treatment for Olaparib overdose and the symptoms of overdose have not been established.
+
+In the event of overdose, general supportive measures should be used and the patient should be treated symptomatically.
+`,
+
+  specialPrecautions: `
+Hepatic Impairment:
+
+• Mild hepatic impairment increased the area under the concentration-time curve by approximately 15%.
+
+• Mild hepatic impairment increased the maximum plasma concentration by approximately 13%.
+
+• No data are available for patients with moderate or severe hepatic impairment.
+
+Renal Impairment:
+
+• In mild renal impairment, the area under the concentration-time curve increased by approximately 24% and the maximum plasma concentration increased by approximately 15%.
+
+• In moderate renal impairment, the area under the concentration-time curve increased by approximately 44% and the maximum plasma concentration increased by approximately 26%.
+
+• No data are available for severe renal impairment or end-stage renal disease.
+
+Myelodysplastic Syndrome and Acute Myeloid Leukaemia:
+
+Myelodysplastic syndrome and acute myeloid leukaemia have been reported in patients receiving Olaparib.
+
+Do not initiate treatment until the patient has recovered from previous chemotherapy-induced haematological toxicity to Grade 1 or lower.
+
+Monitor complete blood counts at baseline and monthly during treatment.
+
+For prolonged haematological toxicity, interrupt treatment and monitor blood counts weekly until recovery.
+
+If recovery has not occurred after 4 weeks, refer the patient for haematological evaluation, including bone marrow analysis and cytogenetic testing.
+
+Discontinue Olaparib if myelodysplastic syndrome or acute myeloid leukaemia is confirmed.
+
+Pneumonitis:
+
+Pneumonitis, including fatal cases, has occurred in less than 1% of patients.
+
+Interrupt treatment if new or worsening respiratory symptoms occur.
+
+Discontinue treatment and manage appropriately if pneumonitis is confirmed.
+
+Embryo-Fetal Toxicity:
+
+Olaparib can cause fetal harm.
+
+Females of reproductive potential should use effective contraception during treatment and for 6 months after the last dose.
+
+Male patients with female partners of reproductive potential or who are pregnant should use effective contraception during treatment and for 3 months after the last dose.
+
+Pregnancy:
+
+Olaparib may cause fetal harm when administered during pregnancy.
+
+There are no adequate data in pregnant women to define the medicine-associated risk.
+
+Lactation:
+
+Breastfeeding is not recommended during treatment and for 1 month after the last dose.
+
+Pregnancy Testing:
+
+Pregnancy testing is recommended before beginning treatment in females of reproductive potential.
+
+Contraception:
+
+• Females should use effective contraception during treatment and for at least 6 months after the final dose.
+
+• Males should use effective contraception during treatment and for 3 months after the final dose.
+
+• Male patients should not donate sperm during treatment or for 3 months after the final dose.
+
+Drug Interactions:
+
+Avoid concomitant use with:
+
+• Strong CYP3A inhibitors
+
+• Moderate CYP3A inhibitors
+
+• Grapefruit or grapefruit juice
+
+• Seville oranges or Seville orange juice
+
+Dose reduction is recommended when strong or moderate CYP3A inhibitors cannot be avoided.
+
+Medicines that induce CYP3A may reduce Olaparib plasma concentrations and should be avoided when possible.
+
+Combination with other myelosuppressive anticancer medicines, including DNA-damaging agents, may increase and prolong myelosuppressive toxicity.
+
+Effects on Driving and Operating Machinery:
+
+Olaparib may moderately affect the ability to drive or operate machinery.
+
+Patients experiencing fatigue, weakness or dizziness should exercise caution.
+
+Storage:
+
+Store below 30°C.
+`,
+},
+{
+  id: 99,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "zoserlin",
+  name: "Zoserlin",
+  subtitle: "Goserelin Acetate Implant Injection",
+  type: "Implant Injection",
+  imageClass: "zoserlin-img",
+
+  image: "/new_product_page/Zoserlin-3.6.png",
+
+  images: [
+    "/new_product_page/Zoserlin-3.6.png",
+  ],
+
+  strength: "3.6 mg",
+  packSize: "1 PFS",
+  drugClass: "Gonadotropin-Releasing Hormone (GnRH) Agonist",
+
+  dosage: `
+Administration:
+
+• Administered as a subcutaneous injection under the skin of the abdomen.
+
+• The injection is given once every 4 weeks or every 28 days.
+
+• Treatment should continue until the treating doctor decides to stop.
+
+Duration of Treatment in Women:
+
+• Uterine fibroids: Up to 3 months.
+
+• Endometriosis: Up to 6 months.
+
+• Thinning of the uterine lining before surgery: 1 to 2 months, equivalent to 4 to 8 weeks.
+`,
+
+  storage: "Store at 25°C to 30°C.",
+
+  description: `
+Zoserlin contains goserelin acetate and belongs to a group of medicines called luteinising hormone-releasing hormone analogues, also known as LHRH analogues.
+
+Mechanism of Action in Men:
+
+Zoserlin reduces the amount of testosterone produced by the body.
+
+Mechanism of Action in Women:
+
+Zoserlin reduces the amount of oestrogen produced by the body.
+
+Each prefilled injection contains:
+
+• Goserelin acetate equivalent to Goserelin 3.6 mg
+
+• Peptide base in a sustained-release depot
+
+• Lactide/Glycolide Copolymer
+`,
+
+  indication: `
+In Men:
+
+Zoserlin is indicated for the treatment of prostate cancer.
+
+In Women:
+
+Zoserlin is used to:
+
+• Treat breast cancer
+
+• Treat endometriosis
+
+• Treat benign uterine fibroids
+
+• Make the lining of the uterus thinner before surgery
+
+• Support infertility treatment when used with other medicines that control the release of eggs from the ovaries
+`,
+
+  clinicalEfficacy: `
+Hormonal Suppression in Men:
+
+Zoserlin reduces testosterone production.
+
+This hormonal suppression supports the treatment of hormone-sensitive conditions such as prostate cancer.
+
+Hormonal Suppression in Women:
+
+Zoserlin reduces oestrogen production.
+
+This hormonal suppression supports the treatment of conditions such as breast cancer, endometriosis and uterine fibroids.
+`,
+
+  safetyInformation: `
+Contraindications:
+
+Do not use Zoserlin:
+
+• If you are allergic to goserelin or any of the ingredients in the formulation.
+
+• During pregnancy.
+
+• During breastfeeding.
+
+Very Common Side Effects in Men and Women:
+
+• Hot flushes
+
+• Sweating
+
+• Reduced sex drive
+
+• Pain at the injection site
+
+• Bruising
+
+• Bleeding
+
+• Redness
+
+• Swelling at the injection site
+
+Common Side Effects:
+
+• Thinning of bones
+
+• Tingling in the fingers or toes
+
+• Skin rash
+
+• Hair loss
+
+• Weight gain
+
+• Joint pain
+
+• Changes in blood pressure
+
+• Mood changes, including depression
+
+Rare Allergic Reactions:
+
+• Rash
+
+• Itching
+
+• Hives
+
+• Swelling of the face, lips or tongue
+
+• Difficulty breathing
+
+Injection-Site Injury:
+
+Injection-site injury may include damage to blood vessels in the abdomen, which can cause severe bleeding.
+
+Possible symptoms include:
+
+• Abdominal pain
+
+• Abdominal swelling
+
+• Shortness of breath
+
+• Dizziness
+
+• Low blood pressure
+
+• Altered consciousness
+
+Very Rare Side Effects:
+
+• Psychotic disorders
+
+• Bleeding or collapse of a pituitary tumour
+
+Side Effects With Unknown Frequency:
+
+• Changes in blood test results
+
+• Liver problems
+
+• Blood clot in the lungs
+
+• Inflammation of the lungs
+
+• QT interval prolongation
+
+Additional Side Effects in Men:
+
+Very common:
+
+• Impotence
+
+Common:
+
+• Lower back pain
+
+• Difficulty passing urine
+
+• Bone pain at the beginning of treatment
+
+• Reduced heart function
+
+• Heart attack
+
+• Swelling and tenderness of the breasts
+
+• Increased blood sugar
+
+Additional Side Effects in Women:
+
+Very common:
+
+• Vaginal dryness
+
+• Changes in breast size
+
+• Acne
+
+Common:
+
+• Headache
+
+Rare:
+
+• Ovarian cysts
+
+• Early menopause, with periods not returning after treatment
+
+Side effects with unknown frequency:
+
+• Vaginal bleeding
+
+• Temporary increase in fibroid symptoms
+
+Additional Side Effects When Used for Endometriosis, Uterine Fibroids, Infertility or Thinning of the Uterus:
+
+• Changes in body hair
+
+• Dry skin
+
+• Weight gain
+
+• Increased cholesterol
+
+• Vaginal inflammation
+
+• Vaginal discharge
+
+• Nervousness
+
+• Sleep disturbances
+
+• Tiredness
+
+• Swelling of the feet and ankles
+
+• Muscle pain
+
+• Leg cramps
+
+• Nausea
+
+• Vomiting
+
+• Diarrhoea
+
+• Constipation
+
+• Voice changes
+
+When Used for Breast Cancer:
+
+• Temporary worsening of breast cancer symptoms at the beginning of treatment
+
+• Increased blood calcium
+
+When Used for Infertility with Gonadotrophins:
+
+• Excessive ovarian stimulation
+
+• Stomach pain
+
+• Abdominal swelling
+
+• Nausea
+
+• Vomiting
+`,
+
+  specialPrecautions: `
+Before Using Zoserlin:
+
+Inform your doctor if you:
+
+• Have high blood pressure.
+
+• Have heart or blood vessel disease.
+
+• Have heart rhythm problems.
+
+• Are taking medicines for heart rhythm disorders.
+
+Depression:
+
+Depression, including severe depression, has been reported during treatment.
+
+Children:
+
+Zoserlin should not be given to children.
+
+Information for Men:
+
+Tell your doctor if you:
+
+• Have difficulty passing urine.
+
+• Have back problems.
+
+• Have diabetes.
+
+• Have a condition affecting bone strength.
+
+• Are a heavy drinker.
+
+• Smoke.
+
+• Have a family history of osteoporosis.
+
+• Take anticonvulsant medicines.
+
+• Take corticosteroids.
+
+Information for Women:
+
+Tell your doctor if you:
+
+• Have a condition affecting bone strength.
+
+• Are a heavy drinker.
+
+• Smoke.
+
+• Have a family history of osteoporosis.
+
+• Have a poor diet.
+
+• Take anticonvulsant medicines.
+
+• Take corticosteroids.
+
+For endometriosis, your doctor may prescribe additional medicines to reduce bone thinning.
+
+Drug Interactions:
+
+Tell your doctor if you are taking:
+
+• Medicines for heart rhythm disorders such as quinidine, procainamide, amiodarone or sotalol.
+
+• Methadone.
+
+• Moxifloxacin.
+
+• Antipsychotic medicines.
+
+Pregnancy and Breastfeeding:
+
+• Do not use during pregnancy.
+
+• Do not use during breastfeeding.
+
+• Do not use while trying to become pregnant unless Zoserlin is being used as part of infertility treatment.
+
+• Do not use oral contraceptive pills during treatment.
+
+• Use barrier contraception such as condoms or diaphragms.
+
+Storage:
+
+Store below 25°C.
+`,
+},
+{
+  id: 100,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "melphalaz-tab",
+  name: "Melphalaz",
+  subtitle: "Melphalan Tablets",
+  type: "Tablet",
+  imageClass: "melphalaz-img",
+
+  image: "/new_product_page/Melphalaz-group.png",
+
+  images: [
+    "/new_product_page/Melphalaz-group.png",
+    "/new_product_page/Melphalaz-2.png",
+    "/new_product_page/Melphalaz-5.png",
+  ],
+
+  strength: "2 mg / 5 mg",
+  packSize: "1 X 25",
+  drugClass: "Alkylating Agent",
+
+  dosage: `
+Usual Oral Dose:
+
+• The usual oral dose is 6 mg, equivalent to three 2 mg tablets, taken once daily.
+
+• The complete daily dose may be administered at one time.
+
+• The dosage should be adjusted according to blood counts performed approximately once every week.
+
+• After 2 to 3 weeks of treatment, therapy may be stopped for up to 4 weeks while blood counts are monitored carefully.
+
+• Once white blood cell and platelet counts begin to recover, a maintenance dose of 2 mg daily may be started.
+
+Dose Escalation:
+
+Because plasma levels of Melphalan may vary between patients following oral administration, the dose may be cautiously increased until a degree of myelosuppression is observed.
+
+This should only be done under close medical supervision to ensure potentially therapeutic drug levels are achieved without excessive toxicity.
+
+Alternative Treatment Regimen:
+
+• An initial dose of 10 mg daily may be administered for 7 to 10 days.
+
+• Maximum suppression of white blood cell and platelet counts may occur within 3 to 5 weeks.
+
+• Recovery may occur within approximately 4 to 5 weeks.
+
+• Continuous maintenance treatment with 2 mg daily may be started when the white blood cell count is above 4,000 cells/mcL and platelet count is above 100,000 cells/mcL.
+
+• The maintenance dose may be adjusted between 1 mg and 3 mg daily according to haematological response.
+
+Weight-Based Regimen:
+
+• Treatment may begin with 0.15 mg/kg/day for 7 days.
+
+• This is followed by a treatment-free period of at least 14 days, which may extend to 5 or 6 weeks.
+
+• Maintenance therapy may begin when white blood cell and platelet counts start rising.
+
+• The maintenance dose is generally 0.05 mg/kg/day or less and should be adjusted according to blood counts.
+
+Combination with Prednisone for Multiple Myeloma:
+
+• One regimen consists of Melphalan 0.25 mg/kg/day for 4 consecutive days.
+
+• Alternatively, 0.20 mg/kg/day may be administered for 5 consecutive days.
+
+• These regimens provide a total dose of approximately 1 mg/kg per treatment course.
+
+• Courses may be repeated every 4 to 6 weeks after granulocyte and platelet counts return to acceptable levels.
+
+Duration of Treatment:
+
+Response may develop gradually over several months.
+
+Repeated treatment courses or continuous maintenance therapy may be required because maximum benefit may be missed if treatment is discontinued too early.
+
+Renal Impairment:
+
+In patients with moderate to severe renal impairment, a lower initial dose may be considered.
+
+Patients should be monitored closely because Melphalan clearance may be reduced.
+
+Epithelial Ovarian Cancer:
+
+• A commonly used regimen is 0.2 mg/kg daily for 5 days as one treatment course.
+
+• Treatment courses may be repeated every 4 to 5 weeks depending on haematological tolerance.
+`,
+
+storage: "Store refrigerated at 2°C to 8°C.",
+  description: `
+Melphalaz contains Melphalan, a bifunctional alkylating agent used in the treatment of selected malignant diseases.
+
+Melphalan is also known as:
+
+• L-phenylalanine mustard
+
+• Phenylalanine mustard
+
+• L-PAM
+
+• L-sarcolysin
+
+It is a phenylalanine derivative of nitrogen mustard.
+
+Melphalan is a white to cream-coloured powder.
+
+It is practically insoluble in water, chloroform and ether, slightly soluble in methanol and soluble in dilute mineral acids.
+
+The chemical name of Melphalan is 4-[bis(2-chloroethyl)amino]-L-phenylalanine.
+
+Its molecular formula is C13H18Cl2N2O2 and its molecular weight is 305.20.
+`,
+
+  indication: `
+Melphalaz is indicated for the palliative treatment of:
+
+• Multiple myeloma
+
+• Advanced ovarian adenocarcinoma
+
+Melphalan may also provide therapeutic benefit in some patients with:
+
+• Advanced breast carcinoma
+
+• Polycythaemia vera
+`,
+
+  clinicalEfficacy: `
+Available clinical evidence suggests that approximately one-third to one-half of patients with multiple myeloma may show a favourable response to oral Melphalan treatment.
+
+The use of Melphalan in combination with prednisone has been reported to improve the proportion of patients with multiple myeloma who achieve symptomatic relief or palliation.
+
+Clinical response may occur gradually over several months.
+
+Repeated treatment courses or continued maintenance therapy may therefore be required to achieve maximum clinical benefit.
+
+In epithelial ovarian cancer, intermittent oral Melphalan treatment has also been used, with subsequent treatment courses determined by haematological recovery and patient tolerance.
+`,
+
+  safetyInformation: `
+General Safety Information:
+
+• Keep out of the reach of children.
+
+• Do not exceed the recommended daily dose.
+
+• Melphalan is a potent cytotoxic and myelosuppressive medicine.
+
+• Treatment should only be administered under the supervision of a physician experienced in the use of anticancer medicines.
+
+Bone Marrow Suppression:
+
+Severe bone marrow suppression may occur and can result in serious infection or bleeding.
+
+Melphalan should be used with extreme caution in patients whose bone marrow reserve has been reduced by:
+
+• Previous radiation therapy
+
+• Previous chemotherapy
+
+• Recent cytotoxic treatment from which bone marrow function has not fully recovered
+
+Blood Monitoring:
+
+The following tests should be performed before treatment and before each subsequent treatment course:
+
+• Platelet count
+
+• Haemoglobin
+
+• White blood cell count
+
+• Differential blood count
+
+Thrombocytopenia or leukopenia may require treatment to be withheld until blood counts recover adequately.
+
+Frequent blood count monitoring is essential to determine the optimal dose and reduce the risk of excessive myelosuppression or irreversible bone marrow aplasia.
+
+Dose adjustment should be considered according to blood counts at their lowest point and on the planned day of treatment.
+
+Renal Impairment:
+
+Melphalan clearance may be reduced in patients with renal impairment.
+
+Patients with renal disease may also have uraemic bone marrow suppression.
+
+Dose reduction may therefore be required, and these patients should be monitored closely.
+
+Live Vaccines:
+
+Immunisation with live organism vaccines may cause infection in immunocompromised patients.
+
+Live vaccines are therefore not recommended during treatment.
+`,
+
+  specialPrecautions: `
+Handling Precautions:
+
+Melphalan is an active cytotoxic medicine and should be handled according to established procedures for anticancer medicines.
+
+When the outer tablet coating remains intact, there is no significant risk from normal tablet handling.
+
+Tablet Administration:
+
+• Melphalan tablets should not be divided.
+
+• Do not break the tablets.
+
+• Do not crush the tablets.
+
+• Do not chew the tablets.
+
+Myelosuppression:
+
+Careful monitoring of blood counts is essential because excessive myelosuppression may result in irreversible bone marrow aplasia.
+
+Treatment should be withheld when platelet or white blood cell counts are significantly reduced.
+
+Renal Impairment:
+
+Patients with renal impairment should be monitored closely.
+
+A lower starting dose may be required because Melphalan clearance may be reduced.
+
+Administration and Disposal:
+
+Appropriate procedures for the safe handling and disposal of anticancer medicines should be followed.
+
+Storage:
+
+Cold storage is required.
+
+Store according to the temperature conditions printed on the product label.
+`,
+},
+{
+  id: 101,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "zuvitop-inj",
+  name: "Zuvitop",
+  subtitle: "Etoposide Injection",
+  type: "Injection",
+  imageClass: "zuvitop-img",
+
+  image: "/new_product_page/Zuvitop-100.png",
+
+  images: [
+    "/new_product_page/Zuvitop-100.png",
+  ],
+
+  strength: "100 mg",
+  packSize: "1 Vial",
+  drugClass: "Cytostatic Agent",
+
+  dosage: `
+Recommended Dosage:
+
+• Etoposide may be administered at a dose of 70 mg/m² once daily on Days 1 to 4.
+
+• It is used in combination with other approved chemotherapeutic agents.
+
+• The treatment cycle may be repeated every 3 to 4 weeks.
+
+Alternative Regimen:
+
+• Etoposide may be administered at a dose of 100 mg/m² once daily on Days 1 to 5.
+
+• It is used in combination with other approved chemotherapeutic agents.
+
+• The treatment cycle may be repeated every 3 to 4 weeks.
+
+The exact dose and treatment schedule should be determined by the treating oncologist according to the patient's condition, treatment protocol and tolerance.
+`,
+
+  storage: "Store at 25°C to 30°C.",
+
+  description: `
+Zuvitop-100 contains Etoposide Injection IP.
+
+Etoposide is a semisynthetic derivative of podophyllotoxin used in the treatment of selected neoplastic diseases.
+
+Its chemical name is 4′-demethylepipodophyllotoxin 9-[4,6-O-(R)-ethylidene-β-D-glucopyranoside].
+
+Etoposide is highly soluble in methanol and chloroform, slightly soluble in ethanol and sparingly soluble in water and ether.
+
+It is made more compatible with aqueous solutions through the use of suitable organic solvents.
+
+The molecular formula of Etoposide is C29H32O13 and its molecular weight is 588.58.
+`,
+
+  indication: `
+Zuvitop is indicated for the management of the following malignancies:
+
+• Small cell lung cancer
+
+• Malignant lymphomas
+
+• Acute leukaemias
+
+• Testicular tumours
+
+• Bladder cancer
+
+• Trophoblastic diseases
+`,
+
+  clinicalEfficacy: `
+Etoposide phosphate is a prodrug that is converted into its active form, etoposide, through dephosphorylation.
+
+Etoposide acts by interacting with DNA topoisomerase II and inducing breaks in DNA strands.
+
+It may also promote the formation of free radicals.
+
+These actions interfere with DNA replication and cause cell-cycle arrest, primarily during the G2 phase.
+
+The resulting DNA damage and cell-cycle interruption lead to cancer cell death.
+`,
+
+  safetyInformation: `
+Etoposide is a cytotoxic anticancer medicine used in the treatment of cancers including testicular cancer and small cell lung cancer.
+
+Exposure to Etoposide may cause adverse effects involving:
+
+• Digestive system
+
+• Blood-forming system
+
+• Respiratory system
+
+• Skin and mucous membranes
+
+• Allergic or hypersensitivity reactions
+
+Patients should be closely monitored for signs of toxicity during treatment.
+
+Because Etoposide may affect blood cell production, regular blood counts may be required during therapy.
+
+Any unusual bleeding, infection, breathing difficulty, severe irritation or allergic symptoms should be reported to the treating doctor immediately.
+`,
+
+  specialPrecautions: `
+General Precautions:
+
+• Avoid touching your eyes or the inside of your nose unless your hands have been thoroughly washed.
+
+• Take care to avoid cuts and injuries while using sharp objects such as razors, fingernail cutters or toenail cutters.
+
+• Use caution because treatment may reduce blood cell counts and increase the risk of bleeding or infection.
+
+• Follow all handling and administration instructions provided by the treating doctor or healthcare professional.
+
+• Etoposide is a cytotoxic medicine and should be handled according to established precautions for anticancer medicines.
+
+Storage:
+
+Store according to the conditions printed on the product label.
+`,
+},
+{
+  id: 102,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "zetabin-rtu",
+  name: "Zetabin RTU",
+  subtitle: "Gemcitabine RTU Injection",
+  type: "Injection",
+  imageClass: "zetabin-rtu-img",
+
+  image: "/new_product_page/Zetabin-RTU-group.png",
+
+  images: [
+    "/new_product_page/Zetabin-RTU-group.png",
+    "/new_product_page/Zetabin-RTU-200.png",
+    "/new_product_page/Zetabin-RTU-1gm.png",
+    "/new_product_page/Zetabin-RTU-1.4gm.png",
+  ],
+
+  strength: "200 mg / 1 gm / 1.4 gm",
+  packSize: "1 Vial",
+  drugClass: "Anthracyclines and Related Substances",
+
+  dosage: `
+Ovarian Cancer:
+
+• The recommended dose of Gemcitabine is 1000 mg/m² administered as an intravenous infusion over 30 minutes on Days 1 and 8 of each 21-day treatment cycle.
+
+• Gemcitabine is administered in combination with carboplatin AUC 4.
+
+• Carboplatin should be administered intravenously after Gemcitabine on Day 1 of each 21-day cycle.
+
+Breast Cancer:
+
+• The recommended dose of Gemcitabine is 1250 mg/m² administered intravenously over 30 minutes on Days 1 and 8 of each 21-day cycle.
+
+• Gemcitabine is administered in combination with paclitaxel.
+
+• Paclitaxel should be administered at a dose of 175 mg/m² on Day 1 as a 3-hour intravenous infusion before Gemcitabine administration.
+
+Non-Small Cell Lung Cancer – Four-Week Schedule:
+
+• The recommended dose of Gemcitabine is 1000 mg/m² administered intravenously over 30 minutes on Days 1, 8 and 15.
+
+• Gemcitabine is administered in combination with cisplatin.
+
+• Cisplatin should be administered intravenously at a dose of 100 mg/m² on Day 1 after the Gemcitabine infusion.
+
+Non-Small Cell Lung Cancer – Three-Week Schedule:
+
+• The recommended dose of Gemcitabine is 1250 mg/m² administered intravenously over 30 minutes on Days 1 and 8.
+
+• Gemcitabine is administered in combination with cisplatin.
+
+• Cisplatin should be administered intravenously at a dose of 100 mg/m² on Day 1 after the Gemcitabine infusion.
+
+The exact dosage and treatment schedule should be determined by the treating oncologist based on the patient's condition, treatment protocol and tolerance.
+`,
+
+  storage: "Store at 25°C to 30°C.",
+
+  description: `
+Zetabin RTU contains Gemcitabine Hydrochloride, a nucleoside metabolic inhibitor with antitumour activity.
+
+The chemical name of Gemcitabine Hydrochloride is 2'-deoxy-2',2'-difluorocytidine monohydrochloride, beta-isomer.
+
+Its empirical formula is C9H11F2N3O4·HCl and its molecular weight is 299.66.
+
+Gemcitabine Hydrochloride is soluble in water, slightly soluble in methanol and practically insoluble in ethanol and polar organic solvents.
+
+Gemcitabine is supplied in sterile form for intravenous administration only.
+
+The formulation may contain Gemcitabine Hydrochloride expressed as free base, together with mannitol and sodium acetate.
+
+Hydrochloric acid and/or sodium hydroxide may be added for pH adjustment.
+`,
+
+  indication: `
+Zetabin RTU is indicated for the treatment of locally advanced or metastatic bladder cancer in combination with cisplatin.
+
+It is indicated for the treatment of patients with locally advanced or metastatic adenocarcinoma of the pancreas.
+
+In combination with cisplatin, Gemcitabine is indicated as first-line treatment for patients with locally advanced or metastatic non-small cell lung cancer.
+
+Gemcitabine monotherapy may be considered in elderly patients or patients with a performance status of 2.
+
+Gemcitabine is indicated for the treatment of patients with locally advanced or metastatic epithelial ovarian carcinoma in combination with carboplatin.
+
+This use applies to patients with relapsed disease following a recurrence-free interval of at least 6 months after platinum-based first-line therapy.
+
+In combination with paclitaxel, Gemcitabine is indicated for patients with unresectable, locally recurrent or metastatic breast cancer who have relapsed following adjuvant or neoadjuvant chemotherapy.
+
+Previous chemotherapy should have included an anthracycline unless it was clinically contraindicated.
+`,
+
+  clinicalEfficacy: `
+Gemcitabine kills cells undergoing DNA synthesis and blocks the progression of cells through the G1/S phase boundary of the cell cycle.
+
+Gemcitabine is metabolised by nucleoside kinases into its active diphosphate and triphosphate nucleoside forms.
+
+Gemcitabine diphosphate inhibits ribonucleotide reductase, an enzyme involved in the production of deoxynucleoside triphosphates required for DNA synthesis.
+
+This reduces intracellular concentrations of deoxynucleotides, including deoxycytidine triphosphate.
+
+Gemcitabine triphosphate competes with deoxycytidine triphosphate for incorporation into DNA.
+
+The reduction in intracellular deoxycytidine triphosphate enhances the incorporation of Gemcitabine triphosphate into DNA, a process known as self-potentiation.
+
+After a Gemcitabine nucleotide is incorporated into DNA, only one additional nucleotide is added to the growing DNA strand.
+
+This eventually results in termination of DNA synthesis and initiation of apoptotic cancer cell death.
+`,
+
+  safetyInformation: `
+General Safety Information:
+
+• Keep Gemcitabine out of the reach of children.
+
+• Gemcitabine should only be administered under the supervision of a healthcare professional experienced in anticancer treatment.
+
+Allergy:
+
+Do not receive Gemcitabine if you are allergic to Gemcitabine or any other ingredient in the formulation.
+
+Pregnancy:
+
+Gemcitabine is not recommended for use during pregnancy.
+
+Breastfeeding:
+
+Gemcitabine is not recommended for use in breastfeeding women.
+
+Alcohol:
+
+Avoid consuming alcohol during treatment because it may increase sleepiness or dizziness.
+
+Kidney Disease:
+
+Gemcitabine should be used with caution in patients who have or previously had kidney disease.
+
+Consult your doctor before receiving treatment.
+
+Liver Disease:
+
+Gemcitabine should be used with caution in patients who have or previously had liver disease.
+
+Consult your doctor before receiving treatment.
+
+Heart and Vascular Disease:
+
+Gemcitabine should be used with caution in patients who have or previously had heart or blood vessel disease.
+
+Consult your doctor before receiving treatment.
+`,
+
+  specialPrecautions: `
+Before Receiving Gemcitabine:
+
+Inform your doctor if you:
+
+• Have previously received radiotherapy.
+
+• Are scheduled to receive radiotherapy.
+
+• Have recently received a vaccination.
+
+• Have kidney disease.
+
+• Have liver disease.
+
+• Have heart or vascular disease.
+
+• Are pregnant or planning a pregnancy.
+
+• Are breastfeeding.
+
+Paediatric Use:
+
+Gemcitabine is not recommended for children and adolescents below 18 years of age because sufficient safety and efficacy data are not available.
+
+Geriatric Use:
+
+No routine dose adjustment is required solely because a patient is elderly.
+
+However, elderly patients should be evaluated by the treating doctor before receiving Gemcitabine.
+
+Storage:
+
+Store according to the storage conditions printed on the product label.
+`,
+},
+{
+  id: 103,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "zuvidexa-tablet",
+  name: "Zuvidexa",
+  subtitle: "Dexamethasone Tablets",
+  type: "Tablet",
+  imageClass: "zuvidexa-img",
+
+  image: "/new_product_page/Zuvidexa-group.png",
+
+  images: [
+    "/new_product_page/Zuvidexa-group.png",
+    "/new_product_page/Zuvidexa-4.png",
+    "/new_product_page/Zuvidexa-8.png",
+  ],
+
+  strength: "4 mg",
+  packSize: "1 x 10",
+  drugClass: "Corticosteroids",
+
+  dosage: `
+Recommended Dosage:
+
+• Dexamethasone is generally administered in doses ranging from 0.5 mg to 10 mg daily, depending on the disease being treated.
+
+• In severe disease conditions, doses above 10 mg per day may be required.
+
+• The dosage should be adjusted according to the individual patient's response and the severity of the disease.
+
+• To minimise side effects, the lowest effective dose should be used.
+
+The exact dose and duration of treatment should be determined by the treating doctor.
+`,
+
+  storage: "Store at 25°C to 30°C.",
+
+  description: `
+Zuvidexa contains Dexamethasone, a synthetic glucocorticoid belonging to the corticosteroid class of medicines.
+
+Dexamethasone is a white or almost white crystalline powder.
+
+It is practically insoluble in water, sparingly soluble in anhydrous ethanol and slightly soluble in methylene chloride.
+
+Each Zuvidexa tablet contains 4 mg of Dexamethasone as the active ingredient.
+
+The tablet may also contain excipients such as:
+
+• Lactose
+
+• Magnesium stearate
+
+• Povidone
+
+• Maize starch
+
+The molecular formula of Dexamethasone is C22H29FO5 and its molecular weight is 392.5.
+`,
+
+  indication: `
+Zuvidexa may be used in the treatment or management of the following conditions:
+
+Allergic Conditions:
+
+• Severe asthma
+
+• Atopic dermatitis
+
+• Contact dermatitis
+
+• Drug hypersensitivity reactions
+
+• Perennial or seasonal allergic rhinitis
+
+• Serum sickness
+
+Dermatological Diseases:
+
+• Bullous dermatitis herpetiformis
+
+• Exfoliative erythroderma
+
+• Mycosis fungoides
+
+• Pemphigus
+
+• Severe erythema multiforme, including Stevens-Johnson syndrome
+
+Endocrine Disorders:
+
+• Primary or secondary adrenocortical insufficiency
+
+• Congenital adrenal hyperplasia
+
+• Hypercalcaemia associated with cancer
+
+• Nonsuppurative thyroiditis
+
+Gastrointestinal Diseases:
+
+• Regional enteritis
+
+• Ulcerative colitis during critical periods of the disease
+
+Haematological Disorders:
+
+• Acquired autoimmune haemolytic anaemia
+
+• Congenital hypoplastic anaemia
+
+• Idiopathic thrombocytopenic purpura in adults
+
+• Pure red cell aplasia
+
+• Selected cases of secondary thrombocytopenia
+
+Neoplastic Diseases:
+
+• Palliative management of leukaemias
+
+• Palliative management of lymphomas
+
+Nervous System Disorders:
+
+• Acute exacerbations of multiple sclerosis
+
+• Cerebral oedema associated with primary or metastatic brain tumours
+
+• Cerebral oedema following craniotomy or head injury
+
+Ophthalmic Diseases:
+
+• Sympathetic ophthalmia
+
+• Temporal arteritis
+
+• Uveitis
+
+• Ocular inflammatory conditions unresponsive to topical corticosteroids
+
+Renal Diseases:
+
+• Induction of diuresis or remission of proteinuria in idiopathic nephrotic syndrome
+
+• Proteinuria associated with systemic lupus erythematosus
+
+Respiratory Diseases:
+
+• Berylliosis
+
+• Fulminating or disseminated pulmonary tuberculosis when used with appropriate antituberculous treatment
+
+• Idiopathic eosinophilic pneumonia
+
+• Symptomatic sarcoidosis
+
+Rheumatic Disorders:
+
+• Acute gouty arthritis
+
+• Acute rheumatic carditis
+
+• Ankylosing spondylitis
+
+• Psoriatic arthritis
+
+• Rheumatoid arthritis
+
+• Juvenile rheumatoid arthritis
+
+• Dermatomyositis
+
+• Polymyositis
+
+• Systemic lupus erythematosus
+
+Other Uses:
+
+• Diagnostic testing of adrenocortical hyperfunction
+
+• Trichinosis with neurological or myocardial involvement
+
+• Tuberculous meningitis with subarachnoid block or impending block when used with appropriate antituberculous chemotherapy
+`,
+
+  clinicalEfficacy: `
+Dexamethasone is a synthetic glucocorticoid that is readily absorbed from the gastrointestinal tract.
+
+Glucocorticoids produce a range of metabolic effects and modify the body's immune response to various stimuli.
+
+Naturally occurring glucocorticoids such as hydrocortisone and cortisone also have sodium-retaining properties and are commonly used as replacement treatment in adrenocortical deficiency.
+
+Synthetic glucocorticoids such as Dexamethasone are primarily used because of their potent anti-inflammatory and immunosuppressive effects.
+
+At equivalent anti-inflammatory doses, Dexamethasone has very little sodium-retaining activity compared with hydrocortisone and closely related corticosteroids.
+`,
+
+  safetyInformation: `
+General Safety Information:
+
+• Keep Zuvidexa out of the reach of children.
+
+• Use only in the dose and for the duration prescribed by the treating doctor.
+
+• Do not stop prolonged corticosteroid treatment suddenly unless advised by a doctor.
+
+• Long-term or high-dose corticosteroid treatment may increase the risk of infections and other adverse effects.
+
+• The lowest effective dose should be used to reduce the risk of side effects.
+`,
+
+  specialPrecautions: `
+Use Zuvidexa only under medical supervision.
+
+Inform your doctor before taking Zuvidexa if you:
+
+• Are pregnant or planning to become pregnant.
+
+• Are breastfeeding.
+
+• Have an existing infection.
+
+• Have diabetes.
+
+• Have high blood pressure.
+
+• Have stomach ulcers.
+
+• Have osteoporosis or reduced bone strength.
+
+• Have liver, kidney, heart or thyroid disease.
+
+• Are taking any other prescription or non-prescription medicines.
+
+Pregnancy and Breastfeeding:
+
+Zuvidexa should not be used during pregnancy, nursing or breastfeeding unless specifically advised by a doctor.
+
+Use in Special Populations:
+
+The medicine should not be used in infants, children, adolescents or elderly patients unless medically advised.
+
+Storage:
+
+Store at 25°C to 30°C.
+`,
+},
+{
+  id: 104,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "zuvimide",
+  name: "Zuvimide",
+  subtitle: "Thalidomide Capsules",
+  type: "Capsule",
+  imageClass: "zuvimide-img",
+
+  image: "/new_product_page/Zuvimide-group.png",
+
+  images: [
+    "/new_product_page/Zuvimide-group.png",
+    "/new_product_page/Zuvimide-50.png",
+    "/new_product_page/Zuvimide-100.png",
+  ],
+
+  strength: "50 mg / 100 mg",
+  packSize: "1 x 10",
+  drugClass: "Immunomodulatory Agent",
+
+  storage: "Store at 25°C to 30°C.",
+
+  // Do not paste the Tamoxifen content here.
+},
+{
+  id: 105,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "zortemib",
+  name: "Zortemib",
+  subtitle: "Bortezomib Injection",
+  type: "Lyophilized Injection",
+  imageClass: "zortemib-img",
+
+  image: "/new_product_page/Zortemib-group.png",
+
+  images: [
+    "/new_product_page/Zortemib-group.png",
+    "/new_product_page/Zortemib-2.png",
+    "/new_product_page/Zortemib-3.5.png",
+  ],
+
+  strength: "2 mg / 3.5 mg",
+  packSize: "1 Vial",
+  drugClass: "Proteasome Inhibitor",
+
+  dosage: `
+Previously Untreated Multiple Myeloma:
+
+Zortemib is administered as a 3 to 5-second intravenous bolus injection in combination with oral melphalan and oral prednisone for nine 6-week treatment cycles.
+
+Cycles 1 to 4:
+
+• Bortezomib 1.3 mg/m² is administered twice weekly on Days 1, 4, 8, 11, 22, 25, 29 and 32.
+
+Cycles 5 to 9:
+
+• Bortezomib 1.3 mg/m² is administered once weekly on Days 1, 8, 22 and 29.
+
+• At least 72 hours should pass between consecutive doses.
+
+Before Beginning Each Combination-Therapy Cycle:
+
+• Platelet and absolute neutrophil counts should be within acceptable limits.
+
+• Non-haematological toxicities should have resolved to Grade 1 or the patient's baseline condition.
+
+Relapsed Multiple Myeloma and Mantle Cell Lymphoma:
+
+• The recommended dose is 1.3 mg/m² per dose.
+
+• Administer as a 3 to 5-second intravenous bolus injection twice weekly for 2 weeks on Days 1, 4, 8 and 11.
+
+• This is followed by a 10-day rest period on Days 12 to 21.
+
+Extended Treatment:
+
+• For treatment extending beyond 8 cycles, Zortemib may be administered once weekly for 4 weeks on Days 1, 8, 15 and 22.
+
+• This is followed by a 13-day rest period on Days 23 to 35.
+
+Dose Modification for Toxicity:
+
+• Treatment should be withheld if Grade 3 non-haematological toxicity or Grade 4 haematological toxicity occurs.
+
+• Once the toxicity resolves, treatment may be restarted at a dose reduced by approximately 25%.
+
+• Dose levels may be reduced from 1.3 mg/m² to 1 mg/m² and subsequently to 0.7 mg/m².
+
+Peripheral Neuropathy:
+
+• Grade 1 without pain or loss of function: No dosage modification is generally required.
+
+• Grade 1 with pain or Grade 2: Reduce the dose to 1 mg/m².
+
+• Grade 2 with pain or Grade 3: Withhold treatment until symptoms resolve, then restart at 0.7 mg/m² once weekly.
+
+• Grade 4: Discontinue treatment.
+
+Hepatic Impairment:
+
+• No initial dose adjustment is generally required in mild hepatic impairment.
+
+• Patients with moderate or severe hepatic impairment should begin treatment at 0.7 mg/m² during the first cycle.
+
+• Depending on tolerance, the dose may subsequently be increased to 1 mg/m² or reduced to 0.5 mg/m².
+
+Reconstitution and Administration:
+
+• Use proper aseptic technique.
+
+• Reconstitute using 0.9% Sodium Chloride Injection according to the vial strength and approved prescribing instructions.
+
+• The reconstituted solution should be clear and colourless.
+
+• Inspect the solution for particulate matter or discolouration before administration.
+
+• Do not use the solution if particulate matter or discolouration is present.
+
+• The reconstituted product should be administered within 8 hours of preparation.
+
+The exact dosage, treatment schedule and dose modifications must be determined by an oncologist experienced in antineoplastic therapy.
+`,
+
+  storage: "Store at 25°C to 30°C and protect from light.",
+
+  description: `
+Zortemib contains Bortezomib, an antineoplastic medicine intended for intravenous administration.
+
+Bortezomib is a modified dipeptidyl boronic acid and belongs to the proteasome inhibitor class of anticancer medicines.
+
+Each single-use vial contains Bortezomib as a sterile lyophilized powder.
+
+The formulation is supplied as a mannitol boronic ester which, after reconstitution, exists in equilibrium with its hydrolysis product, the monomeric boronic acid.
+
+The chemical name of Bortezomib is [(1R)-3-methyl-1-[[(2S)-1-oxo-3-phenyl-2-[(pyrazinylcarbonyl)amino]propyl]amino]butyl]boronic acid.
+
+Its molecular formula is C19H25BN4O4 and its molecular weight is 384.24.
+`,
+
+  indication: `
+Zortemib is indicated for the treatment of:
+
+• Multiple myeloma
+
+• Previously untreated multiple myeloma when used in combination with melphalan and prednisone
+
+• Relapsed multiple myeloma
+
+• Mantle cell lymphoma in patients who have received at least one previous treatment
+`,
+
+  clinicalEfficacy: `
+Bortezomib is a proteasome inhibitor widely used in the treatment of multiple myeloma.
+
+It interferes with the normal degradation of proteins within malignant cells.
+
+The resulting accumulation of proteins disrupts several cellular signalling pathways and promotes cancer-cell death.
+
+Clinical studies have demonstrated that Bortezomib-containing treatment regimens can provide meaningful responses in patients with multiple myeloma.
+
+It has also demonstrated clinical activity in patients with mantle cell lymphoma who have received previous therapy.
+`,
+
+  safetyInformation: `
+Contraindications:
+
+Zortemib should not be used in patients with hypersensitivity to:
+
+• Bortezomib
+
+• Boron
+
+• Mannitol
+
+Peripheral Neuropathy:
+
+Zortemib may cause predominantly sensory peripheral neuropathy.
+
+Severe sensory or motor neuropathy may also occur.
+
+Patients should be monitored for:
+
+• Numbness
+
+• Tingling
+
+• Burning sensations
+
+• Neuropathic pain
+
+• Weakness in the hands or feet
+
+New or worsening neuropathy may require a dosage reduction, interruption or discontinuation.
+
+Hypotension:
+
+Postural or orthostatic hypotension may occur during treatment.
+
+Use caution in patients who:
+
+• Have a history of fainting
+
+• Are dehydrated
+
+• Take medicines associated with low blood pressure
+
+Management may include hydration and adjustment of antihypertensive medicines.
+
+Cardiac Disorders:
+
+Treatment may cause or worsen:
+
+• Congestive heart failure
+
+• Reduced left ventricular ejection fraction
+
+• Pulmonary oedema
+
+• Cardiac rhythm abnormalities
+
+Patients with existing heart disease or cardiovascular risk factors should be monitored closely.
+
+Pulmonary Disorders:
+
+Serious pulmonary reactions have been reported, including:
+
+• Pneumonitis
+
+• Interstitial pneumonia
+
+• Lung infiltration
+
+• Acute respiratory distress syndrome
+
+• Pulmonary hypertension
+
+Prompt medical assessment is required if new or worsening breathing symptoms occur.
+
+Reversible Posterior Leukoencephalopathy Syndrome:
+
+Rare cases of reversible posterior leukoencephalopathy syndrome have been reported.
+
+Possible symptoms include:
+
+• Seizures
+
+• Headache
+
+• High blood pressure
+
+• Confusion
+
+• Lethargy
+
+• Blindness or other visual disturbances
+
+Treatment should be discontinued if this condition is diagnosed.
+
+Gastrointestinal Effects:
+
+Zortemib may cause:
+
+• Nausea
+
+• Vomiting
+
+• Diarrhoea
+
+• Constipation
+
+• Intestinal obstruction or ileus
+
+Fluid and electrolyte replacement may be required to prevent dehydration.
+
+Thrombocytopenia and Neutropenia:
+
+Zortemib may cause cyclical reductions in platelet and neutrophil counts.
+
+Blood counts should be monitored before each dose.
+
+Dosage interruption, reduction or blood-product transfusion may be required.
+
+Tumour Lysis Syndrome:
+
+Because Bortezomib can rapidly destroy malignant cells, tumour lysis syndrome may occur.
+
+Patients with a high tumour burden should be monitored closely and receive appropriate preventive treatment.
+
+Hepatic Effects:
+
+Cases of acute liver failure, increased liver enzymes and increased bilirubin have been reported.
+
+Patients with moderate or severe hepatic impairment have increased exposure to Bortezomib and require a reduced starting dose.
+
+Pregnancy:
+
+Bortezomib can cause fetal harm.
+
+Women of reproductive potential should avoid becoming pregnant during treatment.
+`,
+
+  specialPrecautions: `
+Zortemib should only be administered under the supervision of a physician experienced in antineoplastic treatment.
+
+Blood Monitoring:
+
+Complete blood counts, including platelet and neutrophil counts, should be monitored regularly during treatment.
+
+Overdose Prevention:
+
+The quantity of medicine contained in a vial may be greater than the dose required for an individual patient.
+
+The dose must be calculated carefully to prevent overdose.
+
+Handling and Disposal:
+
+• Zortemib is a cytotoxic medicine.
+
+• Appropriate procedures for handling and disposal of anticancer medicines must be followed.
+
+• Use proper aseptic technique during preparation.
+
+• Inspect the reconstituted solution before administration.
+
+Patient Precautions:
+
+Inform your doctor immediately if you experience:
+
+• New or worsening numbness, tingling or weakness
+
+• Severe dizziness or fainting
+
+• Difficulty breathing
+
+• Chest pain
+
+• Unusual bleeding or bruising
+
+• Fever or signs of infection
+
+• Severe nausea, vomiting, constipation or diarrhoea
+
+• Confusion, seizures, headache or visual disturbances
+
+Fluid Intake:
+
+Treatment may cause nausea, vomiting, constipation or diarrhoea.
+
+Drink adequate fluids unless otherwise advised by your doctor to reduce the risk of dehydration.
+
+Hepatic Impairment:
+
+Patients with moderate or severe liver impairment should receive a reduced starting dose and should be monitored closely for toxicity.
+
+Storage:
+
+Store at 25°C to 30°C.
+
+Keep the unopened vial in its original packaging and protect it from light.
+
+The reconstituted solution should be used within 8 hours of preparation.
+`,
+},
+{
+  id: 106,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "zimitib-tablet",
+  name: "Zimitib",
+  subtitle: "Imatinib Tablets",
+  type: "Tablet",
+  imageClass: "zimitib-tablet-img",
+
+  image: "/new_product_page/Zimitib-400.png",
+
+  images: [
+    "/new_product_page/Zimitib-400.png",
+  ],
+
+  strength: "400 mg",
+  packSize: "1 x 10",
+  drugClass: "Protein-Tyrosine Kinase Inhibitor",
+
+  dosage: `
+General Administration:
+
+• Zimitib should be taken orally with a meal and a large glass of water.
+
+• A dose of 400 mg or 600 mg should generally be administered once daily.
+
+• A dose of 800 mg should be administered as 400 mg twice daily.
+
+• Treatment may be continued as long as there is no evidence of progressive disease or unacceptable toxicity.
+
+Adult Patients with Philadelphia Chromosome-Positive CML:
+
+• The recommended dose for adult patients with chronic-phase CML is 400 mg once daily.
+
+• The recommended dose for adult patients with accelerated-phase CML or blast crisis is 600 mg once daily.
+
+Dose Escalation in CML:
+
+In the absence of severe adverse reactions, non-leukaemia-related neutropenia or thrombocytopenia, the dose may be increased:
+
+• From 400 mg to 600 mg daily in patients with chronic-phase CML.
+
+• From 600 mg to 800 mg daily, administered as 400 mg twice daily, in patients with accelerated-phase CML or blast crisis.
+
+Dose escalation may be considered in cases of:
+
+• Disease progression at any time.
+
+• Failure to achieve a satisfactory haematological response after at least 3 months.
+
+• Failure to achieve a cytogenetic response after 6 to 12 months.
+
+• Loss of a previously achieved haematological or cytogenetic response.
+
+Paediatric Patients with Philadelphia Chromosome-Positive CML:
+
+• The recommended dose for newly diagnosed paediatric patients is 340 mg/m² per day, not exceeding 600 mg daily.
+
+• The recommended dose for children with recurrent chronic-phase CML following stem-cell transplantation or resistance to interferon-alpha treatment is 260 mg/m² per day.
+
+Philadelphia Chromosome-Positive Acute Lymphoblastic Leukaemia:
+
+• The recommended adult dose for relapsed or refractory Ph-positive ALL is 600 mg daily.
+
+Gastrointestinal Stromal Tumours:
+
+• The recommended dose for adults with unresectable and/or metastatic malignant gastrointestinal stromal tumours is 400 mg or 600 mg daily.
+
+Strong CYP3A4 Inducers:
+
+Concomitant use of strong CYP3A4 inducers should be avoided.
+
+Examples include:
+
+• Dexamethasone
+
+• Phenytoin
+
+• Carbamazepine
+
+• Rifampicin
+
+• Rifabutin
+
+• Phenobarbital
+
+If concurrent administration cannot be avoided, the Zimitib dose may require an increase of at least 50%, with close monitoring of clinical response.
+
+Hepatic Impairment:
+
+• No initial dose adjustment is generally required in patients with mild or moderate hepatic impairment.
+
+• A 25% reduction in the recommended dose should be considered in patients with severe hepatic impairment.
+
+Hepatotoxicity:
+
+If bilirubin rises above 3 times the institutional upper limit of normal or liver transaminases rise above 5 times the upper limit of normal:
+
+• Withhold Zimitib until bilirubin is below 1.5 times the upper limit and transaminases are below 2.5 times the upper limit.
+
+• Treatment may then be restarted at a reduced dose.
+
+Examples of adult dose reductions include:
+
+• 400 mg reduced to 300 mg.
+
+• 600 mg reduced to 400 mg.
+
+• 800 mg reduced to 600 mg.
+
+Severe Non-Haematological Reactions:
+
+If severe hepatotoxicity, severe fluid retention or another serious non-haematological reaction occurs, treatment should be withheld until the event resolves.
+
+Treatment may then be restarted at an appropriate reduced dose based on the severity of the reaction.
+`,
+
+  storage: "Store at 25°C to 30°C.",
+
+  description: `
+Zimitib contains Imatinib, a small-molecule protein-tyrosine kinase inhibitor.
+
+Each film-coated tablet contains Imatinib Mesylate equivalent to 400 mg of Imatinib free base.
+
+Imatinib Mesylate is a white to off-white, brownish or yellowish crystalline powder.
+
+Its chemical name is 4-[(4-Methyl-1-piperazinyl)methyl]-N-[4-methyl-3-[[4-(3-pyridinyl)-2-pyrimidinyl]amino]phenyl]benzamide methanesulfonate.
+
+The molecular formula of Imatinib Mesylate is C29H31N7O·CH4SO3 and its molecular weight is 589.7.
+
+Imatinib Mesylate is soluble in aqueous buffers with a pH of 5.5 or below but is very slightly soluble or insoluble in neutral and alkaline aqueous buffers.
+
+In non-aqueous solvents, it ranges from freely soluble to very slightly soluble in dimethyl sulfoxide, methanol and ethanol.
+
+It is insoluble in n-octanol, acetone and acetonitrile.
+`,
+
+  indication: `
+Zimitib is indicated for the treatment of:
+
+Newly Diagnosed Philadelphia Chromosome-Positive Chronic Myeloid Leukaemia:
+
+• Newly diagnosed adult and paediatric patients with Philadelphia chromosome-positive chronic myeloid leukaemia in the chronic phase.
+
+Philadelphia Chromosome-Positive CML After Interferon-Alpha Therapy:
+
+• Patients with Ph-positive CML in blast crisis.
+
+• Patients with Ph-positive CML in the accelerated phase.
+
+• Patients with chronic-phase Ph-positive CML after failure of interferon-alpha therapy.
+
+Philadelphia Chromosome-Positive Acute Lymphoblastic Leukaemia:
+
+• Adult patients with relapsed or refractory Ph-positive acute lymphoblastic leukaemia.
+
+• Paediatric patients with newly diagnosed Ph-positive acute lymphoblastic leukaemia in combination with chemotherapy.
+
+Myelodysplastic and Myeloproliferative Diseases:
+
+• Adult patients with myelodysplastic or myeloproliferative diseases associated with platelet-derived growth factor receptor gene rearrangements.
+
+Aggressive Systemic Mastocytosis:
+
+• Adult patients with aggressive systemic mastocytosis without the D816V c-Kit mutation or where c-Kit mutational status is unknown.
+
+Other Uses:
+
+Imatinib may also be used for certain types of leukaemia, gastrointestinal stromal tumours and other cancers or disorders involving abnormal blood cells.
+`,
+
+  clinicalEfficacy: `
+Imatinib and other tyrosine kinase inhibitors have significantly changed the management of chronic myeloid leukaemia.
+
+Imatinib inhibits abnormal tyrosine kinase signalling involved in the growth and survival of malignant cells.
+
+Published studies evaluating generic Imatinib formulations have generally demonstrated comparable bioequivalence and bioavailability to the original branded formulation.
+
+In most clinical studies, generic Imatinib demonstrated comparable efficacy and safety in newly diagnosed patients and in patients switched from the original formulation.
+
+Some studies have reported variations in efficacy and toxicity between different generic products, which may be related to differences between formulations and treatment settings.
+
+The availability of generic Imatinib has also considerably reduced treatment costs for patients and healthcare systems.
+
+Overall, generic Imatinib has generally shown effective disease control with an acceptable safety profile.
+`,
+
+  safetyInformation: `
+General Safety Information:
+
+• Keep Zimitib out of the reach of children.
+
+• Read the product label carefully before use.
+
+• Zimitib should be used only under the supervision of a doctor experienced in treating cancer and blood disorders.
+
+Fluid Retention and Oedema:
+
+Zimitib may cause oedema and occasionally serious fluid retention.
+
+Patients should be monitored for:
+
+• Unexpected or rapid weight gain
+
+• Swelling of the hands, feet or ankles
+
+• Pleural effusion
+
+• Pulmonary oedema
+
+• Ascites
+
+The likelihood of fluid retention may be greater with higher doses and in patients older than 65 years.
+
+Haematological Toxicity:
+
+Treatment may cause:
+
+• Anaemia
+
+• Neutropenia
+
+• Thrombocytopenia
+
+Complete blood counts should generally be performed:
+
+• Weekly during the first month.
+
+• Every 2 weeks during the second month.
+
+• Periodically thereafter according to clinical requirements.
+
+Severe Congestive Heart Failure:
+
+Severe congestive heart failure and reduced left ventricular function have occasionally been reported.
+
+Patients with existing heart disease, advanced age or cardiovascular risk factors should be monitored closely.
+
+Hepatotoxicity:
+
+Severe liver toxicity may occur.
+
+Liver function tests, including transaminases, bilirubin and alkaline phosphatase, should be performed before treatment and periodically during therapy.
+
+Treatment interruption or dose reduction may be required.
+
+Haemorrhage:
+
+Serious bleeding reactions have been reported, including:
+
+• Gastrointestinal bleeding
+
+• Intratumoral bleeding
+
+Patients should report unusual bleeding or bruising immediately.
+
+Gastrointestinal Disorders:
+
+Zimitib may cause gastrointestinal irritation.
+
+Take the medicine with food and a large glass of water.
+
+Rare cases of gastrointestinal perforation, including fatal cases, have been reported.
+
+Dermatological Toxicity:
+
+Serious skin reactions may occur, including:
+
+• Erythema multiforme
+
+• Stevens-Johnson syndrome
+
+Pregnancy:
+
+Zimitib can cause fetal harm.
+
+Women of reproductive potential should avoid becoming pregnant during treatment.
+
+Breastfeeding:
+
+It is not known whether Imatinib or its metabolites pass into human milk.
+
+A doctor should decide whether breastfeeding or treatment should be discontinued.
+
+Fertility:
+
+The effect of Imatinib on male fertility and sperm production has not been fully established.
+
+Patients concerned about fertility should consult their doctor.
+`,
+
+  specialPrecautions: `
+Before Taking Zimitib:
+
+Inform your doctor if you:
+
+• Have liver disease.
+
+• Have kidney disease.
+
+• Have heart disease or a history of heart failure.
+
+• Have a history of fluid retention or swelling.
+
+• Are pregnant or planning to become pregnant.
+
+• Are breastfeeding.
+
+• Are taking prescription medicines, non-prescription medicines, vitamins or herbal products.
+
+Fluid Retention:
+
+Patients should be weighed and monitored regularly.
+
+Unexpected rapid weight gain should be investigated promptly.
+
+Blood Monitoring:
+
+Complete blood counts should be monitored regularly, particularly during the first several months of treatment.
+
+Liver Monitoring:
+
+Liver function should be checked before starting treatment and periodically during therapy.
+
+Paediatric Use:
+
+Safety and efficacy have been demonstrated in children with:
+
+• Newly diagnosed Ph-positive chronic-phase CML.
+
+• Recurrent chronic-phase CML following stem-cell transplantation.
+
+• CML resistant to interferon-alpha therapy.
+
+Geriatric Use:
+
+The efficacy of Zimitib is generally similar in elderly and younger patients.
+
+However, oedema may occur more frequently in patients older than 65 years.
+
+Hepatic Impairment:
+
+Patients with severe hepatic impairment may have increased exposure to Imatinib and its active metabolite.
+
+A lower dose and close monitoring may be required.
+
+Renal Impairment:
+
+Limited clinical information is available for patients with significantly reduced kidney function.
+
+Such patients should be treated cautiously and monitored by their doctor.
+
+Storage:
+
+Store at 25°C to 30°C.
+`,
+},
+{
+  id: 107,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "zuvidox-l",
+  name: "Zuvidox-L",
+  subtitle: "Doxorubicin Hydrochloride Liposomal Injection",
+  type: "Pegylated Liposomal Injection",
+  imageClass: "zuvidox-l-img",
+
+  image: "/new_product_page/Zuvidox-Lipo-group.png",
+
+  images: [
+    "/new_product_page/Zuvidox-Lipo-group.png",
+    "/new_product_page/Zuvidox-Lipo-20.png",
+    "/new_product_page/Zuvidox-Lipo-50.png",
+  ],
+
+  strength: "20 mg / 50 mg",
+  packSize: "1 Vial",
+  drugClass: "Anthracycline Antineoplastic Antibiotic",
+
+  dosage: `
+Ovarian Cancer:
+
+• The recommended dose is 50 mg/m² administered intravenously once every 4 weeks.
+
+• The initial infusion rate should be 1 mg per minute.
+
+• A minimum of 4 treatment courses is recommended.
+
+• Treatment may continue until disease progression, cardiotoxicity or unacceptable toxicity occurs.
+
+AIDS-Related Kaposi's Sarcoma:
+
+• The recommended dose is 20 mg/m² administered intravenously.
+
+• The initial infusion rate should be 1 mg per minute.
+
+• Treatment may be repeated every 3 weeks while it remains effective and is adequately tolerated.
+
+Multiple Myeloma:
+
+• Bortezomib is administered at 1.3 mg/m² intravenously on Days 1, 4, 8 and 11 of each 3-week treatment cycle.
+
+• Liposomal Doxorubicin is administered at 30 mg/m² as an intravenous infusion on Day 4 after Bortezomib administration.
+
+• The initial infusion rate should be 1 mg per minute.
+
+• Treatment may continue for up to 8 cycles or until disease progression or unacceptable toxicity occurs.
+
+Dose Modifications:
+
+Dosage adjustment, treatment interruption or discontinuation may be required in patients who develop:
+
+• Hand-foot syndrome
+
+• Haematological toxicity
+
+• Stomatitis
+
+• Hepatic impairment
+
+• Other non-haematological toxicities
+
+• Toxicity during combination treatment with Bortezomib
+
+Administration Instructions:
+
+• Do not administer as an intravenous bolus injection.
+
+• Do not administer the medicine undiluted.
+
+• Do not administer intramuscularly or subcutaneously.
+
+• Use only 5% Dextrose Injection for dilution.
+
+• Do not mix with other medicines.
+
+• Do not use in-line filters.
+
+• Avoid rapidly flushing the infusion line.
+
+The exact dose and treatment schedule should be determined by an oncologist according to the patient's condition, response and tolerance.
+`,
+
+  storage: "Store refrigerated at 2°C to 8°C.",
+
+  description: `
+Zuvidox-L contains Doxorubicin Hydrochloride encapsulated in pegylated liposomes for intravenous administration.
+
+Doxorubicin is an anthracycline antibiotic and topoisomerase II inhibitor derived from Streptomyces peucetius var. caesius.
+
+The active ingredient binds to DNA and inhibits nucleic acid synthesis.
+
+It rapidly enters cells, binds to chromatin around the nucleus, inhibits mitotic activity and nucleic acid synthesis and may induce chromosomal abnormalities.
+
+Zuvidox-L is formulated using long-circulating pegylated liposomes.
+
+The liposome surface contains methoxypolyethylene glycol, which helps protect the liposomes from detection by the mononuclear phagocyte system and increases their circulation time in the blood.
+
+The liposomes have an approximate half-life of 55 hours in humans and remain predominantly encapsulated during circulation.
+
+Their small size and prolonged circulation allow them to penetrate altered tumour blood vessels and accumulate within tumour tissue, where Doxorubicin becomes available.
+`,
+
+  indication: `
+Zuvidox-L is indicated for the treatment of:
+
+Ovarian Cancer:
+
+• Patients with ovarian cancer whose disease has progressed or recurred following platinum-based chemotherapy.
+
+AIDS-Related Kaposi's Sarcoma:
+
+• Patients with AIDS-related Kaposi's sarcoma following failure of previous systemic chemotherapy.
+
+• Patients who are unable to tolerate previous systemic chemotherapy.
+
+Multiple Myeloma:
+
+In combination with Bortezomib, Zuvidox-L is indicated for patients with multiple myeloma who:
+
+• Have received at least one previous therapy.
+
+• Have not previously received Bortezomib.
+`,
+
+  clinicalEfficacy: `
+Pegylated liposomal encapsulation provides prolonged systemic circulation, with an approximate half-life of 55 hours.
+
+More than 90% of Doxorubicin remains encapsulated within the liposomes during circulation, supporting controlled drug delivery.
+
+The small size of the liposomes, approximately 100 nanometres, and their prolonged circulation allow them to pass through altered tumour vasculature and accumulate within tumour tissue.
+
+The encapsulated Doxorubicin then becomes available within the tumour environment.
+
+In patients with AIDS-related Kaposi's sarcoma, liposomal Doxorubicin has demonstrated higher concentrations within Kaposi's sarcoma lesions than in normal skin, indicating preferential distribution into tumour tissue.
+
+Liposomal Doxorubicin has slower plasma clearance and greater systemic exposure than conventional Doxorubicin.
+
+Clinical studies have established treatment schedules for ovarian cancer, AIDS-related Kaposi's sarcoma and multiple myeloma.
+`,
+
+  safetyInformation: `
+Contraindications:
+
+Do not use Zuvidox-L in patients with a history of hypersensitivity reactions to conventional Doxorubicin Hydrochloride formulations or any ingredient in the product.
+
+Common Adverse Reactions:
+
+• Weakness
+
+• Fatigue
+
+• Fever
+
+• Nausea
+
+• Vomiting
+
+• Diarrhoea
+
+• Constipation
+
+• Loss of appetite
+
+• Stomatitis
+
+• Hand-foot syndrome
+
+• Skin rash
+
+• Neutropenia
+
+• Thrombocytopenia
+
+• Anaemia
+
+• Myelosuppression
+
+Infusion-Related Reactions:
+
+Reported symptoms include:
+
+• Flushing
+
+• Shortness of breath
+
+• Facial swelling
+
+• Headache
+
+• Chills
+
+• Chest pain
+
+• Back pain
+
+• Chest or throat tightness
+
+• Fever
+
+• Rapid heartbeat
+
+• Itching
+
+• Rash
+
+• Bluish discolouration of the skin
+
+• Fainting
+
+• Bronchospasm
+
+• Asthma-like symptoms
+
+• Apnoea
+
+• Low blood pressure
+
+Serious allergic or anaphylactoid-like reactions may also occur.
+
+Cardiac Adverse Reactions:
+
+• Cardiotoxicity
+
+• Congestive heart failure
+
+• Left ventricular dysfunction
+
+• Reduced left ventricular ejection fraction
+
+Other Reactions:
+
+• Radiation recall reaction
+
+Pregnancy:
+
+Zuvidox-L can cause fetal harm.
+
+Women of reproductive potential should avoid becoming pregnant during treatment.
+
+Breastfeeding:
+
+Breastfeeding should be discontinued before starting treatment.
+
+Paediatric Use:
+
+Safety and effectiveness have not been established in children.
+`,
+
+  specialPrecautions: `
+Cardiac Monitoring:
+
+Cardiac function should be assessed before and monitored throughout treatment.
+
+The risk of cardiac toxicity increases with cumulative exposure to Doxorubicin.
+
+Patients with existing cardiovascular disease should receive treatment only after careful assessment of the potential benefits and risks.
+
+Hepatic Impairment:
+
+Liver function should be evaluated before treatment.
+
+A dose reduction may be required in patients with impaired hepatic function.
+
+Administration Precautions:
+
+• Do not substitute Zuvidox-L with conventional Doxorubicin.
+
+• Do not administer as a bolus injection.
+
+• Do not administer undiluted.
+
+• Do not administer intramuscularly or subcutaneously.
+
+• Do not mix with other medicines.
+
+• Use only 5% Dextrose Injection for dilution.
+
+• Do not use in-line filters.
+
+• Avoid rapid flushing of the infusion line.
+
+Extravasation:
+
+Avoid extravasation during administration.
+
+If extravasation occurs:
+
+• Stop the infusion immediately.
+
+• Restart the infusion using another vein.
+
+• Applying ice to the affected area may help reduce local reactions.
+
+Laboratory Monitoring:
+
+Complete blood counts, including platelet counts, should be obtained frequently and at minimum before each dose.
+
+Drug Interactions:
+
+Formal interaction studies have not been conducted.
+
+Zuvidox-L may interact with medicines known to interact with conventional Doxorubicin.
+
+Handling Precautions:
+
+• Wear gloves while handling the medicine.
+
+• Avoid contact with the skin and mucous membranes.
+
+• Follow approved procedures for handling and disposing of anticancer medicines.
+
+Fertility:
+
+Doxorubicin may adversely affect fertility.
+
+Animal studies have demonstrated ovarian and testicular atrophy, reduced testicular weight, reduced sperm count and reduced sperm production.
+
+Storage:
+
+Store refrigerated at 2°C to 8°C.
+`,
+},
+{
+  id: 108,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "z-fos",
+  name: "Z-Fos",
+  subtitle: "Ifosfamide Injection",
+  type: "Lyophilized Injection",
+  imageClass: "z-fos-img",
+
+  image: "/new_product_page/zfos-group.png",
+
+  images: [
+    "/new_product_page/zfos-group.png",
+    "/new_product_page/Z-Fos-1.png",
+    "/new_product_page/Z-Fos-2.png",
+  ],
+
+  strength: "1 gm / 2 gm",
+  packSize: "1 Vial",
+  drugClass: "Alkylating Agent",
+
+  dosage: `
+General Administration:
+
+Z-Fos should be administered only under the supervision of physicians experienced in anticancer treatment and where regular clinical, biochemical and haematological monitoring is available.
+
+The dosage should be individualised according to:
+
+• Therapeutic indication
+
+• Combination-treatment regimen
+
+• Patient's general health
+
+• Organ function
+
+• Laboratory-monitoring results
+
+• Previous response and toxicity
+
+When used with medicines that produce similar toxicities, dose reduction or a longer treatment-free interval may be required.
+
+Common Dosage Regimens:
+
+• 8 to 12 g/m², divided equally into single daily doses over 3 to 5 days, repeated every 2 to 4 weeks.
+
+Alternatively:
+
+• 5 to 6 g/m², up to a maximum of 10 g, administered as a continuous 24-hour infusion every 3 to 4 weeks.
+
+• Treatment frequency depends on the degree of bone-marrow suppression and the time required for adequate bone-marrow recovery.
+
+• The usual number of treatment courses is 4, although up to 7 courses may be administered.
+
+Mesna Uroprotection:
+
+• Ifosfamide must be administered with Mesna to reduce the risk of haemorrhagic cystitis and urothelial toxicity.
+
+• Increased Mesna doses may be required in children, patients with previous urothelial damage or patients who are not adequately protected by standard Mesna dosing.
+
+Renal Impairment:
+
+Reduced renal excretion in patients with kidney impairment may increase plasma concentrations of Ifosfamide and its metabolites.
+
+This can increase the risk of:
+
+• Neurotoxicity
+
+• Nephrotoxicity
+
+• Haematological toxicity
+
+Dose selection should therefore be undertaken cautiously.
+
+Ifosfamide and its metabolites can be removed by dialysis.
+
+Hepatic Impairment:
+
+Severe liver impairment may reduce activation of Ifosfamide and alter treatment effectiveness.
+
+Liver impairment and low serum albumin may also increase the risk of:
+
+• Central nervous system toxicity
+
+• Kidney toxicity
+
+These factors should be considered when selecting the dose and assessing the response.
+
+Paediatric Patients:
+
+The dose should be determined according to:
+
+• Tumour type and stage
+
+• General condition
+
+• Previous cytotoxic therapy
+
+• Concurrent chemotherapy or radiotherapy
+
+Dosage regimens used in clinical studies include:
+
+• 5 g/m² over 24 hours
+
+• 9 g/m² divided into daily doses over 5 days
+
+• 9 g/m² administered as a continuous 72-hour infusion and repeated every 3 weeks
+
+Elderly Patients:
+
+Dose selection should be cautious because elderly patients may have reduced liver, kidney or cardiac function and may be receiving other medicines.
+
+Reconstitution:
+
+The vial contents should be dissolved in Water for Injection using an aseptic technique.
+
+For a 1 gm vial:
+
+• Add 12.5 mL of Water for Injection.
+
+• The resulting 8% Ifosfamide solution should not be injected directly into a vein without further dilution.
+
+The reconstituted solution may be:
+
+• Diluted to less than a 4% solution using 0.9% Sodium Chloride Injection and administered intravenously.
+
+• Infused in 0.9% Sodium Chloride Injection over 30 to 120 minutes.
+
+• Administered into a rapidly running intravenous infusion.
+
+• Diluted in three 1-litre containers of 0.9% Sodium Chloride Injection and infused over 24 hours, with each litre administered over 8 hours.
+
+Hydration and Monitoring:
+
+• The patient should remain adequately hydrated and maintain proper fluid balance.
+
+• Patients receiving an intermittent regimen should generally receive at least 2 litres of fluid over 24 hours.
+
+• A diuretic may be required to ensure adequate urine output.
+
+• Urine should be analysed before and after every treatment course.
+
+• Monitor regularly for proteinuria, haematuria and reduced urine output.
+
+• Patients should immediately report symptoms of cystitis.
+
+• Ifosfamide should not be administered to patients with active cystitis until it has been treated.
+
+Blood Count Requirements:
+
+Treatment should be withheld when:
+
+• White blood cell count is below 4,000/mm³.
+
+• Platelet count is below 100,000/mm³.
+
+Treatment may be resumed after blood counts have adequately recovered.
+
+Antiemetic treatment may be administered before, during and after therapy to reduce nausea and vomiting.
+`,
+
+  storage:
+    "Store at 20°C to 25°C",
+
+  description: `
+Z-Fos contains Ifosfamide, an antineoplastic cytotoxic alkylating agent.
+
+Ifosfamide is a prodrug and does not demonstrate cytotoxic activity until it is activated by microsomal enzymes, primarily within the liver.
+
+Its cytotoxic activity is associated with activation of the oxazaphosphorine ring at the C4 position.
+
+The activated metabolites interact with DNA and form DNA-to-DNA cross-links.
+
+This action interferes with DNA replication and blocks cancer cells during the late S and early G2 phases of the cell cycle.
+
+Ifosfamide is rapidly absorbed from the administration site and is primarily activated in the liver by microsomal mixed-function oxidases.
+
+Its metabolites are mainly eliminated through the kidneys.
+
+The serum half-life ranges from approximately 4 to 8 hours depending on the dose and treatment regimen.
+
+More than 80% of a single dose may be excreted in urine within 24 hours.
+
+Because of its high lipid solubility, significant amounts of unchanged Ifosfamide may also enter the cerebrospinal fluid.
+`,
+
+  indication: `
+Z-Fos is used for the treatment of malignant diseases.
+
+As a single anticancer medicine, Ifosfamide has produced objective responses in a range of malignant conditions.
+
+It is also commonly used in combination with:
+
+• Other cytotoxic medicines
+
+• Radiotherapy
+
+• Surgery
+
+Clinical use has been documented in malignancies including:
+
+• Ewing's sarcoma
+
+• Rhabdomyosarcoma
+
+• Non-rhabdomyosarcoma soft-tissue sarcoma
+
+• Germ-cell tumours
+
+• Osteosarcoma
+
+• Non-Hodgkin lymphoma
+
+• Hodgkin lymphoma
+
+• Acute lymphoblastic leukaemia
+
+• Neuroblastoma
+
+• Wilms tumour
+
+• Malignant central nervous system tumours
+`,
+
+  clinicalEfficacy: `
+In patients with non-metastatic Ewing's sarcoma, treatment containing Ifosfamide and Etoposide demonstrated improved outcomes compared with standard treatment alone.
+
+Reported clinical outcomes included:
+
+• Five-year event-free survival of approximately 69% with Ifosfamide and Etoposide compared with 54% with standard treatment.
+
+• Five-year overall survival of approximately 72% compared with 61%.
+
+Similar overall toxicity was observed between the treatment groups.
+
+In patients with metastatic Ewing's sarcoma, no significant improvement in five-year event-free survival or overall survival was demonstrated.
+
+A comparative study in standard-risk Ewing's sarcoma found no significant difference in event-free or overall survival between an Ifosfamide-containing regimen and a Cyclophosphamide-containing regimen.
+
+However, the Ifosfamide-containing regimen demonstrated lower toxicity.
+
+Clinical activity, including complete and partial responses, has also been documented in paediatric malignancies such as:
+
+• Rhabdomyosarcoma
+
+• Soft-tissue sarcoma
+
+• Germ-cell tumours
+
+• Osteosarcoma
+
+• Lymphomas
+
+• Acute lymphoblastic leukaemia
+
+• Neuroblastoma
+
+• Wilms tumour
+
+• Malignant central nervous system tumours
+`,
+
+  safetyInformation: `
+Commonly Reported Adverse Reactions:
+
+Blood and Bone Marrow:
+
+• Myelosuppression
+
+• Reduced white blood cell count
+
+• Reduced platelet count
+
+Central Nervous System:
+
+• Confusion
+
+• Drowsiness
+
+• Neurological toxicity
+
+• Impaired consciousness
+
+Kidney and Urinary System:
+
+• Nephrotoxicity
+
+• Haemorrhagic cystitis
+
+• Blood in the urine
+
+• Kidney dysfunction
+
+• Acute kidney failure
+
+Gastrointestinal System:
+
+• Nausea
+
+• Vomiting
+
+• Diarrhoea
+
+• Constipation
+
+• Mucositis
+
+• Stomatitis
+
+• Enterocolitis
+
+• Pancreatitis
+
+• Intestinal obstruction
+
+• Gastrointestinal bleeding
+
+• Abdominal pain
+
+Liver:
+
+• Hepatotoxicity
+
+Skin:
+
+• Hair loss
+
+• Dermatitis
+
+• Skin rash
+
+• Itching
+
+Reproductive System:
+
+• Infertility
+
+• Ovarian failure
+
+• Premature menopause
+
+• Absence of menstrual periods
+
+• Azoospermia
+
+• Reduced sperm count
+
+General and Administration-Site Reactions:
+
+• Fatigue
+
+• Fever
+
+• Chills
+
+• Inflammation of a vein
+
+• Injection-site reactions
+
+Cardiac Disorders:
+
+• Cardiomyopathy
+
+• Heart failure
+
+• Angina
+
+Pulmonary Disorders:
+
+• Respiratory failure
+
+• Pulmonary oedema
+
+• Pneumonitis
+
+• Pulmonary fibrosis
+
+Overdose:
+
+Serious effects of overdose may include:
+
+• Dose-dependent central nervous system toxicity
+
+• Kidney toxicity
+
+• Bone-marrow suppression
+
+• Mucositis
+
+There is no specific antidote.
+
+Management consists of supportive care, treatment of infections or other toxicities, consideration of haemodialysis in severe overdose and administration of Mesna for urinary protection.
+`,
+
+  specialPrecautions: `
+Medical Supervision:
+
+Z-Fos should only be prepared and administered by trained healthcare professionals experienced in cytotoxic treatment.
+
+Mesna Protection:
+
+Mesna uroprotection is mandatory during Ifosfamide treatment to reduce the risk of haemorrhagic cystitis.
+
+Kidney and Urinary Monitoring:
+
+• Maintain adequate hydration and urine output.
+
+• Monitor renal function regularly.
+
+• Monitor urine for blood and protein.
+
+• Children aged 5 years or younger may be more susceptible to Ifosfamide-related kidney toxicity.
+
+Central Nervous System Effects:
+
+Ifosfamide may cause neurological adverse effects that can temporarily impair the ability to drive or operate machinery.
+
+Patients should avoid such activities if they experience dizziness, confusion, drowsiness or other neurological symptoms.
+
+Pregnancy and Contraception:
+
+Ifosfamide is genotoxic and mutagenic to male and female reproductive cells.
+
+• Women should not become pregnant during treatment.
+
+• Men should not father a child during treatment.
+
+• Effective contraception should be used throughout therapy.
+
+• Women should continue contraception for at least 1 year after treatment ends.
+
+• Men should avoid fathering a child for up to 6 months after treatment ends.
+
+Fertility:
+
+Men should be informed about sperm-preservation options before treatment begins.
+
+Handling Precautions:
+
+• Reconstitution and administration should be undertaken only by trained personnel.
+
+• Appropriate protective equipment should be worn.
+
+• Avoid contact with the skin and eyes.
+
+• If accidental skin or eye contact occurs, rinse immediately using large amounts of water.
+
+• Dispose of unused product and waste according to approved cytotoxic-handling procedures.
+
+Compatibility:
+
+Solutions containing benzyl alcohol may reduce the stability of Ifosfamide and should be avoided.
+
+Storage:
+
+Store at 20°C to 25°C.
+
+Protect from light and moisture.
+
+Keep the vial in its outer carton.
+`,
+},
+{
+  id: 109,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "yakira-tablet",
+  name: "Yakira",
+  subtitle: "Fludarabine Phosphate Tablets",
+  type: "Tablet",
+  imageClass: "yakira-tablet-img",
+
+  image: "/new_product_page/Yakira-10.png",
+
+  images: [
+    "/new_product_page/Yakira-10.png",
+  ],
+
+  strength: "10 mg",
+  packSize: "1 x 5",
+  drugClass: "Antimetabolite",
+
+  dosage: `
+Recommended Dosage:
+
+• The recommended oral dose is 40 mg/m² of body surface area once daily for 5 consecutive days.
+
+• The treatment cycle is repeated every 28 days.
+
+• This oral dose corresponds to approximately 1.6 times the recommended intravenous dose of 25 mg/m² per day.
+
+Daily Dose According to Body Surface Area:
+
+• BSA 0.75 to 0.88 m²: 30 to 35 mg daily, equivalent to 3 tablets.
+
+• BSA 0.89 to 1.13 m²: 36 to 45 mg daily, equivalent to 4 tablets.
+
+• BSA 1.14 to 1.38 m²: 46 to 55 mg daily, equivalent to 5 tablets.
+
+• BSA 1.39 to 1.63 m²: 56 to 65 mg daily, equivalent to 6 tablets.
+
+• BSA 1.64 to 1.88 m²: 66 to 75 mg daily, equivalent to 7 tablets.
+
+• BSA 1.89 to 2.13 m²: 76 to 85 mg daily, equivalent to 8 tablets.
+
+• BSA 2.14 to 2.38 m²: 86 to 95 mg daily, equivalent to 9 tablets.
+
+• BSA 2.39 to 2.50 m²: 96 to 100 mg daily, equivalent to 10 tablets.
+
+Duration of Treatment:
+
+• Treatment should continue until the best clinical response is achieved.
+
+• Complete or partial remission is generally achieved after approximately 6 treatment cycles.
+
+• Treatment should then be discontinued according to the treating doctor's assessment.
+
+Haematological Dose Adjustment:
+
+Patients should be monitored closely for treatment response and toxicity.
+
+If blood cell counts are too low before a subsequent cycle and treatment-related bone-marrow suppression is present, the treatment cycle should be postponed.
+
+Treatment may resume when:
+
+• Granulocyte count is above 1.0 × 10⁹/L.
+
+• Platelet count is above 100 × 10⁹/L.
+
+Treatment should generally not be postponed for more than 2 weeks.
+
+If blood counts do not recover after 2 weeks, the following dose reductions may be considered:
+
+• Granulocytes 0.5 to 1.0 × 10⁹/L or platelets 50 to 100 × 10⁹/L: Reduce dose to 30 mg/m² daily.
+
+• Granulocytes below 0.5 × 10⁹/L or platelets below 50 × 10⁹/L: Reduce dose to 20 mg/m² daily.
+
+The dose should not be reduced when thrombocytopenia is caused by the underlying disease.
+
+Renal Impairment:
+
+• For creatinine clearance between 30 and 70 mL/min, reduce the dose by up to 50%.
+
+• Close haematological monitoring is required.
+
+• Yakira is contraindicated when creatinine clearance is below 30 mL/min.
+
+Hepatic Impairment:
+
+No adequate clinical data are available for patients with liver impairment.
+
+Yakira should therefore be used cautiously in these patients.
+
+Paediatric Use:
+
+Safety and effectiveness have not been established in patients younger than 18 years.
+
+Yakira is not recommended for children or adolescents.
+
+Elderly Patients:
+
+Use cautiously in patients older than 75 years.
+
+Creatinine clearance should be measured before treatment in patients aged 65 years or older.
+`,
+
+  storage: "Store at 25°C to 30°C.",
+
+  description: `
+Yakira contains Fludarabine Phosphate, a water-soluble fluorinated nucleotide analogue of the antiviral agent Vidarabine.
+
+Fludarabine Phosphate is rapidly dephosphorylated to 2F-ara-A after administration.
+
+It is then taken up by cells and converted intracellularly into its active metabolite, 2F-ara-ATP.
+
+The active metabolite inhibits several enzymes involved in DNA synthesis, including:
+
+• Ribonucleotide reductase
+
+• DNA polymerase alpha, delta and epsilon
+
+• DNA primase
+
+• DNA ligase
+
+These actions result in:
+
+• Inhibition of DNA synthesis
+
+• Partial inhibition of RNA polymerase II
+
+• Reduction in protein synthesis
+
+• Inhibition of cell growth
+
+• Induction of apoptosis in chronic lymphocytic leukaemia cells
+`,
+
+  indication: `
+Yakira is indicated for the treatment of B-cell chronic lymphocytic leukaemia in adult patients with sufficient bone-marrow reserves.
+
+First-Line Treatment:
+
+First-line treatment should be initiated only in adult patients with advanced disease, including:
+
+• Rai Stage III or IV disease, corresponding to Binet Stage C.
+
+• Rai Stage I or II disease, corresponding to Binet Stage A or B, when disease-related symptoms or evidence of progressive disease are present.
+
+Previously Treated Patients:
+
+Yakira may be used as single-agent treatment in adult patients with B-cell chronic lymphocytic leukaemia who:
+
+• Have not responded to treatment with at least one standard alkylating-agent-containing regimen.
+
+• Have experienced disease progression during or after such treatment.
+`,
+
+  clinicalEfficacy: `
+Fludarabine Phosphate demonstrates antileukaemic activity after intracellular conversion to its active metabolite, 2F-ara-ATP.
+
+This metabolite inhibits DNA synthesis and promotes apoptosis in malignant lymphocytes.
+
+Clinical pharmacodynamic observations include:
+
+• Suppression of multiple enzymes required for DNA replication.
+
+• Extensive DNA fragmentation in chronic lymphocytic leukaemia cells.
+
+• Induction of apoptosis following exposure to the active Fludarabine metabolite.
+
+Cardiac electrophysiology studies demonstrated that the maximum increase in the corrected QT interval was less than 10 milliseconds.
+
+Pharmacokinetic observations include:
+
+• Oral bioavailability of approximately 50% to 65%.
+
+• Peak plasma concentrations approximately 1 to 2 hours after oral administration.
+
+• Dose-dependent suppression of blood-cell production corresponding with its cytotoxic activity.
+`,
+
+  safetyInformation: `
+Contraindications:
+
+Yakira should not be used in patients with:
+
+• Hypersensitivity to Fludarabine Phosphate or any ingredient in the formulation.
+
+• Severe renal impairment with creatinine clearance below 30 mL/min.
+
+• Decompensated haemolytic anaemia.
+
+• Lactation or breastfeeding.
+
+Common Adverse Reactions:
+
+• Bone-marrow suppression
+
+• Anaemia
+
+• Leukopenia
+
+• Neutropenia
+
+• Thrombocytopenia
+
+• Pneumonia
+
+• Cough
+
+• Fever
+
+• Fatigue
+
+• Weakness
+
+• Nausea
+
+• Vomiting
+
+• Diarrhoea
+
+• Chills
+
+• Oedema
+
+• Malaise
+
+• Peripheral neuropathy
+
+• Visual disturbances
+
+• Loss of appetite
+
+• Mucositis
+
+• Stomatitis
+
+• Skin rash
+
+Serious opportunistic infections and fatalities associated with serious adverse reactions have also been reported.
+
+Overdose:
+
+High doses may cause:
+
+• Leukoencephalopathy
+
+• Acute toxic leukoencephalopathy
+
+• Reversible posterior leukoencephalopathy syndrome
+
+• Headache
+
+• Nausea and vomiting
+
+• Seizures
+
+• Visual disturbances
+
+• Altered consciousness
+
+• Focal neurological deficits
+
+• Confusion
+
+• Drowsiness
+
+• Agitation
+
+• Muscle spasticity
+
+• Incontinence
+
+• Severe thrombocytopenia
+
+• Severe neutropenia
+
+• Severe bone-marrow suppression
+
+• Irreversible central nervous system toxicity
+
+• Blindness
+
+• Coma
+
+• Death
+`,
+
+  specialPrecautions: `
+Myelosuppression:
+
+Careful haematological monitoring is required throughout treatment.
+
+Peripheral blood counts should be assessed regularly.
+
+Severe bone-marrow suppression, pancytopenia and fatal reactions have been reported.
+
+Autoimmune Disorders:
+
+Life-threatening autoimmune haemolytic anaemia and other autoimmune disorders may occur.
+
+Treatment should be discontinued if haemolysis develops.
+
+Tumour Lysis Syndrome:
+
+Tumour lysis syndrome has been reported, particularly in patients with chronic lymphocytic leukaemia and a high tumour burden.
+
+Preventive measures and possible hospitalisation during the first treatment cycle may be required.
+
+Skin Cancer:
+
+Worsening of existing skin-cancer lesions and development of new skin cancers have been reported.
+
+Patients should be monitored for suspicious or changing skin lesions.
+
+Patients with Impaired Health:
+
+Use only after careful assessment of benefits and risks in patients with:
+
+• Reduced bone-marrow function
+
+• Immunodeficiency
+
+• Previous opportunistic infections
+
+• Kidney impairment
+
+Renal Impairment:
+
+• Reduce the dose by up to 50% when creatinine clearance is between 30 and 70 mL/min.
+
+• Do not use when creatinine clearance is below 30 mL/min.
+
+Elderly Patients:
+
+Use cautiously in patients older than 75 years.
+
+Kidney function should be assessed before treatment in patients aged 65 years or older.
+
+Pregnancy:
+
+Fludarabine Phosphate is genotoxic and may cause fetal harm.
+
+Avoid use during pregnancy unless the potential benefit clearly outweighs the risk.
+
+Contraception:
+
+• Women of reproductive potential should use effective contraception during treatment and for at least 6 months after treatment.
+
+• Male patients should use effective contraception and should not father a child during treatment or for at least 3 months after completing treatment.
+
+Vaccination:
+
+Live vaccines should be avoided during and after treatment.
+
+Handling:
+
+• Pregnant healthcare staff should not handle Fludarabine Phosphate tablets.
+
+• Follow approved procedures for handling cytotoxic medicines.
+
+• Dispose of unused medicine and waste according to local cytotoxic-drug regulations.
+
+Storage:
+
+Store at 25°C to 30°C.
+`,
+},
+{
+  id: 110,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "zugorafenib",
+  name: "Zugorafenib",
+  subtitle: "Regorafenib Tablets",
+  type: "Tablet",
+  imageClass: "zugorafenib-img",
+
+  image: "/new_product_page/Zugorafenib-40.png",
+
+  images: [
+    "/new_product_page/Zugorafenib-40.png",
+  ],
+
+  strength: "40 mg",
+  packSize: "1 x 28",
+  drugClass: "Multikinase Inhibitor",
+
+  dosage: `
+Recommended Dosage:
+
+• The recommended dose is 160 mg, equivalent to four 40 mg tablets, taken orally once daily.
+
+• Treatment is administered for the first 3 weeks of each 4-week treatment cycle.
+
+• This is followed by 1 week without treatment.
+
+• Treatment should continue as long as the patient receives clinical benefit or until unacceptable toxicity occurs.
+
+Administration Instructions:
+
+• Take Zugorafenib at approximately the same time every day.
+
+• Swallow the tablets whole with water.
+
+• Take the tablets after a light, low-fat meal containing less than 30% fat.
+
+• Do not take more than 160 mg in one day.
+
+Dose Modification:
+
+Dose interruption or reduction may be required according to individual tolerability and adverse reactions.
+
+• Dose adjustments should be made in steps of 40 mg.
+
+• The maximum recommended daily dose is 160 mg.
+
+• The minimum recommended daily dose is 80 mg.
+
+Hand-Foot Skin Reaction:
+
+Grade 1:
+
+• Continue the current dose.
+
+• Begin supportive treatment immediately to relieve symptoms.
+
+Grade 2 – First Occurrence:
+
+• Reduce the daily dose by 40 mg.
+
+• Begin supportive treatment immediately.
+
+• If there is no improvement, interrupt treatment for at least 7 days until toxicity improves to Grade 0 or Grade 1.
+
+Grade 2 – Recurrent or Persistent Reaction:
+
+• Interrupt treatment until toxicity improves to Grade 0 or Grade 1.
+
+• Restart treatment at a dose reduced by 40 mg.
+
+• Dose escalation may later be considered according to medical assessment.
+
+Grade 2 – Fourth Occurrence:
+
+• Permanently discontinue treatment.
+
+Grade 3 – First Occurrence:
+
+• Begin supportive treatment immediately.
+
+• Interrupt treatment for at least 7 days until toxicity improves to Grade 0 or Grade 1.
+
+• Restart treatment at a dose reduced by 40 mg.
+
+Grade 3 – Second Occurrence:
+
+• Interrupt treatment until toxicity improves to Grade 0 or Grade 1.
+
+• Restart treatment at a dose reduced by 40 mg.
+
+Grade 3 – Third Occurrence:
+
+• Permanently discontinue treatment.
+
+Liver Function Abnormalities:
+
+ALT or AST up to 5 times the upper limit of normal:
+
+• Treatment may generally continue.
+
+• Monitor liver function weekly until values return to less than 3 times the upper limit of normal or the patient's baseline.
+
+ALT or AST more than 5 times but not more than 20 times the upper limit of normal:
+
+• Interrupt treatment at the first occurrence.
+
+• Monitor liver enzymes weekly until they return to less than 3 times the upper limit of normal or baseline.
+
+• Permanently discontinue treatment if the abnormality recurs.
+
+ALT or AST more than 20 times the upper limit of normal:
+
+• Permanently discontinue treatment.
+
+ALT or AST more than 3 times the upper limit of normal with bilirubin more than 2 times the upper limit:
+
+• Permanently discontinue treatment.
+
+• Monitor liver function weekly until resolution or return to baseline.
+
+The treating oncologist should determine all dose interruptions, reductions and treatment discontinuations.
+`,
+
+  storage: "Store at 25°C to 30°C.",
+
+  description: `
+Zugorafenib contains Regorafenib, an orally administered antitumour multikinase inhibitor.
+
+Regorafenib blocks several protein kinases involved in:
+
+• Tumour angiogenesis
+
+• Oncogenesis
+
+• Tumour-cell proliferation
+
+• Formation and maintenance of the tumour microenvironment
+
+Regorafenib also inhibits mutated KIT, an important oncogenic driver in gastrointestinal stromal tumours.
+
+By inhibiting these signalling pathways, Regorafenib reduces the formation of new blood vessels supplying the tumour and interferes with the growth and survival of malignant cells.
+`,
+
+  indication: `
+Zugorafenib is indicated for the treatment of:
+
+Metastatic Colorectal Cancer:
+
+• Patients with metastatic colorectal cancer who have previously received available therapies.
+
+• Patients who are not considered suitable candidates for available treatments.
+
+Previous treatments may include:
+
+• Fluoropyrimidine-based chemotherapy
+
+• Anti-VEGF therapy
+
+• Anti-EGFR therapy
+
+Gastrointestinal Stromal Tumours:
+
+• Patients with unresectable or metastatic gastrointestinal stromal tumours.
+
+• Patients whose disease has progressed during previous treatment with Imatinib and Sunitinib.
+
+• Patients who are unable to tolerate previous treatment with Imatinib and Sunitinib.
+
+Hepatocellular Carcinoma:
+
+• Patients with hepatocellular carcinoma who have previously received treatment with Sorafenib.
+`,
+
+  clinicalEfficacy: `
+Regorafenib has demonstrated clinical efficacy in patients with previously treated metastatic colorectal cancer, gastrointestinal stromal tumours and hepatocellular carcinoma.
+
+In pivotal Phase III clinical studies, Regorafenib administered with best supportive care demonstrated improvements in:
+
+• Overall survival
+
+• Progression-free survival
+
+• Disease control
+
+Regorafenib has been shown to delay disease progression and provide a survival benefit in patients whose disease progressed after standard treatments.
+
+These findings support its use as a treatment option for patients with advanced or treatment-resistant malignancies.
+`,
+
+  safetyInformation: `
+Contraindications:
+
+Do not use Zugorafenib in patients with hypersensitivity to Regorafenib or any ingredient in the formulation.
+
+Common Adverse Reactions:
+
+• Infections
+
+• Thrombocytopenia
+
+• Anaemia
+
+• Leukopenia
+
+• Hypothyroidism
+
+• Reduced appetite
+
+• Reduced food intake
+
+• Low potassium levels
+
+• Low phosphate levels
+
+• Low calcium levels
+
+• Low sodium levels
+
+• Low magnesium levels
+
+• Increased uric acid
+
+• Dehydration
+
+• Headache
+
+• Tremor
+
+• Peripheral neuropathy
+
+• Bleeding
+
+• High blood pressure
+
+• Voice changes
+
+• Stomatitis
+
+• Vomiting
+
+• Nausea
+
+• Altered taste
+
+• Dry mouth
+
+• Gastro-oesophageal reflux
+
+• Gastroenteritis
+
+• Increased bilirubin
+
+• Increased liver enzymes
+
+• Hand-foot skin reaction
+
+• Skin rash
+
+• Hair loss
+
+• Dry skin
+
+• Exfoliative rash
+
+• Muscle spasms
+
+• Protein in the urine
+
+• Weakness
+
+• Fatigue
+
+• Pain
+
+• Fever
+
+• Mucositis
+
+• Weight loss
+
+• Increased amylase
+
+• Increased lipase
+`,
+
+  specialPrecautions: `
+Liver Monitoring:
+
+Serious and potentially fatal liver injury may occur during treatment.
+
+• Perform liver function tests, including ALT, AST and bilirubin, before starting treatment.
+
+• Monitor liver function at least every 2 weeks during the first 2 months.
+
+• Thereafter, monitor liver function at least monthly and whenever clinically required.
+
+Patients with Gilbert syndrome may have an increased risk of mild indirect hyperbilirubinaemia.
+
+Bleeding:
+
+Regorafenib may increase the risk of bleeding.
+
+Monitor blood counts and coagulation parameters in patients who:
+
+• Have an increased risk of bleeding.
+
+• Are receiving anticoagulants.
+
+• Are taking other medicines that increase bleeding risk.
+
+Liver Cirrhosis:
+
+Patients with cirrhosis should be evaluated for oesophageal varices before treatment.
+
+Existing varices should be appropriately treated before Zugorafenib is started.
+
+Cardiac Disorders:
+
+Cardiac ischaemia and myocardial infarction have been reported.
+
+• Interrupt treatment if cardiac ischaemia or myocardial infarction develops.
+
+• Monitor patients with a history of ischaemic heart disease for symptoms of myocardial ischaemia.
+
+Neurological Disorders:
+
+Reversible posterior leukoencephalopathy syndrome may occur.
+
+Seek immediate medical attention for:
+
+• Seizures
+
+• Severe headache
+
+• Confusion
+
+• Visual disturbances
+
+• Altered consciousness
+
+Gastrointestinal Disorders:
+
+Gastrointestinal perforation and fistula formation may occur.
+
+Report severe abdominal pain, persistent vomiting or signs of gastrointestinal bleeding immediately.
+
+Surgery and Wound Healing:
+
+Regorafenib may impair wound healing because of its antiangiogenic effects.
+
+Treatment may need to be discontinued before major surgery and restarted only after adequate wound healing.
+
+Electrolyte and Metabolic Monitoring:
+
+Monitor biochemical and metabolic parameters because treatment may cause:
+
+• Hypophosphataemia
+
+• Hypocalcaemia
+
+• Hyponatraemia
+
+• Hypokalaemia
+
+• Increased thyroid-stimulating hormone
+
+• Increased lipase
+
+• Increased amylase
+
+Infections:
+
+An increased incidence of infection has been reported.
+
+Treatment interruption or discontinuation may be required if an infection becomes severe or worsens.
+
+Vascular Disorders:
+
+Medicines that inhibit vascular endothelial growth factor may be associated with aneurysm formation or arterial dissection.
+
+Use particular caution in patients with:
+
+• High blood pressure
+
+• A history of aneurysm
+
+Hepatic Impairment:
+
+• Zugorafenib is not recommended in patients with severe hepatic impairment classified as Child-Pugh C.
+
+• Closely monitor patients with mild or moderate hepatic impairment.
+
+Renal Impairment:
+
+Limited clinical information is available for patients with severe renal impairment.
+
+Pregnancy:
+
+Regorafenib may cause fetal harm based on its mechanism of action.
+
+Women should avoid pregnancy during treatment and use effective contraception as advised by their doctor.
+
+Breastfeeding:
+
+It is not known whether Regorafenib or its metabolites pass into breast milk.
+
+Breastfeeding should be discussed with the treating doctor before treatment.
+
+Driving and Machinery:
+
+Patients who experience symptoms affecting concentration, vision or reaction time should not drive or operate machinery until those effects resolve.
+
+Storage:
+
+Store at 25°C to 30°C.
+`,
+},
+{
+  id: 111,
+  category: "oncoace",
+  categoryName: "OncoAce",
+  slug: "auset-tablet",
+  name: "Auset",
+  subtitle: "Azacitidine Tablets",
+  type: "Tablet",
+  imageClass: "auset-tablet-img",
+
+  image: "/new_product_page/auset-group.png",
+
+  images: [
+    "/new_product_page/auset-group.png",
+    "/new_product_page/Auset-200.png",
+    "/new_product_page/Auset-300.png",
+  ],
+
+  strength: "200 mg / 300 mg",
+  packSize: "1 x 14",
+  drugClass: "Antimetabolite and Demethylating Agent",
+
+  dosage: `
+Recommended Dosage:
+
+• The recommended dose of Auset is 200 mg or 300 mg taken orally once daily.
+
+• Take the medicine on Days 1 through 14 of each 28-day treatment cycle.
+
+• Auset may be taken with or without food.
+
+• Treatment should continue until disease progression or unacceptable toxicity occurs.
+
+Antiemetic Treatment:
+
+• Administer an antiemetic medicine approximately 30 minutes before each Auset dose during the first 2 treatment cycles.
+
+• Antiemetic prophylaxis may be omitted after the first 2 cycles if the patient has not experienced nausea or vomiting.
+
+The exact dose, treatment duration and any dosage modifications should be determined by the treating oncologist.
+`,
+
+  storage: "Store at 25°C to 30°C.",
+
+  description: `
+Auset contains Azacitidine, a pyrimidine nucleoside analogue with antimetabolite and demethylating activity.
+
+Auset is a prescription medicine used for the continued treatment of certain adult patients with acute myeloid leukaemia.
+
+After cellular uptake, Azacitidine undergoes enzymatic conversion into active nucleotide forms.
+
+It is incorporated into DNA, where it reversibly inhibits DNA methyltransferase enzymes and reduces DNA methylation.
+
+This may restore the expression of genes involved in tumour suppression and normal cell differentiation.
+
+Azacitidine is also incorporated into RNA, where it inhibits RNA methyltransferases, reduces RNA stability and decreases protein synthesis.
+`,
+
+  indication: `
+Auset is indicated for the continued treatment of adult patients with acute myeloid leukaemia who:
+
+• Achieved a first complete remission following intensive induction chemotherapy.
+
+• Achieved complete remission with incomplete blood-count recovery following intensive induction chemotherapy.
+
+• Are unable to complete intensive curative treatment.
+`,
+
+  clinicalEfficacy: `
+Azacitidine is a pyrimidine nucleoside analogue of cytidine that inhibits DNA and RNA methyltransferases.
+
+Following cellular uptake, Azacitidine is converted into active nucleotide triphosphates and incorporated into DNA and RNA.
+
+Incorporation into DNA:
+
+• Inhibits DNA methyltransferases.
+
+• Reduces DNA methylation.
+
+• Alters gene expression.
+
+• May restore the expression of genes involved in tumour suppression and cell differentiation.
+
+Incorporation into RNA:
+
+• Inhibits RNA methyltransferases.
+
+• Reduces RNA methylation.
+
+• Decreases RNA stability.
+
+• Reduces protein synthesis.
+
+These actions interfere with the growth and survival of malignant cells, including acute myeloid leukaemia cells.
+`,
+
+  safetyInformation: `
+General Safety Information:
+
+• Read the product label carefully before use.
+
+• Keep Auset out of the reach of children.
+
+• Do not exceed the recommended dose.
+
+• Use Auset only under the supervision of a doctor experienced in anticancer treatment.
+
+Myelosuppression:
+
+Auset may cause suppression of bone-marrow function.
+
+This may result in:
+
+• Anaemia
+
+• Neutropenia
+
+• Thrombocytopenia
+
+• Increased risk of infection
+
+• Increased risk of bleeding
+
+Complete blood counts should be monitored before treatment and regularly during therapy.
+
+Gastrointestinal Toxicity:
+
+Auset may cause:
+
+• Nausea
+
+• Vomiting
+
+• Diarrhoea
+
+• Other gastrointestinal adverse reactions
+
+Antiemetic or antidiarrhoeal medicines may be required during treatment.
+`,
+
+  specialPrecautions: `
+Embryo-Fetal Toxicity:
+
+Based on its mechanism of action and findings from animal studies, Azacitidine may cause fetal harm when administered during pregnancy.
+
+Women of reproductive potential should avoid becoming pregnant during treatment and should use effective contraception as advised by their doctor.
+
+Myelosuppression:
+
+Patients should be informed about the risk of bone-marrow suppression.
+
+Complete blood counts should be obtained before treatment and monitored throughout therapy.
+
+Gastrointestinal Toxicity:
+
+Patients should be informed about the risk of nausea, vomiting and diarrhoea.
+
+Antiemetic or antidiarrhoeal medicines may be required.
+
+Breastfeeding:
+
+Women should not breastfeed during treatment with Auset or for at least 1 week after the final dose.
+
+Storage:
+
+Store at 25°C to 30°C.
+`,
+},  
 ];
+

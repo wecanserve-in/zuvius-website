@@ -1,7 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./productdetail.css";
 import { products } from "./productdata";
+
+const getStrengthOptions = (strengthValue) => {
+  if (!strengthValue) return [];
+
+  return String(strengthValue)
+    .split(/\/|,|\|/)
+    .map((strength) => strength.trim())
+    .filter(Boolean);
+};
 
 const ProductDetail = () => {
   const { slug } = useParams();
@@ -10,20 +19,68 @@ const ProductDetail = () => {
 
   const product = products.find((item) => item.slug === slug);
 
+  const strengthOptions = getStrengthOptions(product?.strength);
+
   const [activeTab, setActiveTab] = useState("Description");
+
   const [mainImage, setMainImage] = useState(
     product?.images?.[0] || product?.image || ""
   );
 
+  const [showEnquiryModal, setShowEnquiryModal] = useState(false);
+
+  const [enquiryForm, setEnquiryForm] = useState({
+    name: "",
+    companyName: "",
+    phone: "",
+    email: "",
+    productName: product?.name || "",
+    strength: strengthOptions[0] || "",
+    quantity: "",
+  });
+
   useEffect(() => {
-    if (product) {
-      setMainImage(product.images?.[0] || product.image || "");
-      setActiveTab("Description");
-    }
+    if (!product) return;
+
+    const availableStrengths = getStrengthOptions(product.strength);
+
+    setMainImage(product.images?.[0] || product.image || "");
+    setActiveTab("Description");
+
+    setEnquiryForm((previousForm) => ({
+      ...previousForm,
+      productName: product.name || "",
+      strength:
+        availableStrengths[0] ||
+        product.strength ||
+        "As per label",
+    }));
   }, [product]);
 
+  useEffect(() => {
+    if (!showEnquiryModal) return;
+
+    const handleEscapeKey = (event) => {
+      if (event.key === "Escape") {
+        setShowEnquiryModal(false);
+      }
+    };
+
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", handleEscapeKey);
+
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleEscapeKey);
+    };
+  }, [showEnquiryModal]);
+
   if (!product) {
-    return <h2 className="product-detail-not-found">Product not found</h2>;
+    return (
+      <h2 className="product-detail-not-found">
+        Product not found
+      </h2>
+    );
   }
 
   const tabs = [
@@ -40,7 +97,9 @@ const ProductDetail = () => {
       : [product.image];
 
   const relatedProducts = products.filter(
-    (item) => item.category === product.category && item.slug !== product.slug
+    (item) =>
+      item.category === product.category &&
+      item.slug !== product.slug
   );
 
   const scrollThumbnails = (direction) => {
@@ -55,31 +114,35 @@ const ProductDetail = () => {
   const getTabContent = () => {
     switch (activeTab) {
       case "Description":
-        return product.description || "No information available.";
+        return (
+          product.description || "No information available."
+        );
 
       case "Indication":
         return product.indication || "No information available.";
 
       case "Clinical Efficacy":
-        return product.clinicalEfficacy || "No information available.";
+        return (
+          product.clinicalEfficacy ||
+          "No information available."
+        );
 
       case "Safety Information":
-        return product.safetyInformation || "No information available.";
+        return (
+          product.safetyInformation ||
+          "No information available."
+        );
 
       case "Dosage & Administration":
-        return product.dosage || "As directed by the physician.";
+        return (
+          product.dosage || "As directed by the physician."
+        );
 
       default:
         return "No information available.";
     }
   };
 
-  /*
-    Converts productdata text into:
-    - headings
-    - paragraphs
-    - bullet lists
-  */
   const renderFormattedContent = (content) => {
     if (!content) {
       return <p>No information available.</p>;
@@ -193,8 +256,67 @@ const ProductDetail = () => {
     return elements;
   };
 
+  const handleEnquiryChange = (event) => {
+    const { name, value } = event.target;
+
+    setEnquiryForm((previousForm) => ({
+      ...previousForm,
+      [name]: value,
+    }));
+  };
+
+  const openEnquiryModal = () => {
+    const availableStrengths = getStrengthOptions(
+      product.strength
+    );
+
+    setEnquiryForm((previousForm) => ({
+      ...previousForm,
+      productName: product.name,
+      strength:
+        previousForm.strength ||
+        availableStrengths[0] ||
+        product.strength ||
+        "As per label",
+    }));
+
+    setShowEnquiryModal(true);
+  };
+
+  const closeEnquiryModal = () => {
+    setShowEnquiryModal(false);
+  };
+
+  const handleEnquirySubmit = (event) => {
+    event.preventDefault();
+
+    const subject = `Product Enquiry - ${enquiryForm.productName}`;
+
+    const emailBody = `
+Product Enquiry
+
+Name: ${enquiryForm.name}
+Company Name: ${enquiryForm.companyName}
+Phone Number: ${enquiryForm.phone}
+Email ID: ${enquiryForm.email}
+Product Name: ${enquiryForm.productName}
+Strength: ${enquiryForm.strength}
+Quantity: ${enquiryForm.quantity}
+    `.trim();
+
+    const mailToLink = `mailto:info@zuviuslifesciences.in?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(emailBody)}`;
+
+    window.location.href = mailToLink;
+
+    setShowEnquiryModal(false);
+  };
+
   return (
     <div className="product-detail-page">
+      {/* PRODUCT HERO */}
+
       <section className="product-detail-hero">
         <div className="product-detail-gallery">
           <div className="product-detail-main-image">
@@ -207,11 +329,15 @@ const ProductDetail = () => {
             <h1>{product.name}</h1>
 
             {product.subtitle && (
-              <p className="product-subtitle">{product.subtitle}</p>
+              <p className="product-subtitle">
+                {product.subtitle}
+              </p>
             )}
           </div>
 
           <div className="product-detail-meta">
+            {/* STRENGTH */}
+
             <div className="product-detail-meta-card">
               <img
                 src="/products/strength.png"
@@ -221,9 +347,30 @@ const ProductDetail = () => {
 
               <div>
                 <p>Strength</p>
-                <h4>{product.strength || "As per label"}</h4>
+
+                {strengthOptions.length > 0 ? (
+                  <h4 className="product-strength-list">
+                    {strengthOptions.map(
+                      (strength, index) => (
+                        <span
+                          key={`${strength}-${index}`}
+                        >
+                          <span className="strength-tick">
+                            ✓
+                          </span>
+
+                          <span>{strength}</span>
+                        </span>
+                      )
+                    )}
+                  </h4>
+                ) : (
+                  <h4>As per label</h4>
+                )}
               </div>
             </div>
+
+            {/* PACK SIZE */}
 
             <div className="product-detail-meta-card">
               <img
@@ -234,9 +381,13 @@ const ProductDetail = () => {
 
               <div>
                 <p>Pack Size</p>
-                <h4>{product.packSize || "As per pack"}</h4>
+                <h4>
+                  {product.packSize || "As per pack"}
+                </h4>
               </div>
             </div>
+
+            {/* DRUG CLASS */}
 
             <div className="product-detail-meta-card">
               <img
@@ -247,20 +398,29 @@ const ProductDetail = () => {
 
               <div>
                 <p>Drug Class</p>
-                <h4>{product.drugClass || "Medicine"}</h4>
+                <h4>
+                  {product.drugClass || "Medicine"}
+                </h4>
               </div>
             </div>
           </div>
 
-          {product.coldStorage && (
+          {product.storage && (
             <p className="product-detail-cold">
-              <strong>Cold Storage:</strong> {product.coldStorage}
+              <strong>Storage:</strong>{" "}
+              {product.storage}
             </p>
           )}
 
-          <button type="button" className="product-enquire-btn">
+          <button
+            type="button"
+            className="product-enquire-btn"
+            onClick={openEnquiryModal}
+          >
             Enquire Now
           </button>
+
+          {/* THUMBNAILS */}
 
           <div className="product-thumbnail-slider-wrap">
             <button
@@ -281,10 +441,17 @@ const ProductDetail = () => {
                   type="button"
                   key={`${img}-${index}`}
                   onClick={() => setMainImage(img)}
-                  className={mainImage === img ? "active" : ""}
-                  aria-label={`View ${product.name} image ${index + 1}`}
+                  className={
+                    mainImage === img ? "active" : ""
+                  }
+                  aria-label={`View ${product.name} image ${
+                    index + 1
+                  }`}
                 >
-                  <img src={img} alt={`${product.name} ${index + 1}`} />
+                  <img
+                    src={img}
+                    alt={`${product.name} ${index + 1}`}
+                  />
                 </button>
               ))}
             </div>
@@ -301,13 +468,17 @@ const ProductDetail = () => {
         </div>
       </section>
 
+      {/* PRODUCT INFORMATION TABS */}
+
       <section className="product-detail-tabs-section">
         <div className="product-tabs-header">
           {tabs.map((tab) => (
             <button
               type="button"
               key={tab}
-              className={activeTab === tab ? "active" : ""}
+              className={
+                activeTab === tab ? "active" : ""
+              }
               onClick={() => setActiveTab(tab)}
             >
               {tab}
@@ -322,6 +493,8 @@ const ProductDetail = () => {
         </div>
       </section>
 
+      {/* RELATED PRODUCTS */}
+
       <section className="related-products-section">
         <h2>Related Products</h2>
 
@@ -332,11 +505,16 @@ const ProductDetail = () => {
               key={item.id}
               className="related-product-card"
               onClick={() =>
-                navigate(`/products/${item.category}/${item.slug}`)
+                navigate(
+                  `/products/${item.category}/${item.slug}`
+                )
               }
             >
               <div className="related-product-image">
-                <img src={item.image} alt={item.name} />
+                <img
+                  src={item.image}
+                  alt={item.name}
+                />
               </div>
 
               <div className="related-product-content">
@@ -347,6 +525,206 @@ const ProductDetail = () => {
           ))}
         </div>
       </section>
+
+      {/* PRODUCT ENQUIRY POPUP */}
+
+      {showEnquiryModal && (
+        <div
+          className="product-enquiry-overlay"
+          onMouseDown={closeEnquiryModal}
+          role="presentation"
+        >
+          <div
+            className="product-enquiry-modal"
+            onMouseDown={(event) =>
+              event.stopPropagation()
+            }
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="product-enquiry-title"
+          >
+            <button
+              type="button"
+              className="product-enquiry-close"
+              onClick={closeEnquiryModal}
+              aria-label="Close enquiry form"
+            >
+              ×
+            </button>
+
+            <div className="product-enquiry-heading">
+              
+
+              <h2 id="product-enquiry-title">
+                Enquire About {product.name}
+              </h2>
+
+              <p>
+                Enter your requirements and our team will
+                contact you.
+              </p>
+            </div>
+
+            <form
+              className="product-enquiry-form"
+              onSubmit={handleEnquirySubmit}
+            >
+              <div className="product-enquiry-row">
+                <div className="product-enquiry-field">
+                  <label htmlFor="enquiry-name">
+                    Name
+                  </label>
+
+                  <input
+                    id="enquiry-name"
+                    type="text"
+                    name="name"
+                    value={enquiryForm.name}
+                    onChange={handleEnquiryChange}
+                    placeholder="Enter your full name"
+                    autoComplete="name"
+                    required
+                  />
+                </div>
+
+                <div className="product-enquiry-field">
+                  <label htmlFor="enquiry-company">
+                    Company Name
+                  </label>
+
+                  <input
+                    id="enquiry-company"
+                    type="text"
+                    name="companyName"
+                    value={enquiryForm.companyName}
+                    onChange={handleEnquiryChange}
+                    placeholder="Enter company name"
+                    autoComplete="organization"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="product-enquiry-row">
+                <div className="product-enquiry-field">
+                  <label htmlFor="enquiry-phone">
+                    Phone Number
+                  </label>
+
+                  <input
+                    id="enquiry-phone"
+                    type="tel"
+                    name="phone"
+                    value={enquiryForm.phone}
+                    onChange={handleEnquiryChange}
+                    placeholder="Enter phone number"
+                    autoComplete="tel"
+                    pattern="[0-9+\-\s()]{8,20}"
+                    required
+                  />
+                </div>
+
+                <div className="product-enquiry-field">
+                  <label htmlFor="enquiry-email">
+                    Email ID
+                  </label>
+
+                  <input
+                    id="enquiry-email"
+                    type="email"
+                    name="email"
+                    value={enquiryForm.email}
+                    onChange={handleEnquiryChange}
+                    placeholder="Enter email address"
+                    autoComplete="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="product-enquiry-row">
+                <div className="product-enquiry-field">
+                  <label htmlFor="enquiry-product">
+                    Product Name
+                  </label>
+
+                  <input
+                    id="enquiry-product"
+                    type="text"
+                    name="productName"
+                    value={enquiryForm.productName}
+                    readOnly
+                  />
+                </div>
+
+                <div className="product-enquiry-field">
+                  <label htmlFor="enquiry-strength">
+                    Strength
+                  </label>
+
+                  {strengthOptions.length > 1 ? (
+                    <select
+                      id="enquiry-strength"
+                      name="strength"
+                      value={enquiryForm.strength}
+                      onChange={handleEnquiryChange}
+                      required
+                    >
+                      {strengthOptions.map(
+                        (strength, index) => (
+                          <option
+                            value={strength}
+                            key={`${strength}-${index}`}
+                          >
+                            {strength}
+                          </option>
+                        )
+                      )}
+                    </select>
+                  ) : (
+                    <input
+                      id="enquiry-strength"
+                      type="text"
+                      name="strength"
+                      value={
+                        enquiryForm.strength ||
+                        product.strength ||
+                        "As per label"
+                      }
+                      readOnly
+                    />
+                  )}
+                </div>
+              </div>
+
+              <div className="product-enquiry-field">
+                <label htmlFor="enquiry-quantity">
+                  Quantity
+                </label>
+
+                <input
+                  id="enquiry-quantity"
+                  type="number"
+                  name="quantity"
+                  value={enquiryForm.quantity}
+                  onChange={handleEnquiryChange}
+                  placeholder="Enter required quantity"
+                  min="1"
+                  step="1"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="product-enquiry-submit"
+              >
+                Submit Enquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

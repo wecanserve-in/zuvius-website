@@ -166,32 +166,41 @@ const Careers = () => {
       </section>
 
       {/* --- SECTION 5: FINAL APPLICATION CTA --- */}
-      <section className="cr-cta-footer-block">
-        <div className="cr-cta-inner-card-container">
-          <div className="cr-cta-left-identity">
-            <div className="cr-cta-file-icon-box">
-              <span className="cr-file-glyph">📄</span>
-            </div>
-            <div className="cr-cta-text-bundle">
-              <h3>Ready to Make an Impact?</h3>
-              <p>
-                We are always looking for passionate individuals across pharma sales, marketing, operations, quality and corporate roles.
-              </p>
-            </div>
-          </div>
-          <div className="cr-cta-right-actions">
-            <button
-  className="cr-action-btn-blue"
-  onClick={() => navigate("/contact")}
->
-  APPLY NOW <span className="cr-btn-arrow">→</span>
-</button>
-            <p className="cr-email-anchor-subtext">
-              Send your resume to <a href="mailto:careers@zuviuslifesciences.com">careers@zuviuslifesciences.com</a>
-            </p>
-          </div>
-        </div>
-      </section>
+<section className="cr-cta-footer-block">
+  <div className="cr-cta-inner-card-container">
+    <div className="cr-cta-left-identity">
+      <div className="cr-cta-file-icon-box">
+        <span className="cr-file-glyph">📄</span>
+      </div>
+
+      <div className="cr-cta-text-bundle">
+        <h3>Ready to Make an Impact?</h3>
+
+        <p>
+          We are always looking for passionate individuals across
+          pharma sales, marketing, operations, quality and corporate
+          roles.
+        </p>
+      </div>
+    </div>
+
+    <div className="cr-cta-action-area">
+      <a
+        className="cr-action-btn-blue"
+        href="mailto:hr@zuviuslifesciences.in?subject=Job Application at Zuvius Lifesciences"
+      >
+        APPLY NOW <span className="cr-btn-arrow">→</span>
+      </a>
+
+      <p className="cr-email-anchor-subtext">
+        Send your resume to{" "}
+        <a href="mailto:hr@zuviuslifesciences.in">
+          hr@zuviuslifesciences.in
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
 
     </div>
   );
