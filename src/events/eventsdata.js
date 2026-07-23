@@ -2,8 +2,8 @@ export const eventsData = [
   {
     id: 1,
     slug: "nex-brand-the-extraordinnaire",
-    category: "participation",
-    categoryLabel: "Participation",
+    category: "exhibition",
+categoryLabel: "Exhibition",
     title: "Nex Brand The Extraordinnaire",
     cardSubtitle: "Recognition & Brand Excellence",
 

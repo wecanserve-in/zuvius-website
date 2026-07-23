@@ -60,15 +60,17 @@ const Events = () => {
               Events
             </button>
 
-            <button
-              type="button"
-              className={`ev-tab-item-btn ${
-                activeFilter === "participation" ? "ev-active-tab" : ""
-              }`}
-              onClick={() => setActiveFilter("participation")}
-            >
-              Participation
-            </button>
+           <button
+  type="button"
+  className={`ev-tab-item-btn ${
+    activeFilter === "exhibition"
+      ? "ev-active-tab"
+      : ""
+  }`}
+  onClick={() => setActiveFilter("exhibition")}
+>
+  Exhibition
+</button>
 
             <button
               type="button"

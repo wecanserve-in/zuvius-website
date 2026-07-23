@@ -1217,3 +1217,238 @@
     padding: 0 16px;
   }
 }
+/* =====================================================
+   CSR DETAIL — CONTINUING FOUR-IMAGE GALLERY
+===================================================== */
+
+.csr-continuing-four-image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.csr-continuing-photo-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 180px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 10px;
+  background: #edf3f5;
+  cursor: pointer;
+  appearance: none;
+}
+
+.csr-continuing-photo-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.csr-continuing-photo-card::after {
+  content: "View Image";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  background: rgba(0, 90, 110, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.csr-continuing-photo-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+
+.csr-continuing-photo-card:hover::after {
+  opacity: 1;
+}
+
+.csr-continuing-photo-card:focus-visible,
+.csr-grid-photo-frame:focus-visible {
+  outline: 3px solid #159c9c;
+  outline-offset: 3px;
+}
+
+/* High-resolution image viewer */
+
+.csr-single-image-lightbox {
+  max-width: 1100px;
+}
+
+.csr-lightbox-viewer-viewport {
+  width: 100%;
+  text-align: center;
+}
+
+.csr-lightbox-main-canvas {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 72vh;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .csr-continuing-four-image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .csr-continuing-photo-card {
+    height: 190px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+  .csr-continuing-four-image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .csr-continuing-photo-card {
+    height: 125px;
+    border-radius: 7px;
+  }
+
+  .csr-continuing-photo-card::after {
+    display: none;
+  }
+}
+
+/* =====================================================
+   CSR DETAIL — CONTINUING FOUR-IMAGE GALLERY
+===================================================== */
+
+.csr-continuing-four-image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.csr-continuing-photo-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 180px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 10px;
+  background: #edf3f5;
+  cursor: pointer;
+  appearance: none;
+}
+
+.csr-continuing-photo-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.csr-continuing-photo-card::after {
+  content: "View Image";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  background: rgba(0, 90, 110, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.csr-continuing-photo-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+
+.csr-continuing-photo-card:hover::after {
+  opacity: 1;
+}
+
+.csr-continuing-photo-card:focus-visible,
+.csr-grid-photo-frame:focus-visible {
+  outline: 3px solid #159c9c;
+  outline-offset: 3px;
+}
+
+/* High-resolution image viewer */
+
+.csr-single-image-lightbox {
+  max-width: 1100px;
+}
+
+.csr-lightbox-viewer-viewport {
+  width: 100%;
+  text-align: center;
+}
+
+.csr-lightbox-main-canvas {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 72vh;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .csr-continuing-four-image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .csr-continuing-photo-card {
+    height: 190px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+  .csr-continuing-four-image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .csr-continuing-photo-card {
+    height: 125px;
+    border-radius: 7px;
+  }
+
+  .csr-continuing-photo-card::after {
+    display: none;
+  }
+}

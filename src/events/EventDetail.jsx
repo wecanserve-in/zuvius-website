@@ -11,37 +11,35 @@ const EventDetail = () => {
     (item) => item.slug === slug
   );
 
-  const [isLightboxOpen, setIsLightboxOpen] =
-    useState(false);
-
-  const [zoomedImgUrl, setZoomedImgUrl] =
-    useState(null);
+  const [zoomedImgUrl, setZoomedImgUrl] = useState(null);
 
   useEffect(() => {
-    setIsLightboxOpen(false);
     setZoomedImgUrl(null);
   }, [slug]);
 
   useEffect(() => {
     const handleEscape = (event) => {
-      if (event.key !== "Escape") {
-        return;
-      }
-
-      if (zoomedImgUrl) {
+      if (event.key === "Escape") {
         setZoomedImgUrl(null);
-      } else {
-        setIsLightboxOpen(false);
       }
     };
 
     window.addEventListener("keydown", handleEscape);
 
     return () => {
-      window.removeEventListener(
-        "keydown",
-        handleEscape
-      );
+      window.removeEventListener("keydown", handleEscape);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (zoomedImgUrl) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
     };
   }, [zoomedImgUrl]);
 
@@ -57,24 +55,17 @@ const EventDetail = () => {
     );
   }
 
-  const openPhotosPopup = () => {
-    setZoomedImgUrl(null);
-    setIsLightboxOpen(true);
-  };
-
-  const handleCloseLightbox = () => {
-    if (zoomedImgUrl) {
-      setZoomedImgUrl(null);
-      return;
-    }
-
-    setIsLightboxOpen(false);
-  };
+  const eventImages = eventItem.images || [];
+  const firstRowImages = eventImages.slice(0, 5);
+  const remainingImages = eventImages.slice(5);
 
   return (
     <div className="cr-wrapper-main event-detail-page">
       <PageBanner
-        image={eventItem.cardImage || eventItem.images[0]}
+        image={
+          eventItem.cardImage ||
+          eventImages[0]
+        }
         title={eventItem.title}
         description=""
         alt={eventItem.title}
@@ -94,9 +85,10 @@ const EventDetail = () => {
           <div className="ev-card-split-row-top">
             <div className="ev-card-text-panel-left">
               <div className="ev-category-tag-pill">
-                {eventItem.categoryLabel}
-              </div>
-
+  {eventItem.category === "participation"
+    ? "EXHIBITION"
+    : eventItem.categoryLabel}
+</div>
               <h2 className="ev-event-card-title">
                 {eventItem.title}
               </h2>
@@ -104,8 +96,6 @@ const EventDetail = () => {
               <p className="ev-event-card-description">
                 {eventItem.description}
               </p>
-
-              
             </div>
 
             <div className="ev-card-video-panel-right">
@@ -121,56 +111,97 @@ const EventDetail = () => {
             </div>
           </div>
 
-          <div className="ev-card-gallery-row-bottom">
-            <div className="ev-five-image-masonry-grid">
-              {eventItem.images
-                .slice(0, 5)
-                .map((image, imageIndex) => (
-                  <button
-                    type="button"
-                    className={`ev-grid-photo-frame ${
-                      imageIndex === 0
-                        ? "ev-frame-large-1"
-                        : imageIndex === 1
-                        ? "ev-frame-large-2"
-                        : imageIndex === 2
-                        ? "ev-frame-small-1"
-                        : imageIndex === 3
-                        ? "ev-frame-small-2"
-                        : "ev-frame-small-3"
-                    }`}
-                    key={image}
-                    onClick={openPhotosPopup}
-                  >
-                    <img
-                      src={image}
-                      alt={`${eventItem.title} ${imageIndex + 1}`}
-                      loading="lazy"
-                    />
+          {eventImages.length > 0 && (
+            <div className="ev-card-gallery-row-bottom">
+              {/* First five images: original layout */}
+              <div className="ev-five-image-masonry-grid">
+                {firstRowImages.map(
+                  (image, imageIndex) => (
+                    <button
+                      type="button"
+                      className={`ev-grid-photo-frame ${
+                        imageIndex === 0
+                          ? "ev-frame-large-1"
+                          : imageIndex === 1
+                          ? "ev-frame-large-2"
+                          : imageIndex === 2
+                          ? "ev-frame-small-1"
+                          : imageIndex === 3
+                          ? "ev-frame-small-2"
+                          : "ev-frame-small-3"
+                      }`}
+                      key={`${image}-${imageIndex}`}
+                      onClick={() =>
+                        setZoomedImgUrl(image)
+                      }
+                      aria-label={`View ${
+                        eventItem.title
+                      } image ${imageIndex + 1}`}
+                    >
+                      <img
+                        src={image}
+                        alt={`${eventItem.title} ${
+                          imageIndex + 1
+                        }`}
+                        loading="lazy"
+                      />
+                    </button>
+                  )
+                )}
+              </div>
 
-                    {imageIndex === 4 && (
-                      <div className="ev-view-more-overlay">
-                        <span>
-                          View
-                          <br />
-                          More
-                        </span>
-                      </div>
-                    )}
-                  </button>
-                ))}
+              {/* Remaining images: four per row */}
+              {remainingImages.length > 0 && (
+                <div className="ev-continuing-four-image-grid">
+                  {remainingImages.map(
+                    (image, imageIndex) => {
+                      const actualIndex =
+                        imageIndex + 5;
+
+                      return (
+                        <button
+                          type="button"
+                          className="ev-continuing-photo-card"
+                          key={`${image}-${actualIndex}`}
+                          onClick={() =>
+                            setZoomedImgUrl(image)
+                          }
+                          aria-label={`View ${
+                            eventItem.title
+                          } image ${
+                            actualIndex + 1
+                          }`}
+                        >
+                          <img
+                            src={image}
+                            alt={`${
+                              eventItem.title
+                            } ${actualIndex + 1}`}
+                            loading="lazy"
+                          />
+                        </button>
+                      );
+                    }
+                  )}
+                </div>
+              )}
             </div>
-          </div>
+          )}
         </div>
       </section>
 
-      {isLightboxOpen && (
+      {zoomedImgUrl && (
         <div
           className="ev-lightbox-overlay"
-          onClick={handleCloseLightbox}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${eventItem.title} image viewer`}
+          onClick={() =>
+            setZoomedImgUrl(null)
+          }
         >
           <div
-            className="ev-lightbox-window-box"
+            className="ev-lightbox-window-box ev-single-image-lightbox"
             onClick={(event) =>
               event.stopPropagation()
             }
@@ -178,72 +209,35 @@ const EventDetail = () => {
             <button
               type="button"
               className="ev-lightbox-close-trigger"
-              onClick={handleCloseLightbox}
+              onClick={() =>
+                setZoomedImgUrl(null)
+              }
+              aria-label="Close image"
             >
-              {zoomedImgUrl
-                ? "← Back to Grid"
-                : "✕ Close"}
+              ✕ Close
             </button>
 
             <div className="ev-lightbox-body-layout">
               <h3 className="ev-lightbox-title">
                 {eventItem.title}
 
-                {zoomedImgUrl && (
-                  <span className="ev-title-accent-hint">
-                    {" "}
-                    / High-Res View
-                  </span>
-                )}
+                <span className="ev-title-accent-hint">
+                  {" "}
+                  / High-Res View
+                </span>
               </h3>
 
-              {!zoomedImgUrl ? (
-                <div className="ev-popup-gallery-grid-layout">
-                  {eventItem.images.map(
-                    (imgUrl, index) => (
-                      <button
-                        type="button"
-                        key={imgUrl}
-                        className="ev-popup-grid-item-card"
-                        onClick={() =>
-                          setZoomedImgUrl(imgUrl)
-                        }
-                      >
-                        <img
-                          src={imgUrl}
-                          alt={`${eventItem.title} ${
-                            index + 1
-                          }`}
-                        />
+              <div className="ev-lightbox-viewer-viewport">
+                <img
+                  src={zoomedImgUrl}
+                  alt={eventItem.title}
+                  className="ev-lightbox-main-canvas ev-canvas-zoomed-state"
+                />
 
-                        <div className="ev-grid-item-hover-layer">
-                          <span className="ev-zoom-icon-symbol">
-                            🔍 Click to Zoom
-                          </span>
-                        </div>
-                      </button>
-                    )
-                  )}
-                </div>
-              ) : (
-                <div
-                  className="ev-lightbox-viewer-viewport"
-                  onClick={() =>
-                    setZoomedImgUrl(null)
-                  }
-                >
-                  <img
-                    src={zoomedImgUrl}
-                    alt={eventItem.title}
-                    className="ev-lightbox-main-canvas ev-canvas-zoomed-state"
-                  />
-
-                  <p className="ev-zoom-escape-hint">
-                    Click inside the image frame to
-                    return to gallery
-                  </p>
-                </div>
-              )}
+                <p className="ev-zoom-escape-hint">
+                  Click outside or press Escape to close
+                </p>
+              </div>
             </div>
           </div>
         </div>

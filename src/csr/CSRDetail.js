@@ -11,9 +11,6 @@ const CSRDetail = () => {
     (item) => item.slug === slug
   );
 
-  const [isLightboxOpen, setIsLightboxOpen] =
-    useState(false);
-
   const [zoomedImgUrl, setZoomedImgUrl] =
     useState(null);
 
@@ -21,7 +18,6 @@ const CSRDetail = () => {
     useState(false);
 
   useEffect(() => {
-    setIsLightboxOpen(false);
     setZoomedImgUrl(null);
     setShowDescription(false);
   }, [slug]);
@@ -29,12 +25,8 @@ const CSRDetail = () => {
   useEffect(() => {
     const handleEscape = (event) => {
       if (event.key === "Escape") {
-        if (zoomedImgUrl) {
-          setZoomedImgUrl(null);
-        } else {
-          setIsLightboxOpen(false);
-          setShowDescription(false);
-        }
+        setZoomedImgUrl(null);
+        setShowDescription(false);
       }
     };
 
@@ -46,31 +38,37 @@ const CSRDetail = () => {
         handleEscape
       );
     };
-  }, [zoomedImgUrl]);
+  }, []);
+
+  useEffect(() => {
+    if (zoomedImgUrl || showDescription) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [zoomedImgUrl, showDescription]);
 
   if (!initiative) {
     return (
       <div className="csr-not-found">
         <h2>Initiative not found</h2>
 
-        <Link to="/csr">Back to CSR</Link>
+        <Link to="/csr">
+          Back to CSR
+        </Link>
       </div>
     );
   }
 
-  const openPhotosPopup = () => {
-    setZoomedImgUrl(null);
-    setIsLightboxOpen(true);
-  };
-
-  const handleCloseLightbox = () => {
-    if (zoomedImgUrl) {
-      setZoomedImgUrl(null);
-      return;
-    }
-
-    setIsLightboxOpen(false);
-  };
+  const initiativePhotos = initiative.photos || [];
+  const firstGalleryPhotos =
+    initiativePhotos.slice(0, 5);
+  const remainingGalleryPhotos =
+    initiativePhotos.slice(5);
 
   return (
     <div className="csr-wrapper-main csr-detail-page">
@@ -118,8 +116,6 @@ const CSRDetail = () => {
                     Read More
                   </button>
                 )}
-
-                
               </div>
             </div>
 
@@ -127,6 +123,7 @@ const CSRDetail = () => {
               <div className="csr-video-wrapper">
                 <video
                   controls
+                  preload="metadata"
                   className="csr-video-player"
                   poster={initiative.poster}
                 >
@@ -142,50 +139,92 @@ const CSRDetail = () => {
             </div>
           </div>
 
-          <div className="csr-card-gallery-row-bottom">
-            <div className="csr-five-image-masonry-grid">
-              {initiative.photos
-                .slice(0, 5)
-                .map((img, imgIndex) => (
-                  <button
-                    type="button"
-                    className={`csr-grid-photo-frame csr-frame-${
-                      imgIndex + 1
-                    }`}
-                    key={img}
-                    onClick={openPhotosPopup}
-                  >
-                    <img
-                      src={img}
-                      alt={`${initiative.title} ${
+          {initiativePhotos.length > 0 && (
+            <div className="csr-card-gallery-row-bottom">
+              {/* Original first-five-photo layout */}
+              <div className="csr-five-image-masonry-grid">
+                {firstGalleryPhotos.map(
+                  (img, imgIndex) => (
+                    <button
+                      type="button"
+                      className={`csr-grid-photo-frame csr-frame-${
                         imgIndex + 1
                       }`}
-                      loading="lazy"
-                    />
+                      key={`${img}-${imgIndex}`}
+                      onClick={() =>
+                        setZoomedImgUrl(img)
+                      }
+                      aria-label={`Open ${
+                        initiative.title
+                      } photo ${imgIndex + 1}`}
+                    >
+                      <img
+                        src={img}
+                        alt={`${initiative.title} ${
+                          imgIndex + 1
+                        }`}
+                        loading="lazy"
+                      />
+                    </button>
+                  )
+                )}
+              </div>
 
-                    {imgIndex === 4 && (
-                      <div className="csr-view-more-overlay">
-                        <span>
-                          View
-                          <br />
-                          More
-                        </span>
-                      </div>
-                    )}
-                  </button>
-                ))}
+              {/* All remaining photos */}
+              {remainingGalleryPhotos.length > 0 && (
+                <div className="csr-continuing-four-image-grid">
+                  {remainingGalleryPhotos.map(
+                    (img, imgIndex) => {
+                      const actualPhotoIndex =
+                        imgIndex + 5;
+
+                      return (
+                        <button
+                          type="button"
+                          className="csr-continuing-photo-card"
+                          key={`${img}-${actualPhotoIndex}`}
+                          onClick={() =>
+                            setZoomedImgUrl(img)
+                          }
+                          aria-label={`Open ${
+                            initiative.title
+                          } photo ${
+                            actualPhotoIndex + 1
+                          }`}
+                        >
+                          <img
+                            src={img}
+                            alt={`${
+                              initiative.title
+                            } ${
+                              actualPhotoIndex + 1
+                            }`}
+                            loading="lazy"
+                          />
+                        </button>
+                      );
+                    }
+                  )}
+                </div>
+              )}
             </div>
-          </div>
+          )}
         </div>
       </section>
 
-      {isLightboxOpen && (
+      {/* High-resolution photo viewer */}
+      {zoomedImgUrl && (
         <div
           className="csr-lightbox-overlay"
-          onClick={handleCloseLightbox}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${initiative.title} image viewer`}
+          onClick={() =>
+            setZoomedImgUrl(null)
+          }
         >
           <div
-            className="csr-lightbox-window-box"
+            className="csr-lightbox-window-box csr-single-image-lightbox"
             onClick={(event) =>
               event.stopPropagation()
             }
@@ -193,80 +232,47 @@ const CSRDetail = () => {
             <button
               type="button"
               className="csr-lightbox-close-trigger"
-              onClick={handleCloseLightbox}
+              onClick={() =>
+                setZoomedImgUrl(null)
+              }
+              aria-label="Close image"
             >
-              {zoomedImgUrl
-                ? "← Back to Grid"
-                : "✕ Close"}
+              ✕ Close
             </button>
 
             <div className="csr-lightbox-body-layout">
               <h3 className="csr-lightbox-title">
                 {initiative.title}
 
-                {zoomedImgUrl && (
-                  <span className="csr-title-accent-hint">
-                    {" "}
-                    / High-Res View
-                  </span>
-                )}
+                <span className="csr-title-accent-hint">
+                  {" "}
+                  / High-Res View
+                </span>
               </h3>
 
-              {!zoomedImgUrl ? (
-                <div className="csr-popup-gallery-grid-layout">
-                  {initiative.photos.map(
-                    (imgUrl, index) => (
-                      <button
-                        type="button"
-                        key={imgUrl}
-                        className="csr-popup-grid-item-card"
-                        onClick={() =>
-                          setZoomedImgUrl(imgUrl)
-                        }
-                      >
-                        <img
-                          src={imgUrl}
-                          alt={`${initiative.title} ${
-                            index + 1
-                          }`}
-                        />
+              <div className="csr-lightbox-viewer-viewport">
+                <img
+                  src={zoomedImgUrl}
+                  alt={initiative.title}
+                  className="csr-lightbox-main-canvas"
+                />
 
-                        <div className="csr-grid-item-hover-layer">
-                          <span className="csr-zoom-icon-symbol">
-                            🔍 Click to Zoom
-                          </span>
-                        </div>
-                      </button>
-                    )
-                  )}
-                </div>
-              ) : (
-                <div
-                  className="csr-lightbox-viewer-viewport"
-                  onClick={() =>
-                    setZoomedImgUrl(null)
-                  }
-                >
-                  <img
-                    src={zoomedImgUrl}
-                    alt={initiative.title}
-                    className="csr-lightbox-main-canvas"
-                  />
-
-                  <p className="csr-zoom-escape-hint">
-                    Click inside the image frame to
-                    return to the gallery
-                  </p>
-                </div>
-              )}
+                <p className="csr-zoom-escape-hint">
+                  Click outside or press Escape to close
+                </p>
+              </div>
             </div>
           </div>
         </div>
       )}
 
+      {/* Full description popup */}
       {showDescription && (
         <div
           className="csr-description-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${initiative.title} description`}
           onClick={() =>
             setShowDescription(false)
           }

@@ -1575,4 +1575,125 @@
     height: 41px;
     padding: 0 15px;
   }
+
+  
+}
+
+/* =====================================================
+   EVENT DETAIL — CONTINUING FOUR-IMAGE GALLERY
+===================================================== */
+
+.ev-continuing-four-image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.ev-continuing-photo-card {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 10px;
+  background: #edf3f5;
+  cursor: pointer;
+  appearance: none;
+}
+
+.ev-continuing-photo-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.ev-continuing-photo-card::after {
+  content: "View Image";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  background: rgba(0, 90, 110, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ev-continuing-photo-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+
+.ev-continuing-photo-card:hover::after {
+  opacity: 1;
+}
+
+.ev-continuing-photo-card:focus-visible {
+  outline: 3px solid #159c9c;
+  outline-offset: 3px;
+}
+
+.ev-grid-photo-frame:focus-visible {
+  outline: 3px solid #159c9c;
+  outline-offset: 3px;
+}
+
+/* Single image popup */
+
+.ev-single-image-lightbox {
+  max-width: 1100px;
+}
+
+.ev-lightbox-viewer-viewport {
+  text-align: center;
+}
+
+.ev-lightbox-main-canvas {
+  display: block;
+  max-width: 100%;
+  max-height: 72vh;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .ev-continuing-four-image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ev-continuing-photo-card {
+    height: 190px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+  .ev-continuing-four-image-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .ev-continuing-photo-card {
+    height: 125px;
+    border-radius: 7px;
+  }
+
+  .ev-continuing-photo-card::after {
+    display: none;
+  }
 }
