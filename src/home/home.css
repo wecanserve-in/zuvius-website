@@ -3672,3 +3672,184 @@
   object-fit: contain !important;
   transform: none !important;
 }
+
+.text-red{
+  color: #d32f2f;
+}
+/* ==================================================
+   RECENT LAUNCHES — CONTINUOUS INFINITE SCROLL
+   Final override for the marquee version in Home.jsx
+================================================== */
+
+.products-section {
+  overflow: hidden !important;
+}
+
+.recent-marquee {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 14px 0 24px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.recent-marquee-track {
+  width: max-content;
+  display: flex;
+  align-items: stretch;
+  animation: recent-products-continuous-scroll 52s linear infinite;
+  will-change: transform;
+}
+
+.recent-marquee:hover .recent-marquee-track,
+.recent-marquee:focus-within .recent-marquee-track {
+  animation-play-state: paused;
+}
+
+.recent-marquee-group {
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 0;
+  gap: 24px;
+  padding-right: 24px;
+}
+
+.recent-marquee-group .home-recent-product-card {
+  width: clamp(290px, 27vw, 365px) !important;
+  min-width: clamp(290px, 27vw, 365px) !important;
+  max-width: 365px !important;
+  flex: 0 0 clamp(290px, 27vw, 365px) !important;
+  min-height: 410px;
+}
+
+@keyframes recent-products-continuous-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.recent-marquee::before,
+.recent-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 58px;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.recent-marquee::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #219b90 0%,
+    rgba(33, 155, 144, 0) 100%
+  );
+}
+
+.recent-marquee::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    #219b90 0%,
+    rgba(33, 155, 144, 0) 100%
+  );
+}
+
+@media (max-width: 1024px) {
+  .recent-marquee-track {
+    animation-duration: 46s;
+  }
+
+  .recent-marquee-group {
+    gap: 20px;
+    padding-right: 20px;
+  }
+
+  .recent-marquee-group .home-recent-product-card {
+    width: 310px !important;
+    min-width: 310px !important;
+    flex-basis: 310px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .products-section .section-heading,
+  .products-section .view-more-container {
+    padding-left: 18px;
+    padding-right: 18px;
+    box-sizing: border-box;
+  }
+
+  .recent-marquee {
+    max-width: 100%;
+    padding: 10px 0 20px;
+  }
+
+  .recent-marquee-track {
+    animation-duration: 40s;
+  }
+
+  .recent-marquee-group {
+    gap: 16px;
+    padding-right: 16px;
+  }
+
+  .recent-marquee-group .home-recent-product-card {
+    width: min(78vw, 285px) !important;
+    min-width: min(78vw, 285px) !important;
+    flex-basis: min(78vw, 285px) !important;
+    min-height: 365px;
+  }
+
+  .recent-marquee::before,
+  .recent-marquee::after {
+    width: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .recent-marquee {
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .recent-marquee-track {
+    animation: none;
+  }
+
+  .recent-marquee-group[aria-hidden="true"] {
+    display: none;
+  }
+}
+
+/* Center the last accreditation logo on mobile */
+@media (max-width: 600px) {
+  .accreditation-section
+    .accreditation-grid
+    .acc-item:last-child {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    width: 160px !important;
+    max-width: 160px !important;
+  }
+
+  .accreditation-section
+    .accreditation-grid
+    .acc-item:last-child img {
+    display: block;
+    margin: 0 auto;
+  }
+}

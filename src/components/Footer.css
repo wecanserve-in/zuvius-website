@@ -612,3 +612,126 @@
     height: 88px;
   }
 }
+
+/* ==================================================
+   LARGE SCREEN FOOTER CURVE ALIGNMENT FIX
+================================================== */
+
+@media (min-width: 1025px) {
+  .footer::before {
+    /*
+      Keeps the white curve aligned with the centered
+      1250px footer container on wider screens.
+    */
+    width: max(330px, calc(50vw - 295px));
+  }
+}
+
+/* ==================================================
+   MOBILE — FIX ONLY LOGO AND MADE IN INDIA BADGE
+================================================== */
+
+@media (max-width: 768px) {
+  /* Wider white header area */
+  .footer::before {
+    top: 0 !important;
+    left: 50% !important;
+
+    width: calc(100% - 28px) !important;
+    height: 110px !important;
+
+    transform: translateX(-50%) !important;
+
+    border-bottom-left-radius: 40px !important;
+    border-bottom-right-radius: 40px !important;
+  }
+
+  /* Keep original one-column footer */
+  .footer-content {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+  }
+
+  .address-col {
+    position: relative;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Logo on left side of white area */
+  .footer-logo {
+    position: absolute;
+    top: -18px;
+    left: 8px;
+
+    width: 160px !important;
+    min-height: 70px !important;
+    margin: 0 !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+  }
+
+  .footer-logo img {
+    width: 145px !important;
+    max-width: 100%;
+    margin: 0 !important;
+  }
+
+  /* Badge on right side */
+  .made-in-india-badge {
+    top: 20px !important;
+    right: 24px !important;
+
+    width: 68px !important;
+    height: 68px !important;
+
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .made-in-india-badge img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain !important;
+    transform: scale(1.15) !important;
+  }
+
+  /* Space below logo/header before address */
+  .footer-address {
+    margin-top: 82px !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer::before {
+    width: calc(100% - 20px) !important;
+    height: 105px !important;
+  }
+
+  .footer-logo {
+    top: -15px;
+    left: 2px;
+
+    width: 145px !important;
+  }
+
+  .footer-logo img {
+    width: 130px !important;
+  }
+
+  .made-in-india-badge {
+    top: 20px !important;
+    right: 17px !important;
+
+    width: 62px !important;
+    height: 62px !important;
+  }
+
+  .footer-address {
+    margin-top: 78px !important;
+  }
+}

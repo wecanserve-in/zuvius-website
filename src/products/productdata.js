@@ -9549,6 +9549,7 @@ Since turmeric can potentially increase bleeding, stop taking it at least two we
   name: "Zuvipro 40% (Vanilla)",
   subtitle: "Protein Supplement",
   type: "Powder",
+  imageClass:"zuvipro-40-img",
 
   image: "/nutra/Zuvipro40vanilla-1.png",
 
@@ -9656,6 +9657,7 @@ If you are allergic to cow’s milk, avoid using whey protein.
   name: "Zuvipro 60% (Vanilla )",
   subtitle: "Protein Supplement",
   type: "Powder",
+  imageClass:"zuvipro-60-img",
 
   image: "/nutra/ZUVIPRODvanilla60-1kg-1.png",
 
@@ -9768,6 +9770,7 @@ If you are allergic to cow’s milk, avoid using whey protein.
   strength: "200 gm",
   packSize: "1 Pack",
   drugClass: "Dietary Supplements",
+  imageClass:"zuvipro-d-img",
 
   dosage: `
 Take 1 or 2 levelled scoops (1 scoop twice a day or 2 scoops once a day) of Zuvipro D in a cup.
@@ -13879,8 +13882,8 @@ Monitor blood counts, hypersensitivity reactions, fluid retention, skin reaction
   id: 94,
   category: "oncoace",
   categoryName: "OncoAce",
-  slug: "zuvistatin-30-lar",
-  name: "Zuvistatin-30 LAR",
+  slug: "zuvistatin",
+  name: "Zuvistatin",
   subtitle: "Octreotide Acetate",
   type: "Injection",
   imageClass: "zuvistatin-img",

@@ -1,12 +1,10 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaMapMarkedAlt,
   FaHospital,
   FaHandshake,
   FaGlobeAsia,
   FaGlobe,
-  FaChevronLeft,
-  FaChevronRight,
 } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import "./home.css";
@@ -41,7 +39,7 @@ const recentLaunchProducts = [
     genericName: "Hydroxyurea Capsule",
     image: "/new_product_page/Zydrox-500.png",
     imageClass: "recent-image-zydrox-cap",
-    route: "/products/zydrox-cap",
+    route: "/products/oncoace/zydrox-cap",
   },
   {
     id: 2,
@@ -49,7 +47,7 @@ const recentLaunchProducts = [
     genericName: "Paclitaxel Inj",
     image: "/new_product_page/Zaxotien-100.png",
     imageClass: "recent-image-zaxotein",
-    route: "/products/zaxotein",
+    route: "/products/oncoace/zaxotein",
   },
   {
     id: 3,
@@ -57,15 +55,15 @@ const recentLaunchProducts = [
     genericName: "Leuprolide Acetate Inj",
     image: "/new_product_page/zoplide-goup.png",
     imageClass: "recent-image-zoplide",
-    route: "/products/zoplide",
+    route: "/products/oncoace/zoplide",
   },
   {
     id: 4,
     name: "Acalataz",
-    genericName: "Add generic name",
+    genericName: "Acalabrutinib Capsules",
     image: "/new_product_page/Acalataz-100.png",
     imageClass: "recent-image-acalataz",
-    route: "/products/acalataz",
+    route: "/products/oncoace/acalataz",
   },
   {
     id: 5,
@@ -73,87 +71,55 @@ const recentLaunchProducts = [
     genericName: "Eltrombopag Olamine Tablet",
     image: "/new_product_page/zomacta-group.png",
     imageClass: "recent-image-zomacta",
-    route: "/products/zomacta",
+    route: "/products/oncoace/zomacta",
   },
   {
     id: 6,
     name: "Zoserlin",
-    genericName: "Add generic name",
-    image: "/products/zoserlin.png",
+    genericName: "Goserelin Acetate Implant Injection",
+    image: "/new_product_page/Zoserlin-3.6.png",
     imageClass: "recent-image-zoserlin",
-    route: "/products/zoserlin",
+    route: "/products/oncoace/zoserlin",
   },
   {
     id: 7,
     name: "Zuvistatin",
-    genericName: "Add generic name",
+    genericName: "Octreotide Acetate",
     image: "/new_product_page/zuvistatin-group.png",
     imageClass: "recent-image-zuvistatin",
-    route: "/products/zuvistatin",
+    route: "/products/oncoace/zuvistatin",
   },
   {
     id: 8,
     name: "Acantha",
-    genericName: "Add generic name",
+    genericName: "Olaparib Tablets",
     image: "/new_product_page/acantha-group.png",
     imageClass: "recent-image-acantha",
-    route: "/products/acantha",
+    route: "/products/oncoace/acantha",
   },
   {
     id: 9,
     name: "Zuvisome",
-    genericName: "Add generic name",
+    genericName: "Liposomal Amphotericin B Injection",
     image: "/new_product_page/Zuvisome-50.png",
     imageClass: "recent-image-zuvisome",
-    route: "/products/zuvisome",
+    route: "/products/oncoace/zuvisome",
   },
 ];
 
-const createProductSlides = (items, itemsPerSlide) => {
-  const slides = [];
-
-  for (let index = 0; index < items.length; index += itemsPerSlide) {
-    slides.push(items.slice(index, index + itemsPerSlide));
-  }
-
-  return slides;
-};
 
 const Home = () => {
   const navigate = useNavigate();
 
   const [count, setCount] = useState(0);
-  const [isMobile, setIsMobile] = useState(
-    typeof window !== "undefined" ? window.innerWidth <= 767 : false
-  );
 
   const [heroSlideIndex, setHeroSlideIndex] = useState(0);
-  const [recentSlideIndex, setRecentSlideIndex] = useState(0);
 
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [typedText, setTypedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
 
-  const recentSlides = useMemo(() => {
-    return createProductSlides(
-      recentLaunchProducts,
-      isMobile ? 1 : 3
-    );
-  }, [isMobile]);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 767);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () =>
-      window.removeEventListener("resize", handleResize);
-  }, []);
-
-  useEffect(() => {
-    setRecentSlideIndex(0);
-  }, [isMobile]);
 
   useEffect(() => {
     const heroInterval = setInterval(() => {
@@ -166,18 +132,6 @@ const Home = () => {
     return () => clearInterval(heroInterval);
   }, []);
 
-  useEffect(() => {
-    if (recentSlides.length <= 1) return;
-
-    const recentInterval = setInterval(() => {
-      setRecentSlideIndex(
-        (previousIndex) =>
-          (previousIndex + 1) % recentSlides.length
-      );
-    }, 4000);
-
-    return () => clearInterval(recentInterval);
-  }, [recentSlides.length]);
 
   useEffect(() => {
     const finalCount = 250;
@@ -247,33 +201,22 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, [typedText, isDeleting, phraseIndex]);
 
-  const goToPreviousRecentSlide = () => {
-    setRecentSlideIndex((previousIndex) =>
-      previousIndex === 0
-        ? recentSlides.length - 1
-        : previousIndex - 1
-    );
-  };
 
-  const goToNextRecentSlide = () => {
-    setRecentSlideIndex(
-      (previousIndex) =>
-        (previousIndex + 1) % recentSlides.length
-    );
-  };
-
-  const renderRecentProductCard = (product, uniqueKey) => {
+  const renderRecentProductCard = (product, uniqueKey, isDuplicate = false) => {
     return (
       <Link
         to={product.route}
         className="home-recent-product-card"
         key={uniqueKey}
+        tabIndex={isDuplicate ? -1 : undefined}
+        aria-hidden={isDuplicate ? true : undefined}
       >
         <div className="home-recent-product-image">
           <img
             src={product.image}
             alt={product.name}
             className={`home-recent-image ${product.imageClass}`}
+            loading="lazy"
           />
         </div>
 
@@ -431,7 +374,7 @@ const Home = () => {
             </div>
 
             <div className="leader-product-type-card leader-product-type-card-full">
-              <img src="/injectable-1.png" alt="PFS" />
+              <img src="/injectable-3.png" alt="PFS" />
               <h4>PFS (Pre-filled Syringes)</h4>
             </div>
           </div>
@@ -447,51 +390,28 @@ const Home = () => {
           </h2>
         </div>
 
-        <div className="recent-launches-slider">
-          <button
-            type="button"
-            className="carousel-btn left"
-            onClick={goToPreviousRecentSlide}
-            aria-label="Previous products"
-          >
-            <FaChevronLeft />
-          </button>
-
-          <div className="recent-launches-slide">
-            <div className="recent-launches-grid">
-              {recentSlides[recentSlideIndex]?.map((product) =>
-                renderRecentProductCard(
-                  product,
-                  `${recentSlideIndex}-${product.id}`
-                )
-              )}
-            </div>
+        <div
+          className="recent-marquee"
+          role="region"
+          aria-label="Recent product launches"
+        >
+          <div className="recent-marquee-track">
+            {[0, 1].map((copyIndex) => (
+              <div
+                className="recent-marquee-group"
+                key={`recent-marquee-group-${copyIndex}`}
+                aria-hidden={copyIndex === 1 ? true : undefined}
+              >
+                {recentLaunchProducts.map((product) =>
+                  renderRecentProductCard(
+                    product,
+                    `recent-${copyIndex}-${product.id}`,
+                    copyIndex === 1
+                  )
+                )}
+              </div>
+            ))}
           </div>
-
-          <button
-            type="button"
-            className="carousel-btn right"
-            onClick={goToNextRecentSlide}
-            aria-label="Next products"
-          >
-            <FaChevronRight />
-          </button>
-        </div>
-
-        <div className="recent-launches-dots">
-          {recentSlides.map((_, index) => (
-            <button
-              key={`recent-dot-${index}`}
-              type="button"
-              className={`recent-dot ${
-                recentSlideIndex === index ? "active" : ""
-              }`}
-              onClick={() => setRecentSlideIndex(index)}
-              aria-label={`Go to recent launches slide ${
-                index + 1
-              }`}
-            />
-          ))}
         </div>
 
         <div className="view-more-container">
@@ -707,8 +627,7 @@ const Home = () => {
                 <FaGlobeAsia />
               </div>
 
-              <strong>51+</strong>
-              <span>Countries</span>
+              <strong>51+ Countries</strong>
               <small>and growing</small>
             </div>
 
@@ -717,8 +636,7 @@ const Home = () => {
                 <FaGlobe />
               </div>
 
-              <strong>6</strong>
-              <span>Continents</span>
+              <strong>6 Continents</strong>
               <small>Global presence</small>
             </div>
 
@@ -727,8 +645,7 @@ const Home = () => {
                 <FaHandshake />
               </div>
 
-              <strong>50+</strong>
-              <span>Global Partners</span>
+              <strong>50+ Global Partners</strong>
               <small>Building strong alliances</small>
             </div>
           </div>

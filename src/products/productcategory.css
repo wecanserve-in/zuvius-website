@@ -927,3 +927,28 @@
 .product-category-page .category-product-image img.z-fos-img {
   transform: scale(1.5) !important;
 }
+
+.product-category-page .category-product-image img.sst-img {
+  transform: scale(2) !important;
+  margin-top: 30px;
+}
+
+.product-category-page .category-product-image img.zurcumin-img {
+  transform: scale(2.3) !important;
+  margin-top: 20px;
+}
+
+.product-category-page .category-product-image img.zuvipro-40-img {
+  transform: scale(2.3) !important;
+  
+}
+
+.product-category-page .category-product-image img.zuvipro-60-img {
+  transform: scale(2.3) !important;
+  
+}
+
+.product-category-page .category-product-image img.zuvipro-d-img {
+  transform: scale(2.3) !important;
+  margin-top: 10px;
+}
