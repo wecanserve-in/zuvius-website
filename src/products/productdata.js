@@ -363,7 +363,7 @@ Special Precautions:
   type: "Injection",
   imageClass:"auset-img",
 
-  image: "/new_product_page/auset-100.png",
+  image: "/new_product_page/Auset-100.png",
 
   images: [
 
@@ -14799,10 +14799,10 @@ Store below 25°C.
   type: "Tablet",
   imageClass: "acantha-img",
 
-  image: "/new_product_page/Acantha-group.png",
+  image: "/new_product_page/acantha-group.png",
 
   images: [
-    "/new_product_page/Acantha-group.png",
+    "/new_product_page/acantha-group.png",
     "/new_product_page/Acantha-100.png",
     "/new_product_page/Acantha-150.png",
   ],
@@ -15519,10 +15519,10 @@ Store below 25°C.
   type: "Tablet",
   imageClass: "melphalaz-img",
 
-  image: "/new_product_page/Melphalaz-group.png",
+  image: "/new_product_page/melphalaz-group.png",
 
   images: [
-    "/new_product_page/Melphalaz-group.png",
+    "/new_product_page/melphalaz-group.png",
     "/new_product_page/Melphalaz-2.png",
     "/new_product_page/Melphalaz-5.png",
   ],
@@ -15882,13 +15882,13 @@ Store according to the conditions printed on the product label.
   type: "Injection",
   imageClass: "zetabin-rtu-img",
 
-  image: "/new_product_page/Zetabin-RTU-group.png",
+  image: "/new_product_page/zetabin-RTU-group.png",
 
   images: [
-    "/new_product_page/Zetabin-RTU-group.png",
+    "/new_product_page/zetabin-RTU-group.png",
     "/new_product_page/Zetabin-RTU-200.png",
-    "/new_product_page/Zetabin-RTU-1gm.png",
-    "/new_product_page/Zetabin-RTU-1.4gm.png",
+    "/new_product_page/Zetabin-RTU-1.png",
+    "/new_product_page/Zetabin-RTU-1.4.png",
   ],
 
   strength: "200 mg / 1 gm / 1.4 gm",
@@ -16073,10 +16073,10 @@ Store according to the storage conditions printed on the product label.
   type: "Tablet",
   imageClass: "zuvidexa-img",
 
-  image: "/new_product_page/Zuvidexa-group.png",
+  image: "/new_product_page/zuvidexa-group.png",
 
   images: [
-    "/new_product_page/Zuvidexa-group.png",
+    "/new_product_page/zuvidexa-group.png",
     "/new_product_page/Zuvidexa-4.png",
     "/new_product_page/Zuvidexa-8.png",
   ],
@@ -16321,10 +16321,10 @@ Store at 25°C to 30°C.
   type: "Capsule",
   imageClass: "zuvimide-img",
 
-  image: "/new_product_page/Zuvimide-group.png",
+  image: "/new_product_page/zuvimide-group.png",
 
   images: [
-    "/new_product_page/Zuvimide-group.png",
+    "/new_product_page/zuvimide-group.png",
     "/new_product_page/Zuvimide-50.png",
     "/new_product_page/Zuvimide-100.png",
   ],
@@ -16347,10 +16347,10 @@ Store at 25°C to 30°C.
   type: "Lyophilized Injection",
   imageClass: "zortemib-img",
 
-  image: "/new_product_page/Zortemib-group.png",
+  image: "/new_product_page/zortemib-group.png",
 
   images: [
-    "/new_product_page/Zortemib-group.png",
+    "/new_product_page/zortemib-group.png",
     "/new_product_page/Zortemib-2.png",
     "/new_product_page/Zortemib-3.5.png",
   ],
@@ -17045,12 +17045,12 @@ Store at 25°C to 30°C.
   type: "Pegylated Liposomal Injection",
   imageClass: "zuvidox-l-img",
 
-  image: "/new_product_page/Zuvidox-Lipo-group.png",
+  image: "/new_product_page/zuvidox-lipo-group.png",
 
   images: [
-    "/new_product_page/Zuvidox-Lipo-group.png",
-    "/new_product_page/Zuvidox-Lipo-20.png",
-    "/new_product_page/Zuvidox-Lipo-50.png",
+    "/new_product_page/zuvidox-lipo-group.png",
+    "/new_product_page/Zuvidox-lipo-20.png",
+    "/new_product_page/Zuvidox-lipo-50.png",
   ],
 
   strength: "20 mg / 50 mg",

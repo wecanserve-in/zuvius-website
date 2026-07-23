@@ -865,6 +865,10 @@
   transform: scale(1.5) !important;
 }
 
+.product-category-page .category-product-image img.zetabin-rtu-img {
+  transform: scale(1.5) !important;
+}
+
 .product-category-page .category-product-image img.zimitib-img {
   transform: scale(1.4) !important;
 }
