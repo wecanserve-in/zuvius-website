@@ -15882,7 +15882,7 @@ Store according to the conditions printed on the product label.
   type: "Injection",
   imageClass: "zetabin-rtu-img",
 
-  image: "/new_product_page/zetabin-RTU-group.png",
+  image: "/new_product_page/zetabin-rtu-group.png",
 
   images: [
     "/new_product_page/zetabin-RTU-group.png",
