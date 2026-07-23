@@ -9770,7 +9770,7 @@ If you are allergic to cow’s milk, avoid using whey protein.
   strength: "200 gm",
   packSize: "1 Pack",
   drugClass: "Dietary Supplements",
-  imageClass:"zuvipro-d-img",
+  
 
   dosage: `
 Take 1 or 2 levelled scoops (1 scoop twice a day or 2 scoops once a day) of Zuvipro D in a cup.
