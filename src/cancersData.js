@@ -1774,17 +1774,17 @@ symptoms: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy is sometimes used with chemotherapy, mostly for adults.",
-        img: "/treatment/burkitt-radiation.png"
+        img: "/treatment/gist-radiation.png"
       },
       {
         title: "Stem Cell Transplant",
         text: "A stem cell transplant may help if cancer returns after treatment.",
-        img: "/treatment/burkitt-transplant.png"
+        img: "/treatment/leukemia-stemcell.png"
       },
       {
         title: "Surgery",
         text: "Surgery is used in rare cases, such as when a tumor blocks the intestines.",
-        img: "/treatment/burkitt-surgery.png"
+        img: "/treatment/gist-surgey.png"
       }
     ],
   }
@@ -1953,7 +1953,7 @@ symptoms: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses energy beams to kill cancer cells on the cervix.",
-        img: "/treatment/cervical-radiation.png"
+        img: "/treatment/eye-radiation.png"
       },
       {
         title: "External Beam Radiation",
