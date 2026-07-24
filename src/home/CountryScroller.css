@@ -1,0 +1,70 @@
+.country-scroll {
+  width: 100%;
+  overflow: hidden;
+  padding: 12px 0;
+  margin: 22px 0;
+}
+
+.country-track {
+  display: flex;
+  align-items: center;
+  gap: 22px;              /* More gap */
+  width: max-content;
+  animation: scrollFlags 90s linear infinite;
+}
+
+.country-scroll:hover .country-track {
+  animation-play-state: paused;
+}
+
+.country-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.country-item img {
+  width: 95px;
+  height: 65px;
+
+  object-fit: contain;     /* NO stretching */
+  object-position: center;
+
+  background: transparent; /* Transparent */
+  border: none;
+  box-shadow: none;
+
+  display: block;
+  transition: transform .25s ease;
+}
+
+.country-item img:hover {
+  transform: scale(1.08);
+}
+
+.country-item span {
+  display: none;
+}
+
+@keyframes scrollFlags {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width:768px){
+
+  .country-track{
+    gap:14px;
+  }
+
+  .country-item img{
+    width:72px;
+    height:48px;
+  }
+
+}

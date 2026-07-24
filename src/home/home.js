@@ -9,6 +9,8 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import "./home.css";
 
+import CountryScroller from "./CountryScroller";
+
 const phrases = [
   "Delivers value",
   "Benchmarks happiness",
@@ -621,6 +623,7 @@ const Home = () => {
             </video>
           </div>
 
+<CountryScroller />
           <div className="home-reach-global-stats">
             <div className="home-reach-global-stat-card">
               <div className="home-reach-icon">
@@ -628,7 +631,7 @@ const Home = () => {
               </div>
 
               <strong>51+ Countries</strong>
-              <small>and growing</small>
+              <span>and growing</span>
             </div>
 
             <div className="home-reach-global-stat-card">
@@ -637,7 +640,7 @@ const Home = () => {
               </div>
 
               <strong>6 Continents</strong>
-              <small>Global presence</small>
+              <span>Global presence</span>
             </div>
 
             <div className="home-reach-global-stat-card">
@@ -646,7 +649,7 @@ const Home = () => {
               </div>
 
               <strong>50+ Global Partners</strong>
-              <small>Building strong alliances</small>
+              <span>Building strong alliances</span>
             </div>
           </div>
         </div>
