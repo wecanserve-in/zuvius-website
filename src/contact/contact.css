@@ -4,24 +4,16 @@
 
 .cr-wrapper-main {
   width: 100%;
-  background-color: #ffffff;
-  overflow-x: hidden;
   padding: 0 0 20px;
+  overflow-x: hidden;
+  background-color: #ffffff;
 }
 
-/* Do not affect PageBanner */
 .cr-wrapper-main section:not(.page-banner) {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto 60px;
   padding: 35px 6%;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-
-  background-color: #ffffff;
   box-sizing: border-box;
 }
 
@@ -31,29 +23,26 @@
 
 .cr-desktop-inner {
   width: 100%;
-  max-width: 1440px;
-  height: 100%;
+  max-width: 1050px;
   margin: 0 auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 45px;
-
   box-sizing: border-box;
 }
 
 /* ==========================================================================
-   TYPOGRAPHY
+   COMMON TYPOGRAPHY
    ========================================================================== */
 
-.cr-badge-text {
-  margin: 0 0 8px;
+.cr-badge-text,
+.cr-form-heading-label {
+  width: 100%;
+  margin: 0 0 15px;
 
   color: #008a9a;
   font-size: 14px;
   font-weight: 900;
+  line-height: 1.2;
   letter-spacing: 0.35em;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -62,23 +51,25 @@
   text-align: center;
 }
 
-.cr-section-main-title {
-  margin: 0 0 12px;
+.cr-section-main-title,
+.cr-form-heading-zone .cr-section-main-title,
+.cr-get-in-touch-block .cr-section-main-title {
+  margin: 0;
 
   color: #008a9a;
-  font-size: 30px;
+  font-size: 38px;
   font-weight: 900;
-  line-height: 1.3;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  text-align: center;
 }
 
 .cr-section-subtitle-prose,
 .cr-form-instruction,
 .cr-form-privacy-note,
 .cr-sub-text {
-  color: #000000 !important;
-  font-size: 18px !important;
-  font-weight: 600 !important;
-  line-height: 1.7 !important;
+  color: #000000;
+  font-weight: 500;
 }
 
 /* ==========================================================================
@@ -86,15 +77,16 @@
    ========================================================================== */
 
 .cr-action-btn-blue {
-  min-height: 46px;
-  padding: 11px 34px;
+  min-width: 175px;
+  min-height: 47px;
+  padding: 11px 28px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 9px;
 
-  background-color: #4485ea;
+  background-color: #008a9a;
   border: none;
   border-radius: 50px;
 
@@ -106,83 +98,122 @@
   text-transform: uppercase;
 
   cursor: pointer;
-
-  box-shadow: 0 4px 12px rgba(68, 134, 234, 0.2);
+  box-shadow: 0 5px 14px rgba(0, 138, 154, 0.2);
 
   transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .cr-action-btn-blue:hover {
   transform: translateY(-2px);
-  background-color: #3376dc;
-  box-shadow: 0 7px 20px rgba(68, 134, 234, 0.3);
+  background-color: #007582;
+  box-shadow: 0 8px 20px rgba(0, 138, 154, 0.27);
+}
+
+.cr-btn-arrow {
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.cr-action-btn-blue:hover .cr-btn-arrow {
+  transform: translateX(4px);
 }
 
 /* ==========================================================================
-   FORM SECTION — NOW FIRST SECTION
+   CONTACT FORM — CENTERED WITHOUT IMAGE OR OUTER CARD
    ========================================================================== */
 
 .cr-form-split-block {
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto 55px !important;
-  padding: 60px 6% 35px !important;
+  margin: 0 auto 50px !important;
+  padding: 55px 5% 35px !important;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   background-color: #ffffff;
   box-sizing: border-box;
 }
 
-.cr-form-left-panel {
-  flex: 1;
+.cr-form-split-block .cr-desktop-inner {
   width: 100%;
-  max-width: 48%;
+  max-width: 1050px;
+  height: auto;
+  margin: 0 auto;
 
-  padding: 0;
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.cr-form-left-panel .cr-section-main-title {
-  font-size: 34px;
+.cr-form-left-panel {
+  width: 100%;
+  max-width: 1050px;
+  padding: 0;
+
+  flex: none;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cr-form-heading-zone {
+  width: 100%;
+  margin: 0 auto 34px;
+  text-align: center;
 }
 
 .cr-form-instruction {
-  margin: -2px 0 22px;
+  max-width: 650px;
+  margin: 14px auto 0;
+
+  color: #273142 !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 1.65 !important;
+  text-align: center;
 }
+
+/* Form layout */
 
 .cr-interactive-message-form {
   width: 100%;
-  max-width: 560px;
+  max-width: 1000px;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 22px;
 }
 
 .cr-form-input-row {
   width: 100%;
 
-  display: flex;
-  gap: 14px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 26px;
+  row-gap: 22px;
 }
 
 .cr-interactive-message-form input,
 .cr-interactive-message-form textarea {
   width: 100%;
-  padding: 12px 15px;
+  padding: 14px 17px;
+
+  display: block;
 
   background-color: #f7fafc;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #dce5eb;
   border-radius: 8px;
 
   color: #061943;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.5;
 
@@ -196,11 +227,12 @@
 }
 
 .cr-interactive-message-form input {
-  min-height: 48px;
+  min-width: 0;
+  min-height: 52px;
 }
 
 .cr-interactive-message-form textarea {
-  min-height: 120px;
+  min-height: 135px;
   resize: vertical;
 }
 
@@ -209,75 +241,60 @@
   color: #8793a7;
 }
 
+.cr-interactive-message-form input:hover,
+.cr-interactive-message-form textarea:hover {
+  border-color: rgba(0, 138, 154, 0.45);
+}
+
 .cr-interactive-message-form input:focus,
 .cr-interactive-message-form textarea:focus {
   background-color: #ffffff;
-  border-color: #4485ea;
-  box-shadow: 0 0 0 3px rgba(68, 133, 234, 0.09);
+  border-color: #008a9a;
+  box-shadow: 0 0 0 3px rgba(0, 138, 154, 0.1);
 }
 
 .cr-interactive-message-form .cr-action-btn-blue {
-  align-self: flex-start;
-  margin-top: 4px;
+  align-self: center;
+  margin-top: 2px;
 }
 
 .cr-form-privacy-note {
-  margin: 14px 0 0;
-  font-size: 14px !important;
-  line-height: 1.55 !important;
+  margin: 15px 0 0;
+
+  color: #384454 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  text-align: center;
 }
 
-.cr-form-right-panel {
-  flex: 1;
-  width: 100%;
-  max-width: 50%;
+/* Remove previous image */
 
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.cr-form-image-frame-wrapper {
-  position: relative;
-
-  width: 100%;
-  height: 410px;
-
-  overflow: hidden;
-
-  border-radius: 16px;
-  background: #f7fafc;
-
-  box-shadow: 0 10px 28px rgba(7, 29, 73, 0.08);
-}
-
+.cr-form-right-panel,
+.cr-form-image-frame-wrapper,
 .cr-form-photo-compact {
-  width: 100%;
-  height: 100%;
-
-  display: block;
-
-  object-fit: cover;
-  object-position: center;
+  display: none !important;
 }
 
 /* ==========================================================================
-   GET IN TOUCH — NOW SECOND SECTION
+   GET IN TOUCH
    ========================================================================== */
 
 .cr-get-in-touch-block {
-  flex-direction: column;
-  justify-content: center !important;
-  gap: 30px !important;
-
   padding-top: 45px !important;
   padding-bottom: 50px !important;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 30px;
 }
 
 .cr-center-heading-zone {
   width: 100%;
   margin: 0 auto;
-
   text-align: center;
 }
 
@@ -295,7 +312,9 @@
   gap: 18px;
 }
 
-/* Smaller three cards */
+/* ==========================================================================
+   CONTACT CARDS
+   ========================================================================== */
 
 .cr-contact-info-card {
   width: 100%;
@@ -308,16 +327,15 @@
   align-items: center;
   justify-content: center;
 
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid #dfeaf8;
   border-radius: 12px;
 
   color: inherit;
   text-align: center;
+  box-sizing: border-box;
 
   box-shadow: 0 5px 16px rgba(16, 53, 110, 0.03);
-
-  box-sizing: border-box;
 
   transition:
     transform 0.3s ease,
@@ -327,8 +345,8 @@
 
 .cr-contact-info-card:hover {
   transform: translateY(-5px);
-  border-color: #4485ea;
-  box-shadow: 0 12px 25px rgba(68, 134, 234, 0.1);
+  border-color: #008a9a;
+  box-shadow: 0 12px 25px rgba(0, 138, 154, 0.1);
 }
 
 .cr-card-icon-sphere {
@@ -340,7 +358,7 @@
   align-items: center;
   justify-content: center;
 
-  background-color: #f0f6ff;
+  background-color: #edf9fa;
   border-radius: 50%;
 }
 
@@ -376,6 +394,7 @@
 
 .cr-sub-text {
   margin-top: 5px !important;
+
   font-size: 14px !important;
   line-height: 1.5 !important;
 }
@@ -393,108 +412,152 @@
 }
 
 /* ==========================================================================
-   SOCIAL MEDIA
+   SOCIAL MEDIA CARD — SAME AS PHONE AND EMAIL
    ========================================================================== */
 
-.cr-social-links-flex {
-  margin-top: 8px;
+.cr-social-media-card {
+  width: 100%;
+  min-width: 0;
+  min-height: 205px;
+  padding: 22px 16px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+
+  background: #ffffff;
+  border: 1px solid #dfeaf8;
+  border-radius: 12px;
+
+  box-shadow: 0 5px 16px rgba(16, 53, 110, 0.03);
 }
 
-.cr-social-icon-btn {
-  width: 32px;
-  height: 32px;
+/* Remove the inner box coming from Footer.css */
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.cr-social-media-card .cr-contact-social-icons,
+.cr-social-media-card .social-icons {
+  position: static !important;
 
-  background-color: #eef5ff;
-  border-radius: 50%;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-width: none !important;
 
-  color: #4485ea;
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1;
-  text-decoration: none;
+  margin: 9px 0 0 !important;
+  padding: 0 !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Social icons */
+
+.cr-social-media-card .cr-contact-social-icons a {
+  position: static !important;
+
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: none !important;
+  border-radius: 50% !important;
+
+  color: #ffffff !important;
+  font-size: 19px !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+
+  box-shadow: 0 4px 10px rgba(6, 25, 67, 0.13) !important;
 
   transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
+    transform 0.25s ease,
+    box-shadow 0.25s ease !important;
 }
 
-.cr-social-icon-btn:hover {
-  transform: translateY(-2px);
-  background-color: #4485ea;
-  color: #ffffff;
-}
-
-/* Instagram icon */
-
-.cr-insta-gradient-btn {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 0 !important;
-}
-
-.cr-insta-gradient-btn::before {
-  content: "";
-
-  position: absolute;
-
-  width: 13px;
-  height: 13px;
-
-  border: 2px solid #4485ea;
-  border-radius: 4px;
-
-  transition: border-color 0.2s ease;
-}
-
-.cr-insta-glyph-lens {
-  width: 4px;
-  height: 4px;
-
+.cr-social-media-card .cr-contact-social-icons a svg {
+  width: 19px !important;
+  height: 19px !important;
   display: block;
-
-  border: 2px solid #4485ea;
-  border-radius: 50%;
-
-  transition: border-color 0.2s ease;
 }
 
-.cr-insta-gradient-btn::after {
-  content: "";
+/* Platform colors */
 
-  position: absolute;
-  top: 9px;
-  right: 9px;
-
-  width: 3px;
-  height: 3px;
-
-  background: #4485ea;
-  border-radius: 50%;
-
-  transition: background-color 0.2s ease;
+.cr-social-media-card .social-facebook {
+  background: #1877f2 !important;
 }
 
-.cr-social-icon-btn:hover::before,
-.cr-social-icon-btn:hover .cr-insta-glyph-lens {
-  border-color: #ffffff !important;
+.cr-social-media-card .social-linkedin {
+  background: #0a66c2 !important;
 }
 
-.cr-social-icon-btn:hover::after {
-  background-color: #ffffff;
+.cr-social-media-card .social-instagram {
+  background:
+    radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 40%,
+      #d6249f 62%,
+      #285aeb 90%
+    ) !important;
+}
+
+.cr-social-media-card .social-youtube {
+  background: #ff0000 !important;
+}
+
+.cr-social-media-card .cr-contact-social-icons a:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 7px 15px rgba(6, 25, 67, 0.2) !important;
+}
+
+/* Keep title spacing similar to the other cards */
+
+.cr-social-media-card h3 {
+  margin: 12px 0 6px;
+}
+
+/* Mobile */
+
+@media (max-width: 580px) {
+  .cr-social-media-card {
+    min-height: 185px;
+  }
+
+  .cr-social-media-card .cr-contact-social-icons {
+    gap: 10px !important;
+  }
+
+  .cr-social-media-card .cr-contact-social-icons a {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+  }
+
+  .cr-social-media-card .cr-contact-social-icons a svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
 }
 
 /* ==========================================================================
@@ -502,9 +565,12 @@
    ========================================================================== */
 
 .cr-locations-map-block {
+  display: flex;
   flex-direction: column;
-  justify-content: center !important;
-  gap: 25px !important;
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
 }
 
 .cr-center-accent-line {
@@ -549,7 +615,7 @@
   align-items: center;
   gap: 12px;
 
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 10px;
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -576,12 +642,13 @@
 }
 
 /* ==========================================================================
-   FAQ — KEEPING EXISTING SUPPORT
+   FAQ SUPPORT
    ========================================================================== */
 
 .cr-bottom-faq-full-width-block {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start !important;
+  align-items: flex-start;
 }
 
 .cr-faq-full-wrapper {
@@ -622,9 +689,8 @@
 }
 
 .cr-accordion-arrow {
-  color: #4485ea;
+  color: #008a9a;
   font-size: 0.7rem;
-
   transition: transform 0.2s ease;
 }
 
@@ -670,57 +736,24 @@
   .cr-wrapper-main section:not(.page-banner) {
     margin-bottom: 40px;
     padding: 35px 5%;
-
-    flex-direction: column !important;
-
-    text-align: center;
   }
 
   .cr-form-split-block {
-    padding: 45px 5% 30px !important;
-
-    flex-direction: column !important;
+    padding: 48px 5% 30px !important;
   }
 
-  .cr-desktop-inner {
-    height: auto;
-
-    flex-direction: column;
-    gap: 30px;
-  }
-
+  .cr-form-split-block .cr-desktop-inner,
   .cr-form-left-panel {
-    max-width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
+    max-width: 900px;
   }
 
   .cr-interactive-message-form {
     width: 100%;
-    max-width: 720px;
+    max-width: 900px;
   }
 
-  .cr-interactive-message-form .cr-action-btn-blue {
-    align-self: center;
-  }
-
-  .cr-form-right-panel {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .cr-form-image-frame-wrapper {
-    width: 100%;
-    height: 340px;
-    border-radius: 12px;
-  }
-
-  .cr-form-photo-compact {
-    object-fit: cover;
+  .cr-form-input-row {
+    column-gap: 20px;
   }
 
   .cr-faq-full-wrapper {
@@ -739,8 +772,8 @@
   }
 
   .cr-contact-info-card:last-child {
-    grid-column: 1 / -1;
     width: min(100%, 300px);
+    grid-column: 1 / -1;
     justify-self: center;
   }
 }
@@ -750,22 +783,45 @@
    ========================================================================== */
 
 @media (max-width: 768px) {
-  .cr-section-main-title {
-    font-size: 28px;
-    line-height: 1.3;
+  .cr-wrapper-main section:not(.page-banner) {
+    padding-left: 22px;
+    padding-right: 22px;
   }
 
-  .cr-form-left-panel .cr-section-main-title {
-    font-size: 30px;
+  .cr-section-main-title,
+  .cr-form-heading-zone .cr-section-main-title,
+  .cr-get-in-touch-block .cr-section-main-title {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  .cr-badge-text,
+  .cr-form-heading-label {
+    margin-bottom: 13px;
+
+    font-size: 12px;
+    letter-spacing: 0.3em;
+  }
+
+  .cr-form-split-block {
+    padding: 42px 22px 27px !important;
+  }
+
+  .cr-form-heading-zone {
+    margin-bottom: 28px;
   }
 
   .cr-form-input-row {
-    flex-direction: column;
-    gap: 12px;
+    grid-template-columns: 1fr;
+    row-gap: 17px;
   }
 
-  .cr-form-image-frame-wrapper {
-    height: 280px;
+  .cr-interactive-message-form {
+    gap: 17px;
+  }
+
+  .cr-interactive-message-form textarea {
+    min-height: 125px;
   }
 
   .cr-map-container-frame {
@@ -784,29 +840,43 @@
   }
 
   .cr-form-split-block {
-    padding: 38px 18px 22px !important;
+    padding: 36px 18px 22px !important;
   }
 
-  .cr-form-left-panel .cr-section-main-title {
+  .cr-section-main-title,
+  .cr-form-heading-zone .cr-section-main-title,
+  .cr-get-in-touch-block .cr-section-main-title {
     font-size: 27px;
+    line-height: 1.3;
+  }
+
+  .cr-badge-text,
+  .cr-form-heading-label {
+    margin-bottom: 11px;
+
+    font-size: 11px;
+    letter-spacing: 0.27em;
   }
 
   .cr-form-instruction {
-    font-size: 15px !important;
+    margin-top: 12px;
+
+    font-size: 14px !important;
     line-height: 1.65 !important;
   }
 
   .cr-interactive-message-form input,
   .cr-interactive-message-form textarea {
-    font-size: 15px;
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .cr-interactive-message-form input {
+    min-height: 48px;
   }
 
   .cr-interactive-message-form .cr-action-btn-blue {
     width: 100%;
-  }
-
-  .cr-form-image-frame-wrapper {
-    height: 230px;
   }
 
   .cr-cards-four-grid {
@@ -818,6 +888,7 @@
   .cr-contact-info-card:last-child {
     width: 100%;
     min-height: 185px;
+
     grid-column: auto;
   }
 
@@ -831,7 +902,9 @@
    ========================================================================== */
 
 @media (max-width: 380px) {
-  .cr-section-main-title {
+  .cr-section-main-title,
+  .cr-form-heading-zone .cr-section-main-title,
+  .cr-get-in-touch-block .cr-section-main-title {
     font-size: 25px;
   }
 

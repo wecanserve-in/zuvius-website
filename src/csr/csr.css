@@ -794,27 +794,56 @@
 /* ==================================================
    CSR DETAIL PAGE
 ================================================== */
-
 .csr-detail-navigation {
   width: calc(100% - 48px);
   max-width: 1440px;
-
   margin: 0 auto !important;
-  padding: 36px 0 0 !important;
+  padding: 28px 0 0 !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;;
 }
 
 .csr-back-link {
   display: inline-flex;
   align-items: center;
+ justify-content: flex-start;
+  gap: 8px;
 
   color: #008a9a;
-  font-size: 15px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
   text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .csr-back-link:hover {
-  text-decoration: underline;
+  color: #006f7a;
+  text-decoration: none;
+  transform: translateX(-3px);
+}
+
+.csr-back-link:focus-visible {
+  outline: 2px solid rgba(0, 138, 154, 0.35);
+  outline-offset: 5px;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .csr-detail-navigation {
+    width: calc(100% - 36px);
+    padding-top: 22px !important;
+  }
+
+  .csr-back-link {
+    font-size: 13px;
+  }
 }
 
 .csr-detail-feed {

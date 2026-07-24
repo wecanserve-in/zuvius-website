@@ -171,10 +171,10 @@ const AboutUs = () => {
             <span className="section-label">
               Corporate Video
             </span>
-
+            
             <h2>Welcome to Zuvius Lifesciences</h2>
-
-            <div className="small-line" />
+<           div className="small-line" />
+            
 
             <p>
               Zuvius Lifesciences is the manufacturer of the widest
@@ -377,15 +377,15 @@ const AboutUs = () => {
         <div className="about-container">
           <div className="section-heading timeline-heading">
             <h3>Our Journey</h3>
-
-            <h2>Milestones That Shaped Zuvius</h2>
+           <h2>Milestones That Shaped Zuvius</h2>
+           <div className="small-line center" />
 
             <p>
               A journey built on resilience, purpose and a commitment
               to redefining cancer care.
             </p>
 
-            <div className="small-line center" />
+            
           </div>
 
           <div className="timeline-wrapper">

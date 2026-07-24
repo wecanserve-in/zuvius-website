@@ -2,6 +2,13 @@ import React, { useState } from "react";
 import "./contact.css";
 import PageBanner from "../components/PageBanner";
 
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -12,10 +19,12 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+
+    setFormData((previousData) => ({
+      ...previousData,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -37,98 +46,140 @@ const Contact = () => {
         alt="Contact Zuvius Lifesciences"
       />
 
-      {/* FIRST SECTION: SEND US A MESSAGE */}
+      {/* CONTACT FORM */}
 
       <section className="cr-form-split-block">
-        <div className="cr-desktop-inner">
-          <div className="cr-form-left-panel">
-            <h2 className="cr-section-main-title">
-              Send Us a Message
-            </h2>
-
-            <p className="cr-form-instruction">
-              Fill the form below and our team will get back to you.
+        <div className="cr-form-card">
+          <div className="cr-form-heading-zone">
+            <p className="cr-form-heading-label">
+              CONTACT US
             </p>
 
-            <form
-              onSubmit={handleSubmit}
-              className="cr-interactive-message-form"
-            >
-              <div className="cr-form-input-row">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name *"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
+            <h2 className="cr-section-main-title">
+              Fill the form below and our team will get back to you.
+            </h2>
+          </div>
+
+          <form
+            onSubmit={handleSubmit}
+            className="cr-interactive-message-form"
+          >
+            <div className="cr-form-input-row">
+              <div className="cr-form-field">
+                <label htmlFor="contact-name">
+                  Your Name
+                </label>
 
                 <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email *"
-                  value={formData.email}
+                  id="contact-name"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your full name"
+                  value={formData.name}
                   onChange={handleChange}
+                  autoComplete="name"
                   required
                 />
               </div>
 
-              <div className="cr-form-input-row">
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone Number"
-                  value={formData.phone}
-                  onChange={handleChange}
-                />
+              <div className="cr-form-field">
+                <label htmlFor="contact-email">
+                  Email Address
+                </label>
 
                 <input
+                  id="contact-email"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  value={formData.email}
+                  onChange={handleChange}
+                  autoComplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="cr-form-input-row">
+              <div className="cr-form-field">
+                <label htmlFor="contact-phone">
+                  Phone Number
+                </label>
+
+                <input
+                  id="contact-phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  autoComplete="tel"
+                />
+              </div>
+
+              <div className="cr-form-field">
+                <label htmlFor="contact-subject">
+                  Subject
+                </label>
+
+                <input
+                  id="contact-subject"
                   type="text"
                   name="subject"
-                  placeholder="Subject"
+                  placeholder="How can we help?"
                   value={formData.subject}
                   onChange={handleChange}
                 />
               </div>
+            </div>
+
+            <div className="cr-form-field cr-message-field">
+              <label htmlFor="contact-message">
+                Your Message
+              </label>
 
               <textarea
+                id="contact-message"
                 name="message"
-                placeholder="Your Message *"
-                rows="4"
+                placeholder="Write your message here..."
+                rows="5"
                 value={formData.message}
                 onChange={handleChange}
                 required
               />
+            </div>
+
+            <div className="cr-form-footer">
+              <p className="cr-form-privacy-note">
+                <span
+                  className="cr-privacy-icon"
+                  aria-hidden="true"
+                >
+                  ✓
+                </span>
+
+                Your information is secure and will remain private.
+              </p>
 
               <button
                 type="submit"
                 className="cr-action-btn-blue"
               >
-                SEND MESSAGE
-                <span className="cr-btn-arrow">→</span>
+                Send Message
+
+                <span
+                  className="cr-btn-arrow"
+                  aria-hidden="true"
+                >
+                  →
+                </span>
               </button>
-            </form>
-
-            <p className="cr-form-privacy-note">
-              🛡️ Your information is safe with us. We respect your
-              privacy.
-            </p>
-          </div>
-
-          <div className="cr-form-right-panel">
-            <div className="cr-form-image-frame-wrapper">
-              <img
-                src="/contact/contactimage1.png"
-                alt="Zuvius Office Reception Desk"
-                className="cr-form-photo-compact"
-              />
             </div>
-          </div>
+          </form>
         </div>
       </section>
 
-      {/* SECOND SECTION: GET IN TOUCH */}
+      {/* GET IN TOUCH */}
 
       <section className="cr-get-in-touch-block">
         <div className="cr-center-heading-zone">
@@ -142,12 +193,20 @@ const Contact = () => {
         </div>
 
         <div className="cr-cards-four-grid">
+          {/* PHONE CARD */}
+
           <a
             href="tel:+918657000206"
             className="cr-contact-info-card cr-clickable-card-wrapper"
+            aria-label="Call Zuvius Lifesciences"
           >
             <div className="cr-card-icon-sphere">
-              <span className="cr-vector-glyph">📞</span>
+              <span
+                className="cr-vector-glyph"
+                aria-hidden="true"
+              >
+                📞
+              </span>
             </div>
 
             <h3>Phone</h3>
@@ -163,12 +222,20 @@ const Contact = () => {
             </p>
           </a>
 
+          {/* EMAIL CARD */}
+
           <a
             href="mailto:info@zuviuslifesciences.in"
             className="cr-contact-info-card cr-clickable-card-wrapper"
+            aria-label="Email Zuvius Lifesciences"
           >
             <div className="cr-card-icon-sphere">
-              <span className="cr-vector-glyph">✉️</span>
+              <span
+                className="cr-vector-glyph"
+                aria-hidden="true"
+              >
+                ✉️
+              </span>
             </div>
 
             <h3>Email</h3>
@@ -178,49 +245,70 @@ const Contact = () => {
             </p>
           </a>
 
-          <div className="cr-contact-info-card">
+          {/* SOCIAL MEDIA CARD */}
+
+          <div className="cr-contact-info-card cr-social-media-card">
             <div className="cr-card-icon-sphere">
-              <span className="cr-vector-glyph">📢</span>
+              <span
+                className="cr-vector-glyph"
+                aria-hidden="true"
+              >
+                📢
+              </span>
             </div>
 
             <h3>Social Media</h3>
 
-            <div className="cr-social-links-flex">
-              <a
-                href="https://www.linkedin.com/company/https-www.linkedin.com-search-results-all-heroentitykey-urn-3ali-3aorganization-3a3966110&keywords-z?originalSubdomain=in"
-                target="_blank"
-                rel="noreferrer"
-                className="cr-social-icon-btn"
-                title="LinkedIn"
-              >
-                in
-              </a>
-
+            <div className="social-icons cr-contact-social-icons">
               <a
                 href="https://www.facebook.com/ZuviusIndia/"
                 target="_blank"
-                rel="noreferrer"
-                className="cr-social-icon-btn"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
                 title="Facebook"
+                className="social-facebook"
               >
-                f
+                <FaFacebookF />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/https-www.linkedin.com-search-results-all-heroentitykey-urn-3ali-3aorganization-3a3966110&keywords-z/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+                className="social-linkedin"
+              >
+                <FaLinkedinIn />
               </a>
 
               <a
                 href="https://www.instagram.com/zuviuslifesciences/"
                 target="_blank"
-                rel="noreferrer"
-                className="cr-social-icon-btn cr-insta-gradient-btn"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
                 title="Instagram"
+                className="social-instagram"
               >
-                <span className="cr-insta-glyph-lens" />
+                <FaInstagram />
+              </a>
+
+              <a
+                href="https://www.youtube.com/@zuviuslifesciences"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                title="YouTube"
+                className="social-youtube"
+              >
+                <FaYoutube />
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* MAP */}
+      {/* LOCATION MAP */}
 
       <section className="cr-locations-map-block">
         <div className="cr-center-heading-zone">

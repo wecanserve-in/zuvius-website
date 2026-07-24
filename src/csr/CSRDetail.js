@@ -80,12 +80,10 @@ const CSRDetail = () => {
       />
 
       <section className="csr-detail-navigation">
-        <Link
-          to="/csr"
-          className="csr-back-link"
-        >
-          ← Back to all initiatives
-        </Link>
+      <Link to="/csr" className="csr-back-link">
+  <span aria-hidden="true">←</span>
+  Back to CSR
+</Link>
       </section>
 
       <section className="csr-events-list-feed csr-detail-feed">

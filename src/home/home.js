@@ -329,7 +329,7 @@ const Home = () => {
             <span className="text-red">Zuvius</span> — A{" "}
             <span className="text-blue">Global Leader</span> In
             The Fight Against{" "}
-            <span className="text-red">Cancer</span>
+            <span>Cancer</span>
           </h2>
 
           <p>
