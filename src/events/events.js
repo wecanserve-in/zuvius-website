@@ -34,6 +34,7 @@ const Events = () => {
       <section className="events-main-intro">
         <div className="events-main-intro-content">
           <h2>Moments That Define Our Journey</h2>
+          
         </div>
       </section>
 

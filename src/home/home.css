@@ -1893,11 +1893,13 @@
 
 .accreditation-typewriter .fixed-text {
   font-weight: 700;
+  color: #687386 !important; 
+
 }
 
 .accreditation-typewriter .changing-text {
   color: #363636;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 
@@ -3734,34 +3736,15 @@
   }
 }
 
+/* Remove gradient overlays from recent launches marquee */
+
 .recent-marquee::before,
 .recent-marquee::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 58px;
-  z-index: 4;
-  pointer-events: none;
+  display: none !important;
 }
 
-.recent-marquee::before {
-  left: 0;
-  background: linear-gradient(
-    to right,
-    #219b90 0%,
-    rgba(33, 155, 144, 0) 100%
-  );
-}
 
-.recent-marquee::after {
-  right: 0;
-  background: linear-gradient(
-    to left,
-    #219b90 0%,
-    rgba(33, 155, 144, 0) 100%
-  );
-}
+
 
 @media (max-width: 1024px) {
   .recent-marquee-track {

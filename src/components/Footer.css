@@ -9,13 +9,10 @@
 
 .footer {
   position: relative;
-
   width: 100%;
   overflow: hidden;
-
   background: #219b90;
   color: #ffffff;
-
   font-family: "Poppins", sans-serif;
 }
 
@@ -23,20 +20,15 @@
   White curved cutout behind the logo.
   This creates the curved top-left section.
 */
-
 .footer::before {
   content: "";
-
   position: absolute;
   top: 0;
   left: 0;
-
   width: 330px;
   height: 120px;
-
   background: #ffffff;
   border-bottom-right-radius: 150px;
-
   z-index: 0;
 }
 
@@ -47,13 +39,10 @@
 .footer-content {
   position: relative;
   z-index: 1;
-
   width: 100%;
   max-width: 1250px;
-
   margin: 0 auto;
   padding: 55px 40px 45px;
-
   display: grid;
   grid-template-columns: 1.45fr 1fr 0.8fr 1.3fr;
   align-items: flex-start;
@@ -71,9 +60,7 @@
 .footer-logo {
   width: 220px;
   min-height: 80px;
-
   margin: -34px 0 52px -8px;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -83,9 +70,7 @@
   width: 185px;
   max-width: 100%;
   height: auto;
-
   display: block;
-
   object-fit: contain;
 }
 
@@ -95,9 +80,7 @@
 
 .address-col p {
   margin: 0 0 5px;
-
   color: rgba(255, 255, 255, 0.92);
-
   font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
@@ -109,13 +92,10 @@
 
 .footer-col h3 {
   margin: 0 0 22px;
-
   color: #ffffff;
-
   font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
-
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
@@ -127,7 +107,6 @@
 .footer-col ul {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -137,18 +116,12 @@
 
 .footer-col a {
   display: inline-block;
-
   color: rgba(255, 255, 255, 0.88);
-
   font-size: 15px;
   font-weight: 400;
   line-height: 1.6;
-
   text-decoration: none;
-
-  transition:
-    color 0.25s ease,
-    transform 0.25s ease;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .footer-col ul a:hover {
@@ -171,7 +144,6 @@
 
 .social-icons {
   margin-top: 25px;
-
   display: flex;
   align-items: center;
   gap: 12px;
@@ -180,60 +152,41 @@
 .social-icons a {
   width: 42px;
   height: 42px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
   color: #ffffff;
   font-size: 18px;
-
   box-shadow: 0 6px 15px rgba(6, 25, 67, 0.14);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    filter 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
 }
 
 .social-icons a:hover {
   color: #ffffff;
   transform: translateY(-4px) scale(1.04);
-
   filter: brightness(1.06);
-
   box-shadow: 0 10px 22px rgba(6, 25, 67, 0.22);
 }
-
-/* Facebook real brand colour */
 
 .social-icons .social-facebook {
   background: #1877f2;
 }
 
-/* LinkedIn real brand colour */
-
 .social-icons .social-linkedin {
   background: #0a66c2;
 }
 
-/* Instagram brand gradient */
-
 .social-icons .social-instagram {
-  background:
-    radial-gradient(
-      circle at 30% 107%,
-      #fdf497 0%,
-      #fdf497 5%,
-      #fd5949 45%,
-      #d6249f 60%,
-      #285aeb 90%
-    );
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
 }
-
-/* YouTube real brand colour */
 
 .social-icons .social-youtube {
   background: #ff0000;
@@ -246,17 +199,12 @@
 .footer-bottom {
   position: relative;
   z-index: 1;
-
   padding: 18px 20px;
-
   border-top: 1px solid rgba(255, 255, 255, 0.18);
-
   color: rgba(255, 255, 255, 0.84);
-
   font-size: 14px;
   font-weight: 400;
   line-height: 1.6;
-
   text-align: center;
 }
 
@@ -266,29 +214,20 @@
 
 .developer-link {
   position: relative;
-
   color: #ffffff;
   font-weight: 700;
-
   text-decoration: none;
-
-  transition:
-    opacity 0.3s ease,
-    color 0.3s ease;
+  transition: opacity 0.3s ease, color 0.3s ease;
 }
 
 .developer-link::after {
   content: "";
-
   position: absolute;
   left: 0;
   bottom: -3px;
-
   width: 0;
   height: 2px;
-
   background: #ffffff;
-
   transition: width 0.3s ease;
 }
 
@@ -302,6 +241,31 @@
 }
 
 /* ==================================================
+   MADE IN INDIA BADGE
+================================================== */
+
+.made-in-india-badge {
+  position: absolute;
+  right: 38px;
+  z-index: 3;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.made-in-india-badge img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  transform: scale(1.2);
+}
+
+/* ==================================================
    TABLET
 ================================================== */
 
@@ -309,13 +273,11 @@
   .footer::before {
     width: 290px;
     height: 145px;
-
     border-bottom-right-radius: 130px;
   }
 
   .footer-content {
     padding: 55px 35px 42px;
-
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 45px 55px;
   }
@@ -328,6 +290,13 @@
   .footer-logo img {
     width: 165px;
   }
+
+  .made-in-india-badge {
+    top: 24px;
+    right: 28px;
+    width: 90px;
+    height: 90px;
+  }
 }
 
 /* ==================================================
@@ -336,47 +305,55 @@
 
 @media (max-width: 768px) {
   .footer::before {
-    width: 250px;
-    height: 100px;
-
-    border-bottom-right-radius: 115px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 28px);
+    height: 110px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
   }
 
   .footer-content {
     padding: 38px 24px 35px;
-
     grid-template-columns: 1fr;
     gap: 36px;
-
     text-align: center;
   }
 
   .address-col {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .footer-logo {
-    width: 180px;
-    min-height: 65px;
-
-    margin: -22px auto 50px;
-
-    justify-content: center;
+    position: absolute;
+    top: -18px;
+    left: 8px;
+    width: 160px !important;
+    min-height: 70px !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
   }
 
   .footer-logo img {
-    width: 150px;
+    width: 145px !important;
+    max-width: 100%;
+    margin: 0 !important;
   }
 
   .footer-address {
     max-width: 310px;
+    margin-top: 82px !important;
+    text-align: center !important;
   }
 
   .footer-col h3 {
     margin-bottom: 16px;
-
     font-size: 17px;
   }
 
@@ -391,21 +368,35 @@
 
   .social-icons {
     margin-top: 18px;
-
     justify-content: center;
   }
 
   .social-icons a {
     width: 40px;
     height: 40px;
-
     font-size: 17px;
   }
 
   .footer-bottom {
     padding: 16px 18px;
-
     font-size: 13px;
+  }
+
+  /* Made in India Badge - BIGGER on mobile */
+  .made-in-india-badge {
+    top: 20px !important;
+    right: 24px !important;
+    width: 100px !important;
+    height: 100px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .made-in-india-badge img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    transform: scale(1.4) !important;
   }
 }
 
@@ -415,10 +406,8 @@
 
 @media (max-width: 420px) {
   .footer::before {
-    width: 215px;
-    height: 115px;
-
-    border-bottom-right-radius: 105px;
+    width: calc(100% - 20px);
+    height: 105px;
   }
 
   .footer-content {
@@ -427,13 +416,17 @@
   }
 
   .footer-logo {
-    width: 160px;
-    margin-top: -18px;
-    margin-bottom: 47px;
+    top: -15px;
+    left: 2px;
+    width: 145px !important;
   }
 
   .footer-logo img {
-    width: 140px;
+    width: 130px !important;
+  }
+
+  .footer-address {
+    margin-top: 78px !important;
   }
 
   .social-icons {
@@ -444,172 +437,17 @@
     width: 38px;
     height: 38px;
   }
-}
 
-/* Mobile logo alignment inside left curve */
-
-@media (max-width: 768px) {
-  .footer-content {
-    text-align: center;
-  }
-
-  .address-col {
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .footer-logo {
-    width: 180px;
-    min-height: 65px;
-
-    margin: -22px 0 50px 0;
-
-    justify-content: flex-start;
-  }
-
-  .footer-logo img {
-    width: 150px;
-    margin: 0;
-  }
-
-  .footer-address {
-    width: 100%;
-    max-width: 310px;
-    text-align: left;
-  }
-}
-
-@media (max-width: 420px) {
-  .footer-logo {
-    width: 160px;
-    margin: -18px 0 47px 0;
-  }
-
-  .footer-logo img {
-    width: 140px;
-  }
-}
-
-/* Center curve and logo on mobile */
-
-@media (max-width: 768px) {
-  .footer::before {
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 250px;
-    height: 100px;
-
-    border-bottom-left-radius: 115px;
-    border-bottom-right-radius: 115px;
-  }
-
-  .address-col {
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-logo {
-    width: 180px;
-    min-height: 65px;
-
-    margin: -22px auto 50px;
-
-    justify-content: center;
-  }
-
-  .footer-logo img {
-    width: 150px;
-    margin: 0 auto;
-  }
-
-  .footer-address {
-    width: 100%;
-    max-width: 310px;
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-
-@media (max-width: 420px) {
-  .footer::before {
-    width: 215px;
-    height: 115px;
-
-    border-bottom-left-radius: 105px;
-    border-bottom-right-radius: 105px;
-  }
-
-  .footer-logo {
-    width: 160px;
-    margin: -18px auto 47px;
-  }
-
-  .footer-logo img {
-    width: 140px;
-  }
-}
-
-
-/* Made in India badge — top right */
-
-.footer {
-  position: relative;
-}
-
-.made-in-india-badge {
-  position: absolute;
-  top: 28px;
-  right: 38px;
-  z-index: 3;
-
-  width: 80px;
-  height: 80px;
-
-  margin: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  overflow: hidden;
-
-  background: #ffffff;
-  border-radius: 50%;
-
-  box-shadow: 0 10px 25px rgba(6, 25, 67, 0.16);
-}
-
-.made-in-india-badge img {
-  width: 82%;
-  height: 82%;
-  transform: scale(1.8);
-  display: block;
-  object-fit: contain;
-  object-position: center;
-}
-
-/* Tablet */
-
-@media (max-width: 1024px) {
+  /* Made in India Badge - Even bigger on small mobile */
   .made-in-india-badge {
-    top: 24px;
-    right: 28px;
-
-    width: 105px;
-    height: 105px;
+    top: 18px !important;
+    right: 18px !important;
+    width: 85px !important;
+    height: 85px !important;
   }
-}
 
-/* Mobile */
-
-@media (max-width: 768px) {
-  .made-in-india-badge {
-    top: 20px;
-    right: 18px;
-
-    width: 88px;
-    height: 88px;
+  .made-in-india-badge img {
+    transform: scale(1.4) !important;
   }
 }
 
@@ -619,119 +457,6 @@
 
 @media (min-width: 1025px) {
   .footer::before {
-    /*
-      Keeps the white curve aligned with the centered
-      1250px footer container on wider screens.
-    */
     width: max(330px, calc(50vw - 295px));
-  }
-}
-
-/* ==================================================
-   MOBILE — FIX ONLY LOGO AND MADE IN INDIA BADGE
-================================================== */
-
-@media (max-width: 768px) {
-  /* Wider white header area */
-  .footer::before {
-    top: 0 !important;
-    left: 50% !important;
-
-    width: calc(100% - 28px) !important;
-    height: 110px !important;
-
-    transform: translateX(-50%) !important;
-
-    border-bottom-left-radius: 40px !important;
-    border-bottom-right-radius: 40px !important;
-  }
-
-  /* Keep original one-column footer */
-  .footer-content {
-    grid-template-columns: 1fr !important;
-    text-align: center !important;
-  }
-
-  .address-col {
-    position: relative;
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  /* Logo on left side of white area */
-  .footer-logo {
-    position: absolute;
-    top: -18px;
-    left: 8px;
-
-    width: 160px !important;
-    min-height: 70px !important;
-    margin: 0 !important;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start !important;
-  }
-
-  .footer-logo img {
-    width: 145px !important;
-    max-width: 100%;
-    margin: 0 !important;
-  }
-
-  /* Badge on right side */
-  .made-in-india-badge {
-    top: 20px !important;
-    right: 24px !important;
-
-    width: 68px !important;
-    height: 68px !important;
-
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-
-  .made-in-india-badge img {
-    width: 100% !important;
-    height: 100% !important;
-
-    object-fit: contain !important;
-    transform: scale(1.15) !important;
-  }
-
-  /* Space below logo/header before address */
-  .footer-address {
-    margin-top: 82px !important;
-    text-align: center !important;
-  }
-}
-
-@media (max-width: 420px) {
-  .footer::before {
-    width: calc(100% - 20px) !important;
-    height: 105px !important;
-  }
-
-  .footer-logo {
-    top: -15px;
-    left: 2px;
-
-    width: 145px !important;
-  }
-
-  .footer-logo img {
-    width: 130px !important;
-  }
-
-  .made-in-india-badge {
-    top: 20px !important;
-    right: 17px !important;
-
-    width: 62px !important;
-    height: 62px !important;
-  }
-
-  .footer-address {
-    margin-top: 78px !important;
   }
 }

@@ -518,10 +518,11 @@ const Home = () => {
           <span className="home-reach-tag">OUR REACH</span>
 
           <p className="home-reach-subtitle">
-            Delivering trusted oncology solutions
-            worldwide with advanced manufacturing,
-            global compliance and a commitment to
-            improving patient lives.
+           Delivering trusted oncology solutions worldwide,
+with state-of-the-art manufacturing facilities,
+unwavering commitment to global quality standards,
+strategic partnerships across healthcare systems,
+and a relentless focus on patient well-being.
           </p>
         </div>
 

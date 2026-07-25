@@ -1,20 +1,36 @@
 .country-scroll {
   width: 100%;
-  overflow: hidden;
-  padding: 12px 0;
+  overflow: hidden; /* Keep hidden to contain logos */
+  padding: 35px 0 20px 0; /* Increased top padding for tooltip space */
   margin: 22px 0;
+  position: relative;
 }
 
 .country-track {
   display: flex;
   align-items: center;
-  gap: 22px;              /* More gap */
+  gap: 22px;
   width: max-content;
   animation: scrollFlags 90s linear infinite;
+  padding: 5px 0; /* Small padding inside */
 }
 
 .country-scroll:hover .country-track {
   animation-play-state: paused;
+}
+
+/* Wrapper for each country */
+.country-item-wrapper {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align to top */
+  position: relative;
+  cursor: pointer;
+  padding: 20px 0 5px 0; /* Top padding for tooltip */
+  height: auto;
+  min-height: 90px; /* Enough height for logo + tooltip */
 }
 
 .country-item {
@@ -22,29 +38,67 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5px;
 }
 
 .country-item img {
   width: 95px;
   height: 65px;
-
-  object-fit: contain;     /* NO stretching */
+  object-fit: contain;
   object-position: center;
-
-  background: transparent; /* Transparent */
+  background: transparent;
   border: none;
   box-shadow: none;
-
   display: block;
-  transition: transform .25s ease;
+  transition: transform 0.25s ease;
 }
 
 .country-item img:hover {
   transform: scale(1.08);
 }
 
-.country-item span {
-  display: none;
+/* Tooltip styling - appears ABOVE the logo */
+.country-tooltip {
+  position: absolute;
+  top: -5px; /* Position at top of wrapper */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #008a9a;
+  color: #ffffff;
+  padding: 5px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(0, 138, 154, 0.35);
+  letter-spacing: 0.3px;
+  pointer-events: none;
+  animation: fadeInUp 0.3s ease;
+}
+
+/* Small triangle/arrow below the tooltip */
+.country-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #008a9a;
+}
+
+/* Animation for tooltip */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
 }
 
 @keyframes scrollFlags {
@@ -56,15 +110,89 @@
   }
 }
 
-@media (max-width:768px){
+/* Responsive */
+@media (max-width: 1024px) {
+  .country-scroll {
+    padding: 30px 0 15px 0;
+  }
+  
+  .country-item-wrapper {
+    min-height: 80px;
+    padding: 18px 0 5px 0;
+  }
+  
+  .country-item img {
+    width: 80px;
+    height: 55px;
+  }
+  
+  .country-tooltip {
+    font-size: 11px;
+    padding: 4px 14px;
+    top: -3px;
+  }
+}
 
-  .country-track{
-    gap:14px;
+@media (max-width: 768px) {
+  .country-scroll {
+    padding: 25px 0 12px 0;
+  }
+  
+  .country-track {
+    gap: 14px;
+  }
+  
+  .country-item-wrapper {
+    min-height: 70px;
+    padding: 15px 0 5px 0;
   }
 
-  .country-item img{
-    width:72px;
-    height:48px;
+  .country-item img {
+    width: 72px;
+    height: 48px;
   }
 
+  .country-tooltip {
+    font-size: 10px;
+    padding: 4px 12px;
+    top: -2px;
+  }
+
+  .country-tooltip::after {
+    bottom: -6px;
+    border-width: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .country-scroll {
+    padding: 20px 0 10px 0;
+    margin: 15px 0;
+  }
+  
+  .country-track {
+    gap: 10px;
+  }
+  
+  .country-item-wrapper {
+    min-height: 60px;
+    padding: 12px 0 4px 0;
+  }
+
+  .country-item img {
+    width: 60px;
+    height: 40px;
+  }
+
+  .country-tooltip {
+    font-size: 9px;
+    padding: 3px 10px;
+    top: -1px;
+    border-radius: 4px;
+  }
+  
+  .country-tooltip::after {
+    bottom: -5px;
+    border-width: 5px;
+  }
 }

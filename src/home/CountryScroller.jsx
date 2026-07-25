@@ -1,4 +1,5 @@
 import "./CountryScroller.css";
+import { useState } from "react";
 
 const countries = [
   "Angola",
@@ -54,16 +55,27 @@ const countries = [
 ];
 
 export default function CountryScroller() {
+  const [hoveredCountry, setHoveredCountry] = useState(null);
+
   return (
     <div className="country-scroll">
       <div className="country-track">
         {[...countries, ...countries].map((country, index) => (
-          <div className="country-item" key={index}>
-            <img
-              src={`/Country Logo/${country}.png`}
-              alt={country}
-            />
-            <span>{country}</span>
+          <div
+            className="country-item-wrapper"
+            key={index}
+            onMouseEnter={() => setHoveredCountry(country)}
+            onMouseLeave={() => setHoveredCountry(null)}
+          >
+            {hoveredCountry === country && (
+              <div className="country-tooltip">{country}</div>
+            )}
+            <div className="country-item">
+              <img
+                src={`/Country Logo/${country}.png`}
+                alt={country}
+              />
+            </div>
           </div>
         ))}
       </div>
