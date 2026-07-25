@@ -346,13 +346,20 @@
 .ev-lightbox-window-box {
   background: #ffffff;
   border-radius: 20px;
-  width: 90%;
-  max-width: 960px;
-  padding: 40px;
+
+  width: min(1400px, 96vw);
+
   position: relative;
+
+  padding: 34px;
+
   box-shadow: 0 30px 70px rgba(2, 11, 28, 0.4);
-  max-height: 85vh;
-  overflow: visible !important; /* Changed from overflow-y: auto */
+
+  max-height: calc(100vh - 40px);
+
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+
   animation: evFadeIn 0.25s cubic-bezier(0.1, 0.8, 0.25, 1);
 }
 
@@ -499,11 +506,19 @@
 }
 
 .ev-lightbox-main-canvas {
-  max-width: 95%;
-  max-height: 55vh;
-  object-fit: contain;
-  border-radius: 6px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  display: block !important;
+
+  width: auto !important;
+  max-width: 100% !important;
+
+  height: auto !important;
+  max-height: calc(100vh - 320px) !important;
+
+  margin: 0 auto !important;
+
+  object-fit: contain !important;
+
+  border-radius: 8px !important;
 }
 
 .ev-zoom-escape-hint {
@@ -1653,11 +1668,31 @@
 /* Single image popup */
 
 .ev-single-image-lightbox {
-  max-width: 1100px;
+  width: min(1400px, 96vw);
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .ev-lightbox-viewer-viewport {
-  text-align: center;
+  position: relative !important;
+
+  width: 100% !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background: #f7fafc !important;
+
+  border-radius: 16px !important;
+
+  padding: 30px 70px 20px !important;
+
+  overflow: hidden !important;
+
+  box-sizing: border-box;
 }
 
 .ev-lightbox-main-canvas {
