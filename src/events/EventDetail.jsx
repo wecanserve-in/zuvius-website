@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./events.css";
 import PageBanner from "../components/PageBanner";
@@ -7,21 +7,33 @@ import { eventsData } from "./eventsdata";
 const EventDetail = () => {
   const { slug } = useParams();
 
-  const eventItem = eventsData.find(
-    (item) => item.slug === slug
-  );
+  const eventItem = useMemo(() => {
+    return eventsData.find((item) => item.slug === slug);
+  }, [slug]);
 
   const [zoomedImgUrl, setZoomedImgUrl] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const eventImages = eventItem?.images || [];
+  /*
+   * useMemo is important here.
+   * Using `eventItem?.images || []` directly creates a new empty array
+   * on every render and causes the ESLint dependency warning.
+   */
+  const eventImages = useMemo(() => {
+    return eventItem?.images || [];
+  }, [eventItem]);
 
-  // ALL HOOKS MUST BE CALLED BEFORE CONDITIONAL RETURN
+  /*
+   * Reset lightbox whenever the route slug changes.
+   */
   useEffect(() => {
     setZoomedImgUrl(null);
     setCurrentImageIndex(0);
   }, [slug]);
 
+  /*
+   * Close lightbox using Escape.
+   */
   useEffect(() => {
     const handleEscape = (event) => {
       if (event.key === "Escape") {
@@ -36,6 +48,10 @@ const EventDetail = () => {
     };
   }, []);
 
+  /*
+   * Prevent the background page from scrolling
+   * while the image lightbox is open.
+   */
   useEffect(() => {
     if (zoomedImgUrl) {
       document.body.style.overflow = "hidden";
@@ -48,34 +64,63 @@ const EventDetail = () => {
     };
   }, [zoomedImgUrl]);
 
-  // Keyboard navigation for images
+  /*
+   * Lightbox keyboard navigation.
+   */
   useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (!zoomedImgUrl) return;
-      
-      if (e.key === "ArrowRight") {
-        const currentIndex = eventImages.findIndex(img => img === zoomedImgUrl);
-        const nextIndex = (currentIndex + 1) % eventImages.length;
+    const handleKeyDown = (event) => {
+      if (!zoomedImgUrl || eventImages.length === 0) {
+        return;
+      }
+
+      const currentIndex = eventImages.findIndex(
+        (image) => image === zoomedImgUrl
+      );
+
+      /*
+       * In case the current image does not exist in the array,
+       * safely start navigation from index 0.
+       */
+      const safeCurrentIndex =
+        currentIndex >= 0 ? currentIndex : 0;
+
+      if (event.key === "ArrowRight") {
+        const nextIndex =
+          (safeCurrentIndex + 1) % eventImages.length;
+
         setZoomedImgUrl(eventImages[nextIndex]);
         setCurrentImageIndex(nextIndex);
-      } else if (e.key === "ArrowLeft") {
-        const currentIndex = eventImages.findIndex(img => img === zoomedImgUrl);
-        const prevIndex = (currentIndex - 1 + eventImages.length) % eventImages.length;
-        setZoomedImgUrl(eventImages[prevIndex]);
-        setCurrentImageIndex(prevIndex);
+      }
+
+      if (event.key === "ArrowLeft") {
+        const previousIndex =
+          (safeCurrentIndex - 1 + eventImages.length) %
+          eventImages.length;
+
+        setZoomedImgUrl(eventImages[previousIndex]);
+        setCurrentImageIndex(previousIndex);
       }
     };
 
     window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
   }, [zoomedImgUrl, eventImages]);
 
-  // NOW conditional return
+  /*
+   * Event not found UI.
+   * All hooks are called before this conditional return.
+   */
   if (!eventItem) {
     return (
       <div className="events-not-found">
         <h2>Event not found</h2>
-        <Link to="/events">Back to Events</Link>
+
+        <Link to="/events">
+          Back to Events
+        </Link>
       </div>
     );
   }
@@ -83,34 +128,76 @@ const EventDetail = () => {
   const firstRowImages = eventImages.slice(0, 5);
   const remainingImages = eventImages.slice(5);
 
-  // Navigation functions
-  const goToNextImage = (e) => {
-    e.stopPropagation();
-    const currentIndex = eventImages.findIndex(img => img === zoomedImgUrl);
-    const nextIndex = (currentIndex + 1) % eventImages.length;
+  const openImage = (image, index) => {
+    setZoomedImgUrl(image);
+    setCurrentImageIndex(index);
+  };
+
+  const closeLightbox = () => {
+    setZoomedImgUrl(null);
+  };
+
+  const goToNextImage = (event) => {
+    event.stopPropagation();
+
+    if (eventImages.length === 0) {
+      return;
+    }
+
+    const currentIndex = eventImages.findIndex(
+      (image) => image === zoomedImgUrl
+    );
+
+    const safeCurrentIndex =
+      currentIndex >= 0 ? currentIndex : currentImageIndex;
+
+    const nextIndex =
+      (safeCurrentIndex + 1) % eventImages.length;
+
     setZoomedImgUrl(eventImages[nextIndex]);
     setCurrentImageIndex(nextIndex);
   };
 
-  const goToPreviousImage = (e) => {
-    e.stopPropagation();
-    const currentIndex = eventImages.findIndex(img => img === zoomedImgUrl);
-    const prevIndex = (currentIndex - 1 + eventImages.length) % eventImages.length;
-    setZoomedImgUrl(eventImages[prevIndex]);
-    setCurrentImageIndex(prevIndex);
+  const goToPreviousImage = (event) => {
+    event.stopPropagation();
+
+    if (eventImages.length === 0) {
+      return;
+    }
+
+    const currentIndex = eventImages.findIndex(
+      (image) => image === zoomedImgUrl
+    );
+
+    const safeCurrentIndex =
+      currentIndex >= 0 ? currentIndex : currentImageIndex;
+
+    const previousIndex =
+      (safeCurrentIndex - 1 + eventImages.length) %
+      eventImages.length;
+
+    setZoomedImgUrl(eventImages[previousIndex]);
+    setCurrentImageIndex(previousIndex);
   };
 
   return (
     <div className="cr-wrapper-main event-detail-page">
       <PageBanner
-        image={eventItem.cardImage || eventImages[0]}
+        image={
+          eventItem.cardImage ||
+          eventImages[0] ||
+          ""
+        }
         title={eventItem.title}
         description=""
         alt={eventItem.title}
       />
 
       <section className="event-detail-navigation">
-        <Link to="/events" className="event-back-link">
+        <Link
+          to="/events"
+          className="event-back-link"
+        >
           ← Back to all events
         </Link>
       </section>
@@ -122,8 +209,10 @@ const EventDetail = () => {
               <div className="ev-category-tag-pill">
                 {eventItem.category === "participation"
                   ? "EXHIBITION"
-                  : eventItem.categoryLabel}
+                  : eventItem.categoryLabel ||
+                    eventItem.category}
               </div>
+
               <h2 className="ev-event-card-title">
                 {eventItem.title}
               </h2>
@@ -133,77 +222,95 @@ const EventDetail = () => {
               </p>
             </div>
 
-            <div className="ev-card-video-panel-right">
-              <div className="ev-iframe-video-wrapper">
-                <iframe
-                  src={eventItem.videoUrl}
-                  title={`${eventItem.title} Video Coverage`}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+            {eventItem.videoUrl && (
+              <div className="ev-card-video-panel-right">
+                <div className="ev-iframe-video-wrapper">
+                  <iframe
+                    src={eventItem.videoUrl}
+                    title={`${eventItem.title} Video Coverage`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           {eventImages.length > 0 && (
             <div className="ev-card-gallery-row-bottom">
-              {/* First five images: original layout */}
               <div className="ev-five-image-masonry-grid">
-                {firstRowImages.map((image, imageIndex) => (
-                  <button
-                    type="button"
-                    className={`ev-grid-photo-frame ${
-                      imageIndex === 0
-                        ? "ev-frame-large-1"
-                        : imageIndex === 1
-                        ? "ev-frame-large-2"
-                        : imageIndex === 2
-                        ? "ev-frame-small-1"
-                        : imageIndex === 3
-                        ? "ev-frame-small-2"
-                        : "ev-frame-small-3"
-                    }`}
-                    key={`${image}-${imageIndex}`}
-                    onClick={() => {
-                      setZoomedImgUrl(image);
-                      setCurrentImageIndex(imageIndex);
-                    }}
-                    aria-label={`View ${eventItem.title} image ${imageIndex + 1}`}
-                  >
-                    <img
-                      src={image}
-                      alt={`${eventItem.title} ${imageIndex + 1}`}
-                      loading="lazy"
-                    />
-                  </button>
-                ))}
+                {firstRowImages.map(
+                  (image, imageIndex) => (
+                    <button
+                      type="button"
+                      className={`ev-grid-photo-frame ${
+                        imageIndex === 0
+                          ? "ev-frame-large-1"
+                          : imageIndex === 1
+                          ? "ev-frame-large-2"
+                          : imageIndex === 2
+                          ? "ev-frame-small-1"
+                          : imageIndex === 3
+                          ? "ev-frame-small-2"
+                          : "ev-frame-small-3"
+                      }`}
+                      key={`${image}-${imageIndex}`}
+                      onClick={() =>
+                        openImage(
+                          image,
+                          imageIndex
+                        )
+                      }
+                      aria-label={`View ${eventItem.title} image ${
+                        imageIndex + 1
+                      }`}
+                    >
+                      <img
+                        src={image}
+                        alt={`${eventItem.title} ${
+                          imageIndex + 1
+                        }`}
+                        loading="lazy"
+                      />
+                    </button>
+                  )
+                )}
               </div>
 
-              {/* Remaining images: four per row */}
               {remainingImages.length > 0 && (
                 <div className="ev-continuing-four-image-grid">
-                  {remainingImages.map((image, imageIndex) => {
-                    const actualIndex = imageIndex + 5;
-                    return (
-                      <button
-                        type="button"
-                        className="ev-continuing-photo-card"
-                        key={`${image}-${actualIndex}`}
-                        onClick={() => {
-                          setZoomedImgUrl(image);
-                          setCurrentImageIndex(actualIndex);
-                        }}
-                        aria-label={`View ${eventItem.title} image ${actualIndex + 1}`}
-                      >
-                        <img
-                          src={image}
-                          alt={`${eventItem.title} ${actualIndex + 1}`}
-                          loading="lazy"
-                        />
-                      </button>
-                    );
-                  })}
+                  {remainingImages.map(
+                    (image, imageIndex) => {
+                      const actualIndex =
+                        imageIndex + 5;
+
+                      return (
+                        <button
+                          type="button"
+                          className="ev-continuing-photo-card"
+                          key={`${image}-${actualIndex}`}
+                          onClick={() =>
+                            openImage(
+                              image,
+                              actualIndex
+                            )
+                          }
+                          aria-label={`View ${eventItem.title} image ${
+                            actualIndex + 1
+                          }`}
+                        >
+                          <img
+                            src={image}
+                            alt={`${eventItem.title} ${
+                              actualIndex + 1
+                            }`}
+                            loading="lazy"
+                          />
+                        </button>
+                      );
+                    }
+                  )}
                 </div>
               )}
             </div>
@@ -211,23 +318,24 @@ const EventDetail = () => {
         </div>
       </section>
 
-      {/* High-resolution photo viewer with navigation */}
       {zoomedImgUrl && (
         <div
           className="ev-lightbox-overlay"
           role="dialog"
           aria-modal="true"
           aria-label={`${eventItem.title} image viewer`}
-          onClick={() => setZoomedImgUrl(null)}
+          onClick={closeLightbox}
         >
           <div
             className="ev-lightbox-window-box ev-single-image-lightbox"
-            onClick={(event) => event.stopPropagation()}
+            onClick={(event) =>
+              event.stopPropagation()
+            }
           >
             <button
               type="button"
               className="ev-lightbox-close-trigger"
-              onClick={() => setZoomedImgUrl(null)}
+              onClick={closeLightbox}
               aria-label="Close image"
             >
               ✕ Close
@@ -236,14 +344,15 @@ const EventDetail = () => {
             <div className="ev-lightbox-body-layout">
               <h3 className="ev-lightbox-title">
                 {eventItem.title}
+
                 <span className="ev-title-accent-hint">
                   {" "}
-                  / {currentImageIndex + 1} of {eventImages.length}
+                  / {currentImageIndex + 1} of{" "}
+                  {eventImages.length}
                 </span>
               </h3>
 
               <div className="ev-lightbox-viewer-viewport">
-                {/* Previous Arrow */}
                 {eventImages.length > 1 && (
                   <button
                     type="button"
@@ -257,11 +366,12 @@ const EventDetail = () => {
 
                 <img
                   src={zoomedImgUrl}
-                  alt={eventItem.title}
+                  alt={`${eventItem.title} ${
+                    currentImageIndex + 1
+                  }`}
                   className="ev-lightbox-main-canvas ev-canvas-zoomed-state"
                 />
 
-                {/* Next Arrow */}
                 {eventImages.length > 1 && (
                   <button
                     type="button"
@@ -274,7 +384,8 @@ const EventDetail = () => {
                 )}
 
                 <p className="ev-zoom-escape-hint">
-                  Click outside, press Escape, or use ← → arrow keys to navigate
+                  Click outside, press Escape, or
+                  use ← → arrow keys to navigate
                 </p>
               </div>
             </div>
