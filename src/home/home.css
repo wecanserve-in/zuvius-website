@@ -3986,3 +3986,92 @@
     width: 30px;
   }
 }
+
+/* ==================================================
+   FINAL MAP VIDEO BLACK-LINE FIX
+   The black line is embedded inside the MP4 edge
+================================================== */
+
+.home-reach-image,
+.home-reach-image-india,
+.home-reach-image-global,
+.home-reach-global-map {
+  position: relative !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Crop a few pixels from every edge of both map videos */
+.home-reach-image .home-reach-video,
+.home-reach-image-india .home-reach-video,
+.home-reach-image-global .home-reach-video,
+.home-reach-global-map .home-reach-video {
+  display: block !important;
+
+  width: calc(100% + 12px) !important;
+  height: calc(100% + 12px) !important;
+
+  max-width: none !important;
+  max-height: none !important;
+
+  margin: -6px !important;
+
+  object-fit: cover !important;
+  object-position: center !important;
+
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+
+  transform: translateX(3px) scale(1.01) !important;
+  transform-origin: center !important;
+}
+
+/* Extra protection specifically for the right edge */
+.home-reach-image::after,
+.home-reach-global-map::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1px;
+  bottom: 0;
+
+  width: 7px;
+
+  background: #ffffff;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .home-reach-image .home-reach-video,
+  .home-reach-image-india .home-reach-video,
+  .home-reach-image-global .home-reach-video,
+  .home-reach-global-map .home-reach-video {
+    width: calc(100% + 10px) !important;
+    height: calc(100% + 10px) !important;
+    margin: -5px !important;
+    transform: translateX(3px) scale(1.01) !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .home-reach-image .home-reach-video,
+  .home-reach-image-india .home-reach-video,
+  .home-reach-image-global .home-reach-video,
+  .home-reach-global-map .home-reach-video {
+    width: calc(100% + 8px) !important;
+    height: calc(100% + 8px) !important;
+    margin: -4px !important;
+    transform: translateX(2px) scale(1.01) !important;
+  }
+
+  .home-reach-image::after,
+  .home-reach-global-map::after {
+    width: 5px;
+  }
+}

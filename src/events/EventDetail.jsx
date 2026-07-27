@@ -14,26 +14,15 @@ const EventDetail = () => {
   const [zoomedImgUrl, setZoomedImgUrl] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  /*
-   * useMemo is important here.
-   * Using `eventItem?.images || []` directly creates a new empty array
-   * on every render and causes the ESLint dependency warning.
-   */
   const eventImages = useMemo(() => {
     return eventItem?.images || [];
   }, [eventItem]);
 
-  /*
-   * Reset lightbox whenever the route slug changes.
-   */
   useEffect(() => {
     setZoomedImgUrl(null);
     setCurrentImageIndex(0);
   }, [slug]);
 
-  /*
-   * Close lightbox using Escape.
-   */
   useEffect(() => {
     const handleEscape = (event) => {
       if (event.key === "Escape") {
@@ -48,10 +37,6 @@ const EventDetail = () => {
     };
   }, []);
 
-  /*
-   * Prevent the background page from scrolling
-   * while the image lightbox is open.
-   */
   useEffect(() => {
     if (zoomedImgUrl) {
       document.body.style.overflow = "hidden";
@@ -64,9 +49,6 @@ const EventDetail = () => {
     };
   }, [zoomedImgUrl]);
 
-  /*
-   * Lightbox keyboard navigation.
-   */
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (!zoomedImgUrl || eventImages.length === 0) {
@@ -77,12 +59,7 @@ const EventDetail = () => {
         (image) => image === zoomedImgUrl
       );
 
-      /*
-       * In case the current image does not exist in the array,
-       * safely start navigation from index 0.
-       */
-      const safeCurrentIndex =
-        currentIndex >= 0 ? currentIndex : 0;
+      const safeCurrentIndex = currentIndex >= 0 ? currentIndex : 0;
 
       if (event.key === "ArrowRight") {
         const nextIndex =
@@ -109,10 +86,6 @@ const EventDetail = () => {
     };
   }, [zoomedImgUrl, eventImages]);
 
-  /*
-   * Event not found UI.
-   * All hooks are called before this conditional return.
-   */
   if (!eventItem) {
     return (
       <div className="events-not-found">
@@ -183,11 +156,7 @@ const EventDetail = () => {
   return (
     <div className="cr-wrapper-main event-detail-page">
       <PageBanner
-        image={
-          eventItem.cardImage ||
-          eventImages[0] ||
-          ""
-        }
+        image={eventItem.cardImage || eventImages[0] || ""}
         title={eventItem.title}
         description=""
         alt={eventItem.title}
@@ -217,21 +186,37 @@ const EventDetail = () => {
                 {eventItem.title}
               </h2>
 
+              {eventItem.cardSubtitle && (
+                <h3 className="ev-event-card-subtitle">
+                  {eventItem.cardSubtitle}
+                </h3>
+              )}
+
               <p className="ev-event-card-description">
                 {eventItem.description}
               </p>
             </div>
 
-            {eventItem.videoUrl && (
+            {(eventItem.videoUrl || eventItem.eventImage) && (
               <div className="ev-card-video-panel-right">
                 <div className="ev-iframe-video-wrapper">
-                  <iframe
-                    src={eventItem.videoUrl}
-                    title={`${eventItem.title} Video Coverage`}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                  {eventItem.videoUrl ? (
+                    <iframe
+                      src={eventItem.videoUrl}
+                      title={`${eventItem.title} video`}
+                      className="event-video"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <img
+                      src={eventItem.eventImage}
+                      alt={eventItem.title}
+                      className="event-video event-feature-image"
+                      loading="lazy"
+                    />
+                  )}
                 </div>
               </div>
             )}
@@ -257,10 +242,7 @@ const EventDetail = () => {
                       }`}
                       key={`${image}-${imageIndex}`}
                       onClick={() =>
-                        openImage(
-                          image,
-                          imageIndex
-                        )
+                        openImage(image, imageIndex)
                       }
                       aria-label={`View ${eventItem.title} image ${
                         imageIndex + 1
@@ -282,8 +264,7 @@ const EventDetail = () => {
                 <div className="ev-continuing-four-image-grid">
                   {remainingImages.map(
                     (image, imageIndex) => {
-                      const actualIndex =
-                        imageIndex + 5;
+                      const actualIndex = imageIndex + 5;
 
                       return (
                         <button
@@ -291,10 +272,7 @@ const EventDetail = () => {
                           className="ev-continuing-photo-card"
                           key={`${image}-${actualIndex}`}
                           onClick={() =>
-                            openImage(
-                              image,
-                              actualIndex
-                            )
+                            openImage(image, actualIndex)
                           }
                           aria-label={`View ${eventItem.title} image ${
                             actualIndex + 1
@@ -384,8 +362,8 @@ const EventDetail = () => {
                 )}
 
                 <p className="ev-zoom-escape-hint">
-                  Click outside, press Escape, or
-                  use ← → arrow keys to navigate
+                  Click outside, press Escape, or use ← →
+                  arrow keys to navigate
                 </p>
               </div>
             </div>

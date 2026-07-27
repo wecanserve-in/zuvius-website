@@ -1858,3 +1858,56 @@
     max-height: 40vh !important;
   }
 }
+/* ==================================================
+   EVENT MAIN MEDIA
+   Keep image exactly the same size as YouTube video
+================================================== */
+
+.event-detail-page .ev-card-video-panel-right {
+  flex: 1;
+  width: 100%;
+  max-width: 48%;
+  min-width: 0;
+}
+
+.event-detail-page .ev-iframe-video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* 16:9 YouTube ratio */
+
+  overflow: hidden;
+  border-radius: 12px;
+  background: #eef3f7;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* Both YouTube iframe and event image use exact same box */
+
+.event-detail-page .ev-iframe-video-wrapper iframe,
+.event-detail-page .ev-iframe-video-wrapper .event-feature-image {
+  position: absolute;
+  inset: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  border-radius: 0;
+}
+
+/* Image fills the video area without stretching */
+
+.event-detail-page .ev-iframe-video-wrapper .event-feature-image {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Tablet/mobile layout */
+
+@media (max-width: 1100px) {
+  .event-detail-page .ev-card-video-panel-right {
+    max-width: 100%;
+  }
+}
