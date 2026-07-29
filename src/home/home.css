@@ -1765,9 +1765,12 @@
   font-size: 0.92rem;
   font-weight: 800;
   line-height: 1.3;
-  white-space: nowrap;
-}
 
+  white-space: normal;
+  overflow: visible;
+  word-break: normal;
+  text-align: left;
+}
 /* Hide the old leadership content only */
 
 .leader-bottom,
@@ -2473,77 +2476,29 @@
 ================================================== */
 
 /* ==================================================
-   HERO AUTO SLIDER
+   HERO — STATIC IMAGE
 ================================================== */
 
-.hero-slider-wrapper {
-  position: relative;
+.hero-static-image-wrapper {
   width: 100%;
-  overflow: hidden;
-}
-
-.hero-slider-track {
-  width: 100%;
-  display: flex;
-  transition: transform 0.65s ease;
-  will-change: transform;
-}
-
-.hero-slide {
-  flex: 0 0 100%;
-  min-width: 100%;
-  width: 100%;
+  min-width: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero-slide-image {
-  width: 100% !important;
-  max-width: clamp(420px, 32vw, 540px) !important;
-  height: auto !important;
-  max-height: 390px !important;
+.hero-static-image {
+  display: block;
+
+  width: 100%;
+  max-width: clamp(420px, 32vw, 540px);
+  height: 430px;
 
   margin: 0 auto;
 
-  object-fit: contain !important;
+  object-fit: contain;
   object-position: center;
-  transform: none !important;
-}
-
-.hero-slider-dots {
-  width: 100%;
-  margin-top: 12px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.hero-dot {
-  width: 9px;
-  height: 9px;
-  padding: 0;
-
-  border: none;
-  border-radius: 50%;
-
-  background: #c8d0da;
-
-  cursor: pointer;
-
-  transition:
-    width 0.3s ease,
-    border-radius 0.3s ease,
-    background 0.3s ease;
-}
-
-.hero-dot.active {
-  width: 24px;
-  border-radius: 20px;
-  background: #008a9a;
 }
 
 /* ==================================================
@@ -2977,7 +2932,7 @@
 ================================================== */
 
 @media (max-width: 1024px) {
-  .hero-slide-image {
+  .hero-static-image {
     max-width: 420px !important;
     max-height: 330px !important;
   }
@@ -3004,12 +2959,12 @@
 }
 
 @media (max-width: 600px) {
-  .hero-slider-wrapper {
+  .hero-static-image-wrapper {
     width: 100%;
     margin: 0 auto 22px;
   }
 
-  .hero-slide-image {
+  .hero-static-image {
     width: 100% !important;
     max-width: 210px !important;
     max-height: 210px !important;
@@ -3183,14 +3138,18 @@
 }
 
 .leader-product-type-card h4 {
-  min-width: 0 !important;
-  max-width: 100% !important;
+  min-width: 0;
+  margin: 0;
 
-  white-space: normal !important;
-  overflow-wrap: break-word !important;
-  word-break: normal !important;
+  color: #061943;
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.3;
 
-  text-align: left !important;
+  white-space: normal;
+  overflow: visible;
+  word-break: normal;
+  text-align: left;
 }
 
 /* Injectable
@@ -4073,5 +4032,112 @@
   .home-reach-image::after,
   .home-reach-global-map::after {
     width: 5px;
+  }
+}
+
+/* ==================================================
+   HERO STATIC IMAGE — FINAL RESPONSIVE OVERRIDES
+================================================== */
+
+@media (max-width: 1024px) {
+  .hero-static-image {
+    max-width: 500px !important;
+    height: 360px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-static-image-wrapper {
+    width: 100% !important;
+    margin: 24px auto 22px !important;
+  }
+
+  .hero-static-image {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: 250px !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* ==================================================
+   LEADERSHIP PRODUCT TITLE FORMAT FIX
+================================================== */
+
+.leader-product-type-card {
+  display: grid !important;
+  grid-template-columns: 38px minmax(0, 1fr) !important;
+  align-items: center !important;
+  justify-content: center !important;
+  column-gap: 10px !important;
+
+  padding: 16px 14px !important;
+}
+
+.leader-product-type-card img {
+  width: 36px !important;
+  height: 36px !important;
+
+  object-fit: contain !important;
+  justify-self: center !important;
+}
+
+.leader-product-type-card h4 {
+  width: 100% !important;
+  margin: 0 !important;
+
+  color: #061943 !important;
+  font-size: 0.92rem !important;
+  font-weight: 800 !important;
+  line-height: 1.18 !important;
+
+  text-align: left !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+/* Controlled two-line injectable titles */
+
+.leader-stacked-title {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  gap: 1px !important;
+}
+
+.leader-stacked-title span {
+  display: block !important;
+  width: 100% !important;
+}
+
+/* Keep the full-width PFS item centered */
+
+.leader-product-type-card-full {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+}
+
+.leader-product-type-card-full h4 {
+  width: auto !important;
+  text-align: center !important;
+}
+
+@media (max-width: 600px) {
+  .leader-product-type-card {
+    grid-template-columns: 31px minmax(0, 1fr) !important;
+    column-gap: 7px !important;
+    padding: 13px 7px !important;
+  }
+
+  .leader-product-type-card img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .leader-product-type-card h4 {
+    font-size: 0.76rem !important;
   }
 }

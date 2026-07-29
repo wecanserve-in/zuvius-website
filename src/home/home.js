@@ -21,18 +21,6 @@ const phrases = [
   "Understands responsibilities",
 ];
 
-const heroSlides = [
-  {
-    id: 1,
-    image: "/doctor-hero.png",
-    alt: "Doctor hero visual",
-  },
-  {
-    id: 2,
-    image: "/manufacturer-slide.png",
-    alt: "Manufacturer of widest range of anticancer drugs",
-  },
-];
 
 const recentLaunchProducts = [
   {
@@ -115,26 +103,9 @@ const Home = () => {
 
   const [count, setCount] = useState(0);
 
-  const [heroSlideIndex, setHeroSlideIndex] = useState(0);
-
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [typedText, setTypedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-
-
-
-  useEffect(() => {
-    const heroInterval = setInterval(() => {
-      setHeroSlideIndex(
-        (previousIndex) =>
-          (previousIndex + 1) % heroSlides.length
-      );
-    }, 3500);
-
-    return () => clearInterval(heroInterval);
-  }, []);
-
-
   useEffect(() => {
     const finalCount = 250;
     const duration = 2500;
@@ -260,37 +231,12 @@ const Home = () => {
           </button>
         </div>
 
-        <div className="hero-slider-wrapper">
-          <div
-            className="hero-slider-track"
-            style={{
-              transform: `translateX(-${heroSlideIndex * 100}%)`,
-            }}
-          >
-            {heroSlides.map((slide) => (
-              <div className="hero-slide" key={slide.id}>
-                <img
-                  src={slide.image}
-                  alt={slide.alt}
-                  className="hero-slide-image"
-                />
-              </div>
-            ))}
-          </div>
-
-          <div className="hero-slider-dots">
-            {heroSlides.map((slide, index) => (
-              <button
-                key={slide.id}
-                type="button"
-                className={`hero-dot ${
-                  heroSlideIndex === index ? "active" : ""
-                }`}
-                onClick={() => setHeroSlideIndex(index)}
-                aria-label={`Go to hero slide ${index + 1}`}
-              />
-            ))}
-          </div>
+        <div className="hero-static-image-wrapper">
+          <img
+            src="/doctor-hero.png"
+            alt="Mother and child representing hope and care"
+            className="hero-static-image"
+          />
         </div>
       </section>
 
@@ -351,33 +297,41 @@ const Home = () => {
           <div className="leader-product-grid">
             <div className="leader-product-type-card">
               <img src="/tablet.png" alt="Tablet" />
-              <h4>Tablet</h4>
+              <h4>Tablets</h4>
             </div>
 
             <div className="leader-product-type-card">
               <img src="/capsule.png" alt="Capsule" />
-              <h4>Capsule</h4>
+              <h4>Capsules</h4>
             </div>
 
-            <div className="leader-product-type-card">
-              <img
-                src="/injectable-1.png"
-                alt="Injectable Liquid"
-              />
-              <h4>Injectable Liquid</h4>
-            </div>
+<div className="leader-product-type-card">
+  <img
+    src="/injectable-1.png"
+    alt="Injectables Liquid"
+  />
 
-            <div className="leader-product-type-card">
-              <img
-                src="/injectable-2.png"
-                alt="Injectable Lyophilized"
-              />
-              <h4>Injectable Lyophilized</h4>
-            </div>
+  <h4 className="leader-stacked-title">
+    <span>Injectables</span>
+    <span>Liquid</span>
+  </h4>
+</div>
+
+<div className="leader-product-type-card">
+  <img
+    src="/injectable-2.png"
+    alt="Injectables Lyophilized"
+  />
+
+  <h4 className="leader-stacked-title">
+    <span>Injectables</span>
+    <span>Lyophilized</span>
+  </h4>
+</div>
 
             <div className="leader-product-type-card leader-product-type-card-full">
               <img src="/injectable-3.png" alt="PFS" />
-              <h4>PFS (Pre-filled Syringes)</h4>
+              <h4> Injectables PFS (Pre-filled Syringes)</h4>
             </div>
           </div>
         </div>
