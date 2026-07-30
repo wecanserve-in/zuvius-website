@@ -67,6 +67,10 @@ function App() {
             <Route path="/types-of-cancer/:slug" element={<CancerDetail />} />
             <Route path="/csr" element={<CSR/>}/>
             <Route path="/csr/:slug" element={<CSRDetail />} />
+            <Route
+  path="/csr/:slug/:eventSlug"
+  element={<CSRDetail />}
+/>
           </Routes>
         </main>
 
