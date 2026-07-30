@@ -4191,11 +4191,7 @@ typesStages: {
         title: "Organ Transplant",
         text: "People who have had an organ transplant take medicines that suppress the immune system, which can increase lymphoma risk."
       },
-      {
-        icon: "/icons/virus.png",
-        title: "Certain Viruses",
-        text: "HIV, human T-lymphotropic virus type 1 and Epstein-Barr virus may increase the risk of Hodgkin lymphoma."
-      }
+      
     ],
 
     lifestyle: [
@@ -6641,40 +6637,13 @@ typesStages: {
       "Ocular melanoma is treatable, and early detection plays an important role in improving treatment outcomes and survival. Depending on the location and extent of the tumor, treatment is planned to control the cancer while preserving as much vision and eye function as possible.",
   },
 
-  typesStages: {
-    stages: [
-      {
-        label: "I",
-        title: "Stage I",
-        text: "The cancer is small and remains confined to the eye."
-      },
-      {
-        label: "II",
-        title: "Stage II",
-        text: "The tumor is larger but has not spread outside the eye."
-      },
-      {
-        label: "III",
-        title: "Stage III",
-        text: "Cancer has grown into nearby tissues surrounding the eye."
-      },
-      {
-        label: "IV",
-        title: "Stage IV",
-        text: "The cancer has spread to distant parts of the body, most commonly the liver."
-      }
-    ]
-  },
+  
 
   riskFactorsData: {
     uncontrollable: [
+    
       {
-        icon: "/icons/skin.png",
-        title: "Light Skin",
-        text: "People with lighter skin have a higher risk of developing ocular melanoma."
-      },
-      {
-        icon: "/icons/eye.png",
+        icon: "/icons/eyelight.png",
         title: "Light-Colored Eyes",
         text: "Blue, green or gray eyes are associated with an increased risk."
       },
@@ -6683,11 +6652,7 @@ typesStages: {
         title: "Family History of Melanoma",
         text: "Having a biological family member with melanoma may increase the likelihood of developing ocular melanoma."
       },
-      {
-        icon: "/icons/person.png",
-        title: "White Race",
-        text: "Ocular melanoma occurs more frequently in White individuals than in other racial groups."
-      }
+    
     ],
 
     lifestyle: [
@@ -8390,7 +8355,7 @@ typesStages: {
   riskFactorsData: {
     uncontrollable: [
       {
-        icon: "/icons/child.png",
+        icon: "/icons/feet.png",
         title: "Young Age",
         text: "Rhabdomyosarcoma most commonly affects children and teenagers, although adults can also develop the disease."
       },
@@ -8399,14 +8364,16 @@ typesStages: {
         title: "Inherited Genetic Disorders",
         text: "Certain inherited genetic conditions can increase the risk of developing rhabdomyosarcoma."
       },
-      {
-        icon: "/icons/dna.png",
-        title: "Genetic Mutations",
-        text: "Specific gene changes, including fusion genes in some tumor types, are associated with rhabdomyosarcoma."
-      }
+     
     ],
 
-    lifestyle: []
+     lifestyle: [
+      {
+        icon: "/icons/none.png",
+        title: "No Proven Lifestyle Risk Factors",
+        text: "Current evidence has not identified smoking, diet or other lifestyle habits as direct causes of thymoma or thymic carcinoma."
+      }
+    ]
   },
 
   symptoms: {
@@ -11041,17 +11008,13 @@ typesStages: {
         text: "Most people diagnosed with Waldenström macroglobulinemia are 65 years or older."
       },
       {
-        icon: "/icons/family-history.png",
+        icon: "/icons/family.png",
         title: "Family History",
         text: "Having close biological relatives with Waldenström macroglobulinemia or other lymphomas may increase the risk."
       },
+     
       {
-        icon: "/icons/mgus.png",
-        title: "MGUS",
-        text: "Monoclonal gammopathy of undetermined significance (MGUS) can develop into Waldenström macroglobulinemia in some people."
-      },
-      {
-        icon: "/icons/hepatitis.png",
+        icon: "/icons/genetics.png",
         title: "Certain Medical Conditions",
         text: "Conditions such as hepatitis C, HIV/AIDS and Sjögren's syndrome have been associated with a higher risk."
       }
