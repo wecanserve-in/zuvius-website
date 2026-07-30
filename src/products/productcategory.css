@@ -952,3 +952,14 @@
   transform: scale(2.3) !important;
   margin-top: 10px;
 }
+
+/* Recent Launches — only image area background */
+
+.products-section .home-recent-product-card,
+.products-section .home-recent-product-content {
+  background: #ffffff !important;
+}
+
+.products-section .home-recent-product-image {
+  background: #09c3c1 !important;
+}

@@ -2548,7 +2548,7 @@
 ================================================== */
 
 .products-section {
-  background-color: #219b90 !important;
+  background-color: #09c3c1 !important;
 }
 
 .products-section .section-heading {
@@ -4139,5 +4139,95 @@
 
   .leader-product-type-card h4 {
     font-size: 0.76rem !important;
+  }
+}
+
+/* ==================================================
+   FINAL INJECTABLE TEXT VISIBILITY FIX
+================================================== */
+
+.leader-product-type-card:nth-child(3)
+  h4.leader-stacked-title,
+.leader-product-type-card:nth-child(4)
+  h4.leader-stacked-title {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+
+  width: auto !important;
+  min-width: 0 !important;
+
+  margin: 0 !important;
+
+  color: #061943 !important;
+  font-size: 0.92rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+
+  visibility: visible !important;
+  opacity: 1 !important;
+
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+/* Make both JSX spans visible */
+
+.leader-product-type-card:nth-child(3)
+  h4.leader-stacked-title span,
+.leader-product-type-card:nth-child(4)
+  h4.leader-stacked-title span {
+  display: block !important;
+
+  width: 100% !important;
+
+  color: #061943 !important;
+  font-size: 0.92rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Remove old CSS-generated labels */
+
+.leader-product-type-card:nth-child(3)
+  h4.leader-stacked-title::before,
+.leader-product-type-card:nth-child(3)
+  h4.leader-stacked-title::after,
+.leader-product-type-card:nth-child(4)
+  h4.leader-stacked-title::before,
+.leader-product-type-card:nth-child(4)
+  h4.leader-stacked-title::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Prevent text clipping */
+
+.leader-product-type-card:nth-child(3),
+.leader-product-type-card:nth-child(4) {
+  overflow: visible !important;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .leader-product-type-card:nth-child(3)
+    h4.leader-stacked-title,
+  .leader-product-type-card:nth-child(4)
+    h4.leader-stacked-title {
+    align-items: flex-start !important;
+    text-align: left !important;
+    font-size: 0.78rem !important;
+  }
+
+  .leader-product-type-card:nth-child(3)
+    h4.leader-stacked-title span,
+  .leader-product-type-card:nth-child(4)
+    h4.leader-stacked-title span {
+    font-size: 0.78rem !important;
   }
 }

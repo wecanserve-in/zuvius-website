@@ -342,7 +342,7 @@ typesStages: {
       },
       {
         title: "Radiation Therapy",
-        text: "Radiation therapy uses powerful X-rays to target tumors.",
+        text: "Radiation therapy uses High energy X-rays to target tumors.",
         img: "/treatment/anal-radiation.png"
       },
       {
@@ -494,7 +494,7 @@ description:
       },
       {
         title: "Blood Tests",
-        text: "If biopsy results are positive, blood tests may check specific protein levels to help understand how advanced the cancer is.",
+        text: "If biopsy results are positive, blood tests may check specific protein levels (Tumour Marker Proteins) helps understand how advanced the cancer is.",
         img: "/diagnosis/appendix-blood.png"
       }
     ]
@@ -714,7 +714,7 @@ description:
       },
       {
         title: "Temozolomide",
-        text: "Temozolomide is a chemotherapy medicine often used as first-line adjuvant treatment for Grade III and Grade IV astrocytomas.",
+        text: "Temozolomide is a chemotherapy medicine which may be used alone or as first-line adjuvant treatment for Grade III and Grade IV astrocytomas.",
         img: "/treatment/astro-temozolomide.png"
       },
       {
@@ -843,7 +843,7 @@ description:
     options: [
       {
         title: "Excision",
-        text: "A provider may remove the cancerous lesion and a small amount of surrounding healthy skin.",
+        text: "A Healthcare provider may remove the cancerous lesion and a small amount of surrounding healthy skin.",
         img: "/treatment/bcc-exc.png"
       },
       {
@@ -1222,7 +1222,7 @@ description:
     options: [
       {
         title: "Surgery",
-        text: "Surgery is a common bladder cancer treatment. Providers choose the surgical option based on the cancer stage.",
+        text: "Surgery is a common bladder cancer treatment. Healthcare Provider choose the surgical option based on the cancer stage.",
         img: "/treatment/bladder-sur.png"
       },
       {
@@ -1568,7 +1568,7 @@ symptoms: {
       },
       {
         title: "Spinal Tap",
-        text: "A spinal tap may be used when providers suspect the tumor has invaded the tissue layers covering the brain.",
+        text: "A spinal tap may be used when Healthcare provider suspect the tumor has invaded the tissue layers covering the brain.",
         img: "/diagnosis/brain-tap.png"
       },
       {
@@ -1608,7 +1608,7 @@ symptoms: {
     },
     {
       title: "Watchful Waiting",
-      text: "For very small tumors that are not causing symptoms, providers may recommend close monitoring with regular testing.",
+      text: "For very small tumors that are not causing symptoms, healthcare provider may recommend close monitoring with regular testing.",
       img: "/treatment/brain-watchful.png"
     }
   ],
