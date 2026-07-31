@@ -1,4 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { createPortal } from "react-dom";
 import "./careers.css";
 import PageBanner from "../components/PageBanner";
@@ -31,7 +36,6 @@ const celebrationGalleries = [
       "/contact/celb-20.JPG",
       "/contact/celb-21.JPG",
       "/contact/celb-22.JPG",
-
     ],
   },
   {
@@ -49,10 +53,8 @@ const celebrationGalleries = [
       "/contact/diwali-7.JPG",
       "/contact/diwali-8.Jpeg",
       "/contact/diwali-9.JPG",
-      
       "/contact/diwali-11.Jpeg",
       "/contact/diwali-12.Jpeg",
-      
       "/contact/diwali-14.Jpeg",
       "/contact/diwali-15.JPG",
       "/contact/diwali-16.Jpeg",
@@ -96,45 +98,49 @@ const Careers = () => {
     setIsZoomed(false);
   };
 
-  const closeGallery = () => {
+  const closeGallery = useCallback(() => {
     setSelectedGallery(null);
     setSelectedImageIndex(null);
     setIsZoomed(false);
-  };
+  }, []);
 
   const openImage = (index) => {
     setSelectedImageIndex(index);
     setIsZoomed(false);
   };
 
-  const closeImage = () => {
+  const closeImage = useCallback(() => {
     setSelectedImageIndex(null);
     setIsZoomed(false);
-  };
+  }, []);
 
-  const showPreviousImage = () => {
-    if (!selectedGallery || selectedImageIndex === null) return;
+  const showPreviousImage = useCallback(() => {
+    if (!selectedGallery) return;
 
-    setSelectedImageIndex((currentIndex) =>
-      currentIndex === 0
+    setSelectedImageIndex((currentIndex) => {
+      if (currentIndex === null) return null;
+
+      return currentIndex === 0
         ? selectedGallery.photos.length - 1
-        : currentIndex - 1
-    );
+        : currentIndex - 1;
+    });
 
     setIsZoomed(false);
-  };
+  }, [selectedGallery]);
 
-  const showNextImage = () => {
-    if (!selectedGallery || selectedImageIndex === null) return;
+  const showNextImage = useCallback(() => {
+    if (!selectedGallery) return;
 
-    setSelectedImageIndex((currentIndex) =>
-      currentIndex === selectedGallery.photos.length - 1
+    setSelectedImageIndex((currentIndex) => {
+      if (currentIndex === null) return null;
+
+      return currentIndex === selectedGallery.photos.length - 1
         ? 0
-        : currentIndex + 1
-    );
+        : currentIndex + 1;
+    });
 
     setIsZoomed(false);
-  };
+  }, [selectedGallery]);
 
   useEffect(() => {
     if (!selectedGallery) return undefined;
@@ -166,7 +172,14 @@ const Careers = () => {
       document.body.style.overflow = previousOverflow;
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [selectedGallery, selectedImageIndex]);
+  }, [
+    selectedGallery,
+    selectedImageIndex,
+    closeGallery,
+    closeImage,
+    showPreviousImage,
+    showNextImage,
+  ]);
 
   useEffect(() => {
     if (selectedImageIndex === null) return;
@@ -459,7 +472,9 @@ const Careers = () => {
 
                   <span>
                     {selectedGallery.photos.length}{" "}
-                    {selectedGallery.photos.length === 1 ? "Photo" : "Photos"}
+                    {selectedGallery.photos.length === 1
+                      ? "Photo"
+                      : "Photos"}
                   </span>
                 </div>
 
