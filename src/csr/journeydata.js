@@ -87,12 +87,12 @@ export const journeyData = [
       video: "",
 
       poster:
-        "/gallery/youwecan-i2it/i2it-1.webp",
+        "/gallery/youwecan-i2it/i2it-1.JPG",
 
       photos: Array.from(
-        { length: 10 },
+        { length: 18 },
         (_, i) =>
-          `/gallery/youwecan-i2it/i2it-${i + 1}.webp`
+          `/gallery/youwecan-i2it/i2it-${i + 1}.JPG`
       ),
     },
 
@@ -112,14 +112,14 @@ export const journeyData = [
       video: "",
 
       poster:
-        "/gallery/youwecan-kj-somaiya/kj-somaiya-1.webp",
+        "/gallery/youwecan-kj-somaiya/kj-somaiya-1.JPG",
 
       photos: Array.from(
-        { length: 10 },
+        { length: 20 },
         (_, i) =>
           `/gallery/youwecan-kj-somaiya/kj-somaiya-${
             i + 1
-          }.webp`
+          }.JPG`
       ),
     },
 
@@ -140,14 +140,14 @@ export const journeyData = [
       video: "",
 
       poster:
-        "/gallery/youwecan-rai-university/rai-university-1.webp",
+        "/gallery/youwecan-rai-university/rai-university-1.JPG",
 
       photos: Array.from(
-        { length: 10 },
+        { length: 19 },
         (_, i) =>
           `/gallery/youwecan-rai-university/rai-university-${
             i + 1
-          }.webp`
+          }.JPG`
       ),
     },
 
@@ -167,12 +167,12 @@ export const journeyData = [
       video: "",
 
       poster:
-        "/gallery/youwecan-vjti/vjti-1.webp",
+        "/gallery/youwecan-vjti/vjti-1.JPG",
 
       photos: Array.from(
-        { length: 10 },
+        { length: 21 },
         (_, i) =>
-          `/gallery/youwecan-vjti/vjti-${i + 1}.webp`
+          `/gallery/youwecan-vjti/vjti-${i + 1}.JPG`
       ),
     },
   ],
@@ -306,12 +306,12 @@ export const journeyData = [
 
     video: "",
 
-    poster: "/gallery/masiconkolhapur/masicon1.jpg",
+    poster: "/gallery/masiconkolhapur/masicon1.JPG",
 
     photos: Array.from(
       { length: 10 },
       (_, i) =>
-        `/gallery/masiconkolhapur/masicon${i + 1}.jpg`
+        `/gallery/masiconkolhapur/masicon${i + 1}.JPG`
     ),
   },
 ];
