@@ -12,7 +12,7 @@ export const journeyData = [
     "Zuvius Lifesciences, in association with the YouWeCan Foundation, conducted cancer awareness programmes across multiple educational institutions. These campaigns created opportunities for students to understand cancer, recognise warning signs, learn about preventive healthcare and adopt healthier lifestyles. Through interactive sessions and meaningful discussions, the initiative encouraged young people to spread accurate cancer awareness within their families and communities.",
 
   poster:
-    "/gallery/youwecan-bharati-vidyapeeth/bharati-vidyapeeth-1.webp",
+    "/gallery/youwecan-bharati-vidyapeeth/bharati-vidyapeeth-1.jpg",
 
   events: [
     {
