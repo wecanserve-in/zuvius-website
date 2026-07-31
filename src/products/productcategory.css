@@ -904,6 +904,10 @@
   transform: scale(1.4) !important;
 }
 
+.product-category-page .category-product-image img.zuvitere-rtu-img {
+  transform: scale(1.4) !important;
+}
+
 .product-category-page .category-product-image img.zuvistatin-img {
   transform: scale(1.4) !important;
 }
@@ -950,6 +954,21 @@
 
 .product-category-page .category-product-image img.zuvipro-d-img {
   transform: scale(2.3) !important;
+  margin-top: 10px;
+}
+
+.product-category-page .category-product-image img.zuviphos-img {
+  transform: scale(1.5) !important;
+  margin-top: 10px;
+}
+
+.product-category-page .category-product-image img.zetabin-img {
+  transform: scale(1.4) !important;
+  margin-top: 10px;
+}
+
+.product-category-page .category-product-image img.peg-zuvigrast-img {
+  transform: scale(1.4) !important;
   margin-top: 10px;
 }
 

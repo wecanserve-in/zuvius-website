@@ -1474,15 +1474,11 @@ This medicine may increase risk of new cancers, such as:
   subtitle: "Eribulin Mesylate Injection",
   type: "Injection",
 
-  image: "/products/zubilin/zubilin088-1.jpeg",
+  image: "/new_product_page/zubilin-0.88.png",
 
   images: [
-    "/products/zubilin/zubilin088-1.jpeg",
-    "/products/zubilin/zubilin088-2.jpeg",
-    "/products/zubilin/zubilin088-3.jpeg",
-    "/products/zubilin/zubilin2-1.jpeg",
-    "/products/zubilin/zubilin2-2.jpeg",
-    "/products/zubilin/zubilin2-3.jpeg",
+    "/new_product_page/zubilin-0.88.png",
+ 
   ],
 
   strength: "0.88 mg /2 ml",
@@ -6140,10 +6136,10 @@ This medicine is not approved for use by anyone younger than 18 years old.
   type: "Tablet",
   imageClass:"zuviphos-img",
 
-  image: "",
+  image: "/new_product_page/Zuviphos-50.png",
 
   images: [
-   
+   "/new_product_page/Zuviphos-50.png"
   ],
 
   strength: "50 mg",
@@ -7412,8 +7408,9 @@ This product may contain inactive ingredients, which can cause allergic reaction
 
   images: [
     "/new_product_page/zetabin-group.png",
-    "/new_product_page/Zetabin-1.png",
-    "/new_product_page/Zetabin-200.png",
+    "/new_product_page/zetabin-1.png",
+    "/new_product_page/zetabin-1.4.png",
+    "/new_product_page/zetabin-200.png",
     
   ],
 
@@ -11170,13 +11167,13 @@ Because many drugs are excreted in human milk and because of the potential for s
   name: "Peg Zuvigrast",
   subtitle: "Peg Filgrastim Inj",
   type: "Injection",
+  imageClass:"peg-zuvigrast-img",
 
-  image: "/products/peg-zuvigrast/peg-zuvigrast6-1.jpeg",
+  image: "/new_product_page/peg-zuvigrast-6.png",
 
   images: [
-    "/products/peg-zuvigrast/peg-zuvigrast6-1.jpeg",
-    "/products/peg-zuvigrast/peg-zuvigrast6-2.jpeg",
-    "/products/peg-zuvigrast/peg-zuvigrast6-3.jpeg",
+    "/new_product_page/peg-zuvigrast-6.png",
+   
   ],
 
   strength: "6 mg",
@@ -15522,12 +15519,12 @@ Store below 25°C.
   type: "Tablet",
   imageClass: "melphalaz-img",
 
-  image: "/new_product_page/melphalaz-group.png",
+  image: "/new_product_page/melphalaz-tab-group.png",
 
   images: [
-    "/new_product_page/melphalaz-group.png",
-    "/new_product_page/Melphalaz-2.png",
-    "/new_product_page/Melphalaz-5.png",
+    "/new_product_page/melphalaz-tab-group.png",
+    "/new_product_page/melphalaz-tab-2.png",
+    "/new_product_page/melphalaz-tab-5.png",
   ],
 
   strength: "2 mg / 5 mg",
