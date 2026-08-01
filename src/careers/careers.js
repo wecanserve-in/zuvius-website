@@ -61,7 +61,7 @@ const celebrationGalleries = [
       "/contact/diwali-17.JPG",
       "/contact/diwali-18.JPG",
       "/contact/diwali-19.JPG",
-      "/contact/diwali-20.jPG",
+      "/contact/diwali-20.JPG",
       "/contact/diwali-21.JPG",
       "/contact/diwali-22.JPG",
       "/contact/diwali-23.JPG",
