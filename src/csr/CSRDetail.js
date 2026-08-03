@@ -548,10 +548,10 @@ const CSRDetail = () => {
                   </button>
                 )}
 
-                <p className="csr-zoom-escape-hint">
+                {/* <p className="csr-zoom-escape-hint">
                   Click outside, press Escape, or use ← →
                   arrow keys to navigate
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
