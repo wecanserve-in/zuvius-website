@@ -292,26 +292,5 @@ export const journeyData = [
     ),
   },
 
-  {
-    slug: "masicon-2025-kolhapur",
-    title: "MASICON 2025 – Kolhapur",
-    cardSubtitle: "Advancing Surgical Excellence",
-    category: "Conference Participation",
-
-    description:
-      "Zuvius Lifesciences proudly participated in MASICON 2025, the 47th Annual Conference of the Maharashtra State Chapter of the Association of Surgeons of India, held in Kolhapur. The conference brought together leading surgeons, healthcare professionals and industry experts to exchange knowledge and discuss advancements in surgical care.",
-
-    fullDescription:
-      "MASICON 2025, the 47th Annual Conference of the Maharashtra State Chapter of the Association of Surgeons of India, served as a prestigious platform for surgeons, healthcare professionals and industry leaders from across the state. Zuvius Lifesciences was honoured to participate in this scientific gathering, where our team engaged with clinicians, surgeons and healthcare experts while showcasing our commitment to advancing oncology and specialty healthcare. The conference provided valuable opportunities to exchange ideas, understand evolving clinical needs and strengthen professional relationships with the medical community. Our participation reflects Zuvius Lifesciences' continued dedication to supporting medical education, promoting scientific collaboration and delivering innovative, high-quality healthcare solutions that contribute to better patient outcomes.",
-
-    video: "",
-
-    poster: "/gallery/masiconkolhapur/masicon1.JPG",
-
-    photos: Array.from(
-      { length: 10 },
-      (_, i) =>
-        `/gallery/masiconkolhapur/masicon${i + 1}.JPG`
-    ),
-  },
+  
 ];

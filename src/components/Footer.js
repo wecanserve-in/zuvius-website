@@ -11,14 +11,7 @@ import {
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* Made in India badge */}
-      <div className="made-in-india-badge">
-        <img
-          src="/made-in-india.png"
-          alt="Made in India"
-        />
-      </div>
-
+      
       <div className="footer-content">
         {/* Logo and address */}
         <div className="footer-col address-col">
@@ -141,17 +134,8 @@ const Footer = () => {
               </a>
             </li>
 
-            <li>
-              <a href="/blogs">
-                Blogs
-              </a>
-            </li>
 
-            <li>
-              <a href="/testimonials">
-                Testimonials
-              </a>
-            </li>
+           
           </ul>
 
           <div className="social-icons">
@@ -195,6 +179,15 @@ const Footer = () => {
               <FaYoutube />
             </a>
           </div>
+
+          {/* Made in India badge */}
+      <div className="made-in-india-badge">
+        <img
+          src="/made-in-india.png"
+          alt="Made in India"
+        />
+      </div>
+
         </div>
       </div>
 

@@ -4231,3 +4231,16 @@
     font-size: 0.78rem !important;
   }
 }
+
+/* ===== CENTER HERO & STATS ON LARGE SCREENS ===== */
+@media (min-width: 1200px) {
+  .hero-section,
+  .stats-section {
+    width: min(1480px, calc(100% - 80px)) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-sizing: border-box;
+  }
+}

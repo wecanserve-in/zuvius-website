@@ -460,3 +460,79 @@
     width: max(330px, calc(50vw - 295px));
   }
 }
+
+
+/* ==================================================
+   MADE IN INDIA LOGO BELOW SOCIAL ICONS
+================================================== */
+
+.media-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+}
+
+.made-in-india-badge {
+  position: static !important;
+  width: 100px !important;
+  height: auto !important;
+  margin: 30px auto 0 !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transform: scale(2);
+}
+
+.made-in-india-badge img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  transform: none !important;
+}
+
+@media (max-width: 768px) {
+  .made-in-india-badge {
+    width: 85px !important;
+    margin-top: 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 60px); /* Equal space on both sides */
+    height: 90px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+  }
+
+  .footer-logo {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px !important;
+    min-height: 70px !important;
+    margin: 0 !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 150px !important;
+    margin: 0 auto;
+  }
+
+  .footer-address {
+    margin-top: 72px !important;
+  }
+}

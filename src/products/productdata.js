@@ -1267,7 +1267,7 @@ Pregnancy testing and effective contraception are recommended during and for at 
   categoryName: "OncoAce",
   slug: "zuvidox",
   name: "Zuvidox",
-  subtitle: "Doxorubicin Inj",
+  subtitle: "Doxorubicin Injection",
   type: "Injection",
 
   image: "/new_product_page/zuvidox-group.png",
@@ -2219,7 +2219,7 @@ Clinical studies have demonstrated effectiveness in platinum-sensitive small cel
   categoryName: "OncoAce",
   slug: "azath",
   name: "Azath",
-  subtitle: "Azathioprine Tablet",
+  subtitle: "Azathioprine Tablets",
   type: "Tablet",
   imageClass:"azath-img",
 
@@ -2822,7 +2822,7 @@ It is used in patients whose disease could not be treated with other medications
   categoryName: "OncoAce",
   slug: "zomacta",
   name: "Zomacta",
-  subtitle: "Eltrombopag Olamine Tablet",
+  subtitle: "Eltrombopag Olamine Tablets",
   type: "Tablet",
   imageClass:"zomacta-img",
 
@@ -2948,7 +2948,7 @@ Eltrombopag is also used in adults to treat severe aplastic anemia after other t
   categoryName: "OncoAce",
   slug: "zalcocib",
   name: "Zalcocib",
-  subtitle: "Palbociclib Capsule",
+  subtitle: "Palbociclib Capsules",
   type: "Capsule",
   imageClass:"zalcocib-img",
 
@@ -3066,7 +3066,7 @@ Blocking these proteins helps slow down cancer cell growth.
   categoryName: "OncoAce",
   slug: "pomaloz",
   name: "Pomaloz",
-  subtitle: "Pomalidomide Capsule",
+  subtitle: "Pomalidomide Capsules",
   type: "Capsule",
   imageClass:"pomaloz-img",
 
@@ -3217,7 +3217,7 @@ Males:
   categoryName: "OncoAce",
   slug: "anastroz",
   name: "Anastroz",
-  subtitle: "Anastrozole Tab",
+  subtitle: "Anastrozole Tablets",
   type: "Tablet",
   imageClass:"anastroz-img",
 
@@ -3311,7 +3311,7 @@ Anastrozole may cause other side effects.
   categoryName: "OncoAce",
   slug: "bicalutaz",
   name: "Bicalutaz",
-  subtitle: "Bicalutamide Tab",
+  subtitle: "Bicalutamide Tablets",
   type: "Tablet",
   imageClass:"bicalutaz-img",
 
@@ -3432,7 +3432,7 @@ Before having surgery, tell your doctor or dentist about all the products you us
   categoryName: "OncoAce",
   slug: "capetaz",
   name: "Capetaz",
-  subtitle: "Capecitabine Tab",
+  subtitle: "Capecitabine Tablets",
   type: "Tablet",
   imageClass:"capetaz-img",
 
@@ -3683,7 +3683,7 @@ Since current safety and efficacy data are based upon administration of Capecita
   categoryName: "OncoAce",
   slug: "enzumide",
   name: "Enzumide",
-  subtitle: "Enzalutamide Cap",
+  subtitle: "Enzalutamide Capsules",
   type: "Capsule",
   imageClass:"enzu-img",
 
@@ -3839,7 +3839,7 @@ Consult your pharmacist or physician.
   categoryName: "OncoAce",
   slug: "erlonon",
   name: "Erlonon",
-  subtitle: "Erlotinib Tab",
+  subtitle: "Erlotinib Tablets",
   type: "Tablet",
 
   image: "/new_product_page/Erlonon-150.png",
@@ -3958,7 +3958,7 @@ Patients presenting with acute or worsening eye symptoms such as pain, redness, 
   categoryName: "OncoAce",
   slug: "exemestaz",
   name: "Exemestaz",
-  subtitle: "Exemestane Tab",
+  subtitle: "Exemestane Tablets",
   type: "Tablet",
   imageClass:"exem-img",
 
@@ -4098,7 +4098,7 @@ Should not be coadministered with systemic estrogen-containing agents, as these 
   categoryName: "OncoAce",
   slug: "lenvitib",
   name: "Lenvitib",
-  subtitle: "Lenvatinib Cap",
+  subtitle: "Lenvatinib Capsules",
   type: "Capsule",
   imageClass:"lenvitib-img",
 
@@ -4239,7 +4239,7 @@ Withhold and resume at a reduced dose upon recovery or permanently discontinue L
   categoryName: "OncoAce",
   slug: "melphalaz",
   name: "Melphalaz",
-  subtitle: "Melphalan Inj",
+  subtitle: "Melphalan Injection",
   type: "Injection",
   imageClass:"melphalaz-img",
 
@@ -4440,7 +4440,7 @@ When nalidixic acid and IV melphalan are given simultaneously, the incidence of 
   categoryName: "OncoAce",
   slug: "mercaptaz",
   name: "Mercaptaz",
-  subtitle: "Mercaptopurine Tab",
+  subtitle: "Mercaptopurine Tablets",
   type: "Tablet",
   imageClass:"mercaptaz-img",
 
@@ -4523,7 +4523,7 @@ Women who are pregnant, planning to be or breast-feeding should not handle Merca
   categoryName: "OncoAce",
   slug: "myeloma",
   name: "Myeloma",
-  subtitle: "Lenalidomide Cap",
+  subtitle: "Lenalidomide Capsules",
   type: "Capsule",
   imageClass:"myeloma-img",
 
@@ -4739,7 +4739,7 @@ This medicine may increase your risk of having blood clots.
   categoryName: "OncoAce",
   slug: "pptinib",
   name: "PPTINIB",
-  subtitle: "Dasatinib Tab",
+  subtitle: "Dasatinib Tablets",
   type: "Tablet",
   imageClass:"pptinib-img",
 
@@ -4948,7 +4948,7 @@ The relevance of these findings in humans is not known.
   categoryName: "OncoAce",
   slug: "temoloz",
   name: "Temoloz",
-  subtitle: "Temozolamide Cap",
+  subtitle: "Temozolamide Capsules",
   type: "Capsule",
   imageClass:"temoloz-img",
 
@@ -5157,7 +5157,7 @@ Men being treated with TMZ should be advised not to father a child for at least 
   categoryName: "OncoAce",
   slug: "zabiteron",
   name: "Zabiteron",
-  subtitle: "Abiraterone Acetate Tab",
+  subtitle: "Abiraterone Acetate Tablets",
   type: "Tablet",
   imageClass:"zabiteron-img",
 
@@ -5372,7 +5372,7 @@ Other reported clinical experience has not identified differences in responses b
   categoryName: "OncoAce",
   slug: "zimitib",
   name: "Zimitib",
-  subtitle: "Imatinib Cap",
+  subtitle: "Imatinib Capsules",
   type: "Capsule",
   imageClass:"zimitib-img",
 
@@ -5626,7 +5626,7 @@ No clinical studies were conducted with Zimitib in patients with decreased renal
   categoryName: "OncoAce",
   slug: "zixib",
   name: "Zixib",
-  subtitle: "Axitinib Tab",
+  subtitle: "Axitinib Tablets",
   type: "Tablet",
   imageClass:"zixib-img",
 
@@ -5871,7 +5871,7 @@ For patients who develop moderate-to-severe proteinuria, reduce the dose or temp
   categoryName: "OncoAce",
   slug: "zupanib",
   name: "Zupanib",
-  subtitle: "Pazopanib Tab",
+  subtitle: "Pazopanib Tablets",
   type: "Tablet",
   imageClass:"zupanib-img",
 
@@ -6010,7 +6010,7 @@ Regular monitoring of liver function, blood pressure, thyroid function, and card
   categoryName: "OncoAce",
   slug: "zutam",
   name: "Zutam",
-  subtitle: "Tamoxifen Tab",
+  subtitle: "Tamoxifen Tablets",
   type: "Tablet",
   imageClass:"zutam-img",
 
@@ -6132,7 +6132,7 @@ This medicine is not approved for use by anyone younger than 18 years old.
   categoryName: "OncoAce",
   slug: "zuviphos",
   name: "Zuviphos",
-  subtitle: "Cyclophosphamide",
+  subtitle: "Cyclophosphamide Tablets",
   type: "Tablet",
   imageClass:"zuviphos-img",
 
@@ -6329,7 +6329,7 @@ Advise patients to report promptly any new or worsening respiratory symptoms.
   categoryName: "OncoAce",
   slug: "zuvisor",
   name: "Zuvisor",
-  subtitle: "Sorafenib Tab",
+  subtitle: "Sorafenib Tablets",
   type: "Tablet",
   imageClass:"zuvisor-img",
 
@@ -6570,7 +6570,7 @@ Monitoring of renal function should be considered.
   categoryName: "OncoAce",
   slug: "zuvitop",
   name: "Zuvitop",
-  subtitle: "Etoposide Cap",
+  subtitle: "Etoposide Capsules",
   type: "Capsule",
   imageClass:"zuvitop-img",
 
@@ -6711,7 +6711,7 @@ Irreversible testicular atrophy was present in rats treated with etoposide intra
   categoryName: "OncoAce",
   slug: "zuvitrex-tab",
   name: "Zuvitrex Tab",
-  subtitle: "Methotrexate Tab",
+  subtitle: "Methotrexate Tablets",
   type: "Tablet",
 
   image: "/new_product_page/Zuvitrex-2.5.png",
@@ -6914,7 +6914,7 @@ Oral antibiotics such as tetracycline, chloramphenicol and non-absorbable broad-
   categoryName: "OncoAce",
   slug: "dactinoz",
   name: "Dactinoz",
-  subtitle: "Dactinomycin Inj",
+  subtitle: "Dactinomycin Injection",
   type: "Injection",
   imageClass:"dactinoz-img",
 
@@ -7184,7 +7184,7 @@ If Dactinomycin accidentally seeps out of the vein into which it is injected, it
   categoryName: "OncoAce",
   slug: "zaxol",
   name: "Zaxol",
-  subtitle: "Paclitaxel Inj",
+  subtitle: "Paclitaxel Injection",
   type: "Injection",
   imageClass:"zaxol-img",
 
@@ -7331,7 +7331,7 @@ Paclitaxel should be given with caution to those patients who are on Ketoconazol
   categoryName: "OncoAce",
   slug: "zedaunor",
   name: "Zedaunor",
-  subtitle: "Daunorubicin Inj",
+  subtitle: "Daunorubicin Injection",
   type: "Injection",
 
   image: "/new_product_page/Zedaunor-20.png",
@@ -7400,7 +7400,7 @@ This product may contain inactive ingredients, which can cause allergic reaction
   categoryName: "OncoAce",
   slug: "zetabin",
   name: "Zetabin",
-  subtitle: "Gemcitabine Inj",
+  subtitle: "Gemcitabine Injection",
   type: "Injection",
   imageClass:"zetabin-img",
 
@@ -7635,7 +7635,7 @@ In case of severe toxicity, discontinue therapy immediately and institute suppor
   categoryName: "OncoAce",
   slug: "zepirubin",
   name: "Zepirubin",
-  subtitle: "Epirubicin Inj",
+  subtitle: "Epirubicin Injection",
   type: "Injection",
   imageClass:"zepirubin-img",
 
@@ -7851,7 +7851,7 @@ This medicine may turn your urine red for 1 or 2 days after your treatment.
   categoryName: "OncoAce",
   slug: "zinotecan",
   name: "Zinotecan",
-  subtitle: "Irinotecan Inj",
+  subtitle: "Irinotecan Injection",
   type: "Injection",
 
   image: "/new_product_page/zinotecan-group.png",
@@ -8096,7 +8096,7 @@ Testing can detect:
   categoryName: "OncoAce",
   slug: "zoldric",
   name: "Zoldric",
-  subtitle: "Zoledronic Acid",
+  subtitle: "Zoledronic Acid Injection",
   type: "Injection",
 
   image: "/new_product_page/Zoldric-4.png",
@@ -8263,7 +8263,7 @@ If this drug is used during pregnancy, or if the patient becomes pregnant while 
   categoryName: "OncoAce",
   slug: "zolon",
   name: "Zolon",
-  subtitle: "Oxaliplatin Inj",
+  subtitle: "Oxaliplatin Injection",
   type: "Injection",
   imageClass:"zolon-img",
 
@@ -8517,7 +8517,7 @@ This contains Sucralose, not recommended for children.
   categoryName: "OncoAce",
   slug: "afatinz",
   name: "Afatinz",
-  subtitle: "Afatinib Tab",
+  subtitle: "Afatinib Tablets",
   type: "Tablet",
   imageClass:"afatinz-img",
 
@@ -8682,7 +8682,7 @@ Advise females and males of reproductive potential of the potential for reduced 
   categoryName: "OncoAce",
   slug: "cazonib",
   name: "Cazonib",
-  subtitle: "Cabozantinib Tab",
+  subtitle: "Cabozantinib Tablets",
   type: "Tablet",
   imageClass:"cazo-img",
 
@@ -8802,7 +8802,7 @@ Withhold Cabozantinib until improvement to Grade 1, then resume Cabozantinib at 
   categoryName: "OncoAce",
   slug: "zucarb",
   name: "Zucarb",
-  subtitle: "Carboplatin Inj",
+  subtitle: "Carboplatin Injection",
   type: "Injection",
   imageClass:"zucarb-img",
 
@@ -9004,7 +9004,7 @@ Be careful when using a regular toothbrush, dental floss, or toothpick.
   categoryName: "OncoAce",
   slug: "zutinib",
   name: "Zutinib",
-  subtitle: "Sunitinib Cap",
+  subtitle: "Sunitinib Capsules",
   type: "Capsule",
   imageClass:"zutinib-img",
 
@@ -9833,7 +9833,7 @@ Apart from sugar, many protein powders contain other ingredients that may not be
   categoryName: "OncoAce",
   slug: "antifol",
   name: "Antifol",
-  subtitle: "Pemetrexed Inj",
+  subtitle: "Pemetrexed Injection",
   type: "Injection",
   imageClass:"antifol-img",
 
@@ -10070,7 +10070,7 @@ There was no effect of elevated AST, ALT, or total bilirubin on the pharmacokine
   categoryName: "OncoAce",
   slug: "aprepet-z-combi-pack",
   name: "Aprepet-Z Combi Pack",
-  subtitle: "Aprepitant Combi Pack Cap",
+  subtitle: "Aprepitant Combi Pack Capsules",
   type: "Capsule",
   imageClass:"aprepet-z-combipack-img",
 
@@ -10193,7 +10193,7 @@ Be sure to mention any of the following:
   categoryName: "OncoAce",
   slug: "aspraginaz",
   name: "Aspraginaz",
-  subtitle: "L-Asparaginase Inj",
+  subtitle: "L-Asparaginase Injection",
   type: "Injection",
   imageClass:"aspraginaz-img",
 
@@ -10302,7 +10302,7 @@ Monitor serum glucose.
   categoryName: "OncoAce",
   slug: "bleoz",
   name: "Bleoz",
-  subtitle: "Bleomycin Sulphate",
+  subtitle: "Bleomycin Sulphate Injection",
   type: "Injection",
   imageClass:"bleoz-img",
 
@@ -10614,7 +10614,7 @@ Tell your doctor or pharmacist if you have any medical history, especially:
   categoryName: "OncoAce",
   slug: "dazine",
   name: "Dazine",
-  subtitle: "Dacarbazine Inj",
+  subtitle: "Dacarbazine Injection",
   type: "Injection",
   imageClass:"dazine-img",
 
@@ -10792,7 +10792,7 @@ Dacarbazine may make your skin sensitive to sunlight.
   categoryName: "OncoAce",
   slug: "fukayna",
   name: "Fukayna",
-  subtitle: "Fulvestrant Inj",
+  subtitle: "Fulvestrant Injection",
   type: "Injection",
   imageClass:"fukayna-img",
 
@@ -10867,7 +10867,7 @@ Advise women not to breastfeed during treatment with Fukayna and for one year af
   categoryName: "OncoAce",
   slug: "graniz",
   name: "Graniz",
-  subtitle: "Granisetron Hydrochloride",
+  subtitle: "Granisetron Hydrochloride Injection",
   type: "Injection",
 
   image: "/new_product_page/Graniz-3.png",
@@ -11054,7 +11054,7 @@ Breastfeeding should, therefore, be discontinued during therapy.
   categoryName: "OncoAce",
   slug: "peg-aspraginaz",
   name: "PEG - Aspraginaz",
-  subtitle: "Peg L-Asparaginase Inj",
+  subtitle: "Peg L-Asparaginase Injection",
   type: "Injection",
   imageClass:"peg-img",
 
@@ -11165,7 +11165,7 @@ Because many drugs are excreted in human milk and because of the potential for s
   categoryName: "OncoAce",
   slug: "peg-zuvigrast",
   name: "Peg Zuvigrast",
-  subtitle: "Peg Filgrastim Inj",
+  subtitle: "Peg Filgrastim Injection",
   type: "Injection",
   imageClass:"peg-zuvigrast-img",
 
@@ -11303,7 +11303,7 @@ Pegfilgrastim dose adjustment in patients with renal dysfunction is not necessar
   categoryName: "OncoAce",
   slug: "ridoxia",
   name: "Ridoxia",
-  subtitle: "Megestrol Acetate Tab",
+  subtitle: "Megestrol Acetate Tablets",
   type: "Tablet",
   imageClass:"ridoxia-img",
 
@@ -11443,7 +11443,7 @@ Breast malignancies in which estrogen and/or progesterone receptors are positive
   categoryName: "OncoAce",
   slug: "z-blastin",
   name: "Z-Blastin",
-  subtitle: "Vinblastine Inj",
+  subtitle: "Vinblastine Injection",
   type: "Injection",
   imageClass:"zblastin-img",
 
@@ -11698,7 +11698,7 @@ Because many drugs are excreted in human milk and because of the potential for s
   categoryName: "OncoAce",
   slug: "z-cristin",
   name: "Z-Cristin",
-  subtitle: "Vincristine Inj",
+  subtitle: "Vincristine Injection",
   type: "Injection",
 
   image: "/new_product_page/Z-Cristin-1.png",
@@ -11872,7 +11872,7 @@ Local injection of hyaluronidase and the application of moderate heat to the are
   categoryName: "OncoAce",
   slug: "zaxotein",
   name: "Zaxotein",
-  subtitle: "Albumin Bound Paclitaxel",
+  subtitle: "Albumin Bound Paclitaxel Injection",
   type: "Injection",
   imageClass:"zaxotien-img",
 
@@ -12089,7 +12089,7 @@ In order to monitor the occurrence of bone marrow suppression, primarily neutrop
   categoryName: "OncoAce",
   slug: "zefinib",
   name: "Zefinib",
-  subtitle: "Gefitinib Tab",
+  subtitle: "Gefitinib Tablets",
   type: "Tablet",
   imageClass:"zefinib-img",
 
@@ -12263,7 +12263,7 @@ Patients with severe renal impairment should be treated with caution when given 
   categoryName: "OncoAce",
   slug: "zemecon",
   name: "Zemecon",
-  subtitle: "Fosaprepitant Inj",
+  subtitle: "Fosaprepitant Injection",
   type: "Injection",
   imageClass:"zemecon-img",
 
@@ -12487,7 +12487,7 @@ after receiving this medicine.
   categoryName: "OncoAce",
   slug: "zitomycin",
   name: "Zitomycin",
-  subtitle: "Mitomycin Inj",
+  subtitle: "Mitomycin Injection",
   type: "Injection",
 
   image: "/new_product_page/zitomycin-group.png",
@@ -12646,7 +12646,7 @@ Safety and effectiveness in pediatric patients have not been established.
   categoryName: "OncoAce",
   slug: "zoplide",
   name: "Zoplide",
-  subtitle: "Leuprolide Acetate Inj",
+  subtitle: "Leuprolide Acetate Injection",
   type: "Injection",
   imageClass:"zoplide-img",
 
@@ -12856,7 +12856,7 @@ Report any new or worsening symptoms to your doctor, nurse, or pharmacist.
   categoryName: "OncoAce",
   slug: "zovorin",
   name: "Zovorin",
-  subtitle: "Leucovorin Calcium Inj",
+  subtitle: "Leucovorin Calcium Injection",
   type: "Injection",
   imageClass:"zovorin-img",
 
@@ -13106,7 +13106,7 @@ Treatment should be discontinued when there is clear evidence of tumour progress
   categoryName: "OncoAce",
   slug: "zucarfil",
   name: "Zucarfil",
-  subtitle: "Carfilzomib Inj",
+  subtitle: "Carfilzomib Injection",
   type: "Injection",
   imageClass:"zucarfil-img",
 
@@ -13311,7 +13311,7 @@ This medicine may cause infusion-related reactions, which can be life-threatenin
   categoryName: "OncoAce",
   slug: "zuviplat",
   name: "Zuviplat",
-  subtitle: "Cisplatin Inj",
+  subtitle: "Cisplatin Injection",
   type: "Injection",
   imageClass:"zuviplat-img",
 
@@ -13475,7 +13475,7 @@ Tell your doctor right away if you have:
   categoryName: "OncoAce",
   slug: "zuviplexa",
   name: "Zuviplexa",
-  subtitle: "Plerixafor Inj",
+  subtitle: "Plerixafor Injection",
   type: "Injection",
   imageClass:"zuviplexa-img",
 
@@ -13581,7 +13581,7 @@ Because of the potential serious adverse reactions in the breastfed child, advis
   categoryName: "OncoAce",
   slug: "zydrox-cap",
   name: "Zydrox Cap",
-  subtitle: "Hydroxyurea Capsule",
+  subtitle: "Hydroxyurea Capsules",
   type: "Capsule",
   imageClass: "zydrox-cap-img",
 
@@ -13688,7 +13688,7 @@ Patients should use sun protection and should be monitored for secondary maligna
   categoryName: "OncoAce",
   slug: "zuvitroz",
   name: "Zuvitroz",
-  subtitle: "Letrozole Tablet",
+  subtitle: "Letrozole Tablets",
   type: "Tablet",
   imageClass: "zuvitroz-img",
 
@@ -13775,7 +13775,7 @@ Some patients may require lipid-lowering treatment.
   categoryName: "OncoAce",
   slug: "zuvitere",
   name: "Zuvitere",
-  subtitle: "Docetaxel Injection",
+  subtitle: "Docetaxel Injections",
   type: "Injection",
   imageClass: "zuvitere-img",
 
@@ -13881,7 +13881,7 @@ Monitor blood counts, hypersensitivity reactions, fluid retention, skin reaction
   categoryName: "OncoAce",
   slug: "zuvistatin",
   name: "Zuvistatin",
-  subtitle: "Octreotide Acetate",
+  subtitle: "Octreotide Acetate Injection",
   type: "Injection",
   imageClass: "zuvistatin-img",
 
