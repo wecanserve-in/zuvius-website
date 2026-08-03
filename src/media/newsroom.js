@@ -2,10 +2,10 @@ import React from "react";
 import "./newsroom.css";
 import { newsItems } from "./mediaData";
 import PageBanner from "../components/PageBanner";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Newsroom = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div className="media-page">
