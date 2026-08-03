@@ -40,13 +40,13 @@ const Newsroom = () => {
                     "Read the complete article to learn more about this news and latest updates."}
                 </p>
 
-                <button
+                {/* <button
                   type="button"
                   className="read-article-btn"
                   onClick={() => navigate(`/newsroom/${item.id}`)}
                 >
                   Read Article <span>→</span>
-                </button>
+                </button> */}
               </div>
             </div>
           ))}
