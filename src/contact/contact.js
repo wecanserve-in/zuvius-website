@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./contact.css";
 import PageBanner from "../components/PageBanner";
 
@@ -10,29 +10,7 @@ import {
 } from "react-icons/fa";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-
-    setFormData((previousData) => ({
-      ...previousData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Submitted:", formData);
-  };
-
-  return (
+return (
     <div className="cr-wrapper-main">
       <PageBanner
         image="/contact/contactbanner.png"
@@ -61,9 +39,15 @@ const Contact = () => {
           </div>
 
           <form
-            onSubmit={handleSubmit}
+            action="https://formsubmit.co/info@zuviuslifesciences.in"
+            method="POST"
             className="cr-interactive-message-form"
           >
+            <input type="hidden" name="_subject" value="New Contact Form Submission - Zuvius Lifesciences" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://zuviuslifesciences.in/" />
+            <input type="text" name="_honey" style={{ display: "none" }} />
             <div className="cr-form-input-row">
               <div className="cr-form-field">
                 <label htmlFor="contact-name">
@@ -73,10 +57,8 @@ const Contact = () => {
                 <input
                   id="contact-name"
                   type="text"
-                  name="name"
+                  name="Name"
                   placeholder="Enter your full name"
-                  value={formData.name}
-                  onChange={handleChange}
                   autoComplete="name"
                   required
                 />
@@ -90,10 +72,8 @@ const Contact = () => {
                 <input
                   id="contact-email"
                   type="email"
-                  name="email"
+                  name="Email"
                   placeholder="Enter your email address"
-                  value={formData.email}
-                  onChange={handleChange}
                   autoComplete="email"
                   required
                 />
@@ -109,10 +89,8 @@ const Contact = () => {
                 <input
                   id="contact-phone"
                   type="tel"
-                  name="phone"
+                  name="Phone"
                   placeholder="Enter your phone number"
-                  value={formData.phone}
-                  onChange={handleChange}
                   autoComplete="tel"
                 />
               </div>
@@ -125,10 +103,8 @@ const Contact = () => {
                 <input
                   id="contact-subject"
                   type="text"
-                  name="subject"
+                  name="Subject"
                   placeholder="How can we help?"
-                  value={formData.subject}
-                  onChange={handleChange}
                 />
               </div>
             </div>
@@ -140,11 +116,9 @@ const Contact = () => {
 
               <textarea
                 id="contact-message"
-                name="message"
+                name="Message"
                 placeholder="Write your message here..."
                 rows="5"
-                value={formData.message}
-                onChange={handleChange}
                 required
               />
             </div>

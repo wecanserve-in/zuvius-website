@@ -287,32 +287,6 @@ const ProductDetail = () => {
     setShowEnquiryModal(false);
   };
 
-  const handleEnquirySubmit = (event) => {
-    event.preventDefault();
-
-    const subject = `Product Enquiry - ${enquiryForm.productName}`;
-
-    const emailBody = `
-Product Enquiry
-
-Name: ${enquiryForm.name}
-Company Name: ${enquiryForm.companyName}
-Phone Number: ${enquiryForm.phone}
-Email ID: ${enquiryForm.email}
-Product Name: ${enquiryForm.productName}
-Strength: ${enquiryForm.strength}
-Quantity: ${enquiryForm.quantity}
-    `.trim();
-
-    const mailToLink = `mailto:info@zuviuslifesciences.in?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(emailBody)}`;
-
-    window.location.href = mailToLink;
-
-    setShowEnquiryModal(false);
-  };
-
   return (
     <div className="product-detail-page">
       {/* PRODUCT HERO */}
@@ -567,8 +541,14 @@ Quantity: ${enquiryForm.quantity}
 
             <form
               className="product-enquiry-form"
-              onSubmit={handleEnquirySubmit}
+              action="https://formsubmit.co/info@zuviuslifesciences.in"
+              method="POST"
             >
+              <input type="hidden" name="_subject" value={`Product Enquiry - ${product.name}`} />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value={window.location.href} />
+              <input type="text" name="_honey" style={{display:"none"}} />
               <div className="product-enquiry-row">
                 <div className="product-enquiry-field">
                   <label htmlFor="enquiry-name">
@@ -578,7 +558,7 @@ Quantity: ${enquiryForm.quantity}
                   <input
                     id="enquiry-name"
                     type="text"
-                    name="name"
+                    name="Name"
                     value={enquiryForm.name}
                     onChange={handleEnquiryChange}
                     placeholder="Enter your full name"
@@ -595,7 +575,7 @@ Quantity: ${enquiryForm.quantity}
                   <input
                     id="enquiry-company"
                     type="text"
-                    name="companyName"
+                    name="Company Name"
                     value={enquiryForm.companyName}
                     onChange={handleEnquiryChange}
                     placeholder="Enter company name"
@@ -614,7 +594,7 @@ Quantity: ${enquiryForm.quantity}
                   <input
                     id="enquiry-phone"
                     type="tel"
-                    name="phone"
+                    name="Phone Number"
                     value={enquiryForm.phone}
                     onChange={handleEnquiryChange}
                     placeholder="Enter phone number"
@@ -632,7 +612,7 @@ Quantity: ${enquiryForm.quantity}
                   <input
                     id="enquiry-email"
                     type="email"
-                    name="email"
+                    name="Email"
                     value={enquiryForm.email}
                     onChange={handleEnquiryChange}
                     placeholder="Enter email address"
@@ -651,7 +631,7 @@ Quantity: ${enquiryForm.quantity}
                   <input
                     id="enquiry-product"
                     type="text"
-                    name="productName"
+                    name="Product Name"
                     value={enquiryForm.productName}
                     readOnly
                   />
@@ -665,7 +645,7 @@ Quantity: ${enquiryForm.quantity}
                   {strengthOptions.length > 1 ? (
                     <select
                       id="enquiry-strength"
-                      name="strength"
+                      name="Strength"
                       value={enquiryForm.strength}
                       onChange={handleEnquiryChange}
                       required
@@ -685,7 +665,7 @@ Quantity: ${enquiryForm.quantity}
                     <input
                       id="enquiry-strength"
                       type="text"
-                      name="strength"
+                      name="Strength"
                       value={
                         enquiryForm.strength ||
                         product.strength ||
@@ -705,7 +685,7 @@ Quantity: ${enquiryForm.quantity}
                 <input
                   id="enquiry-quantity"
                   type="number"
-                  name="quantity"
+                  name="Quantity"
                   value={enquiryForm.quantity}
                   onChange={handleEnquiryChange}
                   placeholder="Enter required quantity"
