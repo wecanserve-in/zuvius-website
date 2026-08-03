@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 import {
   FaFacebookF,
@@ -15,12 +16,12 @@ const Footer = () => {
       <div className="footer-content">
         {/* Logo and address */}
         <div className="footer-col address-col">
-          <div className="footer-logo">
-            <img
-              src="/zuvius-logo.jpeg"
-              alt="Zuvius Lifesciences"
-            />
-          </div>
+        <Link to="/" className="footer-logo">
+  <img
+    src="/zuvius-logo.jpeg"
+    alt="Zuvius Lifesciences"
+  />
+</Link>
 
           <div className="footer-address">
             <p>

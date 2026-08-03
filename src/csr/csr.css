@@ -11,7 +11,7 @@
 }
 
 .csr-wrapper-main section:not(.page-banner) {
-  padding: 35px 6%;
+  padding: 0px 6%;
   max-width: 1440px;
   margin: 0 auto 60px auto;
   box-sizing: border-box;
