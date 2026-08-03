@@ -124,9 +124,17 @@ categoryLabel: "Exhibition",
 
   cardImage: "/gallery/masiconkolhapur/masicon1.JPG",
 
-  images: Array.from(
-    { length: 10 },
-    (_, i) => `/gallery/masiconkolhapur/masicon${i + 1}.JPG`
-  ),
+  images: [
+  "/gallery/masiconkolhapur/masicon1.JPG",
+  "/gallery/masiconkolhapur/masicon2.JPG",
+  "/gallery/masiconkolhapur/masicon3.JPG",
+  "/gallery/masiconkolhapur/masicon4.JPG",
+  "/gallery/masiconkolhapur/masicon5.jpg",
+  "/gallery/masiconkolhapur/masicon6.jpg",
+  "/gallery/masiconkolhapur/masicon7.jpg",
+  "/gallery/masiconkolhapur/masicon8.jpg",
+  "/gallery/masiconkolhapur/masicon9.jpg",
+  "/gallery/masiconkolhapur/masicon10.jpg",
+]
 },
 ];
