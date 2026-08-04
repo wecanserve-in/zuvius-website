@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./productdetail.css";
 import { products } from "./productdata";
+import SuccessMessage from "../components/SuccessMessage";
 
 const getStrengthOptions = (strengthValue) => {
   if (!strengthValue) return [];
@@ -28,6 +29,8 @@ const ProductDetail = () => {
   );
 
   const [showEnquiryModal, setShowEnquiryModal] = useState(false);
+
+  const [submitted, setSubmitted] = useState(false);
 
   const [enquiryForm, setEnquiryForm] = useState({
     name: "",
@@ -57,8 +60,12 @@ const ProductDetail = () => {
     }));
   }, [product]);
 
+  
+
   useEffect(() => {
     if (!showEnquiryModal) return;
+
+    
 
     const handleEscapeKey = (event) => {
       if (event.key === "Escape") {
@@ -264,6 +271,57 @@ const ProductDetail = () => {
       [name]: value,
     }));
   };
+
+  const handleSubmit = async (event) => {
+  event.preventDefault();
+
+  const formData = new FormData();
+
+  formData.append("name", enquiryForm.name);
+  formData.append("companyName", enquiryForm.companyName);
+  formData.append("phone", enquiryForm.phone);
+  formData.append("email", enquiryForm.email);
+  formData.append("productName", enquiryForm.productName);
+  formData.append("strength", enquiryForm.strength);
+  formData.append("quantity", enquiryForm.quantity);
+
+  formData.append("_subject", `Product Enquiry - ${product.name}`);
+  formData.append("_template", "table");
+  formData.append("_captcha", "false");
+
+  try {
+    const response = await fetch(
+      "https://formsubmit.co/ajax/info@zuviuslifesciences.in",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    if (response.ok) {
+      setSubmitted(true);
+
+      setEnquiryForm({
+        name: "",
+        companyName: "",
+        phone: "",
+        email: "",
+        productName: product.name,
+        strength: strengthOptions[0] || "",
+        quantity: "",
+      });
+
+      setTimeout(() => {
+        setSubmitted(false);
+        setShowEnquiryModal(false);
+      }, 2500);
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    alert("Unable to submit the enquiry. Please try again.");
+  }
+};
 
   const openEnquiryModal = () => {
     const availableStrengths = getStrengthOptions(
@@ -539,15 +597,16 @@ const ProductDetail = () => {
               </p>
             </div>
 
+            {submitted ? (
+  <SuccessMessage />
+) : (
+
             <form
-              className="product-enquiry-form"
-              action="https://formsubmit.co/info@zuviuslifesciences.in"
-              method="POST"
-            >
-              <input type="hidden" name="_subject" value={`Product Enquiry - ${product.name}`} />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value={window.location.href} />
+  className="product-enquiry-form"
+  onSubmit={handleSubmit}
+>
+             
+              
               <input type="text" name="_honey" style={{display:"none"}} />
               <div className="product-enquiry-row">
                 <div className="product-enquiry-field">
@@ -702,6 +761,8 @@ const ProductDetail = () => {
                 Submit Enquiry
               </button>
             </form>
+            )}
+
           </div>
         </div>
       )}

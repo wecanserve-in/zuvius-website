@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import PageBanner from "../components/PageBanner";
+import SuccessMessage from "../components/SuccessMessage";
 
 import {
   FaFacebookF,
@@ -10,6 +11,79 @@ import {
 } from "react-icons/fa";
 
 const Contact = () => {
+
+  const [submitted, setSubmitted] = useState(false);
+const [loading, setLoading] = useState(false);
+
+const [form, setForm] = useState({
+  name: "",
+  email: "",
+  phone: "",
+  subject: "",
+  message: "",
+});
+
+const handleChange = (e) => {
+  setForm({
+    ...form,
+    [e.target.name]: e.target.value,
+  });
+};
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  setLoading(true);
+
+  const formData = new FormData();
+
+  formData.append("name", form.name);
+  formData.append("email", form.email);
+  formData.append("phone", form.phone);
+  formData.append("subject", form.subject);
+  formData.append("message", form.message);
+
+  formData.append(
+    "_subject",
+    "New Contact Form Submission - Zuvius Lifesciences"
+  );
+
+  formData.append("_template", "table");
+  formData.append("_captcha", "false");
+
+  try {
+    const response = await fetch(
+      "https://formsubmit.co/ajax/info@zuviuslifesciences.in",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    if (response.ok) {
+      setSubmitted(true);
+
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
+
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 2500);
+    } else {
+      alert("Something went wrong.");
+    }
+  } catch {
+  alert("Unable to send message.");
+} finally {
+  setLoading(false);
+}
+};
+
 return (
     <div className="cr-wrapper-main">
       <PageBanner
@@ -38,15 +112,15 @@ return (
             </h2>
           </div>
 
+
+{submitted ? (
+  <SuccessMessage />
+) : (
           <form
-            action="https://formsubmit.co/info@zuviuslifesciences.in"
-            method="POST"
-            className="cr-interactive-message-form"
-          >
-            <input type="hidden" name="_subject" value="New Contact Form Submission - Zuvius Lifesciences" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="https://zuviuslifesciences.in/" />
+  onSubmit={handleSubmit}
+  className="cr-interactive-message-form"
+>
+          
             <input type="text" name="_honey" style={{ display: "none" }} />
             <div className="cr-form-input-row">
               <div className="cr-form-field">
@@ -55,13 +129,15 @@ return (
                 </label>
 
                 <input
-                  id="contact-name"
-                  type="text"
-                  name="Name"
-                  placeholder="Enter your full name"
-                  autoComplete="name"
-                  required
-                />
+  id="contact-name"
+  type="text"
+  name="name"
+  value={form.name}
+  onChange={handleChange}
+  placeholder="Enter your full name"
+  autoComplete="name"
+  required
+/>
               </div>
 
               <div className="cr-form-field">
@@ -70,13 +146,15 @@ return (
                 </label>
 
                 <input
-                  id="contact-email"
-                  type="email"
-                  name="Email"
-                  placeholder="Enter your email address"
-                  autoComplete="email"
-                  required
-                />
+  id="contact-email"
+  type="email"
+  name="email"
+  value={form.email}
+  onChange={handleChange}
+  placeholder="Enter your email address"
+  autoComplete="email"
+  required
+/>
               </div>
             </div>
 
@@ -87,12 +165,14 @@ return (
                 </label>
 
                 <input
-                  id="contact-phone"
-                  type="tel"
-                  name="Phone"
-                  placeholder="Enter your phone number"
-                  autoComplete="tel"
-                />
+  id="contact-phone"
+  type="tel"
+  name="phone"
+  value={form.phone}
+  onChange={handleChange}
+  placeholder="Enter your phone number"
+  autoComplete="tel"
+/>
               </div>
 
               <div className="cr-form-field">
@@ -101,11 +181,13 @@ return (
                 </label>
 
                 <input
-                  id="contact-subject"
-                  type="text"
-                  name="Subject"
-                  placeholder="How can we help?"
-                />
+  id="contact-subject"
+  type="text"
+  name="subject"
+  value={form.subject}
+  onChange={handleChange}
+  placeholder="How can we help?"
+/>
               </div>
             </div>
 
@@ -114,13 +196,15 @@ return (
                 Your Message
               </label>
 
-              <textarea
-                id="contact-message"
-                name="Message"
-                placeholder="Write your message here..."
-                rows="5"
-                required
-              />
+             <textarea
+  id="contact-message"
+  name="message"
+  value={form.message}
+  onChange={handleChange}
+  placeholder="Write your message here..."
+  rows="5"
+  required
+/>
             </div>
 
             <div className="cr-form-footer">
@@ -136,20 +220,19 @@ return (
               </p>
 
               <button
-                type="submit"
-                className="cr-action-btn-blue"
-              >
-                Send Message
+  type="submit"
+  className="cr-action-btn-blue"
+  disabled={loading}
+>
+  {loading ? "Sending..." : "Send Message"}
 
-                <span
-                  className="cr-btn-arrow"
-                  aria-hidden="true"
-                >
-                  →
-                </span>
-              </button>
+  <span className="cr-btn-arrow">
+    →
+  </span>
+</button>
             </div>
           </form>
+          )}
         </div>
       </section>
 

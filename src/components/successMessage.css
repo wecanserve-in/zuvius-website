@@ -1,0 +1,20 @@
+.success-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 20px;
+  background: #e8f8ee;
+  border: 1px solid #28a745;
+  border-radius: 8px;
+  color: #1d6b35;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 20px;
+  font-weight: bold;
+}
