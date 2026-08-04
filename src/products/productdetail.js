@@ -558,7 +558,7 @@ const ProductDetail = () => {
                   <input
                     id="enquiry-name"
                     type="text"
-                    name="Name"
+                    name="name"
                     value={enquiryForm.name}
                     onChange={handleEnquiryChange}
                     placeholder="Enter your full name"
@@ -575,7 +575,7 @@ const ProductDetail = () => {
                   <input
                     id="enquiry-company"
                     type="text"
-                    name="Company Name"
+                    name="companyName"
                     value={enquiryForm.companyName}
                     onChange={handleEnquiryChange}
                     placeholder="Enter company name"
@@ -594,7 +594,7 @@ const ProductDetail = () => {
                   <input
                     id="enquiry-phone"
                     type="tel"
-                    name="Phone Number"
+                    name="phone"
                     value={enquiryForm.phone}
                     onChange={handleEnquiryChange}
                     placeholder="Enter phone number"
@@ -612,7 +612,7 @@ const ProductDetail = () => {
                   <input
                     id="enquiry-email"
                     type="email"
-                    name="Email"
+                    name="email"
                     value={enquiryForm.email}
                     onChange={handleEnquiryChange}
                     placeholder="Enter email address"
@@ -631,7 +631,7 @@ const ProductDetail = () => {
                   <input
                     id="enquiry-product"
                     type="text"
-                    name="Product Name"
+                    name="productName"
                     value={enquiryForm.productName}
                     readOnly
                   />
@@ -645,7 +645,7 @@ const ProductDetail = () => {
                   {strengthOptions.length > 1 ? (
                     <select
                       id="enquiry-strength"
-                      name="Strength"
+                      name="strength"
                       value={enquiryForm.strength}
                       onChange={handleEnquiryChange}
                       required
@@ -685,7 +685,7 @@ const ProductDetail = () => {
                 <input
                   id="enquiry-quantity"
                   type="number"
-                  name="Quantity"
+                  name="quantity"
                   value={enquiryForm.quantity}
                   onChange={handleEnquiryChange}
                   placeholder="Enter required quantity"
