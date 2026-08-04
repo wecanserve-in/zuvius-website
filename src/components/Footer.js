@@ -48,47 +48,35 @@ const Footer = () => {
 
           <ul>
             <li>
-              <a href="/aboutus">About Us</a>
+              <Link to="/aboutus">About Us</Link>
             </li>
 
             <li>
-              <a href="/products">Products</a>
+              <Link to="/products">Products</Link>
             </li>
 
             <li>
-              <a href="/whatiscancer">
-                What is Cancer
-              </a>
+              <Link to="/whatiscancer">What is Cancer</Link>
             </li>
 
             <li>
-              <a href="/types-of-cancer">
-                Types of Cancer
-              </a>
+              <Link to="/types-of-cancer">Types of Cancer</Link>
             </li>
 
             <li>
-              <a href="/contact">
-                Partner With Us
-              </a>
+              <Link to="/contact">Partner With Us</Link>
             </li>
 
             <li>
-              <a href="/awards-recognition">
-                Awards &amp; Recognition
-              </a>
+              <Link to="/awards-recognition">Awards & Recognition</Link>
             </li>
 
             <li>
-              <a href="/newsroom">
-                Newsroom
-              </a>
+              <Link to="/newsroom">Newsroom</Link>
             </li>
 
             <li>
-              <a href="/contact">
-                Contact Us
-              </a>
+              <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -99,15 +87,11 @@ const Footer = () => {
 
           <ul>
             <li>
-              <a href="/products">
-                OncoAce
-              </a>
+              <Link to="/products">OncoAce</Link>
             </li>
 
             <li>
-              <a href="/products">
-                Nutrazeutica
-              </a>
+              <Link to="/products">Nutrazeutica</Link>
             </li>
           </ul>
         </div>
@@ -118,21 +102,15 @@ const Footer = () => {
 
           <ul>
             <li>
-              <a href="/newsroom">
-                Newsroom
-              </a>
+             <Link to="/newsroom">Newsroom</Link>
             </li>
 
             <li>
-              <a href="/press-release">
-                Press Release
-              </a>
+              <Link to="/press-release">Press Release</Link>
             </li>
 
             <li>
-              <a href="/events">
-                Events, Conferences &amp; Participation
-              </a>
+              <Link to="/events">Events, Conferences & Participation</Link>
             </li>
 
 

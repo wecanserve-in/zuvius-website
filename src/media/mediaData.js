@@ -531,7 +531,7 @@ Overall, the interview presents Nimish G. Thakkar's journey as an example of ent
   title:
     "From Vision to Global Impact : Transforming Cancer Care",
 
-  image: "/newsroom/press-5.png",
+  image: "/newsroom/pressrelease-9.png",
   heroImage: "/newsroom/hero-9.png",
 
   excerpt:

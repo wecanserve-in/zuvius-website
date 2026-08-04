@@ -351,10 +351,50 @@ const ProductDetail = () => {
 
       <section className="product-detail-hero">
         <div className="product-detail-gallery">
-          <div className="product-detail-main-image">
-            <img src={mainImage} alt={product.name} />
-          </div>
-        </div>
+  <div className="product-detail-main-image">
+    <img src={mainImage} alt={product.name} />
+  </div>
+
+  {/* Mobile thumbnails */}
+  <div
+    className="product-thumbnail-slider-wrap mobile-thumbnails"
+  >
+    <button
+      type="button"
+      className="thumb-slider-arrow"
+      onClick={() => scrollThumbnails("left")}
+    >
+      ‹
+    </button>
+
+    <div
+      className="product-detail-thumbnails-bottom"
+      ref={thumbnailRef}
+    >
+      {productImages.map((img, index) => (
+        <button
+          key={`${img}-${index}`}
+          type="button"
+          onClick={() => setMainImage(img)}
+          className={mainImage === img ? "active" : ""}
+        >
+          <img
+            src={img}
+            alt={`${product.name} ${index + 1}`}
+          />
+        </button>
+      ))}
+    </div>
+
+    <button
+      type="button"
+      className="thumb-slider-arrow"
+      onClick={() => scrollThumbnails("right")}
+    >
+      ›
+    </button>
+  </div>
+</div>
 
         <div className="product-detail-info">
           <div className="product-title-wrap">
@@ -454,7 +494,7 @@ const ProductDetail = () => {
 
           {/* THUMBNAILS */}
 
-          <div className="product-thumbnail-slider-wrap">
+          <div className="product-thumbnail-slider-wrap desktop-thumbnails">
             <button
               type="button"
               className="thumb-slider-arrow"

@@ -205,7 +205,7 @@
   border: none;
   border-radius: 7px;
 
-  background: #219b90;
+  background: #09c3c1;
   color: #ffffff;
 
   font-family: inherit;
@@ -1278,5 +1278,39 @@ button.related-product-card,
   .product-enquiry-field input,
   .product-enquiry-field select {
     height: 48px;
+  }
+}
+
+/* Default */
+.mobile-thumbnails {
+  display: none;
+}
+
+.desktop-thumbnails {
+  display: block;
+}
+
+/* Mobile only */
+@media (max-width: 768px) {
+  .mobile-thumbnails {
+    display: flex;
+    margin-top: 16px;
+  }
+
+  .desktop-thumbnails {
+    display: none;
+  }
+}
+
+/* Keep desktop thumbnail navigation unchanged */
+@media (min-width: 769px) {
+  .desktop-thumbnails {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .desktop-thumbnails .thumb-slider-arrow {
+    flex-shrink: 0;
   }
 }

@@ -173,7 +173,7 @@ const AboutUs = () => {
             </span>
             
             <h2>Welcome to Zuvius Lifesciences</h2>
-<           div className="small-line" />
+          <div className="small-line" />
             
 
             <p>
@@ -192,6 +192,55 @@ const AboutUs = () => {
               {showMore ? "Read Less" : "Read More"}
               <span>→</span>
             </button>
+
+            {/* Mobile Read More Content */}
+{showMore && (
+  <div className="about-full-content mobile-only">
+    <p>
+      Dedicated towards redefining quality of life, our
+      products span the breadth of cancer care. Enriched with
+      a portfolio of leading science-based offerings in
+      oncology care and nutraceuticals, we have delivered
+      values in the lives of people for more than 20 years.
+    </p>
+
+    <p>
+      Zuvius is an integrated research-based organization,
+      renowned for its quality and commitment. Built with a
+      vision of making affordable cancer care accessible
+      across the globe, the company has curated a range of
+      200+ high-quality anti-cancer medicines that reach out
+      to patients.
+    </p>
+
+    <p>
+      Backed by some of the finest talents of the
+      pharmaceutical industry, Zuvius stands strong in
+      building a legacy of delivering innovative solutions
+      and therapies that would change the perception of
+      cancer.
+    </p>
+
+    <p>
+      The word ‘Zuvius’ inspires a ring of positivity, joy
+      and optimism. Zuvius Lifesciences was incepted with the
+      vision of spreading good health across the globe and
+      thereby emerging out as one of the most respected
+      pharmaceutical brands in the industry, specializing in
+      super specialty medicines.
+    </p>
+
+    <p>
+      Zuvius Lifesciences is much more than a company, more
+      than simply a manufacturer of super speciality
+      products. We are an eclectic and an ever-expanding mix
+      of people with perspectives and skills to collectively
+      work under the shared responsibility towards our
+      consumers, partners, colleagues and most importantly,
+      towards each other.
+    </p>
+  </div>
+)}
           </div>
 
           <div className="youtube-box">
@@ -208,7 +257,7 @@ const AboutUs = () => {
       </section>
 
       {showMore && (
-        <section className="about-more-section">
+        <section className="about-more-section desktop-only">
           <div className="about-full-content">
             <p>
               Dedicated towards redefining quality of life, our
