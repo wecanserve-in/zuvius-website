@@ -1,46 +1,46 @@
 export const newsItems = [
-  {
-    id: 1,
-    title: "Zuvius Launches Zuvitop In 100mg Inj And 50mg Caps",
-    excerpt:
-      "Zuvius launches Zuvitop 100mg injection and 50mg capsule in the treatment of cancer...",
-    image: "/newsroom/newsroom-zuvitop.png",
-  },
-  {
-    id: 2,
-    title: "Zuvius Launches Cytraz In 100mg, 500mg And 1gm",
-    excerpt:
-      "Zuvius launches Cytraz 100mg, 500mg, and 1mg used in the treatment of cancer...",
-    image: "/products1/CYTRAZ-1000 1.png",
-  },
-  {
-    id: 3,
-    title: "Zuvius Launches Zinotecan In 100mg, And 40 Mg",
-    excerpt:
-      "Zuvius launches Zinotecan in 100mg and 40mg used in the treatment of cancer...",
-    image: "/newsroom/newsroom-zinotecan.png",
-  },
-  {
-    id: 4,
-    title: "Zuvius Launched Medico-Legal Contents For Doctors And Clinicians At Their Website",
-    excerpt:
-      "Zuvius launches Medico-Legal Contents For Doctors",
-    image: "/newsroom/newsroom-medico.png",
-  },
-  {
-    id: 5,
-    title: "Zuvius Launches Dazine In 100mg And 500mg",
-    excerpt:
-      "Zuvius launches Dazine in 100mg and 500mg used in the treatment of cancer...",
-    image: "/newsroom/newsroom-dazine.png",
-  },
-  {
-    id: 6,
-    title: "Zuvius Launches Zyrolbine",
-    excerpt:
-      "Zuvius launches Zyrolbine used in the treatment of cancer...",
-    image: "/newsroom/newsroom-zyrolbine.png",
-  },
+  // {
+  //   id: 1,
+  //   title: "Zuvius Launches Zuvitop In 100mg Inj And 50mg Caps",
+  //   excerpt:
+  //     "Zuvius launches Zuvitop 100mg injection and 50mg capsule in the treatment of cancer...",
+  //   image: "/newsroom/newsroom-zuvitop.png",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Zuvius Launches Cytraz In 100mg, 500mg And 1gm",
+  //   excerpt:
+  //     "Zuvius launches Cytraz 100mg, 500mg, and 1mg used in the treatment of cancer...",
+  //   image: "/products1/CYTRAZ-1000 1.png",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Zuvius Launches Zinotecan In 100mg, And 40 Mg",
+  //   excerpt:
+  //     "Zuvius launches Zinotecan in 100mg and 40mg used in the treatment of cancer...",
+  //   image: "/newsroom/newsroom-zinotecan.png",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Zuvius Launched Medico-Legal Contents For Doctors And Clinicians At Their Website",
+  //   excerpt:
+  //     "Zuvius launches Medico-Legal Contents For Doctors",
+  //   image: "/newsroom/newsroom-medico.png",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Zuvius Launches Dazine In 100mg And 500mg",
+  //   excerpt:
+  //     "Zuvius launches Dazine in 100mg and 500mg used in the treatment of cancer...",
+  //   image: "/newsroom/newsroom-dazine.png",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Zuvius Launches Zyrolbine",
+  //   excerpt:
+  //     "Zuvius launches Zyrolbine used in the treatment of cancer...",
+  //   image: "/newsroom/newsroom-zyrolbine.png",
+  // },
 
 ];
 

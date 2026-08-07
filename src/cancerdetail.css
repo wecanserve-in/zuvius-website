@@ -1381,3 +1381,52 @@
 
   transform: rotate(45deg) translate(-1px, -1px);
 }
+
+/* ===== Desktop Tabs ===== */
+@media (min-width: 769px) {
+
+  .tabs-nav-bar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff;
+    margin:0 auto;
+  }
+
+  .tab-btn{
+    background:#fff;
+    color:#061943;
+    border:none;
+    padding:18px 34px;
+    font-weight:700;
+    position:relative;
+    transition:.25s;
+  }
+
+  /* Vertical divider */
+  .tab-btn:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:22%;
+    width:3px;
+    height:56%;
+    background:#008a9a;
+    opacity:1;
+  }
+
+  /* Active tab */
+  .tab-btn.active{
+    background:#008a9a;
+    color:#fff;
+  }
+
+  /* Hover */
+  .tab-btn:hover{
+    color:#008a9a;
+  }
+
+  .tab-btn.active:hover{
+    color:#fff;
+  }
+}

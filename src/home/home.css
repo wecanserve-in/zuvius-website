@@ -4244,3 +4244,33 @@
     box-sizing: border-box;
   }
 }
+
+/* ===== INDIA MAP TOP CROP FIX ===== */
+
+.home-reach-image-india {
+  align-items: flex-start !important;
+  padding-top: 0px;
+}
+
+.home-reach-image-india .home-reach-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+}
+
+/* ===== India Map Fix ===== */
+
+.home-reach-image-india {
+  overflow: visible !important;
+  align-items: center !important;
+}
+
+.home-reach-image-india .home-reach-video {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 540px !important;
+  object-fit: contain !important;
+  object-position: center top !important;
+  display: block !important;
+}

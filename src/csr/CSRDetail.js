@@ -172,8 +172,8 @@ const CSRDetail = () => {
             </span>
 
             <h2 className="csr-section-main-title">
-              Explore Pink Street Events
-            </h2>
+  Explore {campaign.title} Events
+</h2>
 
             <div className="csr-main-title-line" />
           </div>
