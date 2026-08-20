@@ -1005,3 +1005,24 @@
     width:100%;
   }
 }
+.cr-interactive-message-form select {
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 17px;
+  background: #ffffff;
+  border: 2px solid #e4edf4;
+  border-radius: 14px;
+  color: #061943;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.cr-interactive-message-form select:focus {
+  border-color: #008a9a;
+  box-shadow: 0 0 0 5px rgba(0, 138, 154, 0.12);
+}

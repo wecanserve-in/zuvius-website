@@ -10,81 +10,113 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-const Contact = () => {
-
-  const [submitted, setSubmitted] = useState(false);
-const [loading, setLoading] = useState(false);
-
-const [form, setForm] = useState({
-  name: "",
-  email: "",
-  phone: "",
-  subject: "",
-  message: "",
-});
-
-const handleChange = (e) => {
-  setForm({
-    ...form,
-    [e.target.name]: e.target.value,
-  });
+// Configuration for category-wise primary and CC emails
+const CONTACT_CONFIG = {
+  vendor: {
+    primary: "production@zuviuslifesciences.in",
+    cc: "nimish@zuviuslifesciences.in,info@zuviuslifesciences.in",
+  },
+  export: {
+    primary: "bhavesh.patel@zuviuslifesciences.in",
+    cc: "nimish@zuviuslifesciences.in,swapnil@zuviuslifesciences.in,alka@zuviuslifesciences.in,info@zuviuslifesciences.in",
+  },
+  domestic: {
+    primary: "operations@zuviuslifesciences.in",
+    cc: "alka@zuviuslifesciences.in,swapnil@zuviuslifesciences.in,nimish@zuviuslifesciences.in,info@zuviuslifesciences.in",
+  },
+  other: {
+    primary: "info@zuviuslifesciences.in",
+    cc: "",
+  },
 };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
+const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  setLoading(true);
+  const [form, setForm] = useState({
+    enquiryType: "domestic",
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
 
-  const formData = new FormData();
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-  formData.append("name", form.name);
-  formData.append("email", form.email);
-  formData.append("phone", form.phone);
-  formData.append("subject", form.subject);
-  formData.append("message", form.message);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  formData.append(
-    "_subject",
-    "New Contact Form Submission - Zuvius Lifesciences"
-  );
+    setLoading(true);
 
-  formData.append("_template", "table");
-  formData.append("_captcha", "false");
+    const config =
+      CONTACT_CONFIG[form.enquiryType] || CONTACT_CONFIG.domestic;
 
-  try {
-    const response = await fetch(
-      "https://formsubmit.co/ajax/info@zuviuslifesciences.in",
-      {
-        method: "POST",
-        body: formData,
-      }
+    const formData = new FormData();
+
+    formData.append("enquiryType", form.enquiryType.toUpperCase());
+    formData.append("name", form.name);
+    formData.append("company", form.company);
+    formData.append("email", form.email);
+    formData.append("phone", form.phone);
+    formData.append("subject", form.subject);
+    formData.append("message", form.message);
+
+    if (config.cc) {
+      formData.append("_cc", config.cc);
+    }
+
+    formData.append(
+      "_subject",
+      `[${form.enquiryType.toUpperCase()}] New Contact Form Submission - Zuvius Lifesciences`
     );
 
-    if (response.ok) {
-      setSubmitted(true);
+    formData.append("_template", "table");
+    formData.append("_captcha", "false");
 
-      setForm({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-      });
+    try {
+      const response = await fetch(
+        `https://formsubmit.co/ajax/${config.primary}`,
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 2500);
-    } else {
-      alert("Something went wrong.");
+      if (response.ok) {
+        setSubmitted(true);
+
+        setForm({
+          enquiryType: "domestic",
+          name: "",
+          company: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+
+        setTimeout(() => {
+          setSubmitted(false);
+        }, 2500);
+      } else {
+        alert("Something went wrong.");
+      }
+    } catch {
+      alert("Unable to send message.");
+    } finally {
+      setLoading(false);
     }
-  } catch {
-  alert("Unable to send message.");
-} finally {
-  setLoading(false);
-}
-};
+  };
 
-return (
+  return (
     <div className="cr-wrapper-main">
       <PageBanner
         image="/contact/contactbanner.png"
@@ -99,150 +131,158 @@ return (
       />
 
       {/* CONTACT FORM */}
-
       <section className="cr-form-split-block">
         <div className="cr-form-card">
           <div className="cr-form-heading-zone">
-            <p className="cr-form-heading-label">
-              CONTACT US
-            </p>
+            <p className="cr-form-heading-label">CONTACT US</p>
 
             <h2 className="cr-section-main-title">
               Fill the form below and our team will get back to you.
             </h2>
           </div>
 
+          {submitted ? (
+            <SuccessMessage />
+          ) : (
+            <form
+              onSubmit={handleSubmit}
+              className="cr-interactive-message-form"
+            >
+              <input type="text" name="_honey" style={{ display: "none" }} />
 
-{submitted ? (
-  <SuccessMessage />
-) : (
-          <form
-  onSubmit={handleSubmit}
-  className="cr-interactive-message-form"
->
-          
-            <input type="text" name="_honey" style={{ display: "none" }} />
-            <div className="cr-form-input-row">
+              {/* Enquiry Type Dropdown */}
               <div className="cr-form-field">
-                <label htmlFor="contact-name">
-                  Your Name
-                </label>
-
-                <input
-  id="contact-name"
-  type="text"
-  name="name"
-  value={form.name}
-  onChange={handleChange}
-  placeholder="Enter your full name"
-  autoComplete="name"
-  required
-/>
-              </div>
-
-              <div className="cr-form-field">
-                <label htmlFor="contact-email">
-                  Email Address
-                </label>
-
-                <input
-  id="contact-email"
-  type="email"
-  name="email"
-  value={form.email}
-  onChange={handleChange}
-  placeholder="Enter your email address"
-  autoComplete="email"
-  required
-/>
-              </div>
-            </div>
-
-            <div className="cr-form-input-row">
-              <div className="cr-form-field">
-                <label htmlFor="contact-phone">
-                  Phone Number
-                </label>
-
-                <input
-  id="contact-phone"
-  type="tel"
-  name="phone"
-  value={form.phone}
-  onChange={handleChange}
-  placeholder="Enter your phone number"
-  autoComplete="tel"
-/>
-              </div>
-
-              <div className="cr-form-field">
-                <label htmlFor="contact-subject">
-                  Subject
-                </label>
-
-                <input
-  id="contact-subject"
-  type="text"
-  name="subject"
-  value={form.subject}
-  onChange={handleChange}
-  placeholder="How can we help?"
-/>
-              </div>
-            </div>
-
-            <div className="cr-form-field cr-message-field">
-              <label htmlFor="contact-message">
-                Your Message
-              </label>
-
-             <textarea
-  id="contact-message"
-  name="message"
-  value={form.message}
-  onChange={handleChange}
-  placeholder="Write your message here..."
-  rows="5"
-  required
-/>
-            </div>
-
-            <div className="cr-form-footer">
-              <p className="cr-form-privacy-note">
-                <span
-                  className="cr-privacy-icon"
-                  aria-hidden="true"
+                <label htmlFor="contact-enquiry-type">Enquiry Type *</label>
+                <select
+                  id="contact-enquiry-type"
+                  name="enquiryType"
+                  value={form.enquiryType}
+                  onChange={handleChange}
+                  required
                 >
-                  ✓
-                </span>
+                  <option value="domestic">Domestic</option>
+                  <option value="export">Export</option>
+                  <option value="vendor">Vendor</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
 
-                Your information is secure and will remain private.
-              </p>
+              {/* Row 1: Name & Company */}
+              <div className="cr-form-input-row">
+                <div className="cr-form-field">
+                  <label htmlFor="contact-name">Your Name *</label>
+                  <input
+                    id="contact-name"
+                    type="text"
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    placeholder="Enter your full name"
+                    autoComplete="name"
+                    required
+                  />
+                </div>
 
-              <button
-  type="submit"
-  className="cr-action-btn-blue"
-  disabled={loading}
->
-  {loading ? "Sending..." : "Send Message"}
+                <div className="cr-form-field">
+                  <label htmlFor="contact-company">Company Name *</label>
+                  <input
+                    id="contact-company"
+                    type="text"
+                    name="company"
+                    value={form.company}
+                    onChange={handleChange}
+                    placeholder="Enter your company name"
+                    autoComplete="organization"
+                    required
+                  />
+                </div>
+              </div>
 
-  <span className="cr-btn-arrow">
-    →
-  </span>
-</button>
-            </div>
-          </form>
+              {/* Row 2: Email & Phone */}
+              <div className="cr-form-input-row">
+                <div className="cr-form-field">
+                  <label htmlFor="contact-email">Email Address *</label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    placeholder="Enter your email address"
+                    autoComplete="email"
+                    required
+                  />
+                </div>
+
+                <div className="cr-form-field">
+                  <label htmlFor="contact-phone">Phone Number *</label>
+                  <input
+                    id="contact-phone"
+                    type="tel"
+                    name="phone"
+                    value={form.phone}
+                    onChange={handleChange}
+                    placeholder="Enter your phone number"
+                    autoComplete="tel"
+                    required
+                  />
+                </div>
+              </div>
+
+              {/* Row 3: Subject */}
+              <div className="cr-form-field">
+                <label htmlFor="contact-subject">Subject *</label>
+                <input
+                  id="contact-subject"
+                  type="text"
+                  name="subject"
+                  value={form.subject}
+                  onChange={handleChange}
+                  placeholder="How can we help?"
+                  required
+                />
+              </div>
+
+              {/* Row 4: Message */}
+              <div className="cr-form-field cr-message-field">
+                <label htmlFor="contact-message">Your Message *</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder="Write your message here..."
+                  rows="5"
+                  required
+                />
+              </div>
+
+              <div className="cr-form-footer">
+                <p className="cr-form-privacy-note">
+                  <span className="cr-privacy-icon" aria-hidden="true">
+                    ✓
+                  </span>
+                  Your information is secure and will remain private.
+                </p>
+
+                <button
+                  type="submit"
+                  className="cr-action-btn-blue"
+                  disabled={loading}
+                >
+                  {loading ? "Sending..." : "Send Message"}
+                  <span className="cr-btn-arrow">→</span>
+                </button>
+              </div>
+            </form>
           )}
         </div>
       </section>
 
       {/* GET IN TOUCH */}
-
       <section className="cr-get-in-touch-block">
         <div className="cr-center-heading-zone">
-          <p className="cr-badge-text cr-center-txt">
-            GET IN TOUCH
-          </p>
+          <p className="cr-badge-text cr-center-txt">GET IN TOUCH</p>
 
           <h2 className="cr-section-main-title">
             We would love to hear from you.
@@ -251,26 +291,20 @@ return (
 
         <div className="cr-cards-four-grid">
           {/* PHONE CARD */}
-
           <a
             href="tel:+918657000206"
             className="cr-contact-info-card cr-clickable-card-wrapper"
             aria-label="Call Zuvius Lifesciences"
           >
             <div className="cr-card-icon-sphere">
-              <span
-                className="cr-vector-glyph"
-                aria-hidden="true"
-              >
+              <span className="cr-vector-glyph" aria-hidden="true">
                 📞
               </span>
             </div>
 
             <h3>Phone</h3>
 
-            <p className="cr-highlight-text">
-              +91 865 700 0206
-            </p>
+            <p className="cr-highlight-text">+91 865 700 0206</p>
 
             <p className="cr-sub-text">
               Monday to Friday
@@ -280,36 +314,26 @@ return (
           </a>
 
           {/* EMAIL CARD */}
-
           <a
             href="mailto:info@zuviuslifesciences.in"
             className="cr-contact-info-card cr-clickable-card-wrapper"
             aria-label="Email Zuvius Lifesciences"
           >
             <div className="cr-card-icon-sphere">
-              <span
-                className="cr-vector-glyph"
-                aria-hidden="true"
-              >
+              <span className="cr-vector-glyph" aria-hidden="true">
                 ✉️
               </span>
             </div>
 
             <h3>Email</h3>
 
-            <p className="cr-highlight-text">
-              info@zuviuslifesciences.in
-            </p>
+            <p className="cr-highlight-text">info@zuviuslifesciences.in</p>
           </a>
 
           {/* SOCIAL MEDIA CARD */}
-
           <div className="cr-contact-info-card cr-social-media-card">
             <div className="cr-card-icon-sphere">
-              <span
-                className="cr-vector-glyph"
-                aria-hidden="true"
-              >
+              <span className="cr-vector-glyph" aria-hidden="true">
                 📢
               </span>
             </div>
@@ -366,12 +390,9 @@ return (
       </section>
 
       {/* LOCATION MAP */}
-
       <section className="cr-locations-map-block">
         <div className="cr-center-heading-zone">
-          <p className="cr-badge-text cr-center-txt">
-            OUR LOCATION
-          </p>
+          <p className="cr-badge-text cr-center-txt">OUR LOCATION</p>
 
           <div className="cr-center-accent-line" />
         </div>

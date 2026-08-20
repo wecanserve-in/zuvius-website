@@ -13,6 +13,22 @@ const getStrengthOptions = (strengthValue) => {
     .filter(Boolean);
 };
 
+// Configuration for category-wise primary and CC emails
+const ENQUIRY_CONFIG = {
+  vendor: {
+    primary: "production@zuviuslifesciences.in",
+    cc: "nimish@zuviuslifesciences.in,info@zuviuslifesciences.in",
+  },
+  export: {
+    primary: "bhavesh.patel@zuviuslifesciences.in",
+    cc: "nimish@zuviuslifesciences.in,swapnil@zuviuslifesciences.in,alka@zuviuslifesciences.in,info@zuviuslifesciences.in",
+  },
+  domestic: {
+    primary: "operations@zuviuslifesciences.in",
+    cc: "alka@zuviuslifesciences.in,swapnil@zuviuslifesciences.in,nimish@zuviuslifesciences.in,info@zuviuslifesciences.in",
+  },
+};
+
 const ProductDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -33,6 +49,7 @@ const ProductDetail = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const [enquiryForm, setEnquiryForm] = useState({
+    enquiryType: "domestic",
     name: "",
     companyName: "",
     phone: "",
@@ -60,12 +77,8 @@ const ProductDetail = () => {
     }));
   }, [product]);
 
-  
-
   useEffect(() => {
     if (!showEnquiryModal) return;
-
-    
 
     const handleEscapeKey = (event) => {
       if (event.key === "Escape") {
@@ -121,9 +134,7 @@ const ProductDetail = () => {
   const getTabContent = () => {
     switch (activeTab) {
       case "Description":
-        return (
-          product.description || "No information available."
-        );
+        return product.description || "No information available.";
 
       case "Indication":
         return product.indication || "No information available.";
@@ -273,55 +284,67 @@ const ProductDetail = () => {
   };
 
   const handleSubmit = async (event) => {
-  event.preventDefault();
+    event.preventDefault();
 
-  const formData = new FormData();
+    const config =
+      ENQUIRY_CONFIG[enquiryForm.enquiryType] || ENQUIRY_CONFIG.domestic;
 
-  formData.append("name", enquiryForm.name);
-  formData.append("companyName", enquiryForm.companyName);
-  formData.append("phone", enquiryForm.phone);
-  formData.append("email", enquiryForm.email);
-  formData.append("productName", enquiryForm.productName);
-  formData.append("strength", enquiryForm.strength);
-  formData.append("quantity", enquiryForm.quantity);
+    const formData = new FormData();
 
-  formData.append("_subject", `Product Enquiry - ${product.name}`);
-  formData.append("_template", "table");
-  formData.append("_captcha", "false");
+    formData.append("enquiryType", enquiryForm.enquiryType.toUpperCase());
+    formData.append("name", enquiryForm.name);
+    formData.append("companyName", enquiryForm.companyName);
+    formData.append("phone", enquiryForm.phone);
+    formData.append("email", enquiryForm.email);
+    formData.append("productName", enquiryForm.productName);
+    formData.append("strength", enquiryForm.strength);
+    formData.append("quantity", enquiryForm.quantity);
 
-  try {
-    const response = await fetch(
-      "https://formsubmit.co/ajax/info@zuviuslifesciences.in",
-      {
-        method: "POST",
-        body: formData,
-      }
-    );
-
-    if (response.ok) {
-      setSubmitted(true);
-
-      setEnquiryForm({
-        name: "",
-        companyName: "",
-        phone: "",
-        email: "",
-        productName: product.name,
-        strength: strengthOptions[0] || "",
-        quantity: "",
-      });
-
-      setTimeout(() => {
-        setSubmitted(false);
-        setShowEnquiryModal(false);
-      }, 2500);
-    } else {
-      alert("Something went wrong. Please try again.");
+    if (config.cc) {
+      formData.append("_cc", config.cc);
     }
-  } catch (error) {
-    alert("Unable to submit the enquiry. Please try again.");
-  }
-};
+
+    formData.append(
+      "_subject",
+      `[${enquiryForm.enquiryType.toUpperCase()}] Product Enquiry - ${product.name}`
+    );
+    formData.append("_template", "table");
+    formData.append("_captcha", "false");
+
+    try {
+      const response = await fetch(
+        `https://formsubmit.co/ajax/${config.primary}`,
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (response.ok) {
+        setSubmitted(true);
+
+        setEnquiryForm({
+          enquiryType: "domestic",
+          name: "",
+          companyName: "",
+          phone: "",
+          email: "",
+          productName: product.name,
+          strength: strengthOptions[0] || "",
+          quantity: "",
+        });
+
+        setTimeout(() => {
+          setSubmitted(false);
+          setShowEnquiryModal(false);
+        }, 2500);
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Unable to submit the enquiry. Please try again.");
+    }
+  };
 
   const openEnquiryModal = () => {
     const availableStrengths = getStrengthOptions(
@@ -348,53 +371,50 @@ const ProductDetail = () => {
   return (
     <div className="product-detail-page">
       {/* PRODUCT HERO */}
-
       <section className="product-detail-hero">
         <div className="product-detail-gallery">
-  <div className="product-detail-main-image">
-    <img src={mainImage} alt={product.name} />
-  </div>
+          <div className="product-detail-main-image">
+            <img src={mainImage} alt={product.name} />
+          </div>
 
-  {/* Mobile thumbnails */}
-  <div
-    className="product-thumbnail-slider-wrap mobile-thumbnails"
-  >
-    <button
-      type="button"
-      className="thumb-slider-arrow"
-      onClick={() => scrollThumbnails("left")}
-    >
-      ‹
-    </button>
+          {/* Mobile thumbnails */}
+          <div className="product-thumbnail-slider-wrap mobile-thumbnails">
+            <button
+              type="button"
+              className="thumb-slider-arrow"
+              onClick={() => scrollThumbnails("left")}
+            >
+              ‹
+            </button>
 
-    <div
-      className="product-detail-thumbnails-bottom"
-      ref={thumbnailRef}
-    >
-      {productImages.map((img, index) => (
-        <button
-          key={`${img}-${index}`}
-          type="button"
-          onClick={() => setMainImage(img)}
-          className={mainImage === img ? "active" : ""}
-        >
-          <img
-            src={img}
-            alt={`${product.name} ${index + 1}`}
-          />
-        </button>
-      ))}
-    </div>
+            <div
+              className="product-detail-thumbnails-bottom"
+              ref={thumbnailRef}
+            >
+              {productImages.map((img, index) => (
+                <button
+                  key={`${img}-${index}`}
+                  type="button"
+                  onClick={() => setMainImage(img)}
+                  className={mainImage === img ? "active" : ""}
+                >
+                  <img
+                    src={img}
+                    alt={`${product.name} ${index + 1}`}
+                  />
+                </button>
+              ))}
+            </div>
 
-    <button
-      type="button"
-      className="thumb-slider-arrow"
-      onClick={() => scrollThumbnails("right")}
-    >
-      ›
-    </button>
-  </div>
-</div>
+            <button
+              type="button"
+              className="thumb-slider-arrow"
+              onClick={() => scrollThumbnails("right")}
+            >
+              ›
+            </button>
+          </div>
+        </div>
 
         <div className="product-detail-info">
           <div className="product-title-wrap">
@@ -409,7 +429,6 @@ const ProductDetail = () => {
 
           <div className="product-detail-meta">
             {/* STRENGTH */}
-
             <div className="product-detail-meta-card">
               <img
                 src="/products/strength.png"
@@ -422,19 +441,12 @@ const ProductDetail = () => {
 
                 {strengthOptions.length > 0 ? (
                   <h4 className="product-strength-list">
-                    {strengthOptions.map(
-                      (strength, index) => (
-                        <span
-                          key={`${strength}-${index}`}
-                        >
-                          <span className="strength-tick">
-                            ✓
-                          </span>
-
-                          <span>{strength}</span>
-                        </span>
-                      )
-                    )}
+                    {strengthOptions.map((strength, index) => (
+                      <span key={`${strength}-${index}`}>
+                        <span className="strength-tick">✓</span>
+                        <span>{strength}</span>
+                      </span>
+                    ))}
                   </h4>
                 ) : (
                   <h4>As per label</h4>
@@ -443,7 +455,6 @@ const ProductDetail = () => {
             </div>
 
             {/* PACK SIZE */}
-
             <div className="product-detail-meta-card">
               <img
                 src="/products/pack.png"
@@ -453,14 +464,11 @@ const ProductDetail = () => {
 
               <div>
                 <p>Pack Size</p>
-                <h4>
-                  {product.packSize || "As per pack"}
-                </h4>
+                <h4>{product.packSize || "As per pack"}</h4>
               </div>
             </div>
 
             {/* DRUG CLASS */}
-
             <div className="product-detail-meta-card">
               <img
                 src="/products/drugclass.png"
@@ -470,17 +478,14 @@ const ProductDetail = () => {
 
               <div>
                 <p>Drug Class</p>
-                <h4>
-                  {product.drugClass || "Medicine"}
-                </h4>
+                <h4>{product.drugClass || "Medicine"}</h4>
               </div>
             </div>
           </div>
 
           {product.storage && (
             <p className="product-detail-cold">
-              <strong>Storage:</strong>{" "}
-              {product.storage}
+              <strong>Storage:</strong> {product.storage}
             </p>
           )}
 
@@ -493,7 +498,6 @@ const ProductDetail = () => {
           </button>
 
           {/* THUMBNAILS */}
-
           <div className="product-thumbnail-slider-wrap desktop-thumbnails">
             <button
               type="button"
@@ -513,12 +517,8 @@ const ProductDetail = () => {
                   type="button"
                   key={`${img}-${index}`}
                   onClick={() => setMainImage(img)}
-                  className={
-                    mainImage === img ? "active" : ""
-                  }
-                  aria-label={`View ${product.name} image ${
-                    index + 1
-                  }`}
+                  className={mainImage === img ? "active" : ""}
+                  aria-label={`View ${product.name} image ${index + 1}`}
                 >
                   <img
                     src={img}
@@ -541,16 +541,13 @@ const ProductDetail = () => {
       </section>
 
       {/* PRODUCT INFORMATION TABS */}
-
       <section className="product-detail-tabs-section">
         <div className="product-tabs-header">
           {tabs.map((tab) => (
             <button
               type="button"
               key={tab}
-              className={
-                activeTab === tab ? "active" : ""
-              }
+              className={activeTab === tab ? "active" : ""}
               onClick={() => setActiveTab(tab)}
             >
               {tab}
@@ -566,7 +563,6 @@ const ProductDetail = () => {
       </section>
 
       {/* RELATED PRODUCTS */}
-
       <section className="related-products-section">
         <h2>Related Products</h2>
 
@@ -577,16 +573,11 @@ const ProductDetail = () => {
               key={item.id}
               className="related-product-card"
               onClick={() =>
-                navigate(
-                  `/products/${item.category}/${item.slug}`
-                )
+                navigate(`/products/${item.category}/${item.slug}`)
               }
             >
               <div className="related-product-image">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                />
+                <img src={item.image} alt={item.name} />
               </div>
 
               <div className="related-product-content">
@@ -599,7 +590,6 @@ const ProductDetail = () => {
       </section>
 
       {/* PRODUCT ENQUIRY POPUP */}
-
       {showEnquiryModal && (
         <div
           className="product-enquiry-overlay"
@@ -608,9 +598,7 @@ const ProductDetail = () => {
         >
           <div
             className="product-enquiry-modal"
-            onMouseDown={(event) =>
-              event.stopPropagation()
-            }
+            onMouseDown={(event) => event.stopPropagation()}
             role="dialog"
             aria-modal="true"
             aria-labelledby="product-enquiry-title"
@@ -625,184 +613,171 @@ const ProductDetail = () => {
             </button>
 
             <div className="product-enquiry-heading">
-              
-
               <h2 id="product-enquiry-title">
                 Enquire About {product.name}
               </h2>
 
               <p>
-                Enter your requirements and our team will
-                contact you.
+                Enter your requirements and our team will contact you.
               </p>
             </div>
 
             {submitted ? (
-  <SuccessMessage />
-) : (
+              <SuccessMessage />
+            ) : (
+              <form
+                className="product-enquiry-form"
+                onSubmit={handleSubmit}
+              >
+                <input type="text" name="_honey" style={{ display: "none" }} />
 
-            <form
-  className="product-enquiry-form"
-  onSubmit={handleSubmit}
->
-             
-              
-              <input type="text" name="_honey" style={{display:"none"}} />
-              <div className="product-enquiry-row">
+                {/* ENQUIRY TYPE DROPDOWN */}
                 <div className="product-enquiry-field">
-                  <label htmlFor="enquiry-name">
-                    Name
-                  </label>
-
-                  <input
-                    id="enquiry-name"
-                    type="text"
-                    name="name"
-                    value={enquiryForm.name}
+                  <label htmlFor="enquiry-type">Enquiry Type *</label>
+                  <select
+                    id="enquiry-type"
+                    name="enquiryType"
+                    value={enquiryForm.enquiryType}
                     onChange={handleEnquiryChange}
-                    placeholder="Enter your full name"
-                    autoComplete="name"
                     required
-                  />
+                  >
+                    <option value="domestic">Domestic</option>
+                    <option value="export">Export</option>
+                    <option value="vendor">Vendor</option>
+                  </select>
                 </div>
 
-                <div className="product-enquiry-field">
-                  <label htmlFor="enquiry-company">
-                    Company Name
-                  </label>
-
-                  <input
-                    id="enquiry-company"
-                    type="text"
-                    name="companyName"
-                    value={enquiryForm.companyName}
-                    onChange={handleEnquiryChange}
-                    placeholder="Enter company name"
-                    autoComplete="organization"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="product-enquiry-row">
-                <div className="product-enquiry-field">
-                  <label htmlFor="enquiry-phone">
-                    Phone Number
-                  </label>
-
-                  <input
-                    id="enquiry-phone"
-                    type="tel"
-                    name="phone"
-                    value={enquiryForm.phone}
-                    onChange={handleEnquiryChange}
-                    placeholder="Enter phone number"
-                    autoComplete="tel"
-                    pattern="[0-9+\-\s()]{8,20}"
-                    required
-                  />
-                </div>
-
-                <div className="product-enquiry-field">
-                  <label htmlFor="enquiry-email">
-                    Email ID
-                  </label>
-
-                  <input
-                    id="enquiry-email"
-                    type="email"
-                    name="email"
-                    value={enquiryForm.email}
-                    onChange={handleEnquiryChange}
-                    placeholder="Enter email address"
-                    autoComplete="email"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="product-enquiry-row">
-                <div className="product-enquiry-field">
-                  <label htmlFor="enquiry-product">
-                    Product Name
-                  </label>
-
-                  <input
-                    id="enquiry-product"
-                    type="text"
-                    name="productName"
-                    value={enquiryForm.productName}
-                    readOnly
-                  />
-                </div>
-
-                <div className="product-enquiry-field">
-                  <label htmlFor="enquiry-strength">
-                    Strength
-                  </label>
-
-                  {strengthOptions.length > 1 ? (
-                    <select
-                      id="enquiry-strength"
-                      name="strength"
-                      value={enquiryForm.strength}
+                <div className="product-enquiry-row">
+                  <div className="product-enquiry-field">
+                    <label htmlFor="enquiry-name">Name *</label>
+                    <input
+                      id="enquiry-name"
+                      type="text"
+                      name="name"
+                      value={enquiryForm.name}
                       onChange={handleEnquiryChange}
+                      placeholder="Enter your full name"
+                      autoComplete="name"
                       required
-                    >
-                      {strengthOptions.map(
-                        (strength, index) => (
+                    />
+                  </div>
+
+                  <div className="product-enquiry-field">
+                    <label htmlFor="enquiry-company">Company Name *</label>
+                    <input
+                      id="enquiry-company"
+                      type="text"
+                      name="companyName"
+                      value={enquiryForm.companyName}
+                      onChange={handleEnquiryChange}
+                      placeholder="Enter company name"
+                      autoComplete="organization"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="product-enquiry-row">
+                  <div className="product-enquiry-field">
+                    <label htmlFor="enquiry-phone">Phone Number *</label>
+                    <input
+                      id="enquiry-phone"
+                      type="tel"
+                      name="phone"
+                      value={enquiryForm.phone}
+                      onChange={handleEnquiryChange}
+                      placeholder="Enter phone number"
+                      autoComplete="tel"
+                      pattern="[0-9+\-\s()]{8,20}"
+                      required
+                    />
+                  </div>
+
+                  <div className="product-enquiry-field">
+                    <label htmlFor="enquiry-email">Email ID *</label>
+                    <input
+                      id="enquiry-email"
+                      type="email"
+                      name="email"
+                      value={enquiryForm.email}
+                      onChange={handleEnquiryChange}
+                      placeholder="Enter email address"
+                      autoComplete="email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="product-enquiry-row">
+                  <div className="product-enquiry-field">
+                    <label htmlFor="enquiry-product">Product Name</label>
+                    <input
+                      id="enquiry-product"
+                      type="text"
+                      name="productName"
+                      value={enquiryForm.productName}
+                      readOnly
+                    />
+                  </div>
+
+                  <div className="product-enquiry-field">
+                    <label htmlFor="enquiry-strength">Strength</label>
+                    {strengthOptions.length > 1 ? (
+                      <select
+                        id="enquiry-strength"
+                        name="strength"
+                        value={enquiryForm.strength}
+                        onChange={handleEnquiryChange}
+                        required
+                      >
+                        {strengthOptions.map((strength, index) => (
                           <option
                             value={strength}
                             key={`${strength}-${index}`}
                           >
                             {strength}
                           </option>
-                        )
-                      )}
-                    </select>
-                  ) : (
-                    <input
-                      id="enquiry-strength"
-                      type="text"
-                      name="Strength"
-                      value={
-                        enquiryForm.strength ||
-                        product.strength ||
-                        "As per label"
-                      }
-                      readOnly
-                    />
-                  )}
+                        ))}
+                      </select>
+                    ) : (
+                      <input
+                        id="enquiry-strength"
+                        type="text"
+                        name="strength"
+                        value={
+                          enquiryForm.strength ||
+                          product.strength ||
+                          "As per label"
+                        }
+                        readOnly
+                      />
+                    )}
+                  </div>
                 </div>
-              </div>
 
-              <div className="product-enquiry-field">
-                <label htmlFor="enquiry-quantity">
-                  Quantity
-                </label>
+                <div className="product-enquiry-field">
+                  <label htmlFor="enquiry-quantity">Quantity *</label>
+                  <input
+                    id="enquiry-quantity"
+                    type="number"
+                    name="quantity"
+                    value={enquiryForm.quantity}
+                    onChange={handleEnquiryChange}
+                    placeholder="Enter required quantity"
+                    min="1"
+                    step="1"
+                    required
+                  />
+                </div>
 
-                <input
-                  id="enquiry-quantity"
-                  type="number"
-                  name="quantity"
-                  value={enquiryForm.quantity}
-                  onChange={handleEnquiryChange}
-                  placeholder="Enter required quantity"
-                  min="1"
-                  step="1"
-                  required
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="product-enquiry-submit"
-              >
-                Submit Enquiry
-              </button>
-            </form>
+                <button
+                  type="submit"
+                  className="product-enquiry-submit"
+                >
+                  Submit Enquiry
+                </button>
+              </form>
             )}
-
           </div>
         </div>
       )}
