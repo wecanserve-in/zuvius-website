@@ -869,8 +869,8 @@
   transform: scale(1.5) !important;
 }
 
-.product-category-page .category-product-image img.zimitib-img {
-  transform: scale(1.4) !important;
+.product-category-page .category-product-image img.zimitib-tablet-img {
+  transform: scale(1.2) !important;
 }
 
 .product-category-page .category-product-image img.zixib-img {
@@ -913,7 +913,7 @@
 }
 
 .product-category-page .category-product-image img.acantha-img {
-  transform: scale(1.5) !important;
+  transform: scale(1.1) !important;
 }
 
 .product-category-page .category-product-image img.zuvidexa-img {
@@ -943,7 +943,7 @@
 }
 
 .product-category-page .category-product-image img.zuvipro-40-img {
-  transform: scale(2.3) !important;
+  transform: scale(1) !important;
   
 }
 

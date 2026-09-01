@@ -5366,260 +5366,260 @@ No overall differences in safety or effectiveness were observed between these el
 Other reported clinical experience has not identified differences in responses between the elderly and younger patients, but greater sensitivity of some older individuals cannot be ruled out.
 `,
 },
-{
-  id: 42,
-  category: "oncoace",
-  categoryName: "OncoAce",
-  slug: "zimitib",
-  name: "Zimitib",
-  subtitle: "Imatinib Capsules",
-  type: "Capsule",
-  imageClass:"zimitib-img",
+// {
+//   id: 42,
+//   category: "oncoace",
+//   categoryName: "OncoAce",
+//   slug: "zimitib",
+//   name: "Zimitib",
+//   subtitle: "Imatinib Capsules",
+//   type: "Capsule",
+//   imageClass:"zimitib-img",
 
-  image: "/new_product_page/Zimitib-100.png",
+//   image: "/new_product_page/Zimitib-100.png",
 
-  images: [
-    "/new_product_page/Zimitib-100.png",
-    // "/new_product_page/Zimitib-400.png",
-  ],
+//   images: [
+//     "/new_product_page/Zimitib-100.png",
+//     // "/new_product_page/Zimitib-400.png",
+//   ],
 
-  strength: "100 mg",
-  packSize: "1 x 10",
-  drugClass: "Protein-Tyrosine Kinase Inhibitor",
+//   strength: "100 mg",
+//   packSize: "1 x 10",
+//   drugClass: "Protein-Tyrosine Kinase Inhibitor",
 
-  dosage: `
-The prescribed dose should be administered orally, with a meal and a large glass of water.
+//   dosage: `
+// The prescribed dose should be administered orally, with a meal and a large glass of water.
 
-Doses of 400 mg or 600 mg should be administered once daily, whereas a dose of 800 mg should be administered as 400 mg twice a day.
+// Doses of 400 mg or 600 mg should be administered once daily, whereas a dose of 800 mg should be administered as 400 mg twice a day.
 
-Treatment may be continued as long as there is no evidence of progressive disease or unacceptable toxicity.
+// Treatment may be continued as long as there is no evidence of progressive disease or unacceptable toxicity.
 
-Adult Patients with Ph+ CML CP, AP and BC
+// Adult Patients with Ph+ CML CP, AP and BC
 
-The recommended dose of Zimitib is 400 mg/day for adult patients in chronic phase CML and 600 mg/day for adult patients in accelerated phase or blast crisis.
+// The recommended dose of Zimitib is 400 mg/day for adult patients in chronic phase CML and 600 mg/day for adult patients in accelerated phase or blast crisis.
 
-In CML, a dose increase from 400 mg to 600 mg in adult patients with chronic phase disease, or from 600 mg to 800 mg (given as 400 mg twice daily) in adult patients in accelerated phase or blast crisis may be considered in the absence of severe adverse drug reaction and severe non-leukemia related neutropenia or thrombocytopenia in the following circumstances:
+// In CML, a dose increase from 400 mg to 600 mg in adult patients with chronic phase disease, or from 600 mg to 800 mg (given as 400 mg twice daily) in adult patients in accelerated phase or blast crisis may be considered in the absence of severe adverse drug reaction and severe non-leukemia related neutropenia or thrombocytopenia in the following circumstances:
 
-• Disease progression (at any time)
-• Failure to achieve a satisfactory hematologic response after at least 3 months of treatment
-• Failure to achieve a cytogenetic response after 6-12 months of treatment
-• Loss of a previously achieved hematologic or cytogenetic response
+// • Disease progression (at any time)
+// • Failure to achieve a satisfactory hematologic response after at least 3 months of treatment
+// • Failure to achieve a cytogenetic response after 6-12 months of treatment
+// • Loss of a previously achieved hematologic or cytogenetic response
 
-Pediatric Patients with Ph+ CML
+// Pediatric Patients with Ph+ CML
 
-The recommended dose of Zimitib for children with newly diagnosed Ph+ CML is 340 mg/m²/day (not to exceed 600 mg).
+// The recommended dose of Zimitib for children with newly diagnosed Ph+ CML is 340 mg/m²/day (not to exceed 600 mg).
 
-The recommended Zimitib dose is 260 mg/m²/day for children with Ph+ chronic phase CML recurrent after stem cell transplant or who are resistant to interferon-alpha therapy.
+// The recommended Zimitib dose is 260 mg/m²/day for children with Ph+ chronic phase CML recurrent after stem cell transplant or who are resistant to interferon-alpha therapy.
 
-Ph+ ALL
+// Ph+ ALL
 
-The recommended dose of Zimitib is 600 mg/day for adult patients with relapsed/refractory Ph+ ALL.
+// The recommended dose of Zimitib is 600 mg/day for adult patients with relapsed/refractory Ph+ ALL.
 
-Kit+ Gastrointestinal Stromal Tumors (GIST)
+// Kit+ Gastrointestinal Stromal Tumors (GIST)
 
-The recommended dose of Zimitib is 400 mg/day or 600 mg/day for adult patients with unresectable and/or metastatic malignant GIST.
+// The recommended dose of Zimitib is 400 mg/day or 600 mg/day for adult patients with unresectable and/or metastatic malignant GIST.
 
-Dose Modification Guidelines
+// Dose Modification Guidelines
 
-Concomitant Strong CYP3A4 Inducers
+// Concomitant Strong CYP3A4 Inducers
 
-The use of concomitant strong CYP3A4 inducers should be avoided (e.g. dexamethasone, phenytoin, carbamazepine, rifampin, rifabutin, rifapentine, phenobarbital).
+// The use of concomitant strong CYP3A4 inducers should be avoided (e.g. dexamethasone, phenytoin, carbamazepine, rifampin, rifabutin, rifapentine, phenobarbital).
 
-If patients must be co-administered a strong CYP3A4 inducer, based on pharmacokinetic studies, the dosage of Zimitib should be increased by at least 50%, and clinical response should be carefully monitored.
+// If patients must be co-administered a strong CYP3A4 inducer, based on pharmacokinetic studies, the dosage of Zimitib should be increased by at least 50%, and clinical response should be carefully monitored.
 
-Hepatic Impairment
+// Hepatic Impairment
 
-Patients with mild and moderate hepatic impairment do not require a dose adjustment and should be treated as per the recommended dose.
+// Patients with mild and moderate hepatic impairment do not require a dose adjustment and should be treated as per the recommended dose.
 
-A 25% decrease in the recommended dose should be used for patients with severe hepatic impairment.
+// A 25% decrease in the recommended dose should be used for patients with severe hepatic impairment.
 
-Dose Adjustment for Hepatotoxicity and Non-Hematologic Adverse Reactions
+// Dose Adjustment for Hepatotoxicity and Non-Hematologic Adverse Reactions
 
-If elevations in bilirubin >3× institutional upper limit of normal (IULN) or in liver transaminases >5× IULN occur, Zimitib should be withheld until bilirubin levels have returned to <1.5 × IULN and transaminase levels to <2.5 × IULN.
+// If elevations in bilirubin >3× institutional upper limit of normal (IULN) or in liver transaminases >5× IULN occur, Zimitib should be withheld until bilirubin levels have returned to <1.5 × IULN and transaminase levels to <2.5 × IULN.
 
-In adults treatment with Zimitib may then be continued at a reduced daily dose:
+// In adults treatment with Zimitib may then be continued at a reduced daily dose:
 
-• 400 mg to 300 mg
-• 600 mg to 400 mg
-• 800 mg to 600 mg
+// • 400 mg to 300 mg
+// • 600 mg to 400 mg
+// • 800 mg to 600 mg
 
-In children, daily doses can be reduced under the same circumstances from 340 mg/m²/day to 260 mg/m²/day or from 260 mg/m²/day to 200 mg/m²/day, respectively.
+// In children, daily doses can be reduced under the same circumstances from 340 mg/m²/day to 260 mg/m²/day or from 260 mg/m²/day to 200 mg/m²/day, respectively.
 
-If a severe non-hematologic adverse reaction develops (such as severe hepatotoxicity or severe fluid retention), Zimitib should be withheld until the event has resolved.
+// If a severe non-hematologic adverse reaction develops (such as severe hepatotoxicity or severe fluid retention), Zimitib should be withheld until the event has resolved.
 
-Thereafter, treatment can be resumed as appropriate depending on the initial severity of the event.
-`,
+// Thereafter, treatment can be resumed as appropriate depending on the initial severity of the event.
+// `,
 
-  storage: "Store at 25°C to 30°C.",
+//   storage: "Store at 25°C to 30°C.",
 
-  description: `
-Imatinib is a small molecule kinase inhibitor.
+//   description: `
+// Imatinib is a small molecule kinase inhibitor.
 
-Gleevec film-coated tablets contain imatinib mesylate equivalent to 100 mg or 400 mg of imatinib free base.
+// Gleevec film-coated tablets contain imatinib mesylate equivalent to 100 mg or 400 mg of imatinib free base.
 
-Imatinib mesylate is designated chemically as:
+// Imatinib mesylate is designated chemically as:
 
-4-[(4-Methyl-1-piperazinyl)methyl]-N-[4-methyl-3-[[4-(3-pyridinyl)-2-pyrimidinyl]amino]-phenyl]benzamide methanesulfonate.
+// 4-[(4-Methyl-1-piperazinyl)methyl]-N-[4-methyl-3-[[4-(3-pyridinyl)-2-pyrimidinyl]amino]-phenyl]benzamide methanesulfonate.
 
-Imatinib mesylate is a white to off-white to brownish or yellowish tinged crystalline powder.
+// Imatinib mesylate is a white to off-white to brownish or yellowish tinged crystalline powder.
 
-Its molecular formula is C₂₉H₃₁N₇O • CH₄SO₃ and its molecular weight is 589.7.
+// Its molecular formula is C₂₉H₃₁N₇O • CH₄SO₃ and its molecular weight is 589.7.
 
-Imatinib mesylate is soluble in aqueous buffers less than or equal to pH 5.5 but is very slightly soluble to insoluble in neutral/alkaline aqueous buffers.
+// Imatinib mesylate is soluble in aqueous buffers less than or equal to pH 5.5 but is very slightly soluble to insoluble in neutral/alkaline aqueous buffers.
 
-In non-aqueous solvents, the drug substance is freely soluble to very slightly soluble in dimethyl sulfoxide, methanol, and ethanol, but is insoluble in n-octanol, acetone, and acetonitrile.
-`,
+// In non-aqueous solvents, the drug substance is freely soluble to very slightly soluble in dimethyl sulfoxide, methanol, and ethanol, but is insoluble in n-octanol, acetone, and acetonitrile.
+// `,
 
-  indication: `
-Patients with Philadelphia chromosome positive chronic myeloid leukemia in blast crisis, accelerated phase, or in chronic phase after failure of interferon-alpha therapy.
+//   indication: `
+// Patients with Philadelphia chromosome positive chronic myeloid leukemia in blast crisis, accelerated phase, or in chronic phase after failure of interferon-alpha therapy.
 
-Pediatric patients with Ph+ CML in chronic phase.
+// Pediatric patients with Ph+ CML in chronic phase.
 
-Adult patients with relapsed or refractory Philadelphia chromosome positive acute lymphoblastic leukemia (Ph+ Acute Lymphoblastic Leukemia (ALL)).
+// Adult patients with relapsed or refractory Philadelphia chromosome positive acute lymphoblastic leukemia (Ph+ Acute Lymphoblastic Leukemia (ALL)).
 
-Patients with Kit (CD117) positive unresectable and/or metastatic malignant gastrointestinal stromal tumors (Kit+ Gastrointestinal Stromal Tumors (GIST)).
-`,
+// Patients with Kit (CD117) positive unresectable and/or metastatic malignant gastrointestinal stromal tumors (Kit+ Gastrointestinal Stromal Tumors (GIST)).
+// `,
 
-  clinicalEfficacy: `
-With imatinib, the management of chronic myeloid leukemia (CML) has changed considerably.
+//   clinicalEfficacy: `
+// With imatinib, the management of chronic myeloid leukemia (CML) has changed considerably.
 
-Tyrosine kinase inhibitors (TKIs) are the mainstay of CML treatment; however, the high financial burden of TKIs can be problematic for both the patients and health care systems.
+// Tyrosine kinase inhibitors (TKIs) are the mainstay of CML treatment; however, the high financial burden of TKIs can be problematic for both the patients and health care systems.
 
-After the emergence of generics, reimbursement policies of many countries have changed, and generics offered an alternative treatment option for CML patients.
+// After the emergence of generics, reimbursement policies of many countries have changed, and generics offered an alternative treatment option for CML patients.
 
-There are many papers published on the use of generics in CML patients with conflicting results regarding both efficacy and safety.
+// There are many papers published on the use of generics in CML patients with conflicting results regarding both efficacy and safety.
 
-In this paper, we systematically reviewed the current literature on generic imatinib use in CML, and 36 papers were evaluated.
+// In this paper, we systematically reviewed the current literature on generic imatinib use in CML, and 36 papers were evaluated.
 
-Both in vitro and in vivo studies of generic imatinib showed comparable results with branded imatinib in terms of bioequivalence and bioavailability.
+// Both in vitro and in vivo studies of generic imatinib showed comparable results with branded imatinib in terms of bioequivalence and bioavailability.
 
-In most studies, generics were comparable with the original molecule in terms of efficacy and safety, both in newly diagnosed patients and after switching from Gleevec.
+// In most studies, generics were comparable with the original molecule in terms of efficacy and safety, both in newly diagnosed patients and after switching from Gleevec.
 
-Some generic studies showed contradictory findings regarding efficacy and toxicity, and these differences can be attributed to some factors including the use of different generics in different countries.
+// Some generic studies showed contradictory findings regarding efficacy and toxicity, and these differences can be attributed to some factors including the use of different generics in different countries.
 
-Both in hypothetical models and in real life, introduction of generic imatinib caused significant reduction in health care costs.
+// Both in hypothetical models and in real life, introduction of generic imatinib caused significant reduction in health care costs.
 
-In conclusion, generics are not inferior to original imatinib in terms of efficacy with an acceptable toxicity profile.
+// In conclusion, generics are not inferior to original imatinib in terms of efficacy with an acceptable toxicity profile.
 
-Notwithstanding the generally favorable efficacy and safety of generics worldwide to date, we most probably still need more time to draw firmer conclusions on the longer-term outcomes of generics.
-`,
+// Notwithstanding the generally favorable efficacy and safety of generics worldwide to date, we most probably still need more time to draw firmer conclusions on the longer-term outcomes of generics.
+// `,
 
-  safetyInformation: `
-• Read the label carefully before use.
+//   safetyInformation: `
+// • Read the label carefully before use.
 
-• Keep out of the reach of children.
-`,
+// • Keep out of the reach of children.
+// `,
 
-  specialPrecautions: `
-Pregnancy
+//   specialPrecautions: `
+// Pregnancy
 
-Pregnancy Category D:
+// Pregnancy Category D:
 
-Women of childbearing potential should be advised to avoid becoming pregnant while taking Zimitib.
+// Women of childbearing potential should be advised to avoid becoming pregnant while taking Zimitib.
 
-If the patient becomes pregnant while taking this drug, the patient should be apprised of the potential hazard to the fetus.
+// If the patient becomes pregnant while taking this drug, the patient should be apprised of the potential hazard to the fetus.
 
-Fluid Retention and Edema
+// Fluid Retention and Edema
 
-Zimitib is often associated with edema and occasionally serious fluid retention.
+// Zimitib is often associated with edema and occasionally serious fluid retention.
 
-Patients should be weighed and monitored regularly for signs and symptoms of fluid retention.
+// Patients should be weighed and monitored regularly for signs and symptoms of fluid retention.
 
-An unexpected rapid weight gain should be carefully investigated and appropriate treatment provided.
+// An unexpected rapid weight gain should be carefully investigated and appropriate treatment provided.
 
-The probability of edema was increased with higher Zimitib dose and age >65 years in the CML patients.
+// The probability of edema was increased with higher Zimitib dose and age >65 years in the CML patients.
 
-Severe superficial edema and severe fluid retention (pleural effusion, pulmonary edema and ascites) were reported in 1% - 6% of patients taking Zimitib for GIST.
+// Severe superficial edema and severe fluid retention (pleural effusion, pulmonary edema and ascites) were reported in 1% - 6% of patients taking Zimitib for GIST.
 
-Hematologic Toxicity
+// Hematologic Toxicity
 
-Treatment with Zimitib is associated with anemia, neutropenia, and thrombocytopenia.
+// Treatment with Zimitib is associated with anemia, neutropenia, and thrombocytopenia.
 
-Complete blood counts should be performed weekly for the first month, biweekly for the second month, and periodically thereafter as clinically indicated (for example, every 2-3 months).
+// Complete blood counts should be performed weekly for the first month, biweekly for the second month, and periodically thereafter as clinically indicated (for example, every 2-3 months).
 
-In CML, the occurrence of these cytopenias is dependent on the stage of disease and is more frequent in patients with accelerated phase CML or blast crisis than in patients with chronic phase CML.
+// In CML, the occurrence of these cytopenias is dependent on the stage of disease and is more frequent in patients with accelerated phase CML or blast crisis than in patients with chronic phase CML.
 
-In pediatric CML patients the most frequent toxicities observed were grade 3 or 4 cytopenias including neutropenia, thrombocytopenia and anemia.
+// In pediatric CML patients the most frequent toxicities observed were grade 3 or 4 cytopenias including neutropenia, thrombocytopenia and anemia.
 
-These generally occur within the first several months of therapy.
+// These generally occur within the first several months of therapy.
 
-Severe Congestive Heart Failure and Left Ventricular Dysfunction
+// Severe Congestive Heart Failure and Left Ventricular Dysfunction
 
-Severe congestive heart failure and left ventricular dysfunction have occasionally been reported in patients taking Zimitib.
+// Severe congestive heart failure and left ventricular dysfunction have occasionally been reported in patients taking Zimitib.
 
-Most of the patients with reported cardiac reactions have had other co-morbidities and risk factors, including advanced age and previous medical history of cardiac disease.
+// Most of the patients with reported cardiac reactions have had other co-morbidities and risk factors, including advanced age and previous medical history of cardiac disease.
 
-Hepatotoxicity
+// Hepatotoxicity
 
-Hepatotoxicity, occasionally severe, may occur with Zimitib.
+// Hepatotoxicity, occasionally severe, may occur with Zimitib.
 
-Liver function (transaminases, bilirubin, and alkaline phosphatase) should be monitored before initiation of treatment and monthly or as clinically indicated.
+// Liver function (transaminases, bilirubin, and alkaline phosphatase) should be monitored before initiation of treatment and monthly or as clinically indicated.
 
-Laboratory abnormalities should be managed with interruption and/or dose reduction of the treatment with Zimitib.
+// Laboratory abnormalities should be managed with interruption and/or dose reduction of the treatment with Zimitib.
 
-Haemorrhage
+// Haemorrhage
 
-In CML patients 1.8% of patients had Grade 3/4 hemorrhage.
+// In CML patients 1.8% of patients had Grade 3/4 hemorrhage.
 
-In GIST patients, seven patients (5%), four in the 600 mg dose group and three in the 400 mg dose group, had a total of eight reactions of CTC Grade 3/4 gastrointestinal (GI) bleeds (3 patients), intra-tumoral bleeds (3 patients) or both (1 patient).
+// In GIST patients, seven patients (5%), four in the 600 mg dose group and three in the 400 mg dose group, had a total of eight reactions of CTC Grade 3/4 gastrointestinal (GI) bleeds (3 patients), intra-tumoral bleeds (3 patients) or both (1 patient).
 
-Gastrointestinal tumor sites may have been the source of GI bleeds.
+// Gastrointestinal tumor sites may have been the source of GI bleeds.
 
-Gastrointestinal Disorders
+// Gastrointestinal Disorders
 
-Zimitib is sometimes associated with GI irritation.
+// Zimitib is sometimes associated with GI irritation.
 
-Zimitib should be taken with food and a large glass of water to minimize this problem.
+// Zimitib should be taken with food and a large glass of water to minimize this problem.
 
-There have been rare reports, including fatalities, of gastrointestinal perforation.
+// There have been rare reports, including fatalities, of gastrointestinal perforation.
 
-In patients with hypereosinophilic syndrome and cardiac involvement, cases of cardiogenic shock/left ventricular dysfunction have been associated with the initiation of imatinib therapy.
+// In patients with hypereosinophilic syndrome and cardiac involvement, cases of cardiogenic shock/left ventricular dysfunction have been associated with the initiation of imatinib therapy.
 
-The condition was reported to be reversible with the administration of systemic steroids, circulatory support measures and temporary withholding imatinib.
+// The condition was reported to be reversible with the administration of systemic steroids, circulatory support measures and temporary withholding imatinib.
 
-Dermatologic Toxicities
+// Dermatologic Toxicities
 
-Bullous dermatologic reactions, including erythema multiforme and Stevens–Johnson syndrome, have been reported with use of Zimitib.
+// Bullous dermatologic reactions, including erythema multiforme and Stevens–Johnson syndrome, have been reported with use of Zimitib.
 
-Carcinogenesis, Mutagenesis, Impairment of Fertility
+// Carcinogenesis, Mutagenesis, Impairment of Fertility
 
-Human studies on male patients receiving Zimitib and its effect on male fertility and spermatogenesis have not been performed.
+// Human studies on male patients receiving Zimitib and its effect on male fertility and spermatogenesis have not been performed.
 
-Male patients concerned about their fertility on Zimitib treatment should consult with their physician.
+// Male patients concerned about their fertility on Zimitib treatment should consult with their physician.
 
-Nursing Mothers
+// Nursing Mothers
 
-It is not known whether imatinib mesylate or its metabolites are excreted in human milk.
+// It is not known whether imatinib mesylate or its metabolites are excreted in human milk.
 
-A decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.
+// A decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.
 
-Pediatric Use
+// Pediatric Use
 
-Zimitib safety and efficacy have been demonstrated in children with newly diagnosed Ph+ chronic phase CML and in children with Ph+ chronic phase CML with recurrence after stem-cell transplantation or resistance to interferon-alpha therapy.
+// Zimitib safety and efficacy have been demonstrated in children with newly diagnosed Ph+ chronic phase CML and in children with Ph+ chronic phase CML with recurrence after stem-cell transplantation or resistance to interferon-alpha therapy.
 
-Geriatric Use
+// Geriatric Use
 
-No difference was observed in the safety profile in patients older than 65 years as compared to younger patients, with the exception of a higher frequency of edema.
+// No difference was observed in the safety profile in patients older than 65 years as compared to younger patients, with the exception of a higher frequency of edema.
 
-The efficacy of Zimitib was similar in older and younger patients.
+// The efficacy of Zimitib was similar in older and younger patients.
 
-Hepatic Impairment
+// Hepatic Impairment
 
-The effect of hepatic impairment on the pharmacokinetics of both imatinib and its major metabolite, CGP74588, was assessed in 84 cancer patients with varying degrees of hepatic impairment at Imatinib doses ranging from 100-800 mg.
+// The effect of hepatic impairment on the pharmacokinetics of both imatinib and its major metabolite, CGP74588, was assessed in 84 cancer patients with varying degrees of hepatic impairment at Imatinib doses ranging from 100-800 mg.
 
-Exposure to both imatinib and CGP74588 was comparable between each of the mildly and moderately hepatically-impaired groups and the normal group.
+// Exposure to both imatinib and CGP74588 was comparable between each of the mildly and moderately hepatically-impaired groups and the normal group.
 
-Patients with severe hepatic impairment tend to have higher exposure to both imatinib and its metabolite than patients with normal hepatic function.
+// Patients with severe hepatic impairment tend to have higher exposure to both imatinib and its metabolite than patients with normal hepatic function.
 
-At steady state the mean Cmax/dose and AUC/dose for imatinib increased by about 63% and 45% respectively, in patients with severe hepatic impairment compared to patients with normal hepatic function.
+// At steady state the mean Cmax/dose and AUC/dose for imatinib increased by about 63% and 45% respectively, in patients with severe hepatic impairment compared to patients with normal hepatic function.
 
-The mean Cmax/dose and AUC/dose for CGP74588 increased by about 56% and 55%, respectively, in patients with severe hepatic impairment compared to patients with normal hepatic function.
+// The mean Cmax/dose and AUC/dose for CGP74588 increased by about 56% and 55%, respectively, in patients with severe hepatic impairment compared to patients with normal hepatic function.
 
-Renal Impairment
+// Renal Impairment
 
-No clinical studies were conducted with Zimitib in patients with decreased renal function (studies excluded patients with serum creatinine concentration more than 2 times the upper limit of the normal range).
-`,
-},
+// No clinical studies were conducted with Zimitib in patients with decreased renal function (studies excluded patients with serum creatinine concentration more than 2 times the upper limit of the normal range).
+// `,
+// },
 {
   id: 43,
   category: "oncoace",
@@ -9257,7 +9257,7 @@ To be taken orally.
   image: "/nutra/Calciboon-1.png",
 
   images: [
-    "/nutra/Calciboon-1.png/products/calciboon-zm/calciboon-zm250-1.jpeg",
+    "/nutra/Calciboon-1.png",
     "/nutra/Calciboon-2.png",
   ],
 
@@ -16687,13 +16687,16 @@ The reconstituted solution should be used within 8 hours of preparation.
   type: "Tablet",
   imageClass: "zimitib-tablet-img",
 
-  image: "/new_product_page/Zimitib-400.png",
+  image: "/new_product_page/zimitib-group.png",
 
   images: [
-    "/new_product_page/Zimitib-400.png",
+    "/new_product_page/zimitib-group.png",
+    "/new_product_page/Zimitib-100.png",
+    "/new_product_page/Zimitib-400.png"
+    
   ],
 
-  strength: "400 mg",
+  strength: "100mg , 400mg",
   packSize: "1 x 10",
   drugClass: "Protein-Tyrosine Kinase Inhibitor",
 

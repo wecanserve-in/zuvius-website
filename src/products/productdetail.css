@@ -1314,3 +1314,41 @@ button.related-product-card,
     flex-shrink: 0;
   }
 }
+
+.product-detail-main-image img.zuvipro-40-img {
+  transform: scale(0.9);
+}
+
+.product-detail-main-image img[src*="Zuvipro40vanilla-2"] {
+  transform: scale(2);
+}
+
+.product-detail-main-image img[src*="Zuvipro40vanilla-3"] {
+  transform: scale(2);
+}
+
+.product-detail-main-image img[src*="Zuvipro40vanilla-4"] {
+  transform: scale(0.8);
+}
+
+
+/* Zuvipro thumbnails only */
+.product-detail-thumbnails-bottom img[src*="Zuvipro40vanilla-1"] {
+  transform: scale(1.0);
+}
+
+.product-detail-thumbnails-bottom img[src*="Zuvipro40vanilla-2"] {
+  transform: scale(2);
+}
+
+.product-detail-thumbnails-bottom img[src*="Zuvipro40vanilla-3"] {
+  transform: scale(2);
+}
+
+.product-detail-thumbnails-bottom img[src*="Zuvipro40vanilla-4"] {
+  transform: scale(2);
+}
+
+.product-detail-main-image img.acantha-img {
+  transform: scale(0.9);
+}

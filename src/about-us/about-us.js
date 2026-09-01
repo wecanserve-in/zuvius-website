@@ -119,7 +119,7 @@ const timelineItems = [
     short:
       "Credibility, hard work and integrity helped Zuvius rise again.",
     full:
-      "Our credibility in the industry helped us in picking the pieces. Nimish handled the sales in West India and Alka took over the East. Sailesh stayed back to uphold the pillar once again. It was a harrowing but fulfilling experience. Nimish and Alka allied with distributors from different zones and soon they had the cash flowing in. At the bottom of the abyss, they found a new beginning. The hard work and integrity displayed by the team earned them respect and trust within the industry circle. Zuvius also tucked another feather in the cap with notable research scientist Dr. Ulhas Ganu becoming a part of the core team. In due time, Zuvius became the most respected brand of oncology medication in India.",
+      "Our credibility in the industry helped us in picking the pieces. Nimish handled the sales in West India and Alka took over the East. Shailesh stayed back to uphold the pillar once again. It was a harrowing but fulfilling experience. Nimish and Alka allied with distributors from different zones and soon they had the cash flowing in. At the bottom of the abyss, they found a new beginning. The hard work and integrity displayed by the team earned them respect and trust within the industry circle. Zuvius also tucked another feather in the cap with notable research scientist Dr. Ulhas Ganu becoming a part of the core team. In due time, Zuvius became the most respected brand of oncology medication in India.",
   },
   {
     year: "2015",
@@ -143,7 +143,7 @@ const timelineItems = [
     short:
       "Zuvius crossed 200+ oncology products and expanded exports to 32 countries.",
     full:
-      "This was the time when the market opened and welcomed with open arms. The requirement for anticancer medicines within and outside the nation grew in length and breadth. Simultaneously, with our continuous improvement we launched more products thereby taking our product basket to over 200 products in oncology domain. With the weapon of widest range of anticancer medicines, and consistent quality products, Zuvius leaped to different parts of the world. Capitalizing on such huge opportunity, we connected ourselves to African, Asian, and LatAm countries. With EU GMP certification, we started our journey in regulated European markets as well. We are now exporting to 32 countries.",
+      "This was the time when the market opened and welcomed with open arms. The requirement for anticancer medicines within and outside the nation grew in length and breadth. Simultaneously, with our continuous improvement we launched more products thereby taking our product basket to over 200 products in oncology domain. With the weapon of widest range of anticancer medicines, and consistent quality products, Zuvius leaped to different parts of the world. Capitalizing on such huge opportunity, we connected ourselves to African, Asian, and Latam countries. With EU GMP certification, we started our journey in regulated European markets as well. We are now exporting to 32 countries.",
   },
 ];
 

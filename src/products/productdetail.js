@@ -374,7 +374,7 @@ const ProductDetail = () => {
       <section className="product-detail-hero">
         <div className="product-detail-gallery">
           <div className="product-detail-main-image">
-            <img src={mainImage} alt={product.name} />
+            <img src={mainImage} alt={product.name}  className={product.imageClass || ""} />
           </div>
 
           {/* Mobile thumbnails */}
