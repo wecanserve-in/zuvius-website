@@ -19,13 +19,20 @@ const ENQUIRY_CONFIG = {
     primary: "production@zuviuslifesciences.in",
     cc: "nimish@zuviuslifesciences.in,info@zuviuslifesciences.in",
   },
+
   export: {
     primary: "bhavesh.patel@zuviuslifesciences.in",
     cc: "nimish@zuviuslifesciences.in,swapnil@zuviuslifesciences.in,alka@zuviuslifesciences.in,info@zuviuslifesciences.in",
   },
+
   domestic: {
     primary: "operations@zuviuslifesciences.in",
     cc: "alka@zuviuslifesciences.in,swapnil@zuviuslifesciences.in,nimish@zuviuslifesciences.in,info@zuviuslifesciences.in",
+  },
+
+  patient: {
+    primary: "info@zuviuslifesciences.in",
+    cc: "",
   },
 };
 
@@ -49,7 +56,7 @@ const ProductDetail = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const [enquiryForm, setEnquiryForm] = useState({
-    enquiryType: "domestic",
+    enquiryType: "",
     name: "",
     companyName: "",
     phone: "",
@@ -59,12 +66,106 @@ const ProductDetail = () => {
     quantity: "",
   });
 
+  /*
+   * ============================================================
+   * DYNAMIC SEO + SOCIAL MEDIA META TAGS
+   * ============================================================
+   */
+  useEffect(() => {
+    if (!product) return;
+
+    const baseUrl = "https://zuviuslifesciences.in";
+
+    const productUrl = `${baseUrl}/products/${product.category}/${product.slug}`;
+
+    const title =
+      product.metaTitle ||
+      `${product.name} | ${
+        product.subtitle ? `${product.subtitle} | ` : ""
+      }Zuvius Lifesciences`;
+
+    const description =
+      product.metaDescription ||
+      `Explore ${product.name}${
+        product.subtitle ? `, ${product.subtitle}` : ""
+      } by Zuvius Lifesciences. View detailed product information, strengths, pack size and drug class.`;
+
+    const imagePath =
+      product.metaImage ||
+      product.images?.[0] ||
+      product.image ||
+      "";
+
+    const image = imagePath.startsWith("http")
+      ? imagePath
+      : `${baseUrl}${imagePath.startsWith("/") ? "" : "/"}${imagePath}`;
+
+    const setMeta = (attribute, attributeValue, content) => {
+      let element = document.head.querySelector(
+        `meta[${attribute}="${attributeValue}"]`
+      );
+
+      if (!element) {
+        element = document.createElement("meta");
+        element.setAttribute(attribute, attributeValue);
+        document.head.appendChild(element);
+      }
+
+      element.setAttribute("content", content);
+    };
+
+    // Browser title
+    document.title = title;
+
+    // Standard SEO
+    setMeta("name", "description", description);
+
+    // Open Graph
+    setMeta("property", "og:type", "website");
+    setMeta("property", "og:url", productUrl);
+    setMeta("property", "og:title", title);
+    setMeta("property", "og:description", description);
+    setMeta("property", "og:image", image);
+    setMeta("property", "og:site_name", "Zuvius Lifesciences");
+
+    // Twitter / X
+    setMeta("name", "twitter:card", "summary_large_image");
+    setMeta("name", "twitter:url", productUrl);
+    setMeta("name", "twitter:title", title);
+    setMeta("name", "twitter:description", description);
+    setMeta("name", "twitter:image", image);
+
+    // Canonical URL
+    let canonical = document.head.querySelector(
+      'link[rel="canonical"]'
+    );
+
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+
+    canonical.setAttribute("href", productUrl);
+
+    return () => {
+      document.title =
+        "Zuvius Lifesciences | Manufacturer of Widest Range of Anticancer Drugs | EU GMP & PIC/S Approved";
+    };
+  }, [product]);
+
+  /*
+   * ============================================================
+   * PRODUCT CHANGE / FORM RESET
+   * ============================================================
+   */
   useEffect(() => {
     if (!product) return;
 
     const availableStrengths = getStrengthOptions(product.strength);
 
     setMainImage(product.images?.[0] || product.image || "");
+
     setActiveTab("Description");
 
     setEnquiryForm((previousForm) => ({
@@ -77,6 +178,11 @@ const ProductDetail = () => {
     }));
   }, [product]);
 
+  /*
+   * ============================================================
+   * ENQUIRY MODAL
+   * ============================================================
+   */
   useEffect(() => {
     if (!showEnquiryModal) return;
 
@@ -286,12 +392,22 @@ const ProductDetail = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    if (!enquiryForm.enquiryType) {
+      alert("Please select an enquiry type.");
+      return;
+    }
+
     const config =
-      ENQUIRY_CONFIG[enquiryForm.enquiryType] || ENQUIRY_CONFIG.domestic;
+      ENQUIRY_CONFIG[enquiryForm.enquiryType] ||
+      ENQUIRY_CONFIG.domestic;
 
     const formData = new FormData();
 
-    formData.append("enquiryType", enquiryForm.enquiryType.toUpperCase());
+    formData.append(
+      "enquiryType",
+      enquiryForm.enquiryType.toUpperCase()
+    );
+
     formData.append("name", enquiryForm.name);
     formData.append("companyName", enquiryForm.companyName);
     formData.append("phone", enquiryForm.phone);
@@ -308,10 +424,13 @@ const ProductDetail = () => {
       "_subject",
       `[${enquiryForm.enquiryType.toUpperCase()}] Product Enquiry - ${product.name}`
     );
+
     formData.append("_template", "table");
     formData.append("_captcha", "false");
+    formData.append("_replyto", enquiryForm.email);
 
     try {
+      // 1. Keep the existing, working FormSubmit AJAX enquiry delivery.
       const response = await fetch(
         `https://formsubmit.co/ajax/${config.primary}`,
         {
@@ -320,28 +439,69 @@ const ProductDetail = () => {
         }
       );
 
-      if (response.ok) {
-        setSubmitted(true);
-
-        setEnquiryForm({
-          enquiryType: "domestic",
-          name: "",
-          companyName: "",
-          phone: "",
-          email: "",
-          productName: product.name,
-          strength: strengthOptions[0] || "",
-          quantity: "",
-        });
-
-        setTimeout(() => {
-          setSubmitted(false);
-          setShowEnquiryModal(false);
-        }, 2500);
-      } else {
+      if (!response.ok) {
         alert("Something went wrong. Please try again.");
+        return;
       }
+
+      // 2. Send a separate, clean acknowledgement email to the customer.
+      // This endpoint must exist on the same Hostinger domain.
+      try {
+        const autoReplyResponse = await fetch(
+          "/api/send-enquiry-reply.php",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              source: "Product Enquiry",
+              enquiryType: enquiryForm.enquiryType,
+              name: enquiryForm.name,
+              company: enquiryForm.companyName,
+              email: enquiryForm.email,
+              phone: enquiryForm.phone,
+              productName: enquiryForm.productName,
+              strength: enquiryForm.strength,
+              quantity: enquiryForm.quantity,
+              subject: `[${enquiryForm.enquiryType.toUpperCase()}] Product Enquiry - ${product.name}`,
+              message: "Product enquiry submitted from the product detail page.",
+            }),
+          }
+        );
+
+        if (!autoReplyResponse.ok) {
+          console.warn(
+            "Customer acknowledgement request failed:",
+            autoReplyResponse.status
+          );
+        }
+      } catch (autoReplyError) {
+        console.warn(
+          "Customer acknowledgement could not be sent:",
+          autoReplyError
+        );
+      }
+
+      setSubmitted(true);
+
+      setEnquiryForm({
+        enquiryType: "",
+        name: "",
+        companyName: "",
+        phone: "",
+        email: "",
+        productName: product.name,
+        strength: strengthOptions[0] || "",
+        quantity: "",
+      });
+
+      setTimeout(() => {
+        setSubmitted(false);
+        setShowEnquiryModal(false);
+      }, 2500);
     } catch (error) {
+      console.error("Enquiry submission error:", error);
       alert("Unable to submit the enquiry. Please try again.");
     }
   };
@@ -353,14 +513,15 @@ const ProductDetail = () => {
 
     setEnquiryForm((previousForm) => ({
       ...previousForm,
+      enquiryType: "",
       productName: product.name,
       strength:
-        previousForm.strength ||
         availableStrengths[0] ||
         product.strength ||
         "As per label",
     }));
 
+    setSubmitted(false);
     setShowEnquiryModal(true);
   };
 
@@ -370,15 +531,23 @@ const ProductDetail = () => {
 
   return (
     <div className="product-detail-page">
+
       {/* PRODUCT HERO */}
       <section className="product-detail-hero">
+
         <div className="product-detail-gallery">
+
           <div className="product-detail-main-image">
-            <img src={mainImage} alt={product.name}  className={product.imageClass || ""} />
+            <img
+              src={mainImage}
+              alt={product.name}
+              className={product.imageClass || ""}
+            />
           </div>
 
           {/* Mobile thumbnails */}
           <div className="product-thumbnail-slider-wrap mobile-thumbnails">
+
             <button
               type="button"
               className="thumb-slider-arrow"
@@ -413,11 +582,14 @@ const ProductDetail = () => {
             >
               ›
             </button>
+
           </div>
         </div>
 
         <div className="product-detail-info">
+
           <div className="product-title-wrap">
+
             <h1>{product.name}</h1>
 
             {product.subtitle && (
@@ -425,11 +597,14 @@ const ProductDetail = () => {
                 {product.subtitle}
               </p>
             )}
+
           </div>
 
           <div className="product-detail-meta">
+
             {/* STRENGTH */}
             <div className="product-detail-meta-card">
+
               <img
                 src="/products/strength.png"
                 alt="Strength"
@@ -437,13 +612,17 @@ const ProductDetail = () => {
               />
 
               <div>
+
                 <p>Strength</p>
 
                 {strengthOptions.length > 0 ? (
                   <h4 className="product-strength-list">
                     {strengthOptions.map((strength, index) => (
                       <span key={`${strength}-${index}`}>
-                        <span className="strength-tick">✓</span>
+                        <span className="strength-tick">
+                          ✓
+                        </span>
+
                         <span>{strength}</span>
                       </span>
                     ))}
@@ -451,11 +630,13 @@ const ProductDetail = () => {
                 ) : (
                   <h4>As per label</h4>
                 )}
+
               </div>
             </div>
 
             {/* PACK SIZE */}
             <div className="product-detail-meta-card">
+
               <img
                 src="/products/pack.png"
                 alt="Pack Size"
@@ -463,13 +644,19 @@ const ProductDetail = () => {
               />
 
               <div>
+
                 <p>Pack Size</p>
-                <h4>{product.packSize || "As per pack"}</h4>
+
+                <h4>
+                  {product.packSize || "As per pack"}
+                </h4>
+
               </div>
             </div>
 
             {/* DRUG CLASS */}
             <div className="product-detail-meta-card">
+
               <img
                 src="/products/drugclass.png"
                 alt="Drug Class"
@@ -477,12 +664,25 @@ const ProductDetail = () => {
               />
 
               <div>
+
                 <p>Drug Class</p>
-                <h4>{product.drugClass || "Medicine"}</h4>
+
+                <h4>
+                  {product.drugClass || "Medicine"}
+                </h4>
+
               </div>
             </div>
+
           </div>
 
+          {/* SPECIFICATION */}
+          <p className="product-detail-cold">
+            <strong>Specification:</strong>{" "}
+            USP/BP/IH Specifications available for exports
+          </p>
+
+          {/* STORAGE */}
           {product.storage && (
             <p className="product-detail-cold">
               <strong>Storage:</strong> {product.storage}
@@ -499,6 +699,7 @@ const ProductDetail = () => {
 
           {/* THUMBNAILS */}
           <div className="product-thumbnail-slider-wrap desktop-thumbnails">
+
             <button
               type="button"
               className="thumb-slider-arrow"
@@ -536,13 +737,17 @@ const ProductDetail = () => {
             >
               ›
             </button>
+
           </div>
+
         </div>
       </section>
 
       {/* PRODUCT INFORMATION TABS */}
       <section className="product-detail-tabs-section">
+
         <div className="product-tabs-header">
+
           {tabs.map((tab) => (
             <button
               type="button"
@@ -553,56 +758,83 @@ const ProductDetail = () => {
               {tab}
             </button>
           ))}
+
         </div>
 
         <div className="product-tabs-body">
+
           <div className="product-tab-formatted-content">
             {renderFormattedContent(getTabContent())}
           </div>
+
         </div>
+
       </section>
 
       {/* RELATED PRODUCTS */}
       <section className="related-products-section">
+
         <h2>Related Products</h2>
 
         <div className="related-products-grid">
+
           {relatedProducts.slice(0, 4).map((item) => (
+
             <button
               type="button"
               key={item.id}
               className="related-product-card"
               onClick={() =>
-                navigate(`/products/${item.category}/${item.slug}`)
+                navigate(
+                  `/products/${item.category}/${item.slug}`
+                )
               }
             >
+
               <div className="related-product-image">
-                <img src={item.image} alt={item.name} />
+
+                <img
+                  src={item.image}
+                  alt={item.name}
+                />
+
               </div>
 
               <div className="related-product-content">
+
                 <h3>{item.name}</h3>
+
                 <p>{item.subtitle}</p>
+
               </div>
+
             </button>
+
           ))}
+
         </div>
+
       </section>
 
       {/* PRODUCT ENQUIRY POPUP */}
       {showEnquiryModal && (
+
         <div
           className="product-enquiry-overlay"
           onMouseDown={closeEnquiryModal}
           role="presentation"
         >
+
           <div
             className="product-enquiry-modal"
-            onMouseDown={(event) => event.stopPropagation()}
+            onMouseDown={(event) =>
+              event.stopPropagation()
+            }
             role="dialog"
             aria-modal="true"
             aria-labelledby="product-enquiry-title"
           >
+
             <button
               type="button"
               className="product-enquiry-close"
@@ -613,27 +845,42 @@ const ProductDetail = () => {
             </button>
 
             <div className="product-enquiry-heading">
+
               <h2 id="product-enquiry-title">
                 Enquire About {product.name}
               </h2>
 
               <p>
-                Enter your requirements and our team will contact you.
+                Enter your requirements and our team will
+                contact you.
               </p>
+
             </div>
 
             {submitted ? (
+
               <SuccessMessage />
+
             ) : (
+
               <form
                 className="product-enquiry-form"
                 onSubmit={handleSubmit}
               >
-                <input type="text" name="_honey" style={{ display: "none" }} />
+
+                <input
+                  type="text"
+                  name="_honey"
+                  style={{ display: "none" }}
+                />
 
                 {/* ENQUIRY TYPE DROPDOWN */}
                 <div className="product-enquiry-field">
-                  <label htmlFor="enquiry-type">Enquiry Type *</label>
+
+                  <label htmlFor="enquiry-type">
+                    Enquiry Type *
+                  </label>
+
                   <select
                     id="enquiry-type"
                     name="enquiryType"
@@ -641,15 +888,40 @@ const ProductDetail = () => {
                     onChange={handleEnquiryChange}
                     required
                   >
-                    <option value="domestic">Domestic</option>
-                    <option value="export">Export</option>
-                    <option value="vendor">Vendor</option>
+
+                    <option value="" disabled>
+                      Select Enquiry Type
+                    </option>
+
+                    <option value="domestic">
+                      Domestic
+                    </option>
+
+                    <option value="export">
+                      Export
+                    </option>
+
+                    <option value="vendor">
+                      Vendor
+                    </option>
+
+                    <option value="patient">
+                      Patient
+                    </option>
+
                   </select>
+
                 </div>
 
+                {/* NAME + COMPANY */}
                 <div className="product-enquiry-row">
+
                   <div className="product-enquiry-field">
-                    <label htmlFor="enquiry-name">Name *</label>
+
+                    <label htmlFor="enquiry-name">
+                      Name *
+                    </label>
+
                     <input
                       id="enquiry-name"
                       type="text"
@@ -660,10 +932,15 @@ const ProductDetail = () => {
                       autoComplete="name"
                       required
                     />
+
                   </div>
 
                   <div className="product-enquiry-field">
-                    <label htmlFor="enquiry-company">Company Name *</label>
+
+                    <label htmlFor="enquiry-company">
+                      Company Name *
+                    </label>
+
                     <input
                       id="enquiry-company"
                       type="text"
@@ -674,12 +951,20 @@ const ProductDetail = () => {
                       autoComplete="organization"
                       required
                     />
+
                   </div>
+
                 </div>
 
+                {/* PHONE + EMAIL */}
                 <div className="product-enquiry-row">
+
                   <div className="product-enquiry-field">
-                    <label htmlFor="enquiry-phone">Phone Number *</label>
+
+                    <label htmlFor="enquiry-phone">
+                      Phone Number *
+                    </label>
+
                     <input
                       id="enquiry-phone"
                       type="tel"
@@ -691,10 +976,15 @@ const ProductDetail = () => {
                       pattern="[0-9+\-\s()]{8,20}"
                       required
                     />
+
                   </div>
 
                   <div className="product-enquiry-field">
-                    <label htmlFor="enquiry-email">Email ID *</label>
+
+                    <label htmlFor="enquiry-email">
+                      Email ID *
+                    </label>
+
                     <input
                       id="enquiry-email"
                       type="email"
@@ -705,12 +995,20 @@ const ProductDetail = () => {
                       autoComplete="email"
                       required
                     />
+
                   </div>
+
                 </div>
 
+                {/* PRODUCT + STRENGTH */}
                 <div className="product-enquiry-row">
+
                   <div className="product-enquiry-field">
-                    <label htmlFor="enquiry-product">Product Name</label>
+
+                    <label htmlFor="enquiry-product">
+                      Product Name
+                    </label>
+
                     <input
                       id="enquiry-product"
                       type="text"
@@ -718,11 +1016,17 @@ const ProductDetail = () => {
                       value={enquiryForm.productName}
                       readOnly
                     />
+
                   </div>
 
                   <div className="product-enquiry-field">
-                    <label htmlFor="enquiry-strength">Strength</label>
+
+                    <label htmlFor="enquiry-strength">
+                      Strength
+                    </label>
+
                     {strengthOptions.length > 1 ? (
+
                       <select
                         id="enquiry-strength"
                         name="strength"
@@ -730,16 +1034,24 @@ const ProductDetail = () => {
                         onChange={handleEnquiryChange}
                         required
                       >
-                        {strengthOptions.map((strength, index) => (
-                          <option
-                            value={strength}
-                            key={`${strength}-${index}`}
-                          >
-                            {strength}
-                          </option>
-                        ))}
+
+                        {strengthOptions.map(
+                          (strength, index) => (
+
+                            <option
+                              value={strength}
+                              key={`${strength}-${index}`}
+                            >
+                              {strength}
+                            </option>
+
+                          )
+                        )}
+
                       </select>
+
                     ) : (
+
                       <input
                         id="enquiry-strength"
                         type="text"
@@ -751,12 +1063,20 @@ const ProductDetail = () => {
                         }
                         readOnly
                       />
+
                     )}
+
                   </div>
+
                 </div>
 
+                {/* QUANTITY */}
                 <div className="product-enquiry-field">
-                  <label htmlFor="enquiry-quantity">Quantity *</label>
+
+                  <label htmlFor="enquiry-quantity">
+                    Quantity *
+                  </label>
+
                   <input
                     id="enquiry-quantity"
                     type="number"
@@ -768,6 +1088,7 @@ const ProductDetail = () => {
                     step="1"
                     required
                   />
+
                 </div>
 
                 <button
@@ -776,11 +1097,17 @@ const ProductDetail = () => {
                 >
                   Submit Enquiry
                 </button>
+
               </form>
+
             )}
+
           </div>
+
         </div>
+
       )}
+
     </div>
   );
 };

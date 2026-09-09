@@ -4274,3 +4274,7 @@
   object-position: center top !important;
   display: block !important;
 }
+
+.home-recent-product-image img.recent-image-acantha {
+  transform: scale(1.2) !important;
+}

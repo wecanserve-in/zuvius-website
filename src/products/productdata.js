@@ -3223,7 +3223,7 @@ Males:
 
   image: "/new_product_page/Anastroz-1.png",
 
-  images: [
+  images: [ 
     "/new_product_page/Anastroz-1.png",
   ],
 

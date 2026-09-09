@@ -81,12 +81,13 @@
 .product-detail-info {
   width: 100%;
   min-width: 0;
-  height: 560px;
+  height: auto;
+  min-height: 560px;
   padding-top: 14px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .product-title-wrap {
@@ -383,7 +384,7 @@
 
 .product-tabs-header button.active {
   color: #008a9a;
-  background: #f8fcfd;
+  background:  #d4f2f1;
 }
 
 .product-tabs-header button.active::after {
@@ -1351,4 +1352,32 @@ button.related-product-card,
 
 .product-detail-main-image img.acantha-img {
   transform: scale(0.9);
+}
+
+.product-detail-main-image img[src*="Acantha-100.png"] {
+  transform: scale(1.2) !important;
+}
+
+
+.product-detail-main-image img[src*="Acantha-150.png"] {
+  transform: scale(1.7) !important;
+}
+
+.product-detail-main-image img[src*="Acalataz-100.png"] {
+  transform: scale(1.7) !important;
+}
+
+.product-detail-main-image img[src*="Anastroz-1.png"] {
+  transform: scale(1.9) !important;
+}
+
+.product-detail-export-specs {
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #222;
+}
+
+.product-detail-meta-card {
+  background: #e9fbfa;
 }

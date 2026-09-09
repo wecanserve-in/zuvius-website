@@ -24,6 +24,10 @@ const CONTACT_CONFIG = {
     primary: "operations@zuviuslifesciences.in",
     cc: "alka@zuviuslifesciences.in,swapnil@zuviuslifesciences.in,nimish@zuviuslifesciences.in,info@zuviuslifesciences.in",
   },
+  patient: {
+    primary: "info@zuviuslifesciences.in",
+    cc: "",
+  },
   other: {
     primary: "info@zuviuslifesciences.in",
     cc: "",
@@ -35,7 +39,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const [form, setForm] = useState({
-    enquiryType: "domestic",
+    enquiryType: "",
     name: "",
     company: "",
     email: "",
@@ -53,6 +57,11 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!form.enquiryType) {
+      alert("Please select an enquiry type.");
+      return;
+    }
 
     setLoading(true);
 
@@ -91,10 +100,49 @@ const Contact = () => {
       );
 
       if (response.ok) {
+        // Keep the existing FormSubmit AJAX enquiry delivery unchanged.
+        // Separately send a clean acknowledgement to the person who submitted the form.
+        try {
+          const autoReplyResponse = await fetch(
+            "/api/send-enquiry-reply.php",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                source: "Contact Form",
+                enquiryType: form.enquiryType,
+                name: form.name,
+                company: form.company,
+                email: form.email,
+                phone: form.phone,
+                productName: "",
+                strength: "",
+                quantity: "",
+                subject: form.subject,
+                message: form.message,
+              }),
+            }
+          );
+
+          if (!autoReplyResponse.ok) {
+            console.warn(
+              "Customer acknowledgement request failed:",
+              autoReplyResponse.status
+            );
+          }
+        } catch (autoReplyError) {
+          console.warn(
+            "Customer acknowledgement could not be sent:",
+            autoReplyError
+          );
+        }
+
         setSubmitted(true);
 
         setForm({
-          enquiryType: "domestic",
+          enquiryType: "",
           name: "",
           company: "",
           email: "",
@@ -160,9 +208,13 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                 >
+                  <option value="" disabled>
+                    Select Enquiry Type
+                  </option>
                   <option value="domestic">Domestic</option>
                   <option value="export">Export</option>
                   <option value="vendor">Vendor</option>
+                  <option value="patient">Patient</option>
                   <option value="other">Other</option>
                 </select>
               </div>
