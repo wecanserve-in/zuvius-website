@@ -967,6 +967,11 @@
   margin-top: 10px;
 }
 
+.product-category-page .category-product-image img.aprepet-z-combipack-img {
+  transform: scale(1.1) !important;
+  margin-top: 10px;
+}
+
 .product-category-page .category-product-image img.peg-zuvigrast-img {
   transform: scale(1.4) !important;
   margin-top: 10px;

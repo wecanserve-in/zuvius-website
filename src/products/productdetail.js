@@ -8,8 +8,8 @@ const getStrengthOptions = (strengthValue) => {
   if (!strengthValue) return [];
 
   return String(strengthValue)
-    .split(/\/|,|\|/)
-    .map((strength) => strength.trim())
+    .split(/\/|,/)
+    .map((strength) => strength.trim().replace(/\|/g, "/"))
     .filter(Boolean);
 };
 
@@ -676,18 +676,42 @@ const ProductDetail = () => {
 
           </div>
 
-          {/* SPECIFICATION */}
-          <p className="product-detail-cold">
-            <strong>Specification:</strong>{" "}
-            USP/BP/IH Specifications available for exports
-          </p>
+          {/* SPECIFICATION + STORAGE */}
+<div className="product-detail-extra-meta">
 
-          {/* STORAGE */}
-          {product.storage && (
-            <p className="product-detail-cold">
-              <strong>Storage:</strong> {product.storage}
-            </p>
-          )}
+  <div className="product-detail-extra-card">
+
+    <img
+      src="/specification.png"
+      alt="Specification"
+      className="meta-icon"
+    />
+
+    <div>
+      <p>Specification</p>
+      <h4>USP/BP/IH Specs offered for exports</h4>
+    </div>
+
+  </div>
+
+  {product.storage && (
+    <div className="product-detail-extra-card">
+
+      <img
+        src="/storage.png"
+        alt="Storage"
+        className="meta-icon"
+      />
+
+      <div>
+        <p>Storage</p>
+        <h4>{product.storage}</h4>
+      </div>
+
+    </div>
+  )}
+
+</div>
 
           <button
             type="button"
@@ -746,22 +770,36 @@ const ProductDetail = () => {
       {/* PRODUCT INFORMATION TABS */}
       <section className="product-detail-tabs-section">
 
-        <div className="product-tabs-header">
+      <div className="product-tabs-header">
 
-          {tabs.map((tab) => (
-            <button
-              type="button"
-              key={tab}
-              className={activeTab === tab ? "active" : ""}
-              onClick={() => setActiveTab(tab)}
-            >
-              {tab}
-            </button>
-          ))}
+  {tabs.map((tab) => (
+    <button
+      type="button"
+      key={tab}
+      className={activeTab === tab ? "active" : ""}
+      onClick={() => setActiveTab(tab)}
+    >
+      {tab}
+    </button>
+  ))}
 
-        </div>
+</div>
 
-        <div className="product-tabs-body">
+<div className="product-tabs-mobile-select">
+  <select
+    value={activeTab}
+    onChange={(event) => setActiveTab(event.target.value)}
+    aria-label="Select product information"
+  >
+    {tabs.map((tab) => (
+      <option key={tab} value={tab}>
+        {tab}
+      </option>
+    ))}
+  </select>
+</div>
+
+<div className="product-tabs-body">
 
           <div className="product-tab-formatted-content">
             {renderFormattedContent(getTabContent())}

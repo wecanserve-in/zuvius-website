@@ -10080,7 +10080,7 @@ There was no effect of elevated AST, ALT, or total bilirubin on the pharmacokine
     "/new_product_page/AprepetZ-125_80.png",
   ],
 
-  strength: "125 mg / 80 mg",
+  strength: "125|80 mg",
   packSize: "1 x 3",
   drugClass: "Antiemetics",
 
