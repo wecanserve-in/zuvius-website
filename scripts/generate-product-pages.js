@@ -1,15 +1,53 @@
 const fs = require("fs");
 const path = require("path");
 const vm = require("vm");
+const sharp = require("sharp");
 
 const ROOT = path.resolve(__dirname, "..");
-const PRODUCT_DATA_FILE = path.join(ROOT, "src", "products","productdata.js");
-const BUILD_DIR = path.join(ROOT, "build");
 
-const BASE_URL = "https://zuviuslifesciences.in";
+const PRODUCT_DATA_FILE = path.join(
+  ROOT,
+  "src",
+  "products",
+  "productdata.js"
+);
+
+const BUILD_INDEX_FILE = path.join(
+  ROOT,
+  "build",
+  "index.html"
+);
+
+const PRODUCTS_OUTPUT_DIR = path.join(
+  ROOT,
+  "build",
+  "products"
+);
+
+const SITE_URL = "https://zuviuslifesciences.in";
+
+const OG_WIDTH = 1200;
+const OG_HEIGHT = 630;
+const OG_BACKGROUND = "#219b90";
+
+
+// ============================================================
+// HELPERS
+// ============================================================
+
+function cleanText(value) {
+  if (value === undefined || value === null) {
+    return "";
+  }
+
+  return String(value)
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 
 function escapeHtml(value) {
-  return String(value || "")
+  return cleanText(value)
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
@@ -17,280 +55,751 @@ function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
-function cleanText(value) {
-  return String(value || "")
-    .replace(/\s+/g, " ")
-    .trim();
+
+function escapeAttribute(value) {
+  return escapeHtml(value);
 }
 
-function getProducts() {
-  let source = fs.readFileSync(PRODUCT_DATA_FILE, "utf8");
 
-  /*
-   * productdata.js uses:
-   *
-   * export const productCategories = [...]
-   * export const products = [...]
-   *
-   * Convert the exports into normal Node variables and evaluate
-   * the data file without adding another dependency.
-   */
-  source = source.replace(/export\s+const\s+/g, "const ");
+// ============================================================
+// LOAD PRODUCT DATA
+// ============================================================
+
+function loadProducts() {
+  if (!fs.existsSync(PRODUCT_DATA_FILE)) {
+    throw new Error(
+      `Product data file not found:\n${PRODUCT_DATA_FILE}`
+    );
+  }
+
+  let source = fs.readFileSync(
+    PRODUCT_DATA_FILE,
+    "utf8"
+  );
+
+  // Convert ES module export into something Node VM can evaluate.
+  source = source.replace(
+    /export\s+const\s+products\s*=/,
+    "const products ="
+  );
+
+  source = source.replace(
+    /export\s+const\s+productCategories\s*=/,
+    "const productCategories ="
+  );
 
   source += `
-    ;module.exports = {
-      products
-    };
-  `;
+
+module.exports = {
+  products,
+  productCategories
+};
+`;
 
   const sandbox = {
-    module: { exports: {} },
+    module: {
+      exports: {},
+    },
     exports: {},
   };
 
-  vm.runInNewContext(source, sandbox, {
-    filename: PRODUCT_DATA_FILE,
-  });
+  vm.createContext(sandbox);
+
+  try {
+    vm.runInContext(source, sandbox, {
+      filename: PRODUCT_DATA_FILE,
+    });
+  } catch (error) {
+    console.error(
+      "Failed to evaluate productdata.js"
+    );
+    throw error;
+  }
 
   return sandbox.module.exports.products || [];
 }
 
-function getProductImage(product) {
-  const image =
-    product.metaImage ||
-    product.image ||
-    (Array.isArray(product.images) ? product.images[0] : "");
 
-  if (!image) {
-    return `${BASE_URL}/zuvius-logo.png`;
-  }
-
-  if (image.startsWith("http://") || image.startsWith("https://")) {
-    return image;
-  }
-
-  return `${BASE_URL}${image.startsWith("/") ? "" : "/"}${image}`;
-}
+// ============================================================
+// PRODUCT DESCRIPTION
+// ============================================================
 
 function getDescription(product) {
-  if (product.metaDescription) {
-    return cleanText(product.metaDescription).slice(0, 300);
-  }
-
   const name = cleanText(product.name);
   const subtitle = cleanText(product.subtitle);
 
-  let description = `Explore ${name}`;
+  let description = name;
 
   if (subtitle) {
-    description += `, ${subtitle}`;
+    description += ` (${subtitle})`;
   }
 
   description +=
-    " by Zuvius Lifesciences. View product details, available strength, pack size, drug class and other product information.";
+    " by Zuvius Lifesciences. Explore product details, available strength, pack size, drug class, indications and other important product information.";
 
   return description.slice(0, 300);
 }
 
-function getTitle(product) {
-  if (product.metaTitle) {
-    return cleanText(product.metaTitle);
+
+// ============================================================
+// PRODUCT IMAGE
+// ============================================================
+
+function getProductImage(product) {
+  if (
+    product.metaImage &&
+    typeof product.metaImage === "string"
+  ) {
+    return product.metaImage;
   }
 
-  const name = cleanText(product.name);
-  const subtitle = cleanText(product.subtitle);
-
-  if (subtitle) {
-    return `${name} | ${subtitle} | Zuvius Lifesciences`;
+  if (
+    product.image &&
+    typeof product.image === "string"
+  ) {
+    return product.image;
   }
 
-  return `${name} | Zuvius Lifesciences`;
+  if (
+    Array.isArray(product.images) &&
+    product.images.length > 0
+  ) {
+    return product.images[0];
+  }
+
+  return "/zuvius-logo.jpeg";
 }
 
-function createProductHtml(baseHtml, product) {
-  const title = getTitle(product);
-  const description = getDescription(product);
 
-  const productUrl =
-    `${BASE_URL}/products/` +
-    `${encodeURIComponent(product.category)}/` +
-    `${encodeURIComponent(product.slug)}`;
+// ============================================================
+// FIND LOCAL PRODUCT IMAGE INSIDE BUILD
+// ============================================================
 
-  const image = getProductImage(product);
+function getLocalProductImage(product) {
+  const imagePath = getProductImage(product);
 
-  let html = baseHtml;
+  if (!imagePath) {
+    return null;
+  }
 
-  // Remove existing title
-  html = html.replace(/<title>[\s\S]*?<\/title>/i, "");
+  // Convert URL path such as:
+  // /new_product_page/Acalataz-100.png
+  //
+  // into:
+  // build/new_product_page/Acalataz-100.png
 
-  // Remove existing description
-  html = html.replace(
-    /<meta\s+name=["']description["'][^>]*>/gi,
-    ""
+  const cleanPath = imagePath
+    .split("?")[0]
+    .split("#")[0]
+    .replace(/^\/+/, "");
+
+  const localPath = path.join(
+    ROOT,
+    "build",
+    cleanPath
   );
 
-  // Remove existing Open Graph tags
-  html = html.replace(
-    /<meta\s+property=["']og:[^"']+["'][^>]*>/gi,
-    ""
+  if (fs.existsSync(localPath)) {
+    return localPath;
+  }
+
+  // Try public folder in case build doesn't contain it.
+  const publicPath = path.join(
+    ROOT,
+    "public",
+    cleanPath
   );
 
-  // Remove existing Twitter tags
-  html = html.replace(
-    /<meta\s+name=["']twitter:[^"']+["'][^>]*>/gi,
-    ""
-  );
+  if (fs.existsSync(publicPath)) {
+    return publicPath;
+  }
 
-  // Remove existing canonical
-  html = html.replace(
-    /<link\s+rel=["']canonical["'][^>]*>/gi,
-    ""
-  );
+  return null;
+}
 
-  const metaTags = `
-    <title>${escapeHtml(title)}</title>
 
-    <meta
-      name="description"
-      content="${escapeHtml(description)}"
-    />
+// ============================================================
+// CREATE PRODUCT OG IMAGE
+// ============================================================
+//
+// IMPORTANT:
+//
+// 1. Original product image is NOT redesigned.
+// 2. Transparent/empty margins are trimmed.
+// 3. Actual product artwork is enlarged.
+// 4. Product keeps its original proportions.
+// 5. Background is #219b90.
+// 6. Final image is 1200x630.
+// 7. No black bars.
+// ============================================================
 
-    <link
-      rel="canonical"
-      href="${escapeHtml(productUrl)}"
-    />
+async function createOgImage(product, outputPath) {
+  const productImagePath =
+    getLocalProductImage(product);
 
-    <meta
-      property="og:type"
-      content="website"
-    />
+  if (!productImagePath) {
+    console.warn(
+      `⚠ Product image not found for ${product.name}`
+    );
 
-    <meta
-      property="og:url"
-      content="${escapeHtml(productUrl)}"
-    />
+    return false;
+  }
 
-    <meta
-      property="og:title"
-      content="${escapeHtml(title)}"
-    />
+  try {
+    // --------------------------------------------------------
+    // STEP 1:
+    // Read the original image.
+    // --------------------------------------------------------
 
-    <meta
-      property="og:description"
-      content="${escapeHtml(description)}"
-    />
+    const metadata = await sharp(productImagePath)
+      .metadata();
 
-    <meta
-      property="og:image"
-      content="${escapeHtml(image)}"
-    />
+    // --------------------------------------------------------
+    // STEP 2:
+    // Trim empty/transparent margins.
+    //
+    // This is the important part.
+    // If the original PNG contains a large transparent
+    // canvas around the medicine pack, this removes it.
+    // --------------------------------------------------------
 
-    <meta
-      property="og:site_name"
-      content="Zuvius Lifesciences"
-    />
+    let trimmedBuffer;
 
-    <meta
-      name="twitter:card"
-      content="summary_large_image"
-    />
+    try {
+      trimmedBuffer = await sharp(productImagePath)
+        .trim({
+          background: {
+            r: 255,
+            g: 255,
+            b: 255,
+            alpha: 0,
+          },
+        })
+        .png()
+        .toBuffer();
+    } catch (trimError) {
+      console.warn(
+        `⚠ Could not trim ${product.name}, using original image.`
+      );
 
-    <meta
-      name="twitter:url"
-      content="${escapeHtml(productUrl)}"
-    />
+      trimmedBuffer = await sharp(productImagePath)
+        .png()
+        .toBuffer();
+    }
 
-    <meta
-      name="twitter:title"
-      content="${escapeHtml(title)}"
-    />
+    // --------------------------------------------------------
+    // STEP 3:
+    // Get trimmed dimensions.
+    // --------------------------------------------------------
 
-    <meta
-      name="twitter:description"
-      content="${escapeHtml(description)}"
-    />
+    const trimmedMetadata = await sharp(
+      trimmedBuffer
+    ).metadata();
 
-    <meta
-      name="twitter:image"
-      content="${escapeHtml(image)}"
-    />
-  `;
+    let trimmedWidth =
+      trimmedMetadata.width || metadata.width || 1;
 
-  html = html.replace(
-    /<\/head>/i,
-    `${metaTags}\n</head>`
-  );
+    let trimmedHeight =
+      trimmedMetadata.height || metadata.height || 1;
+
+    // --------------------------------------------------------
+    // STEP 4:
+    // Make the product artwork LARGE.
+    //
+    // We deliberately use almost the full OG area.
+    //
+    // Maximum artwork area:
+    // 1100 x 580
+    //
+    // Because fit=contain is used, the product is never
+    // stretched or distorted.
+    // --------------------------------------------------------
+
+    const maxProductWidth = 1100;
+    const maxProductHeight = 580;
+
+    const widthRatio =
+      maxProductWidth / trimmedWidth;
+
+    const heightRatio =
+      maxProductHeight / trimmedHeight;
+
+    const scale =
+      Math.min(widthRatio, heightRatio);
+
+    const finalWidth = Math.max(
+      1,
+      Math.round(trimmedWidth * scale)
+    );
+
+    const finalHeight = Math.max(
+      1,
+      Math.round(trimmedHeight * scale)
+    );
+
+    // --------------------------------------------------------
+    // STEP 5:
+    // Resize the ACTUAL product artwork.
+    // --------------------------------------------------------
+
+    const productBuffer = await sharp(
+      trimmedBuffer
+    )
+      .resize({
+        width: finalWidth,
+        height: finalHeight,
+        fit: "fill",
+        kernel: sharp.kernel.lanczos3,
+      })
+      .ensureAlpha()
+      .png()
+      .toBuffer();
+
+    // --------------------------------------------------------
+    // STEP 6:
+    // Create 1200 x 630 background.
+    // --------------------------------------------------------
+
+    const background = sharp({
+      create: {
+        width: OG_WIDTH,
+        height: OG_HEIGHT,
+        channels: 4,
+        background: OG_BACKGROUND,
+      },
+    });
+
+    // --------------------------------------------------------
+    // STEP 7:
+    // Center the ORIGINAL product artwork on the
+    // #219b90 background.
+    // --------------------------------------------------------
+
+    await background
+      .composite([
+        {
+          input: productBuffer,
+          gravity: "center",
+        },
+      ])
+      .flatten({
+        background: OG_BACKGROUND,
+      })
+      .jpeg({
+        quality: 95,
+        chromaSubsampling: "4:4:4",
+      })
+      .toFile(outputPath);
+
+    return true;
+
+  } catch (error) {
+    console.error(
+      `⚠ Failed to create OG image for ${product.name}`
+    );
+
+    console.error(error);
+
+    return false;
+  }
+}
+
+
+// ============================================================
+// META TAG REPLACEMENT
+// ============================================================
+
+function replaceOrAddMeta(html, regex, replacement) {
+  if (regex.test(html)) {
+    return html.replace(
+      regex,
+      replacement
+    );
+  }
 
   return html;
 }
 
-function generatePages() {
-  if (!fs.existsSync(BUILD_DIR)) {
-    console.error("❌ build folder not found.");
-    console.error("Run this after `react-scripts build`.");
-    process.exit(1);
-  }
 
-  const baseIndexPath = path.join(BUILD_DIR, "index.html");
+// ============================================================
+// GENERATE PRODUCT PAGE
+// ============================================================
 
-  if (!fs.existsSync(baseIndexPath)) {
-    console.error("❌ build/index.html not found.");
-    process.exit(1);
-  }
+async function generateProductPage(
+  product,
+  baseHtml
+) {
+  const category = cleanText(product.category);
+  const slug = cleanText(product.slug);
+  const name = cleanText(product.name);
+  const subtitle = cleanText(product.subtitle);
 
-  const baseHtml = fs.readFileSync(baseIndexPath, "utf8");
-
-  const products = getProducts();
-
-  if (!Array.isArray(products) || products.length === 0) {
-    console.error("❌ No products found in productdata.js");
-    process.exit(1);
-  }
-
-  let generated = 0;
-
-  products.forEach((product) => {
-    if (!product || !product.slug || !product.category) {
-      return;
-    }
-
-    const productDir = path.join(
-      BUILD_DIR,
-      "products",
-      product.category,
-      product.slug
-    );
-
-    fs.mkdirSync(productDir, {
-      recursive: true,
-    });
-
-    const productHtml = createProductHtml(
-      baseHtml,
+  if (!category || !slug || !name) {
+    console.warn(
+      "⚠ Skipping invalid product:",
       product
     );
 
-    fs.writeFileSync(
-      path.join(productDir, "index.html"),
-      productHtml,
+    return {
+      created: false,
+      ogCreated: false,
+    };
+  }
+
+  const productDir = path.join(
+    PRODUCTS_OUTPUT_DIR,
+    category,
+    slug
+  );
+
+  fs.mkdirSync(
+    productDir,
+    {
+      recursive: true,
+    }
+  );
+
+  // ----------------------------------------------------------
+  // Product URL
+  // ----------------------------------------------------------
+
+  const productUrl =
+    `${SITE_URL}/products/${encodeURIComponent(category)}/${encodeURIComponent(slug)}`;
+
+  // ----------------------------------------------------------
+  // Product title
+  // ----------------------------------------------------------
+
+  let title = name;
+
+  if (subtitle) {
+    title += ` | ${subtitle}`;
+  }
+
+  title +=
+    " | Zuvius Lifesciences";
+
+  // ----------------------------------------------------------
+  // Description
+  // ----------------------------------------------------------
+
+  const description =
+    getDescription(product);
+
+  // ----------------------------------------------------------
+  // Create OG image
+  // ----------------------------------------------------------
+
+  const ogImagePath =
+    path.join(
+      productDir,
+      "og-image.jpg"
+    );
+
+  const ogCreated =
+    await createOgImage(
+      product,
+      ogImagePath
+    );
+
+  const ogImageUrl = ogCreated
+    ? `${productUrl}/og-image.jpg`
+    : `${SITE_URL}/og-image.jpg`;
+
+  // ----------------------------------------------------------
+  // Start with CRA build index.html
+  // ----------------------------------------------------------
+
+  let html = baseHtml;
+
+  // ----------------------------------------------------------
+  // TITLE
+  // ----------------------------------------------------------
+
+  html = html.replace(
+    /<title>[\s\S]*?<\/title>/i,
+    `<title>${escapeHtml(title)}</title>`
+  );
+
+  // ----------------------------------------------------------
+  // DESCRIPTION
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+name=["']description["'][^>]*>/i,
+    `<meta name="description" content="${escapeAttribute(description)}" />`
+  );
+
+  // ----------------------------------------------------------
+  // CANONICAL
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<link\s+rel=["']canonical["'][^>]*>/i,
+    `<link rel="canonical" href="${escapeAttribute(productUrl)}" />`
+  );
+
+  // ----------------------------------------------------------
+  // OG TITLE
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+property=["']og:title["'][^>]*>/i,
+    `<meta property="og:title" content="${escapeAttribute(title)}" />`
+  );
+
+  // ----------------------------------------------------------
+  // OG DESCRIPTION
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+property=["']og:description["'][^>]*>/i,
+    `<meta property="og:description" content="${escapeAttribute(description)}" />`
+  );
+
+  // ----------------------------------------------------------
+  // OG URL
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+property=["']og:url["'][^>]*>/i,
+    `<meta property="og:url" content="${escapeAttribute(productUrl)}" />`
+  );
+
+  // ----------------------------------------------------------
+  // OG TYPE
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+property=["']og:type["'][^>]*>/i,
+    `<meta property="og:type" content="website" />`
+  );
+
+  // ----------------------------------------------------------
+  // OG IMAGE
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+property=["']og:image["'][^>]*>/i,
+    `<meta property="og:image" content="${escapeAttribute(ogImageUrl)}" />`
+  );
+
+  // ----------------------------------------------------------
+  // OG IMAGE WIDTH
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+property=["']og:image:width["'][^>]*>/i,
+    `<meta property="og:image:width" content="1200" />`
+  );
+
+  // ----------------------------------------------------------
+  // OG IMAGE HEIGHT
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+property=["']og:image:height["'][^>]*>/i,
+    `<meta property="og:image:height" content="630" />`
+  );
+
+  // ----------------------------------------------------------
+  // TWITTER CARD
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+name=["']twitter:card["'][^>]*>/i,
+    `<meta name="twitter:card" content="summary_large_image" />`
+  );
+
+  // ----------------------------------------------------------
+  // TWITTER TITLE
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+name=["']twitter:title["'][^>]*>/i,
+    `<meta name="twitter:title" content="${escapeAttribute(title)}" />`
+  );
+
+  // ----------------------------------------------------------
+  // TWITTER DESCRIPTION
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+name=["']twitter:description["'][^>]*>/i,
+    `<meta name="twitter:description" content="${escapeAttribute(description)}" />`
+  );
+
+  // ----------------------------------------------------------
+  // TWITTER IMAGE
+  // ----------------------------------------------------------
+
+  html = replaceOrAddMeta(
+    html,
+    /<meta\s+name=["']twitter:image["'][^>]*>/i,
+    `<meta name="twitter:image" content="${escapeAttribute(ogImageUrl)}" />`
+  );
+
+  // ----------------------------------------------------------
+  // WRITE PRODUCT HTML
+  // ----------------------------------------------------------
+
+  const outputFile =
+    path.join(
+      productDir,
+      "index.html"
+    );
+
+  fs.writeFileSync(
+    outputFile,
+    html,
+    "utf8"
+  );
+
+  return {
+    created: true,
+    ogCreated,
+  };
+}
+
+
+// ============================================================
+// MAIN
+// ============================================================
+
+async function main() {
+  console.log("");
+  console.log(
+    "=============================================="
+  );
+  console.log(
+    " Zuvius Lifesciences - Product SEO Generator"
+  );
+  console.log(
+    "=============================================="
+  );
+  console.log("");
+
+  // ----------------------------------------------------------
+  // Check build/index.html
+  // ----------------------------------------------------------
+
+  if (!fs.existsSync(BUILD_INDEX_FILE)) {
+    throw new Error(
+      "build/index.html not found. Run npm run build first."
+    );
+  }
+
+  // ----------------------------------------------------------
+  // Load products
+  // ----------------------------------------------------------
+
+  const products =
+    loadProducts();
+
+  console.log(
+    `Products found : ${products.length}`
+  );
+
+  // ----------------------------------------------------------
+  // Make sure products directory exists
+  // ----------------------------------------------------------
+
+  fs.mkdirSync(
+    PRODUCTS_OUTPUT_DIR,
+    {
+      recursive: true,
+    }
+  );
+
+  // ----------------------------------------------------------
+  // Read CRA build index
+  // ----------------------------------------------------------
+
+  const baseHtml =
+    fs.readFileSync(
+      BUILD_INDEX_FILE,
       "utf8"
     );
 
-    generated++;
-  });
+  let pagesCreated = 0;
+  let ogImagesCreated = 0;
+
+  // ----------------------------------------------------------
+  // Generate every product page
+  // ----------------------------------------------------------
+
+  for (const product of products) {
+    const result =
+      await generateProductPage(
+        product,
+        baseHtml
+      );
+
+    if (result.created) {
+      pagesCreated++;
+    }
+
+    if (result.ogCreated) {
+      ogImagesCreated++;
+    }
+  }
+
+  // ----------------------------------------------------------
+  // Summary
+  // ----------------------------------------------------------
 
   console.log("");
-  console.log("========================================");
-  console.log(" Product SEO Pages Generated");
-  console.log("========================================");
-  console.log(` Products found : ${products.length}`);
-  console.log(` Pages created  : ${generated}`);
-  console.log("");
-  console.log("Example:");
   console.log(
-    " /products/oncoace/acalataz/index.html"
+    "=============================================="
   );
-  console.log("========================================");
+  console.log(
+    " Product SEO Generation Complete"
+  );
+  console.log(
+    "=============================================="
+  );
+
+  console.log(
+    `Products found       : ${products.length}`
+  );
+
+  console.log(
+    `Pages created        : ${pagesCreated}`
+  );
+
+  console.log(
+    `OG images generated  : ${ogImagesCreated}`
+  );
+
+  console.log(
+    `OG background        : ${OG_BACKGROUND}`
+  );
+
+  console.log(
+    `OG size              : ${OG_WIDTH}x${OG_HEIGHT}`
+  );
+
+  console.log("");
 }
 
-generatePages();
+
+main().catch((error) => {
+  console.error("");
+  console.error(
+    "❌ Product SEO generation failed."
+  );
+  console.error(error);
+  process.exit(1);
+});
