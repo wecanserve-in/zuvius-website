@@ -62,6 +62,13 @@ const Navbar = () => {
         },
       ],
     },
+
+    // BLOGS
+    {
+      name: "Blogs",
+      path: "/blog",
+    },
+
     {
       name: "Contact",
       path: "/contact",
@@ -91,6 +98,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      {/* LOGO */}
       <div className="nav-logo">
         <Link to="/" onClick={closeMobileMenu}>
           <img
@@ -101,6 +109,7 @@ const Navbar = () => {
         </Link>
       </div>
 
+      {/* MOBILE HAMBURGER */}
       <button
         type="button"
         className={`hamburger-btn ${mobileOpen ? "active" : ""}`}
@@ -113,6 +122,7 @@ const Navbar = () => {
         <span />
       </button>
 
+      {/* NAVIGATION LINKS */}
       <ul className={`nav-links ${mobileOpen ? "mobile-open" : ""}`}>
         {navData.map((item, index) => (
           <li
@@ -183,6 +193,7 @@ const Navbar = () => {
           </li>
         ))}
 
+        {/* MOBILE BROCHURE BUTTON */}
         <li className="mobile-inquiry-wrap">
           <a
             href="/zuvius-brochure.pdf"
@@ -195,6 +206,7 @@ const Navbar = () => {
         </li>
       </ul>
 
+      {/* DESKTOP BROCHURE BUTTON */}
       <div className="nav-action">
         <a
           href="/zuvius-brochure.pdf"

@@ -1325,6 +1325,10 @@ button.related-product-card,
   transform: scale(0.9);
 }
 
+.product-detail-main-image img.idaz-img {
+  transform: scale(0.9);
+}
+
 .product-detail-main-image img[src*="Zuvipro40vanilla-2"] {
   transform: scale(2);
 }
@@ -1337,6 +1341,18 @@ button.related-product-card,
   transform: scale(0.8);
 }
 
+
+.product-detail-thumbnails-bottom img[src*="idaz-5"] {
+  transform: scale(1.0);
+}
+
+.product-detail-thumbnails-bottom img[src*="idaz-10"] {
+  transform: scale(1.0);
+}
+
+.product-detail-thumbnails-bottom img[src*="idaz-20"] {
+  transform: scale(1.0);
+}
 
 /* Zuvipro thumbnails only */
 .product-detail-thumbnails-bottom img[src*="Zuvipro40vanilla-1"] {

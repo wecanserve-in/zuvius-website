@@ -700,6 +700,10 @@
   transform: scale(2.3) !important;
 }
 
+.product-category-page .category-product-image img.idaz-img {
+  transform: scale(1.1) !important;
+}
+
 .product-category-page .category-product-image img.antifol-img {
   transform: scale(1.5) !important;
 }

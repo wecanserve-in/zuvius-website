@@ -1,0 +1,878 @@
+/* =========================================================
+   BLOG DETAIL PAGE
+========================================================= */
+
+.blog-detail-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #ffffff;
+
+  color: #061943;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.blog-detail-container {
+  width: min(1180px, calc(100% - 48px));
+
+  margin: 0 auto;
+
+  /*
+    No banner on detail page.
+    Keep enough space below the fixed navbar.
+  */
+  padding-top: 125px;
+
+  padding-bottom: 90px;
+}
+
+
+/* =========================================================
+   ARTICLE + SIDEBAR
+========================================================= */
+
+.blog-detail-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    300px;
+
+  gap: 55px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   ARTICLE
+========================================================= */
+
+.blog-article {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   ARTICLE HEADER
+========================================================= */
+
+.blog-article-top {
+  margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.blog-detail-meta {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px 18px;
+
+  margin-bottom: 16px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  color: #6c7480;
+}
+
+.blog-detail-category {
+  color: #008a9a;
+}
+
+
+/* =========================================================
+   ARTICLE TITLE
+========================================================= */
+
+.blog-article-top h1 {
+  max-width: 950px;
+
+  margin: 0 0 18px;
+
+  font-size: clamp(
+    2.5rem,
+    5vw,
+    4.2rem
+  );
+
+  line-height: 1.05;
+
+  font-weight: 900;
+
+  letter-spacing: -2px;
+
+  color: #061943;
+}
+
+
+/* =========================================================
+   EXCERPT
+========================================================= */
+
+.blog-detail-excerpt {
+  max-width: 900px;
+
+  margin: 0 0 18px;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  color: #555e6c;
+}
+
+
+/* =========================================================
+   AUTHOR
+========================================================= */
+
+.blog-author {
+  font-size: 14px;
+
+  color: #707986;
+}
+
+.blog-author strong {
+  color: #061943;
+}
+
+
+/* =========================================================
+   FEATURE IMAGE
+========================================================= */
+
+.blog-detail-feature-image {
+  width: 100%;
+
+  height: 430px;
+
+  margin-bottom: 40px;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #edf2f8;
+}
+
+
+/* =========================================================
+   NORMAL BLOG IMAGE
+========================================================= */
+
+.blog-detail-feature-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   PRODUCT BLOG IMAGE
+========================================================= */
+
+.product-blog-detail
+.blog-detail-feature-image {
+  background: #09c3c1;
+}
+
+
+/*
+   Product PNGs can contain considerable whitespace.
+
+   The image is therefore enlarged inside the
+   teal container so the actual product pack
+   is clearly visible.
+*/
+
+.product-blog-detail
+.blog-detail-feature-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  padding: 0;
+
+  transform: scale(2);
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+/* =========================================================
+   ARTICLE CONTENT
+========================================================= */
+
+.blog-article-content {
+  font-size: 17px;
+
+  line-height: 1.85;
+
+  color: #363636;
+}
+
+.blog-article-content p {
+  margin: 0 0 24px;
+}
+
+
+/* =========================================================
+   CONTENT HEADINGS
+========================================================= */
+
+.blog-article-content h2 {
+  margin: 42px 0 17px;
+
+  font-size: 29px;
+
+  line-height: 1.25;
+
+  font-weight: 900;
+
+  letter-spacing: -0.5px;
+
+  color: #061943;
+}
+
+.blog-article-content h2:first-child {
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+.blog-article-content ul {
+  margin: 0 0 30px;
+
+  padding-left: 23px;
+}
+
+.blog-article-content li {
+  margin-bottom: 11px;
+
+  padding-left: 6px;
+}
+
+.blog-article-content li::marker {
+  color: #09c3c1;
+}
+
+
+/* =========================================================
+   PRODUCT INFORMATION TABLE
+========================================================= */
+
+.blog-info-table-wrapper {
+  width: 100%;
+
+  margin: 25px 0 35px;
+
+  overflow-x: auto;
+
+  border: 1px solid #d9e2ef;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+}
+
+.blog-info-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  font-size: 15px;
+}
+
+.blog-info-table tr {
+  border-bottom: 1px solid #edf2f8;
+}
+
+.blog-info-table tr:last-child {
+  border-bottom: none;
+}
+
+.blog-info-table th,
+.blog-info-table td {
+  padding: 15px 18px;
+
+  text-align: left;
+
+  vertical-align: top;
+}
+
+.blog-info-table th {
+  width: 38%;
+
+  font-weight: 800;
+
+  color: #061943;
+
+  background: #f7fafc;
+}
+
+.blog-info-table td {
+  font-weight: 500;
+
+  color: #4f5865;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.blog-faq {
+  margin: 0 0 18px;
+
+  padding: 22px 24px;
+
+  border: 1px solid #edf2f8;
+
+  border-left: 4px solid #09c3c1;
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 16px rgba(6, 25, 67, 0.04);
+}
+
+.blog-faq h3 {
+  margin: 0 0 9px;
+
+  font-size: 17px;
+
+  line-height: 1.4;
+
+  font-weight: 800;
+
+  color: #061943;
+}
+
+.blog-faq p {
+  margin: 0;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: #5e6672;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.blog-tags {
+  margin-top: 45px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #edf2f8;
+}
+
+.blog-tags > span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  color: #061943;
+}
+
+.blog-tag-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.blog-tag-list span {
+  padding: 7px 12px;
+
+  border-radius: 30px;
+
+  background: #edf8f9;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  color: #008a9a;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.blog-sidebar {
+  position: sticky;
+
+  top: 105px;
+}
+
+
+/* =========================================================
+   SIDEBAR CARD
+========================================================= */
+
+.blog-sidebar-card {
+  margin-bottom: 20px;
+
+  padding: 24px;
+
+  border: 1px solid #edf2f8;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 5px 20px rgba(6, 25, 67, 0.05);
+}
+
+.blog-sidebar-card h3 {
+  margin: 0 0 13px;
+
+  font-size: 20px;
+
+  line-height: 1.25;
+
+  font-weight: 900;
+
+  color: #061943;
+}
+
+.blog-sidebar-card > p {
+  margin: 0 0 18px;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: #626b78;
+}
+
+.blog-sidebar-link {
+  display: inline-block;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  color: #008a9a;
+}
+
+.blog-sidebar-link:hover {
+  color: #061943;
+}
+
+
+/* =========================================================
+   RELATED BLOGS
+========================================================= */
+
+.related-blog-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+.related-blog {
+  display: grid;
+
+  grid-template-columns: 72px 1fr;
+
+  gap: 12px;
+
+  align-items: center;
+
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   RELATED IMAGE
+========================================================= */
+
+.related-blog-image {
+  width: 72px;
+
+  height: 65px;
+
+  overflow: hidden;
+
+  border-radius: 7px;
+
+  background: #09c3c1;
+}
+
+.related-blog-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.related-blog:hover
+.related-blog-image img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   RELATED CONTENT
+========================================================= */
+
+.related-blog-content span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  color: #008a9a;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+.related-blog-content h4 {
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.35;
+
+  font-weight: 800;
+
+  color: #061943;
+}
+
+
+/* =========================================================
+   ALL BLOGS BUTTON
+========================================================= */
+
+.blog-sidebar-back {
+  display: block;
+
+  padding: 14px 18px;
+
+  border: 1px solid #d9e2ef;
+
+  border-radius: 9px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  color: #061943;
+
+  background: #ffffff;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.blog-sidebar-back:hover {
+  background: #09c3c1;
+
+  border-color: #09c3c1;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   ARTICLE NOT FOUND
+========================================================= */
+
+.blog-not-found {
+  padding: 80px 30px;
+
+  text-align: center;
+
+  border: 1px solid #edf2f8;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+.blog-not-found h1 {
+  margin: 0 0 12px;
+
+  font-size: 34px;
+
+  font-weight: 900;
+
+  color: #061943;
+}
+
+.blog-not-found p {
+  margin: 0 0 25px;
+
+  color: #68717e;
+}
+
+.blog-back-button {
+  display: inline-flex;
+
+  padding: 12px 20px;
+
+  border-radius: 7px;
+
+  background: #09c3c1;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease;
+}
+
+.blog-back-button:hover {
+  background: #008a9a;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .blog-detail-container {
+    width: min(
+      920px,
+      calc(100% - 40px)
+    );
+
+    padding-top: 110px;
+  }
+
+  .blog-detail-layout {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .blog-sidebar {
+    position: static;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+  }
+
+  .blog-sidebar-card {
+    margin-bottom: 0;
+  }
+
+  .blog-sidebar-back {
+    grid-column: 1 / -1;
+  }
+
+  .blog-detail-feature-image {
+    height: 400px;
+  }
+
+  .product-blog-detail
+  .blog-detail-feature-image img {
+    transform: scale(1.85);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .blog-detail-container {
+    width: calc(100% - 32px);
+
+    padding-top: 95px;
+
+    padding-bottom: 60px;
+  }
+
+  .blog-article-top h1 {
+    font-size: 2.25rem;
+
+    letter-spacing: -1px;
+  }
+
+  .blog-detail-excerpt {
+    font-size: 16px;
+  }
+
+  .blog-detail-feature-image {
+    height: 300px;
+
+    margin-bottom: 30px;
+  }
+
+  .product-blog-detail
+  .blog-detail-feature-image img {
+    transform: scale(1.7);
+  }
+
+  .blog-article-content {
+    font-size: 16px;
+
+    line-height: 1.8;
+  }
+
+  .blog-article-content h2 {
+    font-size: 25px;
+
+    margin-top: 35px;
+  }
+
+  .blog-sidebar {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0;
+  }
+
+  .blog-sidebar-card {
+    margin-bottom: 18px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .blog-detail-container {
+    width: calc(100% - 28px);
+
+    padding-top: 88px;
+  }
+
+  .blog-article-top h1 {
+    font-size: 1.9rem;
+  }
+
+  .blog-detail-meta {
+    gap: 7px 12px;
+
+    font-size: 11px;
+  }
+
+  .blog-detail-feature-image {
+    height: 250px;
+  }
+
+  .product-blog-detail
+  .blog-detail-feature-image img {
+    transform: scale(1.55);
+  }
+
+  .blog-article-content {
+    font-size: 15px;
+  }
+
+  .blog-article-content h2 {
+    font-size: 23px;
+  }
+
+  .blog-info-table {
+    font-size: 13px;
+  }
+
+  .blog-info-table th,
+  .blog-info-table td {
+    padding: 12px;
+  }
+
+  .blog-info-table th {
+    width: 40%;
+  }
+
+  .blog-faq {
+    padding: 18px;
+  }
+
+  .blog-faq h3 {
+    font-size: 16px;
+  }
+
+  .blog-faq p {
+    font-size: 14px;
+  }
+}

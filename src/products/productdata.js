@@ -1704,19 +1704,17 @@ Effective contraception should be used during treatment and for a recommended pe
   name: "Idaz",
   subtitle: "Idarubicin Hydrochloride Injection",
   type: "Injection",
+  imageClass:"idaz-img",
 
-  image: "/products/idaz/idaz5-1.jpeg",
+  image: "/new_product_page/idaz-5.png",
 
   images: [
-    "/products/idaz/idaz5-1.jpeg",
-    "/products/idaz/idaz5-2.jpeg",
-    "/products/idaz/idaz5-3.jpeg",
-    "/products/idaz/idaz10-1.jpeg",
-    "/products/idaz/idaz10-2.jpeg",
-    "/products/idaz/idaz10-3.jpeg",
+    "/new_product_page/idaz-5.png",
+    "/new_product_page/idaz-10.png",
+    "/new_product_page/idaz-20.png",
   ],
 
-  strength: "5/10 mg",
+  strength: "5 mg/10 mg/20 mg",
   packSize: "Vial",
   drugClass: "Anthracycline Antineoplastic Agent",
 
