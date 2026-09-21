@@ -14,7 +14,7 @@ const blogs = [
 
     author: "Zuvius Lifesciences",
 
-    image: "/new_product_page/acalataz-100.png",
+    image: "/new_product_page/Acalataz-100.png",
 
     featured: true,
 
@@ -244,7 +244,7 @@ const blogs = [
 
     author: "Zuvius Lifesciences",
 
-    image: "/new_product_page/acalataz-100.png",
+    image: "/new_product_page/Acalataz-100.png",
 
     featured: true,
 
