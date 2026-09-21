@@ -38,13 +38,14 @@ const Blog = () => {
     )
     .slice(0, 6);
 
+  const getCardCategoryClass = (category) => {
+    if (category === "Product") return "product-blog-card";
+    if (category === "Zuvius") return "zuvius-blog-card";
+    return "";
+  };
+
   return (
     <main className="blog-page">
-
-      {/* =====================================================
-          PAGE BANNER
-      ===================================================== */}
-
       <PageBanner
         title="Blogs"
         image="/blog-banner.png"
@@ -52,22 +53,14 @@ const Blog = () => {
         className="blog-page-banner"
       />
 
-
       <section className="blog-container">
-
-        {/* =====================================================
-            INTRO
-        ===================================================== */}
-
         <div className="blog-intro">
-
           <span className="blog-section-label">
             ZUVIUS INSIGHTS
           </span>
 
           <h2>
-            Insights from{" "}
-            <span>Zuvius Lifesciences</span>
+            Insights from <span>Zuvius Lifesciences</span>
           </h2>
 
           <p>
@@ -75,74 +68,44 @@ const Blog = () => {
             innovation, healthcare and the science shaping
             tomorrow's treatments.
           </p>
-
         </div>
 
-
-        {/* =====================================================
-            CATEGORY FILTER
-        ===================================================== */}
-
+        {/* CATEGORY FILTER */}
         <div className="blog-categories">
-
           {categories.map((category) => (
             <button
               key={category}
               type="button"
               className={`blog-category-btn ${
-                activeCategory === category
-                  ? "active"
-                  : ""
+                activeCategory === category ? "active" : ""
               }`}
-              onClick={() =>
-                setActiveCategory(category)
-              }
+              onClick={() => setActiveCategory(category)}
             >
               {category}
             </button>
           ))}
-
         </div>
 
-
-        {/* =====================================================
-            FEATURED ARTICLE
-        ===================================================== */}
-
+        {/* FEATURED ARTICLE */}
         {featuredBlog && (
           <section className="featured-blog-section">
-
             <div className="blog-section-heading">
-
               <div>
                 <span>FEATURED ARTICLE</span>
-
-                <h3>
-                  What we're reading
-                </h3>
+                <h3>What we're reading</h3>
               </div>
 
-              <Link
-                to="/blog/all"
-                className="view-all-blogs"
-              >
+              <Link to="/blog/all" className="view-all-blogs">
                 View All Blogs
                 <span>→</span>
               </Link>
-
             </div>
 
-
             <article
-              className={`featured-blog-card ${
-                featuredBlog.category === "Product"
-                  ? "product-blog-card"
-                  : ""
-              }`}
+              className={`featured-blog-card ${getCardCategoryClass(
+                featuredBlog.category
+              )}`}
             >
-
-              {/* IMAGE */}
-
               <Link
                 to={`/blog/${featuredBlog.slug}`}
                 className="featured-blog-image"
@@ -153,37 +116,17 @@ const Blog = () => {
                 />
               </Link>
 
-
-              {/* CONTENT */}
-
               <div className="featured-blog-content">
-
                 <div className="blog-meta">
-
                   <span className="blog-category-label">
                     {featuredBlog.category}
                   </span>
-
-                  <span>
-                    {featuredBlog.date}
-                  </span>
-
-                  <span>
-                    {featuredBlog.readTime}
-                  </span>
-
+                  <span>{featuredBlog.date}</span>
+                  <span>{featuredBlog.readTime}</span>
                 </div>
 
-
-                <h3>
-                  {featuredBlog.title}
-                </h3>
-
-
-                <p>
-                  {featuredBlog.excerpt}
-                </p>
-
+                <h3>{featuredBlog.title}</h3>
+                <p>{featuredBlog.excerpt}</p>
 
                 <Link
                   to={`/blog/${featuredBlog.slug}`}
@@ -192,48 +135,29 @@ const Blog = () => {
                   Read Article
                   <span>→</span>
                 </Link>
-
               </div>
-
             </article>
-
           </section>
         )}
 
-
-        {/* =====================================================
-            LATEST INSIGHTS
-        ===================================================== */}
-
+        {/* LATEST INSIGHTS */}
         {latestBlogs.length > 0 && (
           <section className="latest-blog-section">
-
             <div className="blog-section-heading">
-
               <div>
                 <span>LATEST INSIGHTS</span>
-
-                <h3>
-                  Explore our latest articles
-                </h3>
+                <h3>Explore our latest articles</h3>
               </div>
-
             </div>
 
-
             <div className="blog-grid">
-
               {latestBlogs.map((blog) => (
-
                 <article
-                  className={`blog-card ${
-                    blog.category === "Product"
-                      ? "product-blog-card"
-                      : ""
-                  }`}
+                  className={`blog-card ${getCardCategoryClass(
+                    blog.category
+                  )}`}
                   key={blog.id}
                 >
-
                   <Link
                     to={`/blog/${blog.slug}`}
                     className="blog-card-image"
@@ -244,31 +168,16 @@ const Blog = () => {
                     />
                   </Link>
 
-
                   <div className="blog-card-content">
-
                     <div className="blog-meta">
-
                       <span className="blog-category-label">
                         {blog.category}
                       </span>
-
-                      <span>
-                        {blog.date}
-                      </span>
-
+                      <span>{blog.date}</span>
                     </div>
 
-
-                    <h3>
-                      {blog.title}
-                    </h3>
-
-
-                    <p>
-                      {blog.excerpt}
-                    </p>
-
+                    <h3>{blog.title}</h3>
+                    <p>{blog.excerpt}</p>
 
                     <Link
                       to={`/blog/${blog.slug}`}
@@ -277,40 +186,20 @@ const Blog = () => {
                       Read Article
                       <span>→</span>
                     </Link>
-
                   </div>
-
                 </article>
-
               ))}
-
             </div>
-
           </section>
         )}
 
-
-        {/* =====================================================
-            NO RESULTS
-        ===================================================== */}
-
         {filteredBlogs.length === 0 && (
           <div className="blog-empty">
-
-            <h3>
-              More insights coming soon
-            </h3>
-
-            <p>
-              New articles and insights will be
-              published here.
-            </p>
-
+            <h3>More insights coming soon</h3>
+            <p>New articles and insights will be published here.</p>
           </div>
         )}
-
       </section>
-
     </main>
   );
 };

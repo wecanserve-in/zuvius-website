@@ -26,13 +26,14 @@ const BlogAll = () => {
           (blog) => blog.category === activeCategory
         );
 
+  const getCardCategoryClass = (category) => {
+    if (category === "Product") return "product-blog-card";
+    if (category === "Zuvius") return "zuvius-blog-card";
+    return "";
+  };
+
   return (
     <main className="blog-all-page">
-
-      {/* =====================================================
-          PAGE BANNER
-      ===================================================== */}
-
       <PageBanner
         title="All Blogs"
         image="/blog-banner.png"
@@ -40,15 +41,8 @@ const BlogAll = () => {
         className="blog-page-banner"
       />
 
-
       <section className="blog-all-container">
-
-        {/* =====================================================
-            HEADER
-        ===================================================== */}
-
         <div className="blog-all-header">
-
           <span className="blog-section-label">
             ZUVIUS INSIGHTS
           </span>
@@ -62,110 +56,60 @@ const BlogAll = () => {
             across oncology, healthcare, pharmaceuticals,
             products and more.
           </p>
-
         </div>
 
-
-        {/* =====================================================
-            CATEGORY FILTER
-        ===================================================== */}
-
+        {/* CATEGORY FILTER */}
         <div className="blog-categories">
-
           {categories.map((category) => (
             <button
               key={category}
               type="button"
               className={`blog-category-btn ${
-                activeCategory === category
-                  ? "active"
-                  : ""
+                activeCategory === category ? "active" : ""
               }`}
-              onClick={() =>
-                setActiveCategory(category)
-              }
+              onClick={() => setActiveCategory(category)}
             >
               {category}
             </button>
           ))}
-
         </div>
 
-
-        {/* =====================================================
-            RESULT COUNT
-        ===================================================== */}
-
+        {/* RESULT COUNT */}
         <div className="blog-results-header">
-
           <span>
             {filteredBlogs.length}{" "}
-            {filteredBlogs.length === 1
-              ? "Article"
-              : "Articles"}
+            {filteredBlogs.length === 1 ? "Article" : "Articles"}
           </span>
-
         </div>
 
-
-        {/* =====================================================
-            ALL BLOGS
-        ===================================================== */}
-
+        {/* ALL BLOGS */}
         {filteredBlogs.length > 0 ? (
-
           <div className="blog-all-grid">
-
             {filteredBlogs.map((blog) => (
-
               <article
-                className={`blog-all-card ${
-                  blog.category === "Product"
-                    ? "product-blog-card"
-                    : ""
-                }`}
+                className={`blog-all-card ${getCardCategoryClass(
+                  blog.category
+                )}`}
                 key={blog.id}
               >
-
                 <Link
                   to={`/blog/${blog.slug}`}
                   className="blog-all-card-image"
                 >
-                  <img
-                    src={blog.image}
-                    alt={blog.title}
-                  />
+                  <img src={blog.image} alt={blog.title} />
                 </Link>
 
-
                 <div className="blog-all-card-content">
-
                   <div className="blog-meta">
-
                     <span className="blog-category-label">
                       {blog.category}
                     </span>
-
-                    <span>
-                      {blog.date}
-                    </span>
-
-                    <span>
-                      {blog.readTime}
-                    </span>
-
+                    <span>{blog.date}</span>
+                    <span>{blog.readTime}</span>
                   </div>
 
-
-                  <h2>
-                    {blog.title}
-                  </h2>
-
-
-                  <p>
-                    {blog.excerpt}
-                  </p>
-
+                  <h2>{blog.title}</h2>
+                  <p>{blog.excerpt}</p>
 
                   <Link
                     to={`/blog/${blog.slug}`}
@@ -174,34 +118,17 @@ const BlogAll = () => {
                     Read Article
                     <span>→</span>
                   </Link>
-
                 </div>
-
               </article>
-
             ))}
-
           </div>
-
         ) : (
-
           <div className="blog-empty">
-
-            <h3>
-              No articles found
-            </h3>
-
-            <p>
-              There are currently no blogs in this
-              category.
-            </p>
-
+            <h3>No articles found</h3>
+            <p>There are currently no blogs in this category.</p>
           </div>
-
         )}
-
       </section>
-
     </main>
   );
 };
