@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 import "./productdetail.css";
 import { products } from "./productdata";
+import blogs from "../blog/blogdata";
 import SuccessMessage from "../components/SuccessMessage";
 
 const getStrengthOptions = (strengthValue) => {
@@ -64,6 +65,25 @@ const ProductDetail = () => {
     productName: product?.name || "",
     strength: strengthOptions[0] || "",
     quantity: "",
+  });
+
+  // Filter matching blogs for this specific product
+  const relatedProductBlogs = blogs.filter((blog) => {
+    if (!product) return false;
+
+    const targetMatch =
+      blog.targetUrl === `/products/${product.category}/${product.slug}` ||
+      blog.targetUrl?.includes(product.slug);
+
+    const titleNormalized = product.name.toLowerCase();
+    const blogTitleNormalized = blog.title.toLowerCase();
+    const titleMatch = blogTitleNormalized.includes(titleNormalized);
+
+    const tagMatch = blog.tags?.some((tag) =>
+      tag.toLowerCase().includes(titleNormalized)
+    );
+
+    return targetMatch || titleMatch || tagMatch;
   });
 
   /*
@@ -430,7 +450,6 @@ const ProductDetail = () => {
     formData.append("_replyto", enquiryForm.email);
 
     try {
-      // 1. Keep the existing, working FormSubmit AJAX enquiry delivery.
       const response = await fetch(
         `https://formsubmit.co/ajax/${config.primary}`,
         {
@@ -444,8 +463,6 @@ const ProductDetail = () => {
         return;
       }
 
-      // 2. Send a separate, clean acknowledgement email to the customer.
-      // This endpoint must exist on the same Hostinger domain.
       try {
         const autoReplyResponse = await fetch(
           "/api/send-enquiry-reply.php",
@@ -677,41 +694,41 @@ const ProductDetail = () => {
           </div>
 
           {/* SPECIFICATION + STORAGE */}
-<div className="product-detail-extra-meta">
+          <div className="product-detail-extra-meta">
 
-  <div className="product-detail-extra-card">
+            <div className="product-detail-extra-card">
 
-    <img
-      src="/specification.png"
-      alt="Specification"
-      className="meta-icon"
-    />
+              <img
+                src="/specification.png"
+                alt="Specification"
+                className="meta-icon"
+              />
 
-    <div>
-      <p>Specification</p>
-      <h4>USP/BP/IH Specs offered for exports</h4>
-    </div>
+              <div>
+                <p>Specification</p>
+                <h4>USP/BP/IH Specs offered for exports</h4>
+              </div>
 
-  </div>
+            </div>
 
-  {product.storage && (
-    <div className="product-detail-extra-card">
+            {product.storage && (
+              <div className="product-detail-extra-card">
 
-      <img
-        src="/storage.png"
-        alt="Storage"
-        className="meta-icon"
-      />
+                <img
+                  src="/storage.png"
+                  alt="Storage"
+                  className="meta-icon"
+                />
 
-      <div>
-        <p>Storage</p>
-        <h4>{product.storage}</h4>
-      </div>
+                <div>
+                  <p>Storage</p>
+                  <h4>{product.storage}</h4>
+                </div>
 
-    </div>
-  )}
+              </div>
+            )}
 
-</div>
+          </div>
 
           <button
             type="button"
@@ -770,44 +787,61 @@ const ProductDetail = () => {
       {/* PRODUCT INFORMATION TABS */}
       <section className="product-detail-tabs-section">
 
-      <div className="product-tabs-header">
+        <div className="product-tabs-header">
+          {tabs.map((tab) => (
+            <button
+              type="button"
+              key={tab}
+              className={activeTab === tab ? "active" : ""}
+              onClick={() => setActiveTab(tab)}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
 
-  {tabs.map((tab) => (
-    <button
-      type="button"
-      key={tab}
-      className={activeTab === tab ? "active" : ""}
-      onClick={() => setActiveTab(tab)}
-    >
-      {tab}
-    </button>
-  ))}
+        <div className="product-tabs-mobile-select">
+          <select
+            value={activeTab}
+            onChange={(event) => setActiveTab(event.target.value)}
+            aria-label="Select product information"
+          >
+            {tabs.map((tab) => (
+              <option key={tab} value={tab}>
+                {tab}
+              </option>
+            ))}
+          </select>
+        </div>
 
-</div>
-
-<div className="product-tabs-mobile-select">
-  <select
-    value={activeTab}
-    onChange={(event) => setActiveTab(event.target.value)}
-    aria-label="Select product information"
-  >
-    {tabs.map((tab) => (
-      <option key={tab} value={tab}>
-        {tab}
-      </option>
-    ))}
-  </select>
-</div>
-
-<div className="product-tabs-body">
-
+        <div className="product-tabs-body">
           <div className="product-tab-formatted-content">
             {renderFormattedContent(getTabContent())}
           </div>
-
         </div>
 
       </section>
+
+      {/* =====================================================
+          COMPACT SINGLE-LINE ARTICLE STRIP (Below Tabs)
+      ===================================================== */}
+      {relatedProductBlogs.length > 0 && (
+        <div className="product-article-compact-strip">
+          <div className="product-article-compact-left">
+            <span className="product-article-compact-badge">Insight</span>
+            <span className="product-article-compact-title">
+              {relatedProductBlogs[0].title}
+            </span>
+          </div>
+
+          <Link
+            to={`/blog/${relatedProductBlogs[0].slug}`}
+            className="product-article-compact-link"
+          >
+            Read Guide <span>→</span>
+          </Link>
+        </div>
+      )}
 
       {/* RELATED PRODUCTS */}
       <section className="related-products-section">
@@ -830,20 +864,15 @@ const ProductDetail = () => {
             >
 
               <div className="related-product-image">
-
                 <img
                   src={item.image}
                   alt={item.name}
                 />
-
               </div>
 
               <div className="related-product-content">
-
                 <h3>{item.name}</h3>
-
                 <p>{item.subtitle}</p>
-
               </div>
 
             </button>

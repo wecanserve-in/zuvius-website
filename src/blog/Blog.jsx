@@ -1,47 +1,24 @@
-import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import PageBanner from "../components/PageBanner";
 import blogs from "./blogdata";
 import "./blog.css";
 
 const Blog = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
+  const featuredBlog = blogs.find((blog) => blog.featured) || blogs[0];
 
-  const categories = useMemo(() => {
-    const uniqueCategories = [
-      ...new Set(
-        blogs
-          .map((blog) => blog.category)
-          .filter(Boolean)
-      ),
-    ];
-
-    return ["All", ...uniqueCategories];
-  }, []);
-
-  const filteredBlogs =
-    activeCategory === "All"
-      ? blogs
-      : blogs.filter(
-          (blog) => blog.category === activeCategory
-        );
-
-  const featuredBlog =
-    activeCategory === "All"
-      ? blogs.find((blog) => blog.featured) || blogs[0]
-      : filteredBlogs.find((blog) => blog.featured) ||
-        filteredBlogs[0];
-
-  const latestBlogs = filteredBlogs
-    .filter(
-      (blog) => blog.id !== featuredBlog?.id
-    )
+  const latestBlogs = blogs
+    .filter((blog) => blog.id !== featuredBlog?.id)
     .slice(0, 6);
 
   const getCardCategoryClass = (category) => {
     if (category === "Product") return "product-blog-card";
+    if (category === "Cancer") return "cancer-blog-card";
     if (category === "Zuvius") return "zuvius-blog-card";
     return "";
+  };
+
+  const getTargetOrBlogUrl = (blog) => {
+    return blog.targetUrl || `/blog/${blog.slug}`;
   };
 
   return (
@@ -55,35 +32,13 @@ const Blog = () => {
 
       <section className="blog-container">
         <div className="blog-intro">
-          <span className="blog-section-label">
-            ZUVIUS INSIGHTS
-          </span>
-
           <h2>
             Insights from <span>Zuvius Lifesciences</span>
           </h2>
-
           <p>
-            Explore perspectives on oncology, pharmaceutical
-            innovation, healthcare and the science shaping
-            tomorrow's treatments.
+            Explore perspectives on oncology, pharmaceutical innovation,
+            healthcare and the science shaping tomorrow's treatments.
           </p>
-        </div>
-
-        {/* CATEGORY FILTER */}
-        <div className="blog-categories">
-          {categories.map((category) => (
-            <button
-              key={category}
-              type="button"
-              className={`blog-category-btn ${
-                activeCategory === category ? "active" : ""
-              }`}
-              onClick={() => setActiveCategory(category)}
-            >
-              {category}
-            </button>
-          ))}
         </div>
 
         {/* FEATURED ARTICLE */}
@@ -113,28 +68,63 @@ const Blog = () => {
                 <img
                   src={featuredBlog.image}
                   alt={featuredBlog.title}
+                  className={featuredBlog.imageClass || ""}
                 />
               </Link>
 
               <div className="featured-blog-content">
                 <div className="blog-meta">
-                  <span className="blog-category-label">
-                    {featuredBlog.category}
-                  </span>
+                  {featuredBlog.targetUrl ? (
+                    <Link
+                      to={featuredBlog.targetUrl}
+                      className="blog-category-label"
+                    >
+                      {featuredBlog.category}
+                    </Link>
+                  ) : (
+                    <span className="blog-category-label">
+                      {featuredBlog.category}
+                    </span>
+                  )}
                   <span>{featuredBlog.date}</span>
                   <span>{featuredBlog.readTime}</span>
                 </div>
 
-                <h3>{featuredBlog.title}</h3>
+                <h3 className="blog-card-title">
+                  <Link to={getTargetOrBlogUrl(featuredBlog)}>
+                    {featuredBlog.title}
+                  </Link>
+                </h3>
+
                 <p>{featuredBlog.excerpt}</p>
 
-                <Link
-                  to={`/blog/${featuredBlog.slug}`}
-                  className="blog-read-more"
-                >
-                  Read Article
-                  <span>→</span>
-                </Link>
+                <div className="blog-card-actions">
+                  <Link
+                    to={`/blog/${featuredBlog.slug}`}
+                    className="blog-read-more"
+                  >
+                    Read Article
+                    <span>→</span>
+                  </Link>
+
+                  {featuredBlog.category === "Product" && featuredBlog.targetUrl && (
+                    <Link
+                      to={featuredBlog.targetUrl}
+                      className="blog-direct-link"
+                    >
+                      Explore Product ↗
+                    </Link>
+                  )}
+
+                  {featuredBlog.category === "Cancer" && featuredBlog.targetUrl && (
+                    <Link
+                      to={featuredBlog.targetUrl}
+                      className="blog-direct-link"
+                    >
+                      View Cancer Page ↗
+                    </Link>
+                  )}
+                </div>
               </div>
             </article>
           </section>
@@ -153,47 +143,82 @@ const Blog = () => {
             <div className="blog-grid">
               {latestBlogs.map((blog) => (
                 <article
-                  className={`blog-card ${getCardCategoryClass(
-                    blog.category
-                  )}`}
+                  className={`blog-card ${getCardCategoryClass(blog.category)}`}
                   key={blog.id}
                 >
-                  <Link
-                    to={`/blog/${blog.slug}`}
-                    className="blog-card-image"
-                  >
+                  <Link to={`/blog/${blog.slug}`} className="blog-card-image">
                     <img
                       src={blog.image}
                       alt={blog.title}
+                      className={blog.imageClass || ""}
                     />
                   </Link>
 
                   <div className="blog-card-content">
                     <div className="blog-meta">
-                      <span className="blog-category-label">
-                        {blog.category}
-                      </span>
+                      {blog.targetUrl ? (
+                        <Link
+                          to={blog.targetUrl}
+                          className="blog-category-label"
+                        >
+                          {blog.category}
+                        </Link>
+                      ) : (
+                        <span className="blog-category-label">
+                          {blog.category}
+                        </span>
+                      )}
                       <span>{blog.date}</span>
                     </div>
 
-                    <h3>{blog.title}</h3>
+                    <h3 className="blog-card-title">
+                      <Link to={getTargetOrBlogUrl(blog)}>{blog.title}</Link>
+                    </h3>
+
                     <p>{blog.excerpt}</p>
 
-                    <Link
-                      to={`/blog/${blog.slug}`}
-                      className="blog-read-more"
-                    >
-                      Read Article
-                      <span>→</span>
-                    </Link>
+                    <div className="blog-card-actions">
+                      <Link
+                        to={`/blog/${blog.slug}`}
+                        className="blog-read-more"
+                      >
+                        Read Article
+                        <span>→</span>
+                      </Link>
+
+                      {blog.category === "Product" && blog.targetUrl && (
+                        <Link
+                          to={blog.targetUrl}
+                          className="blog-direct-link"
+                        >
+                          Explore Product ↗
+                        </Link>
+                      )}
+
+                      {blog.category === "Cancer" && blog.targetUrl && (
+                        <Link
+                          to={blog.targetUrl}
+                          className="blog-direct-link"
+                        >
+                          View Cancer Page ↗
+                        </Link>
+                      )}
+                    </div>
                   </div>
                 </article>
               ))}
             </div>
+
+            {/* PROMINENT "VIEW ALL BLOGS" BUTTON BELOW THE GRID */}
+            <div className="blog-bottom-view-all">
+              <Link to="/blog/all" className="blog-view-all-btn">
+                View All Articles <span>→</span>
+              </Link>
+            </div>
           </section>
         )}
 
-        {filteredBlogs.length === 0 && (
+        {blogs.length === 0 && (
           <div className="blog-empty">
             <h3>More insights coming soon</h3>
             <p>New articles and insights will be published here.</p>

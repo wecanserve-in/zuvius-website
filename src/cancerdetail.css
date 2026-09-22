@@ -1430,3 +1430,482 @@
     color:#fff;
   }
 }
+
+/* ==================================================
+   CANCER DETAIL — RELATED BLOGS SECTION
+================================================== */
+
+.cancer-related-blogs-section {
+  width: 100%;
+  margin-top: 60px;
+  padding-top: 45px;
+  border-top: 1px solid #e7eef5;
+}
+
+.cancer-related-header {
+  margin-bottom: 30px;
+}
+
+.cancer-related-badge {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #008a9a;
+  text-transform: uppercase;
+}
+
+.cancer-related-header h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.25;
+  color: #061943;
+}
+
+.cancer-related-header h2 span {
+  color: #008a9a;
+}
+
+.cancer-related-blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.cancer-related-blog-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #d9e2ef;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(6, 25, 67, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cancer-related-blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 138, 154, 0.1);
+  border-color: #09c3c1;
+}
+
+.cancer-related-blog-image {
+  width: 100%;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #09c3c1;
+  overflow: hidden;
+}
+
+.cancer-related-blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.8);
+  transition: transform 0.3s ease;
+}
+
+.cancer-related-blog-card:hover .cancer-related-blog-image img {
+  transform: scale(1.9);
+}
+
+.cancer-related-blog-body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cancer-related-blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6c7480;
+}
+
+.cancer-related-blog-cat {
+  color: #008a9a;
+  font-weight: 800;
+}
+
+.cancer-related-blog-body h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.cancer-related-blog-body h3 a {
+  color: #061943;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cancer-related-blog-body h3 a:hover {
+  color: #008a9a;
+}
+
+.cancer-related-blog-body p {
+  margin: 0 0 18px;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #555e6c;
+}
+
+.cancer-related-blog-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  font-size: 13px;
+  font-weight: 800;
+  color: #008a9a;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cancer-related-blog-cta span {
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.cancer-related-blog-cta:hover {
+  color: #061943;
+}
+
+.cancer-related-blog-cta:hover span {
+  transform: translateX(4px);
+}
+
+@media (max-width: 900px) {
+  .cancer-related-blogs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .cancer-related-blogs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==================================================
+   CANCER DETAIL — COMPACT ARTICLES TAB
+================================================== */
+
+.cancer-articles-pane {
+  padding-top: 10px;
+}
+
+.cancer-article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.cancer-article-item {
+  display: grid;
+  grid-template-columns: 140px 1fr auto;
+  align-items: center;
+  gap: 20px;
+  background: #e9fbfa;
+  border: 1px solid #d9e2ef;
+  border-radius: 12px;
+  padding: 12px 18px;
+  box-shadow: 0 3px 10px rgba(0, 138, 154, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cancer-article-item:hover {
+  transform: translateY(-2px);
+  border-color: #008a9a;
+  box-shadow: 0 6px 16px rgba(0, 138, 154, 0.1);
+}
+
+.cancer-article-img-wrap {
+  width: 140px;
+  height: 95px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #09c3c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cancer-article-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.5);
+  transition: transform 0.25s ease;
+}
+
+.cancer-article-item:hover .cancer-article-img-wrap img {
+  transform: scale(1.6);
+}
+
+.cancer-article-info {
+  min-width: 0;
+}
+
+.cancer-article-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6c7480;
+}
+
+.cancer-article-cat {
+  color: #008a9a;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cancer-article-info h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #061943;
+}
+
+.cancer-article-info p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #555e6c;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cancer-article-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #008a9a;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12.5px;
+  font-weight: 800;
+  transition: background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.cancer-article-btn:hover {
+  background: #061943;
+}
+
+@media (max-width: 768px) {
+  .cancer-article-item {
+    grid-template-columns: 100px 1fr;
+    gap: 14px;
+    padding: 12px;
+  }
+
+  .cancer-article-img-wrap {
+    width: 100px;
+    height: 80px;
+  }
+
+  .cancer-article-info h3 {
+    font-size: 15px;
+  }
+
+  .cancer-article-info p {
+    -webkit-line-clamp: 1;
+  }
+
+  .cancer-article-btn {
+    grid-column: 1 / -1;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4px;
+  }
+}
+
+/* ==================================================
+   CANCER DETAIL — COMPACT ARTICLES TAB WITH RIGHT ARROW
+================================================== */
+
+.cancer-articles-pane {
+  padding-top: 10px;
+}
+
+.cancer-article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.cancer-article-item {
+  display: grid;
+  grid-template-columns: 130px 1fr 42px;
+  align-items: center;
+  gap: 18px;
+  background: #e9fbfa;
+  border: 1px solid #d9e2ef;
+  border-radius: 12px;
+  padding: 10px 16px;
+  box-shadow: 0 3px 10px rgba(0, 138, 154, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cancer-article-item:hover {
+  transform: translateY(-2px);
+  border-color: #008a9a;
+  box-shadow: 0 6px 16px rgba(0, 138, 154, 0.1);
+}
+
+.cancer-article-img-wrap {
+  width: 130px;
+  height: 85px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #09c3c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cancer-article-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.45);
+  transition: transform 0.25s ease;
+}
+
+.cancer-article-item:hover .cancer-article-img-wrap img {
+  transform: scale(1.55);
+}
+
+.cancer-article-info {
+  min-width: 0;
+}
+
+.cancer-article-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6c7480;
+}
+
+.cancer-article-cat {
+  color: #008a9a;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cancer-article-info h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.cancer-article-info h3 a {
+  color: #061943;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cancer-article-info h3 a:hover {
+  color: #008a9a;
+}
+
+.cancer-article-info p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #555e6c;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Rightmost Arrow Button */
+.cancer-article-arrow-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #d9e2ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #008a9a;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 800;
+  flex-shrink: 0;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.cancer-article-arrow-btn span {
+  transition: transform 0.2s ease;
+  line-height: 1;
+}
+
+.cancer-article-item:hover .cancer-article-arrow-btn {
+  background: #008a9a;
+  color: #ffffff;
+  border-color: #008a9a;
+}
+
+.cancer-article-item:hover .cancer-article-arrow-btn span {
+  transform: translateX(2px);
+}
+
+@media (max-width: 600px) {
+  .cancer-article-item {
+    grid-template-columns: 85px 1fr 34px;
+    gap: 12px;
+    padding: 8px 12px;
+  }
+
+  .cancer-article-img-wrap {
+    width: 85px;
+    height: 70px;
+  }
+
+  .cancer-article-info h3 {
+    font-size: 14px;
+  }
+
+  .cancer-article-info p {
+    -webkit-line-clamp: 1;
+    font-size: 12px;
+  }
+
+  .cancer-article-arrow-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
