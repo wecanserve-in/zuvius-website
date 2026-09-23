@@ -44,7 +44,6 @@ import PressReleaseDetails from "./media/PressReleaseDetails";
 import Blog from "./blog/Blog";
 import BlogDetail from "./blog/BlogDetail";
 import blogs from "./blog/blogdata";
-import BlogAll from "./blog/BlogAll";
 
 import "./App.css";
 
@@ -59,10 +58,10 @@ const SEO_DATA = {
 
   "/": {
     title:
-      "Zuvius Lifesciences | Manufacturer of Widest Range of Anticancer Drugs | EU GMP & PIC/S Approved",
+      "Zuvius Lifesciences | Leading Anticancer & Oncology Drug Manufacturer",
 
     description:
-      "Zuvius Lifesciences - Manufacturer of widest range of anticancer drugs in the world with dedicated EU GMP & PIC/S approved facilities. Leading oncology pharmaceutical company delivering high-quality chemotherapy and cancer treatment solutions globally.",
+      "Zuvius Lifesciences - Global manufacturer of the widest range of anticancer and oncology formulations. Dedicated EU GMP & PIC/S approved facilities providing high-quality chemotherapy solutions.",
   },
 
   /* =========================================================
@@ -71,26 +70,26 @@ const SEO_DATA = {
 
   "/products": {
     title:
-      "Anticancer Drugs & Pharmaceutical Products | Zuvius Lifesciences",
+      "Anticancer & Oncology Drugs | Pharmaceutical Portfolio | Zuvius Lifesciences",
 
     description:
-      "Explore the pharmaceutical product portfolio of Zuvius Lifesciences, including oncology, anticancer and nutraceutical products.",
+      "Explore the oncology pharmaceutical product portfolio of Zuvius Lifesciences, including specialized anticancer treatments and supportive nutraceutical products.",
   },
 
   "/products/oncoace": {
     title:
-      "OncoAce | Anticancer & Oncology Products | Zuvius Lifesciences",
+      "OncoAce | Anticancer & Oncology Formulations | Zuvius Lifesciences",
 
     description:
-      "Explore the OncoAce portfolio of oncology and anticancer pharmaceutical products from Zuvius Lifesciences.",
+      "Explore the OncoAce portfolio of specialized oncology drugs and cytotoxic anticancer pharmaceutical products from Zuvius Lifesciences.",
   },
 
   "/products/nutrazeutica": {
     title:
-      "Nutrazeutica | Nutraceutical Products | Zuvius Lifesciences",
+      "Nutrazeutica | Nutraceutical & Supportive Oncology Care | Zuvius Lifesciences",
 
     description:
-      "Explore the Nutrazeutica portfolio of nutritional and supportive healthcare products from Zuvius Lifesciences.",
+      "Explore the Nutrazeutica portfolio of nutritional healthcare and supportive oncology products designed for patient wellness by Zuvius Lifesciences.",
   },
 
   /* =========================================================
@@ -102,7 +101,7 @@ const SEO_DATA = {
       "About Zuvius Lifesciences | Leading Oncology Pharmaceutical Company",
 
     description:
-      "Learn about Zuvius Lifesciences, a global healthcare company headquartered in Mumbai, specializing in chemotherapeutic formulations and oncology care.",
+      "Learn about Zuvius Lifesciences, a global oncology healthcare company headquartered in Mumbai, specializing in chemotherapeutic formulations and cancer care.",
   },
 
   /* =========================================================
@@ -111,10 +110,10 @@ const SEO_DATA = {
 
   "/contact": {
     title:
-      "Contact Zuvius Lifesciences | Oncology Pharmaceutical Company",
+      "Contact Zuvius Lifesciences | Oncology Pharmaceutical Inquiries",
 
     description:
-      "Contact Zuvius Lifesciences for enquiries about oncology products, anticancer medicines, partnerships and pharmaceutical solutions.",
+      "Contact Zuvius Lifesciences for commercial and distribution enquiries about oncology products, anticancer medicines, institutional supply, and global partnerships.",
   },
 
   /* =========================================================
@@ -123,10 +122,10 @@ const SEO_DATA = {
 
   "/careers": {
     title:
-      "Careers at Zuvius Lifesciences | Join Our Team",
+      "Careers at Zuvius Lifesciences | Oncology & Pharma Opportunities",
 
     description:
-      "Explore career opportunities at Zuvius Lifesciences and join a growing pharmaceutical company focused on oncology and healthcare.",
+      "Explore pharmaceutical career opportunities at Zuvius Lifesciences and join an innovative team dedicated to advancing global oncology treatments.",
   },
 
   /* =========================================================
@@ -135,10 +134,10 @@ const SEO_DATA = {
 
   "/newsroom": {
     title:
-      "Newsroom | Zuvius Lifesciences",
+      "Newsroom & Oncology Updates | Zuvius Lifesciences",
 
     description:
-      "Read the latest news, updates and developments from Zuvius Lifesciences.",
+      "Read the latest oncology news, company updates, research milestones, and pharmaceutical developments from Zuvius Lifesciences.",
   },
 
   /* =========================================================
@@ -147,10 +146,10 @@ const SEO_DATA = {
 
   "/blog": {
     title:
-      "Blog | Oncology & Pharmaceutical Insights | Zuvius Lifesciences",
+      "Blog | Oncology Insights & Pharmaceutical Articles | Zuvius Lifesciences",
 
     description:
-      "Explore oncology insights, pharmaceutical developments, healthcare perspectives, research and company updates from Zuvius Lifesciences.",
+      "Explore clinical oncology insights, pharmaceutical research, patient guides, and healthcare perspectives from Zuvius Lifesciences.",
   },
 
   /* =========================================================
@@ -159,10 +158,10 @@ const SEO_DATA = {
 
   "/press-release": {
     title:
-      "Press Releases | Zuvius Lifesciences",
+      "Press Releases | Corporate & Oncology Announcements | Zuvius Lifesciences",
 
     description:
-      "Read official press releases and company announcements from Zuvius Lifesciences.",
+      "Read official press releases, product launches, and oncology corporate announcements from Zuvius Lifesciences.",
   },
 
   /* =========================================================
@@ -171,10 +170,10 @@ const SEO_DATA = {
 
   "/awards-recognition": {
     title:
-      "Awards & Recognition | Zuvius Lifesciences",
+      "Awards & Recognition | Oncology Excellence | Zuvius Lifesciences",
 
     description:
-      "Explore awards, certifications and recognition received by Zuvius Lifesciences.",
+      "Explore industry awards, global quality certifications, and international oncology pharmaceutical recognitions achieved by Zuvius Lifesciences.",
   },
 
   /* =========================================================
@@ -183,10 +182,10 @@ const SEO_DATA = {
 
   "/events": {
     title:
-      "Events | Zuvius Lifesciences",
+      "Events & Conferences | Global Oncology Summits | Zuvius Lifesciences",
 
     description:
-      "Discover upcoming and past events, exhibitions and industry activities involving Zuvius Lifesciences.",
+      "Discover upcoming and past oncology conferences, international exhibitions, and medical trade events featuring Zuvius Lifesciences.",
   },
 
   /* =========================================================
@@ -195,34 +194,34 @@ const SEO_DATA = {
 
   "/whatiscancer": {
     title:
-      "What Is Cancer? | Cancer Awareness | Zuvius Lifesciences",
+      "What Is Cancer? | Oncology Education & Awareness | Zuvius Lifesciences",
 
     description:
-      "Learn about cancer, its basic concepts, treatment and the importance of cancer awareness with Zuvius Lifesciences.",
+      "Learn about cancer biology, early warning signs, oncology treatment modalities, and comprehensive cancer care awareness with Zuvius Lifesciences.",
   },
 
   "/early-diagnosis": {
     title:
-      "Early Cancer Diagnosis | Cancer Awareness | Zuvius Lifesciences",
+      "Early Cancer Diagnosis | Oncology Screening Guidelines | Zuvius Lifesciences",
 
     description:
-      "Learn about the importance of early cancer diagnosis, awareness and timely medical attention.",
+      "Understand the critical importance of early cancer detection, regular oncology screening, and timely medical intervention for better survival outcomes.",
   },
 
   "/prevention": {
     title:
-      "Cancer Prevention | Cancer Awareness | Zuvius Lifesciences",
+      "Cancer Prevention | Risk Factors & Oncology Wellness | Zuvius Lifesciences",
 
     description:
-      "Learn about cancer prevention, risk awareness and healthy practices with Zuvius Lifesciences.",
+      "Learn about evidence-based cancer prevention strategies, lifestyle risk factor reduction, and oncology wellness practices from Zuvius Lifesciences.",
   },
 
   "/types-of-cancer": {
     title:
-      "Types of Cancer | Cancer Information | Zuvius Lifesciences",
+      "Types of Cancer | Comprehensive Oncology Guides | Zuvius Lifesciences",
 
     description:
-      "Explore information about different types of cancer and learn more about cancer awareness and care.",
+      "Explore detailed oncology guides covering different cancer types, symptoms, staging, and therapeutic treatment pathways.",
   },
 
   /* =========================================================
@@ -231,10 +230,10 @@ const SEO_DATA = {
 
   "/csr": {
     title:
-      "Corporate Social Responsibility | Zuvius Lifesciences",
+      "Corporate Social Responsibility | Community Oncology Care | Zuvius Lifesciences",
 
     description:
-      "Explore the corporate social responsibility initiatives and community-focused activities of Zuvius Lifesciences.",
+      "Explore corporate social responsibility initiatives, free cancer screening camps, and community oncology care programs supported by Zuvius Lifesciences.",
   },
 };
 
@@ -269,23 +268,19 @@ const getSEOData = (pathname) => {
       .replace(/^\/blog\//, "")
       .replace(/\/+$/, "");
 
-    const blog = blogs.find(
-      (item) => item.slug === slug
-    );
+    const blog = blogs.find((item) => item.slug === slug);
 
     if (blog) {
       return {
-        title: blog.metaTitle,
-        description: blog.metaDescription,
+        title: blog.metaTitle || `${blog.title} | Oncology Insights | Zuvius Lifesciences`,
+        description: blog.metaDescription || blog.excerpt,
       };
     }
 
     return {
-      title:
-        "Blog | Zuvius Lifesciences",
-
+      title: "Blog | Oncology Insights | Zuvius Lifesciences",
       description:
-        "Explore insights, articles and updates from Zuvius Lifesciences.",
+        "Explore oncology insights, clinical guides, and healthcare perspectives from Zuvius Lifesciences.",
     };
   }
 
@@ -295,11 +290,9 @@ const getSEOData = (pathname) => {
 
   if (/^\/press-release\/[^/]+\/?$/.test(pathname)) {
     return {
-      title:
-        "Press Release | Zuvius Lifesciences",
-
+      title: "Press Release | Oncology Innovations | Zuvius Lifesciences",
       description:
-        "Read the latest press release and official company information from Zuvius Lifesciences.",
+        "Read the latest press release, oncology breakthroughs, and official company announcements from Zuvius Lifesciences.",
     };
   }
 
@@ -309,11 +302,9 @@ const getSEOData = (pathname) => {
 
   if (/^\/events\/[^/]+\/?$/.test(pathname)) {
     return {
-      title:
-        "Event | Zuvius Lifesciences",
-
+      title: "Event Details | Global Oncology Summits | Zuvius Lifesciences",
       description:
-        "Explore event information, activities and updates from Zuvius Lifesciences.",
+        "Explore medical conference schedules, oncology exhibitions, and summit updates from Zuvius Lifesciences.",
     };
   }
 
@@ -323,11 +314,9 @@ const getSEOData = (pathname) => {
 
   if (/^\/types-of-cancer\/[^/]+\/?$/.test(pathname)) {
     return {
-      title:
-        "Cancer Information | Zuvius Lifesciences",
-
+      title: "Cancer Information & Guides | Oncology Care | Zuvius Lifesciences",
       description:
-        "Learn more about cancer, its characteristics, awareness and related healthcare information.",
+        "Learn more about cancer types, clinical oncology characteristics, warning signs, and evidence-based treatment pathways.",
     };
   }
 
@@ -337,24 +326,20 @@ const getSEOData = (pathname) => {
 
   if (/^\/csr\/[^/]+(\/[^/]+)?\/?$/.test(pathname)) {
     return {
-      title:
-        "CSR Initiative | Zuvius Lifesciences",
-
+      title: "CSR Initiative | Community Oncology Care | Zuvius Lifesciences",
       description:
-        "Explore corporate social responsibility initiatives and activities by Zuvius Lifesciences.",
+        "Explore corporate social responsibility initiatives, oncology outreach, and community wellness programs by Zuvius Lifesciences.",
     };
   }
 
   /* =========================================================
-     Unknown route
+     Unknown route fallback
      ========================================================= */
 
   return {
-    title:
-      "Zuvius Lifesciences",
-
+    title: "Zuvius Lifesciences | Leading Oncology Pharmaceutical Company",
     description:
-      "Zuvius Lifesciences is a pharmaceutical company specializing in oncology and healthcare products.",
+      "Zuvius Lifesciences is a leading pharmaceutical company specializing in oncology formulations and cancer care solutions.",
   };
 };
 
@@ -380,8 +365,7 @@ const SEOManager = () => {
       return;
     }
 
-    const baseUrl =
-      "https://zuviuslifesciences.in";
+    const baseUrl = "https://zuviuslifesciences.in";
 
     const canonicalUrl =
       pathname === "/"
@@ -398,133 +382,60 @@ const SEOManager = () => {
        Meta tag helper
        ======================================================= */
 
-    const setMeta = (
-      attribute,
-      value,
-      content
-    ) => {
-      let element =
-        document.head.querySelector(
-          `meta[${attribute}="${value}"]`
-        );
+    const setMeta = (attribute, value, content) => {
+      let element = document.head.querySelector(
+        `meta[${attribute}="${value}"]`
+      );
 
       if (!element) {
-        element =
-          document.createElement("meta");
-
-        element.setAttribute(
-          attribute,
-          value
-        );
-
+        element = document.createElement("meta");
+        element.setAttribute(attribute, value);
         document.head.appendChild(element);
       }
 
-      element.setAttribute(
-        "content",
-        content
-      );
+      element.setAttribute("content", content);
     };
 
     /* =======================================================
        Standard SEO
        ======================================================= */
 
-    setMeta(
-      "name",
-      "description",
-      seo.description
-    );
+    setMeta("name", "description", seo.description);
 
     /* =======================================================
        Open Graph
        ======================================================= */
 
-    setMeta(
-      "property",
-      "og:type",
-      "website"
-    );
-
-    setMeta(
-      "property",
-      "og:url",
-      canonicalUrl
-    );
-
-    setMeta(
-      "property",
-      "og:title",
-      seo.title
-    );
-
-    setMeta(
-      "property",
-      "og:description",
-      seo.description
-    );
-
-    setMeta(
-      "property",
-      "og:site_name",
-      "Zuvius Lifesciences"
-    );
+    setMeta("property", "og:type", "website");
+    setMeta("property", "og:url", canonicalUrl);
+    setMeta("property", "og:title", seo.title);
+    setMeta("property", "og:description", seo.description);
+    setMeta("property", "og:site_name", "Zuvius Lifesciences");
 
     /* =======================================================
        Twitter / X
        ======================================================= */
 
-    setMeta(
-      "name",
-      "twitter:card",
-      "summary_large_image"
-    );
-
-    setMeta(
-      "name",
-      "twitter:url",
-      canonicalUrl
-    );
-
-    setMeta(
-      "name",
-      "twitter:title",
-      seo.title
-    );
-
-    setMeta(
-      "name",
-      "twitter:description",
-      seo.description
-    );
+    setMeta("name", "twitter:card", "summary_large_image");
+    setMeta("name", "twitter:url", canonicalUrl);
+    setMeta("name", "twitter:title", seo.title);
+    setMeta("name", "twitter:description", seo.description);
 
     /* =======================================================
        Canonical URL
        ======================================================= */
 
-    let canonical =
-      document.head.querySelector(
-        'link[rel="canonical"]'
-      );
+    let canonical = document.head.querySelector(
+      'link[rel="canonical"]'
+    );
 
     if (!canonical) {
-      canonical =
-        document.createElement("link");
-
-      canonical.setAttribute(
-        "rel",
-        "canonical"
-      );
-
-      document.head.appendChild(
-        canonical
-      );
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
     }
 
-    canonical.setAttribute(
-      "href",
-      canonicalUrl
-    );
+    canonical.setAttribute("href", canonicalUrl);
   }, [location.pathname]);
 
   return null;
@@ -537,37 +448,27 @@ const SEOManager = () => {
 function App() {
   return (
     <Router>
-
       <ScrollToTop />
 
       {/* Central SEO manager */}
       <SEOManager />
 
       <div className="App">
-
         <Navbar />
 
         <main>
-
           <Routes>
-
             {/* =================================================
                 HOME
             ================================================= */}
 
-            <Route
-              path="/"
-              element={<Home />}
-            />
+            <Route path="/" element={<Home />} />
 
             {/* =================================================
                 PRODUCTS
             ================================================= */}
 
-            <Route
-              path="/products"
-              element={<ProductMain />}
-            />
+            <Route path="/products" element={<ProductMain />} />
 
             <Route
               path="/products/:category"
@@ -583,26 +484,15 @@ function App() {
                 NEWSROOM
             ================================================= */}
 
-            <Route
-              path="/newsroom"
-              element={<Newsroom />}
-            />
+            <Route path="/newsroom" element={<Newsroom />} />
 
             {/* =================================================
                 BLOG
             ================================================= */}
 
-            <Route
-              path="/blog"
-              element={<Blog />}
-            />
+            <Route path="/blog" element={<Blog />} />
 
-            <Route path="/blog/all" element={<BlogAll />} />
-
-            <Route
-              path="/blog/:slug"
-              element={<BlogDetail />}
-            />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
 
             {/* =================================================
                 PRESS RELEASE
@@ -631,28 +521,19 @@ function App() {
                 CONTACT
             ================================================= */}
 
-            <Route
-              path="/contact"
-              element={<Contact />}
-            />
+            <Route path="/contact" element={<Contact />} />
 
             {/* =================================================
                 CAREERS
             ================================================= */}
 
-            <Route
-              path="/careers"
-              element={<Careers />}
-            />
+            <Route path="/careers" element={<Careers />} />
 
             {/* =================================================
                 EVENTS
             ================================================= */}
 
-            <Route
-              path="/events"
-              element={<Events />}
-            />
+            <Route path="/events" element={<Events />} />
 
             <Route
               path="/events/:slug"
@@ -668,10 +549,7 @@ function App() {
               element={<WhatIsCancer />}
             />
 
-            <Route
-              path="/aboutus"
-              element={<AboutUs />}
-            />
+            <Route path="/aboutus" element={<AboutUs />} />
 
             <Route
               path="/early-diagnosis"
@@ -697,29 +575,19 @@ function App() {
                 CSR
             ================================================= */}
 
-            <Route
-              path="/csr"
-              element={<CSR />}
-            />
+            <Route path="/csr" element={<CSR />} />
 
-            <Route
-              path="/csr/:slug"
-              element={<CSRDetail />}
-            />
+            <Route path="/csr/:slug" element={<CSRDetail />} />
 
             <Route
               path="/csr/:slug/:eventSlug"
               element={<CSRDetail />}
             />
-
           </Routes>
-
         </main>
 
         <Footer />
-
       </div>
-
     </Router>
   );
 }

@@ -273,7 +273,7 @@ const BlogDetail = () => {
               </div>
             )}
 
-            <Link to="/blog/all" className="blog-sidebar-back">
+            <Link to="/blog" className="blog-sidebar-back">
               ← All Blogs
             </Link>
           </aside>
