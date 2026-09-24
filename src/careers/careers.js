@@ -8,6 +8,49 @@ import { createPortal } from "react-dom";
 import "./careers.css";
 import PageBanner from "../components/PageBanner";
 
+// ============================================================================
+// LIVE GOOGLE SHEET CSV ENDPOINT
+// ============================================================================
+const GOOGLE_SHEET_CSV_URL =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRS6nVwXnLKzDXW5x71bal78MerNewkBKobuhLIc_aIkFBY7IZ4hVPTMb_ip9t_69mbGndTfMpFI7n2/pub?output=csv";
+
+// Robust RFC-4180 client-side CSV parser handling newlines and double-quotes
+const parseCSV = (text) => {
+  const lines = [];
+  let row = [""];
+  let inQuotes = false;
+
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    const next = text[i + 1];
+
+    if (c === '"') {
+      if (inQuotes && next === '"') {
+        row[row.length - 1] += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (c === "," && !inQuotes) {
+      row.push("");
+    } else if ((c === "\r" || c === "\n") && !inQuotes) {
+      if (c === "\r" && next === "\n") {
+        i++;
+      }
+      lines.push(row);
+      row = [""];
+    } else {
+      row[row.length - 1] += c;
+    }
+  }
+
+  if (row.length > 1 || row[0] !== "") {
+    lines.push(row);
+  }
+
+  return lines;
+};
+
 const celebrationGalleries = [
   {
     id: "christmas",
@@ -95,11 +138,141 @@ const celebrationGalleries = [
 ];
 
 const Careers = () => {
+  const [openPositions, setOpenPositions] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [selectedGallery, setSelectedGallery] = useState(null);
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const [isZoomed, setIsZoomed] = useState(false);
+  const [expandedJobId, setExpandedJobId] = useState(null);
 
   const thumbnailRefs = useRef([]);
+
+  // Fetch jobs dynamically with cache-busting
+  useEffect(() => {
+    if (!GOOGLE_SHEET_CSV_URL) {
+      setIsLoading(false);
+      return;
+    }
+
+    const cacheBuster = `&t=${Date.now()}`;
+    const targetUrl = GOOGLE_SHEET_CSV_URL.includes("?")
+      ? `${GOOGLE_SHEET_CSV_URL}${cacheBuster}`
+      : `${GOOGLE_SHEET_CSV_URL}?${cacheBuster.substring(1)}`;
+
+    fetch(targetUrl, { cache: "no-store" })
+      .then((res) => res.text())
+      .then((csvText) => {
+        const rows = parseCSV(csvText);
+
+        if (!rows || rows.length <= 1) {
+          setIsLoading(false);
+          return;
+        }
+
+        // Header check: Determine if Column 0 is a Timestamp
+        const headerRow = rows[0] || [];
+        const firstColHeader = (headerRow[0] || "").toLowerCase().trim();
+        const hasTimestampHeader =
+          firstColHeader.includes("timestamp") ||
+          firstColHeader.includes("date") ||
+          firstColHeader.includes("time");
+
+        const offset = hasTimestampHeader ? 1 : 0;
+
+        const parsedJobs = rows
+          .slice(1)
+          .map((cols, index) => {
+            const clean = (val) => (val || "").trim();
+
+            const department = clean(cols[offset]) || "Pharmaceuticals";
+            const title = clean(cols[offset + 1]);
+            const location = clean(cols[offset + 2]) || "Mumbai / Pan India";
+            const type = clean(cols[offset + 3]) || "Full-Time";
+            const experience = clean(cols[offset + 4]) || "Experienced";
+            const overview = clean(cols[offset + 5]) || "";
+            const rawResp = clean(cols[offset + 6]) || "";
+            const rawSkills = clean(cols[offset + 7]) || ""; // Col I: Required Skills
+            const rawStatus = clean(cols[offset + 8]).toLowerCase(); // Col J: Status
+
+            // Default blank status directly to active
+            const status = rawStatus || "active";
+
+            // Responsibilities split by newline or semicolon
+            const responsibilities = rawResp
+              ? rawResp
+                  .split(/[\r\n;]+/)
+                  .map((r) => r.replace(/^[-*•]\s*/, "").trim())
+                  .filter(Boolean)
+              : [];
+
+            // Skills split by comma, newline or semicolon
+            const skills = rawSkills
+              ? rawSkills
+                  .split(/[,\r\n;]+/)
+                  .map((s) => s.replace(/^[-*•]\s*/, "").trim())
+                  .filter(Boolean)
+              : [];
+
+            return {
+              id: `job-${index}`,
+              department,
+              title,
+              location,
+              type,
+              experience,
+              overview,
+              responsibilities,
+              skills,
+              status,
+            };
+          })
+          .filter((job) => {
+            const hasTitle = Boolean(job.title);
+            const isInactive =
+              job.status === "inactive" ||
+              job.status === "closed" ||
+              job.status === "hide" ||
+              job.status === "no";
+
+            return hasTitle && !isInactive;
+          });
+
+        setOpenPositions(parsedJobs);
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to load positions from Google Sheet:", err);
+        setIsLoading(false);
+      });
+  }, []);
+
+  const toggleJobDetails = (id) => {
+    setExpandedJobId((prev) => (prev === id ? null : id));
+  };
+
+  const handleApplyClick = (event, jobTitle) => {
+    event.preventDefault();
+
+    const recipient = "hr@zuviuslifesciences.in";
+    const subject = `application for ${jobTitle}`;
+    const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}`;
+    const gmailFallbackUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+      recipient
+    )}&su=${encodeURIComponent(subject)}`;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(recipient).catch(() => {});
+    }
+
+    const start = Date.now();
+    window.location.href = mailtoUrl;
+
+    setTimeout(() => {
+      if (Date.now() - start < 1500) {
+        window.open(gmailFallbackUrl, "_blank", "noopener,noreferrer");
+      }
+    }, 500);
+  };
 
   const openGallery = (gallery) => {
     setSelectedGallery(gallery);
@@ -206,7 +379,6 @@ const Careers = () => {
 
   return (
     <div className="cr-wrapper-main">
-      {/* HERO BANNER */}
       <PageBanner
         image="/contact/careerbanner.png"
         title={
@@ -219,13 +391,10 @@ const Careers = () => {
         alt="Zuvius LifeSciences Careers"
       />
 
-      {/* WHY JOIN US */}
       <section className="cr-why-join-block">
         <div className="cr-center-heading-zone">
           <p className="cr-badge-text cr-center-txt">WHY JOIN US</p>
-
           <h2 className="cr-section-main-title">Grow With Purpose</h2>
-
           <p className="cr-section-subtitle-prose">
             At Zuvius Lifesciences, we believe careers grow best in an
             environment built on learning, integrity, collaboration and
@@ -238,10 +407,8 @@ const Careers = () => {
             <div className="cr-card-icon-sphere">
               <span className="cr-vector-glyph">⚖️</span>
             </div>
-
             <div className="cr-card-content-side">
               <h3>Work-Life Balance</h3>
-
               <p>
                 We want our brave Samaritans to live their best life while
                 making this world a better place. That’s why we are busy
@@ -255,10 +422,8 @@ const Careers = () => {
             <div className="cr-card-icon-sphere">
               <span className="cr-vector-glyph">🌱</span>
             </div>
-
             <div className="cr-card-content-side">
               <h3>Leadership</h3>
-
               <p>
                 At Zuvius, we nourish the novice into learners and mould the
                 learners to become leaders. With our advanced trainings,
@@ -272,10 +437,8 @@ const Careers = () => {
             <div className="cr-card-icon-sphere">
               <span className="cr-vector-glyph">📚</span>
             </div>
-
             <div className="cr-card-content-side">
               <h3>Learnings</h3>
-
               <p>
                 We like to have a bunch of curious people in our team. People
                 who love to know things, keep digging deep and never stop
@@ -288,10 +451,8 @@ const Careers = () => {
             <div className="cr-card-icon-sphere">
               <span className="cr-vector-glyph">💙</span>
             </div>
-
             <div className="cr-card-content-side">
               <h3>ZuviCare</h3>
-
               <p>
                 Zuvius is all about living life to the fullest in health and
                 happiness. Beyond healthy snacks and nutricare, we organize
@@ -304,10 +465,8 @@ const Careers = () => {
             <div className="cr-card-icon-sphere">
               <span className="cr-vector-glyph">🏆</span>
             </div>
-
             <div className="cr-card-content-side">
               <h3>Reward and Recognition</h3>
-
               <p>
                 We value the hard work and tireless efforts our employees put
                 in. We have fair pay policies, rewards and recognitions to
@@ -320,10 +479,8 @@ const Careers = () => {
             <div className="cr-card-icon-sphere">
               <span className="cr-vector-glyph">🤝</span>
             </div>
-
             <div className="cr-card-content-side">
               <h3>Equality</h3>
-
               <p>
                 We value the worth of your work. At Zuvius, gender, colour and
                 category do not matter. We foster an inclusive environment for
@@ -334,17 +491,14 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* OUR CULTURE */}
       <section className="cr-culture-split-block-compact">
         <div className="cr-desktop-inner">
           <div className="cr-culture-left-panel">
             <p className="cr-badge-text">OUR CULTURE</p>
-
             <h2 className="cr-section-main-title">
               Professional. Supportive. <br />
               Growth-Focused.
             </h2>
-
             <p className="cr-culture-body-prose">
               We work in an environment where every minute is driven by this
               intense passion of saving lives. Our energies are directed
@@ -368,20 +522,14 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* LIFE AT ZUVIUS */}
       <section className="cr-life-gallery-block">
         <div className="cr-center-heading-zone">
           <p className="cr-badge-text cr-center-txt">LIFE AT ZUVIUS</p>
-
-          <h2 className="cr-section-main-title">
-            Moments From Our Workplace
-          </h2>
-
+          <h2 className="cr-section-main-title">Moments From Our Workplace</h2>
           <p className="cr-section-subtitle-prose">
             Explore celebrations, events and memorable experiences shared by
             our team.
           </p>
-
           <div className="cr-center-accent-line" />
         </div>
 
@@ -403,7 +551,6 @@ const Careers = () => {
                   alt={gallery.title}
                   className="cr-celebration-cover-image"
                 />
-
                 <div className="cr-celebration-overlay">
                   <span className="cr-gallery-view-icon">↗</span>
                   <span>View Gallery</span>
@@ -415,7 +562,6 @@ const Careers = () => {
                   <h3>{gallery.title}</h3>
                   <p>{gallery.subtitle}</p>
                 </div>
-
                 <span className="cr-celebration-arrow">→</span>
               </div>
             </button>
@@ -423,38 +569,153 @@ const Careers = () => {
         </div>
       </section>
 
-      {/* APPLICATION CTA */}
-      <section className="cr-cta-footer-block">
-        <div className="cr-cta-inner-card-container">
-          <div className="cr-cta-left-identity">
-            <div className="cr-cta-file-icon-box">
-              <span className="cr-file-glyph">📄</span>
-            </div>
+      {/* OPEN POSITIONS FEED */}
+      <section className="cr-jobs-section" id="open-positions">
+        <div className="cr-center-heading-zone">
+          <p className="cr-badge-text cr-center-txt">CURRENT OPENINGS</p>
+          <h2 className="cr-section-main-title">Join Our Team</h2>
+          <p className="cr-section-subtitle-prose">
+            Discover active job roles across oncology sales, formulation
+            research, quality assurance, regulatory affairs, and corporate
+            operations.
+          </p>
+          <div className="cr-center-accent-line" />
+        </div>
 
-            <div className="cr-cta-text-bundle">
-              <h3>Ready to Make an Impact?</h3>
-
-              <p>
-                We are always looking for passionate individuals across pharma
-                sales, marketing, operations, quality and corporate roles.
-              </p>
+        <div className="cr-jobs-list">
+          {isLoading ? (
+            <div style={{ textAlign: "center", padding: "40px 0", color: "#687980" }}>
+              Loading active positions...
             </div>
+          ) : openPositions.length === 0 ? (
+            <div style={{ textAlign: "center", padding: "40px 0", color: "#687980" }}>
+              No open vacancies currently listed. Please submit your CV via the form below.
+            </div>
+          ) : (
+            openPositions.map((job) => {
+              const hasExpandedContent =
+                (job.responsibilities && job.responsibilities.length > 0) ||
+                (job.skills && job.skills.length > 0);
+              const isExpanded = expandedJobId === job.id;
+
+              return (
+                <article
+                  className={`cr-job-card ${isExpanded ? "cr-job-card-open" : ""}`}
+                  key={job.id}
+                >
+                  <div className="cr-job-card-header">
+                    <div className="cr-job-title-group">
+                      <span className="cr-job-dept-badge">{job.department}</span>
+                      <h3 className="cr-job-title">{job.title}</h3>
+                      <div className="cr-job-meta-chips">
+                        <span className="cr-job-chip">📍 {job.location}</span>
+                        <span className="cr-job-chip">💼 {job.type}</span>
+                        <span className="cr-job-chip">⏳ {job.experience}</span>
+                      </div>
+                    </div>
+
+                    <div className="cr-job-card-actions">
+                      {hasExpandedContent && (
+                        <button
+                          type="button"
+                          className="cr-job-toggle-btn"
+                          onClick={() => toggleJobDetails(job.id)}
+                        >
+                          {isExpanded ? "Hide Details ↑" : "View Job Details ↓"}
+                        </button>
+                      )}
+
+                      <a
+                        href={`mailto:hr@zuviuslifesciences.in?subject=${encodeURIComponent(
+                          `application for ${job.title}`
+                        )}`}
+                        className="cr-job-apply-btn"
+                        onClick={(e) => handleApplyClick(e, job.title)}
+                        title={`Apply for ${job.title}`}
+                      >
+                        Apply Now <span>↗</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  {job.overview && <p className="cr-job-overview">{job.overview}</p>}
+
+                  {/* Expandable Section with Responsibilities + Required Skills */}
+                  {isExpanded && hasExpandedContent && (
+                    <div className="cr-job-expanded-content">
+                      {job.responsibilities && job.responsibilities.length > 0 && (
+                        <>
+                          <div className="cr-job-subheading">Key Responsibilities:</div>
+                          <ul className="cr-job-responsibilities-list">
+                            {job.responsibilities.map((resp, idx) => (
+                              <li key={idx}>{resp}</li>
+                            ))}
+                          </ul>
+                        </>
+                      )}
+
+                      {job.skills && job.skills.length > 0 && (
+                        <div className="cr-job-skills-section">
+                          <div className="cr-job-subheading">Required Skills:</div>
+                          <div className="cr-job-skills-pills">
+                            {job.skills.map((skill, idx) => (
+                              <span className="cr-job-skill-pill" key={idx}>
+                                {skill}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      <div className="cr-job-apply-inline">
+                        <a
+                          href={`mailto:hr@zuviuslifesciences.in?subject=${encodeURIComponent(
+                            `application for ${job.title}`
+                          )}`}
+                          className="cr-action-btn-blue"
+                          onClick={(e) => handleApplyClick(e, job.title)}
+                        >
+                          APPLY FOR THIS ROLE →
+                        </a>
+                        <span className="cr-job-email-hint">
+                          Sends email to <strong>hr@zuviuslifesciences.in</strong>
+                        </span>
+                      </div>
+                    </div>
+                  )}
+                </article>
+              );
+            })
+          )}
+        </div>
+
+        <div className="cr-general-apply-box">
+          <div className="cr-general-apply-text">
+            <h3>Don't see your specific role?</h3>
+            <p>
+              We are constantly seeking passionate talent across all
+              pharmaceutical domains. Send your CV directly to our HR team and
+              we will get in touch when an opening aligns with your expertise.
+            </p>
           </div>
 
-          <div className="cr-cta-action-area">
+          <div className="cr-general-apply-action">
             <a
+              href="mailto:hr@zuviuslifesciences.in?subject=application%20for%20General%20Openings"
               className="cr-action-btn-blue"
-              href="mailto:hr@zuviuslifesciences.in?subject=Job Application at Zuvius Lifesciences"
+              onClick={(e) => handleApplyClick(e, "General Openings")}
             >
-              APPLY NOW <span className="cr-btn-arrow">→</span>
+              Email Your Resume <span>→</span>
             </a>
-
-            <p className="cr-email-anchor-subtext">
-              Send your resume to{" "}
-              <a href="mailto:hr@zuviuslifesciences.in">
+            <div className="cr-email-callout">
+              Direct Email:{" "}
+              <a
+                href="mailto:hr@zuviuslifesciences.in?subject=application%20for%20General%20Openings"
+                onClick={(e) => handleApplyClick(e, "General Openings")}
+              >
                 hr@zuviuslifesciences.in
               </a>
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -478,15 +739,11 @@ const Careers = () => {
                 <div>
                   <p>LIFE AT ZUVIUS</p>
                   <h2>{selectedGallery.title}</h2>
-
                   <span>
                     {selectedGallery.photos.length}{" "}
-                    {selectedGallery.photos.length === 1
-                      ? "Photo"
-                      : "Photos"}
+                    {selectedGallery.photos.length === 1 ? "Photo" : "Photos"}
                   </span>
                 </div>
-
                 <button
                   type="button"
                   className="cr-event-gallery-close"
@@ -511,7 +768,6 @@ const Careers = () => {
                         src={photo}
                         alt={`${selectedGallery.title} ${index + 1}`}
                       />
-
                       <div className="cr-event-photo-overlay">
                         <span className="cr-event-zoom-symbol">⌕</span>
                         <span>View Photo</span>
@@ -548,10 +804,8 @@ const Careers = () => {
                   <span className="cr-photo-lightbox-title">
                     {selectedGallery.title}
                   </span>
-
                   <span className="cr-photo-counter">
-                    {selectedImageIndex + 1} /{" "}
-                    {selectedGallery.photos.length}
+                    {selectedImageIndex + 1} / {selectedGallery.photos.length}
                   </span>
                 </div>
 
@@ -562,7 +816,6 @@ const Careers = () => {
                   >
                     {isZoomed ? "Zoom Out −" : "Zoom In +"}
                   </button>
-
                   <button
                     type="button"
                     className="cr-photo-close-button"
@@ -591,9 +844,7 @@ const Careers = () => {
                 <div className="cr-photo-image-scroll">
                   <img
                     src={selectedGallery.photos[selectedImageIndex]}
-                    alt={`${selectedGallery.title} ${
-                      selectedImageIndex + 1
-                    }`}
+                    alt={`${selectedGallery.title} ${selectedImageIndex + 1}`}
                     onClick={() => setIsZoomed((current) => !current)}
                   />
                 </div>

@@ -64,10 +64,10 @@ const Navbar = () => {
     },
 
     // BLOGS
-    {
-      name: "Blogs",
-      path: "/blog",
-    },
+    // {
+    //   name: "Blogs",
+    //   path: "/blog",
+    // },
 
     {
       name: "Contact",
