@@ -80,7 +80,7 @@ a.blog-detail-category:hover {
 .blog-article-top h1 {
   max-width: 950px;
   margin: 0 0 18px;
-  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  font-size: clamp(2.5rem, 4vw, 4.2rem);
   line-height: 1.05;
   font-weight: 900;
   letter-spacing: -2px;
@@ -237,7 +237,7 @@ a.blog-detail-category:hover {
   line-height: 1.25;
   font-weight: 900;
   letter-spacing: -0.5px;
-  color: #061943;
+  color: #008a9a;
 }
 
 .blog-article-content h2:first-child {
@@ -662,4 +662,72 @@ a.blog-detail-category:hover {
 .related-blog-image img.breast-blog-img {
   transform: scale(1.2 ) !important;
   object-fit: cover !important;
+}
+
+/* =========================================================
+   FEATURE IMAGE (4:3 RATIO COMPATIBLE)
+========================================================= */
+
+.blog-detail-feature-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  max-height: 520px;
+  height: auto; /* Replaces hardcoded 430px */
+  margin-bottom: 35px;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf2f8;
+}
+
+.blog-detail-feature-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* Fits cleanly without letterboxing */
+  transform: none;
+}
+
+/* Remove 2x zoom on Product & Cancer banners */
+.product-blog-detail .blog-detail-feature-image,
+.cancer-blog-detail .blog-detail-feature-image {
+  background: #f4f8fa;
+}
+
+.product-blog-detail .blog-detail-feature-image img,
+.cancer-blog-detail .blog-detail-feature-image img {
+  object-fit: cover;
+  padding: 0;
+  transform: none; /* Removed transform: scale(2) */
+}
+
+/* Zuvius Blog Feature Image */
+.zuvius-blog-detail .blog-detail-feature-image {
+  background: #fbfcfe;
+  border: 1px solid #e2e8f0;
+  padding: 0;
+}
+
+.zuvius-blog-detail .blog-detail-feature-image img {
+  object-fit: cover;
+  transform: none;
+}
+
+.related-blog-image {
+  width: 80px;
+  height: 60px; /* 80x60 is exact 4:3 */
+  overflow: hidden;
+  border-radius: 7px;
+  background: #f4f8fa;
+}
+
+.related-blog-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  padding: 0;
+  transition: transform 0.3s ease;
 }

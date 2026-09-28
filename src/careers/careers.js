@@ -9,10 +9,10 @@ import "./careers.css";
 import PageBanner from "../components/PageBanner";
 
 // ============================================================================
-// LIVE GOOGLE SHEET CSV ENDPOINT
+// LIVE GOOGLE SHEET DIRECT QUERY ENDPOINT (Bypasses Google CDN Delay)
 // ============================================================================
 const GOOGLE_SHEET_CSV_URL =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRS6nVwXnLKzDXW5x71bal78MerNewkBKobuhLIc_aIkFBY7IZ4hVPTMb_ip9t_69mbGndTfMpFI7n2/pub?output=csv";
+  "https://docs.google.com/spreadsheets/d/1dP7zlAVzEZnA9zylcg5uD2i7KYlrSyQuWga9J6F2Acg/gviz/tq?tqx=out:csv";
 
 // Robust RFC-4180 client-side CSV parser handling newlines and double-quotes
 const parseCSV = (text) => {
@@ -147,7 +147,7 @@ const Careers = () => {
 
   const thumbnailRefs = useRef([]);
 
-  // Fetch jobs dynamically with cache-busting
+  // Fetch jobs dynamically using header keywords to prevent column-order shifting
   useEffect(() => {
     if (!GOOGLE_SHEET_CSV_URL) {
       setIsLoading(false);
@@ -159,7 +159,13 @@ const Careers = () => {
       ? `${GOOGLE_SHEET_CSV_URL}${cacheBuster}`
       : `${GOOGLE_SHEET_CSV_URL}?${cacheBuster.substring(1)}`;
 
-    fetch(targetUrl, { cache: "no-store" })
+    fetch(targetUrl, {
+      cache: "no-store",
+      headers: {
+        Pragma: "no-cache",
+        "Cache-Control": "no-cache",
+      },
+    })
       .then((res) => res.text())
       .then((csvText) => {
         const rows = parseCSV(csvText);
@@ -169,35 +175,41 @@ const Careers = () => {
           return;
         }
 
-        // Header check: Determine if Column 0 is a Timestamp
-        const headerRow = rows[0] || [];
-        const firstColHeader = (headerRow[0] || "").toLowerCase().trim();
-        const hasTimestampHeader =
-          firstColHeader.includes("timestamp") ||
-          firstColHeader.includes("date") ||
-          firstColHeader.includes("time");
+        // Dynamically find index for every field from header row
+        const headerRow = (rows[0] || []).map((h) => (h || "").toLowerCase().trim());
 
-        const offset = hasTimestampHeader ? 1 : 0;
+        const getIdx = (keywords) =>
+          headerRow.findIndex((col) => keywords.some((k) => col.includes(k)));
+
+        const deptIdx = getIdx(["department", "dept"]);
+        const titleIdx = getIdx(["title", "role", "position"]);
+        const locIdx = getIdx(["location", "city", "place"]);
+        const qualIdx = getIdx(["qualification", "degree", "education"]);
+        const typeIdx = getIdx(["job type", "type", "employment"]);
+        const expIdx = getIdx(["experience", "exp"]);
+        const overIdx = getIdx(["overview", "summary", "about"]);
+        const respIdx = getIdx(["responsibilities", "responsibility", "duties"]);
+        const skillIdx = getIdx(["skill", "skills", "competencies"]);
+        const statusIdx = getIdx(["status"]);
 
         const parsedJobs = rows
           .slice(1)
           .map((cols, index) => {
-            const clean = (val) => (val || "").trim();
+            const getVal = (idx) => (idx !== -1 && cols[idx] ? cols[idx].trim() : "");
 
-            const department = clean(cols[offset]) || "Pharmaceuticals";
-            const title = clean(cols[offset + 1]);
-            const location = clean(cols[offset + 2]) || "Mumbai / Pan India";
-            const type = clean(cols[offset + 3]) || "Full-Time";
-            const experience = clean(cols[offset + 4]) || "Experienced";
-            const overview = clean(cols[offset + 5]) || "";
-            const rawResp = clean(cols[offset + 6]) || "";
-            const rawSkills = clean(cols[offset + 7]) || ""; // Col I: Required Skills
-            const rawStatus = clean(cols[offset + 8]).toLowerCase(); // Col J: Status
+            const department = getVal(deptIdx) || "Pharmaceuticals";
+            const title = getVal(titleIdx);
+            const location = getVal(locIdx) || "Mumbai / Pan India";
+            const qualification = getVal(qualIdx);
+            const type = getVal(typeIdx) || "Full-Time";
+            const experience = getVal(expIdx) || "Experienced";
+            const overview = getVal(overIdx) || "";
+            const rawResp = getVal(respIdx) || "";
+            const rawSkills = getVal(skillIdx) || "";
+            const rawStatus = getVal(statusIdx).toLowerCase();
 
-            // Default blank status directly to active
             const status = rawStatus || "active";
 
-            // Responsibilities split by newline or semicolon
             const responsibilities = rawResp
               ? rawResp
                   .split(/[\r\n;]+/)
@@ -205,7 +217,6 @@ const Careers = () => {
                   .filter(Boolean)
               : [];
 
-            // Skills split by comma, newline or semicolon
             const skills = rawSkills
               ? rawSkills
                   .split(/[,\r\n;]+/)
@@ -218,6 +229,7 @@ const Careers = () => {
               department,
               title,
               location,
+              qualification,
               type,
               experience,
               overview,
@@ -609,6 +621,9 @@ const Careers = () => {
                       <h3 className="cr-job-title">{job.title}</h3>
                       <div className="cr-job-meta-chips">
                         <span className="cr-job-chip">📍 {job.location}</span>
+                        {job.qualification && (
+                          <span className="cr-job-chip">🎓 {job.qualification}</span>
+                        )}
                         <span className="cr-job-chip">💼 {job.type}</span>
                         <span className="cr-job-chip">⏳ {job.experience}</span>
                       </div>
