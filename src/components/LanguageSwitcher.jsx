@@ -19,7 +19,7 @@ export default function LanguageSwitcher() {
       const clean = text.trim();
       const hasDigit = /\d/.test(clean);
       const isShort = clean.length <= 10;
-      const isMathOrMetric = /^[\d\s,.\+%]+$/.test(clean);
+      const isMathOrMetric = /^[\d\s,.+%]+$/.test(clean);
       return hasDigit && isShort && isMathOrMetric;
     };
 
@@ -264,7 +264,6 @@ export default function LanguageSwitcher() {
           </div>
         )}
 
-        {/* Floating pill button matched to .learn-more-btn and .leader-sku-box gradient */}
         <button
           type="button"
           onClick={() => setIsOpen((prev) => !prev)}
@@ -312,11 +311,10 @@ const styles = {
     display: "flex",
     alignItems: "center",
     gap: "10px",
-    // Matched directly to .leader-sku-box gradient
     background: "linear-gradient(135deg, #008a9a 0%, #0ea8ba 100%)",
     color: "#ffffff",
     border: "1px solid rgba(255, 255, 255, 0.35)",
-    borderRadius: "50px", // Matched to .learn-more-btn / .view-more-btn
+    borderRadius: "50px",
     padding: "10px 20px",
     cursor: "pointer",
     transition: "all 0.3s ease",
@@ -331,7 +329,7 @@ const styles = {
     fontSize: "0.85rem",
     fontWeight: "700",
     textTransform: "uppercase",
-    letterSpacing: "0.08em", // Matched to .learn-more-btn
+    letterSpacing: "0.08em",
   },
   activePillBadge: {
     backgroundColor: "rgba(255, 255, 255, 0.22)",
@@ -352,9 +350,9 @@ const styles = {
   card: {
     width: "235px",
     backgroundColor: "#ffffff",
-    borderRadius: "18px", // Matched to .home-recent-product-card & leader-sku-box
-    border: "1px solid #dfeaf8", // Matched to .home-reach-card & .leader-infographic-card
-    boxShadow: "0 16px 42px rgba(16, 53, 110, 0.12)", // Matched to .leader-infographic-card
+    borderRadius: "18px",
+    border: "1px solid #dfeaf8",
+    boxShadow: "0 16px 42px rgba(16, 53, 110, 0.12)",
     overflow: "hidden",
     animation: "zuviusMenuSlide 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards",
   },
@@ -369,14 +367,14 @@ const styles = {
   brandAccentBar: {
     width: "4px",
     height: "13px",
-    backgroundColor: "#008a9a", // Matched to .home-reach-label::after
+    backgroundColor: "#008a9a",
     borderRadius: "20px",
   },
   cardTitle: {
     fontSize: "0.7rem",
     fontWeight: "900",
     letterSpacing: "0.12em",
-    color: "#008a9a", // Matched to section labels
+    color: "#008a9a",
   },
   menuList: {
     padding: "8px",
@@ -424,13 +422,13 @@ const styles = {
   },
   englishName: {
     fontSize: "0.72rem",
-    color: "#687386", // Matched to .home-reach-stat small
+    color: "#687386",
     marginTop: "2px",
     fontWeight: "500",
   },
   checkIcon: {
     fontSize: "0.9rem",
     fontWeight: "900",
-    color: "#008a9a", // Matched to .strength-tick
+    color: "#008a9a",
   },
 };
