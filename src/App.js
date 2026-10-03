@@ -37,6 +37,8 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import PressReleaseDetails from "./media/PressReleaseDetails";
 
+import LanguageSwitcher from "./components/LanguageSwitcher";
+
 /* ============================================================
    BLOG
    ============================================================ */
@@ -587,6 +589,9 @@ function App() {
         </main>
 
         <Footer />
+
+        {/* Global floating translation component */}
+        <LanguageSwitcher />
       </div>
     </Router>
   );

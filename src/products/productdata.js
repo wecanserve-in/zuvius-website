@@ -2955,6 +2955,7 @@ Eltrombopag is also used in adults to treat severe aplastic anemia after other t
   images: [
     "/new_product_page/zalcocib-group.png",
     "/new_product_page/Zalcocib-75.png",
+    "/new_product_page/Zalcocib-100.png",
     "/new_product_page/Zalcocib-125.png",
   ],
 
@@ -3074,6 +3075,7 @@ Blocking these proteins helps slow down cancer cell growth.
     "/new_product_page/pomaloz-group.png",
     "/new_product_page/Pomaloz-1.png",
     "/new_product_page/Pomaloz-2.png",
+    "/new_product_page/Pomaloz-4.png",
 
   ],
 
