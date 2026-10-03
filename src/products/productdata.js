@@ -11876,10 +11876,10 @@ Local injection of hyaluronidase and the application of moderate heat to the are
   type: "Injection",
   imageClass:"zaxotien-img",
 
-  image: "/products3/zaxotein-1.png",
+  image: "/new_product_page/Zaxotien-100.png",
 
   images: [
-    "/products3/zaxotein-1.png",
+    "/new_product_page/Zaxotien-100.png",
 
   ],
 
