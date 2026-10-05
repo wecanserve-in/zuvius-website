@@ -12,8 +12,22 @@ export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef(null);
 
+  // Dragging state
+  const [position, setPosition] = useState({ x: null, y: null });
+  const isDraggingRef = useRef(false);
+  const dragStartPos = useRef({ x: 0, y: 0 });
+  const elementStartPos = useRef({ x: 0, y: 0 });
+  const hasMovedRef = useRef(false);
+
+  // Default initial position: Top-Right right below the fixed navbar
   useEffect(() => {
-    // 1. Counter / Number protection
+    const initialX = window.innerWidth - 68; // 24px from right edge (44px width)
+    const initialY = 92; // Just below the 76px-82px navbar
+    setPosition({ x: initialX, y: initialY });
+  }, []);
+
+  useEffect(() => {
+    // 1. Dynamic counter and number shield (no ESLint escape warnings)
     const isCounterOrNumber = (text) => {
       if (!text) return false;
       const clean = text.trim();
@@ -62,7 +76,7 @@ export default function LanguageSwitcher() {
       characterData: true,
     });
 
-    // 2. DOM Node crash shield
+    // 2. DOM Virtual DOM safety patch
     if (typeof Node === "function" && Node.prototype) {
       const originalRemoveChild = Node.prototype.removeChild;
       Node.prototype.removeChild = function (child) {
@@ -77,7 +91,7 @@ export default function LanguageSwitcher() {
       };
     }
 
-    // 3. Read active language from cookie
+    // 3. Read active language from Google cookie
     const match = document.cookie.match(/(^|;\s*)googtrans=([^;]+)/);
     if (match) {
       const lang = match[2].split("/").pop();
@@ -107,7 +121,7 @@ export default function LanguageSwitcher() {
       };
     }
 
-    // 5. Hide banner and Google popups
+    // 5. Cleanup banner & styles
     const style = document.createElement("style");
     style.id = "zuvius-theme-clean-styles";
     style.innerHTML = `
@@ -131,14 +145,14 @@ export default function LanguageSwitcher() {
       .notranslate, [translate="no"] {
         translate: no !important;
       }
-      @keyframes zuviusMenuSlide {
+      @keyframes zuviusMenuDrop {
         from {
           opacity: 0;
-          transform: translateY(12px) scale(0.96);
+          transform: scale(0.92);
         }
         to {
           opacity: 1;
-          transform: translateY(0) scale(1);
+          transform: scale(1);
         }
       }
     `;
@@ -156,6 +170,64 @@ export default function LanguageSwitcher() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  // ================= DRAG HANDLERS (MOUSE & TOUCH) =================
+  const handlePointerDown = (e) => {
+    if (e.button && e.button !== 0) return;
+
+    isDraggingRef.current = true;
+    hasMovedRef.current = false;
+
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+
+    dragStartPos.current = { x: clientX, y: clientY };
+    elementStartPos.current = { x: position.x, y: position.y };
+
+    window.addEventListener("mousemove", handlePointerMove);
+    window.addEventListener("mouseup", handlePointerUp);
+    window.addEventListener("touchmove", handlePointerMove, { passive: false });
+    window.addEventListener("touchend", handlePointerUp);
+  };
+
+  const handlePointerMove = (e) => {
+    if (!isDraggingRef.current) return;
+
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+
+    const deltaX = clientX - dragStartPos.current.x;
+    const deltaY = clientY - dragStartPos.current.y;
+
+    if (Math.abs(deltaX) > 4 || Math.abs(deltaY) > 4) {
+      hasMovedRef.current = true;
+      if (e.cancelable) e.preventDefault();
+    }
+
+    let newX = elementStartPos.current.x + deltaX;
+    let newY = elementStartPos.current.y + deltaY;
+
+    // Viewport boundaries
+    const maxX = window.innerWidth - 56;
+    const maxY = window.innerHeight - 56;
+    newX = Math.max(12, Math.min(newX, maxX));
+    newY = Math.max(80, Math.min(newY, maxY));
+
+    setPosition({ x: newX, y: newY });
+  };
+
+  const handlePointerUp = () => {
+    isDraggingRef.current = false;
+    window.removeEventListener("mousemove", handlePointerMove);
+    window.removeEventListener("mouseup", handlePointerUp);
+    window.removeEventListener("touchmove", handlePointerMove);
+    window.removeEventListener("touchend", handlePointerUp);
+  };
+
+  const handleCircleClick = () => {
+    if (hasMovedRef.current) return;
+    setIsOpen((prev) => !prev);
+  };
 
   const changeLanguage = (langCode) => {
     setCurrentLang(langCode);
@@ -185,19 +257,52 @@ export default function LanguageSwitcher() {
   const activeLang =
     languages.find((item) => item.code === currentLang) || languages[0];
 
+  if (position.x === null) return null;
+
+  // Dropdown direction adapts depending on vertical position
+  const opensUpward = position.y > window.innerHeight / 2;
+
   return (
     <>
       <div id="google_translate_element" style={{ display: "none" }} />
 
       <aside
         ref={containerRef}
-        style={styles.container}
+        style={{
+          ...styles.dragContainer,
+          left: `${position.x}px`,
+          top: `${position.y}px`,
+        }}
         aria-label="Language Selector"
         className="notranslate"
         translate="no"
       >
+        {/* Clean circle button without globe icon */}
+        <button
+          type="button"
+          onMouseDown={handlePointerDown}
+          onTouchStart={handlePointerDown}
+          onClick={handleCircleClick}
+          style={{
+            ...styles.circleBtn,
+            boxShadow: isOpen
+              ? "0 10px 24px rgba(0, 138, 154, 0.45)"
+              : "0 6px 18px rgba(16, 53, 110, 0.22)",
+          }}
+          aria-expanded={isOpen}
+          title="Drag to reposition, Click to change language"
+        >
+          <span style={styles.activeCode}>{activeLang.code.toUpperCase()}</span>
+        </button>
+
+        {/* Dropdown Menu */}
         {isOpen && (
-          <div style={styles.card}>
+          <div
+            style={{
+              ...styles.card,
+              ...(opensUpward ? styles.cardUpward : styles.cardDownward),
+            }}
+          >
             <div style={styles.cardHeader}>
               <span style={styles.brandAccentBar} />
               <span style={styles.cardTitle}>SELECT LANGUAGE</span>
@@ -263,151 +368,106 @@ export default function LanguageSwitcher() {
             </div>
           </div>
         )}
-
-        <button
-          type="button"
-          onClick={() => setIsOpen((prev) => !prev)}
-          style={{
-            ...styles.triggerBtn,
-            boxShadow: isOpen
-              ? "0 10px 30px rgba(0, 138, 154, 0.42)"
-              : "0 6px 20px rgba(0, 138, 154, 0.28)",
-          }}
-          aria-expanded={isOpen}
-          title="Change Website Language"
-        >
-          <span style={styles.globeIcon}>🌐</span>
-          <span style={styles.switcherLabel}>Language</span>
-          <span style={styles.activePillBadge}>
-            {activeLang.code.toUpperCase()} ({activeLang.native})
-          </span>
-          <span
-            style={{
-              ...styles.arrow,
-              transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-            }}
-          >
-            ▾
-          </span>
-        </button>
       </aside>
     </>
   );
 }
 
 const styles = {
-  container: {
+  dragContainer: {
     position: "fixed",
-    bottom: "28px",
-    right: "28px",
-    zIndex: 9999999,
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-end",
-    gap: "12px",
-    fontFamily: "inherit",
+    zIndex: 999999,
+    userSelect: "none",
+    touchAction: "none",
   },
-  triggerBtn: {
-    display: "flex",
-    alignItems: "center",
-    gap: "10px",
+  circleBtn: {
+    width: "44px",
+    height: "44px",
+    borderRadius: "50%",
     background: "linear-gradient(135deg, #008a9a 0%, #0ea8ba 100%)",
     color: "#ffffff",
-    border: "1px solid rgba(255, 255, 255, 0.35)",
-    borderRadius: "50px",
-    padding: "10px 20px",
-    cursor: "pointer",
-    transition: "all 0.3s ease",
+    border: "2px solid rgba(255, 255, 255, 0.4)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    cursor: "grab",
     outline: "none",
+    transition: "transform 0.15s ease",
   },
-  globeIcon: {
-    fontSize: "1rem",
+  activeCode: {
+    fontSize: "0.82rem",
+    fontWeight: "900",
+    letterSpacing: "0.06em",
     lineHeight: 1,
-    opacity: 0.95,
-  },
-  switcherLabel: {
-    fontSize: "0.85rem",
-    fontWeight: "700",
-    textTransform: "uppercase",
-    letterSpacing: "0.08em",
-  },
-  activePillBadge: {
-    backgroundColor: "rgba(255, 255, 255, 0.22)",
-    color: "#ffffff",
-    fontSize: "0.72rem",
-    fontWeight: "800",
-    padding: "3px 8px",
-    borderRadius: "20px",
-    border: "1px solid rgba(255, 255, 255, 0.4)",
-    letterSpacing: "0.04em",
-  },
-  arrow: {
-    fontSize: "0.75rem",
-    lineHeight: 1,
-    transition: "transform 0.25s ease",
-    opacity: 0.9,
   },
   card: {
-    width: "235px",
+    position: "absolute",
+    right: 0,
+    width: "215px",
     backgroundColor: "#ffffff",
-    borderRadius: "18px",
+    borderRadius: "16px",
     border: "1px solid #dfeaf8",
-    boxShadow: "0 16px 42px rgba(16, 53, 110, 0.12)",
+    boxShadow: "0 18px 40px rgba(16, 53, 110, 0.15)",
     overflow: "hidden",
-    animation: "zuviusMenuSlide 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+    animation: "zuviusMenuDrop 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+  },
+  cardDownward: {
+    top: "calc(100% + 10px)",
+  },
+  cardUpward: {
+    bottom: "calc(100% + 10px)",
   },
   cardHeader: {
     display: "flex",
     alignItems: "center",
     gap: "8px",
-    padding: "13px 18px 11px 18px",
+    padding: "10px 14px 8px 14px",
     backgroundColor: "#ffffff",
     borderBottom: "1px solid #f0f0f0",
   },
   brandAccentBar: {
     width: "4px",
-    height: "13px",
+    height: "12px",
     backgroundColor: "#008a9a",
     borderRadius: "20px",
   },
   cardTitle: {
-    fontSize: "0.7rem",
+    fontSize: "0.65rem",
     fontWeight: "900",
-    letterSpacing: "0.12em",
+    letterSpacing: "0.08em",
     color: "#008a9a",
   },
   menuList: {
-    padding: "8px",
+    padding: "6px",
     display: "flex",
     flexDirection: "column",
-    gap: "3px",
+    gap: "2px",
   },
   menuItem: {
     width: "100%",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    padding: "10px 12px",
+    padding: "8px 10px",
     borderTop: "none",
     borderRight: "none",
     borderBottom: "none",
-    borderRadius: "10px",
+    borderRadius: "8px",
     cursor: "pointer",
-    transition: "all 0.25s ease",
+    transition: "all 0.2s ease",
     outline: "none",
   },
   itemLeft: {
     display: "flex",
     alignItems: "center",
-    gap: "10px",
+    gap: "9px",
   },
   langBadge: {
-    fontSize: "0.72rem",
+    fontSize: "0.68rem",
     fontWeight: "800",
-    padding: "4px 7px",
-    borderRadius: "6px",
-    letterSpacing: "0.05em",
-    transition: "all 0.2s ease",
+    padding: "3px 6px",
+    borderRadius: "5px",
+    letterSpacing: "0.04em",
   },
   nameBlock: {
     display: "flex",
@@ -416,18 +476,18 @@ const styles = {
     textAlign: "left",
   },
   nativeName: {
-    fontSize: "0.88rem",
+    fontSize: "0.82rem",
     fontWeight: "700",
-    lineHeight: 1.25,
+    lineHeight: 1.2,
   },
   englishName: {
-    fontSize: "0.72rem",
+    fontSize: "0.68rem",
     color: "#687386",
-    marginTop: "2px",
+    marginTop: "1px",
     fontWeight: "500",
   },
   checkIcon: {
-    fontSize: "0.9rem",
+    fontSize: "0.85rem",
     fontWeight: "900",
     color: "#008a9a",
   },

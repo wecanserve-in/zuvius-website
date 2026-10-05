@@ -12,66 +12,31 @@ const Navbar = () => {
       name: "About Us",
       path: "/aboutus",
       dropdown: [
-        {
-          name: "CSR",
-          path: "/csr",
-        },
-        {
-          name: "Events",
-          path: "/events",
-        },
-        {
-          name: "Awards",
-          path: "/awards-recognition",
-        },
+        { name: "CSR", path: "/csr" },
+        { name: "Events", path: "/events" },
+        { name: "Awards", path: "/awards-recognition" },
       ],
     },
-    {
-      name: "Products",
-      path: "/products",
-    },
+    { name: "Products", path: "/products" },
     {
       name: "Cancer",
       path: "/whatiscancer",
       dropdown: [
-        {
-          name: "Prevention",
-          path: "/prevention",
-        },
-        {
-          name: "Early Diagnosis",
-          path: "/early-diagnosis",
-        },
-        {
-          name: "Types of Cancer",
-          path: "/types-of-cancer",
-        },
+        { name: "Prevention", path: "/prevention" },
+        { name: "Early Diagnosis", path: "/early-diagnosis" },
+        { name: "Types of Cancer", path: "/types-of-cancer" },
       ],
     },
-    {
-      name: "Career",
-      path: "/careers",
-    },
+    { name: "Career", path: "/careers" },
     {
       name: "Newsroom",
       path: "/newsroom",
       dropdown: [
-        {
-          name: "Media Coverage",
-          path: "/press-release",
-        },
+        { name: "Media Coverage", path: "/press-release" },
       ],
     },
-
-    {
-      name: "Blogs",
-      path: "/blog",
-    },
-
-    {
-      name: "Contact",
-      path: "/contact",
-    },
+    { name: "Blogs", path: "/blog" },
+    { name: "Contact", path: "/contact" },
   ];
 
   const closeMobileMenu = () => {
@@ -83,14 +48,11 @@ const Navbar = () => {
   const toggleMobileDropdown = (event, index) => {
     event.preventDefault();
     event.stopPropagation();
-
-    setMobileDropdown((currentDropdown) =>
-      currentDropdown === index ? null : index
-    );
+    setMobileDropdown((current) => (current === index ? null : index));
   };
 
   const toggleMobileMenu = () => {
-    setMobileOpen((currentValue) => !currentValue);
+    setMobileOpen((current) => !current);
     setMobileDropdown(null);
     setActiveDropdown(null);
   };
@@ -128,14 +90,10 @@ const Navbar = () => {
             key={`${item.name}-${index}`}
             className={item.dropdown ? "nav-item-dropdown" : ""}
             onMouseEnter={() => {
-              if (item.dropdown) {
-                setActiveDropdown(index);
-              }
+              if (item.dropdown) setActiveDropdown(index);
             }}
             onMouseLeave={() => {
-              if (item.dropdown) {
-                setActiveDropdown(null);
-              }
+              if (item.dropdown) setActiveDropdown(null);
             }}
           >
             {item.dropdown ? (
@@ -152,9 +110,7 @@ const Navbar = () => {
                   <button
                     type="button"
                     className="dropdown-arrow"
-                    onClick={(event) =>
-                      toggleMobileDropdown(event, index)
-                    }
+                    onClick={(event) => toggleMobileDropdown(event, index)}
                     aria-label={`Toggle ${item.name} dropdown`}
                     aria-expanded={mobileDropdown === index}
                   >

@@ -17,7 +17,6 @@
   box-sizing: border-box;
 }
 
-/* IMPORTANT: prevents content hiding behind fixed navbar */
 body {
   padding-top: 82px;
 }
@@ -52,7 +51,7 @@ body {
 
 .nav-links a:hover,
 .nav-link-dropdown:hover {
-  color: #007bff;
+  color: #008a9a;
 }
 
 .nav-link-nonclick {
@@ -119,22 +118,41 @@ body {
 
 .dropdown-menu a:hover {
   background-color: #f8f9fa;
-  color: #007bff;
+  color: #008a9a;
 }
 
-.btn-inquiry {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.btn-brochure {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 22px;
+  border: 1.5px solid #008a9a;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #008a9a;
+
+  text-decoration: none;
+  font-size: 14px;
   font-weight: 600;
-  transition: background 0.3s ease;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.btn-inquiry:hover {
-  background-color: #0056b3;
+.btn-brochure:hover {
+  background: #008a9a;
+  color: #ffffff;
+}
+
+.mobile-inquiry.btn-brochure {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.mobile-inquiry-wrap {
+  display: none;
 }
 
 .hamburger-btn {
@@ -171,46 +189,11 @@ body {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-.mobile-inquiry-wrap {
-  display: none;
-}
-
-.btn-brochure {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 10px 22px;
-  border: 1.5px solid #4485ea;
-  border-radius: 8px;
-
-  background: transparent;
-  color: #4485ea;
-
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.btn-brochure:hover {
-  background: #4485ea;
-  color: #ffffff;
-}
-
-.mobile-inquiry.btn-brochure {
-  width: 100%;
-  margin-top: 15px;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-8px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -228,7 +211,6 @@ body {
     font-size: 15px;
   }
 
-  .btn-inquiry,
   .btn-brochure {
     padding: 9px 15px;
     font-size: 13px;
