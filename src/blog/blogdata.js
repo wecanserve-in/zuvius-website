@@ -1551,6 +1551,1356 @@ const blogs = [
       },
     ],
   },
+  {
+    id: 6,
+    slug: "blood-cancer-types-symptoms-causes-diagnosis-and-treatment",
+    title: "Blood Cancer: Types, Symptoms, Causes, Diagnosis and Treatment",
+    category: "Cancer",
+    targetUrl: "/cancer",
+    date: "October 16, 2026",
+    readTime: "7 min read",
+    author: "Zuvius Lifesciences",
+    image: "/blog/blood-cancer-blog.png", // Update with your image path
+    imageClass: "blood-cancer-blog-img",
+    featured: false,
+    excerpt:
+      "Blood cancer can develop when genetic changes affect the way blood-forming or immune cells grow, divide and function. The three commonly recognized categories are leukemia, lymphoma and multiple myeloma.",
+    metaTitle:
+      "Blood Cancer: Types, Symptoms, Causes, Diagnosis and Treatment | Zuvius Lifesciences",
+    metaDescription:
+      "Understand blood cancer types including leukemia, lymphoma, and multiple myeloma, along with symptoms, causes, diagnostic tests, and modern treatments.",
+    tags: [
+      "Blood Cancer",
+      "Leukemia",
+      "Lymphoma",
+      "Multiple Myeloma",
+      "Hematology",
+      "Oncology",
+      "Zuvius Lifesciences",
+    ],
+    content: [
+      {
+        type: "heading",
+        text: "What Is Blood Cancer?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Blood cancer can develop when genetic changes affect the way blood-forming or immune cells grow, divide and function.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Many blood cancers begin in the bone marrow, the soft tissue inside bones where blood cells are produced. As abnormal cells multiply, they may interfere with the production of healthy blood cells.",
+      },
+      {
+        type: "paragraph",
+        text: "The three commonly recognized categories of blood cancer are:",
+      },
+      {
+        type: "list",
+        items: [
+          "Leukemia",
+          "Lymphoma",
+          "Multiple myeloma",
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "Each category includes different subtypes, so diagnosis and treatment depend on the specific disease.",
+      },
+      {
+        type: "heading",
+        text: "What Are the Main Types of Blood Cancer?",
+      },
+      {
+        type: "heading",
+        text: "1. Leukemia",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Leukemia is a cancer of blood-forming tissues, including the bone marrow. It commonly affects white blood cells, which may become abnormal and fail to function normally.",
+      },
+      {
+        type: "heading",
+        text: "2. Lymphoma",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Lymphoma develops in lymphocytes, a type of white blood cell involved in the immune system. Abnormal lymphocytes may collect in lymph nodes or other tissues.",
+      },
+      {
+        type: "paragraph",
+        text: "The two broad categories are:",
+      },
+      {
+        type: "list",
+        items: [
+          "Hodgkin lymphoma",
+          "Non-Hodgkin lymphoma",
+        ],
+      },
+      {
+        type: "heading",
+        text: "3. Multiple Myeloma",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Multiple myeloma is a blood cancer that develops in plasma cells. These cells normally produce antibodies that support the immune system.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "In multiple myeloma, abnormal plasma cells can accumulate in the bone marrow and affect healthy blood cell production. The condition may also be associated with bone problems and kidney-related complications.",
+      },
+      {
+        type: "heading",
+        text: "What Are the Symptoms of Blood Cancer?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Symptoms can differ depending on the type of blood cancer and how it affects the body. Some people may experience several symptoms, while others may have few or no noticeable symptoms in the early stages.",
+      },
+      {
+        type: "paragraph",
+        text: "Possible symptoms include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Persistent tiredness or weakness",
+          "Shortness of breath",
+          "Fever or chills",
+          "Unexplained weight loss",
+          "Swollen lymph nodes",
+          "Bone pain or tenderness",
+          "Unusual bruising or bleeding",
+          "Excessive sweating, particularly at night",
+          "Enlargement of the liver or spleen",
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "These symptoms can also occur with conditions other than blood cancer. Having one or more of these symptoms does not independently confirm a cancer diagnosis.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "If symptoms persist or cause concern, consult a medical professional for appropriate evaluation.",
+      },
+      {
+        type: "heading",
+        text: "When Should You Consult a Cancer Specialist?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "You should seek medical advice if you experience persistent, unexplained or concerning symptoms.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A cancer specialist may review your symptoms, medical history and physical examination findings before recommending further investigations. Depending on the suspected condition, a hematologist or oncologist may be involved in your care.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Medical assessment can help identify possible causes of symptoms and determine whether additional testing is required.",
+      },
+      {
+        type: "heading",
+        text: "What Causes Blood Cancer?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The exact causes of blood cancer vary according to the specific type.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Blood cancers can develop when genetic changes affect the normal behaviour of blood-forming or immune cells. These changes may interfere with the usual control of cell growth and division.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "As abnormal cells increase, they may interfere with the production of healthy blood cells in the bone marrow. However, the precise reason an individual develops blood cancer is not always known.",
+      },
+      {
+        type: "heading",
+        text: "Risk Factors Associated With Blood Cancer",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Certain factors may increase the risk of developing some types of blood cancer. These can include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Increasing age",
+          "Smoking or exposure to tobacco smoke",
+          "Exposure to certain chemicals, including benzene and formaldehyde",
+          "Previous chemotherapy or radiation treatment",
+          "Certain inherited or acquired medical conditions",
+          "A family history of particular blood cancers",
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "Risk factors differ between blood cancer types. Having a risk factor does not mean that a person will definitely develop cancer, and some people may develop blood cancer without an identifiable risk factor.",
+      },
+      {
+        type: "heading",
+        text: "How Is Blood Cancer Diagnosed?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The diagnostic process depends on the suspected type of blood cancer. A cancer specialist may begin by reviewing the patient's symptoms and medical history and conducting a physical examination.",
+      },
+      {
+        type: "paragraph",
+        text: "Additional investigations may include the following.",
+      },
+      {
+        type: "heading",
+        text: "1. Blood Tests",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Blood tests can assess blood cell counts and identify certain abnormalities.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A complete blood count (CBC) measures red blood cells, white blood cells and platelets. Other blood tests may assess blood chemistry, proteins or other findings relevant to the suspected condition.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Blood tests can provide important information, but additional testing may be needed to establish the specific diagnosis.",
+      },
+      {
+        type: "heading",
+        text: "2. Bone Marrow Examination",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A bone marrow aspiration or biopsy may be recommended for certain blood cancers.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "During these procedures, a sample of bone marrow is collected and examined in a laboratory. The sample can help identify abnormal cells and provide information relevant to diagnosis and treatment planning.",
+      },
+      {
+        type: "heading",
+        text: "3. Imaging Tests",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Imaging tests may help doctors examine specific areas of the body and assess signs of disease.",
+      },
+      {
+        type: "paragraph",
+        text: "Depending on the suspected condition, investigations may include:",
+      },
+      {
+        type: "list",
+        items: [
+          "CT scans",
+          "MRI scans",
+          "PET scans",
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "The choice of imaging depends on the patient's symptoms, clinical findings and suspected diagnosis.",
+      },
+      {
+        type: "heading",
+        text: "4. Lymph Node or Tissue Biopsy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A biopsy involves collecting a sample of tissue for laboratory examination.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "For suspected lymphoma, a lymph node or another tissue sample may be examined to identify abnormal cells and help establish the specific type of lymphoma.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The investigations required vary according to the suspected blood cancer.",
+      },
+      {
+        type: "heading",
+        text: "How Is Blood Cancer Treated?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Treatment is selected according to the type and subtype of blood cancer, the patient's medical circumstances and relevant test results.",
+      },
+      {
+        type: "paragraph",
+        text: "Treatment options may include the following.",
+      },
+      {
+        type: "heading",
+        text: "1. Chemotherapy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Chemotherapy uses medicines to act against cancer cells. It may be used for several types of blood cancer.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The medicines, treatment schedule and combination with other treatments depend on the specific diagnosis.",
+      },
+      {
+        type: "heading",
+        text: "2. Radiation Therapy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Radiation therapy uses radiation to damage abnormal cells. It may be considered for selected blood cancers or particular treatment purposes.",
+      },
+      {
+        type: "paragraph",
+        text: "Its use depends on the type and extent of the disease.",
+      },
+      {
+        type: "heading",
+        text: "3. Immunotherapy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Immunotherapy includes treatments designed to help the immune system recognize or attack cancer cells.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Certain approaches, including monoclonal antibodies and CAR T-cell therapy, may be used for selected blood cancers. Their suitability depends on the diagnosis and the medical team's assessment.",
+      },
+      {
+        type: "heading",
+        text: "4. Targeted Therapy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Targeted therapy uses medicines that act on specific characteristics of cancer cells.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "These treatments may be considered when testing identifies features that can be targeted. The choice depends on the type of blood cancer and the patient's test results.",
+      },
+      {
+        type: "heading",
+        text: "5. Stem Cell or Bone Marrow Transplant",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Some patients may be considered for a stem cell or bone marrow transplant.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Depending on the treatment approach, stem cells may be collected from the patient or obtained from a suitable donor. Transplantation is not appropriate for every patient, and eligibility depends on factors such as the cancer type, treatment plan and overall health.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A cancer specialist determines the most appropriate treatment approach after reviewing the patient's diagnosis and clinical information.",
+      },
+      {
+        type: "heading",
+        text: "Can Blood Cancer Be Prevented?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Not all blood cancers can be prevented. Some risk factors are associated with particular types of blood cancer, but a person may develop the disease without a known risk factor.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "People concerned about their individual risk should discuss their medical history and concerns with a qualified cancer specialist.",
+      },
+      {
+        type: "heading",
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        question: "What are the three main types of blood cancer?",
+        answer:
+          "The three commonly recognized categories are leukemia, lymphoma and multiple myeloma. Each category includes different subtypes and affects different cells or tissues.",
+      },
+      {
+        type: "faq",
+        question: "What are some common symptoms of blood cancer?",
+        answer:
+          "Possible symptoms include persistent tiredness, frequent infections, fever, unexplained bruising or bleeding, swollen lymph nodes and bone pain. These symptoms may also be associated with other medical conditions.",
+      },
+      {
+        type: "faq",
+        question: "Can a blood test confirm blood cancer?",
+        answer:
+          "Blood tests can identify unusual blood cell counts and other findings that may require further investigation. Depending on the suspected disease, additional testing, such as a bone marrow examination or biopsy, may be necessary.",
+      },
+      {
+        type: "faq",
+        question: "Which specialist treats blood cancer?",
+        answer:
+          "A hematologist specializes in conditions affecting blood and blood-forming tissues, while an oncologist specializes in cancer care. The specialists involved depend on the patient's diagnosis and treatment needs.",
+      },
+      {
+        type: "faq",
+        question: "Is blood cancer treatment the same for every patient?",
+        answer:
+          "No. Treatment depends on the type and subtype of blood cancer, relevant test results, the extent of the disease and the patient's overall health. A cancer specialist recommends treatment based on the individual diagnosis.",
+      },
+      {
+        type: "heading",
+        text: "Conclusion",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Blood cancer includes several diseases affecting blood cells, bone marrow or the lymphatic system. Leukemia, lymphoma and multiple myeloma are major categories, each with different characteristics and treatment requirements.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Symptoms such as persistent tiredness, frequent infections, unexplained bruising, unusual bleeding or swollen lymph nodes should be evaluated when they persist or cause concern. Depending on the suspected condition, diagnosis may involve blood tests, imaging, bone marrow examination or biopsy.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Treatment options vary and may include chemotherapy, radiation therapy, immunotherapy, targeted therapy or stem cell transplantation. The appropriate approach depends on the specific diagnosis and the patient's medical circumstances.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "If you have concerning symptoms or questions about blood cancer, consult a qualified cancer specialist for appropriate medical guidance.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Medical Disclaimer: This article is intended for general educational and informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Please consult a qualified cancer specialist for personalized medical guidance.",
+      },
+    ],
+  },
+  {
+    id: 7,
+    slug: "liver-cancer-types-symptoms-causes-diagnosis-and-treatment",
+    title: "Liver Cancer: Types, Symptoms, Causes, Diagnosis and Treatment",
+    category: "Cancer",
+    targetUrl: "/types-of-cancer/liver-cancer",
+    date: "October 16, 2026",
+    readTime: "7 min read",
+    author: "Zuvius Lifesciences",
+    image: "/blog/liver-cancer-blog.png", // Update with your image path
+    imageClass: "liver-cancer-blog-img",
+    featured: false,
+    excerpt:
+      "Liver cancer begins when changes occur in the DNA of liver cells. Hepatocellular carcinoma is the most common primary liver cancer, alongside intrahepatic cholangiocarcinoma and hepatoblastoma.",
+    metaTitle:
+      "Liver Cancer: Types, Symptoms, Causes, Diagnosis and Treatment | Zuvius Lifesciences",
+    metaDescription:
+      "Learn about liver cancer types including hepatocellular carcinoma, early symptoms, cirrhosis risk factors, diagnostic imaging, biopsy, and treatment modalities.",
+    tags: [
+      "Liver Cancer",
+      "Hepatocellular Carcinoma",
+      "Hepatology",
+      "Cirrhosis",
+      "Oncology",
+      "Cancer Treatment",
+      "Zuvius Lifesciences",
+    ],
+    content: [
+      {
+        type: "heading",
+        text: "What Is Liver Cancer?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The liver is located in the upper-right part of the abdomen, beneath the diaphragm and above the stomach. It performs several important functions, including supporting digestion, processing substances in the blood and helping regulate blood clotting.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Liver cancer begins when changes occur in the DNA of liver cells. These changes can affect the normal control of cell growth and division, allowing abnormal cells to multiply and potentially form a tumour.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Cancer that begins in the liver is called primary liver cancer. Cancer that starts in another organ and spreads to the liver is called metastatic cancer. These conditions are classified and treated according to where the cancer originally developed.",
+      },
+      {
+        type: "heading",
+        text: "What Are the Main Types of Liver Cancer?",
+      },
+      {
+        type: "heading",
+        text: "1. Hepatocellular Carcinoma (HCC)",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Hepatocellular carcinoma is the most common type of primary liver cancer. It begins in hepatocytes, the main cells of the liver.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "HCC is often associated with long-term liver conditions, including cirrhosis and chronic hepatitis B or hepatitis C infections.",
+      },
+      {
+        type: "heading",
+        text: "2. Intrahepatic Cholangiocarcinoma",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Intrahepatic cholangiocarcinoma is a cancer that begins in the bile ducts located inside the liver. It differs from hepatocellular carcinoma and may have different risk factors and treatment approaches.",
+      },
+      {
+        type: "heading",
+        text: "3. Hepatoblastoma",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Hepatoblastoma is a less common type of liver cancer that mainly affects young children. It differs from the liver cancers most commonly diagnosed in adults.",
+      },
+      {
+        type: "heading",
+        text: "What Are the Symptoms of Liver Cancer?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Liver cancer may not cause noticeable symptoms during its early stages. When symptoms develop, they can vary from person to person.",
+      },
+      {
+        type: "paragraph",
+        text: "Possible symptoms include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Reduced appetite",
+          "Pain in the upper abdomen",
+          "Nausea or vomiting",
+          "Persistent weakness or fatigue",
+          "Abdominal swelling",
+          "Yellowing of the skin or whites of the eyes, known as jaundice",
+          "Pale or chalky stools",
+          "Dark-coloured urine",
+          "Fever",
+          "Unexplained bruising or bleeding",
+          "Itchy skin",
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "These symptoms can also be associated with other health conditions. Experiencing one or more symptoms does not automatically mean that a person has liver cancer.",
+      },
+      {
+        type: "heading",
+        text: "When Should You Consult a Cancer Specialist?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Consult a doctor if you experience symptoms that concern you, particularly if they persist or have no clear explanation.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A doctor may review your symptoms and medical history before recommending further tests. Depending on the findings, you may be referred to a specialist who manages liver conditions or cancer.",
+      },
+      {
+        type: "heading",
+        text: "What Causes Liver Cancer?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Liver cancer develops when changes occur in the DNA of liver cells. DNA contains instructions that regulate how cells grow, divide and function.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "When these instructions are altered, cells may begin to grow uncontrollably and form a tumour.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The cause of liver cancer is not always known. However, certain long-term liver conditions and exposures are associated with an increased risk of developing primary liver cancer.",
+      },
+      {
+        type: "heading",
+        text: "Risk Factors Associated With Liver Cancer",
+      },
+      {
+        type: "paragraph",
+        text: "Several factors may increase the risk of primary liver cancer.",
+      },
+      {
+        type: "heading",
+        text: "1. Chronic Hepatitis B or Hepatitis C",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Long-term infection with the hepatitis B virus or hepatitis C virus can increase the risk of liver cancer. These infections may contribute to ongoing liver damage.",
+      },
+      {
+        type: "heading",
+        text: "2. Cirrhosis",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Cirrhosis occurs when scar tissue develops in the liver. This progressive liver condition is an important risk factor for liver cancer.",
+      },
+      {
+        type: "heading",
+        text: "3. Diabetes and Fatty Liver Disease",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Diabetes and nonalcoholic fatty liver disease are associated with an increased risk of liver cancer.",
+      },
+      {
+        type: "heading",
+        text: "4. Aflatoxin Exposure",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Aflatoxins are harmful substances produced by certain moulds. They may contaminate crops, including grains and nuts, when these foods are stored improperly.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Exposure to aflatoxins is associated with an increased risk of liver cancer.",
+      },
+      {
+        type: "heading",
+        text: "5. Excessive Alcohol Consumption",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Excessive alcohol consumption over many years can cause serious liver damage and increase the risk of liver cancer.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Having a risk factor does not mean that a person will definitely develop liver cancer. The condition can also occur in people without an identifiable risk factor.",
+      },
+      {
+        type: "heading",
+        text: "How Is Liver Cancer Diagnosed?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The diagnostic process depends on the suspected type of liver cancer and the patient's clinical findings. A doctor may begin by reviewing the patient's medical history and conducting a physical examination.",
+      },
+      {
+        type: "paragraph",
+        text: "Further investigations may include the following.",
+      },
+      {
+        type: "heading",
+        text: "1. Blood Tests",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Blood tests may help identify abnormalities in liver function and provide additional information about a person's health.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Depending on the circumstances, doctors may assess markers associated with liver function, including bilirubin, albumin and liver enzymes.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Blood tests alone may not be sufficient to establish a diagnosis, so additional investigations may be required.",
+      },
+      {
+        type: "heading",
+        text: "2. Imaging Tests",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Imaging examinations help doctors examine the liver and identify the location or size of a possible tumour.",
+      },
+      {
+        type: "paragraph",
+        text: "Tests may include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Ultrasound",
+          "Computed tomography (CT) scan",
+          "Magnetic resonance imaging (MRI) scan",
+          "Other imaging examinations when appropriate",
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "The choice of test depends on the suspected condition and the patient's clinical assessment.",
+      },
+      {
+        type: "heading",
+        text: "3. Liver Biopsy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A liver biopsy involves removing a small sample of liver tissue for laboratory examination.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A biopsy may be necessary in some cases, while imaging tests may provide sufficient information in others. The decision depends on the patient's circumstances and the medical team's assessment.",
+      },
+      {
+        type: "heading",
+        text: "How Is Liver Cancer Treated?",
+      },
+      {
+        type: "paragraph",
+        text: "Treatment depends on several factors, including:",
+      },
+      {
+        type: "list",
+        items: [
+          "The type of liver cancer",
+          "The location and extent of the cancer",
+          "Liver function",
+          "The patient's overall health",
+          "The suitability of specific treatment options",
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "A cancer specialist determines the treatment approach after reviewing the diagnosis and relevant medical findings.",
+      },
+      {
+        type: "heading",
+        text: "1. Surgery",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Surgery may be used to remove a liver tumour when the location of the cancer and the patient's liver function make the procedure suitable.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "In selected cases, a liver transplant may be considered. This procedure involves replacing the diseased liver with a healthy liver from a donor.",
+      },
+      {
+        type: "heading",
+        text: "2. Ablation",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Ablation is a treatment approach that destroys cancerous tissue. It may be considered for selected liver cancers when surgery is not suitable or when the clinical circumstances support its use.",
+      },
+      {
+        type: "heading",
+        text: "3. Embolization",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Embolization procedures are used in selected cases to affect the blood supply to cancerous tissue.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Whether this approach is suitable depends on the type and extent of the disease.",
+      },
+      {
+        type: "heading",
+        text: "4. Radiation Therapy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Radiation therapy uses high-energy radiation to damage cancer cells. It may be considered for selected patients with liver cancer.",
+      },
+      {
+        type: "heading",
+        text: "5. Immunotherapy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Immunotherapy uses treatments that help the immune system recognize or attack cancer cells.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "It may be appropriate for some patients, depending on the diagnosis and treatment plan.",
+      },
+      {
+        type: "heading",
+        text: "6. Targeted Therapy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Targeted therapy uses medicines designed to act on specific characteristics of cancer cells.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The suitability of targeted treatment depends on the type of cancer and the patient's clinical circumstances.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Liver cancer treatment is not the same for every patient. A cancer specialist evaluates the diagnosis, liver function, disease extent and overall health before recommending an appropriate treatment plan.",
+      },
+      {
+        type: "heading",
+        text: "Can Liver Cancer Be Prevented?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Not every case of liver cancer can be prevented. However, managing certain risk factors and underlying liver conditions may help reduce the risk.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Treatment for hepatitis B and hepatitis C infections may reduce the risk of liver cancer. People with conditions that increase their risk may also discuss liver cancer screening with their doctor.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Screening is not generally recommended for the entire population. It may be considered for people at increased risk, including those with certain chronic liver conditions.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The need for screening should be discussed with a doctor based on individual risk factors and medical history.",
+      },
+      {
+        type: "heading",
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        question: "What is the most common type of liver cancer?",
+        answer:
+          "Hepatocellular carcinoma, or HCC, is the most common type of primary liver cancer. It begins in hepatocytes, the main cells of the liver.",
+      },
+      {
+        type: "faq",
+        question: "Can liver cancer develop without symptoms?",
+        answer:
+          "Yes. Liver cancer may not cause noticeable symptoms during its early stages. People with certain risk factors should discuss appropriate monitoring or screening with their doctor.",
+      },
+      {
+        type: "faq",
+        question: "Does every liver tumour mean cancer?",
+        answer:
+          "Not every liver growth or abnormality is necessarily cancerous. Medical evaluation and appropriate testing are needed to understand the nature of a liver abnormality.",
+      },
+      {
+        type: "faq",
+        question: "Is a biopsy always needed to diagnose liver cancer?",
+        answer:
+          "No. In some cases, imaging tests may provide sufficient information for diagnosis. In other situations, a tissue sample may be required. The decision depends on the patient's clinical circumstances.",
+      },
+      {
+        type: "faq",
+        question: "Is liver cancer treatment the same for every patient?",
+        answer:
+          "No. Treatment depends on the type and extent of the cancer, liver function and the patient's overall health. A cancer specialist develops a treatment plan according to the individual diagnosis.",
+      },
+      {
+        type: "heading",
+        text: "Conclusion",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Liver cancer develops when abnormal cells grow in the liver. Hepatocellular carcinoma is the most common type of primary liver cancer, while other types include intrahepatic cholangiocarcinoma and hepatoblastoma.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The condition may not cause symptoms during its early stages. Possible signs include unexplained weight loss, reduced appetite, upper abdominal discomfort, abdominal swelling and jaundice.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Diagnosis may involve blood tests, imaging examinations and, in selected cases, a liver biopsy. Treatment depends on the type and extent of the cancer, liver function and the patient's overall health.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "If you have concerning symptoms or questions about your risk of liver cancer, consult a qualified cancer specialist for appropriate medical guidance.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Medical Disclaimer: This article is intended for general educational and informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Please consult a qualified cancer specialist for personalized medical guidance.",
+      },
+    ],
+  },
+  {
+    id: 8,
+    slug: "uterine-cancer-symptoms-types-causes-diagnosis-and-treatment",
+    title: "Uterine Cancer: Symptoms, Types, Causes, Diagnosis and Treatment",
+    category: "Cancer",
+    targetUrl: "/types-of-cancer/uterine-cancer",
+    date: "October 16, 2026",
+    readTime: "7 min read",
+    author: "Zuvius Lifesciences",
+    image: "/blog/uterine-cancer-blog.png", // Update with your image path
+    imageClass: "uterine-cancer-blog-img",
+    featured: false,
+    excerpt:
+      "Uterine cancer occurs when abnormal cells develop in the uterus and multiply uncontrollably. It generally includes two main types: endometrial cancer and uterine sarcoma.",
+    metaTitle:
+      "Uterine Cancer: Symptoms, Types, Causes, Diagnosis and Treatment | Zuvius Lifesciences",
+    metaDescription:
+      "Learn about uterine cancer types including endometrial cancer and uterine sarcoma, symptoms like postmenopausal bleeding, diagnostic biopsies, and treatments.",
+    tags: [
+      "Uterine Cancer",
+      "Endometrial Cancer",
+      "Uterine Sarcoma",
+      "Gynecologic Oncology",
+      "Cancer Symptoms",
+      "Oncology",
+      "Zuvius Lifesciences",
+    ],
+    content: [
+      {
+        type: "heading",
+        text: "What Is Uterine Cancer?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The uterus is a hollow, pear-shaped organ in the pelvis where fetal development takes place during pregnancy. Uterine cancer occurs when abnormal cells develop in the uterus and multiply uncontrollably.",
+      },
+      {
+        type: "paragraph",
+        text: "The term uterine cancer generally includes two main types:",
+      },
+      {
+        type: "list",
+        items: [
+          "Endometrial cancer",
+          "Uterine sarcoma",
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "Although endometrial cancer is sometimes referred to as uterine cancer, the terms are not always interchangeable. The type of cancer is important because its diagnosis and treatment can differ.",
+      },
+      {
+        type: "heading",
+        text: "Types of Uterine Cancer",
+      },
+      {
+        type: "heading",
+        text: "1. Endometrial Cancer",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Endometrial cancer begins in the endometrium, the tissue lining the inside of the uterus. It is the most common type of uterine cancer.",
+      },
+      {
+        type: "heading",
+        text: "2. Uterine Sarcoma",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Uterine sarcoma develops in the muscle or supporting tissues of the uterus. It is less common than endometrial cancer.",
+      },
+      {
+        type: "heading",
+        text: "What Are the Symptoms of Uterine Cancer?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Uterine cancer may cause symptoms that are noticeable, particularly changes in vaginal bleeding. However, these symptoms can also occur because of conditions that are not cancerous.",
+      },
+      {
+        type: "paragraph",
+        text: "Possible symptoms include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Vaginal bleeding after menopause.",
+          "Bleeding or spotting between menstrual periods.",
+          "Menstrual periods that are heavier or longer than usual.",
+          "Pelvic or abdominal pain.",
+          "Unusual vaginal discharge.",
+          "A feeling of pressure, fullness or swelling in the abdomen or pelvis.",
+          "Changes in urination or bowel movements, particularly in some cases of uterine sarcoma.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "Symptoms may vary depending on the type of uterine cancer. Some people may have few or no noticeable symptoms, particularly when the cancer is small.",
+      },
+      {
+        type: "heading",
+        text: "Is Bleeding After Menopause a Warning Sign?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Yes. Vaginal bleeding after menopause should be medically evaluated, even when the bleeding is light or happens only once.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Abnormal bleeding does not automatically mean that a person has uterine cancer. However, consulting a healthcare professional can help identify the underlying cause and determine whether further testing is needed.",
+      },
+      {
+        type: "heading",
+        text: "What Causes Uterine Cancer?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The exact cause of endometrial cancer is not always known. It begins when cells in the lining of the uterus undergo changes in their DNA.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "DNA contains instructions that control how cells function, grow and die. Certain changes can cause cells to multiply abnormally and continue living when healthy cells would normally die. These abnormal cells may form a tumor, invade nearby tissue and, in some cases, spread to other parts of the body.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The development of uterine cancer involves complex biological processes. Having a risk factor does not mean that someone will definitely develop the disease.",
+      },
+      {
+        type: "heading",
+        text: "Risk Factors for Uterine Cancer",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Certain factors may increase the likelihood of developing endometrial cancer. These can include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Increasing age, particularly after menopause.",
+          "Obesity.",
+          "Hormonal factors involving estrogen.",
+          "Certain inherited genetic conditions.",
+          "A personal or family history of specific cancers.",
+          "Certain hormonal treatments or medical exposures.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "How Is Uterine Cancer Diagnosed?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "If uterine cancer is suspected, a healthcare professional may recommend several examinations and tests. The investigations selected depend on the symptoms, medical history and findings from the initial assessment.",
+      },
+      {
+        type: "heading",
+        text: "1. Pelvic Examination",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A pelvic examination allows a healthcare professional to examine the reproductive organs and look for abnormalities that may require further investigation.",
+      },
+      {
+        type: "heading",
+        text: "2. Transvaginal Ultrasound",
+      },
+      {
+        type: "paragraph",
+        text:
+          "A transvaginal ultrasound uses a device called a transducer to create images of the pelvic organs. It can help the healthcare team assess the uterus, including the thickness and appearance of the endometrium.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Ultrasound may help identify findings that require additional testing, but it cannot independently confirm every case of uterine cancer.",
+      },
+      {
+        type: "heading",
+        text: "3. Hysteroscopy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Hysteroscopy involves using a thin, lighted instrument called a hysteroscope to examine the inside of the uterus.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "This procedure can help a healthcare professional examine the endometrium and investigate possible abnormalities.",
+      },
+      {
+        type: "heading",
+        text: "4. Endometrial Biopsy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "An endometrial biopsy involves removing a small sample of tissue from the uterine lining. The sample is then examined in a laboratory to determine whether cancerous changes are present.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The findings from a biopsy can provide important information about the cancer and help the healthcare team develop a treatment plan.",
+      },
+      {
+        type: "heading",
+        text: "5. Imaging Tests and Staging",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Additional imaging tests, such as MRI or CT scans, may be recommended to understand the location and extent of the cancer.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "After diagnosis, the healthcare team determines the stage of the disease. Endometrial cancer stages are numbered from 1 to 4. Staging helps the medical team understand how far the cancer has developed and plan appropriate treatment.",
+      },
+      {
+        type: "heading",
+        text: "How Is Uterine Cancer Treated?",
+      },
+      {
+        type: "paragraph",
+        text: "Treatment for uterine cancer depends on several factors, including:",
+      },
+      {
+        type: "list",
+        items: [
+          "The type of cancer.",
+          "The stage and grade of the disease.",
+          "The characteristics of the cancer cells.",
+          "The individual's general health.",
+          "The treatment options considered appropriate by the medical team.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "Different patients may receive different treatment plans. A cancer specialist evaluates the diagnosis and recommends an approach based on the individual's circumstances.",
+      },
+      {
+        type: "heading",
+        text: "1. Surgery",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Surgery is commonly used to treat endometrial cancer. A frequent procedure is a hysterectomy, which involves removing the uterus.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Depending on the diagnosis and treatment plan, the fallopian tubes, ovaries or nearby lymph nodes may also be removed or examined. The surgical approach depends on the type and extent of the cancer.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "For uterine sarcoma, surgery may be the main treatment when the cancer is limited to the uterus and can be completely removed. The procedure depends on the type of sarcoma and the patient's circumstances.",
+      },
+      {
+        type: "heading",
+        text: "2. Radiation Therapy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Radiation therapy uses high-energy radiation to damage or destroy cancer cells. It may be recommended in certain situations, depending on the type, stage and characteristics of the cancer.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Radiation treatment can be delivered from outside the body or, in some cases, through internal radiation known as brachytherapy.",
+      },
+      {
+        type: "heading",
+        text: "3. Chemotherapy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Chemotherapy uses medicines that act against cancer cells. It may be considered after surgery, before surgery in selected situations, or for advanced or recurrent disease.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The use of chemotherapy depends on the diagnosis and the treatment plan recommended by the cancer specialist. Treatment approaches may differ between endometrial cancer and uterine sarcoma.",
+      },
+      {
+        type: "heading",
+        text: "4. Hormone Therapy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Hormone therapy uses medicines that lower hormone levels or affect how hormones act in the body.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "It may be an option for certain cases of advanced endometrial cancer. In some uterine sarcomas, hormone therapy may be used depending on the cancer subtype and its hormone receptors.",
+      },
+      {
+        type: "heading",
+        text: "5. Targeted Therapy and Immunotherapy",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Targeted therapy uses medicines designed to act on specific features of cancer cells. Immunotherapy helps the immune system recognize or attack cancer cells.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "These approaches may be considered for selected patients, depending on the cancer type, stage and test results. They are not suitable for every person with uterine cancer.",
+      },
+      {
+        type: "heading",
+        text: "Can Uterine Cancer Be Prevented?",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Although not all cases of uterine cancer can be prevented, certain lifestyle choices may help reduce the risk. Maintaining a healthy weight is one of the measures associated with a lower risk of endometrial cancer.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Individuals should consult a healthcare professional to understand their personal risk factors and discuss appropriate risk-reduction strategies.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Having one or more risk factors does not necessarily mean that a person will develop uterine cancer.",
+      },
+      {
+        type: "heading",
+        text: "Frequently Asked Questions",
+      },
+      {
+        type: "faq",
+        question: "Is uterine cancer the same as endometrial cancer?",
+        answer:
+          "Not exactly. Uterine cancer is a general term that includes endometrial cancer and uterine sarcoma. Endometrial cancer begins in the lining of the uterus and is more common than uterine sarcoma.",
+      },
+      {
+        type: "faq",
+        question: "What is a common warning sign of uterine cancer?",
+        answer:
+          "Abnormal vaginal bleeding is a common symptom, including bleeding between periods or after menopause. However, abnormal bleeding can have causeS other than cancer and should be evaluated by a healthcare professional.",
+      },
+      {
+        type: "faq",
+        question: "Can uterine cancer be diagnosed through an ultrasound alone?",
+        answer:
+          "An ultrasound can help healthcare professionals examine the uterus and identify abnormalities. However, a tissue biopsy may be needed to confirm endometrial cancer. The tests required depend on the individual case.",
+      },
+      {
+        type: "faq",
+        question: "Which specialist treats uterine cancer?",
+        answer:
+          "A gynecologic oncologist specializes in cancers affecting the female reproductive system. Other specialists, including medical oncologists and radiation oncologists, may also participate in treatment depending on the patient's needs.",
+      },
+      {
+        type: "faq",
+        question: "Is uterine cancer treatment the same for every patient?",
+        answer:
+          "No. Treatment depends on factors such as the type, stage and characteristics of the cancer, along with the individual's general health and circumstances. A cancer specialist recommends a treatment plan based on the diagnosis.",
+      },
+      {
+        type: "heading",
+        text: "Conclusion",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Uterine cancer includes different types of cancer, with endometrial cancer being the most common. Unusual vaginal bleeding, particularly bleeding after menopause, should not be ignored and requires medical evaluation.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Diagnosis may involve a pelvic examination, imaging tests, hysteroscopy and a tissue biopsy. Treatment depends on the type and stage of cancer and may include surgery, radiation therapy, chemotherapy, hormone therapy, targeted therapy or immunotherapy.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "If you experience concerning symptoms or have questions about uterine cancer, consult a qualified cancer specialist for appropriate evaluation and medical guidance.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Medical Disclaimer: This article is intended for general educational and informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Please consult a qualified cancer specialist for personalized medical guidance.",
+      },
+    ],
+  },
+
 ];
 
 export default blogs;
