@@ -97,9 +97,10 @@ function CancerDetail() {
         </div>
       </div>
 
+      {/* Every tab's content stays on the page (inactive ones are hidden), so search engines can read it all. */}
       <div className="content-container">
-        {activeTab === "overview" && (
-          <div className="overview-layout">
+        {(
+          <div className="overview-layout" hidden={activeTab !== "overview"}>
             <div className="overview-content">
               <h2 className="section-heading">Overview</h2>
               <p className="paragraph-text">{cancer.overview?.intro}</p>
@@ -108,8 +109,8 @@ function CancerDetail() {
           </div>
         )}
 
-        {activeTab === "riskFactors" && cancer?.riskFactorsData && (
-          <div className="tab-pane">
+        {cancer?.riskFactorsData && (
+          <div className="tab-pane" hidden={activeTab !== "riskFactors"}>
             <h2 className="section-heading">Risk Factors</h2>
             <div className="risk-container">
               <div className="risk-column col-uncontrollable">
@@ -153,8 +154,8 @@ function CancerDetail() {
           </div>
         )}
 
-        {activeTab === "symptoms" && cancer?.symptoms && (
-          <div className="tab-pane symptoms-pane">
+        {cancer?.symptoms && (
+          <div className="tab-pane symptoms-pane" hidden={activeTab !== "symptoms"}>
             <h2 className="symptoms-heading">Symptoms</h2>
             <div className="symptoms-card-grid">
               {cancer.symptoms.items?.map((item, i) => (
@@ -174,8 +175,8 @@ function CancerDetail() {
           </div>
         )}
 
-        {activeTab === "diagnosis" && cancer?.diagnosis && (
-          <div className="tab-pane diagnosis-pane">
+        {cancer?.diagnosis && (
+          <div className="tab-pane diagnosis-pane" hidden={activeTab !== "diagnosis"}>
             <h2 className="section-heading">Diagnosis</h2>
             <div className="diagnosis-clean-grid">
               {cancer.diagnosis.items?.map((item, i) => (
@@ -195,8 +196,8 @@ function CancerDetail() {
           </div>
         )}
 
-        {activeTab === "treatment" && cancer?.treatment && (
-          <div className="tab-pane treatment-pane">
+        {cancer?.treatment && (
+          <div className="tab-pane treatment-pane" hidden={activeTab !== "treatment"}>
             <h2 className="treatment-heading">Treatments</h2>
             <div className="treatment-card-grid">
               {cancer.treatment.options?.map((item, i) => (
@@ -217,8 +218,8 @@ function CancerDetail() {
         )}
 
         {/* ARTICLES & INSIGHTS TAB */}
-        {activeTab === "articles" && relatedCancerBlogs.length > 0 && (
-          <div className="tab-pane cancer-articles-pane">
+        {relatedCancerBlogs.length > 0 && (
+          <div className="tab-pane cancer-articles-pane" hidden={activeTab !== "articles"}>
             <h2 className="section-heading">Articles & Educational Guides</h2>
             <p className="paragraph-text">
               In-depth medical articles, patient perspectives, and treatment guides related to {cancer.title}.

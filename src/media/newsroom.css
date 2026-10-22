@@ -548,3 +548,12 @@
     padding: 20px;
   }
 }
+/* Press release card titles are links; keep them looking like plain headings. */
+.media-card-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.media-card-title-link:hover {
+  text-decoration: underline;
+}

@@ -30,7 +30,7 @@ const Navbar = () => {
     { name: "Career", path: "/careers" },
     {
       name: "Newsroom",
-      path: "/newsroom",
+      path: "/press-release",
       dropdown: [
         { name: "Media Coverage", path: "/press-release" },
       ],

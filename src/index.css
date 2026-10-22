@@ -1,0 +1,5 @@
+
+/* Elements marked hidden (e.g. inactive tabs) stay hidden even if a class sets display. */
+[hidden] {
+  display: none !important;
+}

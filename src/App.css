@@ -1,7 +1,7 @@
 /* src/App.css */
 
 /* IMPORT FONT */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+/* Raleway is loaded in public/index.html together with Lato. */
 
 /* RESET + GLOBAL FONT */
 * {

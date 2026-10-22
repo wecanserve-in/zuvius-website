@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./about-us.css";
 import PageBanner from "../components/PageBanner";
+import LiteYouTube from "../components/LiteYouTube";
 
 import {
   FaEye,
@@ -244,13 +245,10 @@ const AboutUs = () => {
           </div>
 
           <div className="youtube-box">
-            <iframe
-              src="https://www.youtube.com/embed/sFT7s3GLvP8?si=JSAw4i4NyNai4CNg"
+            <LiteYouTube
+              src="https://www.youtube.com/embed/sFT7s3GLvP8"
               title="Zuvius Corporate Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
+              iframeProps={{ frameBorder: "0" }}
             />
           </div>
         </div>

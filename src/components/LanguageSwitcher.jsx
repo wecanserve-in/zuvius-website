@@ -27,71 +27,7 @@ export default function LanguageSwitcher() {
   }, []);
 
   useEffect(() => {
-    // 1. Dynamic counter and number shield (no ESLint escape warnings)
-    const isCounterOrNumber = (text) => {
-      if (!text) return false;
-      const clean = text.trim();
-      const hasDigit = /\d/.test(clean);
-      const isShort = clean.length <= 10;
-      const isMathOrMetric = /^[\d\s,.+%]+$/.test(clean);
-      return hasDigit && isShort && isMathOrMetric;
-    };
-
-    const protectElement = (el) => {
-      if (el && el.nodeType === 1 && !el.classList.contains("notranslate")) {
-        el.classList.add("notranslate");
-        el.setAttribute("translate", "no");
-      }
-    };
-
-    const scanAllNumbers = () => {
-      const elements = document.querySelectorAll(
-        "h1, h2, h3, h4, h5, h6, span, div, p, strong, b"
-      );
-      elements.forEach((el) => {
-        if (el.children.length === 0 && isCounterOrNumber(el.innerText)) {
-          protectElement(el);
-          protectElement(el.parentElement);
-        }
-      });
-    };
-    scanAllNumbers();
-
-    const observer = new MutationObserver((mutations) => {
-      for (const m of mutations) {
-        const target =
-          m.target.nodeType === 3 ? m.target.parentElement : m.target;
-        if (target && isCounterOrNumber(target.innerText)) {
-          protectElement(target);
-          if (target.parentElement) {
-            protectElement(target.parentElement);
-          }
-        }
-      }
-    });
-
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-      characterData: true,
-    });
-
-    // 2. DOM Virtual DOM safety patch
-    if (typeof Node === "function" && Node.prototype) {
-      const originalRemoveChild = Node.prototype.removeChild;
-      Node.prototype.removeChild = function (child) {
-        if (child.parentNode !== this) return child;
-        return originalRemoveChild.apply(this, arguments);
-      };
-
-      const originalInsertBefore = Node.prototype.insertBefore;
-      Node.prototype.insertBefore = function (newNode, referenceNode) {
-        if (referenceNode && referenceNode.parentNode !== this) return newNode;
-        return originalInsertBefore.apply(this, arguments);
-      };
-    }
-
-    // 3. Read active language from Google cookie
+    // 1. Read active language from Google cookie
     let activeLanguage = "en";
     const match = document.cookie.match(/(^|;\s*)googtrans=([^;]+)/);
     if (match) {
@@ -100,6 +36,77 @@ export default function LanguageSwitcher() {
         setCurrentLang(lang);
         activeLanguage = lang;
       }
+    }
+
+    // 2. Only while a translation is active: keep numbers/counters from being
+    // translated, and patch the DOM so Google Translate's changes can't crash React.
+    // English readers skip all of this (it scans every element on the page).
+    let observer = null;
+    if (activeLanguage !== "en") {
+      // 1. Dynamic counter and number shield (no ESLint escape warnings)
+      const isCounterOrNumber = (text) => {
+        if (!text) return false;
+        const clean = text.trim();
+        const hasDigit = /\d/.test(clean);
+        const isShort = clean.length <= 10;
+        const isMathOrMetric = /^[\d\s,.+%]+$/.test(clean);
+        return hasDigit && isShort && isMathOrMetric;
+      };
+
+      const protectElement = (el) => {
+        if (el && el.nodeType === 1 && !el.classList.contains("notranslate")) {
+          el.classList.add("notranslate");
+          el.setAttribute("translate", "no");
+        }
+      };
+
+      const scanAllNumbers = () => {
+        const elements = document.querySelectorAll(
+          "h1, h2, h3, h4, h5, h6, span, div, p, strong, b"
+        );
+        elements.forEach((el) => {
+          if (el.children.length === 0 && isCounterOrNumber(el.innerText)) {
+            protectElement(el);
+            protectElement(el.parentElement);
+          }
+        });
+      };
+      scanAllNumbers();
+
+      observer = new MutationObserver((mutations) => {
+        for (const m of mutations) {
+          const target =
+            m.target.nodeType === 3 ? m.target.parentElement : m.target;
+          if (target && isCounterOrNumber(target.innerText)) {
+            protectElement(target);
+            if (target.parentElement) {
+              protectElement(target.parentElement);
+            }
+          }
+        }
+      });
+
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true,
+        characterData: true,
+      });
+
+      // 2. DOM Virtual DOM safety patch
+      if (typeof Node === "function" && Node.prototype) {
+        const originalRemoveChild = Node.prototype.removeChild;
+        Node.prototype.removeChild = function (child) {
+          if (child.parentNode !== this) return child;
+          return originalRemoveChild.apply(this, arguments);
+        };
+
+        const originalInsertBefore = Node.prototype.insertBefore;
+        Node.prototype.insertBefore = function (newNode, referenceNode) {
+          if (referenceNode && referenceNode.parentNode !== this) return newNode;
+          return originalInsertBefore.apply(this, arguments);
+        };
+      }
+
     }
 
     // 4. Inject Google Translate, only when a non-English language is chosen.
@@ -173,7 +180,7 @@ export default function LanguageSwitcher() {
     document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      observer.disconnect();
+      if (observer) observer.disconnect();
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);

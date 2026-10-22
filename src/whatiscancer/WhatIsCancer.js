@@ -356,7 +356,7 @@ function WhatIsCancer() {
 
   <div className="step-card">
     <div className="step-icon">
-      <img loading="lazy" src="/whatiscancer/cancer_begins.png" alt="" />
+      <img loading="lazy" src="/whatiscancer/cancer_begins.png" alt="Illustration of how cancer begins when cells grow out of control" />
     </div>
 
     <h3>How Cancer Begins</h3>
@@ -370,7 +370,7 @@ function WhatIsCancer() {
 
   <div className="step-card">
     <div className="step-icon">
-      <img loading="lazy" src="/whatiscancer/cancer_spread.png" alt="" />
+      <img loading="lazy" src="/whatiscancer/cancer_spread.png" alt="Illustration of how cancer spreads to other parts of the body" />
     </div>
 
     <h3>How Cancer Spreads</h3>
@@ -383,7 +383,7 @@ function WhatIsCancer() {
 
   <div className="step-card">
     <div className="step-icon">
-      <img loading="lazy" src="/whatiscancer/cancer_detection.png" alt="" />
+      <img loading="lazy" src="/whatiscancer/cancer_detection.png" alt="Illustration of cancer detection and screening" />
     </div>
 
     <h3>Why Early Detection Matters</h3>
@@ -518,7 +518,7 @@ function WhatIsCancer() {
 
   <Link to="/prevention" className="journey-card">
     <div className="journey-icon">
-      <img loading="lazy" src="/whatiscancer/prevention_img.png" alt="" />
+      <img loading="lazy" src="/whatiscancer/prevention_img.png" alt="Healthy lifestyle choices that help prevent cancer" />
     </div>
 
     <div>
@@ -531,7 +531,7 @@ function WhatIsCancer() {
 
   <Link to="/early-diagnosis" className="journey-card">
     <div className="journey-icon">
-      <img loading="lazy" src="/whatiscancer/disgnosis_img.png" alt="" />
+      <img loading="lazy" src="/whatiscancer/disgnosis_img.png" alt="Doctor discussing a cancer diagnosis with a patient" />
     </div>
 
     <div>

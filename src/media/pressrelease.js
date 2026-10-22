@@ -2,7 +2,7 @@ import React from "react";
 import "./newsroom.css";
 import { pressItems } from "./mediaData";
 import PageBanner from "../components/PageBanner";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const PressRelease = () => {
   const navigate = useNavigate();
@@ -57,7 +57,12 @@ const PressRelease = () => {
                   <span className="media-year">{item.year}</span>
                 </div>
 
-                <h3>{item.title}</h3>
+                <h3>
+                  {/* A real link so search engines can reach each press release. */}
+                  <Link to={`/press-release/${item.id}`} className="media-card-title-link">
+                    {item.title}
+                  </Link>
+                </h3>
 
                 <p>
                   {item.excerpt ||

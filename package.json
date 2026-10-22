@@ -21,7 +21,8 @@
     "postbuild": "node scripts/generate-product-pages.js && node scripts/generate-seo-pages.js",
     "optimize-images": "node scripts/optimize-images.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "redirects": "node scripts/build-redirects.js"
   },
   "eslintConfig": {
     "extends": [

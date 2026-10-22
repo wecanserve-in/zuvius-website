@@ -35,6 +35,7 @@ import "./media/PressReleaseDetails.css";
 import "./blog/blog.css";
 import "./blog/blogdetail.css";
 import "./components/NotFound.css";
+import "./components/LiteYouTube.css";
 import ScrollToTop from "./components/ScrollToTop";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import { STATIC_PAGES } from "./seo/seoConfig";

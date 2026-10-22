@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./events.css";
 import PageBanner from "../components/PageBanner";
+import LiteYouTube from "../components/LiteYouTube";
 import { eventsData } from "./eventsdata";
 import useSEO from "../seo/useSEO";
 import { eventSEO, NOT_FOUND_SEO } from "../seo/seoConfig";
@@ -205,13 +206,10 @@ const EventDetail = () => {
               <div className="ev-card-video-panel-right">
                 <div className="ev-iframe-video-wrapper">
                   {eventItem.videoUrl ? (
-                    <iframe
+                    <LiteYouTube
                       src={eventItem.videoUrl}
                       title={`${eventItem.title} video`}
                       className="event-video"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
                     />
                   ) : (
                     <img

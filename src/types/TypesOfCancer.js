@@ -2,6 +2,11 @@ import React, { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import "./typesofcancer.css";
 import PageBanner from "../components/PageBanner";
+import cancerGuides from "../cancersData";
+
+// Only list cancer types that have a written guide, so no card leads to "Page not found".
+// A card appears automatically once its guide is added to cancersData.js.
+const GUIDE_SLUGS = new Set(cancerGuides.map((guide) => guide.slug));
 
 
 const cancersData = [
@@ -123,6 +128,8 @@ const TypesOfCancer = () => {
 
   const filteredCancers = useMemo(() => {
     return cancersData.filter((item) => {
+      if (!GUIDE_SLUGS.has(createSlug(item.name))) return false;
+
       const matchesSearch = item.name
         .toLowerCase()
         .includes(searchTerm.toLowerCase());

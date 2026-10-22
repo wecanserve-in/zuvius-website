@@ -46,6 +46,7 @@ const ORGANIZATION = {
     "https://www.facebook.com/ZuviusIndia/",
     "https://www.instagram.com/zuviuslifesciences/",
     "https://www.youtube.com/@zuviuslifesciences",
+    "https://www.linkedin.com/company/zuvius-lifesciences-pvt-ltd-/",
   ],
 };
 
@@ -180,7 +181,14 @@ function structuredData(page, url, imageUrl) {
   return `<script type="application/ld+json">\n${json.replace(/</g, "\\u003c")}\n</script>`;
 }
 
+// Use the default share image when a page's own image file doesn't exist.
+function shareImage(image) {
+  if (!image || /^https?:/.test(image)) return image;
+  return fs.existsSync(path.join(BUILD_DIR, decodeURI(image))) ? image : seo.DEFAULT_IMAGE;
+}
+
 function renderPage(template, page) {
+  page = { ...page, image: shareImage(page.image) };
   const url = seo.absoluteUrl(page.path);
   const imageUrl = seo.absoluteUrl(page.image);
   const title = escapeHtml(page.title);

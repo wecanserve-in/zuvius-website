@@ -418,7 +418,7 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/company/https-www.linkedin.com-search-results-all-heroentitykey-urn-3ali-3aorganization-3a3966110&keywords-z/posts/?feedView=all"
+                href="https://www.linkedin.com/company/zuvius-lifesciences-pvt-ltd-/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"

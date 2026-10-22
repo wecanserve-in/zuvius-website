@@ -53,6 +53,17 @@ node scripts/optimize-images.js --only blog   # one folder
 
 Originals are copied to `../zuvius-image-originals/` before anything is changed.
 
+## Old addresses (redirects)
+
+Older versions of the site (WordPress and before) used different addresses, and Google still knows many of them. `public/.htaccess` sends each one to its closest new page (301) and marks spam and junk pages as gone (410). The rules are generated, not hand-written:
+
+```bash
+npm run build          # the generator reads build/sitemap.xml
+npm run redirects      # rewrites the "old-site redirects" block in public/.htaccess
+```
+
+The list of old addresses is `scripts/data/old-site-paths.txt` (from the Internet Archive); the matching rules are in `scripts/build-redirects.js`.
+
 ## Server
 
-`deploy/htaccess.recommended` holds the recommended Hostinger server rules (www redirect, real 404s, security headers, caching). It isn't active until it's copied to `public/.htaccess`; see the notes at the top of the file.
+`public/.htaccess` holds the server rules (old-address redirects, www redirect, real 404s, security headers, caching) and is deployed with every build.

@@ -175,8 +175,8 @@ const ProductDetail = () => {
     });
   };
 
-  const getTabContent = () => {
-    switch (activeTab) {
+  const getTabContent = (tab = activeTab) => {
+    switch (tab) {
       case "Description":
         return product.description || "No information available.";
 
@@ -739,9 +739,16 @@ const ProductDetail = () => {
         </div>
 
         <div className="product-tabs-body">
-          <div className="product-tab-formatted-content">
-            {renderFormattedContent(getTabContent())}
-          </div>
+          {/* Every tab's text stays on the page (inactive ones are hidden), so search engines can read it all. */}
+          {tabs.map((tab) => (
+            <div
+              key={tab}
+              className="product-tab-formatted-content"
+              hidden={activeTab !== tab}
+            >
+              {renderFormattedContent(getTabContent(tab))}
+            </div>
+          ))}
         </div>
 
       </section>
