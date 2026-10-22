@@ -202,7 +202,7 @@ const ProductMain = () => {
                 key={`${product.category}-${product.slug}`}
               >
                 <div className="category-product-image">
-                  <img
+                  <img loading="lazy"
                     src={product.image}
                     alt={product.name}
                     className={

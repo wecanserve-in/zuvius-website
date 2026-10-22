@@ -1556,7 +1556,7 @@ const blogs = [
     slug: "blood-cancer-types-symptoms-causes-diagnosis-and-treatment",
     title: "Blood Cancer: Types, Symptoms, Causes, Diagnosis and Treatment",
     category: "Cancer",
-    targetUrl: "/cancer",
+    targetUrl: "/types-of-cancer/leukemia",
     date: "October 16, 2026",
     readTime: "7 min read",
     author: "Zuvius Lifesciences",

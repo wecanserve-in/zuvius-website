@@ -336,7 +336,7 @@ const Awards = () => {
             {isDetailModal ? (
               <div className="award-popup-layout">
                 <div className="award-popup-image">
-                  <img
+                  <img loading="lazy"
                     src={selectedItem.image}
                     alt={selectedItem.title}
                   />
@@ -361,7 +361,7 @@ const Awards = () => {
             ) : (
               <>
                 <div className="zoom-popup-image">
-                  <img
+                  <img loading="lazy"
                     src={selectedItem.image}
                     alt={selectedItem.title}
                   />

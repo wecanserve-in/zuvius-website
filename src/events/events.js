@@ -102,7 +102,7 @@ const Events = () => {
                 key={item.id}
               >
                 <div className="events-initiative-card-image-wrapper">
-                  <img
+                  <img loading="lazy"
                     src={item.cardImage || item.images[0]}
                     alt={item.title}
                     className="events-initiative-card-image"

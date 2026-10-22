@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import "./events.css";
 import PageBanner from "../components/PageBanner";
 import { eventsData } from "./eventsdata";
+import useSEO from "../seo/useSEO";
+import { eventSEO, NOT_FOUND_SEO } from "../seo/seoConfig";
 
 const EventDetail = () => {
   const { slug } = useParams();
@@ -10,6 +12,8 @@ const EventDetail = () => {
   const eventItem = useMemo(() => {
     return eventsData.find((item) => item.slug === slug);
   }, [slug]);
+
+  useSEO(eventItem ? eventSEO(eventItem) : NOT_FOUND_SEO);
 
   const [zoomedImgUrl, setZoomedImgUrl] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -342,7 +346,7 @@ const EventDetail = () => {
                   </button>
                 )}
 
-                <img
+                <img loading="lazy"
                   src={zoomedImgUrl}
                   alt={`${eventItem.title} ${
                     currentImageIndex + 1

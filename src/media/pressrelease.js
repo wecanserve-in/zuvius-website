@@ -30,11 +30,11 @@ const PressRelease = () => {
         </div>
 
         <div className="featured-logos">
-          <img src="/newsroom/forbes-logo.png" alt="Forbes" />
-          <img src="/newsroom/ceo-logo.png" alt="CEO Insights" />
-          <img src="/newsroom/ceoinsights.png" alt="CEO Insights" />
-          <img src="/newsroom/csrlogo.png" alt="CSR" />
-          <img src="/newsroom/express.png" alt="Express" />
+          <img loading="lazy" src="/newsroom/forbes-logo.png" alt="Forbes" />
+          <img loading="lazy" src="/newsroom/ceo-logo.png" alt="CEO Insights" />
+          <img loading="lazy" src="/newsroom/ceoinsights.png" alt="CEO Insights" />
+          <img loading="lazy" src="/newsroom/csrlogo.png" alt="CSR" />
+          <img loading="lazy" src="/newsroom/express.png" alt="Express" />
         </div>
       </section>
 

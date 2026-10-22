@@ -17,7 +17,7 @@ const Footer = () => {
         {/* Logo and address */}
         <div className="footer-col address-col">
         <Link to="/" className="footer-logo">
-  <img
+  <img loading="lazy"
     src="/zuvius-logo.jpeg"
     alt="Zuvius Lifesciences"
   />
@@ -161,7 +161,7 @@ const Footer = () => {
 
           {/* Made in India badge */}
       <div className="made-in-india-badge">
-        <img
+        <img loading="lazy"
           src="/made-in-india.png"
           alt="Made in India"
         />

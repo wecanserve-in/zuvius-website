@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,253 +9,47 @@ import {
 import Home from "./home/home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-import ProductMain from "./products/productmain";
-import ProductCategory from "./products/productcategory";
-import ProductDetail from "./products/productdetail";
-
-import Newsroom from "./media/newsroom";
-import PressRelease from "./media/pressrelease";
-
-import Awards from "./awards/awards";
-import Careers from "./careers/careers";
-import Contact from "./contact/contact";
-import Events from "./events/events";
-import EventDetail from "./events/EventDetail";
-
-import WhatIsCancer from "./whatiscancer/WhatIsCancer";
-import EarlyDiagnosis from "./earlydiagnosis/EarlyDiagnosis";
-import AboutUs from "./about-us/about-us";
-import Prevention from "./prevention/Prevention";
-import TypesOfCancer from "./types/TypesOfCancer";
-import CancerDetail from "./cancerdetails";
-
-import CSR from "./csr/csr";
-import CSRDetail from "./csr/CSRDetail";
-
 import ScrollToTop from "./components/ScrollToTop";
-import PressReleaseDetails from "./media/PressReleaseDetails";
-
-import Blog from "./blog/Blog";
-import BlogDetail from "./blog/BlogDetail";
-import blogs from "./blog/blogdata";
-
 import LanguageSwitcher from "./components/LanguageSwitcher";
+import { STATIC_PAGES } from "./seo/seoConfig";
+import useSEO from "./seo/useSEO";
 
 import "./App.css";
 
-/* ============================================================
-   CENTRAL SEO MANAGER
-   ============================================================ */
+// Every page except the homepage is loaded only when a visitor opens it,
+// so nobody downloads the code for the whole website up front.
+const ProductMain = lazy(() => import("./products/productmain"));
+const ProductCategory = lazy(() => import("./products/productcategory"));
+const ProductDetail = lazy(() => import("./products/productdetail"));
+const Newsroom = lazy(() => import("./media/newsroom"));
+const PressRelease = lazy(() => import("./media/pressrelease"));
+const PressReleaseDetails = lazy(() => import("./media/PressReleaseDetails"));
+const Awards = lazy(() => import("./awards/awards"));
+const Careers = lazy(() => import("./careers/careers"));
+const Contact = lazy(() => import("./contact/contact"));
+const Events = lazy(() => import("./events/events"));
+const EventDetail = lazy(() => import("./events/EventDetail"));
+const WhatIsCancer = lazy(() => import("./whatiscancer/WhatIsCancer"));
+const EarlyDiagnosis = lazy(() => import("./earlydiagnosis/EarlyDiagnosis"));
+const AboutUs = lazy(() => import("./about-us/about-us"));
+const Prevention = lazy(() => import("./prevention/Prevention"));
+const TypesOfCancer = lazy(() => import("./types/TypesOfCancer"));
+const CancerDetail = lazy(() => import("./cancerdetails"));
+const CSR = lazy(() => import("./csr/csr"));
+const CSRDetail = lazy(() => import("./csr/CSRDetail"));
+const Blog = lazy(() => import("./blog/Blog"));
+const BlogDetail = lazy(() => import("./blog/BlogDetail"));
+const NotFound = lazy(() => import("./components/NotFound"));
 
-const SEO_DATA = {
-  "/": {
-    title:
-      "Leading Anticancer & Oncology Drug Manufacturer | Zuvius Lifesciences",
-    description:
-      "Zuvius Lifesciences - Global manufacturer of the widest range of anticancer and oncology formulations. Dedicated EU GMP & PIC/S approved facilities providing high-quality chemotherapy solutions.",
-  },
-  "/products": {
-    title:
-      "Anticancer & Oncology Drugs | Pharmaceutical Portfolio | Zuvius Lifesciences",
-    description:
-      "Explore the oncology pharmaceutical product portfolio of Zuvius Lifesciences, including specialized anticancer treatments and supportive nutraceutical products.",
-  },
-  "/products/oncoace": {
-    title:
-      "OncoAce | Anticancer & Oncology Formulations | Zuvius Lifesciences",
-    description:
-      "Explore the OncoAce portfolio of specialized oncology drugs and cytotoxic anticancer pharmaceutical products from Zuvius Lifesciences.",
-  },
-  "/products/nutrazeutica": {
-    title:
-      "Nutrazeutica | Nutraceutical & Supportive Oncology Care | Zuvius Lifesciences",
-    description:
-      "Explore the Nutrazeutica portfolio of nutritional healthcare and supportive oncology products designed for patient wellness by Zuvius Lifesciences.",
-  },
-  "/aboutus": {
-    title:
-      "About Zuvius Lifesciences | Leading Oncology Pharmaceutical Company",
-    description:
-      "Learn about Zuvius Lifesciences, a global oncology healthcare company headquartered in Mumbai, specializing in chemotherapeutic formulations and cancer care.",
-  },
-  "/contact": {
-    title:
-      "Contact Zuvius Lifesciences | Oncology Pharmaceutical Inquiries",
-    description:
-      "Contact Zuvius Lifesciences for commercial and distribution enquiries about oncology products, anticancer medicines, institutional supply, and global partnerships.",
-  },
-  "/careers": {
-    title:
-      "Careers at Zuvius Lifesciences | Oncology & Pharma Opportunities",
-    description:
-      "Explore pharmaceutical career opportunities at Zuvius Lifesciences and join an innovative team dedicated to advancing global oncology treatments.",
-  },
-  "/newsroom": {
-    title:
-      "Newsroom & Oncology Updates | Zuvius Lifesciences",
-    description:
-      "Read the latest oncology news, company updates, research milestones, and pharmaceutical developments from Zuvius Lifesciences.",
-  },
-  "/blog": {
-    title:
-      "Blog | Oncology Insights & Pharmaceutical Articles | Zuvius Lifesciences",
-    description:
-      "Explore clinical oncology insights, pharmaceutical research, patient guides, and healthcare perspectives from Zuvius Lifesciences.",
-  },
-  "/press-release": {
-    title:
-      "Press Releases | Corporate & Oncology Announcements | Zuvius Lifesciences",
-    description:
-      "Read official press releases, product launches, and oncology corporate announcements from Zuvius Lifesciences.",
-  },
-  "/awards-recognition": {
-    title:
-      "Awards & Recognition | Oncology Excellence | Zuvius Lifesciences",
-    description:
-      "Explore industry awards, global quality certifications, and international oncology pharmaceutical recognitions achieved by Zuvius Lifesciences.",
-  },
-  "/events": {
-    title:
-      "Events & Conferences | Global Oncology Summits | Zuvius Lifesciences",
-    description:
-      "Discover upcoming and past oncology conferences, international exhibitions, and medical trade events featuring Zuvius Lifesciences.",
-  },
-  "/whatiscancer": {
-    title:
-      "What Is Cancer? | Oncology Education & Awareness | Zuvius Lifesciences",
-    description:
-      "Learn about cancer biology, early warning signs, oncology treatment modalities, and comprehensive cancer care awareness with Zuvius Lifesciences.",
-  },
-  "/early-diagnosis": {
-    title:
-      "Early Cancer Diagnosis | Oncology Screening Guidelines | Zuvius Lifesciences",
-    description:
-      "Understand the critical importance of early cancer detection, regular oncology screening, and timely medical intervention for better survival outcomes.",
-  },
-  "/prevention": {
-    title:
-      "Cancer Prevention | Risk Factors & Oncology Wellness | Zuvius Lifesciences",
-    description:
-      "Learn about evidence-based cancer prevention strategies, lifestyle risk factor reduction, and oncology wellness practices from Zuvius Lifesciences.",
-  },
-  "/types-of-cancer": {
-    title:
-      "Types of Cancer | Comprehensive Oncology Guides | Zuvius Lifesciences",
-    description:
-      "Explore detailed oncology guides covering different cancer types, symptoms, staging, and therapeutic treatment pathways.",
-  },
-  "/csr": {
-    title:
-      "Corporate Social Responsibility | Community Oncology Care | Zuvius Lifesciences",
-    description:
-      "Explore corporate social responsibility initiatives, free cancer screening camps, and community oncology care programs supported by Zuvius Lifesciences.",
-  },
-};
-
-const getSEOData = (pathname) => {
-  if (SEO_DATA[pathname]) return SEO_DATA[pathname];
-  if (/^\/products\/[^/]+\/[^/]+\/?$/.test(pathname)) return null;
-
-  if (/^\/blog\/[^/]+\/?$/.test(pathname)) {
-    const slug = pathname.replace(/^\/blog\//, "").replace(/\/+$/, "");
-    const blog = blogs.find((item) => item.slug === slug);
-    if (blog) {
-      return {
-        title: blog.metaTitle || `${blog.title} | Oncology Insights | Zuvius Lifesciences`,
-        description: blog.metaDescription || blog.excerpt,
-      };
-    }
-    return {
-      title: "Blog | Oncology Insights | Zuvius Lifesciences",
-      description:
-        "Explore oncology insights, clinical guides, and healthcare perspectives from Zuvius Lifesciences.",
-    };
-  }
-
-  if (/^\/press-release\/[^/]+\/?$/.test(pathname)) {
-    return {
-      title: "Press Release | Oncology Innovations | Zuvius Lifesciences",
-      description:
-        "Read the latest press release, oncology breakthroughs, and official company announcements from Zuvius Lifesciences.",
-    };
-  }
-
-  if (/^\/events\/[^/]+\/?$/.test(pathname)) {
-    return {
-      title: "Event Details | Global Oncology Summits | Zuvius Lifesciences",
-      description:
-        "Explore medical conference schedules, oncology exhibitions, and summit updates from Zuvius Lifesciences.",
-    };
-  }
-
-  if (/^\/types-of-cancer\/[^/]+\/?$/.test(pathname)) {
-    return {
-      title: "Cancer Information & Guides | Oncology Care | Zuvius Lifesciences",
-      description:
-        "Learn more about cancer types, clinical oncology characteristics, warning signs, and evidence-based treatment pathways.",
-    };
-  }
-
-  if (/^\/csr\/[^/]+(\/[^/]+)?\/?$/.test(pathname)) {
-    return {
-      title: "CSR Initiative | Community Oncology Care | Zuvius Lifesciences",
-      description:
-        "Explore corporate social responsibility initiatives, oncology outreach, and community wellness programs by Zuvius Lifesciences.",
-    };
-  }
-
-  return {
-    title: "Zuvius Lifesciences | Leading Oncology Pharmaceutical Company",
-    description:
-      "Zuvius Lifesciences is a leading pharmaceutical company specializing in oncology formulations and cancer care solutions.",
-  };
-};
-
+/*
+ * Titles for fixed pages. Detail pages (products, cancer guides, blogs, events,
+ * press releases, CSR) set their own from src/seo/seoConfig.js.
+ */
 const SEOManager = () => {
   const location = useLocation();
-
-  React.useEffect(() => {
-    const pathname = location.pathname.replace(/\/+$/, "") || "/";
-    const seo = getSEOData(pathname);
-    if (!seo) return;
-
-    const baseUrl = "https://zuviuslifesciences.in";
-    const canonicalUrl =
-      pathname === "/" ? `${baseUrl}/` : `${baseUrl}${pathname}`;
-
-    document.title = seo.title;
-
-    const setMeta = (attribute, value, content) => {
-      let element = document.head.querySelector(`meta[${attribute}="${value}"]`);
-      if (!element) {
-        element = document.createElement("meta");
-        element.setAttribute(attribute, value);
-        document.head.appendChild(element);
-      }
-      element.setAttribute("content", content);
-    };
-
-    setMeta("name", "description", seo.description);
-    setMeta("property", "og:type", "website");
-    setMeta("property", "og:url", canonicalUrl);
-    setMeta("property", "og:title", seo.title);
-    setMeta("property", "og:description", seo.description);
-    setMeta("property", "og:site_name", "Zuvius Lifesciences");
-    setMeta("name", "twitter:card", "summary_large_image");
-    setMeta("name", "twitter:url", canonicalUrl);
-    setMeta("name", "twitter:title", seo.title);
-    setMeta("name", "twitter:description", seo.description);
-
-    let canonical = document.head.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.setAttribute("rel", "canonical");
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute("href", canonicalUrl);
-  }, [location.pathname]);
-
+  const pathname = location.pathname.replace(/\/+$/, "") || "/";
+  const seo = STATIC_PAGES[pathname];
+  useSEO(seo ? { ...seo, path: pathname } : null);
   return null;
 };
 
@@ -272,31 +66,34 @@ function App() {
         <LanguageSwitcher />
 
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<ProductMain />} />
-            <Route path="/products/:category" element={<ProductCategory />} />
-            <Route path="/products/:category/:slug" element={<ProductDetail />} />
-            <Route path="/newsroom" element={<Newsroom />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogDetail />} />
-            <Route path="/press-release" element={<PressRelease />} />
-            <Route path="/press-release/:id" element={<PressReleaseDetails />} />
-            <Route path="/awards-recognition" element={<Awards />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/events/:slug" element={<EventDetail />} />
-            <Route path="/whatiscancer" element={<WhatIsCancer />} />
-            <Route path="/aboutus" element={<AboutUs />} />
-            <Route path="/early-diagnosis" element={<EarlyDiagnosis />} />
-            <Route path="/prevention" element={<Prevention />} />
-            <Route path="/types-of-cancer" element={<TypesOfCancer />} />
-            <Route path="/types-of-cancer/:slug" element={<CancerDetail />} />
-            <Route path="/csr" element={<CSR />} />
-            <Route path="/csr/:slug" element={<CSRDetail />} />
-            <Route path="/csr/:slug/:eventSlug" element={<CSRDetail />} />
-          </Routes>
+          <Suspense fallback={<div style={{ minHeight: "100vh" }} />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/products" element={<ProductMain />} />
+              <Route path="/products/:category" element={<ProductCategory />} />
+              <Route path="/products/:category/:slug" element={<ProductDetail />} />
+              <Route path="/newsroom" element={<Newsroom />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogDetail />} />
+              <Route path="/press-release" element={<PressRelease />} />
+              <Route path="/press-release/:id" element={<PressReleaseDetails />} />
+              <Route path="/awards-recognition" element={<Awards />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/events" element={<Events />} />
+              <Route path="/events/:slug" element={<EventDetail />} />
+              <Route path="/whatiscancer" element={<WhatIsCancer />} />
+              <Route path="/aboutus" element={<AboutUs />} />
+              <Route path="/early-diagnosis" element={<EarlyDiagnosis />} />
+              <Route path="/prevention" element={<Prevention />} />
+              <Route path="/types-of-cancer" element={<TypesOfCancer />} />
+              <Route path="/types-of-cancer/:slug" element={<CancerDetail />} />
+              <Route path="/csr" element={<CSR />} />
+              <Route path="/csr/:slug" element={<CSRDetail />} />
+              <Route path="/csr/:slug/:eventSlug" element={<CSRDetail />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Suspense>
         </main>
 
         <Footer />

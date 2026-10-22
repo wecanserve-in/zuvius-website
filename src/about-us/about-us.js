@@ -310,7 +310,7 @@ const AboutUs = () => {
         <div className="about-container mission-grid">
           <div className="mission-card">
             <div className="mission-icon mission-target-icon">
-              <img
+              <img loading="lazy"
                 src="/aboutus/mission-target.png"
                 alt="Archery target representing our mission"
               />
@@ -359,7 +359,7 @@ const AboutUs = () => {
 
           <div className="main-leader-card">
             <div className="main-leader-img">
-              <img
+              <img loading="lazy"
                 src={leaders[0].image}
                 alt={leaders[0].name}
               />
@@ -389,7 +389,7 @@ const AboutUs = () => {
                 key={leader.name}
               >
                 <div className="leader-image-wrap">
-                  <img
+                  <img loading="lazy"
                     src={leader.image}
                     alt={leader.name}
                   />

@@ -221,7 +221,7 @@ const TypesOfCancer = () => {
                 >
 
                   <div className="toc-card-img">
-                    <img
+                    <img loading="lazy"
                       src={item.img}
                       alt={item.name}
                     />

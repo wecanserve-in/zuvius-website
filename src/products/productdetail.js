@@ -4,6 +4,8 @@ import "./productdetail.css";
 import { products } from "./productdata";
 import blogs from "../blog/blogdata";
 import SuccessMessage from "../components/SuccessMessage";
+import useSEO from "../seo/useSEO";
+import { productSEO, NOT_FOUND_SEO } from "../seo/seoConfig";
 
 const getStrengthOptions = (strengthValue) => {
   if (!strengthValue) return [];
@@ -86,93 +88,9 @@ const ProductDetail = () => {
     return targetMatch || titleMatch || tagMatch;
   });
 
-  /*
-   * ============================================================
-   * DYNAMIC SEO + SOCIAL MEDIA META TAGS
-   * ============================================================
-   */
-  useEffect(() => {
-    if (!product) return;
-
-    const baseUrl = "https://zuviuslifesciences.in";
-
-    const productUrl = `${baseUrl}/products/${product.category}/${product.slug}`;
-
-    const title =
-      product.metaTitle ||
-      `${product.name} | ${
-        product.subtitle ? `${product.subtitle} | ` : ""
-      }Zuvius Lifesciences`;
-
-    const description =
-      product.metaDescription ||
-      `Explore ${product.name}${
-        product.subtitle ? `, ${product.subtitle}` : ""
-      } by Zuvius Lifesciences. View detailed product information, strengths, pack size and drug class.`;
-
-    const imagePath =
-      product.metaImage ||
-      product.images?.[0] ||
-      product.image ||
-      "";
-
-    const image = imagePath.startsWith("http")
-      ? imagePath
-      : `${baseUrl}${imagePath.startsWith("/") ? "" : "/"}${imagePath}`;
-
-    const setMeta = (attribute, attributeValue, content) => {
-      let element = document.head.querySelector(
-        `meta[${attribute}="${attributeValue}"]`
-      );
-
-      if (!element) {
-        element = document.createElement("meta");
-        element.setAttribute(attribute, attributeValue);
-        document.head.appendChild(element);
-      }
-
-      element.setAttribute("content", content);
-    };
-
-    // Browser title
-    document.title = title;
-
-    // Standard SEO
-    setMeta("name", "description", description);
-
-    // Open Graph
-    setMeta("property", "og:type", "website");
-    setMeta("property", "og:url", productUrl);
-    setMeta("property", "og:title", title);
-    setMeta("property", "og:description", description);
-    setMeta("property", "og:image", image);
-    setMeta("property", "og:site_name", "Zuvius Lifesciences");
-
-    // Twitter / X
-    setMeta("name", "twitter:card", "summary_large_image");
-    setMeta("name", "twitter:url", productUrl);
-    setMeta("name", "twitter:title", title);
-    setMeta("name", "twitter:description", description);
-    setMeta("name", "twitter:image", image);
-
-    // Canonical URL
-    let canonical = document.head.querySelector(
-      'link[rel="canonical"]'
-    );
-
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.setAttribute("rel", "canonical");
-      document.head.appendChild(canonical);
-    }
-
-    canonical.setAttribute("href", productUrl);
-
-    return () => {
-      document.title =
-        "Zuvius Lifesciences | Manufacturer of Widest Range of Anticancer Drugs | EU GMP & PIC/S Approved";
-    };
-  }, [product]);
+  // Title, description and share preview come from src/seo/seoConfig.js,
+  // the same source the build uses for the ready-made product pages.
+  useSEO(product ? productSEO(product) : NOT_FOUND_SEO);
 
   /*
    * ============================================================
@@ -417,6 +335,12 @@ const ProductDetail = () => {
       return;
     }
 
+    // Spam trap: the hidden "_honey" field is only ever filled in by bots.
+    if (event.target.elements._honey?.value) {
+      setSubmitted(true);
+      return;
+    }
+
     const config =
       ENQUIRY_CONFIG[enquiryForm.enquiryType] ||
       ENQUIRY_CONFIG.domestic;
@@ -555,7 +479,7 @@ const ProductDetail = () => {
         <div className="product-detail-gallery">
 
           <div className="product-detail-main-image">
-            <img
+            <img fetchPriority="high"
               src={mainImage}
               alt={product.name}
               className={product.imageClass || ""}
@@ -622,7 +546,7 @@ const ProductDetail = () => {
             {/* STRENGTH */}
             <div className="product-detail-meta-card">
 
-              <img
+              <img loading="lazy"
                 src="/products/strength.png"
                 alt="Strength"
                 className="meta-icon"
@@ -654,7 +578,7 @@ const ProductDetail = () => {
             {/* PACK SIZE */}
             <div className="product-detail-meta-card">
 
-              <img
+              <img loading="lazy"
                 src="/products/pack.png"
                 alt="Pack Size"
                 className="meta-icon"
@@ -674,7 +598,7 @@ const ProductDetail = () => {
             {/* DRUG CLASS */}
             <div className="product-detail-meta-card">
 
-              <img
+              <img loading="lazy"
                 src="/products/drugclass.png"
                 alt="Drug Class"
                 className="meta-icon"
@@ -698,7 +622,7 @@ const ProductDetail = () => {
 
             <div className="product-detail-extra-card">
 
-              <img
+              <img loading="lazy"
                 src="/specification.png"
                 alt="Specification"
                 className="meta-icon"
@@ -714,7 +638,7 @@ const ProductDetail = () => {
             {product.storage && (
               <div className="product-detail-extra-card">
 
-                <img
+                <img loading="lazy"
                   src="/storage.png"
                   alt="Storage"
                   className="meta-icon"
@@ -864,7 +788,7 @@ const ProductDetail = () => {
             >
 
               <div className="related-product-image">
-                <img
+                <img loading="lazy"
                   src={item.image}
                   alt={item.name}
                 />
@@ -938,6 +862,9 @@ const ProductDetail = () => {
                 <input
                   type="text"
                   name="_honey"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
                   style={{ display: "none" }}
                 />
 

@@ -63,6 +63,12 @@ const Contact = () => {
       return;
     }
 
+    // Spam trap: the hidden "_honey" field is only ever filled in by bots.
+    if (e.target.elements._honey?.value) {
+      setSubmitted(true);
+      return;
+    }
+
     setLoading(true);
 
     const config =
@@ -196,7 +202,14 @@ const Contact = () => {
               onSubmit={handleSubmit}
               className="cr-interactive-message-form"
             >
-              <input type="text" name="_honey" style={{ display: "none" }} />
+              <input
+                type="text"
+                name="_honey"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                style={{ display: "none" }}
+              />
 
               {/* Enquiry Type Dropdown */}
               <div className="cr-form-field">
@@ -314,7 +327,7 @@ const Contact = () => {
                   <span className="cr-privacy-icon" aria-hidden="true">
                     ✓
                   </span>
-                  Your information is secure and will remain private.
+                  We only use your details to respond to your enquiry.
                 </p>
 
                 <button

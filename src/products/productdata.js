@@ -6127,7 +6127,7 @@ This medicine is not approved for use by anyone younger than 18 years old.
 `,
 },
 {
-  id: 46,
+  id: 112,
   category: "oncoace",
   categoryName: "OncoAce",
   slug: "zuviphos",
@@ -9183,6 +9183,7 @@ SST tablets help in the secretion of saliva through taste buds when secretion is
 `,
 
   coldStorage: "Yes",
+  storage: "Store in a cool and dry place, away from sunlight.",
 
   description: `
 SST Tablet is Orange coloured uncoated tablet.
@@ -9572,6 +9573,7 @@ You may add sugar if needed.
 `,
 
   coldStorage: "Yes",
+  storage: "Store in a cool and dry place, away from sunlight.",
 
   description: `
 Of-white-colouredd powder.
@@ -9780,6 +9782,7 @@ You may add sugar if needed.
 `,
 
   coldStorage: "Yes",
+  storage: "Store in a cool and dry place, away from sunlight.",
 
   description: `
 Zuvipro-D is an off-white coloured powder.
@@ -10217,7 +10220,7 @@ Parenteral drug products should be inspected visually for particulate matter, cl
 If any of these are present, discard the solution.
 `,
 
-  Storage: "Store refrigerated at 2°C to 8°C.",
+  storage: "Store refrigerated at 2°C to 8°C.",
 
   description: `
 Aspraginaz (asparaginase) contains the enzyme L-asparagine amidohydrolase, type EC-2, derived from Escherichia coli.

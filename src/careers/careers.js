@@ -524,7 +524,7 @@ const Careers = () => {
 
           <div className="cr-culture-right-panel">
             <div className="cr-culture-frame-wrapper-slim">
-              <img
+              <img loading="lazy"
                 src="/contact/careerimage2.jpeg"
                 alt="Zuvius corporate culture"
                 className="cr-culture-photo-compact"
@@ -558,7 +558,7 @@ const Careers = () => {
               }}
             >
               <div className="cr-celebration-image-wrapper">
-                <img
+                <img loading="lazy"
                   src={gallery.cover}
                   alt={gallery.title}
                   className="cr-celebration-cover-image"
@@ -779,7 +779,7 @@ const Careers = () => {
                       onClick={() => openImage(index)}
                       aria-label={`Open photo ${index + 1}`}
                     >
-                      <img
+                      <img loading="lazy"
                         src={photo}
                         alt={`${selectedGallery.title} ${index + 1}`}
                       />
@@ -857,7 +857,7 @@ const Careers = () => {
                 </button>
 
                 <div className="cr-photo-image-scroll">
-                  <img
+                  <img loading="lazy"
                     src={selectedGallery.photos[selectedImageIndex]}
                     alt={`${selectedGallery.title} ${selectedImageIndex + 1}`}
                     onClick={() => setIsZoomed((current) => !current)}
@@ -890,7 +890,7 @@ const Careers = () => {
                     onClick={() => openImage(index)}
                     aria-label={`Open photo ${index + 1}`}
                   >
-                    <img
+                    <img loading="lazy"
                       src={photo}
                       alt={`${selectedGallery.title} thumbnail ${index + 1}`}
                     />

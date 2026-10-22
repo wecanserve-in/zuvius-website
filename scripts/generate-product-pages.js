@@ -24,8 +24,6 @@ const PRODUCTS_OUTPUT_DIR = path.join(
   "products"
 );
 
-const SITE_URL = "https://zuviuslifesciences.in";
-
 const OG_WIDTH = 1200;
 const OG_HEIGHT = 630;
 const OG_BACKGROUND = "#219b90";
@@ -43,21 +41,6 @@ function cleanText(value) {
   return String(value)
     .replace(/\s+/g, " ")
     .trim();
-}
-
-
-function escapeHtml(value) {
-  return cleanText(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-}
-
-
-function escapeAttribute(value) {
-  return escapeHtml(value);
 }
 
 
@@ -117,27 +100,6 @@ module.exports = {
   }
 
   return sandbox.module.exports.products || [];
-}
-
-
-// ============================================================
-// PRODUCT DESCRIPTION
-// ============================================================
-
-function getDescription(product) {
-  const name = cleanText(product.name);
-  const subtitle = cleanText(product.subtitle);
-
-  let description = name;
-
-  if (subtitle) {
-    description += ` (${subtitle})`;
-  }
-
-  description +=
-    " by Zuvius Lifesciences. Explore product details, available strength, pack size, drug class, indications and other important product information.";
-
-  return description.slice(0, 300);
 }
 
 
@@ -406,273 +368,28 @@ async function createOgImage(product, outputPath) {
 
 
 // ============================================================
-// META TAG REPLACEMENT
+// GENERATE PRODUCT SHARE IMAGE
 // ============================================================
+//
+// The HTML page for each product is written by generate-seo-pages.js
+// (which runs next) from src/seo/seoConfig.js. This script only makes
+// the 1200x630 share image that page points to.
 
-function replaceOrAddMeta(html, regex, replacement) {
-  if (regex.test(html)) {
-    return html.replace(
-      regex,
-      replacement
-    );
-  }
-
-  return html;
-}
-
-
-// ============================================================
-// GENERATE PRODUCT PAGE
-// ============================================================
-
-async function generateProductPage(
-  product,
-  baseHtml
-) {
+async function generateProductPage(product) {
   const category = cleanText(product.category);
   const slug = cleanText(product.slug);
-  const name = cleanText(product.name);
-  const subtitle = cleanText(product.subtitle);
 
-  if (!category || !slug || !name) {
-    console.warn(
-      "⚠ Skipping invalid product:",
-      product
-    );
-
-    return {
-      created: false,
-      ogCreated: false,
-    };
+  if (!category || !slug || !cleanText(product.name)) {
+    console.warn("⚠ Skipping invalid product:", product.slug);
+    return { created: false, ogCreated: false };
   }
 
-  const productDir = path.join(
-    PRODUCTS_OUTPUT_DIR,
-    category,
-    slug
-  );
+  const productDir = path.join(PRODUCTS_OUTPUT_DIR, category, slug);
+  fs.mkdirSync(productDir, { recursive: true });
 
-  fs.mkdirSync(
-    productDir,
-    {
-      recursive: true,
-    }
-  );
-
-  // ----------------------------------------------------------
-  // Product URL
-  // ----------------------------------------------------------
-
-  const productUrl =
-    `${SITE_URL}/products/${encodeURIComponent(category)}/${encodeURIComponent(slug)}`;
-
-  // ----------------------------------------------------------
-  // Product title
-  // ----------------------------------------------------------
-
-  let title = name;
-
-  if (subtitle) {
-    title += ` | ${subtitle}`;
-  }
-
-  title +=
-    " | Zuvius Lifesciences";
-
-  // ----------------------------------------------------------
-  // Description
-  // ----------------------------------------------------------
-
-  const description =
-    getDescription(product);
-
-  // ----------------------------------------------------------
-  // Create OG image
-  // ----------------------------------------------------------
-
-  const ogImagePath =
-    path.join(
-      productDir,
-      "og-image.jpg"
-    );
-
-  const ogCreated =
-    await createOgImage(
-      product,
-      ogImagePath
-    );
-
-  const ogImageUrl = ogCreated
-    ? `${productUrl}/og-image.jpg`
-    : `${SITE_URL}/og-image.jpg`;
-
-  // ----------------------------------------------------------
-  // Start with CRA build index.html
-  // ----------------------------------------------------------
-
-  let html = baseHtml;
-
-  // ----------------------------------------------------------
-  // TITLE
-  // ----------------------------------------------------------
-
-  html = html.replace(
-    /<title>[\s\S]*?<\/title>/i,
-    `<title>${escapeHtml(title)}</title>`
-  );
-
-  // ----------------------------------------------------------
-  // DESCRIPTION
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+name=["']description["'][^>]*>/i,
-    `<meta name="description" content="${escapeAttribute(description)}" />`
-  );
-
-  // ----------------------------------------------------------
-  // CANONICAL
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<link\s+rel=["']canonical["'][^>]*>/i,
-    `<link rel="canonical" href="${escapeAttribute(productUrl)}" />`
-  );
-
-  // ----------------------------------------------------------
-  // OG TITLE
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+property=["']og:title["'][^>]*>/i,
-    `<meta property="og:title" content="${escapeAttribute(title)}" />`
-  );
-
-  // ----------------------------------------------------------
-  // OG DESCRIPTION
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+property=["']og:description["'][^>]*>/i,
-    `<meta property="og:description" content="${escapeAttribute(description)}" />`
-  );
-
-  // ----------------------------------------------------------
-  // OG URL
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+property=["']og:url["'][^>]*>/i,
-    `<meta property="og:url" content="${escapeAttribute(productUrl)}" />`
-  );
-
-  // ----------------------------------------------------------
-  // OG TYPE
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+property=["']og:type["'][^>]*>/i,
-    `<meta property="og:type" content="website" />`
-  );
-
-  // ----------------------------------------------------------
-  // OG IMAGE
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+property=["']og:image["'][^>]*>/i,
-    `<meta property="og:image" content="${escapeAttribute(ogImageUrl)}" />`
-  );
-
-  // ----------------------------------------------------------
-  // OG IMAGE WIDTH
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+property=["']og:image:width["'][^>]*>/i,
-    `<meta property="og:image:width" content="1200" />`
-  );
-
-  // ----------------------------------------------------------
-  // OG IMAGE HEIGHT
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+property=["']og:image:height["'][^>]*>/i,
-    `<meta property="og:image:height" content="630" />`
-  );
-
-  // ----------------------------------------------------------
-  // TWITTER CARD
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+name=["']twitter:card["'][^>]*>/i,
-    `<meta name="twitter:card" content="summary_large_image" />`
-  );
-
-  // ----------------------------------------------------------
-  // TWITTER TITLE
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+name=["']twitter:title["'][^>]*>/i,
-    `<meta name="twitter:title" content="${escapeAttribute(title)}" />`
-  );
-
-  // ----------------------------------------------------------
-  // TWITTER DESCRIPTION
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+name=["']twitter:description["'][^>]*>/i,
-    `<meta name="twitter:description" content="${escapeAttribute(description)}" />`
-  );
-
-  // ----------------------------------------------------------
-  // TWITTER IMAGE
-  // ----------------------------------------------------------
-
-  html = replaceOrAddMeta(
-    html,
-    /<meta\s+name=["']twitter:image["'][^>]*>/i,
-    `<meta name="twitter:image" content="${escapeAttribute(ogImageUrl)}" />`
-  );
-
-  // ----------------------------------------------------------
-  // WRITE PRODUCT HTML
-  // ----------------------------------------------------------
-
-  const outputFile =
-    path.join(
-      productDir,
-      "index.html"
-    );
-
-  fs.writeFileSync(
-    outputFile,
-    html,
-    "utf8"
-  );
-
-  return {
-    created: true,
-    ogCreated,
-  };
+  const ogCreated = await createOgImage(product, path.join(productDir, "og-image.jpg"));
+  return { created: true, ogCreated };
 }
-
 
 // ============================================================
 // MAIN
@@ -723,16 +440,6 @@ async function main() {
     }
   );
 
-  // ----------------------------------------------------------
-  // Read CRA build index
-  // ----------------------------------------------------------
-
-  const baseHtml =
-    fs.readFileSync(
-      BUILD_INDEX_FILE,
-      "utf8"
-    );
-
   let pagesCreated = 0;
   let ogImagesCreated = 0;
 
@@ -742,10 +449,7 @@ async function main() {
 
   for (const product of products) {
     const result =
-      await generateProductPage(
-        product,
-        baseHtml
-      );
+      await generateProductPage(product);
 
     if (result.created) {
       pagesCreated++;
@@ -776,7 +480,7 @@ async function main() {
   );
 
   console.log(
-    `Pages created        : ${pagesCreated}`
+    `Products processed   : ${pagesCreated}`
   );
 
   console.log(

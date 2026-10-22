@@ -1,11 +1,14 @@
 import { Link, useParams } from "react-router-dom";
 import blogs from "./blogdata";
 import "./blogdetail.css";
+import useSEO from "../seo/useSEO";
+import { blogSEO, NOT_FOUND_SEO } from "../seo/seoConfig";
 
 const BlogDetail = () => {
   const { slug } = useParams();
 
   const blog = blogs.find((item) => item.slug === slug);
+  useSEO(blog ? blogSEO(blog) : NOT_FOUND_SEO);
 
   if (!blog) {
     return (
@@ -76,7 +79,7 @@ const BlogDetail = () => {
             {/* FEATURE IMAGE WITH INDIVIDUAL IMAGECLASS */}
             {blog.image && (
               <div className="blog-detail-feature-image">
-                <img
+                <img fetchPriority="high"
                   src={blog.image}
                   alt={blog.title}
                   className={blog.imageClass || ""}
@@ -257,7 +260,7 @@ const BlogDetail = () => {
                       key={relatedBlog.id}
                     >
                       <div className="related-blog-image">
-                        <img
+                        <img loading="lazy"
                           src={relatedBlog.image}
                           alt={relatedBlog.title}
                           className={relatedBlog.imageClass || ""}

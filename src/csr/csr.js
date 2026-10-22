@@ -36,7 +36,7 @@ const CSR = () => {
               key={item.slug}
             >
               <div className="csr-initiative-card-image-wrapper">
-                <img
+                <img loading="lazy"
                   src={item.poster}
                   alt={item.title}
                   className="csr-initiative-card-image"

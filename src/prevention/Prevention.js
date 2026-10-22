@@ -103,7 +103,7 @@ const Prevention = () => {
             {healthyChoices.map((item) => (
               <div className="healthy-card" key={item.title}>
                 <div className="healthy-img">
-                  <img src={item.img} alt={item.title} />
+                  <img loading="lazy" src={item.img} alt={item.title} />
                 </div>
 
                 <div className="healthy-content">
@@ -149,7 +149,7 @@ const Prevention = () => {
             {strategies.map((item) => (
               <div className="strategy-card" key={item.title}>
                 <div className="strategy-img">
-                  <img src={item.img} alt={item.title} />
+                  <img loading="lazy" src={item.img} alt={item.title} />
                 </div>
 
                 <div className="strategy-content">

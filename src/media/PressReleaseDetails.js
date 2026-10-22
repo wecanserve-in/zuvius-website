@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { pressItems } from "./mediaData";
 
 import "./PressReleaseDetails.css";
+import useSEO from "../seo/useSEO";
+import { pressSEO, NOT_FOUND_SEO } from "../seo/seoConfig";
 
 const PressReleaseDetails = () => {
   const { id } = useParams();
@@ -10,6 +12,8 @@ const PressReleaseDetails = () => {
 const item = pressItems.find(
   (press) => press.id.toString() === id
 );
+
+  useSEO(item ? pressSEO(item) : NOT_FOUND_SEO);
 
 if (!item) {
     return (
@@ -81,7 +85,7 @@ if (!item) {
   </div>
 
   <div className="pressdetail-hero-image">
-  <img
+  <img fetchPriority="high"
   src={item.heroImage || item.image}
   alt={item.title}
 />
@@ -135,7 +139,7 @@ if (!item) {
               <h3>About the Publication</h3>
 
               {item.publicationLogo && (
-                <img
+                <img loading="lazy"
                   src={item.publicationLogo}
                   alt={item.publication}
                   className="pressdetailpage-publication-logo"

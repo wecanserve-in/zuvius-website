@@ -33,7 +33,7 @@ const PageBanner = ({
             <source src={image} type="video/mp4" />
           </video>
         ) : (
-          <img
+          <img fetchPriority="high"
             src={image}
             alt={alt || "Page banner"}
             className="page-banner-image"

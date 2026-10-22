@@ -92,16 +92,23 @@ export default function LanguageSwitcher() {
     }
 
     // 3. Read active language from Google cookie
+    let activeLanguage = "en";
     const match = document.cookie.match(/(^|;\s*)googtrans=([^;]+)/);
     if (match) {
       const lang = match[2].split("/").pop();
       if (["fr", "es", "ar", "en"].includes(lang)) {
         setCurrentLang(lang);
+        activeLanguage = lang;
       }
     }
 
-    // 4. Inject Google Translate
-    if (!document.getElementById("google-translate-script")) {
+    // 4. Inject Google Translate, only when a non-English language is chosen.
+    // Choosing a language sets the cookie and reloads the page, so English
+    // readers never download the translate script.
+    if (
+      activeLanguage !== "en" &&
+      !document.getElementById("google-translate-script")
+    ) {
       const script = document.createElement("script");
       script.id = "google-translate-script";
       script.src =

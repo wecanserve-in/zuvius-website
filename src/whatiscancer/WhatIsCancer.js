@@ -356,7 +356,7 @@ function WhatIsCancer() {
 
   <div className="step-card">
     <div className="step-icon">
-      <img src="/whatiscancer/cancer_begins.png" alt="" />
+      <img loading="lazy" src="/whatiscancer/cancer_begins.png" alt="" />
     </div>
 
     <h3>How Cancer Begins</h3>
@@ -370,7 +370,7 @@ function WhatIsCancer() {
 
   <div className="step-card">
     <div className="step-icon">
-      <img src="/whatiscancer/cancer_spread.png" alt="" />
+      <img loading="lazy" src="/whatiscancer/cancer_spread.png" alt="" />
     </div>
 
     <h3>How Cancer Spreads</h3>
@@ -383,7 +383,7 @@ function WhatIsCancer() {
 
   <div className="step-card">
     <div className="step-icon">
-      <img src="/whatiscancer/cancer_detection.png" alt="" />
+      <img loading="lazy" src="/whatiscancer/cancer_detection.png" alt="" />
     </div>
 
     <h3>Why Early Detection Matters</h3>
@@ -465,7 +465,7 @@ function WhatIsCancer() {
   {facts.map((fact, index) => (
     <div className="fact-card" key={index}>
       <div className="fact-image">
-        <img src={`/facts/fact-${index + 1}.png`} alt="" />
+        <img loading="lazy" src={`/facts/fact-${index + 1}.png`} alt="" />
       </div>
 
       <div className="fact-content">
@@ -489,7 +489,7 @@ function WhatIsCancer() {
   {terms.map((term, index) => (
     <div className="term-card" key={index}>
       <div className="term-image">
-        <img src={`/terms/term-${index + 1}.png`} alt="" />
+        <img loading="lazy" src={`/terms/term-${index + 1}.png`} alt="" />
       </div>
 
       <div className="term-content">
@@ -518,7 +518,7 @@ function WhatIsCancer() {
 
   <Link to="/prevention" className="journey-card">
     <div className="journey-icon">
-      <img src="/whatiscancer/prevention_img.png" alt="" />
+      <img loading="lazy" src="/whatiscancer/prevention_img.png" alt="" />
     </div>
 
     <div>
@@ -531,7 +531,7 @@ function WhatIsCancer() {
 
   <Link to="/early-diagnosis" className="journey-card">
     <div className="journey-icon">
-      <img src="/whatiscancer/disgnosis_img.png" alt="" />
+      <img loading="lazy" src="/whatiscancer/disgnosis_img.png" alt="" />
     </div>
 
     <div>

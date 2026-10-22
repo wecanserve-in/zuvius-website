@@ -21,7 +21,7 @@ const Newsroom = () => {
           {newsItems.map((item) => (
             <div className="media-card" key={item.id}>
               <div className="media-card-image">
-                <img src={item.image} alt={item.title} />
+                <img loading="lazy" src={item.image} alt={item.title} />
               </div>
 
               <div className="media-card-content">

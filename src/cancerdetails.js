@@ -3,19 +3,23 @@ import { useParams, Link } from "react-router-dom";
 import cancersData from "./cancersData";
 import blogs from "./blog/blogdata";
 import "./cancerdetail.css";
+import useSEO from "./seo/useSEO";
+import { cancerSEO, NOT_FOUND_SEO } from "./seo/seoConfig";
+import NotFound from "./components/NotFound";
 
 function CancerDetail() {
   const { slug } = useParams();
   const [activeTab, setActiveTab] = useState("overview");
 
   const cancer = cancersData.find((item) => item.slug === slug);
+  useSEO(cancer ? cancerSEO(cancer) : NOT_FOUND_SEO);
 
-  if (!cancer) return <div>Cancer Type Not Found</div>;
+  if (!cancer) return <NotFound />;
 
   // Find blogs related to this cancer type
   const relatedCancerBlogs = blogs.filter((blog) => {
     const targetMatch =
-      blog.targetUrl === `/cancer/${cancer.slug}` ||
+      blog.targetUrl === `/types-of-cancer/${cancer.slug}` ||
       blog.targetUrl?.includes(cancer.slug);
 
     const titleNormalized = cancer.title.toLowerCase();
@@ -53,7 +57,7 @@ function CancerDetail() {
 
         {cancer.bannerImg && (
           <div className="toc-hero-right">
-            <img src={cancer.bannerImg} alt={cancer.title} />
+            <img fetchPriority="high" src={cancer.bannerImg} alt={cancer.title} />
           </div>
         )}
       </div>
@@ -113,7 +117,7 @@ function CancerDetail() {
                 {cancer.riskFactorsData.uncontrollable?.map((item, i) => (
                   <div key={i} className="risk-row">
                     <div className="risk-icon-wrapper">
-                      <img
+                      <img loading="lazy"
                         src={item.icon}
                         alt={item.title}
                         className="risk-icon"
@@ -132,7 +136,7 @@ function CancerDetail() {
                 {cancer.riskFactorsData.lifestyle?.map((item, i) => (
                   <div key={i} className="risk-row">
                     <div className="risk-icon-wrapper">
-                      <img
+                      <img loading="lazy"
                         src={item.icon}
                         alt={item.title}
                         className="risk-icon"
@@ -162,7 +166,7 @@ function CancerDetail() {
                     <p>{item.text}</p>
                   </div>
                   <div className="symptoms-card-img">
-                    <img src={item.img} alt={item.title} />
+                    <img loading="lazy" src={item.img} alt={item.title} />
                   </div>
                 </div>
               ))}
@@ -183,7 +187,7 @@ function CancerDetail() {
                     <p>{item.text}</p>
                   </div>
                   <div className="diagnosis-clean-img">
-                    <img src={item.img} alt={item.title} />
+                    <img loading="lazy" src={item.img} alt={item.title} />
                   </div>
                 </div>
               ))}
@@ -204,7 +208,7 @@ function CancerDetail() {
                     <p>{item.text}</p>
                   </div>
                   <div className="treatment-card-img">
-                    <img src={item.img} alt={item.title} />
+                    <img loading="lazy" src={item.img} alt={item.title} />
                   </div>
                 </div>
               ))}
@@ -224,7 +228,7 @@ function CancerDetail() {
               {relatedCancerBlogs.map((item) => (
                 <div className="cancer-article-item" key={item.id}>
                   <div className="cancer-article-img-wrap">
-                    <img
+                    <img loading="lazy"
                       src={item.image}
                       alt={item.title}
                       className={item.imageClass || ""}

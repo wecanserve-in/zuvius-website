@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import "./csr.css";
 import PageBanner from "../components/PageBanner";
 import { journeyData } from "./journeydata";
+import useSEO from "../seo/useSEO";
+import { csrSEO, NOT_FOUND_SEO } from "../seo/seoConfig";
 
 const CSRDetail = () => {
   const { slug, eventSlug } = useParams();
@@ -43,6 +45,12 @@ const CSRDetail = () => {
       (eventItem) => eventItem.slug === eventSlug
     );
   }, [campaign, eventSlug]);
+
+  useSEO(
+    campaign && initiative
+      ? csrSEO(campaign, eventSlug ? initiative : null)
+      : NOT_FOUND_SEO
+  );
 
   const isCampaignLanding =
     Boolean(campaign?.events?.length) && !eventSlug;
@@ -395,7 +403,7 @@ const CSRDetail = () => {
                       }
                       aria-label={`Open ${initiative.title} featured image`}
                     >
-                      <img
+                      <img loading="lazy"
                         src={featuredImage}
                         alt={initiative.title}
                         className="csr-featured-image"
@@ -529,7 +537,7 @@ const CSRDetail = () => {
                   </button>
                 )}
 
-                <img
+                <img loading="lazy"
                   src={zoomedImgUrl}
                   alt={`${initiative.title} ${
                     currentImageIndex + 1

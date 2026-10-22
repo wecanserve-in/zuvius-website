@@ -94,7 +94,7 @@ const Blog = () => {
               >
                 {/* Clicking image opens the blog article */}
                 <Link to={`/blog/${blog.slug}`} className="blog-card-image">
-                  <img
+                  <img loading="lazy"
                     src={blog.image}
                     alt={blog.title}
                     className={blog.imageClass || ""}

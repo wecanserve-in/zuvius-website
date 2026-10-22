@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import {
   FaMapMarkedAlt,
   FaHospital,
@@ -8,8 +8,13 @@ import {
 } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import "./home.css";
+import "./reach/reachMaps.css";
 
 import CountryScroller from "./CountryScroller";
+
+// Animated reach maps load separately so the homepage itself stays light.
+const IndiaReachMap = lazy(() => import("./reach/IndiaReachMap"));
+const WorldReachMap = lazy(() => import("./reach/WorldReachMap"));
 
 const phrases = [
   "Delivers value",
@@ -232,7 +237,7 @@ const Home = () => {
         </div>
 
         <div className="hero-static-image-wrapper">
-          <img
+          <img fetchPriority="high"
             src="/doctor-hero.png"
             alt="Mother and child representing hope and care"
             className="hero-static-image"
@@ -296,17 +301,17 @@ const Home = () => {
 
           <div className="leader-product-grid">
             <div className="leader-product-type-card">
-              <img src="/tablet.png" alt="Tablet" />
+              <img loading="lazy" src="/tablet.png" alt="Tablet" />
               <h4>Tablets</h4>
             </div>
 
             <div className="leader-product-type-card">
-              <img src="/capsule.png" alt="Capsule" />
+              <img loading="lazy" src="/capsule.png" alt="Capsule" />
               <h4>Capsules</h4>
             </div>
 
 <div className="leader-product-type-card">
-  <img
+  <img loading="lazy"
     src="/injectable-1.png"
     alt="Injectables Liquid"
   />
@@ -318,7 +323,7 @@ const Home = () => {
 </div>
 
 <div className="leader-product-type-card">
-  <img
+  <img loading="lazy"
     src="/injectable-2.png"
     alt="Injectables Lyophilized"
   />
@@ -330,7 +335,7 @@ const Home = () => {
 </div>
 
             <div className="leader-product-type-card leader-product-type-card-full">
-              <img src="/injectable-3.png" alt="PFS" />
+              <img loading="lazy" src="/injectable-3.png" alt="PFS" />
               <h4> Injectables PFS (Pre-filled Syringes)</h4>
             </div>
           </div>
@@ -398,43 +403,43 @@ const Home = () => {
 
             <div className="accreditation-grid">
               <div className="acc-item">
-                <img
+                <img loading="lazy"
                   src="/Accredations/US_FDA.png"
                   alt="US FDA"
                 />
               </div>
 
               <div className="acc-item">
-                <img
+                <img loading="lazy"
                   src="/Accredations/Anvisa.png"
                   alt="ANVISA"
                 />
               </div>
 
               <div className="acc-item">
-                <img
+                <img loading="lazy"
                   src="/Accredations/EU-GMP.png"
                   alt="EU GMP"
                 />
               </div>
 
               <div className="acc-item">
-                <img src="/Accredations/WHO.png" alt="WHO" />
+                <img loading="lazy" src="/Accredations/WHO.png" alt="WHO" />
               </div>
 
               <div className="acc-item">
-                <img
+                <img loading="lazy"
                   src="/Accredations/Cofepris.png"
                   alt="COFEPRIS"
                 />
               </div>
 
               <div className="acc-item">
-                <img src="/Accredations/pics.png" alt="PIC/S" />
+                <img loading="lazy" src="/Accredations/pics.png" alt="PIC/S" />
               </div>
 
               <div className="acc-item">
-                <img
+                <img loading="lazy"
                   src="/Accredations/invima.png"
                   alt="INVIMA"
                 />
@@ -444,7 +449,7 @@ const Home = () => {
 
           <div className="accreditation-right">
             <div className="accreditation-q-card">
-              <img
+              <img loading="lazy"
                 src="/Quality.png"
                 alt="Culture of Quality"
                 className="quality-image"
@@ -533,19 +538,10 @@ and a relentless focus on patient well-being.
             </div>
           </div>
 
-          <div className="home-reach-image home-reach-image-india">
-            <video
-              className="home-reach-video"
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source
-                src="/IndianMapElementUIfroZVS2.mp4"
-                type="video/mp4"
-              />
-            </video>
+          <div className="home-reach-map home-reach-map-india">
+            <Suspense fallback={<div className="reach-map-placeholder reach-map-placeholder-india" />}>
+              <IndiaReachMap />
+            </Suspense>
           </div>
         </div>
 
@@ -563,19 +559,10 @@ and a relentless focus on patient well-being.
             </p>
           </div>
 
-          <div className="home-reach-global-map">
-            <video
-              className="home-reach-video"
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source
-                src="/WorldMapElementUIforZVS2.mp4"
-                type="video/mp4"
-              />
-            </video>
+          <div className="home-reach-map home-reach-map-world">
+            <Suspense fallback={<div className="reach-map-placeholder reach-map-placeholder-world" />}>
+              <WorldReachMap />
+            </Suspense>
           </div>
 
 <CountryScroller />

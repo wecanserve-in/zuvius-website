@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Zuvius Lifesciences website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The source for [zuviuslifesciences.in](https://zuviuslifesciences.in): a React app (Create React App) deployed to Hostinger from the `main` branch on GitHub.
 
-## Available Scripts
+## Run it locally
 
-In the project directory, you can run:
+```bash
+npm install
+npm start          # http://localhost:3000
+```
 
-### `npm start`
+## Build for release
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm run build
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`npm run build` creates the `build/` folder and then runs two scripts automatically:
 
-### `npm test`
+1. `scripts/generate-product-pages.js` makes a 1200×630 share image for every product (`build/products/<category>/<slug>/og-image.jpg`).
+2. `scripts/generate-seo-pages.js` writes a ready-made HTML file for every page, plus `build/sitemap.xml` and `build/404.html`. Each file has that page's own title, description, canonical link, share preview and structured data, so Google and WhatsApp/LinkedIn previews work without running JavaScript.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Where things live
 
-### `npm run build`
+| What | File |
+|---|---|
+| Products | `src/products/productdata.js` |
+| Cancer guides | `src/cancersData.js` |
+| Cancer type list (Types of Cancer page) | `src/types/TypesOfCancer.js` |
+| Blog posts | `src/blog/blogdata.js` |
+| Events | `src/events/eventsdata.js` |
+| Press releases and newsroom | `src/media/mediaData.js` |
+| CSR stories | `src/csr/journeydata.js` |
+| Page titles and descriptions | `src/seo/seoConfig.js` |
+| Routes (page addresses) | `src/App.js` |
+| Images, videos, PDFs | `public/` |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Adding content
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Product:** add an entry to `products` in `productdata.js`. Give it a unique `id` and `slug`. Use `storage:` (lower case) for storage conditions, because that's the field the page shows. The product page, share image and sitemap entry are created automatically on the next build.
+- **Blog post:** add an entry to `blogdata.js` with a unique `slug`. Set `metaTitle`/`metaDescription` for search results, and `targetUrl` to a page that exists (for example `/types-of-cancer/breast-cancer`).
+- **Cancer guide:** add an entry to `cancersData.js`. If you add a card to `TypesOfCancer.js`, the guide's `slug` must match the card's link, or the card leads to "Page not found".
+- **Fixed page titles:** edit `STATIC_PAGES` in `src/seo/seoConfig.js`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Images
 
-### `npm run eject`
+Keep images close to the size they're shown at. Banners need about 1920 px width at most, cards and product shots much less. To shrink new images in place (same names, same look):
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm run optimize-images                       # whole public/ folder
+node scripts/optimize-images.js --only blog   # one folder
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Originals are copied to `../zuvius-image-originals/` before anything is changed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`deploy/htaccess.recommended` holds the recommended Hostinger server rules (www redirect, real 404s, security headers, caching). It isn't active until it's copied to `public/.htaccess`; see the notes at the top of the file.

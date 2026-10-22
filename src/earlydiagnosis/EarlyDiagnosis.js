@@ -154,7 +154,7 @@ const EarlyDiagnosis = () => {
             {mattersData.map((item) => (
               <div className="ed-matter-card" key={item.title}>
                 <div className="ed-matter-img">
-                  <img src={item.img} alt={item.title} />
+                  <img loading="lazy" src={item.img} alt={item.title} />
                 </div>
                 <div className="ed-matter-content">
                   <h3>{item.title}</h3>
@@ -173,7 +173,7 @@ const EarlyDiagnosis = () => {
   {signsData.map((item, index) => (
     <div className="sign-card" key={index}>
       <div className="sign-card-img">
-        <img src={item.img} alt={item.title} />
+        <img loading="lazy" src={item.img} alt={item.title} />
       </div>
 
       <div className="sign-card-content">
