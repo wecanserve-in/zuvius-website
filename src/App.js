@@ -9,6 +9,32 @@ import {
 import Home from "./home/home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
+// Every page's styles load up front, in the site's original order. Several
+// page stylesheets contain site-wide rules (for example `body { padding: 0 }`
+// in prevention.css), so loading them only with their page would change the
+// layout of other pages. Page *code* still loads on demand below.
+import "./products/productmain.css";
+import "./products/productcategory.css";
+import "./components/PageBanner.css";
+import "./products/productdetail.css";
+import "./components/successMessage.css";
+import "./media/newsroom.css";
+import "./awards/awards.css";
+import "./careers/careers.css";
+import "./contact/contact.css";
+import "./events/events.css";
+import "./whatiscancer/whatIsCancer.css";
+import "./earlydiagnosis/earlydiagnosis.css";
+import "./about-us/about-us.css";
+import "./prevention/prevention.css";
+import "./types/typesofcancer.css";
+import "./cancerdetail.css";
+import "./csr/csr.css";
+import "./media/PressReleaseDetails.css";
+import "./blog/blog.css";
+import "./blog/blogdetail.css";
+import "./components/NotFound.css";
 import ScrollToTop from "./components/ScrollToTop";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import { STATIC_PAGES } from "./seo/seoConfig";
