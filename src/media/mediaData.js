@@ -370,7 +370,8 @@ Overall, the publication positions itself as a knowledge-driven platform for onc
   `,
 
   publication: "We Canserve Magazine",
-  publicationLogo: "/newsroom/wecanserve-logo.png",
+  // Logo file not uploaded yet; the page shows the publication name instead.
+  // publicationLogo: "/newsroom/wecanserve-logo.png",
 
   publicationDescription:
     "We Canserve is a premium healthcare-focused lifestyle magazine catering primarily to oncologists and medical professionals, featuring insights on oncology advancements, healthcare innovation, wellness, and expert perspectives.",

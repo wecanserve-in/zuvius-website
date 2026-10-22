@@ -114,13 +114,10 @@ export const journeyData = [
       poster:
         "/gallery/youwecan-kj-somaiya/kj-somaiya-1.JPG",
 
-      photos: Array.from(
-        { length: 20 },
-        (_, i) =>
-          `/gallery/youwecan-kj-somaiya/kj-somaiya-${
-            i + 1
-          }.JPG`
-      ),
+      // Photos 1-21; there is no photo 14.
+      photos: Array.from({ length: 21 }, (_, i) => i + 1)
+        .filter((n) => n !== 14)
+        .map((n) => `/gallery/youwecan-kj-somaiya/kj-somaiya-${n}.JPG`),
     },
 
     {

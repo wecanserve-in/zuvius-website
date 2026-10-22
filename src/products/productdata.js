@@ -15888,7 +15888,7 @@ Store according to the conditions printed on the product label.
   image: "/new_product_page/zetabin-rtu-group.png",
 
   images: [
-    "/new_product_page/zetabin-RTU-group.png",
+    "/new_product_page/zetabin-rtu-group.png",
     "/new_product_page/Zetabin-RTU-200.png",
     "/new_product_page/Zetabin-RTU-1.png",
     "/new_product_page/Zetabin-RTU-1.4.png",
