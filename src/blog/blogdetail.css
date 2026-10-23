@@ -644,15 +644,6 @@ a.blog-detail-category:hover {
 /* =========================================================
    INDIVIDUAL BLOG IMAGE SIZING OVERRIDES
 ========================================================= */
-.blog-detail-feature-image img.uterine-blog-img {
-  transform: scale(1) !important;
-  object-fit: cover !important;
-}
-
-.related-blog-image img.uterine-blog-img {
-  transform: scale(1.2 ) !important;
-  object-fit: cover !important;
-}
 
 .blog-detail-feature-image img.breast-blog-img {
   transform: scale(1) !important;

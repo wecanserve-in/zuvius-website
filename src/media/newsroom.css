@@ -116,37 +116,7 @@
 
 /* ================= FILTER BUTTONS ================= */
 
-.media-filters-section {
-  padding: 20px 5% 50px;
-}
-
-.media-filters {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 14px;
-}
-
-.media-filters button {
-  border: 1px solid #d8e6de;
-  background: #fff;
-  color: #071d49;
-  padding: 12px 28px;
-  border-radius: 50px;
-  font-size: 0.92rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
 /* USE YOUR SITE GREEN COLOR HERE */
-.media-filters button.active,
-.media-filters button:hover {
-  background: #008a9a ;
-  color: #fff;
-  border-color: #008a9a ;
-  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.25);
-}
 
 /* ================= GRID ================= */
 

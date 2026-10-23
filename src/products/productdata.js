@@ -4,8 +4,6 @@ export const productCategories = [
     name: "OncoAce",
     title: "ONCOACE",
     color: "blue",
-    // description:
-    //   "Zuvius offers a robust portfolio of anti-cancer products including tablets, capsules and injections.",
     bannerImage: "/oncoacebanner.png",
     brochureImage: "/oncoace.png",
   },
@@ -14,8 +12,6 @@ export const productCategories = [
     name: "Nutrazeutica",
     title: "NUTRAZEUTICA",
     color: "green",
-    // description:
-    //   "Specialized nutraceuticals and phytochemicals designed to support recommended dietary requirements.",
     bannerImage: "/nutrabanner.png",
     brochureImage: "/nutra.png",
   },
@@ -253,105 +249,40 @@ Special Precautions:
 • Vinorelbine may cause constipation. Consult your doctor regarding diet and preventive medications.
 `,
 },
-// {
-//   id: 4,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "zostin",
-//   name: "Zostin",
-//   subtitle: "Amifostine Injection",
-//   type: "Injection",
 
-//   image: "/products/zostin/zostin500-1.jpeg",
 
-//   images: [
-//     "/products/zostin/zostin500-1.jpeg",
-//     "/products/zostin/zostin500-2.jpeg",
-//     "/products/zostin/zostin500-3.jpeg",
-//   ],
 
-//   strength: "500 mg",
-//   packSize: "Vial",
-//   drugClass: "Cytoprotective agents",
 
-//   dosage: `
-// The usual adult dose for Amifostine to reduce the risk of kidney damage associated with cisplatin chemotherapy is 910 mg/m² administered as a 15-minute intravenous infusion, starting 30 minutes before chemotherapy.
 
-// For reducing dry mouth (xerostomia) caused by radiation therapy in patients with head and neck cancer, the recommended dose is 200 mg/m² administered as a 3-minute intravenous infusion, starting 15–30 minutes before radiation therapy.
-// `,
 
-//   coldStorage: "Vial",
 
-//   description: `
-// Amifostine 500 mg injection is a cytoprotective agent used primarily to reduce the risk of kidney damage in patients receiving cisplatin for advanced ovarian cancer and to reduce dry mouth caused by radiation therapy in patients with head and neck cancer.
 
-// The usual dosage involves a single dose of 910 mg/m² administered as a 15-minute intravenous infusion, starting 30 minutes before chemotherapy or radiation therapy.
 
-// Amifostine is a prodrug that, upon dephosphorylation by alkaline phosphatase, becomes an active free thiol metabolite which can scavenge free radicals and detoxify reactive metabolites of cisplatin.
 
-// Amifostine is effective in protecting normal tissues without reducing the anti-tumor efficacy of chemotherapy or radiation therapy.
 
-// Clinical studies have demonstrated its ability to significantly reduce renal toxicity and xerostomia, enhancing the quality of life for patients undergoing these treatments.
-// `,
 
-//   indication: `
-// Amifostine is indicated for reducing the risk of nephrotoxicity associated with repeated administration of cisplatin in patients with advanced ovarian cancer.
 
-// It is also used to reduce the incidence of moderate to severe xerostomia in patients undergoing postoperative radiation treatment for head and neck cancer.
-// `,
 
-//   clinicalEfficacy: `
-// Patients aged 18 or older with untreated Stage III/IV SCCHN received radiotherapy (70–72 Gy), weekly paclitaxel, and carboplatin for 6 weeks, along with 500 mg subcutaneous amifostine before radiotherapy.
 
-// In a study of 20 evaluable patients (median age 55):
 
-// • Grade 2 xerostomia was 42% at 12 months and 29% at 18 months.
 
-// • No Grade ≥3 xerostomia was observed.
 
-// • Grade ≥3 mucositis occurred in 30% of patients, resolving in a median of 12.5 weeks.
 
-// • One-year survival rate was 95%.
 
-// • Two-year survival rate was 71%.
 
-// • All patients had Grade 2 weight loss.
 
-// • 35% had Grade ≤2 nausea/vomiting.
 
-// • No severe amifostine-related adverse events were observed.
 
-// Subcutaneous amifostine was well tolerated, showing lower nausea/vomiting rates compared to intravenous amifostine, with similar xerostomia and mucositis rates.
-// `,
 
-//   safetyInformation: `
-// Pregnancy:
-// Amifostine is classified as pregnancy category C. Animal studies have shown adverse effects on the fetus, and there are no adequate studies in pregnant women. It should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus.
 
-// Breast-feeding:
-// It is unknown if amifostine is excreted in human milk. Due to the potential for serious adverse reactions in nursing infants, a decision should be made to discontinue breastfeeding or discontinue the drug, considering the importance of the drug to the mother.
 
-// Fertility:
-// No specific studies on fertility impairment have been conducted with amifostine, but based on its mechanism of action, it could potentially affect fertility.
 
-// Teratogenicity:
-// Animal studies have shown that amifostine may cause fetal harm when administered to a pregnant woman. Women of childbearing potential should be advised to avoid becoming pregnant while receiving amifostine.
-// `,
 
-//   specialPrecautions: `
-// • Tell your doctor and pharmacist if you are allergic to amifostine, any other medications, or any ingredients in amifostine injection.
 
-// • Inform your doctor and pharmacist about all prescription and nonprescription medications, vitamins, nutritional supplements, and herbal products you are taking or plan to take.
 
-// • Be sure to mention medications for high blood pressure. Your doctor will tell you to stop taking your blood pressure medicine 24 hours before receiving amifostine injection.
 
-// • Inform your doctor if you have or have ever had heart disease, an irregular heartbeat, heart failure, stroke, or ministroke.
 
-// • Inform your doctor if you are pregnant, planning pregnancy, or breast-feeding.
 
-// • Do not breast-feed during treatment with amifostine.
-// `,
-// },
 
 {
   id: 5,
@@ -590,677 +521,224 @@ Pregnancy testing and effective contraception are recommended during and for at 
 `,
 },
 
-// {
-//   id: 7,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "bartek",
-//   name: "Bartek",
-//   subtitle: "Busulfan Injection",
-//   type: "Injection",
 
-//   image: "/products/bartek/bartek60-1.jpeg",
 
-//   images: [
-//     "/products/bartek/bartek60-1.jpeg",
-//     "/products/bartek/bartek60-2.jpeg",
-//     "/products/bartek/bartek60-3.jpeg",
-//   ],
 
-//   strength: "60 mg",
-//   packSize: "Vial",
-//   drugClass: "Alkylating agents",
 
-//   dosage: `
-// • Pre-medicate with anticonvulsants (e.g. benzodiazepines, phenytoin, valproic acid or levetiracetam) and antiemetic.
 
-// • Dilute and administer as intravenous infusion. Do not administer as intravenous push or bolus.
 
-// • Recommended adult dose: 0.8 mg per kg of ideal body weight or actual body weight, whichever is lower, administered intravenously via a central venous catheter as a two-hour infusion every six hours for four consecutive days for a total of 16 doses.
-// `,
 
-//   storage: "Store at 25°C to 30°C.",
 
-//   description: `
-// Busulfan is a methanesulfonate ester that is butane-1,4-diol in which the hydrogens of the hydroxy groups are replaced by methanesulfonyl groups.
 
-// An alkylating antineoplastic agent, it is used for the treatment of chronic myeloid leukemia although it has been largely replaced by newer drugs.
 
-// It is also used as an insect sterilant.
 
-// Busulfan has roles as an insect sterilant, antineoplastic agent, teratogenic agent, carcinogenic agent, and alkylating agent.
 
-// It is functionally related to a butane-1,4-diol.
-// `,
 
-//   indication: `
-// Busulfan injection is indicated for use in combination with cyclophosphamide as a conditioning regimen prior to allogeneic hematopoietic progenitor cell transplantation for chronic myelogenous leukemia.
-// `,
 
-//   clinicalEfficacy: `
-// The study involved 61 patients receiving Busulfan Injection as part of a conditioning regimen for allogeneic hematopoietic stem cell transplantation, primarily targeting various high-risk hematologic malignancies.
 
-// Patients received a specific Busulfan regimen followed by cyclophosphamide before stem cell infusion.
 
-// All patients achieved myeloablation, and most successfully engrafted within a median of 13 days post-transplant.
 
-// Despite a significant portion experiencing disease relapse, a majority remained disease-free at follow-up, though mortality rates were notable, particularly within the first 100 days post-transplant.
-// `,
 
-//   safetyInformation: `
-// Pregnancy:
-// Busulfan therapy should be avoided during pregnancy, particularly during the first trimester.
 
-// Breastfeeding:
-// Busulfan is excreted in human milk. Breastfeeding should be discontinued during treatment with busulfan due to the potential for serious adverse reactions in nursing infants.
 
-// Fertility:
-// Busulfan may impair fertility in both men and women. Women of reproductive potential should use effective contraception during treatment with busulfan.
 
-// Men should consider sperm preservation prior to treatment with busulfan, as it can lead to infertility and azoospermia.
 
-// Teratogenicity:
-// Busulfan is known to be teratogenic and can cause fetal harm if used during pregnancy.
-// `,
 
-//   specialPrecautions: `
-// • Inform your doctor and pharmacist if you are allergic to busulfan or any ingredients in busulfan tablets.
 
-// • Tell your doctor and pharmacist about all prescription and nonprescription medications, vitamins, nutritional supplements, and herbal products you are taking or plan to take.
 
-// • Inform your doctor if you have previously undergone radiation therapy or treatment with chemotherapy medications.
 
-// • Inform your doctor if you have a history of seizures or head injury.
 
-// • Busulfan may affect the menstrual cycle in women and halt sperm production in men.
 
-// • Women who are pregnant or breastfeeding should inform their doctors before starting busulfan.
 
-// • Reliable contraception should be used during treatment.
 
-// • Contact your doctor immediately if pregnancy occurs while taking busulfan.
-// `,
-// },
-// {
-//   id: 8,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "glioz",
-//   name: "Glioz",
-//   subtitle: "Carmustine Injection",
-//   type: "Injection",
 
-//   image: "/products/glioz/glioz100-1.jpeg",
 
-//   images: [
-//     "/products/glioz/glioz100-1.jpeg",
-//     "/products/glioz/glioz100-2.jpeg",
-//     "/products/glioz/glioz100-3.jpeg",
-//   ],
 
-//   strength: "100 mg",
-//   packSize: "Vial",
-//   drugClass: "Antineoplastic Agent",
 
-//   dosage: `
-// • Recommended Dose:
-// Glioz is recommended at 150-200 mg/m² intravenously every 6 weeks, either as a single dose or divided over two consecutive days (75-100 mg/m² per day).
 
-// • Adjust doses when used with other myelosuppressive drugs or in patients with depleted bone marrow reserve.
 
-// • Subsequent doses should be based on hematologic response to the previous dose.
 
-// • Blood counts should be monitored weekly.
 
-// • Repeat courses should be delayed until:
-// - platelets are above 100,000/mm³
-// - leukocytes above 4,000/mm³
 
-// • Hematologic toxicity is cumulative and delayed.
 
-// • Repeat courses should not be given sooner than every 6 weeks.
 
-// • Ensure an adequate number of neutrophils are present before administering repeat courses.
-// `,
 
-//   storage: "Store at 25°C to 30°C.",
 
-//   description: `
-// Carmustine, a nitrosourea used in treating certain neoplastic diseases, is chemically 1,3-bis (2-chloroethyl)-1-nitrosourea.
 
-// It exists as sterile lyophilized pale yellow flakes or mass, with a molecular weight of 214.06.
 
-// Carmustine is highly soluble in alcohol and lipids but poorly soluble in water.
 
-// It is administered intravenously after reconstitution and is available in 100 mg single-dose vials of lyophilized material, with a co-packaged sterile diluent of Dehydrated Alcohol Injection, USP, for constitution.
-// `,
 
-//   indication: `
-// Carmustine is indicated for palliative therapy either as a single agent or in combination with other approved chemotherapeutic agents for treatment of:
 
-// • Brain tumors including:
-// - glioblastoma
-// - brainstem glioma
-// - medulloblastoma
-// - astrocytoma
-// - ependymoma
-// - metastatic brain tumors
 
-// • Multiple myeloma in combination with prednisone
 
-// • Hodgkin’s Disease as secondary therapy
 
-// • Non-Hodgkin’s lymphomas as secondary therapy
-// `,
 
-//   clinicalEfficacy: `
-// Several studies including randomized controlled trials and observational studies evaluated BCNU-wafers versus placebo as adjuvant therapy for newly diagnosed high-grade glioma in adults.
 
-// The trials included a total of 193 patients who received BCNU-wafers.
 
-// Primary endpoint analysis focused on survival and demonstrated:
-// • Potential median survival benefit of 2.3 months with BCNU-wafers
-// • HR 0.77
-// • 95% CI 0.57-1.03
-// • p = 0.08
 
-// Long-term follow-up indicated a survival advantage with BCNU-wafers.
 
-// No significant difference was observed in progression-free survival.
 
-// Subgroup analysis for grade IV tumors also did not show statistically significant survival benefit:
-// • HR 0.82
-// • 95% CI 0.55-1.11
-// • p = 0.20
 
-// Overall, BCNU-wafers showed promise in extending survival, though further research is needed.
-// `,
 
-//   safetyInformation: `
-// Pregnancy:
-// Use of carmustine should be avoided during pregnancy, particularly during the first trimester.
 
-// Breastfeeding:
-// Carmustine is excreted in human milk and breastfeeding should be discontinued during treatment.
 
-// Fertility:
-// Carmustine may impair fertility.
 
-// Women should use effective contraception during treatment.
 
-// Men should consider sperm preservation before treatment due to possible azoospermia.
 
-// Teratogenicity:
-// Carmustine is considered potentially teratogenic similar to other cytotoxic agents.
-// `,
 
-//   specialPrecautions: `
-// • Tell your doctor and pharmacist if you are allergic to carmustine or any ingredients in the injection.
 
-// • Inform your doctor about all prescription and nonprescription medications, vitamins, and supplements.
 
-// • Be sure to mention:
-// - cimetidine (Tagamet)
-// - phenytoin (Dilantin)
 
-// • Tell your doctor if you have or have ever had kidney or liver disease.
 
-// • Inform your doctor if you are pregnant, planning pregnancy, or breast-feeding.
 
-// • Carmustine may harm the fetus.
-// `,
-// },
-// {
-//   id: 9,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "cladiraaz",
-//   name: "Cladiraaz-10",
-//   subtitle: "Cladribine Injection",
-//   type: "Injection",
 
-//   image: "/products/cladiraaz/cladiraaz10-1.jpeg",
 
-//   images: [
-//     "/products/cladiraaz/cladiraaz10-1.jpeg",
-//     "/products/cladiraaz/cladiraaz10-2.jpeg",
-//     "/products/cladiraaz/cladiraaz10-3.jpeg",
-//   ],
 
-//   strength: "10 mg",
-//   packSize: "Vial",
-//   drugClass: "Antineoplastic Agent",
 
-//   dosage: `
-// The recommended dose and schedule of cladribine injection for active Hairy Cell Leukemia is as a single course given by continuous infusion for seven consecutive days at a dose of 0.09 mg/kg/day.
 
-// Deviations from this dosage regimen are not advised.
 
-// If the patient does not respond to the initial course of cladribine injection for Hairy Cell Leukemia, it is unlikely that they will benefit from additional courses.
 
-// Specific risk factors predisposing to increased toxicity from cladribine injection have not been defined.
 
-// In view of the known toxicities of agents of this class, it would be prudent to proceed carefully in patients with known or suspected renal insufficiency or severe bone marrow impairment of any etiology.
-// `,
 
-//   coldStorage: "Yes",
 
-//   description: `
-// Cladribine Injection, USP (also commonly known as 2-chloro-2’-deoxy-ß-D-adenosine) is a synthetic antineoplastic agent for continuous intravenous infusion.
 
-// It is a clear, colorless, sterile, preservative-free, isotonic solution.
 
-// Cladribine injection, USP is available in single-dose vials containing 10 mg (1 mg/mL) of cladribine, a chlorinated purine nucleoside analog.
 
-// Each milliliter of cladribine injection, USP contains 1 mg of the active ingredient and 9 mg (0.15 mEq) of sodium chloride as an inactive ingredient.
 
-// The solution has a pH range of 5.5 to 8.0.
 
-// Phosphoric acid and/or dibasic sodium phosphate may have been added to adjust the pH to 6.3 ± 0.3.
 
-// The chemical name for cladribine is 2-chloro-6-amino-9-(2-deoxy-ß-D-erythropentofuranosyl) purine.
-// `,
 
-//   indication: `
-// Cladribine Injection, USP is indicated for the treatment of active Hairy Cell Leukemia as defined by clinically significant anemia, neutropenia, thrombocytopenia or disease-related symptoms.
-// `,
 
-//   clinicalEfficacy: `
-// Cladribine is used to treat the relapsing forms of multiple sclerosis (MS), including relapsing-remitting disease and active secondary progressive disease, in patients who have been previously treated with other medicines that did not work well.
-// `,
 
-//   safetyInformation: `
-// Cladribine injection should be administered under the supervision of a qualified physician experienced in the use of antineoplastic therapy.
 
-// Suppression of bone marrow function should be anticipated. This is usually reversible and appears to be dose dependent.
 
-// Serious neurological toxicity including irreversible paraparesis and quadraparesis has been reported in patients who received cladribine injection by continuous infusion at high doses.
 
-// Neurologic toxicity appears to demonstrate a dose relationship; however, severe neurological toxicity has been reported rarely following treatment with standard cladribine dosing regimens.
 
-// Acute nephrotoxicity has been observed with high doses of cladribine injection, especially when given concomitantly with other nephrotoxic agents or therapies.
-// `,
 
-//   specialPrecautions: `
-// Cladribine injection is a potent antineoplastic agent with potentially significant toxic side effects.
 
-// It should be administered only under the supervision of a physician experienced with the use of cancer chemotherapeutic agents.
 
-// Patients undergoing therapy should be closely observed for signs of hematologic and non-hematologic toxicity.
 
-// Periodic assessment of peripheral blood counts, particularly during the first four to eight weeks post treatment, is recommended to detect the development of anemia, neutropenia and thrombocytopenia and for early detection of potential sequelae such as infection or bleeding.
 
-// Monitoring of renal and hepatic function is also recommended.
-// `,
-// },
-// {
-//   id: 10,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "decitaz",
-//   name: "Decitaz-50 mg",
-//   subtitle: "Decitabine Injection",
-//   type: "Injection",
 
-//   image: "/products/decitaz/decitaz-1.jpeg",
 
-//   images: [
-//     "/products/decitaz/decitaz-1.jpeg",
-//     "/products/decitaz/decitaz-2.jpeg",
-//     "/products/decitaz/decitaz-3.jpeg",
-//   ],
 
-//   strength: "50 mg",
-//   packSize: "Vial",
-//   drugClass: "Hypomethylation Agents",
 
-//   dosage: `
-// Pre-Medications and Baseline Testing:
-// • Consider pre-medicating for nausea with antiemetics.
-// • Conduct baseline laboratory testing:
-// - complete blood count (CBC) with platelets
-// - serum hepatic panel
-// - serum creatinine
 
-// Three Day Regimen:
-// Administer decitabine for Injection at a dose of 15 mg/m² by continuous intravenous infusion over 3 hours repeated every 8 hours for 3 days.
 
-// Repeat cycles every 6 weeks upon hematologic recovery for a minimum of 4 cycles.
 
-// Five Day Regimen:
-// Administer decitabine for Injection at a dose of 20 mg/m² by continuous intravenous infusion over 1 hour daily for 5 days.
 
-// Repeat cycles every 4 weeks upon hematologic recovery for a minimum of 4 cycles.
 
-// Patients with Renal or Severe Hepatic Impairment:
-// Consider potential risks and benefits before initiating treatment.
 
-// Dosage Modifications for Adverse Reactions:
-// • Delay and reduce dose for hematologic toxicity.
-// • Monitor renal and hepatic toxicity carefully.
 
-// Preparation and Administration:
-// • Reconstitute with 10 mL Sterile Water for Injection.
-// • Final concentration after reconstitution is 5 mg/mL.
-// • Dilute with 0.9% Sodium Chloride Injection or 5% Dextrose Injection prior to administration.
-// • Store diluted solution at 2°C to 8°C for up to 4 hours if delayed administration is needed.
-// `,
 
-//   coldStorage: "Yes",
 
-//   description: `
-// Decitabine is a nucleoside metabolic inhibitor.
 
-// Decitabine for Injection contains decitabine (5-aza-2'-deoxycytidine), an analogue of the natural nucleoside 2'-deoxycytidine.
 
-// Decitabine is a fine, white to almost white powder with molecular formula C8H12N4O4 and molecular weight 228.21 gm/mol.
 
-// Its chemical name is 4-amino-1-(2-deoxy-β-D-erythro-pentofuranosyl)-1,3,5-triazin-2(1H)-one.
 
-// Decitabine is slightly soluble in ethanol/water, methanol/water and methanol; sparingly soluble in water and soluble in dimethyl sulfoxide (DMSO).
 
-// Decitabine for Injection is supplied as a sterile, white to almost white lyophilized powder in a clear colorless glass single-dose vial.
-// `,
 
-//   indication: `
-// Decitabine for injection is indicated for treatment of adult patients with myelodysplastic syndromes (MDS) including:
 
-// • Previously treated and untreated
-// • De novo and secondary MDS
-// • Refractory anemia
-// • Refractory anemia with ringed sideroblasts
-// • Refractory anemia with excess blasts
-// • Refractory anemia with excess blasts in transformation
-// • Chronic myelomonocytic leukemia
 
-// Applicable for intermediate-1, intermediate-2 and high-risk International Prognostic Scoring System groups.
-// `,
 
-//   clinicalEfficacy: `
-// Decitabine exerts antineoplastic effects after phosphorylation and direct incorporation into DNA and inhibition of DNA methyl transferase, causing hypomethylation of DNA and cellular differentiation or apoptosis.
 
-// Decitabine inhibits DNA methylation in vitro at concentrations that do not cause major suppression of DNA synthesis.
 
-// Decitabine-induced hypomethylation in neoplastic cells may restore normal function to genes critical for control of cellular differentiation and proliferation.
 
-// In rapidly dividing cells, cytotoxicity may also be attributed to formation of covalent adducts between DNA methyl transferase and decitabine incorporated into DNA.
 
-// Regarding toxicity and efficacy:
-// • thrombocytopenia: 40%
-// • febrile neutropenia: 38%
-// • neutropenia: 37%
-// • anemia: 36%
-// • fatigue: 15%
 
-// Treatment-associated infections:
-// • pneumonia: 25%
-// • sepsis: 9%
 
-// 30-day mortality: 7%
-// 60-day mortality: 17%
-// `,
 
-//   safetyInformation: `
-// Embryo-Fetal Toxicity:
-// Based on findings from human data, animal studies and mechanism of action, decitabine can cause fetal harm when administered to a pregnant woman.
 
-// Preclinical studies in mice and rats demonstrated:
-// • embryo-fetal lethality
-// • developmental malformations
 
-// Females of reproductive potential should use effective contraception during treatment and for 6 months following the last dose.
 
-// Males with female partners of reproductive potential should use effective contraception during treatment and for 3 months following the last dose.
-// `,
 
-//   specialPrecautions: `
-// • Decitabine is a cytotoxic drug and special handling/disposal procedures should be followed.
 
-// • Delay subsequent treatment for:
-// - serum creatinine ≥ 2 mg/dL
-// - ALT or bilirubin ≥ 2× ULN
-// - active or uncontrolled infection
 
-// • Monitor CBC, platelets, hepatic panel and renal function regularly.
 
-// • Monitor for severe myelosuppression and infections.
 
-// • Use caution in patients with renal or hepatic impairment.
 
-// • Pregnancy should be avoided during treatment.
-// `,
-// },
-// {
-//   id: 11,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "cabaxzel",
-//   name: "Cabaxzel",
-//   subtitle: "Cabazitaxel Injection",
-//   type: "Injection",
 
-//   image: "/products/cabaxzel/cabaxzel60-1.jpeg",
 
-//   images: [
-//     "/products/cabaxzel/cabaxzel60-1.jpeg",
-//     "/products/cabaxzel/cabaxzel60-2.jpeg",
-//     "/products/cabaxzel/cabaxzel60-3.jpeg",
-//   ],
 
-//   strength: "60 mg",
-//   packSize: "Vial",
-//   drugClass: "Antineoplastic agents (Microtubule Inhibitors)",
 
-//   dosage: `
-// • Cabazitaxel Injection 20 mg/m² administered every three weeks as a one-hour intravenous infusion in combination with oral prednisone 10 mg administered daily throughout Cabazitaxel Injection treatment.
 
-// • A dose of 25 mg/m² can be used in select patients at the discretion of the treating healthcare provider.
 
-// • Cabazitaxel Injection must be added to the infusion solution prior to administration.
 
-// • To avoid medication errors, do not combine the two-vial formulation (injection and diluent) with the one vial formulation.
 
-// • Withdraw the prescribed dose from Cabazitaxel Injection (10 mg/mL) vial and dilute into 0.9% Sodium Chloride Injection, USP or 5% Dextrose Injection, USP to prepare final infusion solution.
 
-// • Polyvinyl chloride (PVC) or polyurethane equipment should not be used.
 
-// • Premedication Regimen: Administer intravenously 30 minutes before each dose of Cabazitaxel Injection:
-// - Antihistamine: dexchlorpheniramine 5 mg or diphenhydramine 25 mg or equivalent antihistamine
-// - Corticosteroid: dexamethasone 8 mg or equivalent steroid
-// - H2 antagonist
 
-// • Antiemetic prophylaxis, oral or intravenous, is recommended as needed.
-// `,
 
-//   storage: "Store at 25°C to 30°C.",
 
-//   description: `
-// Cabazitaxel is a tetracyclic diterpenoid that is 10-deacetylbaccatin III having O-methyl groups attached at positions 7 and 10 as well as an O-(2R,3S)-3-[(tert-butoxycarbonyl)amino]-2-hydroxy-3-phenylpropanoyl group attached at position 13.
 
-// Cabazitaxel acts as a microtubule inhibitor, binds tubulin and promotes microtubule assembly and simultaneously inhibits disassembly.
 
-// It has a role as an antineoplastic agent and a microtubule-stabilising agent.
 
-// It is functionally related to a 10-deacetylbaccatin III.
-// `,
 
-//   indication: `
-// Cabazitaxel Injection is a microtubule inhibitor indicated in combination with prednisone for treatment of patients with metastatic castration-resistant prostate cancer previously treated with a docetaxel-containing treatment regimen.
-// `,
 
-//   clinicalEfficacy: `
-// Clinical efficacy of Cabazitaxel injection has been demonstrated in several studies, highlighting its effectiveness in treating advanced prostate cancer.
 
-// In a pivotal Phase III trial, patients receiving Cabazitaxel showed significantly improved overall survival compared to those receiving standard therapy.
 
-// Hazard ratio = 0.70; 95% CI, 0.59–0.83; P < 0.001.
 
-// This survival benefit was observed despite the patients having previously received docetaxel-based therapy.
 
-// Additionally, Cabazitaxel was associated with higher rates of prostate-specific antigen (PSA) response and improved pain control compared to the control arm.
 
-// These findings underscore Cabazitaxel's role as a valuable treatment option for patients with advanced prostate cancer who have progressed on prior chemotherapy.
-// `,
 
-//   safetyInformation: `
-// Pregnancy:
-// Cabazitaxel is contraindicated during pregnancy due to its potential for causing fetal harm.
 
-// Breastfeeding:
-// It is not recommended to breastfeed during treatment with cabazitaxel, as it may cause serious adverse reactions in nursing infants.
 
-// Fertility:
-// Cabazitaxel may impair fertility. Women of reproductive potential should use effective contraception during and after treatment with cabazitaxel.
 
-// Men should consider sperm preservation before starting cabazitaxel therapy, as this treatment may cause reversible infertility.
 
-// Teratogenicity:
-// Like other cytotoxic agents, cabazitaxel is potentially teratogenic and can cause fetal harm.
-// `,
 
-//   specialPrecautions: `
-// • Tell your doctor and pharmacist if you are allergic to cabazitaxel injection, any other medications, polysorbate 80, or any of the other ingredients in cabazitaxel injection. Ask your pharmacist for a list of the ingredients.
 
-// • Tell your doctor and pharmacist what prescription and nonprescription medications, vitamins, and nutritional supplements you are taking or plan to take. Your doctor may need to change the doses of your medications or monitor you carefully for side effects.
 
-// • The following nonprescription or herbal products may interact with cabazitaxel injection: aspirin or other nonsteroidal anti-inflammatory drugs (NSAIDs) such as ibuprofen (Advil, Motrin) and naproxen (Aleve, Naprosyn), or St. John's wort.
 
-// • Be sure to let your doctor and pharmacist know that you are taking these medications before you start receiving cabazitaxel injection.
 
-// • Do not start any of these medications while receiving cabazitaxel injection without discussing with your healthcare provider.
 
-// • Tell your doctor if you have or have ever had liver disease. Your doctor may probably tell you not to receive cabazitaxel injection.
 
-// • Tell your doctor if you have or have ever had kidney disease, anemia, bleeding ulcers, or lung problems.
 
-// • Tell your doctor if you have ever been treated with radiation therapy to your pelvis.
 
-// • Cabazitaxel injection is for use only in men.
 
-// • If your female partner is not pregnant but could become pregnant, you and your partner must use birth control during treatment and for 4 months after the final dose.
 
-// • If your partner becomes pregnant while you are receiving cabazitaxel injection, call your doctor. Cabazitaxel injection may harm the fetus.
 
-// • This medication may decrease fertility in men.
 
-// • If you are having surgery, including dental surgery, tell the doctor or dentist that you are receiving cabazitaxel injection.
-// `,
-// },
 
-// {
-//   id: 12,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "zugarlix",
-//   name: "Zugarlix",
-//   subtitle: "Degarelix Injection",
-//   type: "Injection",
 
-//   image: "/products/zugarlix/zugarlix80-1.jpeg",
 
-//   images: [
-//     "/products/zugarlix/zugarlix80-1.jpeg",
-//     "/products/zugarlix/zugarlix80-2.jpeg",
-//     "/products/zugarlix/zugarlix80-3.jpeg",
-//     "/products/zugarlix/zugarlix120-1.jpeg",
-//     "/products/zugarlix/zugarlix120-2.jpeg",
-//     "/products/zugarlix/zugarlix120-3.jpeg",
-//   ],
 
-//   strength: "80/120 mg",
-//   packSize: "Vial",
-//   drugClass: "Gonadotropin-releasing hormone (GnRH) receptor antagonists",
 
-//   dosage: `
-// • Degarelix injection is for subcutaneous administration only and is not to be administered intravenously.
 
-// • Treatment is started with a dose of 240 mg given as two injections of 120 mg each.
 
-// • The starting dose is followed by maintenance doses of 80 mg administered as a single injection every 28 days.
-// `,
 
-//   coldStorage: "Yes",
 
-//   description: `
-// Degarelix is used for the treatment of advanced prostate cancer.
 
-// Degarelix is a synthetic peptide derivative drug which binds to gonadotropin-releasing hormone (GnRH) receptors in the pituitary gland and blocks interaction with GnRH.
 
-// This antagonism reduces luteinising hormone (LH) and follicle-stimulating hormone (FSH), which ultimately causes testosterone suppression.
 
-// Reduction in testosterone is important in treating men with advanced prostate cancer.
 
-// Chemically, it is a synthetic linear decapeptide amide with seven unnatural amino acids, five of which are D-amino acids.
-// `,
 
-//   indication: `
-// Degarelix is a GnRH receptor antagonist indicated for treatment of patients with advanced prostate cancer.
-// `,
 
-//   clinicalEfficacy: `
-// This study evaluated the efficacy and safety of degarelix, a new GnRH antagonist, compared to leuprolide in achieving and maintaining testosterone suppression in prostate cancer patients over one year.
 
-// A total of 610 patients were randomized to receive either degarelix, 240 mg starting dose then 80 mg or 160 mg monthly, or leuprolide 7.5 mg monthly.
 
-// Degarelix achieved testosterone levels ≤0.5 ng/mL in 97.2% and 98.3% of patients in its two dosing regimens, respectively, compared to 96.4% with leuprolide.
 
-// It also suppressed testosterone and PSA levels significantly faster than leuprolide, with median PSA levels lower at 14 and 28 days (P < 0.001).
 
-// Side effects were similar between groups, although degarelix had more injection-site reactions but fewer urinary tract infections, arthralgia, and chills.
 
-// Degarelix offers effective and rapid androgen deprivation without needing antiandrogen supplements to prevent clinical flare.
-// `,
 
-//   safetyInformation: `
-// Pregnancy:
-// Degarelix is contraindicated in pregnancy due to its potential to cause fetal harm.
 
-// Adequate contraceptive measures should be used by both male and female patients receiving degarelix.
 
-// Women of childbearing potential should undergo pregnancy testing prior to starting treatment with degarelix.
 
-// If pregnancy occurs during degarelix therapy, patients should be advised of the potential risk to the fetus.
 
-// Breastfeeding:
-// It is not known whether degarelix is excreted in human milk.
 
-// Breastfeeding should be discontinued during treatment with degarelix.
 
-// Fertility:
-// Degarelix may impair fertility.
 
-// Men should consider sperm preservation prior to initiating treatment with degarelix, as reversible suppression of spermatogenesis has been observed.
 
-// Recovery of spermatogenesis after discontinuation of degarelix treatment varies and may not occur in all patients.
 
-// Teratogenicity:
-// Degarelix may have the potential to cause fetal harm if administered during pregnancy.
 
-// Contraception is recommended during treatment and for a period after discontinuation to minimize the risk of pregnancy-related adverse effects.
-// `,
 
-//   specialPrecautions: `
-// • Tell your doctor and pharmacist if you are allergic to degarelix injection, any other medications, or any of the ingredients in degarelix injection. Ask your pharmacist or check the patient information for a list of the ingredients.
 
-// • Tell your doctor and pharmacist what prescription and nonprescription medications, vitamins, nutritional supplements, and herbal products you are taking or plan to take. Your doctor may need to change the doses of your medications or monitor you carefully for side effects.
 
-// • Tell your doctor if you or anyone in your family has or has ever had osteoporosis.
 
-// • Tell your doctor if you have or have ever had long QT syndrome, high or low blood levels of calcium, potassium, magnesium, or sodium, high blood pressure, heart disease, liver disease, or kidney disease.
 
-// • Degarelix injection is intended only for use in adult men.
 
-// • Degarelix is not intended for use in women, especially if they are or may become pregnant.
 
-// • Degarelix injection may harm the fetus.
 
-// • If you receive degarelix injection while pregnant, call your doctor immediately.
 
-// • If you are breastfeeding, talk to your doctor before you receive degarelix injection.
 
-// • This medication may decrease fertility in men and women. Talk to your doctor about the risks of receiving degarelix injection.
-// `,
-// },
 {
   id: 46,
   category: "oncoace",
@@ -1823,290 +1301,88 @@ Effective contraception is recommended during treatment.
 • If pregnancy occurs during treatment, contact your doctor immediately as idarubicin may harm the fetus.
 `,
 },
-// {
-//   id: 17,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "zoplide",
-//   name: "Zoplide",
-//   subtitle: "Leuprolide Acetate",
-//   type: "Injection",
 
-//   image: "/new_product_page/zoplide-goup.png",
 
-//   images: [
-//     "/new_product_page/zoplide-goup.png",
-//     "/new_product_page/Zoplide-11.25.png",
-//     "/new_product_page/Zoplide-22.50.png",
-//   ],
 
-//   strength: "3.75/11.25/22.50 mg",
-//   packSize: "Vial",
-//   drugClass: "Gonadotropin-releasing hormone (GnRH) agonists",
 
-//   dosage: `
-// • The recommended dose is 1 mg (0.2 mL or 20 unit mark) administered as a single daily subcutaneous injection.
 
-// • As with other drugs administered chronically by subcutaneous injection, the injection site should be varied periodically.
 
-// • Each 0.2 mL contains:
-//   - 1 mg leuprolide acetate
-//   - sodium chloride for tonicity adjustment
-//   - 1.8 mg benzyl alcohol as preservative
-//   - water for injection
 
-// • The pH may have been adjusted with sodium hydroxide and/or acetic acid.
-// `,
 
-//   storage: "Store at 25°C to 30°C.",
 
-//   description: `
-// Leuprolide acetate is a synthetic nonapeptide analog of naturally occurring gonadotropin releasing hormone (GnRH or LH-RH).
 
-// The analog possesses greater potency than the natural hormone.
 
-// The chemical name is:
-// 5-oxo-L-prolyl-L-histidyl-L-tryptophyl-L-seryl-L-tyrosyl-D-leucyl-L-leucyl-L-arginyl-N-ethyl-L-prolinamide acetate (salt).
-// `,
 
-//   indication: `
-// Leuprolide acetate is indicated in the palliative treatment of advanced prostatic cancer.
-// `,
 
-//   clinicalEfficacy: `
-// In a clinical study comparing leuprolide acetate injection with DES in patients with metastatic prostate cancer, adverse reactions were assessed.
 
-// Common adverse events included:
-// • Hot flashes:
-//   - 55% with injection
-//   - 12% with DES
 
-// • Gynecomastia:
-//   - 63% vs. 7%
 
-// • Decreased libido:
-//   - 11% vs. 7%
 
-// Bone pain occurred in:
-// • 5% of injection patients
-// • 2% with DES
 
-// Other reported adverse reactions included:
-// • Cardiovascular issues like ECG changes/ischemia
-// • Gastrointestinal symptoms such as nausea/vomiting
-// • Urinary tract issues like hematuria
 
-// Overall, injection was associated with a higher incidence of hot flashes and gynecomastia but showed comparable rates of bone pain and other systemic effects compared to DES in this trial.
-// `,
 
-//   safetyInformation: `
-// Pregnancy:
-// Leuprolide acetate can cause fetal harm when administered to pregnant women and should not be used during pregnancy.
 
-// Breastfeeding:
-// It is not known whether leuprolide acetate is excreted in human milk.
 
-// Breastfeeding should be discontinued during treatment due to the potential for serious adverse reactions in nursing infants.
 
-// Fertility:
-// Leuprolide acetate may cause reversible suppression of reproductive function.
 
-// In females:
-// • Amenorrhea and suppression of ovarian function have been reported.
-// • Regular menstrual cycles may not resume immediately after discontinuation.
 
-// In males:
-// • Suppression of spermatogenesis leading to azoospermia or oligospermia has been observed.
 
-// Teratogenicity:
-// Leuprolide acetate has the potential to cause fetal harm and is contraindicated during pregnancy.
 
-// Women of childbearing potential should use effective contraception during treatment.
-// `,
 
-//   specialPrecautions: `
-// • Tell your doctor and pharmacist if you are allergic to leuprolide, goserelin, histrelin, nafarelin, triptorelin, any other medications, or ingredients in leuprolide injection.
 
-// • Inform your doctor about prescription medicines, nonprescription medicines, vitamins, nutritional supplements, and herbal products you are taking.
 
-// • Tell your doctor if you or anyone in your family has osteoporosis.
 
-// • Inform your doctor if you have a history of:
-//   - alcohol use
-//   - tobacco use
-//   - depression
-//   - seizures
-//   - brain tumors
-//   - spinal cancer spread
-//   - diabetes
-//   - urinary obstruction
-//   - blood in urine
-//   - prolonged QT interval
-//   - cerebrovascular disease
-//   - heart disease
-//   - stroke
-//   - hyperlipidemia
-//   - low potassium, calcium, or magnesium
 
-// • Leuprolide should not be used in women who are pregnant, may become pregnant, or are breastfeeding.
 
-// • A pregnancy test may be required before starting treatment.
 
-// • Use reliable nonhormonal birth control during treatment.
 
-// • Leuprolide injection may impair fertility in men.
 
-// • Some patients may experience:
-//   - worsening mood
-//   - anxiety
-//   - emotional difficulty
-//   - psychiatric illness
 
-// • Report any new or worsening symptoms immediately.
-// `,
-// },
 
-// {
-//   id: 18,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "mitozan",
-//   name: "Mitozan",
-//   subtitle: "Mitoxantrone",
-//   type: "Injection",
 
-//   image: "/products/mitozan/mitozan20-1.jpeg",
 
-//   images: [
-//     "/products/mitozan/mitozan20-1.jpeg",
-//     "/products/mitozan/mitozan20-2.jpeg",
-//     "/products/mitozan/mitozan20-3.jpeg",
-//   ],
 
-//   strength: "20 mg",
-//   packSize: "Vial",
-//   drugClass: "Type II topoisomerase inhibitor",
 
-//   dosage: `
-// • The recommended dosage is 12 mg/m² given as a short intravenous infusion lasting approximately 5 to 15 minutes every 3 months.
 
-// • Prior to administration of the initial dose and all subsequent doses, left ventricular ejection fraction (LVEF) should be evaluated using echocardiogram or MUGA scans.
 
-// • LVEF assessments are advised if congestive heart failure signs or symptoms appear during treatment.
 
-// • Mitoxantrone should not be administered to multiple sclerosis patients with:
-//   - LVEF <50%
-//   - clinically significant reduction in LVEF
-//   - cumulative lifetime dose exceeding 140 mg/m²
 
-// • Regular complete blood counts including platelets should be monitored before each course.
 
-// • Mitoxantrone is generally not recommended for patients with neutrophil counts below 1500 cells/mm³.
 
-// • Liver function tests should be assessed prior to each course.
 
-// • Women of childbearing potential should undergo pregnancy testing before each dose regardless of contraceptive use.
-// `,
 
-//   storage: "Store at 25°C to 30°C.",
 
-//   description: `
-// Mitoxantrone injection is used alone or together with other medicines to treat advanced prostate cancer and acute nonlymphocytic leukemia (ANLL).
 
-// It belongs to the group of medicines known as antineoplastics or cancer medicines.
 
-// Mitoxantrone is also used to treat some forms of multiple sclerosis (MS).
 
-// This medicine will not cure MS, but it may extend the time between relapses.
-// `,
 
-//   indication: `
-// Mitoxantrone Injection is used to reduce neurologic disability and/or frequency of clinical relapses in:
-// • Secondary progressive multiple sclerosis
-// • Progressive relapsing multiple sclerosis
-// • Worsening relapsing-remitting multiple sclerosis
 
-// It is also indicated:
-// • In combination with corticosteroids for advanced hormone-refractory prostate cancer-related pain
-// • In combination with other approved drugs for initial therapy of acute nonlymphocytic leukemia (ANLL) in adults.
-// `,
 
-//   clinicalEfficacy: `
-// Mitoxantrone's efficacy and safety were assessed in 23 Indian patients with multiple sclerosis (MS) and neuromyelitis optica (NMO) in an open-label study.
 
-// Significant reductions in annual relapse rates were noted:
-// • After one year:
-//   - from 0.879 to 0.091
-//   - P=0.003
 
-// • After two years:
-//   - from 1.024 to 0.155
-//   - P=0.0054
 
-// EDSS scores improved significantly after two years:
-// • from 5.3 to 2.4
-// • P=0.001
 
-// Adverse events included:
-// • manageable leucopenia in four patients
-// • reversible cardiac ejection fraction decrease in one patient
 
-// Therapy was discontinued in three cases.
 
-// Mitoxantrone showed promise as an initial therapy in reducing clinical exacerbations and disability progression for MS and NMO patients with an acceptable safety profile.
-// `,
 
-//   safetyInformation: `
-// Pregnancy:
-// Mitoxantrone has the potential to cause fetal harm when administered during pregnancy.
 
-// Use should be avoided during pregnancy, particularly during the first trimester.
 
-// Breastfeeding:
-// Breastfeeding should be discontinued during and after treatment due to potential serious adverse reactions in nursing infants.
 
-// Fertility:
-// Mitoxantrone may impair fertility in both men and women.
 
-// Women should use effective contraception during and for at least six months after treatment.
 
-// Men should consider sperm preservation prior to treatment.
 
-// Teratogenicity:
-// Mitoxantrone is known to be teratogenic and can cause fetal harm if used during pregnancy.
 
-// Pregnancy testing and effective contraception are recommended during treatment.
-// `,
 
-//   specialPrecautions: `
-// • Tell your doctor and pharmacist if you are allergic to mitoxantrone injection, sulfites, or any other ingredients.
 
-// • Inform your doctor about prescription medicines, nonprescription medicines, vitamins, nutritional supplements, and herbal products you are taking.
 
-// • Your doctor may need to adjust medicine doses or monitor side effects carefully.
 
-// • Tell your doctor if you have or have ever had:
-//   - blood-clotting problems
-//   - anemia
-//   - liver disease
 
-// • Tell your doctor if you are pregnant or planning pregnancy.
 
-// • Do not become pregnant while using mitoxantrone injection.
 
-// • Use effective birth control during treatment.
 
-// • If pregnancy occurs during treatment, contact your doctor immediately.
 
-// • Do not breastfeed while using mitoxantrone injection.
 
-// • Inform your doctor before surgery or dental procedures.
 
-// • Mitoxantrone injection is dark blue in color and may:
-//   - temporarily turn the whites of eyes slightly blue
-//   - change urine color to blue-green for about 24 hours after dosing.
-// `,
-// },
 {
   id: 19,
   category: "oncoace",
@@ -2453,236 +1729,70 @@ Teratogenicity:
 `,
 },
 
-// {
-//   id: 22,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "osirus",
-//   name: "Osirus",
-//   subtitle: "Everolimus Tablets",
-//   type: "Tablet",
 
-//   image: "/products/osirus/osirus5-1.jpeg",
 
-//   images: [
-//     "/products/osirus/osirus5-1.jpeg",
-//     "/products/osirus/osirus5-2.jpeg",
-//     "/products/osirus/osirus5-3.jpeg",
-//     "/products/osirus/osirus10-1.jpeg",
-//     "/products/osirus/osirus10-2.jpeg",
-//     "/products/osirus/osirus10-3.jpeg",
-//   ],
 
-//   strength: "5/10 mg",
-//   packSize: "1 x 10 Tabs",
-//   drugClass: "Kinase inhibitors",
 
-//   dosage: `
-// The recommended dose is 10 mg everolimus once daily.
 
-// Treatment should continue as long as clinical benefit is observed or until unacceptable toxicity occurs.
 
-// Hepatic impairment:
-
-// • Mild hepatic impairment:
-//   - Recommended dose is 7.5 mg daily
-
-// • Moderate hepatic impairment:
-//   - Recommended dose is 5 mg daily
 
-// • Severe hepatic impairment:
-//   - Everolimus is recommended only if benefit outweighs risk
-//   - Dose should not exceed 2.5 mg daily
-// `,
-
-//   storage: "Store at 25°C to 30°C.",
 
-//   description: `
-// Everolimus is a macrolide immunosuppressant.
 
-// Chemical name:
-// (1R, 9S, 12S, 15R, 16E, 18R, 19R, 21R, 23S, 24E, 26E, 28E, 30S, 32S, 35R)-1,18-dihydroxy-12-{(1R)-2-[(1S,3R,4R)-4-(2-hydroxyethoxy)-3-methoxycyclohexyl]-1-methylethyl}-19,30-dimethoxy-15,17,21,23,29,35-hexamethyl-11,36-dioxa-4-aza-tricyclo[30.3.1.0 4,9] hexatriaconta-16,24,26,28-tetraene-2,3,10,14,20-pentaone.
 
-// Molecular formula:
-// C53H83NO14
 
-// Molecular weight:
-// 958.25 g/mol
 
-// Everolimus tablets are supplied for oral administration.
-// `,
 
-//   indication: `
-// 1. Prophylaxis of Organ Rejection in Kidney Transplantation:
-// Everolimus is indicated for prophylaxis of organ rejection in adult kidney transplant patients at low-moderate immunologic risk.
 
-// 2. Prophylaxis of Organ Rejection in Liver Transplantation:
-// Everolimus is indicated for prophylaxis of allograft rejection in adult liver transplant patients.
 
-// 3. Limitations of Use:
-// Safety and efficacy have not been established in:
-// • Kidney transplant patients at high immunologic risk
-// • Recipients of organs other than kidney and liver
-// • Pediatric patients below 18 years
-// `,
 
-//   clinicalEfficacy: `
-// Treatment with everolimus prolongs progression-free survival relative to placebo in patients with metastatic renal cell carcinoma that progressed on other targeted therapies.
 
-// Oral everolimus is absorbed rapidly and reaches peak concentration after 1.3 to 1.8 hours.
 
-// Steady state is reached within 7 days.
 
-// Steady-state peak and trough concentrations and area under curve (AUC) are proportional to dosage.
-// `,
 
-//   safetyInformation: `
-// Malignancies and Serious Infections:
-// • Increased susceptibility to infection and development of malignancies such as lymphoma and skin cancer may result from immunosuppression.
 
-// Kidney Graft Thrombosis:
-// • Increased risk of kidney arterial and venous thrombosis may occur, especially within first 30 days after transplantation.
 
-// Nephrotoxicity:
-// • Increased nephrotoxicity can occur with standard doses of cyclosporine in combination with everolimus.
-// • Reduced cyclosporine doses are recommended.
 
-// Mortality in Heart Transplantation:
-// • Increased mortality associated with serious infections has been observed in heart transplant patients.
-// • Use in heart transplantation is not recommended.
-// `,
 
-//   specialPrecautions: `
-// • Patients should be aware of increased risk of infection with everolimus.
 
-// • Hypersensitivity reactions may occur including:
-//   - anaphylaxis
-//   - dyspnoea
-//   - flushing
-//   - chest pain
-//   - angioedema
 
-// • Patients who develop radiological changes suggestive of non-infectious pneumonitis and have few or no symptoms may continue therapy without dose adjustment.
 
-// • Therapeutic drug monitoring is recommended during therapy.
-// `,
-// },
-// {
-//   id: 23,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "lapiz",
-//   name: "Lapiz",
-//   subtitle: "Lapatinib Tablets",
-//   type: "Tablet",
 
-//   image: "/products/lapiz/lapiz250-1.jpeg",
 
-//   images: [
-//     "/products/lapiz/lapiz250-1.jpeg",
-//     "/products/lapiz/lapiz250-2.jpeg",
-//     "/products/lapiz/lapiz250-3.jpeg",
-//   ],
 
-//   strength: "250 mg",
-//   packSize: "1 x 10 Tabs",
-//   drugClass: "Tyrosine kinase inhibitors",
 
-//   dosage: `
-// For advanced or metastatic breast cancer with capecitabine:
 
-// • Adults:
-//   - 1250 mg or 5 tablets taken together as a single dose once daily for 21 days.
-//   - Doctor may advise repeating the 21-day cycle.
 
-// • Children:
-//   - Use and dose must be determined by the physician.
 
-// For metastatic breast cancer with letrozole:
 
-// • Adults:
-//   - 1500 mg or 6 tablets taken together as a single dose once daily.
 
-// • Children:
-//   - Use and dose must be determined by the physician.
-// `,
 
-//   storage: "Store at 25°C to 30°C.",
 
-//   description: `
-// Lapatinib is a small molecule and a member of the 4-anilinoquinazoline class of kinase inhibitors.
 
-// It is present as the ditosylate salt.
 
-// Chemical name:
-// N-(3 chloro-4-[(3-fluorophenyl)methyl]oxy}phenyl)-6-[5-({[2-(methylsulfonyl)ethyl]amino}methyl)-2-furanyl]-4-quinazolinamine bis(4-methylbenzenesulfonate).
 
-// Molecular formula:
-// C29H26ClFN4O4S (C7H8O3S)2
 
-// Molecular weight:
-// 925.48 g/mol
 
-// Lapatinib is a yellow solid.
 
-// Its solubility in water is 0.007 mg/mL and in 0.1N HCl is 0.001 mg/mL at 25°C.
 
-// Each 250 mg lapatinib film coated tablet contains 398 mg lapatinib ditosylate equivalent to 250 mg lapatinib free base.
-// `,
 
-//   indication: `
-// Lapatinib is a kinase inhibitor indicated in combination with:
 
-// • Capecitabine for treatment of patients with advanced or metastatic breast cancer whose tumors overexpress HER2 and who have received prior therapy including:
-//   - anthracycline
-//   - taxane
-//   - trastuzumab
 
-// Limitations of Use:
-// Patients should have disease progression on trastuzumab prior to initiation of treatment with lapatinib in combination with capecitabine.
 
-// • Letrozole for treatment of postmenopausal women with hormone receptor-positive metastatic breast cancer that overexpresses the HER2 receptor and for whom hormonal therapy is indicated.
-// `,
 
-//   clinicalEfficacy: `
-// There have been significant advances in the treatment of HER2 positive breast cancer over the last decade.
 
-// Lapatinib is a small molecule tyrosine kinase inhibitor and is the second HER2 targeted agent approved in HER2 positive metastatic breast cancer.
 
-// It is used:
-// • In combination with capecitabine in second line treatment
-// • In combination with letrozole for hormone receptor positive disease
-// `,
 
-//   safetyInformation: `
-// The most common adverse reactions during therapy with lapatinib include:
 
-// • Gastrointestinal events:
-//   - diarrhoea
-//   - nausea
-//   - vomiting
 
-// • Rash
 
-// • Palmar-plantar erythrodysesthesia (PPE), especially when administered with capecitabine.
 
-// Diarrhoea was the most common adverse reaction resulting in discontinuation of treatment.
-// `,
 
-//   specialPrecautions: `
-// • Cardiac toxicity:
-//   - Lapatinib has not been evaluated in patients with symptomatic cardiac failure.
 
-// • Interstitial lung disease and pneumonitis:
-//   - Lapatinib has been associated with pulmonary toxicity including interstitial lung disease and pneumonitis.
 
-// • Hepatotoxicity:
-//   - Hepatotoxicity has occurred and may rarely be fatal.
 
-// • Diarrhoea:
-//   - Severe diarrhoea has been reported during treatment.
-// `,
-// },
+
+
+
 
 {
   id: 24,
@@ -5366,260 +4476,117 @@ No overall differences in safety or effectiveness were observed between these el
 Other reported clinical experience has not identified differences in responses between the elderly and younger patients, but greater sensitivity of some older individuals cannot be ruled out.
 `,
 },
-// {
-//   id: 42,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "zimitib",
-//   name: "Zimitib",
-//   subtitle: "Imatinib Capsules",
-//   type: "Capsule",
-//   imageClass:"zimitib-img",
 
-//   image: "/new_product_page/Zimitib-100.png",
 
-//   images: [
-//     "/new_product_page/Zimitib-100.png",
-//     // "/new_product_page/Zimitib-400.png",
-//   ],
 
-//   strength: "100 mg",
-//   packSize: "1 x 10",
-//   drugClass: "Protein-Tyrosine Kinase Inhibitor",
 
-//   dosage: `
-// The prescribed dose should be administered orally, with a meal and a large glass of water.
 
-// Doses of 400 mg or 600 mg should be administered once daily, whereas a dose of 800 mg should be administered as 400 mg twice a day.
 
-// Treatment may be continued as long as there is no evidence of progressive disease or unacceptable toxicity.
 
-// Adult Patients with Ph+ CML CP, AP and BC
 
-// The recommended dose of Zimitib is 400 mg/day for adult patients in chronic phase CML and 600 mg/day for adult patients in accelerated phase or blast crisis.
 
-// In CML, a dose increase from 400 mg to 600 mg in adult patients with chronic phase disease, or from 600 mg to 800 mg (given as 400 mg twice daily) in adult patients in accelerated phase or blast crisis may be considered in the absence of severe adverse drug reaction and severe non-leukemia related neutropenia or thrombocytopenia in the following circumstances:
 
-// • Disease progression (at any time)
-// • Failure to achieve a satisfactory hematologic response after at least 3 months of treatment
-// • Failure to achieve a cytogenetic response after 6-12 months of treatment
-// • Loss of a previously achieved hematologic or cytogenetic response
 
-// Pediatric Patients with Ph+ CML
 
-// The recommended dose of Zimitib for children with newly diagnosed Ph+ CML is 340 mg/m²/day (not to exceed 600 mg).
 
-// The recommended Zimitib dose is 260 mg/m²/day for children with Ph+ chronic phase CML recurrent after stem cell transplant or who are resistant to interferon-alpha therapy.
 
-// Ph+ ALL
 
-// The recommended dose of Zimitib is 600 mg/day for adult patients with relapsed/refractory Ph+ ALL.
 
-// Kit+ Gastrointestinal Stromal Tumors (GIST)
 
-// The recommended dose of Zimitib is 400 mg/day or 600 mg/day for adult patients with unresectable and/or metastatic malignant GIST.
 
-// Dose Modification Guidelines
 
-// Concomitant Strong CYP3A4 Inducers
 
-// The use of concomitant strong CYP3A4 inducers should be avoided (e.g. dexamethasone, phenytoin, carbamazepine, rifampin, rifabutin, rifapentine, phenobarbital).
 
-// If patients must be co-administered a strong CYP3A4 inducer, based on pharmacokinetic studies, the dosage of Zimitib should be increased by at least 50%, and clinical response should be carefully monitored.
 
-// Hepatic Impairment
 
-// Patients with mild and moderate hepatic impairment do not require a dose adjustment and should be treated as per the recommended dose.
 
-// A 25% decrease in the recommended dose should be used for patients with severe hepatic impairment.
 
-// Dose Adjustment for Hepatotoxicity and Non-Hematologic Adverse Reactions
 
-// If elevations in bilirubin >3× institutional upper limit of normal (IULN) or in liver transaminases >5× IULN occur, Zimitib should be withheld until bilirubin levels have returned to <1.5 × IULN and transaminase levels to <2.5 × IULN.
 
-// In adults treatment with Zimitib may then be continued at a reduced daily dose:
 
-// • 400 mg to 300 mg
-// • 600 mg to 400 mg
-// • 800 mg to 600 mg
 
-// In children, daily doses can be reduced under the same circumstances from 340 mg/m²/day to 260 mg/m²/day or from 260 mg/m²/day to 200 mg/m²/day, respectively.
 
-// If a severe non-hematologic adverse reaction develops (such as severe hepatotoxicity or severe fluid retention), Zimitib should be withheld until the event has resolved.
 
-// Thereafter, treatment can be resumed as appropriate depending on the initial severity of the event.
-// `,
 
-//   storage: "Store at 25°C to 30°C.",
 
-//   description: `
-// Imatinib is a small molecule kinase inhibitor.
 
-// Gleevec film-coated tablets contain imatinib mesylate equivalent to 100 mg or 400 mg of imatinib free base.
 
-// Imatinib mesylate is designated chemically as:
 
-// 4-[(4-Methyl-1-piperazinyl)methyl]-N-[4-methyl-3-[[4-(3-pyridinyl)-2-pyrimidinyl]amino]-phenyl]benzamide methanesulfonate.
 
-// Imatinib mesylate is a white to off-white to brownish or yellowish tinged crystalline powder.
 
-// Its molecular formula is C₂₉H₃₁N₇O • CH₄SO₃ and its molecular weight is 589.7.
 
-// Imatinib mesylate is soluble in aqueous buffers less than or equal to pH 5.5 but is very slightly soluble to insoluble in neutral/alkaline aqueous buffers.
 
-// In non-aqueous solvents, the drug substance is freely soluble to very slightly soluble in dimethyl sulfoxide, methanol, and ethanol, but is insoluble in n-octanol, acetone, and acetonitrile.
-// `,
 
-//   indication: `
-// Patients with Philadelphia chromosome positive chronic myeloid leukemia in blast crisis, accelerated phase, or in chronic phase after failure of interferon-alpha therapy.
 
-// Pediatric patients with Ph+ CML in chronic phase.
 
-// Adult patients with relapsed or refractory Philadelphia chromosome positive acute lymphoblastic leukemia (Ph+ Acute Lymphoblastic Leukemia (ALL)).
 
-// Patients with Kit (CD117) positive unresectable and/or metastatic malignant gastrointestinal stromal tumors (Kit+ Gastrointestinal Stromal Tumors (GIST)).
-// `,
 
-//   clinicalEfficacy: `
-// With imatinib, the management of chronic myeloid leukemia (CML) has changed considerably.
 
-// Tyrosine kinase inhibitors (TKIs) are the mainstay of CML treatment; however, the high financial burden of TKIs can be problematic for both the patients and health care systems.
 
-// After the emergence of generics, reimbursement policies of many countries have changed, and generics offered an alternative treatment option for CML patients.
 
-// There are many papers published on the use of generics in CML patients with conflicting results regarding both efficacy and safety.
 
-// In this paper, we systematically reviewed the current literature on generic imatinib use in CML, and 36 papers were evaluated.
 
-// Both in vitro and in vivo studies of generic imatinib showed comparable results with branded imatinib in terms of bioequivalence and bioavailability.
 
-// In most studies, generics were comparable with the original molecule in terms of efficacy and safety, both in newly diagnosed patients and after switching from Gleevec.
 
-// Some generic studies showed contradictory findings regarding efficacy and toxicity, and these differences can be attributed to some factors including the use of different generics in different countries.
 
-// Both in hypothetical models and in real life, introduction of generic imatinib caused significant reduction in health care costs.
 
-// In conclusion, generics are not inferior to original imatinib in terms of efficacy with an acceptable toxicity profile.
 
-// Notwithstanding the generally favorable efficacy and safety of generics worldwide to date, we most probably still need more time to draw firmer conclusions on the longer-term outcomes of generics.
-// `,
 
-//   safetyInformation: `
-// • Read the label carefully before use.
 
-// • Keep out of the reach of children.
-// `,
 
-//   specialPrecautions: `
-// Pregnancy
 
-// Pregnancy Category D:
 
-// Women of childbearing potential should be advised to avoid becoming pregnant while taking Zimitib.
 
-// If the patient becomes pregnant while taking this drug, the patient should be apprised of the potential hazard to the fetus.
 
-// Fluid Retention and Edema
 
-// Zimitib is often associated with edema and occasionally serious fluid retention.
 
-// Patients should be weighed and monitored regularly for signs and symptoms of fluid retention.
 
-// An unexpected rapid weight gain should be carefully investigated and appropriate treatment provided.
 
-// The probability of edema was increased with higher Zimitib dose and age >65 years in the CML patients.
 
-// Severe superficial edema and severe fluid retention (pleural effusion, pulmonary edema and ascites) were reported in 1% - 6% of patients taking Zimitib for GIST.
 
-// Hematologic Toxicity
 
-// Treatment with Zimitib is associated with anemia, neutropenia, and thrombocytopenia.
 
-// Complete blood counts should be performed weekly for the first month, biweekly for the second month, and periodically thereafter as clinically indicated (for example, every 2-3 months).
 
-// In CML, the occurrence of these cytopenias is dependent on the stage of disease and is more frequent in patients with accelerated phase CML or blast crisis than in patients with chronic phase CML.
 
-// In pediatric CML patients the most frequent toxicities observed were grade 3 or 4 cytopenias including neutropenia, thrombocytopenia and anemia.
 
-// These generally occur within the first several months of therapy.
 
-// Severe Congestive Heart Failure and Left Ventricular Dysfunction
 
-// Severe congestive heart failure and left ventricular dysfunction have occasionally been reported in patients taking Zimitib.
 
-// Most of the patients with reported cardiac reactions have had other co-morbidities and risk factors, including advanced age and previous medical history of cardiac disease.
 
-// Hepatotoxicity
 
-// Hepatotoxicity, occasionally severe, may occur with Zimitib.
 
-// Liver function (transaminases, bilirubin, and alkaline phosphatase) should be monitored before initiation of treatment and monthly or as clinically indicated.
 
-// Laboratory abnormalities should be managed with interruption and/or dose reduction of the treatment with Zimitib.
 
-// Haemorrhage
 
-// In CML patients 1.8% of patients had Grade 3/4 hemorrhage.
 
-// In GIST patients, seven patients (5%), four in the 600 mg dose group and three in the 400 mg dose group, had a total of eight reactions of CTC Grade 3/4 gastrointestinal (GI) bleeds (3 patients), intra-tumoral bleeds (3 patients) or both (1 patient).
 
-// Gastrointestinal tumor sites may have been the source of GI bleeds.
 
-// Gastrointestinal Disorders
 
-// Zimitib is sometimes associated with GI irritation.
 
-// Zimitib should be taken with food and a large glass of water to minimize this problem.
 
-// There have been rare reports, including fatalities, of gastrointestinal perforation.
 
-// In patients with hypereosinophilic syndrome and cardiac involvement, cases of cardiogenic shock/left ventricular dysfunction have been associated with the initiation of imatinib therapy.
 
-// The condition was reported to be reversible with the administration of systemic steroids, circulatory support measures and temporary withholding imatinib.
 
-// Dermatologic Toxicities
 
-// Bullous dermatologic reactions, including erythema multiforme and Stevens–Johnson syndrome, have been reported with use of Zimitib.
 
-// Carcinogenesis, Mutagenesis, Impairment of Fertility
 
-// Human studies on male patients receiving Zimitib and its effect on male fertility and spermatogenesis have not been performed.
 
-// Male patients concerned about their fertility on Zimitib treatment should consult with their physician.
 
-// Nursing Mothers
 
-// It is not known whether imatinib mesylate or its metabolites are excreted in human milk.
 
-// A decision should be made whether to discontinue nursing or to discontinue the drug, taking into account the importance of the drug to the mother.
 
-// Pediatric Use
 
-// Zimitib safety and efficacy have been demonstrated in children with newly diagnosed Ph+ chronic phase CML and in children with Ph+ chronic phase CML with recurrence after stem-cell transplantation or resistance to interferon-alpha therapy.
 
-// Geriatric Use
 
-// No difference was observed in the safety profile in patients older than 65 years as compared to younger patients, with the exception of a higher frequency of edema.
 
-// The efficacy of Zimitib was similar in older and younger patients.
 
-// Hepatic Impairment
 
-// The effect of hepatic impairment on the pharmacokinetics of both imatinib and its major metabolite, CGP74588, was assessed in 84 cancer patients with varying degrees of hepatic impairment at Imatinib doses ranging from 100-800 mg.
 
-// Exposure to both imatinib and CGP74588 was comparable between each of the mildly and moderately hepatically-impaired groups and the normal group.
 
-// Patients with severe hepatic impairment tend to have higher exposure to both imatinib and its metabolite than patients with normal hepatic function.
 
-// At steady state the mean Cmax/dose and AUC/dose for imatinib increased by about 63% and 45% respectively, in patients with severe hepatic impairment compared to patients with normal hepatic function.
 
-// The mean Cmax/dose and AUC/dose for CGP74588 increased by about 56% and 55%, respectively, in patients with severe hepatic impairment compared to patients with normal hepatic function.
 
-// Renal Impairment
 
-// No clinical studies were conducted with Zimitib in patients with decreased renal function (studies excluded patients with serum creatinine concentration more than 2 times the upper limit of the normal range).
-// `,
-// },
 {
   id: 43,
   category: "oncoace",
@@ -7039,145 +6006,55 @@ while receiving this medicine.
 If Dactinomycin accidentally seeps out of the vein into which it is injected, it may severely damage some tissues and cause scarring.
 `,
 },
-// {
-//   id: 51,
-//   category: "oncoace",
-//   categoryName: "OncoAce",
-//   slug: "exemestaz",
-//   name: "Exemestaz",
-//   subtitle: "Exemestane Tab 25 mg",
-//   type: "Tablet",
 
-//   image: "/products1/EMYTAXEL-300 1.png",
 
-//   images: [
-//     "/products1/EMYTAXEL-300 1.png",
-//     "/products1/EMYTAXEL-300 2.png",
-//     "/products1/EMYTAXEL-300 3.png",
-//   ],
 
-//   strength: "25 mg",
-//   packSize: "1 x 30",
-//   drugClass: "Antineoplastics, Aromatase Inhibitors",
 
-//   dosage: `
-// Recommended Dose
 
-// The recommended dose of Exemestaz in early and advanced breast cancer is one 25 mg tablet once daily after a meal.
 
-// • Adjuvant treatment of postmenopausal women with oestrogen-receptor-positive early breast cancer who have received two to three years of tamoxifen and are switched to AROMASIN for completion of a total of five consecutive years of adjuvant hormonal therapy.
 
-// • The treatment of advanced breast cancer in postmenopausal women whose disease has progressed following tamoxifen therapy.
 
-// Dose Modifications
 
-// Concomitant use of strong CYP 3A4 inducers decreases exemestane exposure.
 
-// For patients receiving AROMASIN with a strong CYP 3A4 inducer such as rifampicin or phenytoin, the recommended dose of AROMASIN is 50 mg once daily after a meal.
-// `,
 
-//   storage: "Store at 25°C to 30°C.",
 
-//   description: `
-// Tablets for oral administration contain 25 mg of exemestane, an irreversible, steroidal aromatase inactivator.
 
-// Exemestane is chemically described as 6-methylenandrosta-1,4-diene-3,17-dione.
 
-// Its molecular formula is C₂₀H₂₄O.
 
-// The active ingredient is a white to slightly yellow crystalline powder with a molecular weight of 296.41.
 
-// Exemestane is freely soluble in N,N-dimethylformamide, soluble in methanol, and practically insoluble in water.
 
-// Each tablet contains the following inactive ingredients:
 
-// • Mannitol
-// • Crospovidone
-// • Polysorbate 80
-// • Hypromellose
-// • Colloidal silicon dioxide
-// • Microcrystalline cellulose
-// • Sodium starch glycolate
-// • Magnesium stearate
-// • Simethicone
-// • Polyethylene glycol 6000
-// • Sucrose
-// • Magnesium carbonate
-// • Titanium dioxide
-// • Methylparaben
-// • Polyvinyl alcohol
-// `,
 
-//   indication: `
-// Adjuvant Treatment Of Early Breast Cancer In Postmenopausal Women
 
-// Exemestane is indicated for the adjuvant treatment of postmenopausal women with oestrogen receptor-positive early breast cancer who have received two to three years of tamoxifen therapy and are switched to Exemestane for completion of a total of five consecutive years of adjuvant hormonal therapy.
 
-// Advanced Breast Cancer In Postmenopausal Women
 
-// Exemestane is indicated for the treatment of advanced breast cancer in postmenopausal women whose disease has progressed following anti-estrogen therapy, including tamoxifen.
 
-// Usage
 
-// Exemestane is used to treat early and advanced breast cancer in women who have already stopped menstruating (postmenopausal).
 
-// It is usually used in women who have already received a cancer medication called tamoxifen.
 
-// Many breast cancer tumors grow in response to estrogen.
 
-// Exemestane is also sometimes used to treat a certain type of breast cancer in women who have not yet experienced menopause.
 
-// Talk to your doctor about the risks of using this medication for your condition.
-// `,
 
-//   clinicalEfficacy: `
-// Aromatase inhibitors and inactivators are playing an increasing greater role in breast cancer treatment.
 
-// Exemestane, a highly specific, steroidal aromatase inactivator, is the newest agent in this class.
 
-// The drug is highly specific, and inhibits the in vivo conversion of androstenedione to oestrone (aromatization) by a mean of 97.9%.
 
-// Exemestane has shown good efficacy and tolerability in multiple clinical trials among patients with metastatic breast cancer who have failed one or more previous hormonal therapies.
 
-// Exemestane 25 mg/day slows disease progression and reduces tumour-related signs and symptoms and the drug exhibits a partial lack of cross-resistance with the non-steroidal aromatase inhibitors.
 
-// Response rates to exemestane of 14% to 29% were observed, including patients with visceral metastases, who have historically proved difficult to treat.
 
-// In a large phase III trial, exemestane was found to be superior to megestrol acetate with respect to time to progression and overall survival.
 
-// In addition, exemestane is currently under investigation as first-line therapy in metastatic disease and in sequence with tamoxifen in the adjuvant setting.
 
-// Adverse events include low-grade hot flashes, nausea, and fatigue—mostly of mild to moderate intensity—and treatment-related discontinuations are rare.
 
-// In conclusion, exemestane represents a novel and interesting drug for the treatment of advanced breast cancer, with exciting prospects for use in adjuvant therapy and, potentially, breast cancer prevention.
-// `,
 
-//   safetyInformation: `
-// • Read the label carefully before use.
 
-// • Keep out of the reach of children.
-// `,
 
-//   specialPrecautions: `
-// Reductions In Bone Mineral Density (BMD)
 
-// Reductions in bone mineral density (BMD) over time are seen with exemestane use.
 
-// During adjuvant treatment with exemestane, women with osteoporosis or at risk of osteoporosis should have their bone mineral density formally assessed by bone densitometry at the commencement of treatment.
 
-// Monitor patients for bone mineral density loss and treat as appropriate.
 
-// Vitamin D Assessment
 
-// Routine assessment of 25-hydroxy vitamin D levels prior to the start of aromatase inhibitor treatment should be performed due to the high prevalence of vitamin D deficiency in women with early breast cancer (EBC).
 
-// Women with vitamin D deficiency should receive supplementation with vitamin D.
 
-// Administration With Estrogen-Containing Agent
 
-// Should not be coadministered with systemic estrogen-containing agents, as these could interfere with its pharmacologic action.
-// `,
-// },
 {
   id: 52,
   category: "oncoace",

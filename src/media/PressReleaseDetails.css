@@ -115,17 +115,6 @@
   box-shadow: 0 15px 30px rgba(0, 138, 154, 0.25);
 }
 
-.pressdetail-secondary-btn {
-  border: 1px solid #d9e3ee;
-  background: #fff;
-  color: #071d49;
-}
-
-.pressdetail-secondary-btn:hover {
-  transform: translateY(-4px);
-  border-color: #008a9a;
-}
-
 /* ===================================
    HERO IMAGE
 =================================== */
@@ -410,21 +399,6 @@ font-weight: 800;
   justify-content: center;
 }
 
-.pressdetailpage-back-btn {
-  background: #219b90;
-  color: #fff;
-  width: fit-content;
-
-  padding: 14px 32px;
-  border-radius: 12px;
-
-  transition: all 0.3s ease;
-}
-
-.pressdetailpage-back-btn:hover {
-  transform: translateY(-4px);
-}
-
 /* Mobile */
 
 
@@ -434,12 +408,6 @@ font-weight: 800;
 @media (max-width: 768px) {
   .pressdetailpage-bottom-btn {
     padding: 0 16px;
-  }
-
-  .pressdetailpage-back-btn {
-    width: 100%;
-    max-width: 320px;
-    text-align: center;
   }
 }
 
@@ -629,11 +597,6 @@ font-weight: 800;
 
   .pressdetailpage-bottom-btn {
     padding: 0 15px;
-  }
-
-  .pressdetailpage-back-btn {
-    width: 100%;
-    max-width: 320px;
   }
 }
 

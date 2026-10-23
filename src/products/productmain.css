@@ -23,11 +23,6 @@
 
 /* Keep ProductMain banner spacing */
 
-.products-main-page .cr-hero-block-compact {
-  max-width: none !important;
-  margin: 0 0 42px !important;
-}
-
 /* ==================================================
    HEADING AND CATEGORY FILTER
 ================================================== */
@@ -253,11 +248,6 @@
 @media (max-width: 600px) {
   .products-main-page {
     padding-bottom: 50px;
-  }
-
-  .products-main-page
-    .cr-hero-block-compact {
-    margin-bottom: 32px !important;
   }
 
   .product-main-filter-section,

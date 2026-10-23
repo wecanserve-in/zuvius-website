@@ -151,31 +151,9 @@
   justify-content: center;
 }
 
-.cr-form-left-panel {
-  width: 100%;
-  max-width: 1050px;
-  padding: 0;
-
-  flex: none;
-
-  text-align: center;
-  box-sizing: border-box;
-}
-
 .cr-form-heading-zone {
   width: 100%;
   margin: 0 auto 34px;
-  text-align: center;
-}
-
-.cr-form-instruction {
-  max-width: 650px;
-  margin: 14px auto 0;
-
-  color: #273142 !important;
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  line-height: 1.65 !important;
   text-align: center;
 }
 
@@ -269,12 +247,6 @@
 }
 
 /* Remove previous image */
-
-.cr-form-right-panel,
-.cr-form-image-frame-wrapper,
-.cr-form-photo-compact {
-  display: none !important;
-}
 
 /* ==========================================================================
    GET IN TOUCH
@@ -604,108 +576,9 @@
    OPTIONAL HOURS BADGE
    ========================================================================== */
 
-.cr-floating-hours-badge {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-
-  padding: 12px 18px;
-
-  display: flex;
-  align-items: center;
-  gap: 12px;
-
-  background-color: #ffffff;
-  border-radius: 10px;
-
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.cr-badge-clock-icon {
-  font-size: 1.4rem;
-}
-
-.cr-badge-hours-text h4 {
-  margin: 0 0 2px;
-
-  color: #061943;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.cr-badge-hours-text p {
-  margin: 0;
-
-  color: #000000;
-  font-size: 14px;
-  font-weight: 600;
-}
-
 /* ==========================================================================
    FAQ SUPPORT
    ========================================================================== */
-
-.cr-bottom-faq-full-width-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.cr-faq-full-wrapper {
-  width: 100%;
-}
-
-.cr-faq-section-heading {
-  margin: 0 0 24px;
-
-  color: #061943;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.35;
-}
-
-.cr-faq-node {
-  padding: 16px 0;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.cr-faq-node details summary {
-  list-style: none;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  color: #061943;
-  font-size: 18px;
-  font-weight: 700;
-
-  cursor: pointer;
-  outline: none;
-}
-
-.cr-faq-node details summary::-webkit-details-marker {
-  display: none;
-}
-
-.cr-accordion-arrow {
-  color: #008a9a;
-  font-size: 0.7rem;
-  transition: transform 0.2s ease;
-}
-
-.cr-faq-node details[open] summary .cr-accordion-arrow {
-  transform: rotate(180deg);
-}
-
-.cr-faq-node details p {
-  margin: 12px 0 0;
-
-  color: #000000;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.7;
-}
 
 /* ==========================================================================
    LARGE TABLET
@@ -754,10 +627,6 @@
 
   .cr-form-input-row {
     column-gap: 20px;
-  }
-
-  .cr-faq-full-wrapper {
-    text-align: left;
   }
 }
 
@@ -856,13 +725,6 @@
 
     font-size: 11px;
     letter-spacing: 0.27em;
-  }
-
-  .cr-form-instruction {
-    margin-top: 12px;
-
-    font-size: 14px !important;
-    line-height: 1.65 !important;
   }
 
   .cr-interactive-message-form input,

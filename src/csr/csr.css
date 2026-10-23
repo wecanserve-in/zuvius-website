@@ -47,44 +47,6 @@
    CSR MAIN INTRO
 ================================================== */
 
-.csr-main-intro {
-  width: calc(100% - 48px);
-  max-width: 1100px;
-  margin: 0 auto !important;
-  padding: 62px 0 28px !important;
-  text-align: center;
-}
-
-.csr-main-intro-content {
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.csr-main-intro-content > span {
-  display: inline-block;
-  margin-bottom: 12px;
-  color: #008a9a;
-  font-size: 13px;
-  font-weight: 900;
-  letter-spacing: 1.4px;
-}
-
-.csr-main-intro-content h2 {
-  margin: 0;
-  color: #061943;
-  font-size: 38px;
-  font-weight: 900;
-  line-height: 1.25;
-}
-
-.csr-main-intro-content p {
-  margin: 0;
-  color: #263653;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 1.75;
-}
-
 /* ==================================================
    CSR INITIATIVE GRID
 ================================================== */
@@ -127,10 +89,6 @@
   transform: translateY(-6px);
   border-color: rgba(0, 138, 154, 0.4);
   box-shadow: 0 18px 38px rgba(6, 25, 67, 0.15);
-}
-
-.csr-initiative-card-overlay {
-  display: none;
 }
 
 .csr-initiative-card-image-wrapper {
@@ -858,19 +816,6 @@
     padding: 0 10px;
   }
 
-  .csr-main-intro {
-    width: calc(100% - 28px);
-    padding-top: 45px !important;
-  }
-
-  .csr-main-intro-content h2 {
-    font-size: 30px;
-  }
-
-  .csr-main-intro-content p {
-    font-size: 16px;
-  }
-
   .csr-initiative-section {
     width: calc(100% - 28px);
     margin: 0 auto 60px;
@@ -967,9 +912,6 @@
 }
 
 @media (max-width: 480px) {
-  .csr-main-intro-content h2 {
-    font-size: 27px;
-  }
 
   .csr-initiative-section .csr-section-main-title {
     font-size: 27px;
@@ -1011,32 +953,6 @@
 
 .csr-campaign-location-page {
   background: #ffffff;
-}
-
-.csr-location-intro-section {
-  width: calc(100% - 48px);
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 44px 0 18px;
-}
-
-.csr-location-intro-content {
-  max-width: 850px;
-}
-
-.csr-location-intro-content h2 {
-  margin: 12px 0 14px;
-  color: #153d48;
-  font-size: clamp(30px, 4vw, 48px);
-  line-height: 1.15;
-  font-weight: 800;
-}
-
-.csr-location-intro-content p {
-  margin: 0;
-  color: #61727a;
-  font-size: 17px;
-  line-height: 1.85;
 }
 
 .csr-location-events-section {
@@ -1267,10 +1183,6 @@
   .csr-location-intro-section,
   .csr-location-events-section {
     width: calc(100% - 30px);
-  }
-
-  .csr-location-intro-section {
-    padding-top: 30px;
   }
 
   .csr-location-events-section {

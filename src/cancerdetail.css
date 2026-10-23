@@ -108,119 +108,10 @@
 }
 
 /* OVERVIEW */
-.overview-grid { 
-  display: grid; 
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 26px; 
-  margin-top: 32px; 
-}
-
-.overview-card { 
-  background: #ffffff; 
-  border: 1px solid #e7eef5; 
-  border-radius: 12px; 
-  overflow: hidden; 
-  height: 450px; 
-  display: flex; 
-  flex-direction: column; 
-  box-shadow: 0 12px 30px rgba(10, 48, 98, 0.08); 
-  transition: 0.3s ease;
-}
-
-.overview-card:hover { 
-  transform: translateY(-4px); 
-}
-
-.card-top { 
-  height: 50%; 
-  width: 100%; 
-  background: #edf6ff; 
-  overflow: hidden; 
-}
-
-.card-top img { 
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
-}
-
-.card-bottom { 
-  height: 50%; 
-  padding: 30px 22px 24px; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-}
-
-.card-bottom h3 { 
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.35;
-  color: #061943;
-  margin: 0 0 12px; 
-}
-
-.card-bottom p { 
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.7;
-  color: #000000;
-  margin: 0;
-}
 
 /* Other Sections */
-.diagnosis-grid, 
-.symptoms-grid, 
-.treatment-options-grid { 
-  display: grid; 
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 26px; 
-}
-
-.diagnosis-card { 
-  display: flex; 
-  background: #ffffff; 
-  border: 1px solid #e7eef5; 
-  border-radius: 12px; 
-  overflow: hidden; 
-}
-
-.diagnosis-card-img-holder { 
-  width: 110px; 
-  flex-shrink: 0; 
-}
-
-.diagnosis-card-img-holder img { 
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
-}
-
-.diagnosis-card-text { 
-  padding: 20px; 
-}
 
 /* Staging Nodes */
-.stage-node { 
-  background: #fffdf9; 
-  border: 1px solid #ffe8cc; 
-  padding: 20px; 
-  border-radius: 12px; 
-  margin-top: 15px; 
-}
-
-.stage-badge { 
-  width: 40px; 
-  height: 40px; 
-  border-radius: 50%; 
-  background: #fdf2f4; 
-  color: #d93853; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-  margin-bottom: 15px; 
-  font-weight: 800; 
-}
 
 /* Utilities */
 .section-heading,
@@ -245,139 +136,8 @@
   line-height: 1.7; 
 }
 
-.type-card-horizontal {
-  display: flex;
-  width: 100%;
-  height: 250px;
-  background: #ffffff;
-  border: 1px solid #e7eef5;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(10, 48, 98, 0.06);
-  margin-bottom: 20px; 
-  transition: transform 0.3s ease;
-
-}
-
-.type-card-horizontal:hover {
-  transform: translateY(-4px);
-}
-
-.type-img {
-  flex: 0 0 40%;
-  background: #ffffff;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.type-img img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-}
-.type-text { 
-  flex: 1; 
-  padding: 1px;
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-}
-
-.type-text h4, 
-.stage-card-small h4 {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.35;
-  color: #061943;
-  margin: 0 0 12px; 
-}
-
-.type-text p, 
-.stage-card-small p {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.7;
-  color: #000000;
-  margin: 0;
-}
-
-.stages-note {
-  background: #f8fbff;
-  border: 1px solid #dce8f5;
-  border-left: 4px solid #008a9a;
-  padding: 20px;
-  border-radius: 12px;
-  margin-top: 15px;
-}
-
-.stages-note p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.8;
-  color: #444;
-}
-
 
 /* Compact Stages Grid */
-.stages-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-top: 25px;
-}
-
-.stage-card-small {
-  width: 100%;
-  background: #ffffff;
-  border: 1px solid #e7eef5;
-  border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0 4px 12px rgba(10, 48, 98, 0.05);
-
-  display: flex;
-  align-items: center; /* changed from flex-start */
-  gap: 24px;
-
-  text-align: left;
-}
-
-.stage-content {
-  flex: 1;
-}
-
-.stage-content h4 {
-  font-size: 28px;
-  font-weight: 700;
-  color: #061943;
-  margin: 0 0 12px;
-}
-
-.stage-content p {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.7;
-  color: #000;
-  margin: 0;
-}
-.stage-badge-small {
-  width: 55px;
-  height: 55px;
-  flex-shrink: 0;
-
-  border-radius: 50%;
-  background: #fdf2f4;
-  color: #a7263b;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-weight: 900;
-  font-size: 1.2rem;
-
-  margin: 0;
-}
 
 /* Risk */
 .risk-container { 
@@ -509,15 +269,6 @@
   padding-top: 42px;
 }
 
-.symptoms-intro {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #000000;
-  font-weight: 600;
-  max-width: 760px;
-  margin-bottom: 32px;
-}
-
 .symptoms-card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -574,15 +325,6 @@
 /* Treatment */
 .treatment-pane {
   padding-top: 42px;
-}
-
-.treatment-intro {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #000000;
-  font-weight: 600;
-  max-width: 780px;
-  margin-bottom: 32px;
 }
 
 .treatment-card-grid {
@@ -684,30 +426,9 @@
   transition: all 0.3s ease;
   font-family: inherit;
 }
-  .overview-grid,
-  .diagnosis-grid,
-  .symptoms-grid,
-  .treatment-options-grid,
-  .stages-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .type-card-horizontal {
-    height: auto;
-    flex-direction: column;
-  }
-
-  .type-img {
-    flex: none;
-    width: 100%;
-    height: 220px;
-  }
 }
 
 @media (max-width: 768px) {
-  .overview-grid {
-    grid-template-columns: 1fr;
-  }
 
   .toc-hero {
     flex-direction: column;
@@ -729,18 +450,6 @@
   .symptoms-heading,
   .treatment-heading {
     font-size: 30px;
-  }
-
-  .overview-card {
-    height: auto;
-  }
-
-  .card-top {
-    height: 220px;
-  }
-
-  .card-bottom {
-    height: auto;
   }
 }
 
@@ -811,14 +520,6 @@
   .hero-description,
   .paragraph-text {
     font-size: 16px;
-  }
-
-  .overview-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .stages-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .risk-column {
@@ -914,19 +615,6 @@
     gap: 20px;
   }
 
-  .overview-card {
-    height: auto;
-  }
-
-  .card-top {
-    height: 210px;
-  }
-
-  .card-bottom {
-    height: auto;
-    padding: 24px 20px;
-  }
-
   .card-bottom h3,
   .risk-row h4,
   .diagnosis-clean-text h3,
@@ -942,18 +630,6 @@
   .treatment-card-text p {
     font-size: 15.5px;
     line-height: 1.65;
-  }
-
-  .stage-card-small {
-    padding: 22px 16px;
-  }
-
-  .stage-card-small h4 {
-    font-size: 21px;
-  }
-
-  .stage-card-small p {
-    font-size: 15.5px;
   }
 
   .risk-container {
@@ -995,14 +671,6 @@
     width: 100%;
     height: 190px;
   }
-
-  .types-note {
-    padding: 18px;
-  }
-
-  .types-note p {
-    font-size: 14.5px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1039,14 +707,6 @@
     font-size: 23px;
   }
 
-  .card-bottom {
-    padding: 22px 18px;
-  }
-
-  .card-bottom h3 {
-    font-size: 19px;
-  }
-
   .card-bottom p,
   .paragraph-text,
   .risk-row p,
@@ -1074,12 +734,6 @@
   .symptoms-card-img,
   .treatment-card-img {
     height: 170px;
-  }
-
-  .stage-badge-small {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
   }
 }
 
@@ -1435,167 +1089,6 @@
    CANCER DETAIL — RELATED BLOGS SECTION
 ================================================== */
 
-.cancer-related-blogs-section {
-  width: 100%;
-  margin-top: 60px;
-  padding-top: 45px;
-  border-top: 1px solid #e7eef5;
-}
-
-.cancer-related-header {
-  margin-bottom: 30px;
-}
-
-.cancer-related-badge {
-  display: inline-block;
-  margin-bottom: 8px;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1.5px;
-  color: #008a9a;
-  text-transform: uppercase;
-}
-
-.cancer-related-header h2 {
-  margin: 0;
-  font-size: 28px;
-  font-weight: 900;
-  line-height: 1.25;
-  color: #061943;
-}
-
-.cancer-related-header h2 span {
-  color: #008a9a;
-}
-
-.cancer-related-blogs-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-}
-
-.cancer-related-blog-card {
-  display: flex;
-  flex-direction: column;
-  background: #ffffff;
-  border: 1px solid #d9e2ef;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(6, 25, 67, 0.04);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.cancer-related-blog-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 138, 154, 0.1);
-  border-color: #09c3c1;
-}
-
-.cancer-related-blog-image {
-  width: 100%;
-  height: 190px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #09c3c1;
-  overflow: hidden;
-}
-
-.cancer-related-blog-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transform: scale(1.8);
-  transition: transform 0.3s ease;
-}
-
-.cancer-related-blog-card:hover .cancer-related-blog-image img {
-  transform: scale(1.9);
-}
-
-.cancer-related-blog-body {
-  padding: 22px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.cancer-related-blog-meta {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 10px;
-  font-size: 11px;
-  font-weight: 700;
-  color: #6c7480;
-}
-
-.cancer-related-blog-cat {
-  color: #008a9a;
-  font-weight: 800;
-}
-
-.cancer-related-blog-body h3 {
-  margin: 0 0 10px;
-  font-size: 18px;
-  line-height: 1.35;
-  font-weight: 800;
-}
-
-.cancer-related-blog-body h3 a {
-  color: #061943;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.cancer-related-blog-body h3 a:hover {
-  color: #008a9a;
-}
-
-.cancer-related-blog-body p {
-  margin: 0 0 18px;
-  font-size: 13.5px;
-  line-height: 1.65;
-  color: #555e6c;
-}
-
-.cancer-related-blog-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: auto;
-  font-size: 13px;
-  font-weight: 800;
-  color: #008a9a;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.cancer-related-blog-cta span {
-  font-size: 16px;
-  transition: transform 0.2s ease;
-}
-
-.cancer-related-blog-cta:hover {
-  color: #061943;
-}
-
-.cancer-related-blog-cta:hover span {
-  transform: translateX(4px);
-}
-
-@media (max-width: 900px) {
-  .cancer-related-blogs-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 600px) {
-  .cancer-related-blogs-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* ==================================================
    CANCER DETAIL — COMPACT ARTICLES TAB
 ================================================== */
@@ -1694,26 +1187,6 @@
   overflow: hidden;
 }
 
-.cancer-article-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  white-space: nowrap;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background: #008a9a;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 12.5px;
-  font-weight: 800;
-  transition: background 0.2s ease;
-  flex-shrink: 0;
-}
-
-.cancer-article-btn:hover {
-  background: #061943;
-}
-
 @media (max-width: 768px) {
   .cancer-article-item {
     grid-template-columns: 100px 1fr;
@@ -1732,13 +1205,6 @@
 
   .cancer-article-info p {
     -webkit-line-clamp: 1;
-  }
-
-  .cancer-article-btn {
-    grid-column: 1 / -1;
-    justify-content: center;
-    width: 100%;
-    margin-top: 4px;
   }
 }
 

@@ -520,7 +520,7 @@ description:
       {
         title: "Chemotherapy",
         text: "Chemotherapy may be used when cancer has spread beyond the appendix or when cancer cells may remain after surgery.",
-        img: "/treatment/appendix-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "HIPEC",
@@ -700,7 +700,7 @@ description:
       {
         title: "Surgery",
         text: "Surgery is usually the first step and may remove as much tumor as safely possible while also providing tissue for testing.",
-        img: "/treatment/astro-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Radiation Therapy",
@@ -1032,12 +1032,12 @@ description:
     {
       title: "Chemotherapy",
       text: "Chemotherapy sends medicines through the body to destroy cancer cells and may be used after surgery or to shrink tumors.",
-      img: "/treatment/bile-chemo.png"
+      img: "/treatment/astro-chemo.png"
     },
     {
       title: "Radiation Therapy",
       text: "Radiation therapy uses X-rays to kill cancer cells or shrink tumors and may be used with chemotherapy.",
-      img: "/treatment/bile-radiation.png"
+      img: "/treatment/ewing-radiation.png"
     },
     {
       title: "Targeted Therapy",
@@ -1203,12 +1203,12 @@ description:
       {
         title: "MRI Scan",
         text: "MRI uses magnets, radio waves and a computer to create detailed bladder images.",
-        img: "/diagnosis/bladder-mri.png"
+        img: "/diagnosis/gist-pet.png"
       },
       {
         title: "CT Scan",
         text: "CT scan may check whether cancer has spread outside the bladder.",
-        img: "/diagnosis/bladder-ct.png"
+        img: "/diagnosis/eso-ct.png"
       },
       {
         title: "Chest X-ray or Bone Scan",
@@ -1233,7 +1233,7 @@ description:
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses cancer-killing medicines. Intravesical therapy may deliver medicine directly into the bladder.",
-        img: "/treatment/bladder-chemo.png"
+        img: "/treatment/ewing-chemo.png"
       },
       {
         title: "Immunotherapy",
@@ -1355,7 +1355,7 @@ description:
       {
         title: "Fatigue",
         text: "Fatigue may occur in people with bone cancer.",
-        img: "/symptoms/bone-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       },
       {
         title: "Fever",
@@ -1425,7 +1425,7 @@ description:
       {
         title: "Chemotherapy",
         text: "Chemotherapy may treat the main cancer, metastases and cancer cells that may be circulating in the body.",
-        img: "/treatment/bone-chemo.png"
+        img: "/treatment/ewing-chemo.png"
       }
     ],
   }
@@ -1764,7 +1764,7 @@ symptoms: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy is the main treatment and is often intensive and started right away.",
-        img: "/treatment/burkitt-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Immunotherapy",
@@ -1774,7 +1774,7 @@ symptoms: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy is sometimes used with chemotherapy, mostly for adults.",
-        img: "/treatment/gist-radiation.png"
+        img: "/treatment/adrenal-radiation.png"
       },
       {
         title: "Stem Cell Transplant",
@@ -1953,7 +1953,7 @@ symptoms: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses energy beams to kill cancer cells on the cervix.",
-        img: "/treatment/eye-radiation.png"
+        img: "/treatment/anal-radiation.png"
       },
       {
         title: "External Beam Radiation",
@@ -2222,7 +2222,7 @@ symptoms: {
       {
         title: "Fatigue",
         text: "Fatigue may occur with chondrosarcoma.",
-        img: "/symptoms/chondro-fatigue.png"
+        img: "/symptoms/gist-fati.png"
       },
       {
         title: "Swollen Spot or Lump",
@@ -2430,7 +2430,7 @@ typesStages: {
       {
         title: "Tiredness or Weakness",
         text: "Feeling tired or weak may happen with colon cancer.",
-        img: "/symptoms/colon-week.png"
+        img: "/symptoms/burkitt-tiredness.png"
       },
     ]
   },
@@ -2604,17 +2604,17 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery is commonly used to remove the cancer when possible.",
-        img: "/treatment/duodenal-surgery.png"
+        img: "/treatment/gist-surgey.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy may be used depending on how advanced the cancer is.",
-        img: "/treatment/duodenal-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be included in treatment plans for some patients.",
-        img: "/treatment/duodenal-radiation.png"
+        img: "/treatment/ewing-radiation.png"
       }
     ],
 
@@ -2736,7 +2736,7 @@ typesStages: {
       {
         title: "Endometrial Biopsy",
         text: "A small sample of tissue from the uterine lining may be removed and checked for cancer cells.",
-        img: "/diagnosis/endo-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "Hysteroscopy",
@@ -2756,12 +2756,12 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery is the most common treatment for endometrial cancer.",
-        img: "/treatment/endo-sur.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses targeted energy to destroy cancer cells.",
-        img: "/treatment/endo-radiation.png"
+        img: "/treatment/ewing-radiation.png"
       },
       {
         title: "Chemotherapy",
@@ -2776,12 +2776,12 @@ typesStages: {
       {
         title: "Immunotherapy",
         text: "Immunotherapy helps the immune system recognize and attack cancer cells.",
-        img: "/treatment/endo-immuno.png"
+        img: "/treatment/anal-immuno.png"
       },
       {
         title: "Targeted Therapy",
         text: "Targeted therapy uses medicines that target specific cancer cell features.",
-        img: "/treatment/endo-tar.png"
+        img: "/treatment/brain-targeted.png"
       }
     ],
   }
@@ -2893,7 +2893,7 @@ typesStages: {
       {
         title: "Vomiting or Coughing Blood",
         text: "Vomiting blood or coughing up blood may occur.",
-        img: "/symptoms/eso-vomit.png"
+        img: "/symptoms/duodenal-vomiting.png"
       }
     ]
   },
@@ -2903,7 +2903,7 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider may do a physical exam and ask about symptoms and medical history.",
-        img: "/diagnosis/eso-phy.png"
+        img: "/diagnosis/colon-symptoms.png"
       },
       {
         title: "Barium Swallow",
@@ -2923,7 +2923,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "A biopsy removes a small piece of tissue to check for cancer. It may be done during upper endoscopy.",
-        img: "/diagnosis/eso-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "Tumor Grade",
@@ -3029,22 +3029,22 @@ typesStages: {
       {
         title: "Bone Pain",
         text: "Bone pain may come and go and may become worse at night.",
-        img: "/symptoms/ewing-pain.png"
+        img: "/symptoms/bone-pain.png"
       },
       {
         title: "Swelling Around Bone",
         text: "Swelling may develop in the tissue around bones and may hurt when touched.",
-        img: "/symptoms/ewing-swell.png"
+        img: "/symptoms/bone-movement.png"
       },
       {
         title: "Lumps Near Skin",
         text: "Lumps near the surface of the skin may feel warm and soft to the touch.",
-        img: "/symptoms/ewing-lump.png"
+        img: "/symptoms/bone-lump.png"
       },
       {
         title: "Fever",
         text: "A fever that does not go away may occur.",
-        img: "/symptoms/ewing-fever.png"
+        img: "/symptoms/bone-fever.png"
       },
       {
         title: "Broken Bones",
@@ -3054,7 +3054,7 @@ typesStages: {
       {
         title: "Fatigue and Weight Loss",
         text: "Fatigue and unexpected weight loss may occur if Ewing sarcoma spreads.",
-        img: "/symptoms/ewing-fati.png"
+        img: "/symptoms/gist-fati.png"
       }
     ]
   },
@@ -3064,17 +3064,17 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider may do a physical exam, feel for lumps or bumps and ask about symptoms.",
-        img: "/diagnosis/ewing-phy.png"
+        img: "/diagnosis/colon-symptoms.png"
       },
       {
         title: "Imaging Tests",
         text: "Imaging tests help providers look closely at bones and soft tissues. Tests may include CT, MRI, PET and bone scans.",
-        img: "/diagnosis/ewing-img.png"
+        img: "/diagnosis/astro-ct.png"
       },
       {
         title: "Biopsy",
         text: "A biopsy collects tissue samples for a pathologist to examine under a microscope.",
-        img: "/diagnosis/ewing-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "Needle Biopsy",
@@ -3089,7 +3089,7 @@ typesStages: {
       {
         title: "Blood Tests",
         text: "Blood tests may show if cancer is spreading and may include CBC with differential, CMP and LDH.",
-        img: "/diagnosis/ewing-blood.png"
+        img: "/diagnosis/adrenal-blood.png"
       }
     ]
   },
@@ -3104,7 +3104,7 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery may be done after chemotherapy to remove the tumor.",
-        img: "/treatment/ewing-surgery.png"
+        img: "/treatment/gist-surgey.png"
       },
       {
         title: "Radiation Therapy",
@@ -3253,7 +3253,7 @@ typesStages: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may destroy cancer cells while preserving as much vision as possible.",
-        img: "/treatment/eye-radiation.png"
+        img: "/treatment/anal-radiation.png"
       },
       {
         title: "Laser Therapy",
@@ -3263,7 +3263,7 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery may remove the tumor or affected eye structures depending on the situation.",
-        img: "/treatment/eye-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Enucleation",
@@ -3273,7 +3273,7 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy may be used for some eye cancers, especially certain childhood cancers.",
-        img: "/treatment/eye-chemo.png"
+        img: "/treatment/endo-chemo.png"
       }
     ],
   }
@@ -3397,7 +3397,7 @@ typesStages: {
       {
         title: "Abnormal Bleeding",
         text: "Abnormal periods or bleeding after menopause may occur.",
-        img: "/symptoms/fallopian-bleeding.png"
+        img: "/symptoms/cervical-bleeding.png"
       },
       {
         title: "Vaginal Discharge",
@@ -3437,7 +3437,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "A biopsy removes a tissue sample from a tumor for testing, sometimes with ultrasound or CT scan guidance.",
-        img: "/diagnosis/fallopian-biopsy.png"
+        img: "/diagnosis/bile-biopsy.png"
       }
     ]
   },
@@ -3462,7 +3462,7 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy may shrink the tumor before surgery or destroy cancer cells that remain after surgery.",
-        img: "/treatment/fallopian-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "HIPEC",
@@ -3570,27 +3570,27 @@ typesStages: {
       {
         title: "Abdominal Pain",
         text: "Pain in the upper right side of the abdomen may occur.",
-        img: "/symptoms/gallbladder-pain.png"
+        img: "/symptoms/fallopian-pelvic.png"
       },
       {
         title: "Abdominal Bloating",
         text: "Some people develop abdominal swelling or bloating.",
-        img: "/symptoms/gallbladder-bloating.png"
+        img: "/symptoms/colon-bloating.png"
       },
       {
         title: "Nausea and Vomiting",
         text: "Nausea and vomiting may occur as the disease progresses.",
-        img: "/symptoms/galbladder-vomit.png"
+        img: "/symptoms/duodenal-vomiting.png"
       },
       {
         title: "Jaundice",
         text: "Yellowing of the skin and eyes may develop when bile ducts become blocked.",
-        img: "/symptoms/gallbladder-jaundice.png"
+        img: "/symptoms/bile-jaundice.png"
       },
       {
         title: "Fever",
         text: "Some people may develop a fever.",
-        img: "/symptoms/gallblader-fever.png"
+        img: "/symptoms/bile-fever.png"
       },
       {
         title: "Lumps in the Abdomen",
@@ -3605,12 +3605,12 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A provider may perform a physical examination and review symptoms and medical history.",
-        img: "/diagnosis/gallbladder-exam.png"
+        img: "/diagnosis/colon-symptoms.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests may help evaluate liver function and look for signs of disease.",
-        img: "/diagnosis/gallbladder-blood.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "Ultrasound",
@@ -3620,17 +3620,17 @@ typesStages: {
       {
         title: "CT Scan",
         text: "CT scans may help determine the size and spread of the cancer.",
-        img: "/diagnosis/gllbladder-ct.png"
+        img: "/diagnosis/anal-scan.png"
       },
       {
         title: "MRI",
         text: "MRI may provide detailed images of the gallbladder and nearby structures.",
-        img: "/diagnosis/gallbladder-mri.png"
+        img: "/diagnosis/gist-pet.png"
       },
       {
         title: "Biopsy",
         text: "A tissue sample may be examined to confirm the diagnosis.",
-        img: "/diagnosis/galbladder-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       }
     ]
   },
@@ -3640,7 +3640,7 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery may remove the gallbladder and surrounding tissue when the cancer can be removed completely.",
-        img: "/treatment/gallbladder-surgery.png"
+        img: "/treatment/anal-surgery.png"
       },
       {
         title: "Cholecystectomy",
@@ -3650,12 +3650,12 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy may be used before or after surgery, or when surgery is not possible.",
-        img: "/treatment/gallbladder-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be used to destroy cancer cells or help control symptoms.",
-        img: "/treatment/galbladder-radiation.png"
+        img: "/treatment/ewing-radiation.png"
       }
     ],
   }
@@ -3725,7 +3725,7 @@ typesStages: {
       {
         title: "Belly Pain",
         text: "Abdominal or belly pain may occur when a GIST causes symptoms.",
-        img: "/symptoms/gist-bellypain.png"
+        img: "/symptoms/adrenal-abdominal.png"
       },
       {
         title: "Blood in Stool",
@@ -3740,17 +3740,17 @@ typesStages: {
       {
         title: "Unintentional Weight Loss",
         text: "Losing weight without trying may be a symptom.",
-        img: "/symptoms/gist-weight.png"
+        img: "/symptoms/chondro-weight.png"
       },
       {
         title: "Loss of Appetite",
         text: "Some people may experience reduced appetite.",
-        img: "/symptoms/gist-app.png"
+        img: "/symptoms/fallopian-appetite.png"
       },
       {
         title: "Vomiting Blood",
         text: "Vomiting blood may occur when a GIST causes bleeding in the digestive tract.",
-        img: "/symptoms/gist-vomit.png"
+        img: "/symptoms/duodenal-vomiting.png"
       }
     ]
   },
@@ -3760,22 +3760,22 @@ typesStages: {
       {
         title: "Symptom Review",
         text: "A healthcare provider may ask about symptoms and how long they have been present.",
-        img: "/diagnosis/gist-sym.png"
+        img: "/diagnosis/adrenal-history.png"
       },
       {
         title: "Physical Examination",
         text: "A physical exam may be done as part of the diagnostic process.",
-        img: "/diagnosis/gist-exam.png"
+        img: "/diagnosis/adrenal-exam.png"
       },
       {
         title: "Upper Endoscopy",
         text: "Upper endoscopy may help providers examine the digestive tract.",
-        img: "/diagnosis/gist-endo.png"
+        img: "/diagnosis/bile-endo.png"
       },
       {
         title: "CT Scan",
         text: "A CT scan may be used to evaluate the tumor.",
-        img: "/diagnosis/gist-ct.png"
+        img: "/diagnosis/astro-ct.png"
       },
       {
         title: "PET Scan",
@@ -3785,7 +3785,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "A biopsy collects tissue samples that a pathologist examines under a microscope.",
-        img: "/diagnosis/gist-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       }
     ]
   },
@@ -3800,7 +3800,7 @@ typesStages: {
       {
         title: "Targeted Therapy",
         text: "Targeted therapy may be used along with surgery to treat GIST.",
-        img: "/treatment/endo-tar.png"
+        img: "/treatment/brain-targeted.png"
       },
       {
         title: "Pre-Surgery Targeted Therapy",
@@ -3876,22 +3876,22 @@ typesStages: {
       {
         title: "Pelvic, Belly or Groin Pain",
         text: "Discomfort or pain may occur in the pelvis, belly or groin depending on the tumor location.",
-        img: "/symptoms/germ-pain.png"
+        img: "/symptoms/adrenal-abdominal.png"
       },
       {
         title: "Swollen Belly",
         text: "A swollen belly may develop when the tumor grows or creates pressure.",
-        img: "/symptoms/germ-belly.png"
+        img: "/symptoms/adrenal-fullness.png"
       },
       {
         title: "Irregular Vaginal Bleeding",
         text: "Irregular vaginal bleeding may occur with some germ cell tumors.",
-        img: "/symptoms/germ-bleeding.png"
+        img: "/symptoms/cervical-bleeding.png"
       },
       {
         title: "Nausea",
         text: "Nausea may occur as one of the possible symptoms.",
-        img: "/symptoms/germ-vomit.png"
+        img: "/symptoms/duodenal-vomiting.png"
       },
       
     ]
@@ -3902,17 +3902,17 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider may perform a physical exam and ask about symptoms.",
-        img: "/diagnosis/gist-exam.png"
+        img: "/diagnosis/adrenal-exam.png"
       },
       {
         title: "Blood Tests",
         text: "Blood tests may check enzymes, proteins or hormones, including hCG, AFP and LDH.",
-        img: "/diagnosis/gallbladder-blood.png"
+        img: "/diagnosis/adrenal-blood.png"
       },
       {
         title: "CT, MRI or Ultrasound",
         text: "These imaging tests show pictures inside the body and are often early steps in diagnosis.",
-        img: "/diagnosis/gist-ct.png"
+        img: "/diagnosis/astro-ct.png"
       },
       {
         title: "PET Scan",
@@ -3923,7 +3923,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "During a biopsy, tissue is removed from the tumor and sent to a lab for testing.",
-        img: "/diagnosis/gist-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       }
     ]
   },
@@ -3933,7 +3933,7 @@ typesStages: {
       {
         title: "Surgery",
         text: "Many germ cell tumors can be cured with surgery to remove the tumor or affected reproductive organ tissue.",
-        img: "/treatment/gallbladder-surgery.png"
+        img: "/treatment/anal-surgery.png"
       },
       {
         title: "Ovarian Surgery",
@@ -3948,12 +3948,12 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells or stop them from dividing.",
-        img: "/treatment/fallopian-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy X-rays to destroy cancer cells, and some germ cell tumors respond best to this treatment.",
-        img: "/treatment/galbladder-radiation.png"
+        img: "/treatment/ewing-radiation.png"
       }
     ],
 
@@ -4056,7 +4056,7 @@ typesStages: {
       {
         title: "Medical History",
         text: "A healthcare provider may ask when symptoms started, review medical history and ask about frequent infections.",
-        img: "/diagnosis/hcl-history.png"
+        img: "/diagnosis/adrenal-history.png"
       },
       
       {
@@ -4224,7 +4224,7 @@ typesStages: {
       {
         title: "Unexplained Weight Loss",
         text: "Losing 10% or more of total body weight over six months without trying is considered unexplained weight loss.",
-        img: "/symptoms/gist-weight.png"
+        img: "/symptoms/chondro-weight.png"
       },
       
       {
@@ -4562,7 +4562,7 @@ typesStages: {
       {
         title: "Fatigue",
         text: "Fatigue may occur with kidney cancer.",
-        img: "/symptoms/bone-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       },
       {
         title: "Recurring Fever",
@@ -4583,7 +4583,7 @@ typesStages: {
       {
         title: "Weight Loss",
         text: "Unexplained weight loss may occur.",
-        img: "/symptoms/gist-weight.png"
+        img: "/symptoms/chondro-weight.png"
       }
     ]
   },
@@ -4768,7 +4768,7 @@ typesStages: {
       {
         title: "Physical Examination",
         text: "A healthcare provider will ask about symptoms and medical history, then examine the throat and neck.",
-        img: "/diagnosis/gist-exam.png"
+        img: "/diagnosis/adrenal-exam.png"
       },
       {
         title: "Imaging Scans",
@@ -4901,7 +4901,7 @@ typesStages: {
       {
         title: "Fatigue",
         text: "People with leukemia often feel unusually tired or weak.",
-        img: "/symptoms/bone-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       },
       {
         title: "Frequent Infections",
@@ -5171,7 +5171,7 @@ typesStages: {
       {
         title: "Liver Transplantation",
         text: "A liver transplant removes the diseased liver and replaces it with a healthy donor liver in selected patients.",
-        img: "/treatment/astro-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       }
     ]
   }
@@ -5469,7 +5469,7 @@ typesStages: {
       {
         title: "Fatigue",
         text: "Persistent tiredness that doesn't improve with rest is common.",
-        img: "/symptoms/bone-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       },
       {
         title: "Itchy Skin",
@@ -6020,7 +6020,7 @@ typesStages: {
       {
         title: "Scrotal Swelling or Lump",
         text: "Mesothelioma involving the lining around the testicles may cause swelling, pain or a lump.",
-        img: "/symptoms/ewing-fati.png"
+        img: "/symptoms/gist-fati.png"
       }
     ]
   },
@@ -6070,7 +6070,7 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells throughout the body.",
-        img: "/treatment/appendix-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Immunotherapy",
@@ -6177,7 +6177,7 @@ typesStages: {
       {
         title: "Fatigue and Weakness",
         text: "Low red blood cell counts (anemia) can cause persistent tiredness and weakness.",
-        img: "/symptoms/bone-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       },
       
       
@@ -6431,7 +6431,7 @@ typesStages: {
       {
         title: "Chemoradiation",
         text: "Chemotherapy and radiation therapy may be combined to improve treatment effectiveness.",
-        img: "/treatment/appendix-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Targeted Therapy",
@@ -6730,7 +6730,7 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery removes part or all of the eye when necessary to prevent the cancer from spreading.",
-        img: "/treatment/astro-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Radiation Therapy",
@@ -6874,7 +6874,7 @@ typesStages: {
       {
         title: "Incisional Biopsy",
         text: "A small tissue sample is removed so it can be examined under a microscope to confirm cancer.",
-        img: "/diagnosis/endo-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "Laryngoscopy or Pharyngoscopy",
@@ -6904,7 +6904,7 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses anti-cancer medicines to kill cancer cells and may be combined with other treatments.",
-        img: "/treatment/appendix-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Targeted Therapy",
@@ -7388,7 +7388,7 @@ typesStages: {
       {
         title: "Fatigue",
         text: "Persistent tiredness or weakness may develop even with adequate rest.",
-        img: "/symptoms/chondro-fatigue.png"
+        img: "/symptoms/gist-fati.png"
       }
     ]
   },
@@ -7428,7 +7428,7 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy uses medicines to destroy cancer cells and is commonly used before or after surgery or for advanced disease.",
-        img: "/treatment/appendix-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Radiation Therapy",
@@ -7599,17 +7599,17 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery is the most common treatment and removes the tumor while preserving as much healthy tissue as possible whenever feasible.",
-        img: "/treatment/astro-surgery.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Circumcision",
         text: "If cancer is limited to the foreskin, circumcision may be enough to remove the disease.",
-        img: "/treatment/endo-sur.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to destroy cancer cells or shrink tumors before surgery.",
-        img: "/treatment/bile-radiation.png"
+        img: "/treatment/ewing-radiation.png"
       },
       {
         title: "Chemotherapy",
@@ -7740,7 +7740,7 @@ typesStages: {
       {
         title: "Painful Ejaculation or Erectile Dysfunction",
         text: "Pain during ejaculation or difficulty getting or maintaining an erection may occur.",
-        img: "/symptoms/bone-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       },
       {
         title: "Pain in the Back, Hip or Chest",
@@ -7765,7 +7765,7 @@ typesStages: {
       {
         title: "MRI or Ultrasound",
         text: "MRI or transrectal ultrasound helps identify suspicious areas within the prostate.",
-        img: "/diagnosis/bladder-mri.png"
+        img: "/diagnosis/gist-pet.png"
       },
       {
         title: "Biopsy",
@@ -8091,7 +8091,7 @@ typesStages: {
       {
         title: "Abdominal or Flank Lump",
         text: "A firm lump may develop in the abdomen, lower back or side.",
-        img: "/symptoms/germ-pain.png"
+        img: "/symptoms/adrenal-abdominal.png"
       },
       {
         title: "Fever or Night Sweats",
@@ -8106,7 +8106,7 @@ typesStages: {
       {
         title: "Fatigue",
         text: "Persistent tiredness or weakness may develop, sometimes due to anemia.",
-        img: "/symptoms/bone-fatigue.png"
+        img: "/symptoms/bile-fatigue.png"
       }
     ]
   },
@@ -8126,7 +8126,7 @@ typesStages: {
       {
         title: "MRI",
         text: "MRI may be used when CT scans are unsuitable or when additional detail is needed.",
-        img: "/diagnosis/bladder-mri.png"
+        img: "/diagnosis/gist-pet.png"
       },
       {
         title: "Biopsy",
@@ -8293,7 +8293,7 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy destroys cancer cells and may shrink tumors before other treatments.",
-        img: "/treatment/eye-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Laser Therapy",
@@ -8308,7 +8308,7 @@ typesStages: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy may be used to precisely target and destroy cancer cells within the eye.",
-        img: "/treatment/eye-radiation.png"
+        img: "/treatment/anal-radiation.png"
       },
       {
         title: "Thermotherapy",
@@ -8417,7 +8417,7 @@ typesStages: {
       {
         title: "CT Scan or MRI",
         text: "Imaging tests help determine the tumor's size, location and relationship to nearby structures.",
-        img: "/diagnosis/gist-ct.png"
+        img: "/diagnosis/astro-ct.png"
       },
       {
         title: "PET Scan or Bone Scan",
@@ -8427,7 +8427,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "A tissue sample is examined under a microscope to confirm the diagnosis.",
-        img: "/diagnosis/gist-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
      
     ]
@@ -8591,12 +8591,12 @@ typesStages: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy is commonly used after surgery or when surgery isn't possible to destroy remaining cancer cells.",
-        img: "/treatment/gist-radiation.png"
+        img: "/treatment/adrenal-radiation.png"
       },
       {
         title: "Chemotherapy",
         text: "Chemotherapy may be recommended if the cancer has spread beyond the head and neck.",
-        img: "/treatment/gallbladder-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Targeted Therapy",
@@ -8606,7 +8606,7 @@ typesStages: {
       {
         title: "Immunotherapy",
         text: "Immunotherapy may be considered for selected advanced cases as part of specialized treatment or clinical trials.",
-        img: "/treatment/endo-immuno.png"
+        img: "/treatment/anal-immuno.png"
       }
     ]
   }
@@ -8715,7 +8715,7 @@ typesStages: {
       {
         title: "Unexplained Weight Loss",
         text: "Losing weight without trying is one of the most common symptoms of stomach cancer.",
-        img: "/symptoms/gist-weight.png"
+        img: "/symptoms/chondro-weight.png"
       },
       {
         title: "Stomach Pain",
@@ -8725,12 +8725,12 @@ typesStages: {
       {
         title: "Loss of Appetite",
         text: "Many people notice reduced appetite or feel full after eating only a small amount.",
-        img: "/symptoms/gist-app.png"
+        img: "/symptoms/fallopian-appetite.png"
       },
       {
         title: "Nausea and Vomiting",
         text: "Persistent nausea or vomiting can occur as the disease progresses.",
-        img: "/symptoms/gist-vomit.png"
+        img: "/symptoms/duodenal-vomiting.png"
       },
       {
         title: "Heartburn or Indigestion",
@@ -8920,7 +8920,7 @@ typesStages: {
       {
         title: "Unexplained Weight Loss",
         text: "Some people experience unintended weight loss or general fatigue as the disease progresses.",
-        img: "/symptoms/gist-weight.png"
+        img: "/symptoms/chondro-weight.png"
       }
     ]
   },
@@ -8965,7 +8965,7 @@ typesStages: {
       {
         title: "Radiation Therapy",
         text: "Radiation therapy uses high-energy beams to destroy cancer cells before or after surgery.",
-        img: "/treatment/bile-radiation.png"
+        img: "/treatment/ewing-radiation.png"
       },
       {
         title: "Chemotherapy",
@@ -9114,7 +9114,7 @@ typesStages: {
       {
         title: "Skin Biopsy",
         text: "Removing a sample of skin tissue confirms the diagnosis and identifies the type of skin cancer.",
-        img: "/diagnosis/eso-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "CT, MRI or PET Scan",
@@ -9238,7 +9238,7 @@ typesStages: {
       {
         title: "Unexplained Weight Loss",
         text: "Losing weight without trying may be an early warning sign.",
-        img: "/symptoms/gist-weight.png"
+        img: "/symptoms/chondro-weight.png"
       },
       {
         title: "Nausea and Vomiting",
@@ -9288,7 +9288,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "A biopsy confirms the diagnosis and identifies the specific type of small intestine cancer.",
-        img: "/diagnosis/eso-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       }
     ]
   },
@@ -9420,7 +9420,7 @@ typesStages: {
       {
         title: "Unexplained Weight Loss",
         text: "Weight loss without trying may occur in advanced stages of the disease.",
-        img: "/symptoms/gist-weight.png"
+        img: "/symptoms/chondro-weight.png"
       }
     ]
   },
@@ -9719,7 +9719,7 @@ typesStages: {
       {
         title: "Persistent Cough",
         text: "A cough that does not improve may occur when the tumor affects nearby structures.",
-        img: "/symptoms/germ-vomit.png"
+        img: "/symptoms/duodenal-vomiting.png"
       },
       {
         title: "Shortness of Breath",
@@ -9760,7 +9760,7 @@ typesStages: {
       {
         title: "MRI",
         text: "MRI may be used to evaluate tumor invasion into surrounding tissues.",
-        img: "/diagnosis/bladder-mri.png"
+        img: "/diagnosis/gist-pet.png"
       },
       {
         title: "Biopsy",
@@ -9912,7 +9912,7 @@ typesStages: {
       {
         title: "Fine-Needle Biopsy",
         text: "A fine-needle aspiration biopsy removes thyroid cells to determine whether cancer is present.",
-        img: "/diagnosis/fallopian-biopsy.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "Imaging Tests",
@@ -10239,7 +10239,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "A tissue sample is removed and examined under a microscope to confirm the diagnosis.",
-        img: "/diagnosis/gist-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "CT, MRI or PET Scan",
@@ -10578,7 +10578,7 @@ typesStages: {
       {
         title: "Endometrial Biopsy",
         text: "A small sample of the uterine lining is removed and examined to confirm cancer.",
-        img: "/diagnosis/gist-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       },
       {
         title: "Transvaginal Ultrasound",
@@ -10603,7 +10603,7 @@ typesStages: {
       {
         title: "Surgery",
         text: "A hysterectomy, often with removal of the ovaries, fallopian tubes and nearby lymph nodes, is the primary treatment.",
-        img: "/treatment/endo-sur.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       {
         title: "Radiation Therapy",
@@ -10789,7 +10789,7 @@ typesStages: {
       {
         title: "Surgery",
         text: "Surgery may remove the tumor or affected tissues, particularly in early-stage cancers.",
-        img: "/treatment/endo-sur.png"
+        img: "/treatment/adrenal-surgery.png"
       },
       
     ]
@@ -11039,7 +11039,7 @@ typesStages: {
       {
         title: "Night Sweats and Fever",
         text: "Some people experience unexplained fever, night sweats and weight loss.",
-        img: "/symptoms/ewing-fever.png"
+        img: "/symptoms/bone-fever.png"
       },
       
       {
@@ -11101,7 +11101,7 @@ typesStages: {
       {
         title: "Chemotherapy",
         text: "Chemotherapy drugs may be used alone or combined with immunotherapy to control the disease.",
-        img: "/treatment/burkitt-chemo.png"
+        img: "/treatment/endo-chemo.png"
       },
       {
         title: "Targeted Therapy",
@@ -11256,7 +11256,7 @@ typesStages: {
       {
         title: "Biopsy",
         text: "A biopsy may be performed in selected cases to confirm the diagnosis.",
-        img: "/diagnosis/eso-bio.png"
+        img: "/diagnosis/bile-biopsy.png"
       }
     ]
   },

@@ -181,19 +181,6 @@
    COLD STORAGE
 ================================================== */
 
-.product-detail-cold {
-  margin: 0 0 22px;
-
-  color: #000000;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.7;
-}
-
-.product-detail-cold strong {
-  color: #008a9a;
-}
-
 /* ==================================================
    ENQUIRE BUTTON
 ================================================== */
@@ -869,11 +856,6 @@ button.related-product-card,
 
   .product-detail-meta-card h4 {
     font-size: 14px;
-  }
-
-  .product-detail-cold {
-    margin-bottom: 16px;
-    font-size: 16px;
   }
 
   .product-enquire-btn {
@@ -1609,14 +1591,6 @@ button.related-product-card,
 
 .product-detail-thumbnails-bottom img[src*="Zutinib-50.png"] {
   transform: scale(1.1);
-}
-
-
-.product-detail-export-specs {
-  font-weight: 700;
-  margin: 0 0 8px 0;
-  font-size: 14px;
-  color: #222;
 }
 
 .product-detail-meta-card {

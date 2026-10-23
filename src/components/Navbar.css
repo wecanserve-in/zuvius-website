@@ -54,18 +54,6 @@ body {
   color: #008a9a;
 }
 
-.nav-link-nonclick {
-  cursor: default;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-family: inherit;
-  margin: 0;
-  box-shadow: none;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
 .nav-item-dropdown {
   position: relative;
 }
