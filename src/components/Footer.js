@@ -19,6 +19,8 @@ const Footer = () => {
         <Link to="/" className="footer-logo">
   <img loading="lazy"
     src="/zuvius-logo.jpeg"
+            width="468"
+            height="158"
     alt="Zuvius Lifesciences"
   />
 </Link>

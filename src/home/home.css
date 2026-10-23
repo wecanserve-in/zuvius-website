@@ -4299,3 +4299,15 @@
   color: #6b6b6b;
   letter-spacing: 0.02em;
 }
+
+/* Images now carry width/height (so the browser reserves their space).
+   Keep their displayed size controlled by the rules above, as before. */
+.accreditation-section .acc-item img,
+.acc-item img {
+  width: auto;
+  height: auto;
+}
+
+.accreditation-q-card .quality-image {
+  height: auto;
+}

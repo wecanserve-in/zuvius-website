@@ -64,6 +64,8 @@ const Navbar = () => {
         <Link to="/" onClick={closeMobileMenu}>
           <img
             src="/zuvius-logo.jpeg"
+            width="468"
+            height="158"
             alt="Zuvius Lifesciences"
             className="logo-img"
           />

@@ -103,14 +103,11 @@ const recentLaunchProducts = [
 ];
 
 
-const Home = () => {
-  const navigate = useNavigate();
-
+// The "250+" counter and the typing text live in their own small components,
+// so each animation step updates only that text, not the whole homepage.
+const SkuCounter = () => {
   const [count, setCount] = useState(0);
 
-  const [phraseIndex, setPhraseIndex] = useState(0);
-  const [typedText, setTypedText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
   useEffect(() => {
     const finalCount = 250;
     const duration = 2500;
@@ -144,6 +141,14 @@ const Home = () => {
     return () =>
       cancelAnimationFrame(animationFrameId);
   }, []);
+
+  return <span className="leader-sku-number">{count}+</span>;
+};
+
+const TypingText = () => {
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [typedText, setTypedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
     const currentPhrase = phrases[phraseIndex];
@@ -179,6 +184,11 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, [typedText, isDeleting, phraseIndex]);
 
+  return <span className="changing-text">{typedText}</span>;
+};
+
+const Home = () => {
+  const navigate = useNavigate();
 
   const renderRecentProductCard = (product, uniqueKey, isDuplicate = false) => {
     return (
@@ -299,7 +309,7 @@ const Home = () => {
 
         <div className="leader-infographic-card">
           <div className="leader-sku-box">
-            <span className="leader-sku-number">{count}+</span>
+            <SkuCounter />
             <span className="leader-sku-label">SKUs</span>
            
           </div>
@@ -409,43 +419,57 @@ const Home = () => {
             <div className="accreditation-grid">
               <div className="acc-item">
                 <img loading="lazy"
-                  src="/Accredations/US_FDA.png"
+                  src="/Accredations/thumbs/US_FDA.png"
+                  width="199"
+                  height="200"
                   alt="US FDA"
                 />
               </div>
 
               <div className="acc-item">
                 <img loading="lazy"
-                  src="/Accredations/Anvisa.png"
+                  src="/Accredations/thumbs/Anvisa.png"
+                  width="216"
+                  height="200"
                   alt="ANVISA"
                 />
               </div>
 
               <div className="acc-item">
                 <img loading="lazy"
-                  src="/Accredations/EU-GMP.png"
+                  src="/Accredations/thumbs/EU-GMP.png"
+                  width="164"
+                  height="200"
                   alt="EU GMP"
                 />
               </div>
 
               <div className="acc-item">
-                <img loading="lazy" src="/Accredations/WHO.png" alt="WHO" />
+                <img loading="lazy" src="/Accredations/thumbs/WHO.png"
+                  width="187"
+                  height="200" alt="WHO" />
               </div>
 
               <div className="acc-item">
                 <img loading="lazy"
-                  src="/Accredations/Cofepris.png"
+                  src="/Accredations/thumbs/Cofepris.png"
+                  width="400"
+                  height="96"
                   alt="COFEPRIS"
                 />
               </div>
 
               <div className="acc-item">
-                <img loading="lazy" src="/Accredations/pics.png" alt="PIC/S" />
+                <img loading="lazy" src="/Accredations/thumbs/pics.png"
+                  width="315"
+                  height="200" alt="PIC/S" />
               </div>
 
               <div className="acc-item">
                 <img loading="lazy"
-                  src="/Accredations/invima.png"
+                  src="/Accredations/thumbs/invima.png"
+                  width="400"
+                  height="163"
                   alt="INVIMA"
                 />
               </div>
@@ -456,6 +480,8 @@ const Home = () => {
             <div className="accreditation-q-card">
               <img loading="lazy"
                 src="/Quality.png"
+                width="720"
+                height="674"
                 alt="Culture of Quality"
                 className="quality-image"
               />
@@ -464,9 +490,7 @@ const Home = () => {
                 <div className="fixed-text">Quality that</div>
 
                 <div className="changing-text-row">
-                  <span className="changing-text">
-                    {typedText}
-                  </span>
+                  <TypingText />
                   <span className="cursor">|</span>
                 </div>
               </div>

@@ -74,6 +74,9 @@ export default function CountryScroller() {
               <img
                 src={`/Country Logo/${country}.png`}
                 alt={country}
+                width="95"
+                height="65"
+                loading="lazy"
               />
             </div>
           </div>
