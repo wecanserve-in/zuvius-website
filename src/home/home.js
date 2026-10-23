@@ -249,27 +249,32 @@ const Home = () => {
 
       <section className="stats-section">
         <div className="stats-grid">
+          {/* Figures are plain text, not headings, so the page's heading outline stays meaningful. */}
           <div className="stat-card">
-            <h3>
-              <span>18+</span> Million
-            </h3>
+            <div className="stat-figure">
+              <span>20.6</span> Million
+            </div>
             <p>Cancer Cases Annually</p>
           </div>
 
           <div className="stat-card">
-            <h3>
+            <div className="stat-figure">
               <span>70%</span> Cases
-            </h3>
+            </div>
             <p>Detected Late</p>
           </div>
 
           <div className="stat-card">
-            <h3>
-              <span>9.6</span> Million
-            </h3>
+            <div className="stat-figure">
+              <span>9.8</span> Million
+            </div>
             <p>Annual Deaths</p>
           </div>
         </div>
+
+        <small className="stats-source">
+          Cases and deaths: GLOBOCAN 2024, International Agency for Research on Cancer (WHO)
+        </small>
       </section>
 
       {/* GLOBAL LEADER / SKU */}
@@ -553,7 +558,7 @@ and a relentless focus on patient well-being.
 
 
             <p>
-              Our oncology products are trusted in over
+              Our oncology products are trusted in
               51+ countries across 6 continents,
               improving patient lives globally.
             </p>

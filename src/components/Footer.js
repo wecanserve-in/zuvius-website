@@ -39,6 +39,12 @@ const Footer = () => {
             <p>
               India
             </p>
+            <p className="footer-contact-line">
+              <a href="tel:+918657000206">+91 865 700 0206</a>
+            </p>
+            <p className="footer-contact-line">
+              <a href="mailto:info@zuviuslifesciences.in">info@zuviuslifesciences.in</a>
+            </p>
           </div>
         </div>
 
@@ -87,11 +93,11 @@ const Footer = () => {
 
           <ul>
             <li>
-              <Link to="/products">OncoAce</Link>
+              <Link to="/products/oncoace">OncoAce</Link>
             </li>
 
             <li>
-              <Link to="/products">Nutrazeutica</Link>
+              <Link to="/products/nutrazeutica">Nutrazeutica</Link>
             </li>
           </ul>
         </div>

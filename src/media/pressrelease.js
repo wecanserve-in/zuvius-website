@@ -1,6 +1,7 @@
 import React from "react";
 import "./newsroom.css";
 import { pressItems } from "./mediaData";
+import { pressSlug } from "../seo/seoConfig";
 import PageBanner from "../components/PageBanner";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -59,7 +60,7 @@ const PressRelease = () => {
 
                 <h3>
                   {/* A real link so search engines can reach each press release. */}
-                  <Link to={`/press-release/${item.id}`} className="media-card-title-link">
+                  <Link to={`/press-release/${pressSlug(item)}`} className="media-card-title-link">
                     {item.title}
                   </Link>
                 </h3>
@@ -72,7 +73,7 @@ const PressRelease = () => {
                 <button
                   type="button"
                   className="read-article-btn"
-                  onClick={() => navigate(`/press-release/${item.id}`)}
+                  onClick={() => navigate(`/press-release/${pressSlug(item)}`)}
                 >
                   Read Article <span aria-hidden="true">→</span>
                 </button>

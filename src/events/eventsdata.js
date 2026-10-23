@@ -1,14 +1,14 @@
 export const eventsData = [
   {
     id: 1,
-    slug: "nex-brand-the-extraordinnaire",
+    slug: "nex-brand-the-extraordinaire",
     category: "exhibition",
 categoryLabel: "Exhibition",
-    title: "Nex Brand The Extraordinnaire",
+    title: "Nex Brand The Extraordinaire",
     cardSubtitle: "Recognition & Brand Excellence",
 
     description:
-      "At ITC Maratha, Mumbai on 30th January, 2018. NexBrand is a platform that identifies and facilitates brands. Zuvius Lifesciences received The Extraordinnaire award. The award was presented to the Zuvius team by Bollywood actress Vaani Kapoor.",
+      "At ITC Maratha, Mumbai on 30th January, 2018. NexBrand is a platform that identifies and facilitates brands. Zuvius Lifesciences received The Extraordinaire award. The award was presented to the Zuvius team by Bollywood actress Vaani Kapoor.",
 
     videoUrl:
       "https://www.youtube.com/embed/ld5OawFQN7U?si=jsHYThcGYaUJQJzA",

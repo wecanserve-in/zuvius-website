@@ -19,6 +19,7 @@ npm run build
 
 1. `scripts/generate-product-pages.js` makes a 1200×630 share image for every product (`build/products/<category>/<slug>/og-image.jpg`).
 2. `scripts/generate-seo-pages.js` writes a ready-made HTML file for every page, plus `build/sitemap.xml` and `build/404.html`. Each file has that page's own title, description, canonical link, share preview and structured data, so Google and WhatsApp/LinkedIn previews work without running JavaScript.
+3. `scripts/prerender.js` opens every page in headless Chrome and saves the finished page content into its HTML file, so search engines, link previews and visitors get the full text before any JavaScript runs. When the app loads, it builds itself in a hidden container and swaps in once the page is ready (`src/index.js`), so nothing flashes. Needs Google Chrome on the build machine (set `CHROME_PATH` if it isn't in the usual place); without Chrome the step is skipped with a warning.
 
 ## Where things live
 

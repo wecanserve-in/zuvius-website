@@ -26,7 +26,7 @@ const countries = [
   "Lebanon",
   "Madagascar",
   "Malawi",
-  "Mall",
+  "Mali",
   "Mauritania",
   "Mauritius",
   "Mexico",

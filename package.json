@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "node scripts/generate-product-pages.js && node scripts/generate-seo-pages.js",
+    "postbuild": "node scripts/generate-product-pages.js && node scripts/generate-seo-pages.js && node scripts/prerender.js",
     "optimize-images": "node scripts/optimize-images.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -41,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "puppeteer-core": "23.11.1"
   }
 }

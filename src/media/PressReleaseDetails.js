@@ -1,19 +1,25 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { pressItems } from "./mediaData";
 
 import "./PressReleaseDetails.css";
 import useSEO from "../seo/useSEO";
-import { pressSEO, NOT_FOUND_SEO } from "../seo/seoConfig";
+import { pressSEO, pressSlug, NOT_FOUND_SEO } from "../seo/seoConfig";
 
 const PressReleaseDetails = () => {
   const { id } = useParams();
 
-const item = pressItems.find(
-  (press) => press.id.toString() === id
-);
+// Find by readable address; old numbered addresses are still recognised.
+const item =
+  pressItems.find((press) => pressSlug(press) === id) ||
+  pressItems.find((press) => press.id.toString() === id);
+const isOldNumberedAddress = Boolean(item) && pressSlug(item) !== id;
 
   useSEO(item ? pressSEO(item) : NOT_FOUND_SEO);
+
+  if (isOldNumberedAddress) {
+    return <Navigate to={`/press-release/${pressSlug(item)}`} replace />;
+  }
 
 if (!item) {
     return (

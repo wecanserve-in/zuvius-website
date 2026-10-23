@@ -39,6 +39,45 @@ const ENQUIRY_CONFIG = {
   },
 };
 
+// Groups the free-text drug classes into families, so "Related Products"
+// shows medicines that work in a similar way (e.g. other kinase inhibitors).
+const DRUG_FAMILIES = [
+  ["parp", /parp/],
+  ["kinase", /kinase|tki|egfr|vegf|bcr-abl|multikinase|btk/],
+  ["anthracycline", /anthracycline/],
+  ["antimetabolite", /antimetabolite|purine|folic acid|demethyl/],
+  ["alkylating", /alkylating/],
+  ["platinum", /platinum/],
+  ["microtubule", /taxane|microtubule|vinca|plant alkaloid/],
+  ["hormone", /antiestrogen|aromatase|antiandrogen|gnrh|endocrine|progestin|hormone|somatostatin/],
+  ["proteasome", /proteasome/],
+  ["immune", /immunosuppress|immunomodulat/],
+  ["supportive", /antiemetic|hematopoietic|growth factor|antidote|rescue|bisphosphonate|calcium metabolism|antihemorrhagic|antifungal|corticosteroid|cholinergic|antidiarrh|stem cell/],
+  ["supplement", /dietary|supplement|amino acid|antioxidant|calcium supplement/],
+];
+
+const drugFamily = (item) => {
+  const text = String(item.drugClass || "").toLowerCase();
+  const match = DRUG_FAMILIES.find(([, pattern]) => pattern.test(text));
+  return match ? match[0] : null;
+};
+
+const getRelatedProducts = (product) => {
+  const family = drugFamily(product);
+  return products
+    .filter((item) => item.slug !== product.slug)
+    .map((item, index) => {
+      let score = 0;
+      if (family && drugFamily(item) === family) score += 10;
+      if (item.category === product.category) score += 2;
+      if (item.type && item.type === product.type) score += 1;
+      return { item, score, index };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || a.index - b.index)
+    .map(({ item }) => item);
+};
+
 const ProductDetail = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -160,11 +199,7 @@ const ProductDetail = () => {
       ? product.images
       : [product.image];
 
-  const relatedProducts = products.filter(
-    (item) =>
-      item.category === product.category &&
-      item.slug !== product.slug
-  );
+  const relatedProducts = getRelatedProducts(product);
 
   const scrollThumbnails = (direction) => {
     if (!thumbnailRef.current) return;

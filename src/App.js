@@ -38,6 +38,7 @@ import "./components/NotFound.css";
 import "./components/LiteYouTube.css";
 import ScrollToTop from "./components/ScrollToTop";
 import LanguageSwitcher from "./components/LanguageSwitcher";
+import WhatsAppButton from "./components/WhatsAppButton";
 import { STATIC_PAGES } from "./seo/seoConfig";
 import useSEO from "./seo/useSEO";
 
@@ -93,7 +94,7 @@ function App() {
         <LanguageSwitcher />
 
         <main>
-          <Suspense fallback={<div style={{ minHeight: "100vh" }} />}>
+          <Suspense fallback={<div data-route-loading style={{ minHeight: "100vh" }} />}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<ProductMain />} />
@@ -124,6 +125,8 @@ function App() {
         </main>
 
         <Footer />
+
+        <WhatsAppButton />
       </div>
     </Router>
   );

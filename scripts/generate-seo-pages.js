@@ -89,7 +89,7 @@ function buildPages() {
       ["Products", "/products"],
       [category ? category.name : product.categoryName, `/products/${product.category}`],
       [product.name, page.path],
-    ], { productImage: true });
+    ], { productImage: true, product });
   }
 
   const detail = (section, page, name, extra) =>
@@ -147,6 +147,33 @@ function isoDate(text) {
   return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
 }
 
+// Drug / supplement details for Google, taken from the product data.
+const DOSAGE_WORDS = /\b(lyophili[sz]ed|liposomal|pegylated|rtu|injections?|inj|tablets?|tabs?|capsules?|caps?|ip|bp|usp|powder|oral|solution|suspension|concentrate|infusion|pfs|pre-filled|syringe|combi|pack|implant|lar|for)\b/gi;
+function productData(product, url, imageUrl) {
+  const isSupplement = product.category === "nutrazeutica";
+  const ingredient = String(product.subtitle || "")
+    .replace(/\(.*?\)/g, " ")
+    .replace(DOSAGE_WORDS, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  const data = {
+    "@type": isSupplement ? "DietarySupplement" : "Drug",
+    name: product.name.trim(),
+    url,
+    image: imageUrl,
+    manufacturer: { "@id": ORGANIZATION["@id"] },
+  };
+  if (product.description) data.description = seo.summarize(product.description, 300);
+  if (!isSupplement) {
+    if (ingredient) data.activeIngredient = ingredient;
+    if (product.type) data.dosageForm = product.type;
+    if (product.strength) data.availableStrength = { "@type": "DrugStrength", description: String(product.strength) };
+    if (product.drugClass) data.drugClass = { "@type": "DrugClass", name: product.drugClass };
+    data.prescriptionStatus = "https://schema.org/PrescriptionOnly";
+  }
+  return data;
+}
+
 function structuredData(page, url, imageUrl) {
   const graph = [ORGANIZATION];
 
@@ -160,6 +187,10 @@ function structuredData(page, url, imageUrl) {
         item: seo.absoluteUrl(crumbPath),
       })),
     });
+  }
+
+  if (page.product) {
+    graph.push(productData(page.product, url, imageUrl));
   }
 
   if (page.article) {

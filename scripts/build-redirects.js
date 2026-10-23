@@ -22,6 +22,7 @@ const END = "# END old-site redirects";
 const { products } = loadModule("src/products/productdata.js");
 const cancers = loadModule("src/cancersData.js").default;
 const { pressItems } = loadModule("src/media/mediaData.js");
+const { pressSlug } = loadModule("src/seo/seoConfig.js");
 
 const productBySlug = new Map(products.map((p) => [p.slug, `/products/${p.category}/${p.slug}`]));
 const cancerSlugs = cancers.map((c) => c.slug);
@@ -75,7 +76,7 @@ function matchCancer(oldSlug) {
 
 function pressByWords(words) {
   const item = pressItems.find((p) => words.every((w) => p.title.toLowerCase().includes(w)));
-  return item ? `/press-release/${item.id}` : null;
+  return item ? `/press-release/${pressSlug(item)}` : null;
 }
 
 // ------------------------------------------------------------------
@@ -203,6 +204,13 @@ function main() {
     "  # Leftover demo-theme and junk pages: gone for good.",
   ];
   for (const p of [...gone].sort()) lines.push(`  RewriteRule ^${escapeRegex(p)}/?$ - [G,L,NC]`);
+  // Pages renamed on the new site itself.
+  const renamed = [
+    ...pressItems.map((item) => [`press-release/${item.id}`, `/press-release/${pressSlug(item)}`]),
+    ["events/nex-brand-the-extraordinnaire", "/events/nex-brand-the-extraordinaire"],
+  ];
+  lines.push("", "  # Pages renamed on the new site (old address → new address).");
+  for (const [from, to] of renamed) lines.push(`  RewriteRule ^${escapeRegex(from)}/?$ ${to} [R=301,L,NC]`);
   lines.push("", "  # Old pages → new pages (permanent).");
   for (const [p, to] of [...redirects].sort()) lines.push(`  RewriteRule ^${escapeRegex(p)}/?$ ${to} [R=301,L,NC]`);
   lines.push("</IfModule>", END);

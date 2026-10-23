@@ -136,7 +136,8 @@
   width: 50px;
 }
 
-.stat-card h3 {
+.stat-card h3,
+.stat-card .stat-figure {
   font-size: clamp(2rem, 2.25vw, 2.6rem);
   color: #787777;
   margin-bottom: 4px;
@@ -144,7 +145,8 @@
   letter-spacing: -0.04em;
 }
 
-.stat-card h3 span {
+.stat-card h3 span,
+.stat-card .stat-figure span {
   color: #d32f2f;
 }
 
@@ -759,7 +761,8 @@
     padding: 20px 10px;
   }
 
-  .stat-card h3 {
+  .stat-card h3,
+.stat-card .stat-figure {
     font-size: 2.15rem;
   }
 }
@@ -1145,7 +1148,8 @@
     padding: 20px 10px !important;
   }
 
-  .stat-card h3 {
+  .stat-card h3,
+.stat-card .stat-figure {
     font-size: 2rem !important;
   }
 
@@ -4277,4 +4281,21 @@
 
 .home-recent-product-image img.recent-image-acantha {
   transform: scale(1.2) !important;
+}
+/* Stat figures were headings; these match the old heading's look exactly. */
+.stat-card .stat-figure {
+  display: block;
+  margin: 0 0 4px;
+  font-family: "Raleway", sans-serif;
+  line-height: normal;
+}
+
+/* Source line under the homepage statistics */
+.stats-section .stats-source {
+  display: block;
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.72rem;
+  color: #6b6b6b;
+  letter-spacing: 0.02em;
 }

@@ -165,9 +165,30 @@ export function eventSEO(event) {
   };
 }
 
+// Readable address for a press release, built from its title
+// (e.g. "compliance-is-the-biggest-risk-in-healthcare"). Old numbered
+// addresses (/press-release/1) redirect here.
+export function pressSlug(item) {
+  const words = String(item.title || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[^a-z0-9\s-]/g, " ")
+    .split(/[\s-]+/)
+    .filter(Boolean);
+  let slug = "";
+  for (const word of words) {
+    const next = slug ? `${slug}-${word}` : word;
+    if (next.length > 90) break;
+    slug = next;
+  }
+  // Don't end on a filler word ("...interest-to").
+  slug = slug.replace(/(-(a|an|and|of|the|to|in|for|with|on|at))+$/, "");
+  return slug || String(item.id);
+}
+
 export function pressSEO(item) {
   return {
-    path: `/press-release/${item.id}`,
+    path: `/press-release/${pressSlug(item)}`,
     title: fitTitle(item.title),
     description: summarize(item.excerpt || item.subheading),
     image: item.heroImage || item.image,
