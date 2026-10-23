@@ -16,7 +16,7 @@ const BUILD_DIR = path.join(ROOT, "build");
 const TEMPLATE_FILE = path.join(BUILD_DIR, "index.html");
 
 const seo = loadModule("src/seo/seoConfig.js");
-const { products, productCategories } = loadModule("src/products/productdata.js");
+const { products } = loadModule("src/products/productdata.js");
 const cancers = loadModule("src/cancersData.js").default;
 const blogs = loadModule("src/blog/blogdata.js").default;
 const { eventsData } = loadModule("src/events/eventsdata.js");
@@ -75,20 +75,19 @@ function buildPages() {
   for (const pagePath of Object.keys(seo.STATIC_PAGES)) {
     const page = { ...seo.STATIC_PAGES[pagePath], path: pagePath };
     const crumbs = [["Home", "/"]];
-    if (pagePath.startsWith("/products/")) crumbs.push(["Products", "/products"]);
     if (pagePath !== "/") crumbs.push([staticPageName(pagePath), pagePath]);
     add(page, crumbs);
   }
 
+  // OncoAce and Nutrazeutica are filters on the Products page, so product
+  // breadcrumbs go Home > Products > product.
   for (const product of products) {
     if (!product.category || !product.slug || !product.name) continue;
-    const category = productCategories.find((c) => c.id === product.category);
     const page = seo.productSEO(product);
     add(page, [
       ["Home", "/"],
       ["Products", "/products"],
-      [category ? category.name : product.categoryName, `/products/${product.category}`],
-      [product.name, page.path],
+      [product.name.trim(), page.path],
     ], { productImage: true, product });
   }
 

@@ -105,8 +105,8 @@ const rules = [
 
   // Products
   [/^(product|our-products\/[^/]+(\/[^/]+)?)\/([^/]+)$/, (m) => matchProduct(m[3])],
-  [/^(our-products\/oncology|our-products\/oncoace|product-category\/(oncology|oncoace)).*$/, () => "/products/oncoace"],
-  [/^(our-products\/(nutraceutials|nutraceutical|neutrazeutica|supporto)|product-category\/(nutrazeutica|supporto)).*$/, () => "/products/nutrazeutica"],
+  [/^(our-products\/oncology|our-products\/oncoace|product-category\/(oncology|oncoace)).*$/, () => "/products"],
+  [/^(our-products\/(nutraceutials|nutraceutical|neutrazeutica|supporto)|product-category\/(nutrazeutica|supporto)).*$/, () => "/products"],
   [/^(our-products|all-products|shop|product|product-category)(\/.*)?$/, () => "/products"],
   [/^zuvius-launches-([a-z]+)/, (m) => matchProduct(m[1]) || "/press-release"],
   [/^media\/press-release\/zuvius-launches-([a-z]+)/, (m) => matchProduct(m[1]) || "/press-release"],
@@ -208,6 +208,9 @@ function main() {
   const renamed = [
     ...pressItems.map((item) => [`press-release/${item.id}`, `/press-release/${pressSlug(item)}`]),
     ["events/nex-brand-the-extraordinnaire", "/events/nex-brand-the-extraordinaire"],
+    // OncoAce and Nutrazeutica are filters on the Products page, not separate pages.
+    ["products/oncoace", "/products"],
+    ["products/nutrazeutica", "/products"],
   ];
   lines.push("", "  # Pages renamed on the new site (old address → new address).");
   for (const [from, to] of renamed) lines.push(`  RewriteRule ^${escapeRegex(from)}/?$ ${to} [R=301,L,NC]`);

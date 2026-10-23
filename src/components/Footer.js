@@ -93,11 +93,11 @@ const Footer = () => {
 
           <ul>
             <li>
-              <Link to="/products/oncoace">OncoAce</Link>
+              <Link to="/products">OncoAce</Link>
             </li>
 
             <li>
-              <Link to="/products/nutrazeutica">Nutrazeutica</Link>
+              <Link to="/products">Nutrazeutica</Link>
             </li>
           </ul>
         </div>

@@ -24,16 +24,6 @@ export const STATIC_PAGES = {
     description:
       "Explore the oncology pharmaceutical product portfolio of Zuvius Lifesciences, including specialized anticancer treatments and supportive nutraceutical products.",
   },
-  "/products/oncoace": {
-    title: "OncoAce Anticancer Formulations | Zuvius Lifesciences",
-    description:
-      "Explore the OncoAce portfolio of specialized oncology drugs and cytotoxic anticancer pharmaceutical products from Zuvius Lifesciences.",
-  },
-  "/products/nutrazeutica": {
-    title: "Nutrazeutica Supportive Oncology Care | Zuvius Lifesciences",
-    description:
-      "Explore the Nutrazeutica portfolio of nutritional healthcare and supportive oncology products designed for patient wellness by Zuvius Lifesciences.",
-  },
   "/aboutus": {
     title: "About Us | Oncology Pharmaceutical Company | Zuvius Lifesciences",
     description:
