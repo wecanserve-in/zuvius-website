@@ -17,7 +17,8 @@
     "optimize-images": "node scripts/optimize-images.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "redirects": "node scripts/build-redirects.js"
+    "redirects": "node scripts/build-redirects.js",
+    "check-live": "node scripts/check-live.js"
   },
   "eslintConfig": {
     "extends": [

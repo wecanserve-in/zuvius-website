@@ -1229,14 +1229,27 @@ ErrorDocument 404 /404.html
 </IfModule>
 
 # 5. Caching
-<IfModule mod_headers.c>
+# Long caching is set by file TYPE, not by file name. When the server is busy it answers
+# "429 Too Many Requests" with no file type, so browsers never keep an error in place of
+# a real image or script. (A name-based rule did, and visitors saw broken images for days.)
+<IfModule mod_expires.c>
+  ExpiresActive On
   # Script and style files have a content hash in their name, so they never change
-  <FilesMatch "\.(js|css)$">
-    Header set Cache-Control "public, max-age=31536000, immutable"
-  </FilesMatch>
-  <FilesMatch "\.(png|jpe?g|webp|gif|svg|ico|mp4|pdf|woff2?)$">
-    Header set Cache-Control "public, max-age=2592000"
-  </FilesMatch>
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType application/x-javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/gif "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType video/mp4 "access plus 30 days"
+  ExpiresByType application/pdf "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 30 days"
+</IfModule>
+<IfModule mod_headers.c>
   # Pages must always be checked, so visitors get new releases straight away
   <FilesMatch "\.html$">
     Header set Cache-Control "no-cache"

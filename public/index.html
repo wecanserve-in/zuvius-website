@@ -3,6 +3,32 @@
   <head>
     <meta charset="utf-8" />
 
+    <!-- When many images load at once the server can refuse some ("429 Too Many Requests").
+         Ask for a refused image again a moment later (up to 3 times), with a fresh address
+         so a remembered error is never reused. Placed first so it covers every image. -->
+    <script>
+      (function () {
+        window.addEventListener("error", function (event) {
+          var img = event.target;
+          if (!img || img.tagName !== "IMG") return;
+          var src = img.getAttribute("src");
+          if (!src || src.indexOf("data:") === 0) return;
+          var base = src.replace(/[?&]retry=\d+$/, "");
+          if (img.dataset.retryBase !== base) {
+            img.dataset.retryBase = base;
+            img.dataset.retries = "0";
+          }
+          var tries = Number(img.dataset.retries);
+          if (tries >= 3) return;
+          img.dataset.retries = String(tries + 1);
+          setTimeout(function () {
+            if (img.getAttribute("src") !== src) return; // the page already changed this picture
+            img.setAttribute("src", base + (base.indexOf("?") < 0 ? "?" : "&") + "retry=" + Date.now());
+          }, 800 * (tries + 1) + Math.random() * 600);
+        }, true);
+      })();
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/zuvius-favicon.png" />
 

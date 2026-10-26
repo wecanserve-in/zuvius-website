@@ -66,6 +66,12 @@ function snapshot() {
   // The animated reach maps are large drawings; the app redraws them anyway.
   clone.querySelectorAll("svg.reach-map").forEach((svg) => { svg.innerHTML = ""; });
   clone.querySelectorAll("[data-no-prerender]").forEach((el) => el.remove());
+  // Undo any image retry (see public/index.html) so saved pages keep the plain image address.
+  clone.querySelectorAll("img[data-retry-base]").forEach((img) => {
+    img.setAttribute("src", img.dataset.retryBase);
+    img.removeAttribute("data-retry-base");
+    img.removeAttribute("data-retries");
+  });
   return clone.innerHTML;
 }
 
