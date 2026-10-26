@@ -7,8 +7,8 @@
  *
  * For each page it opens a fresh browser profile (empty cache, like incognito),
  * scrolls to the bottom, waits, then reloads normally and scrolls again. It fails
- * if any file still errors or any image is left broken on screen, and it reports
- * error replies that carry long caching (a browser would keep those errors).
+ * if any image is left broken on screen or any file errors other than a refused
+ * (429) request, which the retry script in public/index.html recovers.
  *
  * Needs Google Chrome (set CHROME_PATH if it isn't in the usual place).
  */
@@ -95,11 +95,14 @@ async function main() {
     await page.setViewport({ width: 1366, height: 900 });
     const errors = [];
     let refused = 0;
+    let savedRefusals = 0;
     page.on("response", (r) => {
       if (r.status() < 400) return;
       if (r.status() === 429) refused++;
       const cc = r.headers()["cache-control"] || "";
-      if (/max-age=[1-9]/.test(cc)) errors.push(`${r.status()} WITH LONG CACHING (${cc}) ${r.url()}`);
+      // Refused (429) replies are retried by the script in index.html, so only other errors count.
+      if (r.status() !== 429) errors.push(`${r.status()} ${r.url()}`);
+      else if (/max-age=[1-9]/.test(cc)) savedRefusals++;
     });
     page.on("requestfailed", (r) => { if (!/favicon|google|facebook|youtube/.test(r.url())) errors.push(`failed ${r.url()}`); });
     await page.goto(SITE + route, { waitUntil: "load", timeout: 90000 });
