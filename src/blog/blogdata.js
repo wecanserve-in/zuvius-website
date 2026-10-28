@@ -5,6 +5,7 @@ const blogs = [
     title: "Acalataz 100: Acalabrutinib Capsules for Blood Cancer Care",
     category: "Product",
     targetUrl: "/products/oncoace/acalataz", // points directly to product page
+    productName: "Acalataz 100", // shown in the product boxes on the post
     date: "September 21, 2026",
     readTime: "5 min read",
     author: "Zuvius Lifesciences",
@@ -2897,6 +2898,176 @@ const blogs = [
         type: "paragraph",
         text:
           "Medical Disclaimer: This article is intended for general educational and informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Please consult a qualified cancer specialist for personalized medical guidance.",
+      },
+    ],
+  },
+  {
+    id: 9,
+    slug: "auset-azacitidine-tablets-cancer-care",
+    title: "Auset: Azacitidine Tablets for Cancer Care",
+    category: "Product",
+    targetUrl: "/products/oncoace/auset-tablet",
+    productName: "Auset", // shown in the product boxes on the post
+    date: "October 28, 2026",
+    readTime: "5 min read",
+    author: "Zuvius Lifesciences",
+    image: "/blog/auset-tablet-blog.png",
+    featured: false,
+    excerpt:
+      "Learn about Auset, Azacitidine tablets from Zuvius Lifesciences, its role in the care of certain blood cancers, key product information and important considerations.",
+    metaTitle: "Auset: Azacitidine Tablets for Cancer Care | Zuvius Lifesciences",
+    metaDescription:
+      "Learn about Auset, Azacitidine 200 mg and 300 mg tablets from Zuvius Lifesciences, including its uses in certain blood cancers, key product information and important considerations.",
+    tags: ["Auset", "Azacitidine", "Blood Cancer", "AML", "Oncology", "OncoAce"],
+    content: [
+      {
+        type: "paragraph",
+        text:
+          "Cancer treatment continues to develop with medicines designed to support patients facing different types of cancer. Auset, from Zuvius Lifesciences, contains Azacitidine and is part of the OncoAce portfolio of oncology products.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Azacitidine is a medicine used in the treatment of certain blood cancers, including acute myeloid leukemia (AML), depending on the formulation and treatment setting. Its use should be determined by a qualified healthcare professional based on the patient's medical condition.",
+      },
+      { type: "heading", text: "What Is Auset?" },
+      {
+        type: "paragraph",
+        text:
+          "Auset is an oncology product containing Azacitidine in tablet form for oral use, as listed in Zuvius Lifesciences' OncoAce product portfolio.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Azacitidine is a medicine that helps manage certain blood cancers by affecting processes involved in the growth and development of abnormal blood cells.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The appropriate use of Azacitidine depends on the specific formulation, the patient's diagnosis and the treatment plan recommended by a cancer specialist. Oral and injectable Azacitidine products may have different approved uses and dosing schedules.",
+      },
+      { type: "heading", text: "What Is Azacitidine Used For?" },
+      {
+        type: "paragraph",
+        text:
+          "Azacitidine is used in the treatment of certain blood-related cancers and bone marrow conditions.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Oral Azacitidine has an established use as continued treatment for certain adults with acute myeloid leukemia (AML) who have achieved remission following intensive initial treatment but are unable to complete intensive curative therapy.",
+      },
+      {
+        type: "paragraph",
+        text: "Injectable Azacitidine is used in specific treatment settings for conditions such as:",
+      },
+      {
+        type: "list",
+        items: [
+          "Myelodysplastic syndromes (MDS): Conditions in which the bone marrow produces abnormal or insufficient blood cells.",
+          "Chronic myelomonocytic leukemia (CMML): A type of blood cancer affecting certain white blood cells.",
+          "Acute myeloid leukemia (AML): A cancer affecting blood-forming cells, in specific approved treatment settings.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "The approved use depends on the formulation and the patient's condition. A healthcare professional should determine whether the prescribed Azacitidine product is appropriate.",
+      },
+      { type: "heading", text: "Auset: Key Product Information" },
+      {
+        type: "infoTable",
+        items: [
+          { label: "Brand", value: "Auset" },
+          { label: "Active Ingredient", value: "Azacitidine" },
+          { label: "Strength", value: "200 mg / 300 mg" },
+          { label: "Dosage Form", value: "Tablets" },
+          { label: "Route of Administration", value: "Oral" },
+          { label: "Pack Size", value: "14 Tablets" },
+          { label: "Product Portfolio", value: "OncoAce" },
+        ],
+      },
+      {
+        type: "paragraph",
+        text:
+          "Auset is part of Zuvius Lifesciences' oncology portfolio, which includes medicines intended for different areas of cancer care.",
+      },
+      { type: "heading", text: "Why Azacitidine Matters in Cancer Care" },
+      {
+        type: "paragraph",
+        text:
+          "Certain blood cancers affect the normal production and development of blood cells in the bone marrow. Medicines such as Azacitidine are used in specific treatment settings to help manage these conditions.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Azacitidine works by influencing processes involved in abnormal cell growth and gene activity. Its role in treatment depends on the type of cancer, the formulation used and the patient's medical needs.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Treatment decisions should always be made by a qualified healthcare professional following an individual assessment.",
+      },
+      { type: "heading", text: "Important Information" },
+      {
+        type: "paragraph",
+        text:
+          "Auset is a prescription oncology medicine and should be used only under the guidance of a qualified healthcare professional.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Oral Azacitidine must not be substituted with injectable Azacitidine without medical direction, as the formulations may have different uses, doses and treatment schedules.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "Patients should discuss their medical history, other medicines and any concerns with their treating doctor before starting treatment. Regular medical monitoring may be required during Azacitidine treatment.",
+      },
+      {
+        type: "paragraph",
+        text: "Auset should be used strictly as prescribed and under medical supervision.",
+      },
+      { type: "heading", text: "Frequently Asked Questions" },
+      {
+        type: "faq",
+        question: "What is Auset?",
+        answer:
+          "Auset is an Azacitidine-based oncology tablet listed in Zuvius Lifesciences' OncoAce portfolio.",
+      },
+      {
+        type: "faq",
+        question: "What is Azacitidine used for?",
+        answer:
+          "Azacitidine is used in specific treatment settings for certain blood cancers, including AML and other bone marrow-related conditions, depending on the formulation.",
+      },
+      {
+        type: "faq",
+        question: "Is Auset a prescription medicine?",
+        answer:
+          "Auset is an oncology medicine and should be used only under the guidance of a qualified healthcare professional.",
+      },
+      {
+        type: "faq",
+        question: "Can oral and injectable Azacitidine be used interchangeably?",
+        answer:
+          "No. Oral and injectable Azacitidine formulations may have different approved uses and dosing schedules. They should not be substituted without medical direction.",
+      },
+      { type: "heading", text: "Auset by Zuvius Lifesciences" },
+      {
+        type: "paragraph",
+        text:
+          "With Auset, Zuvius Lifesciences expands its OncoAce oncology portfolio with an Azacitidine-based tablet product.",
+      },
+      {
+        type: "paragraph",
+        text:
+          "The product forms part of the company's focus on providing medicines for different areas of oncology care.",
+      },
+      { type: "paragraph", text: "Auset — Azacitidine Tablets" },
+      {
+        type: "paragraph",
+        text: "For oral use only. Use under the guidance of a qualified cancer specialist.",
       },
     ],
   },

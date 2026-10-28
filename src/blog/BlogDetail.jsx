@@ -91,7 +91,7 @@ const BlogDetail = () => {
             {blog.category === "Product" && blog.targetUrl && (
               <div className="blog-action-banner">
                 <div className="blog-action-text">
-                  <strong>Looking for Acalataz 100 Specifications?</strong>
+                  <strong>Looking for {blog.productName || "Product"} Specifications?</strong>
                   <span>
                     View clinical efficacy, packaging, and submit an enquiry on the official product page.
                   </span>
@@ -172,7 +172,7 @@ const BlogDetail = () => {
             {blog.category === "Product" && blog.targetUrl && (
               <div className="blog-action-banner bottom">
                 <div className="blog-action-text">
-                  <strong>Acalataz 100 Commercial Enquiries</strong>
+                  <strong>{blog.productName || "Product"} Commercial Enquiries</strong>
                   <span>
                     Get in touch with Zuvius Lifesciences for bulk and institutional supply.
                   </span>
