@@ -169,6 +169,29 @@
       href="%PUBLIC_URL%/manifest.json"
     />
 
+    <!-- Google Analytics (GA4, property "zuviuslifesciences.in", ID G-T6NY4WMSM9).
+         Loads only after the page has finished, so it never slows the page down.
+         Counts only the live site, and skips automated browsers (pre-rendering and
+         the npm run check-live test), so those are never counted as visitors.
+         Page changes inside the site are counted by GA's "browser history" setting. -->
+    <script>
+      (function () {
+        if (location.hostname !== "zuviuslifesciences.in" || navigator.webdriver) return;
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag("js", new Date());
+        window.gtag("config", "G-T6NY4WMSM9");
+        function load() {
+          var s = document.createElement("script");
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id=G-T6NY4WMSM9";
+          document.head.appendChild(s);
+        }
+        if (document.readyState === "complete") load();
+        else window.addEventListener("load", load);
+      })();
+    </script>
+
     <!-- Structured data. The build (scripts/generate-seo-pages.js) replaces this
          on every page with the company details plus page-specific breadcrumbs. -->
     <script type="application/ld+json">
